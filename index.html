@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#6366f1" />
+<meta name="theme-color" content="#2563eb" />
 <title>Mooc Mastery — NPTEL MCQ Practice</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
 
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
@@ -16,925 +16,1042 @@
 
 <style>
 /* ============================================================
-   DESIGN TOKENS
+   TOKENS
    ============================================================ */
 :root{
-  --bg:#f5f7fb;
-  --surface:#ffffff;
-  --surface-2:#f8fafc;
-  --text:#0f172a;
-  --text-2:#334155;
-  --muted:#64748b;
-  --border:#e2e8f0;
-  --border-2:#cbd5e1;
-  --soft:#f1f5f9;
+  --font-sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-serif:'IBM Plex Serif',Georgia,'Times New Roman',serif;
 
-  --primary:#6366f1;
-  --primary-2:#8b5cf6;
-  --primary-soft:rgba(99,102,241,.1);
+  --fs-xs:12px; --fs-sm:13.5px; --fs-base:15px; --fs-md:16px;
+  --fs-lg:18px; --fs-xl:22px; --fs-2xl:28px; --fs-3xl:36px;
 
-  --green:#10b981;
-  --green-bg:rgba(16,185,129,.12);
-  --red:#ef4444;
-  --red-bg:rgba(239,68,68,.12);
-  --amber:#f59e0b;
-  --amber-bg:rgba(245,158,11,.14);
-  --blue:#3b82f6;
-  --blue-bg:rgba(59,130,246,.12);
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:28px; --s7:40px; --s8:56px;
 
-  --shadow-xs:0 1px 2px rgba(15,23,42,.04);
-  --shadow-sm:0 2px 8px rgba(15,23,42,.06);
-  --shadow:0 6px 20px rgba(15,23,42,.08);
-  --shadow-lg:0 18px 50px rgba(15,23,42,.16);
+  --r-sm:6px; --r:10px; --r-lg:14px; --r-xl:18px;
 
-  --glass-border: color-mix(in srgb, var(--border) 80%, transparent);
-  --glass-highlight: inset 0 1px 0 rgba(255,255,255,.5);
+  --wrap:840px; --gutter:18px;
+  --top-h:56px; --nav-h:62px; --tap:44px;
 
-  --r-sm:10px;
-  --r:14px;
-  --r-lg:18px;
-
-  --top-h:58px;
-  --nav-h:68px;
   --safe-b:env(safe-area-inset-bottom,0px);
   --safe-t:env(safe-area-inset-top,0px);
 
-  --gutter: clamp(18px, 4.6vw, 24px);
-
-  --nav-practice: #a78bfa;
-  --nav-history: #38bdf8;
-  --nav-cheat: #fbbf24;
+  --ease:cubic-bezier(.2,.7,.3,1);
+  --fast:120ms; --base:180ms; --slow:260ms;
 }
-[data-theme="dark"]{
-  --bg:#0a0f1c;
-  --surface:#151c2e;
-  --surface-2:#111827;
-  --text:#f1f5f9;
-  --text-2:#cbd5e1;
-  --muted:#94a3b8;
-  --border:#232c42;
-  --border-2:#334155;
-  --soft:#1b2338;
 
-  --primary:#818cf8;
-  --primary-2:#a78bfa;
-  --primary-soft:rgba(129,140,248,.15);
+/* ---------- Neutrals · LIGHT ---------- */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --surface-2:#eef0f3; --surface-3:#e2e6eb;
+  --text:#0f1419; --text-2:#414953; --muted:#6b7481;
+  --border:#e3e6eb; --border-2:#c9cfd7;
+
+  --green:#1a7a4a; --green-bg:rgba(26,122,74,.10);
+  --red:#b91c1c;   --red-bg:rgba(185,28,28,.09);
+  --amber:#a16207; --amber-bg:rgba(161,98,7,.10);
+
+  --shadow-xs:0 1px 2px rgba(15,20,25,.05);
+  --shadow-sm:0 1px 3px rgba(15,20,25,.07),0 1px 2px rgba(15,20,25,.04);
+  --shadow-md:0 4px 12px rgba(15,20,25,.09),0 2px 4px rgba(15,20,25,.04);
+  --shadow-lg:0 20px 44px rgba(15,20,25,.20),0 6px 14px rgba(15,20,25,.08);
+}
+
+/* ---------- Neutrals · DARK ---------- */
+[data-theme="dark"]{
+  --bg:#0b0e12; --surface:#14181f; --surface-2:#1c212a; --surface-3:#252b36;
+  --text:#eef0f3; --text-2:#adb6c2; --muted:#838d9b;
+  --border:#232932; --border-2:#353d49;
+
+  --green:#5fd39e; --green-bg:rgba(95,211,158,.12);
+  --red:#f08a80;   --red-bg:rgba(240,138,128,.12);
+  --amber:#e3b24a; --amber-bg:rgba(227,178,74,.12);
 
   --shadow-xs:0 1px 2px rgba(0,0,0,.4);
-  --shadow-sm:0 2px 8px rgba(0,0,0,.35);
-  --shadow:0 6px 20px rgba(0,0,0,.4);
-  --shadow-lg:0 18px 50px rgba(0,0,0,.55);
-
-  --glass-border: color-mix(in srgb, #ffffff 10%, transparent);
-  --glass-highlight: inset 0 1px 0 rgba(255,255,255,.06);
-
-  --nav-practice: #c4b5fd;
-  --nav-history: #7dd3fc;
-  --nav-cheat: #fcd34d;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.3);
+  --shadow-md:0 4px 12px rgba(0,0,0,.55),0 2px 4px rgba(0,0,0,.35);
+  --shadow-lg:0 20px 44px rgba(0,0,0,.65),0 6px 14px rgba(0,0,0,.4);
 }
 
+/* ---------- Accent · OCEAN (default, blue) ---------- */
+:root,[data-accent="ocean"]{
+  --accent:#2563eb; --accent-solid:#2563eb;
+  --accent-h:#1d4ed8; --accent-solid-h:#1d4ed8;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(37,99,235,.08);
+  --accent-line:rgba(37,99,235,.24);
+  --accent-glow:rgba(37,99,235,.28);
+}
+[data-theme="dark"],[data-theme="dark"][data-accent="ocean"]{
+  --accent:#8ab4f8; --accent-solid:#3b82f6;
+  --accent-h:#a3c5fa; --accent-solid-h:#4d8ffa;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(138,180,248,.13);
+  --accent-line:rgba(138,180,248,.28);
+  --accent-glow:rgba(59,130,246,.42);
+}
+
+/* ---------- Accent · AMBER ---------- */
+[data-accent="amber"]{
+  --accent:#b45309; --accent-solid:#b45309;
+  --accent-h:#92400e; --accent-solid-h:#92400e;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(180,83,9,.09);
+  --accent-line:rgba(180,83,9,.26);
+  --accent-glow:rgba(180,83,9,.30);
+}
+[data-theme="dark"][data-accent="amber"]{
+  --accent:#fbbf24; --accent-solid:#d97706;
+  --accent-h:#fcd34d; --accent-solid-h:#f59e0b;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(251,191,36,.13);
+  --accent-line:rgba(251,191,36,.30);
+  --accent-glow:rgba(217,119,6,.42);
+}
+
+/* ---------- Accent · ROSE (crimson) ---------- */
+[data-accent="rose"]{
+  --accent:#be123c; --accent-solid:#be123c;
+  --accent-h:#9f1239; --accent-solid-h:#9f1239;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(190,18,60,.08);
+  --accent-line:rgba(190,18,60,.24);
+  --accent-glow:rgba(190,18,60,.28);
+}
+[data-theme="dark"][data-accent="rose"]{
+  --accent:#fda4af; --accent-solid:#e11d48;
+  --accent-h:#fecdd3; --accent-solid-h:#f43f5e;
+  --accent-on:#ffffff;
+  --accent-soft:rgba(253,164,175,.13);
+  --accent-line:rgba(253,164,175,.28);
+  --accent-glow:rgba(225,29,72,.42);
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;min-height:100%}
 html{-webkit-text-size-adjust:100%}
 body{
-  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-family:var(--font-sans);
+  font-size:var(--fs-base);
+  line-height:1.55;
+  font-weight:400;
   background:var(--bg);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
-  transition:background .3s,color .3s;
-  line-height:1.5;
-  font-size:15px;
+  text-rendering:optimizeLegibility;
   overflow-x:hidden;
+  transition:background-color var(--base) var(--ease),color var(--base) var(--ease);
 }
 #root{position:relative;z-index:1}
 
-.qtext, .qreview-question, .option .body, .opts li, .explain, .reveal-explain {
-  overflow-wrap: break-word; word-wrap: break-word; word-break: break-word;
-}
-
-h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.2}
-h1{font-size:24px} h2{font-size:19px} h3{font-size:16px}
+h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.015em;line-height:1.25}
+h1{font-size:var(--fs-xl);letter-spacing:-.02em}
+h2{font-size:var(--fs-lg);letter-spacing:-.015em}
+h3{font-size:var(--fs-base);letter-spacing:-.01em}
 p{margin:0}
 button,input,select{font-family:inherit;font-size:inherit;color:inherit}
 button{background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+::selection{background:var(--accent-soft);color:var(--text)}
 ::-webkit-scrollbar{width:10px;height:10px}
-::-webkit-scrollbar-thumb{background:var(--border);border-radius:10px}
+::-webkit-scrollbar-thumb{background:var(--border-2);border-radius:99px}
 ::-webkit-scrollbar-track{background:transparent}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--r-sm)}
+
+.qtext,.qreview-question,.option .body,.opts li,.explain,.reveal-explain{
+  overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;
+}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes sheetIn{from{transform:translateY(28px);opacity:0}to{transform:none;opacity:1}}
+@keyframes overlayIn{from{opacity:0}to{opacity:1}}
+@keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.012)}100%{transform:scale(1)}}
+@keyframes keyPop{0%{transform:scale(1)}55%{transform:scale(1.12)}100%{transform:scale(1.05)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-4px)}40%{transform:translateX(4px)}60%{transform:translateX(-2px)}80%{transform:translateX(2px)}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes barGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes heroIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+}
 
 /* ============================================================
    LAYOUT
    ============================================================ */
 .app{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
-
 .wrap{
-  width:100%;max-width:960px;margin:0 auto;
-  padding-left:var(--gutter);
-  padding-right:var(--gutter);
+  width:100%;max-width:var(--wrap);margin:0 auto;
+  padding-left:var(--gutter);padding-right:var(--gutter);
 }
-.page{
-  padding-top:16px;
-  padding-bottom:24px;
-  animation:pageFade .25s ease both;
-}
-.page.has-bottom-nav{padding-bottom:calc(96px + var(--safe-b))}
-@keyframes pageFade{from{opacity:0}to{opacity:1}}
+.page{padding-top:var(--s5);padding-bottom:var(--s6);animation:fadeUp var(--slow) var(--ease) both}
+.app-main{flex:1;padding-bottom:calc(var(--nav-h) + var(--safe-b) + var(--s4))}
 
 @media (min-width:768px){
-  h1{font-size:28px}
-  .page{padding-top:24px;padding-bottom:40px}
-  .page.has-bottom-nav{padding-bottom:40px}
+  :root{--gutter:28px;--top-h:60px}
+  .page{padding-top:var(--s6);padding-bottom:var(--s7)}
+  .app-main{padding-bottom:var(--s7)}
+  h1{font-size:var(--fs-2xl)}
 }
 
 /* ============================================================
-   TOPBAR
+   TOP BAR
    ============================================================ */
 .topbar{
   position:sticky;top:0;z-index:40;
   padding-top:var(--safe-t);
-  backdrop-filter:blur(20px) saturate(1.5);
-  -webkit-backdrop-filter:blur(20px) saturate(1.5);
-  background:color-mix(in srgb, var(--bg) 82%, transparent);
-  border-bottom:1px solid var(--glass-border);
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  transition:background-color var(--base) var(--ease),border-color var(--base) var(--ease);
 }
-.topbar-in{display:flex;align-items:center;gap:10px;height:var(--top-h)}
-.brand{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;min-width:0;flex:1}
-.logo{
-  width:38px;height:38px;border-radius:12px;flex:0 0 auto;
-  background:linear-gradient(135deg,var(--primary),var(--primary-2));
-  color:#fff;display:grid;place-items:center;font-weight:900;font-size:17px;
-  box-shadow:0 8px 20px rgba(99,102,241,.35);
+.topbar-in{display:flex;align-items:center;gap:var(--s2);height:var(--top-h)}
+
+.brand{
+  display:flex;align-items:center;gap:10px;min-width:0;flex:1;
+  color:inherit;text-align:left;border-radius:var(--r);
+  padding:2px;margin:-2px;
+  transition:opacity var(--fast) var(--ease);
 }
-.brand-title{font-weight:800;font-size:14px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.brand-sub{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
-.top-tabs{display:none;margin-left:8px;background:var(--soft);padding:4px;border-radius:12px;border:1px solid var(--border)}
+.brand:hover{opacity:.9}
+
+.brand-mark{
+  width:34px;height:34px;flex:0 0 auto;border-radius:9px;
+  background:var(--accent-solid);
+  color:var(--accent-on);
+  display:grid;place-items:center;
+  transition:transform var(--base) var(--ease),background var(--base) var(--ease);
+}
+.brand:hover .brand-mark{transform:rotate(-4deg) scale(1.03)}
+
+.brand-text{min-width:0;display:block}
+.brand-title{
+  display:block;font-weight:600;font-size:var(--fs-sm);
+  line-height:1.2;letter-spacing:-.01em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.brand-sub{
+  display:block;font-size:var(--fs-xs);color:var(--muted);
+  line-height:1.3;margin-top:1px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+.top-tabs{display:none;gap:2px;margin-left:var(--s4)}
 .top-tabs button{
-  border:0;background:transparent;color:var(--muted);font-weight:700;font-size:13px;
-  padding:8px 15px;border-radius:9px;cursor:pointer;transition:.15s;white-space:nowrap;
+  font-size:var(--fs-sm);font-weight:500;color:var(--muted);
+  padding:7px 12px;border-radius:var(--r);
+  transition:color var(--fast) var(--ease),background var(--fast) var(--ease);
+  letter-spacing:-.005em;
 }
-.top-tabs button:hover{color:var(--text)}
-.top-tabs button.active{background:var(--surface);color:var(--text);box-shadow:var(--shadow-xs)}
-.top-actions{display:flex;gap:8px}
+.top-tabs button:hover{color:var(--text);background:var(--surface-2)}
+.top-tabs button.active{color:var(--text);font-weight:600;background:var(--surface-2)}
+
+.top-actions{display:flex;gap:4px}
 .icon-btn{
-  width:40px;height:40px;border-radius:12px;
-  border:1px solid var(--border);
-  background:var(--surface);
-  color:var(--text);cursor:pointer;font-size:16px;display:grid;place-items:center;transition:.15s;flex:0 0 auto;
+  width:38px;height:38px;border-radius:var(--r);
+  border:1px solid transparent;background:transparent;color:var(--muted);
+  display:grid;place-items:center;
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease),transform var(--fast) var(--ease);
+  flex:0 0 auto;
 }
-.icon-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm);border-color:var(--border-2)}
-.icon-btn:active{transform:translateY(0)}
-@media(min-width:768px){.top-tabs{display:flex}}
+.icon-btn:hover{background:var(--surface-2);color:var(--text)}
+.icon-btn:active{transform:scale(.92)}
+
+@media (min-width:768px){.top-tabs{display:flex}}
 
 /* ============================================================
    BOTTOM NAV
    ============================================================ */
 .bottom-nav{
   position:fixed;left:0;right:0;bottom:0;z-index:45;
-  background:color-mix(in srgb, var(--surface) 92%, transparent);
-  backdrop-filter:blur(24px) saturate(1.6);
-  -webkit-backdrop-filter:blur(24px) saturate(1.6);
-  border-top:1px solid var(--glass-border);
+  background:var(--surface);
+  border-top:1px solid var(--border);
   display:flex;
   padding-bottom:var(--safe-b);
   height:calc(var(--nav-h) + var(--safe-b));
-  box-shadow:0 -6px 24px rgba(0,0,0,.14), var(--glass-highlight);
+  transition:background-color var(--base) var(--ease),border-color var(--base) var(--ease);
 }
 .bottom-nav button{
-  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
-  color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.02em;
-  transition:.18s ease;position:relative;
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;color:var(--muted);font-size:11px;font-weight:500;letter-spacing:.01em;
+  position:relative;transition:color var(--base) var(--ease);min-height:var(--tap);
 }
-.bottom-nav button svg{
-  width:20px;height:20px;
-  padding:6px;
-  border-radius:11px;
-  transition:.18s ease;
-  box-sizing:content-box;
+.bottom-nav button::before{
+  content:'';position:absolute;top:0;left:50%;
+  width:26px;height:2px;border-radius:0 0 2px 2px;background:transparent;
+  transform:translateX(-50%) scaleX(.3);transform-origin:center;
+  transition:background var(--base) var(--ease),transform var(--base) var(--ease);
 }
-.bottom-nav button[data-tab="home"] svg{
-  color: var(--nav-practice);
-  background: color-mix(in srgb, var(--nav-practice) 16%, transparent);
-}
-.bottom-nav button[data-tab="history"] svg{
-  color: var(--nav-history);
-  background: color-mix(in srgb, var(--nav-history) 16%, transparent);
-}
-.bottom-nav button[data-tab="cheatsheet"] svg{
-  color: var(--nav-cheat);
-  background: color-mix(in srgb, var(--nav-cheat) 16%, transparent);
-}
-.bottom-nav button.active{color:var(--text)}
-.bottom-nav button.active[data-tab="home"] svg{
-  color:#fff;background: linear-gradient(135deg, #8b5cf6, #6366f1);
-  box-shadow: 0 6px 18px rgba(139,92,246,.45);
-}
-.bottom-nav button.active[data-tab="history"] svg{
-  color:#fff;background: linear-gradient(135deg, #0ea5e9, #3b82f6);
-  box-shadow: 0 6px 18px rgba(14,165,233,.45);
-}
-.bottom-nav button.active[data-tab="cheatsheet"] svg{
-  color:#111;background: linear-gradient(135deg, #fbbf24, #f59e0b);
-  box-shadow: 0 6px 18px rgba(251,191,36,.45);
-}
-@media(min-width:768px){.bottom-nav{display:none}}
+.bottom-nav button.active{color:var(--accent);font-weight:600}
+.bottom-nav button.active::before{background:var(--accent);transform:translateX(-50%) scaleX(1)}
+.bottom-nav svg{display:block;transition:transform var(--base) var(--ease)}
+.bottom-nav button.active svg{transform:translateY(-1px)}
+@media (min-width:768px){.bottom-nav{display:none}}
 
-body.modal-open .bottom-nav,
-body.modal-open .sticky-foot{display:none !important}
+body.modal-open .bottom-nav{display:none !important}
 body.modal-open{overflow:hidden}
+
+/* ============================================================
+   TYPOGRAPHY HELPERS
+   ============================================================ */
+.muted{color:var(--muted);font-size:var(--fs-sm)}
+.tiny{font-size:var(--fs-xs);color:var(--muted);line-height:1.5}
+.lede{color:var(--text-2);font-size:var(--fs-md);line-height:1.6;max-width:60ch}
+
+.section-title{
+  display:flex;align-items:center;gap:10px;
+  font-size:var(--fs-base);font-weight:600;color:var(--text);
+  margin:var(--s7) 0 var(--s4);letter-spacing:-.01em;
+}
+.section-title::before{
+  content:'';width:3px;height:15px;border-radius:2px;
+  background:var(--accent);flex:0 0 auto;
+  transition:background var(--base) var(--ease);
+}
+.section-title:first-child{margin-top:0}
+
+.row{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.between{justify-content:space-between}
+.col{display:flex;flex-direction:column;gap:var(--s3)}
+
+/* ============================================================
+   GRIDS
+   ============================================================ */
+.grid{display:grid;gap:var(--s3)}
+.g2{grid-template-columns:minmax(0,1fr)}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:520px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:768px){
+  .grid{gap:var(--s4)}
+  .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
 
 /* ============================================================
    CARDS
    ============================================================ */
 .card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--r-lg);
-  padding:16px;
-  box-shadow:var(--shadow-xs);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
+  padding:var(--s4);box-shadow:var(--shadow-xs);
+  transition:background-color var(--base) var(--ease),border-color var(--base) var(--ease),box-shadow var(--base) var(--ease);
 }
-.card+.card{margin-top:12px}
-@media(min-width:768px){.card{padding:20px;border-radius:20px}}
-.card.hero{
-  background:linear-gradient(140deg,
-    color-mix(in srgb,var(--primary) 10%, var(--surface)),
-    color-mix(in srgb,var(--primary) 2%, var(--surface)) 70%);
-  border-color:color-mix(in srgb,var(--primary) 22%, var(--border));
-}
-
-.grid{display:grid;gap:12px}
-.g2{grid-template-columns:1fr}
-.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
-.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media(min-width:640px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(min-width:768px){
-  .grid{gap:14px}
-  .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
-}
-.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.between{justify-content:space-between}
-.col{display:flex;flex-direction:column;gap:10px}
-.muted{color:var(--muted);font-size:13px}
-.tiny{font-size:11.5px;color:var(--muted);line-height:1.45}
-.section-title{display:flex;align-items:center;gap:9px;margin:22px 0 10px;font-size:14px;font-weight:800;letter-spacing:.01em}
-.section-title .dot{width:6px;height:6px;border-radius:50%;background:var(--primary)}
+.card+.card{margin-top:var(--s3)}
+@media (min-width:768px){.card{padding:var(--s5)}}
 
 /* ============================================================
    BUTTONS
    ============================================================ */
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  border:1.5px solid var(--border);background:var(--surface);color:var(--text);
-  padding:12px 18px;border-radius:12px;font-size:14.5px;font-weight:700;cursor:pointer;
-  transition:transform .12s, box-shadow .15s, background .15s, opacity .15s;min-height:46px;
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
+  border:1px solid var(--border);background:var(--surface);color:var(--text);
+  padding:0 var(--s4);height:var(--tap);border-radius:var(--r);
+  font-size:var(--fs-sm);font-weight:500;letter-spacing:-.005em;cursor:pointer;
+  transition:background var(--fast) var(--ease),border-color var(--fast) var(--ease),
+             color var(--fast) var(--ease),opacity var(--fast) var(--ease),
+             box-shadow var(--fast) var(--ease),transform var(--fast) var(--ease);
+  white-space:nowrap;position:relative;
 }
-.btn svg{width:16px;height:16px}
-.btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:var(--shadow-sm);border-color:var(--border-2)}
-.btn:active:not(:disabled){transform:translateY(0)}
+.btn:hover:not(:disabled){border-color:var(--border-2);background:var(--surface-2)}
+.btn:active:not(:disabled){transform:translateY(1px)}
 .btn:disabled{opacity:.42;cursor:not-allowed}
-.btn.primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border-color:transparent;box-shadow:0 8px 22px rgba(99,102,241,.35)}
-.btn.primary:hover:not(:disabled){box-shadow:0 12px 28px rgba(99,102,241,.45)}
-.btn.ghost{background:transparent;border-color:transparent;color:var(--muted)}
-.btn.ghost:hover{background:var(--soft);color:var(--text);box-shadow:none;transform:none}
-.btn.soft{background:var(--soft);border-color:transparent;color:var(--text)}
-.btn.soft:hover:not(:disabled){background:color-mix(in srgb,var(--primary) 10%, var(--soft));border-color:transparent;color:var(--primary)}
-.btn.danger{color:var(--red);border-color:color-mix(in srgb,var(--red) 40%, var(--border))}
-.btn.sm{padding:9px 14px;font-size:12.5px;min-height:38px;border-radius:10px}
-.btn.lg{padding:15px 22px;font-size:15.5px;min-height:52px;border-radius:14px}
+
+.btn.primary{
+  background:var(--accent-solid);border-color:var(--accent-solid);color:var(--accent-on);
+  font-weight:600;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px var(--accent-glow);
+}
+.btn.primary:hover:not(:disabled){
+  background:var(--accent-solid-h);border-color:var(--accent-solid-h);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 3px 10px var(--accent-glow);
+}
+.btn.primary:active:not(:disabled){
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 2px var(--accent-glow);
+}
+
+.btn.ghost{border-color:transparent;background:transparent;color:var(--muted)}
+.btn.ghost:hover:not(:disabled){background:var(--surface-2);color:var(--text);border-color:transparent}
+.btn.soft{background:var(--surface-2);border-color:transparent;color:var(--text-2)}
+.btn.soft:hover:not(:disabled){background:var(--surface-3);color:var(--text);border-color:transparent}
+.btn.danger{color:var(--red);border-color:var(--border)}
+.btn.danger:hover:not(:disabled){background:var(--red-bg);border-color:var(--red)}
+.btn.sm{height:36px;padding:0 var(--s3);font-size:var(--fs-xs);border-radius:var(--r-sm);gap:6px}
+.btn.sm svg{width:13px;height:13px}
+.btn.lg{height:48px;font-size:var(--fs-base);padding:0 var(--s5)}
 .btn.block{width:100%}
-.btn.icon{padding:0;width:46px}
+.btn svg{flex:0 0 auto}
 
 /* ============================================================
    BADGES
    ============================================================ */
-.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:11.5px;font-weight:800;white-space:nowrap}
+.badge{
+  display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
+  border-radius:99px;font-size:var(--fs-xs);font-weight:500;
+  letter-spacing:.005em;white-space:nowrap;line-height:1.6;
+}
 .badge.green{background:var(--green-bg);color:var(--green)}
 .badge.red{background:var(--red-bg);color:var(--red)}
 .badge.amber{background:var(--amber-bg);color:var(--amber)}
-.badge.blue{background:var(--blue-bg);color:var(--blue)}
-.badge.grey{background:var(--soft);color:var(--muted);border:1px solid var(--border)}
+.badge.blue{background:var(--accent-soft);color:var(--accent)}
+.badge.grey{background:var(--surface-2);color:var(--muted)}
 
 /* ============================================================
    STATS
    ============================================================ */
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px 13px}
-.stat .v{font-size:22px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
-.stat .v small{font-size:14px;color:var(--muted);font-weight:700;margin-left:2px}
-.stat .l{font-size:10.5px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+.stat{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
+  padding:var(--s3);min-width:0;box-shadow:var(--shadow-xs);
+}
+.stat .v{
+  font-size:var(--fs-xl);font-weight:600;letter-spacing:-.025em;
+  line-height:1.15;font-variant-numeric:tabular-nums;color:var(--text);
+}
+.stat .v small{font-size:var(--fs-sm);color:var(--muted);font-weight:400;margin-left:1px}
+.stat .l{font-size:var(--fs-xs);color:var(--muted);font-weight:400;margin-top:3px;line-height:1.4}
+.g3 .stat .v{font-size:var(--fs-base)}
+@media (min-width:768px){.g3 .stat .v{font-size:var(--fs-xl)}}
 
 /* ============================================================
-   FEATURE CARDS (marketing)
+   FEATURE GRID — 3×2 desktop · 2×3 tablet · 1×6 mobile
    ============================================================ */
+.features{
+  display:grid;grid-template-columns:minmax(0,1fr);
+  gap:var(--s4);
+}
 .feature{
+  min-width:0;display:flex;flex-direction:column;gap:8px;
+  padding:var(--s4);
+  border:1px solid var(--border);border-radius:var(--r-lg);
   background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--r);
-  padding:14px 13px;
-  box-shadow:var(--shadow-xs);
-  display:flex;flex-direction:column;gap:8px;
-  transition:.2s;
+  transition:border-color var(--base) var(--ease),box-shadow var(--base) var(--ease),transform var(--base) var(--ease);
 }
 .feature:hover{
-  transform:translateY(-2px);
-  border-color:color-mix(in srgb,var(--primary) 30%, var(--border));
+  border-color:var(--accent-line);
   box-shadow:var(--shadow-sm);
+  transform:translateY(-2px);
 }
-.feature .fi{
-  width:36px;height:36px;border-radius:11px;
-  display:grid;place-items:center;flex:0 0 auto;
-  color:#fff;
+.feature-icon{
+  width:38px;height:38px;border-radius:11px;
+  background:var(--accent-solid);color:var(--accent-on);
+  display:grid;place-items:center;
+  margin-bottom:var(--s2);
+  box-shadow:0 2px 6px var(--accent-glow);
+  transition:transform var(--base) var(--ease),box-shadow var(--base) var(--ease),background var(--base) var(--ease);
 }
-.feature .ft{font-weight:800;font-size:13.5px;letter-spacing:-.01em;line-height:1.25}
-.feature .fd{font-size:11.5px;color:var(--muted);line-height:1.45}
+.feature:hover .feature-icon{
+  transform:translateY(-2px) rotate(-5deg);
+  box-shadow:0 6px 14px var(--accent-glow);
+}
+.feature-title{font-size:var(--fs-sm);font-weight:600;color:var(--text);line-height:1.35}
+.feature-desc{font-size:var(--fs-xs);color:var(--muted);line-height:1.55}
 
-.feature.violet .fi { background:linear-gradient(135deg,#8b5cf6,#6366f1); box-shadow:0 6px 16px rgba(139,92,246,.35) }
-.feature.blue   .fi { background:linear-gradient(135deg,#38bdf8,#0ea5e9); box-shadow:0 6px 16px rgba(56,189,248,.35) }
-.feature.amber  .fi { background:linear-gradient(135deg,#fbbf24,#f59e0b); box-shadow:0 6px 16px rgba(251,191,36,.35) }
-.feature.green  .fi { background:linear-gradient(135deg,#34d399,#10b981); box-shadow:0 6px 16px rgba(52,211,153,.35) }
-.feature.pink   .fi { background:linear-gradient(135deg,#f472b6,#ec4899); box-shadow:0 6px 16px rgba(244,114,182,.35) }
-.feature.red    .fi { background:linear-gradient(135deg,#f87171,#ef4444); box-shadow:0 6px 16px rgba(248,113,113,.35) }
+@media (min-width:480px){
+  .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4)}
+}
+@media (min-width:820px){
+  .features{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s5)}
+  .feature{padding:var(--s5)}
+}
 
 /* ============================================================
-   STEP (how it works)
+   STEPS — how it works
    ============================================================ */
-.step{
-  display:flex;gap:14px;align-items:flex-start;
-  padding:14px;border:1px solid var(--border);border-radius:var(--r);
-  background:var(--surface);box-shadow:var(--shadow-xs);
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s4)}
+.step{min-width:0;display:flex;gap:var(--s3);align-items:flex-start}
+.step-num{
+  width:28px;height:28px;flex:0 0 auto;border-radius:50%;
+  background:var(--accent-solid);color:var(--accent-on);
+  display:grid;place-items:center;font-weight:600;font-size:var(--fs-xs);
+  font-variant-numeric:tabular-nums;
+  box-shadow:0 1px 3px var(--accent-glow);
+  transition:transform var(--base) var(--ease),box-shadow var(--base) var(--ease);
 }
-.step .num{
-  width:34px;height:34px;flex:0 0 auto;border-radius:11px;
-  background:linear-gradient(135deg,var(--primary),var(--primary-2));
-  color:#fff;display:grid;place-items:center;font-weight:900;font-size:14px;
-  box-shadow:0 6px 16px rgba(99,102,241,.35);
-}
-.step .st{font-weight:800;font-size:13.5px;margin-bottom:2px}
-.step .sd{font-size:11.5px;color:var(--muted);line-height:1.5}
+.step:hover .step-num{transform:scale(1.08);box-shadow:0 4px 10px var(--accent-glow)}
+.step-body{min-width:0}
+.step-title{font-size:var(--fs-sm);font-weight:600;color:var(--text);line-height:1.3}
+.step-desc{font-size:var(--fs-xs);color:var(--muted);line-height:1.55;margin-top:2px}
+
+@media (min-width:640px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s5)}}
+@media (min-width:900px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
 
 /* ============================================================
-   PROMO
+   PAGE FOOTER
+   ============================================================ */
+.page-footer{
+  margin-top:var(--s8);padding-top:var(--s5);
+  border-top:1px solid var(--border);
+  font-size:var(--fs-xs);color:var(--muted);line-height:1.65;max-width:62ch;
+}
+
+/* ============================================================
+   LANDING HERO
+   ============================================================ */
+.hero{padding:var(--s5) 0 var(--s6);position:relative}
+
+.hero-mark{
+  width:48px;height:48px;border-radius:13px;
+  background:var(--accent-solid);color:var(--accent-on);
+  display:grid;place-items:center;margin-bottom:var(--s5);
+  box-shadow:0 3px 10px var(--accent-glow);
+  transition:transform var(--base) var(--ease),box-shadow var(--base) var(--ease);
+  animation:heroIn .5s var(--ease) both;
+}
+.hero-mark:hover{transform:rotate(-6deg) scale(1.05);box-shadow:0 6px 16px var(--accent-glow)}
+
+.hero h1{
+  font-family:var(--font-serif);font-weight:600;
+  font-size:var(--fs-2xl);letter-spacing:-.025em;line-height:1.15;
+  margin-bottom:var(--s3);max-width:20ch;position:relative;display:inline-block;
+  animation:heroIn .5s var(--ease) .05s both;
+}
+.hero h1::after{
+  content:'';position:absolute;left:0;bottom:-10px;width:52px;height:3px;
+  border-radius:2px;background:var(--accent);
+  transform-origin:left;animation:barGrow .55s var(--ease) .35s both;
+}
+.hero .lede{
+  margin-top:var(--s5);
+  animation:heroIn .5s var(--ease) .1s both;
+}
+
+.hero-chips{
+  display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--s5);
+  animation:heroIn .5s var(--ease) .15s both;
+}
+.hero-chips span{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:5px 11px;border-radius:99px;
+  font-size:var(--fs-xs);font-weight:500;
+  background:var(--surface);border:1px solid var(--border);color:var(--text-2);
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),
+             background var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.hero-chips span svg{color:var(--accent)}
+.hero-chips span:hover{
+  border-color:var(--accent-line);color:var(--text);
+  background:var(--accent-soft);transform:translateY(-1px);
+}
+
+/* Hero stat row — bright accent numbers */
+.hero-stats{
+  display:flex;gap:var(--s6);flex-wrap:wrap;
+  margin-top:var(--s6);padding-top:var(--s5);
+  border-top:1px solid var(--border);
+  animation:heroIn .5s var(--ease) .2s both;
+}
+.hero-stat{display:flex;flex-direction:column;gap:3px;min-width:0}
+.hero-stat strong{
+  font-size:var(--fs-2xl);font-weight:600;line-height:1;
+  color:var(--accent);letter-spacing:-.03em;
+  font-variant-numeric:tabular-nums;
+  font-family:var(--font-serif);
+}
+.hero-stat span{
+  font-size:var(--fs-xs);color:var(--muted);
+  text-transform:uppercase;letter-spacing:.06em;font-weight:500;
+}
+
+@media (min-width:768px){
+  .hero{padding:var(--s6) 0 var(--s7)}
+  .hero h1{font-size:var(--fs-3xl)}
+}
+
+/* ============================================================
+   SUBJECT LIST
+   ============================================================ */
+.subject-list{display:flex;flex-direction:column;gap:var(--s2)}
+.subject-card{
+  display:flex;align-items:center;gap:var(--s3);
+  padding:var(--s3);border:1px solid var(--border);border-radius:var(--r-lg);
+  background:var(--surface);cursor:pointer;text-align:left;width:100%;color:var(--text);
+  transition:border-color var(--base) var(--ease),box-shadow var(--base) var(--ease),
+             background var(--base) var(--ease),transform var(--base) var(--ease);
+  min-height:var(--tap);box-shadow:var(--shadow-xs);
+  position:relative;overflow:hidden;
+}
+.subject-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--accent);
+  transform:scaleY(0);transform-origin:center;
+  transition:transform var(--base) var(--ease);
+}
+.subject-card:hover{
+  border-color:var(--accent-line);
+  box-shadow:var(--shadow-sm);
+  transform:translateY(-1px);
+}
+.subject-card:hover::before{transform:scaleY(1)}
+.subject-card:active{transform:translateY(0)}
+.subject-card .ico{
+  width:44px;height:44px;border-radius:var(--r);flex:0 0 auto;
+  background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;font-family:var(--font-serif);font-weight:600;font-size:20px;
+  overflow:hidden;position:relative;border:1px solid var(--accent-line);
+  transition:transform var(--base) var(--ease),background var(--base) var(--ease);
+}
+.subject-card:hover .ico{transform:rotate(-3deg);background:var(--accent-line)}
+.subject-card .ico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.subject-card .ico .letter{position:absolute;inset:0;display:grid;place-items:center;line-height:1;padding-bottom:1px}
+.subject-card .meta{flex:1;min-width:0}
+.subject-card .meta .ttl{font-weight:600;font-size:var(--fs-base);line-height:1.3;letter-spacing:-.005em}
+.subject-card .meta .sub{font-size:var(--fs-xs);color:var(--muted);margin-top:3px;display:flex;gap:var(--s2);flex-wrap:wrap;align-items:center}
+.subject-card .arrow{color:var(--muted);flex:0 0 auto;display:grid;place-items:center;transition:transform var(--base) var(--ease),color var(--base) var(--ease)}
+.subject-card:hover .arrow{color:var(--accent);transform:translateX(3px)}
+@media (min-width:768px){
+  .subject-card{padding:var(--s4);gap:var(--s4)}
+  .subject-card .ico{width:52px;height:52px;font-size:22px}
+}
+
+/* ============================================================
+   PROMO STRIP
    ============================================================ */
 .promo{
-  position:relative;overflow:hidden;
-  background:linear-gradient(135deg,
-    color-mix(in srgb,var(--primary) 22%, var(--surface)),
-    color-mix(in srgb,var(--primary-2) 12%, var(--surface)) 70%);
-  border:1px solid color-mix(in srgb,var(--primary) 30%, var(--border));
+  margin-top:var(--s7);
+  padding:var(--s5);
   border-radius:var(--r-lg);
-  padding:18px 18px;
+  background:var(--accent-soft);
+  border:1px solid var(--accent-line);
+  display:flex;flex-direction:column;gap:var(--s3);
+  position:relative;overflow:hidden;
 }
-.promo::after{
-  content:'';position:absolute;right:-40px;top:-40px;
-  width:160px;height:160px;border-radius:50%;
-  background:radial-gradient(circle, color-mix(in srgb,var(--primary) 40%, transparent), transparent 70%);
-  filter:blur(20px);pointer-events:none;
+.promo::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);
 }
-.promo h3{font-size:15.5px;font-weight:800;margin-bottom:4px}
-.promo p{font-size:12.5px;color:var(--text-2);line-height:1.5}
-.promo .row{margin-top:12px;position:relative;z-index:1}
+.promo h3{font-size:var(--fs-base);font-weight:600;color:var(--text)}
+.promo p{font-size:var(--fs-sm);color:var(--text-2);line-height:1.55;max-width:52ch}
+.promo .row{gap:6px}
 
 /* ============================================================
-   ABOUT CARD
+   ABOUT BLOCK
    ============================================================ */
-.about-card{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--r-lg);
-  padding:18px;
-  box-shadow:var(--shadow-xs);
+.about{margin-top:var(--s7)}
+.about-lede{
+  color:var(--text-2);font-size:var(--fs-sm);line-height:1.65;
+  max-width:60ch;margin-bottom:var(--s5);
 }
-.about-card .brandrow{display:flex;align-items:center;gap:10px;margin-bottom:12px}
-.about-card .brandrow .logo{width:32px;height:32px;font-size:14px;border-radius:10px}
-.about-card .brandrow .ttl{font-weight:900;font-size:14px;letter-spacing:-.02em}
-.about-card .brandrow .sub{font-size:10.5px;color:var(--muted)}
-.about-card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
-.about-card .tags span{
-  display:inline-flex;align-items:center;gap:4px;
-  padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;
-  background:var(--soft);border:1px solid var(--border);color:var(--muted);
+.about-points{display:grid;gap:var(--s4);grid-template-columns:minmax(0,1fr)}
+.about-point{
+  display:flex;gap:var(--s3);align-items:flex-start;
+  padding-top:var(--s4);border-top:1px solid var(--border);
 }
-.about-card .madeby{
-  font-size:10.5px;color:var(--muted);margin-top:14px;padding-top:14px;
-  border-top:1px dashed var(--border);text-align:center;line-height:1.55;
+.about-num{
+  font-family:var(--font-serif);font-size:var(--fs-base);font-weight:600;
+  color:var(--accent);flex:0 0 auto;width:26px;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
 }
+.about-point h4{
+  font-size:var(--fs-sm);font-weight:600;color:var(--text);
+  margin-bottom:4px;letter-spacing:-.005em;
+}
+.about-point p{
+  font-size:var(--fs-xs);color:var(--muted);line-height:1.55;max-width:52ch;
+}
+@media (min-width:640px){
+  .about-points{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s5)}
+  .about-point{flex-direction:column;gap:var(--s2);padding-top:var(--s5)}
+}
+
+/* ============================================================
+   BANNER
+   ============================================================ */
+.banner{
+  padding:var(--s3) var(--s4);border-radius:var(--r);
+  background:var(--amber-bg);color:var(--amber);
+  font-size:var(--fs-sm);line-height:1.5;
+  border:1px solid rgba(161,98,7,.18);margin-bottom:var(--s4);
+  animation:fadeUp var(--slow) var(--ease) both;
+}
+
+/* ============================================================
+   CHECKBOX ROWS
+   ============================================================ */
+.chk{
+  display:flex;align-items:center;gap:var(--s3);
+  padding:var(--s3) var(--s4);border:1px solid var(--border);border-radius:var(--r);
+  background:var(--surface);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease),transform var(--fast) var(--ease);
+  min-height:var(--tap);
+}
+.chk:hover{border-color:var(--border-2)}
+.chk:active{transform:scale(.995)}
+.chk.on{border-color:var(--accent);background:var(--accent-soft)}
+.chk .box{
+  width:18px;height:18px;border-radius:5px;border:1.5px solid var(--border-2);
+  display:grid;place-items:center;font-size:11px;color:transparent;flex:0 0 auto;
+  transition:background var(--fast) var(--ease),border-color var(--fast) var(--ease),
+             color var(--fast) var(--ease),transform var(--base) var(--ease);
+  line-height:1;
+}
+.chk.on .box{background:var(--accent-solid);border-color:var(--accent-solid);color:var(--accent-on);transform:scale(1.08)}
 
 /* ============================================================
    STEPPER
    ============================================================ */
-.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--border);border-radius:12px;overflow:hidden;background:var(--soft);height:46px}
-.stepper button{width:44px;height:46px;border:0;background:transparent;color:var(--text);font-size:20px;font-weight:800;cursor:pointer;transition:.12s}
-.stepper button:hover{background:var(--surface)}
-.stepper button:active{background:color-mix(in srgb,var(--primary) 12%, var(--surface))}
-.stepper input{
-  width:64px;height:46px;border:0;background:transparent;text-align:center;
-  font-size:16px;font-weight:800;color:var(--text);outline:none;-moz-appearance:textfield;
+.stepper{
+  display:inline-flex;align-items:center;
+  border:1px solid var(--border);border-radius:var(--r);overflow:hidden;
+  background:var(--surface);height:var(--tap);
 }
-.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.stepper button{
+  width:var(--tap);height:100%;color:var(--text-2);font-size:var(--fs-lg);
+  font-weight:400;line-height:1;
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+.stepper button:hover{background:var(--surface-2);color:var(--text)}
+.stepper button:active{background:var(--accent-soft);color:var(--accent)}
+.stepper input{
+  width:56px;height:100%;border:0;
+  border-left:1px solid var(--border);border-right:1px solid var(--border);
+  background:transparent;text-align:center;font-size:var(--fs-sm);font-weight:600;
+  color:var(--text);outline:none;font-variant-numeric:tabular-nums;
+  transition:background var(--fast) var(--ease);-moz-appearance:textfield;
+}
+.stepper input:focus{background:var(--surface-2)}
+.stepper input::-webkit-outer-spin-button,
+.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 
 /* ============================================================
-   OPTIONS
+   QUIZ OPTIONS
    ============================================================ */
 .option{
-  display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;
-  padding:15px 16px;border:1.6px solid var(--border);border-radius:var(--r);
-  background:var(--surface);
-  cursor:pointer;transition:.15s;font-size:14.5px;line-height:1.5;color:var(--text);margin-bottom:10px;min-height:54px;
+  display:flex;gap:var(--s3);align-items:flex-start;width:100%;text-align:left;
+  padding:var(--s3) var(--s4);border:1.5px solid var(--border);border-radius:var(--r-lg);
+  background:var(--surface);cursor:pointer;font-size:var(--fs-base);line-height:1.5;
+  color:var(--text);margin-bottom:var(--s2);min-height:var(--tap);
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease),
+             box-shadow var(--base) var(--ease),transform var(--fast) var(--ease);
 }
 .option:last-child{margin-bottom:0}
-.option:hover:not(:disabled):not(.locked){border-color:var(--primary);background:color-mix(in srgb,var(--primary) 5%, var(--surface))}
+.option:hover:not(:disabled):not(.locked){border-color:var(--border-2);background:var(--surface-2)}
+.option:active:not(:disabled):not(.locked){transform:scale(.995)}
 .option:disabled{cursor:default}
 .option .key{
-  flex:0 0 auto;width:28px;height:28px;border-radius:9px;background:var(--soft);border:1px solid var(--border);
-  display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--muted);transition:.15s;
+  flex:0 0 auto;width:26px;height:26px;border-radius:6px;
+  background:var(--surface-2);border:1px solid var(--border);
+  display:grid;place-items:center;font-size:var(--fs-xs);font-weight:600;color:var(--muted);
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease),
+             border-color var(--fast) var(--ease);
+  font-variant-numeric:tabular-nums;
 }
 .option .body{flex:1;padding-top:2px}
-.option.selected{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 9%,var(--surface))}
-.option.selected .key{background:var(--primary);color:#fff;border-color:transparent}
-.option.correct{border-color:var(--green)!important;background:var(--green-bg)!important;animation:pop .32s ease}
-.option.correct .key{background:var(--green);color:#fff;border-color:transparent}
-.option.wrong{border-color:var(--red)!important;background:var(--red-bg)!important;animation:shake .35s ease}
-.option.wrong .key{background:var(--red);color:#fff;border-color:transparent}
-@keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.015)}100%{transform:scale(1)}}
-@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+.option.selected{
+  border-color:var(--accent);background:var(--accent-soft);
+  box-shadow:0 0 0 3px var(--accent-soft);
+}
+.option.selected .key{
+  background:var(--accent-solid);color:var(--accent-on);border-color:var(--accent-solid);
+  animation:keyPop var(--base) var(--ease) both;
+}
+.option.correct{
+  border-color:var(--green);background:var(--green-bg);
+  box-shadow:0 0 0 3px var(--green-bg);animation:pop var(--slow) var(--ease);
+}
+.option.correct .key{background:var(--green);color:#fff;border-color:var(--green)}
+.option.wrong{
+  border-color:var(--red);background:var(--red-bg);
+  box-shadow:0 0 0 3px var(--red-bg);animation:shake var(--slow) var(--ease);
+}
+.option.wrong .key{background:var(--red);color:#fff;border-color:var(--red)}
+.option .mark{flex:0 0 auto;margin-top:3px;animation:pop var(--slow) var(--ease)}
 
-.flash{position:fixed;inset:0;pointer-events:none;z-index:90;animation:fadeOut .55s ease-out forwards}
-.flash.correct{background:radial-gradient(circle at 50% 45%, rgba(16,185,129,.35), transparent 65%)}
-.flash.wrong{background:radial-gradient(circle at 50% 45%, rgba(239,68,68,.35), transparent 65%)}
-@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+.flash{position:fixed;inset:0;pointer-events:none;z-index:90;animation:fadeOut .5s var(--ease) forwards}
+.flash.correct{background:radial-gradient(circle at 50% 45%,rgba(26,122,74,.22),transparent 62%)}
+.flash.wrong{background:radial-gradient(circle at 50% 45%,rgba(185,28,28,.22),transparent 62%)}
 
 .reveal-card{
-  margin-top:14px;border-radius:14px;padding:14px 16px;
-  border:1px solid color-mix(in srgb,var(--blue) 30%, transparent);background:var(--blue-bg);
+  margin-top:var(--s4);border-radius:var(--r);padding:var(--s3) var(--s4);
+  border:1px solid var(--border);background:var(--surface-2);
+  animation:fadeUp var(--base) var(--ease) both;
 }
-.reveal-card.ok{background:var(--green-bg);border-color:color-mix(in srgb,var(--green) 35%, transparent)}
-.reveal-card.bad{background:var(--red-bg);border-color:color-mix(in srgb,var(--red) 35%, transparent)}
-.reveal-head{display:flex;align-items:center;gap:9px;font-weight:800;font-size:14.5px;margin-bottom:8px}
+.reveal-card.ok{border-color:var(--green);background:var(--green-bg)}
+.reveal-card.bad{border-color:var(--red);background:var(--red-bg)}
+.reveal-head{
+  display:flex;align-items:center;gap:var(--s2);
+  font-weight:600;font-size:var(--fs-sm);margin-bottom:var(--s2);letter-spacing:-.005em;
+}
 .reveal-card.ok .reveal-head{color:var(--green)}
 .reveal-card.bad .reveal-head{color:var(--red)}
 .reveal-answer{
   display:inline-flex;align-items:center;gap:6px;
-  padding:3px 10px;border-radius:999px;font-size:12.5px;font-weight:800;
-  background:var(--surface);border:1px solid var(--border);margin-bottom:10px;
+  padding:3px 9px;border-radius:var(--r-sm);
+  font-size:var(--fs-xs);font-weight:500;
+  background:var(--surface);border:1px solid var(--border);margin-bottom:var(--s3);
 }
-.reveal-answer b{color:var(--green);letter-spacing:.02em}
+.reveal-answer b{color:var(--green);font-weight:600;margin-left:2px}
 .reveal-explain{
-  font-size:13.5px;line-height:1.6;color:var(--text);
-  padding:10px 13px;border-radius:10px;background:color-mix(in srgb,var(--surface) 70%, transparent);
+  font-size:var(--fs-sm);line-height:1.6;color:var(--text-2);
+  padding-top:var(--s2);border-top:1px solid var(--border);margin-top:var(--s2);
 }
-.reveal-explain b{font-weight:800;color:var(--primary)}
+.reveal-explain b{font-weight:600;color:var(--text)}
 
 /* ============================================================
    QUIZ ACTIONS
    ============================================================ */
-.quiz-actions{
-  margin-top:14px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.quiz-actions-meta{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 4px;
-}
-.quiz-actions-row{
-  display:grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap:10px;
-}
-.quiz-actions-row .btn{
-  width:100%;margin:0;min-height:48px;font-size:14.5px;border-radius:13px;
-}
-.quiz-actions-row .btn.skip{
-  background:var(--soft);border-color:transparent;color:var(--text-2);box-shadow:none;
-}
-.quiz-actions-row .btn.skip:hover:not(:disabled){
-  background:color-mix(in srgb,var(--red) 10%, var(--soft));
-  color:var(--red);border-color:transparent;transform:none;box-shadow:none;
-}
-.quiz-actions-row .btn.next{
-  background:linear-gradient(135deg,var(--primary),var(--primary-2));
-  color:#fff;border-color:transparent;box-shadow:0 8px 22px rgba(99,102,241,.35);
-}
-.quiz-actions-row .btn.next:hover:not(:disabled){
-  box-shadow:0 12px 28px rgba(99,102,241,.45);
-}
+.quiz-actions{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.quiz-actions-meta{display:flex;align-items:center;justify-content:space-between;padding:0 2px}
+.quiz-actions-row{display:grid;grid-template-columns:1fr 1.6fr;gap:var(--s2)}
+.quiz-actions-row .btn{width:100%;height:48px;font-size:var(--fs-base)}
 
 /* ============================================================
-   PROGRESS
+   PROGRESS BAR
    ============================================================ */
-.pbar{height:6px;border-radius:99px;background:var(--soft);overflow:hidden}
-.pbar > i{display:block;height:100%;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .3s ease;border-radius:99px}
+.pbar{height:3px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.pbar>i{
+  display:block;height:100%;background:var(--accent-solid);
+  transition:width .3s var(--ease),background var(--base) var(--ease);border-radius:99px;
+}
 
 /* ============================================================
    PORTAL + MODAL
    ============================================================ */
 .portal-root{position:relative;z-index:9999}
-
 .overlay{
-  position:fixed;inset:0;
-  background:rgba(8,12,24,.72);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  position:fixed;inset:0;background:rgba(10,13,17,.55);
   display:flex;align-items:flex-end;justify-content:center;
-  animation:fadeIn .2s ease;
+  animation:overlayIn var(--base) var(--ease) both;
 }
-@media(min-width:640px){.overlay{align-items:center;padding:24px}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+[data-theme="dark"] .overlay{background:rgba(0,0,0,.65)}
+@media (min-width:640px){.overlay{align-items:center;padding:var(--s5)}}
 
 .modal{
-  background:var(--surface);
-  border:1px solid var(--border);
-  width:100%;max-width:760px;
+  background:var(--surface);border:1px solid var(--border);
+  width:100%;max-width:720px;
   display:flex;flex-direction:column;overflow:hidden;
   box-shadow:var(--shadow-lg);
   height:100dvh;max-height:100dvh;border-radius:0;
-  animation:sheetIn .3s cubic-bezier(.2,.9,.3,1.1);
+  animation:sheetIn var(--slow) var(--ease) both;
 }
-@media(min-width:640px){
-  .modal{border-radius:22px;height:auto;max-height:min(88dvh, 900px);animation:modalIn .25s cubic-bezier(.2,.9,.3,1.2)}
+@media (min-width:640px){
+  .modal{border-radius:var(--r-xl);height:auto;max-height:min(88dvh,900px);animation:modalIn var(--slow) var(--ease) both}
 }
-@keyframes sheetIn{from{transform:translateY(30px)}to{transform:none}}
-@keyframes modalIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
-
 .modal-head{
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  padding:14px 16px;padding-top:calc(14px + var(--safe-t));
-  border-bottom:1px solid var(--border);
-  flex:0 0 auto;z-index:2;
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s3);
+  padding:var(--s3) var(--s4);padding-top:calc(var(--s3) + var(--safe-t));
+  border-bottom:1px solid var(--border);flex:0 0 auto;
 }
-@media(min-width:640px){.modal-head{padding:16px 20px;padding-top:16px;border-radius:22px 22px 0 0}}
+@media (min-width:640px){.modal-head{padding:var(--s4) var(--s5)}}
 .modal-body{
   flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;
-  overscroll-behavior:contain;
-  padding:14px;padding-bottom:calc(32px + var(--safe-b));
+  overscroll-behavior:contain;padding:var(--s4);padding-bottom:calc(var(--s6) + var(--safe-b));
 }
-@media(min-width:640px){.modal-body{padding:20px 22px 28px}}
-.sheet-handle{width:40px;height:4px;border-radius:99px;background:var(--border-2);margin:8px auto 0;flex:0 0 auto}
-@media(min-width:640px){.sheet-handle{display:none}}
+@media (min-width:640px){.modal-body{padding:var(--s5)}}
+.sheet-handle{
+  width:36px;height:4px;border-radius:99px;background:var(--border-2);
+  margin:var(--s2) auto 0;flex:0 0 auto;
+}
+@media (min-width:640px){.sheet-handle{display:none}}
 
 /* ============================================================
-   JOURNEY
+   THEME PICKER
    ============================================================ */
-.journey{display:flex;align-items:flex-end;gap:3px;height:110px;padding:10px;background:var(--soft);border-radius:12px;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.journey .bar{flex:1;min-width:8px;border-radius:5px 5px 2px 2px;transition:.2s;cursor:help}
-.journey .bar.ok{background:linear-gradient(180deg,#34d399,#059669)}
-.journey .bar.bad{background:linear-gradient(180deg,#fb7185,#e11d48)}
+.theme-picker{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);margin-top:var(--s2);
+}
+.theme-swatch{
+  display:flex;flex-direction:column;align-items:center;gap:var(--s2);
+  padding:var(--s3) var(--s2);
+  border:1.5px solid var(--border);border-radius:var(--r);background:var(--surface);
+  cursor:pointer;
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.theme-swatch:hover{border-color:var(--border-2);background:var(--surface-2)}
+.theme-swatch:active{transform:scale(.97)}
+.theme-swatch.selected{border-color:var(--accent);background:var(--accent-soft)}
+.swatch-circle{
+  width:30px;height:30px;border-radius:50%;
+  display:grid;place-items:center;color:#fff;
+  transition:transform var(--base) var(--ease),box-shadow var(--base) var(--ease);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);
+}
+.theme-swatch.selected .swatch-circle{
+  transform:scale(1.08);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 0 0 3px var(--accent-soft);
+}
+.swatch-label{font-size:var(--fs-xs);font-weight:500;color:var(--text-2);letter-spacing:.005em}
+.theme-swatch.selected .swatch-label{color:var(--accent);font-weight:600}
+
+/* ============================================================
+   PACE JOURNEY
+   ============================================================ */
+.journey{
+  display:flex;align-items:flex-end;gap:3px;height:96px;padding:var(--s2);
+  background:var(--surface-2);border-radius:var(--r);overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+.journey .bar{
+  flex:1;min-width:6px;border-radius:3px 3px 0 0;
+  transition:height var(--base) var(--ease),opacity var(--fast) var(--ease);
+  cursor:help;animation:fadeUp var(--base) var(--ease) both;
+}
+.journey .bar:hover{opacity:.75}
+.journey .bar.ok{background:var(--green)}
+.journey .bar.bad{background:var(--red)}
 .journey .bar.skipped{background:var(--border-2)}
 
 /* ============================================================
-   HISTORY ROWS + QREVIEW
+   HISTORY
    ============================================================ */
 .hrow{
-  display:flex;align-items:center;gap:12px;padding:14px;
-  border:1px solid var(--border);border-radius:var(--r);
-  background:var(--surface);
-  margin-bottom:10px;transition:.15s;
+  display:flex;align-items:center;gap:var(--s3);
+  padding:var(--s3) var(--s4);border:1px solid var(--border);border-radius:var(--r-lg);
+  background:var(--surface);margin-bottom:var(--s2);
+  transition:border-color var(--fast) var(--ease),box-shadow var(--fast) var(--ease);
   box-shadow:var(--shadow-xs);
 }
-.hrow:hover{box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.hrow:hover{border-color:var(--border-2);box-shadow:var(--shadow-sm)}
 .score-pill{
-  width:56px;height:56px;flex:0 0 auto;border-radius:14px;display:grid;place-items:center;
-  font-weight:900;font-size:17px;line-height:1;
+  width:52px;height:52px;flex:0 0 auto;border-radius:var(--r);
+  display:grid;place-items:center;font-weight:600;font-size:var(--fs-base);
+  line-height:1;font-variant-numeric:tabular-nums;
+  border:1px solid transparent;letter-spacing:-.02em;
 }
-.score-pill small{font-size:10px;opacity:.7;margin-left:1px;font-weight:800}
-.score-pill.good{background:var(--green-bg);color:var(--green)}
-.score-pill.mid{background:var(--amber-bg);color:var(--amber)}
-.score-pill.bad{background:var(--red-bg);color:var(--red)}
+.score-pill small{font-size:11px;opacity:.7;margin-left:1px;font-weight:400}
+.score-pill.good{background:var(--green-bg);color:var(--green);border-color:rgba(26,122,74,.22)}
+.score-pill.mid{background:var(--amber-bg);color:var(--amber);border-color:rgba(161,98,7,.22)}
+.score-pill.bad{background:var(--red-bg);color:var(--red);border-color:rgba(185,28,28,.22)}
 
-.qreview-list{display:flex;flex-direction:column;gap:10px}
+/* ============================================================
+   QUESTION REVIEW
+   ============================================================ */
+.qreview-list{display:flex;flex-direction:column;gap:var(--s2)}
 .qreview{
-  background:var(--surface);
-  border:1px solid var(--border);border-radius:14px;padding:13px 14px;
-  box-shadow:var(--shadow-xs);
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r-lg);padding:var(--s4);box-shadow:var(--shadow-xs);
+  transition:border-color var(--fast) var(--ease);
 }
-.qreview-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;justify-content:flex-start}
-.qreview-question{font-size:14px;font-weight:600;line-height:1.5;margin-bottom:10px;color:var(--text)}
-.qreview-answers{display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--text-2)}
-.qreview-answers .ok{color:var(--green);font-weight:700}
-.qreview-answers .bad{color:var(--red);font-weight:700}
-.qreview .explain{margin-top:10px}
+.qreview:hover{border-color:var(--border-2)}
+.qreview-head{display:flex;align-items:center;gap:var(--s2);margin-bottom:var(--s3);flex-wrap:wrap}
+.qreview-question{font-size:var(--fs-sm);font-weight:500;line-height:1.55;margin-bottom:var(--s2);color:var(--text)}
+.qreview-answers{display:flex;flex-direction:column;gap:3px;font-size:var(--fs-xs);color:var(--text-2);line-height:1.5}
+.qreview-answers .ok{color:var(--green);font-weight:600}
+.qreview-answers .bad{color:var(--red);font-weight:600}
 
 /* ============================================================
-   NOTES / OPTS
+   NOTES
    ============================================================ */
-.note{
-  border-left:3px solid var(--primary);
-  padding-left:14px;
+.note{border-left:2px solid var(--accent);padding-left:var(--s4)}
+.note-head{display:flex;align-items:center;gap:var(--s2);margin-bottom:var(--s3);flex-wrap:wrap}
+.qnum{
+  min-width:26px;height:22px;padding:0 6px;border-radius:var(--r-sm);
+  background:var(--surface-2);border:1px solid var(--border);
+  display:inline-grid;place-items:center;font-size:11px;font-weight:600;color:var(--muted);
 }
-.note-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-.qnum{width:28px;height:28px;border-radius:8px;background:var(--soft);border:1px solid var(--border);display:grid;place-items:center;font-size:11.5px;font-weight:800;color:var(--muted)}
-.qtext{font-size:15px;font-weight:600;line-height:1.55;margin-bottom:12px}
-.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
-.opts li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;padding:9px 11px;border-radius:10px;background:var(--soft);line-height:1.45}
-.opts li.ans{background:var(--green-bg);font-weight:700}
-.opts li .tag{flex:0 0 auto;width:22px;height:22px;border-radius:7px;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;font-size:11px;font-weight:800;color:var(--muted)}
-.opts li.ans .tag{background:var(--green);color:#fff;border-color:transparent}
-.tick{margin-left:auto;color:var(--green);font-weight:900}
-.explain{margin-top:10px;padding:11px 14px;border-radius:11px;background:var(--blue-bg);font-size:13px;line-height:1.6;border:1px solid color-mix(in srgb,var(--blue) 22%,transparent)}
-.explain b{color:var(--primary);font-weight:800}
+.qtext{font-size:var(--fs-base);font-weight:500;line-height:1.55;margin-bottom:var(--s3)}
+.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.opts li{
+  display:flex;gap:var(--s2);align-items:flex-start;font-size:var(--fs-sm);
+  padding:var(--s2) var(--s3);border-radius:var(--r-sm);background:var(--surface-2);
+  line-height:1.45;transition:background var(--fast) var(--ease);
+}
+.opts li.ans{background:var(--green-bg);font-weight:500}
+.opts li .tag{
+  flex:0 0 auto;width:20px;height:20px;border-radius:var(--r-sm);
+  background:var(--surface);border:1px solid var(--border);
+  display:grid;place-items:center;font-size:11px;font-weight:600;color:var(--muted);
+}
+.opts li.ans .tag{background:var(--green);color:#fff;border-color:var(--green)}
+.tick{margin-left:auto;color:var(--green);font-weight:600}
+.explain{
+  margin-top:var(--s3);padding:var(--s3);border-radius:var(--r);
+  background:var(--accent-soft);font-size:var(--fs-sm);line-height:1.6;
+  color:var(--text-2);border-left:2px solid var(--accent);
+  animation:fadeUp var(--base) var(--ease) both;
+}
+.explain b{color:var(--text);font-weight:600}
 
 /* ============================================================
-   SUBJECT PICKER
+   CHEATSHEET HEAD
    ============================================================ */
-.subject-card{
-  display:flex;align-items:center;gap:14px;padding:14px;border-radius:var(--r-lg);
-  border:1.5px solid var(--border);
-  background:var(--surface);
-  cursor:pointer;transition:.18s;text-align:left;width:100%;color:var(--text);
-  box-shadow:var(--shadow-xs);
+.cheat-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:var(--s3);
+  margin-bottom:var(--s5);flex-wrap:wrap;
 }
-.subject-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow)}
-.subject-card .ico{
-  width:58px;height:58px;border-radius:15px;flex:0 0 auto;
-  background:linear-gradient(135deg,var(--primary),var(--primary-2));
-  color:#fff;display:grid;place-items:center;font-weight:900;font-size:22px;
-  box-shadow:0 8px 20px rgba(99,102,241,.28);overflow:hidden;position:relative;
+.toggle-answers{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:0 var(--s3);height:36px;border-radius:var(--r-sm);
+  font-size:var(--fs-xs);font-weight:500;
+  background:var(--surface);border:1px solid var(--border);color:var(--text-2);
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
+  white-space:nowrap;
 }
-.subject-card .ico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.subject-card .ico .letter{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px}
-.subject-card .meta{flex:1;min-width:0}
-.subject-card .meta .ttl{font-weight:800;font-size:15.5px;line-height:1.25}
-.subject-card .meta .sub{font-size:11.5px;color:var(--muted);margin-top:4px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.subject-card .meta .sub .pill{
-  display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;
-  background:var(--soft);border:1px solid var(--border);font-weight:700;
-}
-.subject-card .arrow{color:var(--muted);flex:0 0 auto;display:grid;place-items:center}
-
-/* Landing hero */
-.landing-hero{
-  text-align:center;
-  padding: 22px 0 26px;
-}
-.landing-hero .logo{
-  margin: 0 auto 16px;
-  width: 62px; height: 62px;
-  border-radius: 20px;
-  font-size: 26px;
-  box-shadow: 0 14px 36px rgba(99,102,241,.4);
-}
-.landing-hero h1{
-  font-size: 26px;
-  letter-spacing: -.03em;
-  line-height: 1.15;
-}
-.landing-hero .tagline{
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.55;
-  max-width: 460px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.landing-hero .chips{
-  display: flex; justify-content: center; gap: 6px; flex-wrap: wrap;
-  margin-top: 16px;
-}
-.landing-hero .chips span{
-  display: inline-flex; align-items: center; gap: 5px;
-  padding: 5px 11px; border-radius: 999px;
-  font-size: 11px; font-weight: 800;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-2);
-}
-.landing-hero .chips span svg{ color: var(--primary) }
-
-.pick-label{
-  font-weight: 800; font-size: 12px; color: var(--muted);
-  text-transform: uppercase; letter-spacing: .08em;
-  margin-bottom: 10px;
-  display: flex; align-items: center; gap: 8px;
-}
-.pick-label::before{
-  content: ''; width: 6px; height: 6px; border-radius: 50%;
-  background: var(--primary);
-}
+.toggle-answers:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
 
 /* ============================================================
-   CHECKBOX CARDS
+   SETTINGS ROWS
    ============================================================ */
-.chk{
-  display:flex;align-items:center;gap:11px;padding:12px 14px;border:1.5px solid var(--border);border-radius:13px;
-  background:var(--surface);
-  cursor:pointer;transition:.15s;user-select:none;min-height:56px;
+.setrow{
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
+  padding:var(--s3) 0;border-bottom:1px solid var(--border);
 }
-.chk:hover{border-color:var(--primary)}
-.chk.on{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 7%,var(--surface))}
-.chk .box{width:20px;height:20px;border-radius:6px;border:2px solid var(--border-2);display:grid;place-items:center;font-size:12px;color:#fff;flex:0 0 auto;transition:.15s;font-weight:900}
-.chk.on .box{background:var(--primary);border-color:var(--primary)}
+.setrow:last-child{border-bottom:0}
+.setrow .lbl{font-weight:500;font-size:var(--fs-sm);letter-spacing:-.005em}
+.setrow .hint{font-size:var(--fs-xs);color:var(--muted);margin-top:2px;line-height:1.5}
+
+.switch{
+  position:relative;width:42px;height:24px;border-radius:99px;
+  background:var(--border-2);cursor:pointer;
+  transition:background var(--base) var(--ease);
+  flex:0 0 auto;border:0;padding:0;
+}
+.switch.on{background:var(--accent-solid)}
+.switch i{
+  position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;
+  background:#fff;transition:left var(--base) var(--ease);
+  pointer-events:none;box-shadow:0 1px 2px rgba(0,0,0,.15);
+}
+.switch.on i{left:21px}
+
+/* ============================================================
+   EMPTY STATES
+   ============================================================ */
+.empty{padding:var(--s7) var(--s4);color:var(--muted);text-align:left}
+.empty-mark{
+  width:48px;height:48px;border-radius:var(--r-lg);
+  background:var(--accent-soft);color:var(--accent);
+  display:grid;place-items:center;margin-bottom:var(--s4);
+  border:1px solid var(--accent-line);animation:pop var(--slow) var(--ease) both;
+}
+.empty h3{color:var(--text);margin-bottom:6px;font-size:var(--fs-base)}
+.empty p{font-size:var(--fs-sm);max-width:52ch;line-height:1.6}
 
 /* ============================================================
    MISC
    ============================================================ */
-.banner{padding:12px 14px;border-radius:12px;background:var(--amber-bg);font-size:12.5px;line-height:1.5;border:1px solid color-mix(in srgb,var(--amber) 30%,transparent);margin-bottom:14px}
-.empty{text-align:center;padding:44px 20px;color:var(--muted)}
-.empty .big{font-size:40px;margin-bottom:10px;opacity:.85}
-.empty h3{color:var(--text);margin-bottom:6px}
-.spin{width:34px;height:34px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
-@keyframes spin{to{transform:rotate(360deg)}}
-.center{display:grid;place-items:center;min-height:100vh;min-height:100dvh;padding:20px}
-.switch{position:relative;width:46px;height:27px;border-radius:99px;background:var(--border-2);cursor:pointer;transition:.2s;flex:0 0 auto;border:0;padding:0}
-.switch.on{background:var(--primary)}
-.switch i{position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 4px rgba(0,0,0,.25);pointer-events:none}
-.switch.on i{left:22px}
-.setrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
-.setrow:last-child{border-bottom:0}
-.setrow .lbl{font-weight:700;font-size:13.5px}
-.setrow .hint{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.45}
-.kbd{display:inline-block;padding:2px 6px;border-radius:5px;border:1px solid var(--border);background:var(--soft);font-size:10.5px;font-weight:700;font-family:ui-monospace,monospace}
-.pill-row{display:flex;gap:6px;flex-wrap:wrap}
-
-.cheat-head{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}
-.toggle-answers{
-  display:inline-flex;align-items:center;gap:7px;
-  padding:9px 14px;border-radius:999px;font-size:12.5px;font-weight:800;
-  background:var(--surface);border:1.5px solid var(--border);color:var(--text);cursor:pointer;transition:.15s;
+.spin{
+  width:28px;height:28px;border:2px solid var(--border);
+  border-top-color:var(--accent-solid);border-radius:50%;
+  animation:spin .8s linear infinite;margin:0 auto;
 }
-.toggle-answers:hover{border-color:var(--primary);color:var(--primary)}
-.toggle-answers.off{background:var(--soft);color:var(--muted)}
+.center{display:grid;place-items:center;min-height:100vh;min-height:100dvh;padding:var(--s5)}
+.kbd{
+  display:inline-block;padding:1px 5px;border-radius:var(--r-sm);
+  border:1px solid var(--border);background:var(--surface-2);
+  font-size:11px;font-weight:500;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+.pill-row{display:flex;gap:var(--s1);flex-wrap:wrap}
 
 /* ============================================================
-   MOBILE COMPACT (≤ 639px)
+   RESPONSIVE TWEAKS
    ============================================================ */
-@media (max-width: 639px) {
-  :root{
-    --top-h:50px;
-    --nav-h:64px;
-    --gutter: clamp(18px, 5vw, 22px);
-  }
-  body{ font-size:13.5px; }
-
-  h1{ font-size:20px; }
-  h2{ font-size:16.5px; }
-  h3{ font-size:14px; }
-
-  .page{ padding-top:14px; padding-bottom:18px; }
-  .page.has-bottom-nav{ padding-bottom:calc(96px + var(--safe-b)); }
-
-  .topbar-in{ gap:8px; }
-  .logo{ width:34px; height:34px; font-size:15px; border-radius:10px; }
-  .brand{ gap:9px; }
-  .brand-title{ font-size:13px; }
-  .brand-sub{ font-size:10.5px; }
-  .top-actions{ gap:6px; }
-  .icon-btn{ width:36px; height:36px; border-radius:10px; }
-  .icon-btn svg{ width:15px; height:15px; }
-
-  .bottom-nav button{ font-size:9.5px; gap:4px; }
-  .bottom-nav button svg{ width:19px; height:19px; padding:5px; border-radius:10px; }
-
-  .card{ padding:14px; border-radius:16px; }
-  .card.hero{ padding:16px 15px; }
-  .card+.card{ margin-top:10px; }
-
-  .stat{ padding:10px 12px; border-radius:11px; }
-  .stat .v{ font-size:18.5px; }
-  .stat .v small{ font-size:12px; }
-  .stat .l{ font-size:9.5px; letter-spacing:.05em; margin-top:2px; }
-
-  .btn{ padding:10px 16px; font-size:13.5px; min-height:42px; border-radius:11px; gap:7px; }
-  .btn svg{ width:14px; height:14px; }
-  .btn.lg{ padding:12px 18px; font-size:14.5px; min-height:48px; border-radius:13px; }
-  .btn.sm{ padding:8px 13px; font-size:12px; min-height:36px; border-radius:9px; }
-  .btn.sm svg{ width:12px; height:12px; }
-  .btn.icon{ width:42px; }
-
-  .stepper{ height:42px; border-radius:11px; }
-  .stepper button{ width:42px; height:42px; font-size:17px; }
-  .stepper input{ width:56px; height:42px; font-size:15px; }
-
-  .option{ padding:13px 14px; font-size:13.5px; min-height:48px; border-radius:13px; margin-bottom:8px; gap:11px; line-height:1.45; }
-  .option .key{ width:24px; height:24px; font-size:11.5px; border-radius:7px; }
-  .option .body{ padding-top:1px; }
-
-  .section-title{ font-size:13px; margin:20px 0 10px; gap:8px; }
-  .section-title .dot{ width:5px; height:5px; }
-
-  .qtext{ font-size:14.5px; line-height:1.5; margin-bottom:10px; }
-  .tiny{ font-size:10.5px; }
-  .muted{ font-size:12.5px; }
-
-  .journey{ height:78px; padding:8px; gap:2px; border-radius:11px; }
-  .journey .bar{ min-width:5px; border-radius:4px 4px 1px 1px; }
-
-  .qreview{ padding:12px 13px; border-radius:12px; }
-  .qreview-head{ gap:6px; margin-bottom:8px; }
-  .qreview-question{ font-size:13px; margin-bottom:8px; line-height:1.45; }
-  .qreview-answers{ font-size:11.5px; gap:4px; }
-  .qnum{ width:24px; height:24px; font-size:10.5px; border-radius:7px; }
-
-  .hrow{ padding:11px 12px; gap:11px; border-radius:12px; margin-bottom:9px; }
-  .score-pill{ width:48px; height:48px; font-size:14.5px; border-radius:12px; }
-  .score-pill small{ font-size:9px; }
-
-  .chk{ padding:10px 12px; min-height:48px; gap:10px; border-radius:12px; }
-  .chk .box{ width:18px; height:18px; font-size:11px; border-radius:5px; }
-
-  .note{ padding-left:12px; border-left-width:3px; }
-  .note-head{ gap:6px; margin-bottom:8px; }
-  .opts{ gap:5px; }
-  .opts li{ padding:8px 10px; font-size:12.5px; gap:8px; border-radius:9px; line-height:1.42; }
-  .opts li .tag{ width:20px; height:20px; font-size:10px; border-radius:6px; }
-
-  .explain{ padding:10px 12px; font-size:12.5px; border-radius:10px; line-height:1.55; margin-top:9px; }
-
-  .badge{ padding:3px 8px; font-size:10.5px; gap:4px; }
-
-  .subject-card{ padding:12px; gap:12px; border-radius:15px; }
-  .subject-card .ico{ width:48px; height:48px; border-radius:13px; font-size:18px; }
-  .subject-card .ico .letter{ font-size:18px; }
-  .subject-card .meta .ttl{ font-size:14px; }
-  .subject-card .meta .sub{ font-size:10.5px; margin-top:3px; }
-  .subject-card .meta .sub .pill{ padding:2px 7px; font-size:10px; }
-
-  .pill-row{ gap:5px; }
-
-  .setrow{ padding:12px 0; gap:12px; }
-  .setrow .lbl{ font-size:12.5px; }
-  .setrow .hint{ font-size:10.5px; }
-  .switch{ width:40px; height:24px; }
-  .switch i{ width:18px; height:18px; }
-  .switch.on i{ left:19px; }
-
-  .reveal-card{ padding:12px 13px; margin-top:11px; border-radius:12px; }
-  .reveal-head{ font-size:13px; gap:7px; margin-bottom:7px; }
-  .reveal-answer{ font-size:12px; padding:3px 9px; margin-bottom:9px; }
-  .reveal-explain{ font-size:12.5px; padding:9px 11px; line-height:1.55; border-radius:9px; }
-
-  .grid{ gap:10px; }
-  .g2{ gap:10px; }
-  .g3{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
-  .g3 .stat{ padding:9px 10px; }
-  .g3 .stat .v{ font-size:16px; }
-  .g3 .stat .l{ font-size:8.5px; }
-  .g4{ gap:9px; }
-
-  .quiz-actions{ margin-top:12px; gap:9px; }
-  .quiz-actions-row{ gap:8px; }
-  .quiz-actions-row .btn{ min-height:46px; font-size:14px; border-radius:12px; }
-
-  .cheat-head{ flex-direction:column; align-items:stretch; gap:12px; margin-bottom:16px; }
-  .cheat-head h1{ font-size:19px; }
-  .toggle-answers{ justify-content:center; width:100%; padding:11px 14px; font-size:12.5px; border-radius:11px; }
-  .toggle-answers svg{ width:13px; height:13px; }
-
-  .card.hero .chk{ padding:10px 12px; min-height:44px; }
-  .card.hero .chk .box{ width:16px; height:16px; font-size:10px; }
-
-  .banner{ padding:11px 13px; font-size:12px; border-radius:11px; margin-bottom:12px; line-height:1.5; }
-
-  .empty{ padding:34px 18px; }
-  .empty .big{ font-size:34px; }
-
-  .modal-head{ padding:12px 15px; padding-top:calc(12px + var(--safe-t)); }
-  .modal-head h3{ font-size:14.5px; }
-  .modal-body{ padding:14px; padding-bottom:calc(28px + var(--safe-b)); }
-
-  /* Landing page compact */
-  .landing-hero{ padding: 16px 0 22px; }
-  .landing-hero .logo{ width: 54px; height: 54px; font-size: 22px; border-radius: 17px; margin-bottom: 14px; }
-  .landing-hero h1{ font-size: 22px; }
-  .landing-hero .tagline{ font-size: 12.5px; }
-  .landing-hero .chips{ margin-top: 14px; gap: 5px; }
-  .landing-hero .chips span{ padding: 4px 9px; font-size: 10px; }
-
-  .pick-label{ font-size: 11px; }
-
-  .feature{ padding:12px; gap:7px; border-radius:12px; }
-  .feature .fi{ width:32px; height:32px; border-radius:10px; }
-  .feature .fi svg{ width:16px; height:16px; }
-  .feature .ft{ font-size:12.5px; }
-  .feature .fd{ font-size:11px; }
-
-  .step{ padding:12px; gap:12px; border-radius:12px; }
-  .step .num{ width:30px; height:30px; font-size:13px; border-radius:10px; }
-  .step .st{ font-size:13px; }
-  .step .sd{ font-size:11px; }
-
-  .promo{ padding:15px 15px; border-radius:16px; }
-  .promo h3{ font-size:14.5px; }
-  .promo p{ font-size:12px; }
-
-  .about-card{ padding:15px; border-radius:16px; }
-  .about-card .brandrow .logo{ width:30px; height:30px; font-size:13px; }
-  .about-card .brandrow .ttl{ font-size:13px; }
-}
-
-@media (max-width: 360px){
-  :root{ --gutter: 16px; }
-  body{ font-size:13px; }
-  .stat .v{ font-size:16.5px; }
-  .g3 .stat .v{ font-size:15px; }
-  .btn{ padding:9px 13px; font-size:12.5px; min-height:40px; }
-  .btn.lg{ padding:11px 15px; font-size:13.5px; min-height:44px; }
-  .option{ font-size:13px; padding:11px 12px; }
-  .subject-card .ico{ width:44px; height:44px; font-size:16px; }
-  .subject-card .meta .ttl{ font-size:13.5px; }
-  .qreview-question{ font-size:12.5px; }
-  .bottom-nav button span{ font-size:9px; }
-  .score-pill{ width:44px; height:44px; font-size:13.5px; }
-  .feature .fd{ font-size:10.5px; }
-  .landing-hero h1{ font-size: 20px; }
+@media (max-width:479px){
+  .hero h1{font-size:26px}
+  .hero-stats{gap:var(--s5)}
+  .hero-stat strong{font-size:var(--fs-xl)}
+  .g4{gap:var(--s2)}
+  .stat{padding:10px var(--s3)}
+  .stat .v{font-size:var(--fs-lg)}
+  .section-title{margin-top:var(--s6)}
 }
 </style>
 </head>
@@ -958,9 +1075,22 @@ function Portal({ children }) {
 }
 
 /* =========================================================================
+   BRAND MARK
+   ========================================================================= */
+function BrandMark({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/>
+      <path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/>
+    </svg>
+  );
+}
+
+/* =========================================================================
    SVG ICONS
    ========================================================================= */
-function Icon({ name, size = 22, strokeWidth = 2, fill = 'none' }) {
+function Icon({ name, size = 20, strokeWidth = 1.6, fill = 'none' }) {
   const paths = {
     practice: <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
     history:  <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
@@ -991,12 +1121,9 @@ function Icon({ name, size = 22, strokeWidth = 2, fill = 'none' }) {
     eyeOff:   <><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></>,
     layers:   <><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></>,
     lightbulb:<><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></>,
-    rocket:   <><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></>,
-    award:    <><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></>,
-    users:    <><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></>,
-    heart:    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>,
     chart:    <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
     shield:   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>,
+    palette:  <><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></>,
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1020,6 +1147,12 @@ const SUBJECTS = [
 
 const QUESTIONS_FOLDER = 'assets/';
 const IMAGES_FOLDER    = 'asset_image/';
+
+const ACCENTS = [
+  { id: 'ocean', label: 'Ocean', color: '#2563eb' },
+  { id: 'amber', label: 'Amber', color: '#b45309' },
+  { id: 'rose',  label: 'Rose',  color: '#be123c' },
+];
 
 /* =========================================================================
    STORAGE + UTILS
@@ -1200,26 +1333,51 @@ function paceProfile(items) {
 }
 
 const PACE_META = {
-  perfect:    { label: 'Perfect',     icon: 'zap',      cls: 'green', desc: 'Correct & quick' },
+  perfect:    { label: 'Perfect',     icon: 'zap',      cls: 'green', desc: 'Correct and quick' },
   deliberate: { label: 'Deliberate',  icon: 'brain',    cls: 'blue',  desc: 'Correct but slow' },
-  hasty:      { label: 'Hasty Wrong', icon: 'flame',    cls: 'amber', desc: 'Wrong & fast' },
-  stuck:      { label: 'Stuck',       icon: 'puzzle',   cls: 'red',   desc: 'Wrong & slow' },
+  hasty:      { label: 'Hasty wrong', icon: 'flame',    cls: 'amber', desc: 'Wrong and fast' },
+  stuck:      { label: 'Stuck',       icon: 'puzzle',   cls: 'red',   desc: 'Wrong and slow' },
 };
 
 /* =========================================================================
    SHARED UI
    ========================================================================= */
 function Switch({ on, onChange }) {
-  return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on}><i /></button>;
+  return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on} aria-label="Toggle"><i /></button>;
 }
 
 function Stepper({ value, onChange, min = 1, max = 999, step = 5 }) {
   const clamp = (v) => Math.min(max, Math.max(min, v));
   return (
     <div className="stepper">
-      <button type="button" onClick={() => onChange(clamp(value - step))}>−</button>
+      <button type="button" onClick={() => onChange(clamp(value - step))} aria-label="Decrease">−</button>
       <input type="number" value={value} onChange={(e) => { const v = parseInt(e.target.value, 10); onChange(clamp(isNaN(v) ? min : v)); }} />
-      <button type="button" onClick={() => onChange(clamp(value + step))}>+</button>
+      <button type="button" onClick={() => onChange(clamp(value + step))} aria-label="Increase">+</button>
+    </div>
+  );
+}
+
+function ThemePicker({ accent, onChange }) {
+  return (
+    <div className="theme-picker" role="radiogroup" aria-label="Accent colour">
+      {ACCENTS.map((t) => {
+        const selected = accent === t.id;
+        return (
+          <button
+            key={t.id}
+            type="button"
+            role="radio"
+            aria-checked={selected}
+            className={'theme-swatch' + (selected ? ' selected' : '')}
+            onClick={() => onChange(t.id)}
+          >
+            <span className="swatch-circle" style={{ background: t.color }}>
+              {selected && <Icon name="check" size={13} strokeWidth={2.4} />}
+            </span>
+            <span className="swatch-label">{t.label}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }
@@ -1229,7 +1387,7 @@ function PaceProfile({ items }) {
   const total = Object.values(counts).reduce((a, b) => a + b, 0);
   return (
     <div>
-      <div className="row between" style={{ marginBottom: 10 }}>
+      <div className="row between" style={{ marginBottom: 12 }}>
         <h3>Response-time profile</h3>
         <span className="tiny">avg {fmtClock(avg)} · split {fmtClock(thresh)}</span>
       </div>
@@ -1239,12 +1397,12 @@ function PaceProfile({ items }) {
           return (
             <div className="stat" key={k}>
               <div className="row between" style={{ marginBottom: 6 }}>
-                <span style={{ color: 'var(--' + m.cls + ')' }}><Icon name={m.icon} size={16} /></span>
+                <span style={{ color: 'var(--' + m.cls + ')' }}><Icon name={m.icon} size={15} /></span>
                 <span className={'badge ' + m.cls}>{pct(counts[k], total)}%</span>
               </div>
               <div className="v">{counts[k]}</div>
               <div className="l">{m.label}</div>
-              <div className="tiny" style={{ marginTop: 3 }}>{m.desc}</div>
+              <div className="tiny" style={{ marginTop: 2 }}>{m.desc}</div>
             </div>
           );
         })}
@@ -1265,15 +1423,15 @@ function PaceJourney({ items }) {
         {items.map((it, i) => (
           <div key={i}
             className={'bar ' + (it.skipped ? 'skipped' : it.correct ? 'ok' : 'bad')}
-            style={{ height: Math.max(8, (it.timeMs / max) * 100) + '%' }}
+            style={{ height: Math.max(8, (it.timeMs / max) * 100) + '%', animationDelay: (i * 18) + 'ms' }}
             title={'Q' + (i + 1) + ' · ' + (it.timeMs / 1000).toFixed(1) + 's · ' + (it.skipped ? 'skipped' : it.correct ? 'correct' : 'wrong')}
           />
         ))}
       </div>
       <div className="row" style={{ marginTop: 10, gap: 14 }}>
-        <span className="tiny">● correct</span>
-        <span className="tiny" style={{ color: 'var(--red)' }}>● wrong</span>
-        <span className="tiny">● skipped</span>
+        <span className="tiny">Correct</span>
+        <span className="tiny" style={{ color: 'var(--red)' }}>Wrong</span>
+        <span className="tiny">Skipped</span>
       </div>
     </div>
   );
@@ -1292,159 +1450,158 @@ function SubjectAvatar({ subject }) {
 }
 
 /* =========================================================================
-   SUBJECT PICKER — the LANDING PAGE with marketing content
+   SUBJECT PICKER — landing with marketing content
    ========================================================================= */
 function SubjectPicker({ subjects, onPick, banner }) {
-  return (
-    <div className="page wrap" style={{ maxWidth: 720 }}>
+  const features = [
+    { icon: 'target',    title: 'Complete question bank', desc: 'Every multiple-choice question from the weekly assignments, in one place.' },
+    { icon: 'layers',    title: 'Four practice modes',    desc: 'Random sets, chosen weeks, weak-question drills, or bookmarked questions.' },
+    { icon: 'chart',     title: 'Pace analytics',         desc: 'See where you rush and where you get held up, question by question.' },
+    { icon: 'puzzle',    title: 'Weak-question drill',    desc: 'Questions you miss twice keep coming back until you clear them.' },
+    { icon: 'book',      title: 'Personal cheatsheet',    desc: 'Questions you keep getting wrong collect into one revision page.' },
+    { icon: 'lightbulb', title: 'Answer explanations',    desc: 'Every question includes the reasoning, not just the correct option.' },
+  ];
+  const steps = [
+    { title: 'Pick a subject',    desc: 'Choose a course. Progress is tracked separately for each one.' },
+    { title: 'Choose a mode',     desc: 'Random set, specific weeks, weak drill, or bookmarks.' },
+    { title: 'Answer questions',  desc: 'Immediate feedback with the correct answer and a short explanation.' },
+    { title: 'Review and revise', desc: 'Use the cheatsheet to revisit what you got wrong before the exam.' },
+  ];
 
-      {/* ================= HERO ================= */}
-      <div className="landing-hero">
-        <div className="logo">M</div>
-        <h1>Master your NPTEL exams<br />with focused MCQ practice</h1>
-        <p className="tagline">
-          Mooc Mastery turns every assignment question into a personal trainer. Practise smart, spot weak areas, and walk into the final paper already knowing the answers.
+  return (
+    <main className="page wrap">
+      <header className="hero">
+        <div className="hero-mark"><BrandMark size={22} /></div>
+        <h1>Master your NPTEL exams with focused MCQ practice</h1>
+        <p className="lede">
+          Work through the multiple-choice questions from each week's assignment,
+          with the correct answer and explanation for every one. Progress stays
+          in your browser — no account, no server.
         </p>
-        <div className="chips">
+        <div className="hero-chips">
           <span><Icon name="target" size={11} /> Exam-focused bank</span>
-          <span><Icon name="brain" size={11} /> Smart revision</span>
-          <span><Icon name="shield" size={11} /> 100% offline</span>
-          <span><Icon name="zap" size={11} /> No sign-up</span>
+          <span><Icon name="chart" size={11} /> Pace analytics</span>
+          <span><Icon name="puzzle" size={11} /> Weak drills</span>
+          <span><Icon name="check" size={11} /> No account needed</span>
         </div>
-      </div>
+
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <strong>6</strong>
+            <span>Practice modes</span>
+          </div>
+          <div className="hero-stat">
+            <strong>4</strong>
+            <span>Pace insights</span>
+          </div>
+          <div className="hero-stat">
+            <strong>0</strong>
+            <span>Sign-ups</span>
+          </div>
+        </div>
+      </header>
 
       {banner && <div className="banner">{banner}</div>}
 
-      {/* ================= SUBJECT PICKER ================= */}
-      <div className="pick-label">Choose a subject to begin</div>
-      <div className="grid" style={{ gap: 10 }}>
+      <h2 className="section-title">Choose a subject</h2>
+      <div className="subject-list">
         {subjects.map((s) => (
           <button key={s.id} className="subject-card" onClick={() => onPick(s.id)}>
             <SubjectAvatar subject={s} />
-            <div className="meta">
-              <div className="ttl">{s.name}</div>
-              {s.institute && <div className="sub"><span className="pill">🏛 {s.institute}</span></div>}
-            </div>
+            <span className="meta">
+              <span className="ttl">{s.name}</span>
+              {s.institute && <span className="sub">{s.institute}</span>}
+            </span>
             <span className="arrow"><Icon name="arrowR" size={18} /></span>
           </button>
         ))}
         {!subjects.length && (
           <div className="empty">
-            <div className="big">📚</div>
+            <div className="empty-mark"><Icon name="book" size={22} /></div>
             <h3>No subjects added yet</h3>
-            <p className="muted" style={{ marginTop: 6 }}>Add an entry to the <span className="kbd">SUBJECTS</span> list in code.html.</p>
+            <p>Add an entry to the SUBJECTS list in this file to get started.</p>
           </div>
         )}
       </div>
 
-      {/* ================= WHY MOOC MASTERY ================= */}
-      <div className="section-title"><span className="dot" />Why Mooc Mastery</div>
-      <div className="grid g3">
-        <div className="feature violet">
-          <div className="fi"><Icon name="target" size={18} /></div>
-          <div className="ft">Exam-focused bank</div>
-          <div className="fd">Every question is taken directly from the assignment papers that become the final exam.</div>
-        </div>
-        <div className="feature blue">
-          <div className="fi"><Icon name="layers" size={18} /></div>
-          <div className="ft">4 practice modes</div>
-          <div className="fd">Random sets, custom weeks, weak-question drills, and bookmarked questions — your way.</div>
-        </div>
-        <div className="feature amber">
-          <div className="fi"><Icon name="chart" size={18} /></div>
-          <div className="ft">Pace insights</div>
-          <div className="fd">See exactly where you speed up, slow down, or get stuck with 4 response-time archetypes.</div>
-        </div>
-        <div className="feature green">
-          <div className="fi"><Icon name="brain" size={18} /></div>
-          <div className="ft">Smart revision</div>
-          <div className="fd">Auto-detects your weak questions and builds a personal drill from your mistakes.</div>
-        </div>
-        <div className="feature pink">
-          <div className="fi"><Icon name="book" size={18} /></div>
-          <div className="ft">Personal cheatsheet</div>
-          <div className="fd">Every question you get wrong twice becomes a study note, with the correct answer and explanation.</div>
-        </div>
-        <div className="feature red">
-          <div className="fi"><Icon name="lightbulb" size={18} /></div>
-          <div className="ft">Built-in explanations</div>
-          <div className="fd">Every question ships with a "why" — understand the concept, don't just memorise the answer.</div>
-        </div>
+      <h2 className="section-title">Why Mooc Mastery</h2>
+      <div className="features">
+        {features.map((f) => (
+          <div className="feature" key={f.title}>
+            <span className="feature-icon"><Icon name={f.icon} size={17} strokeWidth={1.7} /></span>
+            <span className="feature-title">{f.title}</span>
+            <span className="feature-desc">{f.desc}</span>
+          </div>
+        ))}
       </div>
 
-      {/* ================= HOW IT WORKS ================= */}
-      <div className="section-title"><span className="dot" />How it works</div>
-      <div className="grid g2">
-        <div className="step">
-          <div className="num">1</div>
-          <div>
-            <div className="st">Pick your subject</div>
-            <div className="sd">Choose from one or more NPTEL courses. Progress is saved separately for each.</div>
+      <h2 className="section-title">How it works</h2>
+      <div className="steps">
+        {steps.map((s, i) => (
+          <div className="step" key={s.title}>
+            <span className="step-num">{i + 1}</span>
+            <div className="step-body">
+              <div className="step-title">{s.title}</div>
+              <div className="step-desc">{s.desc}</div>
+            </div>
           </div>
-        </div>
-        <div className="step">
-          <div className="num">2</div>
-          <div>
-            <div className="st">Practice &amp; analyse</div>
-            <div className="sd">Take quizzes in any mode. We track score, pace, and every wrong answer for you.</div>
-          </div>
-        </div>
-        <div className="step">
-          <div className="num">3</div>
-          <div>
-            <div className="st">Revise from cheatsheet</div>
-            <div className="sd">Your personal cheatsheet auto-fills with the questions you keep getting wrong.</div>
-          </div>
-        </div>
-        <div className="step">
-          <div className="num">4</div>
-          <div>
-            <div className="st">Score 100%</div>
-            <div className="sd">Walk into the final exam having already seen every question — twice.</div>
-          </div>
-        </div>
+        ))}
       </div>
 
-      {/* ================= PROMO ================= */}
-      <div className="promo" style={{ marginTop: 22 }}>
-        <h3>🎯 Ready to dominate your NPTEL exam?</h3>
+      <div className="promo">
+        <h3>Ready to start?</h3>
         <p>Pick a subject above to load its full question bank. Every attempt is tracked — no sign-up, no server, just practice.</p>
-        <div className="row" style={{ gap: 8 }}>
+        <div className="row">
           <span className="badge blue"><Icon name="check" size={11} /> Free forever</span>
-          <span className="badge green"><Icon name="shield" size={11} /> Works offline</span>
+          <span className="badge green"><Icon name="shield" size={11} /> No accounts</span>
           <span className="badge amber"><Icon name="zap" size={11} /> Instant feedback</span>
         </div>
       </div>
 
-      {/* ================= ABOUT ================= */}
-      <div className="section-title"><span className="dot" />About Mooc Mastery</div>
-      <div className="about-card">
-        <div className="brandrow">
-          <div className="logo">M</div>
-          <div>
-            <div className="ttl">Mooc Mastery</div>
-            <div className="sub">NPTEL MCQ Practice Companion</div>
+      <div className="about">
+        <h2 className="section-title">About Mooc Mastery</h2>
+        <p className="about-lede">
+          A small, focused practice tool for NPTEL learners. Every multiple-choice question
+          comes from the weekly assignment papers, complete with the correct answer and an
+          explanation. Progress is tracked in your browser — nothing is sent anywhere, and
+          there's nothing to sign up for.
+        </p>
+        <div className="about-points">
+          <div className="about-point">
+            <span className="about-num">01</span>
+            <div>
+              <h4>Built for revision</h4>
+              <p>Wrong answers collect into a personal cheatsheet, so you can revise the exact questions that trip you up.</p>
+            </div>
+          </div>
+          <div className="about-point">
+            <span className="about-num">02</span>
+            <div>
+              <h4>Answers that teach</h4>
+              <p>Every question ships with the reasoning behind the correct option, so you learn the concept — not just the answer.</p>
+            </div>
+          </div>
+          <div className="about-point">
+            <span className="about-num">03</span>
+            <div>
+              <h4>Yours, in your browser</h4>
+              <p>No account, no server, no ads. All progress lives locally — export or import it any time from Settings.</p>
+            </div>
           </div>
         </div>
-        <p className="muted" style={{ fontSize: 12.5, lineHeight: 1.65 }}>
-          Mooc Mastery is a lightweight practice tool built for NPTEL learners. It brings every assignment MCQ into one clean interface, tracks your answers locally in your browser, and intelligently surfaces what you need to revise. No sign-up, no servers, no ads — just focused practice.
-        </p>
-        <div className="tags">
-          <span><Icon name="shield" size={11} /> 100% offline</span>
-          <span><Icon name="heart" size={11} /> No ads, no tracking</span>
-          <span><Icon name="zap" size={11} /> Fast &amp; lightweight</span>
-          <span><Icon name="award" size={11} /> Built for 100%</span>
-        </div>
-        <div className="madeby">
-          Progress saved locally in your browser. Use <span className="kbd">Settings → Export</span> to back it up.
-        </div>
       </div>
-    </div>
+
+      <footer className="page-footer">
+        Questions and answers come from the NPTEL assignment papers. Progress, history
+        and bookmarks are saved locally in your browser — use Settings &rarr; Export to
+        keep a backup.
+      </footer>
+    </main>
   );
 }
 
 /* =========================================================================
-   HOME — lean practice dashboard (no marketing)
+   HOME
    ========================================================================= */
 function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory }) {
   const bank = useMemo(() => allQuestions(subject), [subject]);
@@ -1465,40 +1622,39 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
 
   return (
     <div className="page wrap">
-      <div className="card hero">
-        <div className="row between">
-          <div style={{ minWidth: 0 }}>
-            <h1 style={{ fontSize: 20 }}>{subject.title}</h1>
-            <p className="muted" style={{ marginTop: 5 }}>
-              {subject.assignments.length} weeks · {bank.length} questions{subject.institute && ' · ' + subject.institute}
-            </p>
-          </div>
-          <div className="badge blue" style={{ alignSelf: 'flex-start' }}><Icon name="target" size={12} />100% target</div>
-        </div>
+      <h1 style={{ marginBottom: 4 }}>{subject.title}</h1>
+      <p className="muted">
+        {subject.assignments.length} weeks · {bank.length} questions{subject.institute ? ' · ' + subject.institute : ''}
+      </p>
 
-        <div className="grid g4" style={{ marginTop: 14 }}>
-          <div className="stat"><div className="v">{covered}<small>/{bank.length}</small></div><div className="l">Seen</div></div>
-          <div className="stat"><div className="v">{pct(totalCorrect, totalAttempts)}%</div><div className="l">Accuracy</div></div>
-          <div className="stat"><div className="v">{totalAttempts}</div><div className="l">Attempts</div></div>
-          <div className="stat"><div className="v">{progress.history.length}</div><div className="l">Tests</div></div>
-        </div>
-
-        {lastRun && (
-          <div className="row between" style={{ marginTop: 12, padding: '10px 12px', background: 'var(--soft)', borderRadius: 10 }}>
-            <div style={{ minWidth: 0 }}>
-              <div style={{ fontWeight: 700, fontSize: 12.5 }}>Continue where you left off</div>
-              <div className="tiny">{lastRun.modeLabel} · {fmtDate(lastRun.ts)} · {lastRun.score}/{lastRun.total} correct</div>
-            </div>
-            <button className="btn sm" onClick={goHistory}>History</button>
-          </div>
-        )}
+      <div className="grid g4" style={{ marginTop: 20 }}>
+        <div className="stat"><div className="v">{covered}<small>/{bank.length}</small></div><div className="l">Seen</div></div>
+        <div className="stat"><div className="v">{pct(totalCorrect, totalAttempts)}%</div><div className="l">Accuracy</div></div>
+        <div className="stat"><div className="v">{totalAttempts}</div><div className="l">Attempts</div></div>
+        <div className="stat"><div className="v">{progress.history.length}</div><div className="l">Tests</div></div>
       </div>
 
-      <div className="section-title"><span className="dot" />Quick practice</div>
+      {lastRun && (
+        <div className="card" style={{ marginTop: 16 }}>
+          <div className="row between">
+            <div style={{ minWidth: 0 }}>
+              <div style={{ fontWeight: 600, fontSize: 'var(--fs-sm)' }}>Last test</div>
+              <div className="tiny" style={{ marginTop: 2 }}>
+                {lastRun.modeLabel} · {fmtDate(lastRun.ts)} · {lastRun.score}/{lastRun.total} correct
+              </div>
+            </div>
+            <button className="btn sm" onClick={goHistory}>View history</button>
+          </div>
+        </div>
+      )}
+
+      <h2 className="section-title">Quick practice</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 12, fontSize: 12.5 }}>Pull a random set from the entire question bank.</p>
-        <div className="col" style={{ gap: 12 }}>
-          <div className="row" style={{ justifyContent: 'space-between', rowGap: 10 }}>
+        <p className="muted" style={{ marginBottom: 16 }}>
+          A random set drawn from the entire question bank.
+        </p>
+        <div className="col">
+          <div className="row between" style={{ rowGap: 10 }}>
             <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
             <div className="pill-row">
               {[10, 20, 30].map((n) => (
@@ -1513,19 +1669,22 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
         </div>
       </div>
 
-      <div className="section-title"><span className="dot" />Custom set</div>
+      <h2 className="section-title">Custom set</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 12, fontSize: 12.5 }}>Pick specific weeks, then choose how many questions.</p>
-        <div className="grid g2" style={{ marginBottom: 12 }}>
+        <p className="muted" style={{ marginBottom: 16 }}>
+          Choose specific weeks, then set how many questions to draw.
+        </p>
+        <div className="grid g2" style={{ marginBottom: 16 }}>
           {subject.assignments.map((a) => {
             const on = picked.includes(a.id);
             const cor = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.c : s; }, 0);
             const att = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.a : s; }, 0);
             return (
-              <div key={a.id} className={'chk' + (on ? ' on' : '')} onClick={() => togglePick(a.id)}>
+              <div key={a.id} className={'chk' + (on ? ' on' : '')} onClick={() => togglePick(a.id)} role="checkbox" aria-checked={on} tabIndex={0}
+                   onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); togglePick(a.id); } }}>
                 <div className="box">{on ? '✓' : ''}</div>
                 <div style={{ minWidth: 0, flex: 1 }}>
-                  <div style={{ fontWeight: 700, fontSize: 12.5 }}>{a.name}</div>
+                  <div style={{ fontWeight: 500, fontSize: 'var(--fs-sm)' }}>{a.name}</div>
                   <div className="tiny">{a.questions.length} Q{att ? ' · ' + pct(cor, att) + '%' : ''}</div>
                 </div>
               </div>
@@ -1534,7 +1693,7 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
         </div>
         {picked.length > 0 ? (
           <>
-            <div className="row between" style={{ marginBottom: 10, rowGap: 8 }}>
+            <div className="row between" style={{ marginBottom: 12, rowGap: 10 }}>
               <span className="tiny">{poolCustom.length} questions in selection</span>
               <Stepper value={customCount} onChange={setCustomCount} min={1} max={Math.max(1, poolCustom.length)} step={5} />
             </div>
@@ -1546,39 +1705,35 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
             </div>
           </>
         ) : (
-          <p className="tiny">Select one or more weeks to unlock the custom builder.</p>
+          <p className="tiny">Select one or more weeks to build a custom set.</p>
         )}
       </div>
 
-      <div className="section-title"><span className="dot" />Smart revision</div>
+      <h2 className="section-title">Revision</h2>
       <div className="grid g2">
         <div className="card">
           <div className="row between">
-            <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ color: 'var(--red)' }}><Icon name="puzzle" size={16} /></span> Weak questions
-            </h3>
+            <h3>Weak questions</h3>
             <span className={'badge ' + (weak.length ? 'red' : 'green')}>{weak.length}</span>
           </div>
-          <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Answered wrong ≥ 2 times and still &lt; 60% correct.</p>
+          <p className="muted" style={{ margin: '8px 0 16px' }}>Answered wrong twice or more, still under 60% correct.</p>
           <button className="btn block" disabled={!weak.length} onClick={onStartWeak}>
-            {weak.length ? 'Drill weak questions' : 'Nothing weak yet 🎉'}
+            {weak.length ? 'Drill weak questions' : 'Nothing to drill yet'}
           </button>
         </div>
         <div className="card">
           <div className="row between">
-            <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ color: 'var(--amber)' }}><Icon name="bookmark" size={16} /></span> Bookmarked
-            </h3>
+            <h3>Bookmarked</h3>
             <span className={'badge ' + (bookmarks.length ? 'amber' : 'grey')}>{bookmarks.length}</span>
           </div>
-          <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Tap the bookmark during a quiz to save questions for later.</p>
+          <p className="muted" style={{ margin: '8px 0 16px' }}>Use the bookmark button during a quiz to save a question.</p>
           <button className="btn block" disabled={!bookmarks.length} onClick={onStartBookmarks}>
             {bookmarks.length ? 'Practice bookmarks' : 'No bookmarks yet'}
           </button>
         </div>
       </div>
 
-      <div className="section-title"><span className="dot" />Study by week</div>
+      <h2 className="section-title">Study by week</h2>
       <div className="grid g2">
         {subject.assignments.map((a) => {
           const att = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.a : s; }, 0);
@@ -1588,17 +1743,17 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
             <div className="card" key={a.id}>
               <div className="row between" style={{ alignItems: 'flex-start' }}>
                 <div style={{ minWidth: 0 }}>
-                  <div style={{ fontWeight: 800, fontSize: 13.5 }}>{a.name}</div>
+                  <div style={{ fontWeight: 600, fontSize: 'var(--fs-sm)' }}>{a.name}</div>
                   <div className="tiny" style={{ marginTop: 3 }}>
                     {a.questions.length} Q{att ? ' · ' + pct(cor, att) + '% accuracy' : ' · not attempted'}
                   </div>
                 </div>
                 {wrongHere > 0 && <span className="badge red">{wrongHere} weak</span>}
               </div>
-              <div className="pbar" style={{ margin: '12px 0' }}><i style={{ width: pct(cor, att) + '%' }} /></div>
+              <div className="pbar" style={{ margin: '16px 0' }}><i style={{ width: pct(cor, att) + '%' }} /></div>
               <div className="row" style={{ gap: 8 }}>
-                <button className="btn sm" style={{ flex: 1 }} onClick={() => onStudy(a)}><Icon name="book" size={12} /> Notes</button>
-                <button className="btn sm primary" style={{ flex: 1 }} onClick={() => onStartCustom([a.id], a.questions.length)}><Icon name="play" size={10} /> Practice</button>
+                <button className="btn sm" style={{ flex: 1 }} onClick={() => onStudy(a)}><Icon name="book" size={13} /> Notes</button>
+                <button className="btn sm primary" style={{ flex: 1 }} onClick={() => onStartCustom([a.id], a.questions.length)}><Icon name="play" size={11} /> Practice</button>
               </div>
             </div>
           );
@@ -1728,17 +1883,13 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
           <div className="topbar-in">
             <button className="icon-btn" onClick={onQuit} aria-label="Quit"><Icon name="x" size={17} /></button>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 800, fontSize: 12.5, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{config.title}</div>
+              <div style={{ fontWeight: 600, fontSize: 'var(--fs-sm)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{config.title}</div>
               <div className="tiny">Question {idx + 1} of {questions.length}</div>
             </div>
             <span className="badge grey" style={{ fontVariantNumeric: 'tabular-nums' }}><Icon name="clock" size={11} />{fmtClock(elapsed)}</span>
             <button className="icon-btn" onClick={() => onToggleBookmark(q.id)} aria-label="Bookmark"
-              style={{
-                color: isBookmarked ? '#fff' : undefined,
-                background: isBookmarked ? 'linear-gradient(135deg, var(--primary), var(--primary-2))' : undefined,
-                borderColor: isBookmarked ? 'transparent' : undefined,
-              }}>
-              <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={17} />
+              style={isBookmarked ? { color: 'var(--accent)', background: 'var(--accent-soft)', borderColor: 'var(--accent-line)' } : undefined}>
+              <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={16} />
             </button>
           </div>
           <div className="pbar" style={{ marginBottom: 10 }}>
@@ -1752,7 +1903,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
           <div className="row between" style={{ marginBottom: 10 }}>
             <span className="badge blue">{q._aname}</span>
             {multi && <span className="badge amber">Select {correctIdx.length}</span>}
-            <span className="tiny" style={{ marginLeft: 'auto' }}>+1 correct · 0 wrong</span>
+            <span className="tiny" style={{ marginLeft: 'auto' }}>{correctCount} correct so far</span>
           </div>
 
           <div className="card">
@@ -1770,8 +1921,8 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
                   <button key={i} className={cls} onClick={() => choose(i)} disabled={locked}>
                     <span className="key">{String.fromCharCode(65 + i)}</span>
                     <span className="body">{opt}</span>
-                    {reveal && isCorr && <span style={{ color: 'var(--green)', flexShrink: 0, marginTop: 2 }}><Icon name="check" size={16} /></span>}
-                    {reveal && isSel && !isCorr && <span style={{ color: 'var(--red)', flexShrink: 0, marginTop: 2 }}><Icon name="x" size={16} /></span>}
+                    {reveal && isCorr && <span className="mark" style={{ color: 'var(--green)' }}><Icon name="check" size={16} /></span>}
+                    {reveal && isSel && !isCorr && <span className="mark" style={{ color: 'var(--red)' }}><Icon name="x" size={16} /></span>}
                   </button>
                 );
               })}
@@ -1779,25 +1930,25 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
             {reveal && (
               <div className={'reveal-card ' + (isCorrect ? 'ok' : 'bad')}>
                 <div className="reveal-head">
-                  {isCorrect ? <><Icon name="check" size={15} /> Correct!</> : <><Icon name="x" size={15} /> Incorrect</>}
+                  {isCorrect ? <><Icon name="check" size={15} /> Correct</> : <><Icon name="x" size={15} /> Incorrect</>}
                 </div>
                 <div className="reveal-answer">Correct answer: <b>{correctIdx.map(i => String.fromCharCode(65 + i)).join(', ')}</b></div>
-                {q.explanation && <div className="reveal-explain"><b>Why?</b> {q.explanation}</div>}
+                {q.explanation && <div className="reveal-explain"><b>Why:</b> {q.explanation}</div>}
               </div>
             )}
           </div>
 
           <div className="quiz-actions">
             <div className="quiz-actions-meta">
-              <span className="tiny">{correctCount} correct so far</span>
-              <span className="tiny">Q {idx + 1} · {questions.length - idx - 1} left</span>
+              <span className="tiny">Question {idx + 1}</span>
+              <span className="tiny">{questions.length - idx - 1} remaining</span>
             </div>
             <div className="quiz-actions-row">
-              <button className="btn skip" onClick={skip} disabled={locked}>
-                <Icon name="skip" size={14} /> Skip
+              <button className="btn" onClick={skip} disabled={locked}>
+                <Icon name="skip" size={13} /> Skip
               </button>
-              <button className="btn next" onClick={primaryAction} disabled={primaryDisabled}>
-                {primaryLabel}{!locked && !primaryDisabled && primaryLabel !== 'Select an option' && ' ✓'}
+              <button className={'btn ' + (locked || needsSubmit ? 'primary' : 'soft')} onClick={primaryAction} disabled={primaryDisabled}>
+                {primaryLabel}
                 {locked && !isLast && <Icon name="arrowR" size={15} />}
               </button>
             </div>
@@ -1816,41 +1967,42 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
   const wrongItems = result.items.filter((i) => !i.correct && !i.skipped);
   const [openItem, setOpenItem] = useState(null);
 
-  const verdict = accuracy === 100 ? { t: 'Perfect score! 🏆', c: 'green' }
-    : accuracy >= 80 ? { t: 'Great work! 🎉', c: 'green' }
-    : accuracy >= 50 ? { t: 'Getting there 💪', c: 'amber' }
-    : { t: 'Needs revision 📚', c: 'red' };
+  const verdict = accuracy === 100 ? { t: 'Perfect score', c: 'green' }
+    : accuracy >= 80 ? { t: 'Strong result', c: 'green' }
+    : accuracy >= 50 ? { t: 'Getting there', c: 'amber' }
+    : { t: 'Needs revision', c: 'red' };
 
   return (
     <div className="page wrap">
-      <div className="card hero" style={{ textAlign: 'center', padding: 20 }}>
-        <div className={'badge ' + verdict.c} style={{ marginBottom: 10 }}>{verdict.t}</div>
-        <div style={{ fontSize: 44, fontWeight: 900, letterSpacing: '-.04em', lineHeight: 1 }}>
-          {result.score}<span style={{ fontSize: 20, color: 'var(--muted)' }}>/{result.total}</span>
-        </div>
-        <p className="muted" style={{ marginTop: 6, fontSize: 12.5 }}>{result.modeLabel}</p>
+      <div className="row" style={{ gap: 12, alignItems: 'baseline' }}>
+        <h1 style={{ fontFamily: 'var(--font-serif)', fontWeight: 600 }}>
+          {result.score}<span style={{ color: 'var(--muted)', fontSize: 'var(--fs-lg)', fontWeight: 500, fontFamily: 'var(--font-sans)' }}>/{result.total}</span>
+        </h1>
+        <span className={'badge ' + verdict.c}>{verdict.t}</span>
+      </div>
+      <p className="muted" style={{ marginTop: 6 }}>{result.modeLabel}</p>
 
-        <div className="grid g4" style={{ marginTop: 14, textAlign: 'left' }}>
-          <div className="stat"><div className="v">{accuracy}%</div><div className="l">Accuracy</div></div>
-          <div className="stat"><div className="v">{fmtClock(result.timeTotal)}</div><div className="l">Total time</div></div>
-          <div className="stat"><div className="v">{fmtClock(result.total ? result.timeTotal / result.total : 0)}</div><div className="l">Avg pace</div></div>
-          <div className="stat"><div className="v">{result.skipped}</div><div className="l">Skipped</div></div>
-        </div>
-
-        <div className="row" style={{ marginTop: 14, justifyContent: 'center', gap: 8 }}>
-          <button className="btn" onClick={onHome}><Icon name="arrowL" size={13} />Home</button>
-          {wrongItems.length > 0 && (
-            <button className="btn primary" onClick={() => onRetryWrong(wrongItems.map((i) => i.qid))}>
-              <Icon name="refresh" size={13} />Retry {wrongItems.length} wrong
-            </button>
-          )}
-        </div>
+      <div className="grid g4" style={{ marginTop: 20 }}>
+        <div className="stat"><div className="v">{accuracy}%</div><div className="l">Accuracy</div></div>
+        <div className="stat"><div className="v">{fmtClock(result.timeTotal)}</div><div className="l">Total time</div></div>
+        <div className="stat"><div className="v">{fmtClock(result.total ? result.timeTotal / result.total : 0)}</div><div className="l">Avg pace</div></div>
+        <div className="stat"><div className="v">{result.skipped}</div><div className="l">Skipped</div></div>
       </div>
 
-      <div className="card" style={{ marginTop: 10 }}><PaceProfile items={result.items} /></div>
-      <div className="card" style={{ marginTop: 10 }}><PaceJourney items={result.items} /></div>
+      <div className="row" style={{ marginTop: 20, gap: 8 }}>
+        <button className="btn" onClick={onHome}><Icon name="arrowL" size={13} />Back to practice</button>
+        {wrongItems.length > 0 && (
+          <button className="btn primary" onClick={() => onRetryWrong(wrongItems.map((i) => i.qid))}>
+            <Icon name="refresh" size={13} />Retry {wrongItems.length} wrong
+          </button>
+        )}
+      </div>
 
-      <div className="section-title"><span className="dot" />Answer review</div>
+      <h2 className="section-title">Pace</h2>
+      <div className="card"><PaceProfile items={result.items} /></div>
+      <div className="card" style={{ marginTop: 12 }}><PaceJourney items={result.items} /></div>
+
+      <h2 className="section-title">Answer review</h2>
       <div className="qreview-list">
         {result.items.map((it, i) => {
           const q = qmap[it.qid];
@@ -1859,23 +2011,23 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
             <div className="qreview" key={i}>
               <div className="qreview-head">
                 <span className="qnum">#{i + 1}</span>
-                <span className="badge grey" onClick={() => onStudyAssignment(it.aid)} style={{cursor:'pointer'}}>{it.aname}</span>
-                <span style={{marginLeft:'auto'}} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
-                  {it.skipped ? 'skipped' : it.correct ? '✓ +1' : '✕ 0'}
+                <button className="badge grey" onClick={() => onStudyAssignment(it.aid)}>{it.aname}</button>
+                <span style={{ marginLeft: 'auto' }} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
+                  {it.skipped ? 'Skipped' : it.correct ? 'Correct' : 'Wrong'}
                 </span>
                 <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
               </div>
               <div className="qreview-question">{q ? q.question : '(missing)'}</div>
               <div className="qreview-answers">
-                <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : '— skipped —'}</span></div>
-                {!it.correct && <div>Correct: <span className="ok">{it.ans.join(' · ')}</span></div>}
+                <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : 'skipped'}</span></div>
+                {!it.correct && <div>Correct answer: <span className="ok">{it.ans.join(' · ')}</span></div>}
               </div>
               {q && q.explanation && (
                 <>
-                  <button className="btn sm" style={{marginTop:8}} onClick={() => setOpenItem(open ? null : i)}>
+                  <button className="btn sm" style={{ marginTop: 10 }} onClick={() => setOpenItem(open ? null : i)}>
                     {open ? 'Hide explanation' : 'Show explanation'}
                   </button>
-                  {open && <div className="explain">💡 {q.explanation}</div>}
+                  {open && <div className="explain">{q.explanation}</div>}
                 </>
               )}
             </div>
@@ -1896,11 +2048,11 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
   return (
     <Portal>
       <div className="overlay" onClick={onClose}>
-        <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <div className="modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true">
           <div className="sheet-handle" />
           <div className="modal-head">
             <div style={{ minWidth: 0 }}>
-              <h3 style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{run.modeLabel}</h3>
+              <h3 style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{run.modeLabel}</h3>
               <div className="tiny">{fmtDate(run.ts)}</div>
             </div>
             <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17} /></button>
@@ -1913,10 +2065,10 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
               <div className="stat"><div className="v">{fmtClock(run.timeTotal)}</div><div className="l">Total</div></div>
             </div>
 
-            <div style={{ marginTop: 16 }}><PaceProfile items={run.items} /></div>
-            <div style={{ marginTop: 16 }}><PaceJourney items={run.items} /></div>
+            <div style={{ marginTop: 24 }}><PaceProfile items={run.items} /></div>
+            <div style={{ marginTop: 24 }}><PaceJourney items={run.items} /></div>
 
-            <div className="section-title"><span className="dot" />Question sources</div>
+            <h2 className="section-title">Questions</h2>
             <div className="qreview-list">
               {run.items.map((it, i) => {
                 const q = qmap[it.qid];
@@ -1925,23 +2077,23 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
                   <div className="qreview" key={i}>
                     <div className="qreview-head">
                       <span className="qnum">#{i + 1}</span>
-                      <span className="badge grey" style={{cursor:'pointer'}} onClick={() => onStudyAssignment(it.aid)}>{it.aname}</span>
-                      <span style={{marginLeft:'auto'}} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
-                        {it.skipped ? 'skip' : it.correct ? '✓' : '✕'}
+                      <button className="badge grey" onClick={() => onStudyAssignment(it.aid)}>{it.aname}</button>
+                      <span style={{ marginLeft: 'auto' }} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
+                        {it.skipped ? 'Skipped' : it.correct ? 'Correct' : 'Wrong'}
                       </span>
                       <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
                     </div>
                     <div className="qreview-question">{q ? q.question : it.qid}</div>
                     <div className="qreview-answers">
-                      <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : '— skipped —'}</span></div>
-                      {!it.correct && <div>Correct: <span className="ok">{it.ans.join(' · ')}</span></div>}
+                      <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : 'skipped'}</span></div>
+                      {!it.correct && <div>Correct answer: <span className="ok">{it.ans.join(' · ')}</span></div>}
                     </div>
                     {q && q.explanation && (
                       <>
-                        <button className="btn sm" style={{marginTop:8}} onClick={() => setOpenIdx(open ? null : i)}>
+                        <button className="btn sm" style={{ marginTop: 10 }} onClick={() => setOpenIdx(open ? null : i)}>
                           {open ? 'Hide explanation' : 'Show explanation'}
                         </button>
-                        {open && <div className="explain">💡 {q.explanation}</div>}
+                        {open && <div className="explain">{q.explanation}</div>}
                       </>
                     )}
                   </div>
@@ -1962,11 +2114,11 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
   if (!runs.length) {
     return (
       <div className="page wrap">
-        <h1 style={{ marginBottom: 16 }}>History</h1>
+        <h1 style={{ marginBottom: 20 }}>History</h1>
         <div className="card empty">
-          <div className="big">📊</div>
+          <div className="empty-mark"><Icon name="chart" size={22} /></div>
           <h3>No tests yet</h3>
-          <p className="muted" style={{ marginTop: 6 }}>Take a practice quiz and it will appear here.</p>
+          <p>Take a practice quiz and it will appear here.</p>
         </div>
       </div>
     );
@@ -1978,14 +2130,14 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
 
   return (
     <div className="page wrap">
-      <div className="row between" style={{ marginBottom: 14 }}>
+      <div className="row between" style={{ marginBottom: 20 }}>
         <h1>History</h1>
-        <button className="btn sm danger" onClick={onClear}>Clear</button>
+        <button className="btn sm danger" onClick={onClear}>Clear history</button>
       </div>
 
-      <div className="grid g3" style={{ marginBottom: 12 }}>
+      <div className="grid g3" style={{ marginBottom: 20 }}>
         <div className="stat"><div className="v">{totalTests}</div><div className="l">Tests</div></div>
-        <div className="stat"><div className="v">{avgAcc}%</div><div className="l">Avg acc.</div></div>
+        <div className="stat"><div className="v">{avgAcc}%</div><div className="l">Avg accuracy</div></div>
         <div className="stat"><div className="v">{bestAcc}%</div><div className="l">Best</div></div>
       </div>
 
@@ -1996,7 +2148,7 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
           <div className="hrow" key={r.id}>
             <div className={'score-pill ' + cls}>{r.score}<small>/{r.total}</small></div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 800, fontSize: 13.5, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.modeLabel}</div>
+              <div style={{ fontWeight: 500, fontSize: 'var(--fs-sm)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.modeLabel}</div>
               <div className="tiny" style={{ marginTop: 3 }}>
                 {fmtDate(r.ts)} · {a}% · {fmtClock(r.total ? r.timeTotal / r.total : 0)} avg
                 {r.skipped ? ' · ' + r.skipped + ' skipped' : ''}
@@ -2032,14 +2184,14 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
   if (!weak.length) {
     return (
       <div className="page wrap">
-        <h1 style={{ marginBottom: 16 }}>Cheatsheet</h1>
+        <h1 style={{ marginBottom: 20 }}>Cheatsheet</h1>
         <div className="card empty">
-          <div className="big">✨</div>
+          <div className="empty-mark"><Icon name="sparkles" size={22} /></div>
           <h3>No weak spots detected</h3>
-          <p className="muted" style={{ marginTop: 6 }}>
+          <p>
             {Object.keys(progress.questions).length
               ? 'Keep practising — questions you repeatedly get wrong will appear here.'
-              : 'Attempt a few quizzes and your personalised cheatsheet will build itself.'}
+              : 'Attempt a few quizzes and your cheatsheet will build itself.'}
           </p>
         </div>
       </div>
@@ -2051,29 +2203,29 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
       <div className="cheat-head">
         <div>
           <h1>Cheatsheet</h1>
-          <p className="muted" style={{ marginTop: 4 }}>{weak.length} weak question{weak.length > 1 ? 's' : ''} auto-detected</p>
+          <p className="muted" style={{ marginTop: 6 }}>
+            {weak.length} weak question{weak.length > 1 ? 's' : ''} detected from your answers
+          </p>
         </div>
-        <button className={'toggle-answers' + (showAnswers ? '' : ' off')} onClick={() => setShowAnswers(!showAnswers)}>
+        <button className="toggle-answers" onClick={() => setShowAnswers(!showAnswers)}>
           <Icon name={showAnswers ? 'eyeOff' : 'eye'} size={13} />
-          {showAnswers ? 'Hide all answers' : 'Show all answers'}
+          {showAnswers ? 'Hide answers' : 'Show answers'}
         </button>
       </div>
 
-      <div className="card hero">
-        <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <span style={{ color: 'var(--amber)' }}><Icon name="sparkles" size={16} /></span> Focus weeks
-        </h3>
-        <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Open the notes to study a week properly.</p>
-        <div className="grid g2" style={{ marginBottom: 12 }}>
+      <div className="card">
+        <h3>Focus weeks</h3>
+        <p className="muted" style={{ margin: '8px 0 16px' }}>Open a week's notes to study it in full.</p>
+        <div className="grid g2" style={{ marginBottom: 16 }}>
           {byAssignment.map((g) => (
-            <div className="chk on" key={g.id} onClick={() => onStudy(subject.assignments.find((a) => a.id === g.id))}>
-              <div className="box">✓</div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontWeight: 700, fontSize: 12.5 }}>{g.name}</div>
-                <div className="tiny">{g.items.length} weak question{g.items.length > 1 ? 's' : ''}</div>
-              </div>
+            <button className="chk on" key={g.id} onClick={() => onStudy(subject.assignments.find((a) => a.id === g.id))}>
+              <span className="box">✓</span>
+              <span style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
+                <span style={{ display: 'block', fontWeight: 500, fontSize: 'var(--fs-sm)' }}>{g.name}</span>
+                <span className="tiny">{g.items.length} weak question{g.items.length > 1 ? 's' : ''}</span>
+              </span>
               <span style={{ color: 'var(--muted)' }}><Icon name="book" size={15} /></span>
-            </div>
+            </button>
           ))}
         </div>
         <button className="btn primary block" onClick={onPracticeWeak}>
@@ -2081,20 +2233,20 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
         </button>
       </div>
 
-      <div className="section-title"><span className="dot" />Quick revision notes</div>
+      <h2 className="section-title">Revision notes</h2>
       {weak.map(({ q, st }) => {
         const ans = answerIndices(q);
         return (
-          <div className="card note" key={q.id}>
+          <div className="card note" key={q.id} style={{ marginBottom: 12 }}>
             <div className="note-head">
-              <span className="qnum">✕{st.w}</span>
+              <span className="qnum">wrong {st.w}×</span>
               <span className="badge grey">{q._aname}</span>
               <span className="badge red" style={{ marginLeft: 'auto' }}>{pct(st.c, st.a)}%</span>
             </div>
-            <div className="qtext" style={{ fontSize: 13.5 }}>{q.question}</div>
+            <div className="qtext" style={{ fontSize: 'var(--fs-sm)' }}>{q.question}</div>
             {showAnswers ? (
               <>
-                <ul className="opts" style={{ marginTop: 8 }}>
+                <ul className="opts">
                   {q.options.map((o, j) => (
                     <li key={j} className={ans.includes(j) ? 'ans' : ''}>
                       <span className="tag">{String.fromCharCode(65 + j)}</span>
@@ -2103,11 +2255,11 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
                     </li>
                   ))}
                 </ul>
-                {q.explanation && <div className="explain"><b>Why?</b> {q.explanation}</div>}
+                {q.explanation && <div className="explain"><b>Why:</b> {q.explanation}</div>}
               </>
             ) : (
               <button className="btn sm" onClick={() => setShowAnswers(true)}>
-                <Icon name="eye" size={12} /> Reveal answers
+                <Icon name="eye" size={13} /> Reveal answers
               </button>
             )}
           </div>
@@ -2124,14 +2276,16 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
   if (!assignment) return null;
   return (
     <div className="page wrap">
-      <div className="row between" style={{ marginBottom: 14 }}>
+      <div className="row between" style={{ marginBottom: 20 }}>
         <button className="btn ghost sm" onClick={onBack}><Icon name="arrowL" size={13} />Back</button>
         <button className="btn primary sm" onClick={() => onPractice(assignment.id, assignment.questions.length)}>
-          <Icon name="play" size={10} /> Practice
+          <Icon name="play" size={11} /> Practice this week
         </button>
       </div>
       <h1>{assignment.name}</h1>
-      <p className="muted" style={{ margin: '6px 0 18px' }}>{assignment.questions.length} questions · correct answers highlighted</p>
+      <p className="muted" style={{ margin: '8px 0 24px' }}>
+        {assignment.questions.length} questions · correct answers highlighted
+      </p>
       {assignment.questions.map((q, i) => {
         const st = progress.questions[q.id];
         const ans = answerIndices(q);
@@ -2153,7 +2307,7 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
                 </li>
               ))}
             </ul>
-            {q.explanation && <div className="explain"><b>Why?</b> {q.explanation}</div>}
+            {q.explanation && <div className="explain"><b>Why:</b> {q.explanation}</div>}
           </div>
         );
       })}
@@ -2164,16 +2318,16 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
 /* =========================================================================
    SETTINGS
    ========================================================================= */
-function SettingsModal({ settings, setSettings, theme, setTheme, subject, subjects, onChangeSubject, onExport, onImport, onResetProgress, onClose }) {
+function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAccent, subject, subjects, onChangeSubject, onExport, onImport, onResetProgress, onClose }) {
   useModalOpen();
   return (
     <Portal>
       <div className="overlay" onClick={onClose}>
-        <div className="modal" style={{ maxWidth: 560 }} onClick={(e) => e.stopPropagation()}>
+        <div className="modal" style={{ maxWidth: 560 }} onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true">
           <div className="sheet-handle" />
           <div className="modal-head">
             <h3>Settings</h3>
-            <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17} /></button>
+            <button className="icon-btn" onClick={onClose} aria-label="Close settings"><Icon name="x" size={17} /></button>
           </div>
           <div className="modal-body">
             <h3 style={{ marginBottom: 4 }}>Subject</h3>
@@ -2185,10 +2339,11 @@ function SettingsModal({ settings, setSettings, theme, setTheme, subject, subjec
               <select
                 value={subject ? subject.id : ''}
                 onChange={(e) => onChangeSubject(e.target.value)}
+                aria-label="Current subject"
                 style={{
-                  padding: '9px 11px', borderRadius: 10, border: '1px solid var(--border)',
-                  background: 'var(--surface)', color: 'var(--text)', fontWeight: 600, maxWidth: '55%',
-                  fontSize: 13,
+                  padding: '8px 11px', borderRadius: 8, border: '1px solid var(--border)',
+                  background: 'var(--surface)', color: 'var(--text)', fontWeight: 500,
+                  maxWidth: '55%', fontSize: 14,
                 }}
               >
                 {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
@@ -2196,46 +2351,51 @@ function SettingsModal({ settings, setSettings, theme, setTheme, subject, subjec
             </div>
             <p className="tiny" style={{ marginTop: 6 }}>Each subject keeps its own progress, history and bookmarks.</p>
 
-            <h3 style={{ margin: '20px 0 4px' }}>Quiz behaviour</h3>
+            <h2 className="section-title">Appearance</h2>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Dark mode</div>
+                <div className="hint">Easier on the eyes at night.</div>
+              </div>
+              <Switch on={theme === 'dark'} onChange={(v) => setTheme(v ? 'dark' : 'light')} />
+            </div>
+            <div style={{ marginTop: 14 }}>
+              <div className="lbl" style={{ fontWeight: 500, fontSize: 'var(--fs-sm)' }}>Colour theme</div>
+              <div className="hint" style={{ marginBottom: 4 }}>Pick an accent colour for buttons, links, and highlights.</div>
+              <ThemePicker accent={accent} onChange={setAccent} />
+            </div>
+
+            <h2 className="section-title">Quiz behaviour</h2>
             <div className="setrow">
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="lbl">Instant feedback</div>
-                <div className="hint">Reveal correct + explanation immediately.</div>
+                <div className="hint">Reveal the answer and explanation right away.</div>
               </div>
               <Switch on={settings.instantFeedback} onChange={(v) => setSettings({ ...settings, instantFeedback: v })} />
             </div>
             <div className="setrow">
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="lbl">Shuffle questions</div>
-                <div className="hint">Randomise order within a set.</div>
+                <div className="hint">Randomise the order within a set.</div>
               </div>
               <Switch on={settings.shuffleQuestions} onChange={(v) => setSettings({ ...settings, shuffleQuestions: v })} />
             </div>
             <div className="setrow">
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="lbl">Shuffle options</div>
-                <div className="hint">Randomise A / B / C / D positions.</div>
+                <div className="hint">Randomise the A / B / C / D positions.</div>
               </div>
               <Switch on={settings.shuffleOptions} onChange={(v) => setSettings({ ...settings, shuffleOptions: v })} />
             </div>
 
-            <h3 style={{ margin: '20px 0 4px' }}>Appearance</h3>
-            <div className="setrow">
-              <div style={{ minWidth: 0, flex: 1 }}>
-                <div className="lbl">Dark mode</div>
-                <div className="hint">Easier on the eyes at night. Default on.</div>
-              </div>
-              <Switch on={theme === 'dark'} onChange={(v) => setTheme(v ? 'dark' : 'light')} />
-            </div>
-
-            <h3 style={{ margin: '20px 0 4px' }}>Data</h3>
+            <h2 className="section-title">Data</h2>
             <div className="row" style={{ gap: 8 }}>
-              <button className="btn sm" onClick={onExport}><Icon name="download" size={12} />Export</button>
+              <button className="btn sm" onClick={onExport}><Icon name="download" size={13} />Export</button>
               <label className="btn sm" style={{ cursor: 'pointer' }}>
-                <Icon name="upload" size={12} />Import
+                <Icon name="upload" size={13} />Import
                 <input type="file" accept="application/json" style={{ display: 'none' }} onChange={(e) => { if (e.target.files[0]) onImport(e.target.files[0]); }} />
               </label>
-              <button className="btn sm danger" onClick={onResetProgress}><Icon name="refresh" size={12} />Reset</button>
+              <button className="btn sm danger" onClick={onResetProgress}><Icon name="refresh" size={13} />Reset</button>
             </div>
             <p className="tiny" style={{ marginTop: 18 }}>All data is stored locally in your browser.</p>
           </div>
@@ -2250,6 +2410,7 @@ function SettingsModal({ settings, setSettings, theme, setTheme, subject, subjec
    ========================================================================= */
 function App() {
   const [theme, setTheme] = useState(() => LS.get('nptel.theme', 'dark'));
+  const [accent, setAccent] = useState(() => LS.get('nptel.accent', 'ocean'));
   const [settings, setSettings] = useState(() => ({
     instantFeedback: true, shuffleQuestions: true, shuffleOptions: true,
     ...LS.get('nptel.settings', {}),
@@ -2267,7 +2428,16 @@ function App() {
   const [result, setResult] = useState(null);
   const [notesAssignment, setNotesAssignment] = useState(null);
 
-  useEffect(() => { document.documentElement.setAttribute('data-theme', theme); LS.set('nptel.theme', theme); }, [theme]);
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    LS.set('nptel.theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-accent', accent);
+    LS.set('nptel.accent', accent);
+  }, [accent]);
+
   useEffect(() => { LS.set('nptel.settings', settings); }, [settings]);
 
   const subjectIndex = useMemo(
@@ -2291,7 +2461,7 @@ function App() {
           try { data = await fetchJSON(QUESTIONS_FOLDER + meta.file); }
           catch (err) {
             data = DEMO_SUBJECT;
-            setBanner('⚠️ Could not load "' + meta.file + '" (' + err.message + '). Showing built-in sample data.');
+            setBanner('Could not load "' + meta.file + '" (' + err.message + '). Showing the built-in sample data.');
           }
         }
         const norm = normaliseSubject(data, meta);
@@ -2302,7 +2472,7 @@ function App() {
         setScreen('home');
       } catch (err) {
         if (cancelled) return;
-        setBanner('⚠️ Failed to load subject: ' + err.message);
+        setBanner('Failed to load subject: ' + err.message);
         setScreen('select');
       }
     })();
@@ -2335,7 +2505,7 @@ function App() {
     const bank = allQuestions(subject).filter((q) => assignmentIds.includes(q._aid));
     const picked = orderPool(bank).slice(0, Math.min(n, bank.length));
     const label = assignmentIds.length === 1
-      ? (subject.assignments.find((a) => a.id === assignmentIds[0]) || {}).name || 'Assignment'
+      ? (subject.assignments.find((a) => a.id === assignmentIds[0]) || {}).name || 'Week'
       : assignmentIds.length + ' weeks';
     startQuiz({ mode: 'custom', title: label + ' · ' + picked.length + ' Q', questions: prep(picked), assignmentIds });
   }, [subject, orderPool, prep]);
@@ -2469,23 +2639,23 @@ function App() {
       <div className="topbar">
         <div className="wrap">
           <div className="topbar-in">
-            <div className="brand" onClick={() => setScreen('home')}>
-              <div className="logo">M</div>
-              <div style={{ minWidth: 0 }}>
-                <div className="brand-title">Mooc Mastery</div>
-                <div className="brand-sub">{subject ? subject.title : 'NPTEL MCQ Practice'}</div>
-              </div>
-            </div>
-            <nav className="top-tabs">
+            <button className="brand" onClick={() => setScreen('home')} aria-label="Go to home">
+              <span className="brand-mark"><BrandMark size={18} /></span>
+              <span className="brand-text">
+                <span className="brand-title">Mooc Mastery</span>
+                <span className="brand-sub">{subject ? subject.title : 'NPTEL MCQ practice'}</span>
+              </span>
+            </button>
+            <nav className="top-tabs" aria-label="Main">
               {navItems.map((t) => (
-                <button key={t.id} className={'tab' + (activeTab === t.id ? ' active' : '')} onClick={() => setScreen(t.id)}>{t.label}</button>
+                <button key={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)} aria-current={activeTab === t.id ? 'page' : undefined}>{t.label}</button>
               ))}
             </nav>
             <div className="top-actions">
-              <button className="icon-btn" title="Toggle theme" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+              <button className="icon-btn" title="Toggle theme" aria-label="Toggle colour theme" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={16} />
               </button>
-              <button className="icon-btn" title="Settings" onClick={() => setShowSettings(true)}>
+              <button className="icon-btn" title="Settings" aria-label="Open settings" onClick={() => setShowSettings(true)}>
                 <Icon name="settings" size={16} />
               </button>
             </div>
@@ -2497,55 +2667,53 @@ function App() {
         <div className="wrap" style={{ paddingTop: 12 }}><div className="banner">{banner}</div></div>
       )}
 
-      <div style={{ flex: 1 }} className="page has-bottom-nav" key={screen}>
-        <div>
-          {screen === 'home' && (
-            <HomeView
-              subject={subject} progress={progress}
-              onStartRandom={startRandom} onStartCustom={startCustom}
-              onStartWeak={startWeak} onStartBookmarks={startBookmarks}
-              onStudy={openStudy} goHistory={() => setScreen('history')}
-            />
-          )}
+      <div style={{ flex: 1 }} className="app-main" key={screen}>
+        {screen === 'home' && (
+          <HomeView
+            subject={subject} progress={progress}
+            onStartRandom={startRandom} onStartCustom={startCustom}
+            onStartWeak={startWeak} onStartBookmarks={startBookmarks}
+            onStudy={openStudy} goHistory={() => setScreen('history')}
+          />
+        )}
 
-          {screen === 'result' && result && (
-            <ResultView
-              result={result} qmap={qmap}
-              onHome={() => setScreen('home')}
-              onRetryWrong={retryWrong}
-              onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
-            />
-          )}
+        {screen === 'result' && result && (
+          <ResultView
+            result={result} qmap={qmap}
+            onHome={() => setScreen('home')}
+            onRetryWrong={retryWrong}
+            onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
+          />
+        )}
 
-          {screen === 'history' && (
-            <HistoryView
-              progress={progress} qmap={qmap}
-              onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
-              onClear={() => { if (confirm('Clear all test history for this subject?')) setProgress({ ...progress, history: [] }); }}
-            />
-          )}
+        {screen === 'history' && (
+          <HistoryView
+            progress={progress} qmap={qmap}
+            onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
+            onClear={() => { if (confirm('Clear all test history for this subject?')) setProgress({ ...progress, history: [] }); }}
+          />
+        )}
 
-          {screen === 'cheatsheet' && (
-            <CheatsheetView
-              subject={subject} progress={progress}
-              onStudy={openStudy} onPracticeWeak={startWeak}
-            />
-          )}
+        {screen === 'cheatsheet' && (
+          <CheatsheetView
+            subject={subject} progress={progress}
+            onStudy={openStudy} onPracticeWeak={startWeak}
+          />
+        )}
 
-          {screen === 'notes' && notesAssignment && (
-            <NotesView
-              assignment={notesAssignment} progress={progress}
-              onBack={() => setScreen('home')}
-              onPractice={(aid, n) => startCustom([aid], n)}
-            />
-          )}
-        </div>
+        {screen === 'notes' && notesAssignment && (
+          <NotesView
+            assignment={notesAssignment} progress={progress}
+            onBack={() => setScreen('home')}
+            onPractice={(aid, n) => startCustom([aid], n)}
+          />
+        )}
       </div>
 
-      <nav className="bottom-nav">
+      <nav className="bottom-nav" aria-label="Main">
         {navItems.map((t) => (
-          <button key={t.id} data-tab={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)}>
-            <Icon name={t.icon} size={22} />
+          <button key={t.id} data-tab={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)} aria-current={activeTab === t.id ? 'page' : undefined}>
+            <Icon name={t.icon} size={20} strokeWidth={1.5} />
             <span>{t.label}</span>
           </button>
         ))}
@@ -2555,6 +2723,7 @@ function App() {
         <SettingsModal
           settings={settings} setSettings={setSettings}
           theme={theme} setTheme={setTheme}
+          accent={accent} setAccent={setAccent}
           subject={subject} subjects={subjectIndex}
           onChangeSubject={changeSubject}
           onExport={exportProgress} onImport={importProgress}
