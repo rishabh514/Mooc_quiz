@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#6366f1" />
-<title>NPTEL MCQ Practice</title>
+<title>Mooc Mastery — NPTEL MCQ Practice</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,7 +146,7 @@ button{background:none;border:0;padding:0;cursor:pointer}
 }
 
 /* ============================================================
-   TOPBAR (glass, floats above content)
+   TOPBAR
    ============================================================ */
 .topbar{
   position:sticky;top:0;z-index:40;
@@ -185,7 +185,7 @@ button{background:none;border:0;padding:0;cursor:pointer}
 @media(min-width:768px){.top-tabs{display:flex}}
 
 /* ============================================================
-   BOTTOM NAV (glass floating)
+   BOTTOM NAV
    ============================================================ */
 .bottom-nav{
   position:fixed;left:0;right:0;bottom:0;z-index:45;
@@ -242,7 +242,7 @@ body.modal-open .sticky-foot{display:none !important}
 body.modal-open{overflow:hidden}
 
 /* ============================================================
-   CARDS — clean solid surfaces
+   CARDS
    ============================================================ */
 .card{
   background:var(--surface);
@@ -322,6 +322,102 @@ body.modal-open{overflow:hidden}
 .stat .l{font-size:10.5px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
 
 /* ============================================================
+   FEATURE CARDS (marketing)
+   ============================================================ */
+.feature{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:14px 13px;
+  box-shadow:var(--shadow-xs);
+  display:flex;flex-direction:column;gap:8px;
+  transition:.2s;
+}
+.feature:hover{
+  transform:translateY(-2px);
+  border-color:color-mix(in srgb,var(--primary) 30%, var(--border));
+  box-shadow:var(--shadow-sm);
+}
+.feature .fi{
+  width:36px;height:36px;border-radius:11px;
+  display:grid;place-items:center;flex:0 0 auto;
+  color:#fff;
+}
+.feature .ft{font-weight:800;font-size:13.5px;letter-spacing:-.01em;line-height:1.25}
+.feature .fd{font-size:11.5px;color:var(--muted);line-height:1.45}
+
+.feature.violet .fi { background:linear-gradient(135deg,#8b5cf6,#6366f1); box-shadow:0 6px 16px rgba(139,92,246,.35) }
+.feature.blue   .fi { background:linear-gradient(135deg,#38bdf8,#0ea5e9); box-shadow:0 6px 16px rgba(56,189,248,.35) }
+.feature.amber  .fi { background:linear-gradient(135deg,#fbbf24,#f59e0b); box-shadow:0 6px 16px rgba(251,191,36,.35) }
+.feature.green  .fi { background:linear-gradient(135deg,#34d399,#10b981); box-shadow:0 6px 16px rgba(52,211,153,.35) }
+.feature.pink   .fi { background:linear-gradient(135deg,#f472b6,#ec4899); box-shadow:0 6px 16px rgba(244,114,182,.35) }
+.feature.red    .fi { background:linear-gradient(135deg,#f87171,#ef4444); box-shadow:0 6px 16px rgba(248,113,113,.35) }
+
+/* ============================================================
+   STEP (how it works)
+   ============================================================ */
+.step{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:14px;border:1px solid var(--border);border-radius:var(--r);
+  background:var(--surface);box-shadow:var(--shadow-xs);
+}
+.step .num{
+  width:34px;height:34px;flex:0 0 auto;border-radius:11px;
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:#fff;display:grid;place-items:center;font-weight:900;font-size:14px;
+  box-shadow:0 6px 16px rgba(99,102,241,.35);
+}
+.step .st{font-weight:800;font-size:13.5px;margin-bottom:2px}
+.step .sd{font-size:11.5px;color:var(--muted);line-height:1.5}
+
+/* ============================================================
+   PROMO
+   ============================================================ */
+.promo{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,
+    color-mix(in srgb,var(--primary) 22%, var(--surface)),
+    color-mix(in srgb,var(--primary-2) 12%, var(--surface)) 70%);
+  border:1px solid color-mix(in srgb,var(--primary) 30%, var(--border));
+  border-radius:var(--r-lg);
+  padding:18px 18px;
+}
+.promo::after{
+  content:'';position:absolute;right:-40px;top:-40px;
+  width:160px;height:160px;border-radius:50%;
+  background:radial-gradient(circle, color-mix(in srgb,var(--primary) 40%, transparent), transparent 70%);
+  filter:blur(20px);pointer-events:none;
+}
+.promo h3{font-size:15.5px;font-weight:800;margin-bottom:4px}
+.promo p{font-size:12.5px;color:var(--text-2);line-height:1.5}
+.promo .row{margin-top:12px;position:relative;z-index:1}
+
+/* ============================================================
+   ABOUT CARD
+   ============================================================ */
+.about-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:18px;
+  box-shadow:var(--shadow-xs);
+}
+.about-card .brandrow{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.about-card .brandrow .logo{width:32px;height:32px;font-size:14px;border-radius:10px}
+.about-card .brandrow .ttl{font-weight:900;font-size:14px;letter-spacing:-.02em}
+.about-card .brandrow .sub{font-size:10.5px;color:var(--muted)}
+.about-card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.about-card .tags span{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;
+  background:var(--soft);border:1px solid var(--border);color:var(--muted);
+}
+.about-card .madeby{
+  font-size:10.5px;color:var(--muted);margin-top:14px;padding-top:14px;
+  border-top:1px dashed var(--border);text-align:center;line-height:1.55;
+}
+
+/* ============================================================
    STEPPER
    ============================================================ */
 .stepper{display:inline-flex;align-items:center;border:1.5px solid var(--border);border-radius:12px;overflow:hidden;background:var(--soft);height:46px}
@@ -387,7 +483,7 @@ body.modal-open{overflow:hidden}
 .reveal-explain b{font-weight:800;color:var(--primary)}
 
 /* ============================================================
-   QUIZ ACTIONS (Skip + Next below card, horizontal)
+   QUIZ ACTIONS
    ============================================================ */
 .quiz-actions{
   margin-top:14px;
@@ -405,30 +501,18 @@ body.modal-open{overflow:hidden}
   gap:10px;
 }
 .quiz-actions-row .btn{
-  width:100%;
-  margin:0;
-  min-height:48px;
-  font-size:14.5px;
-  border-radius:13px;
+  width:100%;margin:0;min-height:48px;font-size:14.5px;border-radius:13px;
 }
 .quiz-actions-row .btn.skip{
-  background:var(--soft);
-  border-color:transparent;
-  color:var(--text-2);
-  box-shadow:none;
+  background:var(--soft);border-color:transparent;color:var(--text-2);box-shadow:none;
 }
 .quiz-actions-row .btn.skip:hover:not(:disabled){
   background:color-mix(in srgb,var(--red) 10%, var(--soft));
-  color:var(--red);
-  border-color:transparent;
-  transform:none;
-  box-shadow:none;
+  color:var(--red);border-color:transparent;transform:none;box-shadow:none;
 }
 .quiz-actions-row .btn.next{
   background:linear-gradient(135deg,var(--primary),var(--primary-2));
-  color:#fff;
-  border-color:transparent;
-  box-shadow:0 8px 22px rgba(99,102,241,.35);
+  color:#fff;border-color:transparent;box-shadow:0 8px 22px rgba(99,102,241,.35);
 }
 .quiz-actions-row .btn.next:hover:not(:disabled){
   box-shadow:0 12px 28px rgba(99,102,241,.45);
@@ -574,6 +658,57 @@ body.modal-open{overflow:hidden}
   background:var(--soft);border:1px solid var(--border);font-weight:700;
 }
 .subject-card .arrow{color:var(--muted);flex:0 0 auto;display:grid;place-items:center}
+
+/* Landing hero */
+.landing-hero{
+  text-align:center;
+  padding: 22px 0 26px;
+}
+.landing-hero .logo{
+  margin: 0 auto 16px;
+  width: 62px; height: 62px;
+  border-radius: 20px;
+  font-size: 26px;
+  box-shadow: 0 14px 36px rgba(99,102,241,.4);
+}
+.landing-hero h1{
+  font-size: 26px;
+  letter-spacing: -.03em;
+  line-height: 1.15;
+}
+.landing-hero .tagline{
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.landing-hero .chips{
+  display: flex; justify-content: center; gap: 6px; flex-wrap: wrap;
+  margin-top: 16px;
+}
+.landing-hero .chips span{
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 11px; border-radius: 999px;
+  font-size: 11px; font-weight: 800;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+}
+.landing-hero .chips span svg{ color: var(--primary) }
+
+.pick-label{
+  font-weight: 800; font-size: 12px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em;
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.pick-label::before{
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--primary);
+}
 
 /* ============================================================
    CHECKBOX CARDS
@@ -734,7 +869,6 @@ body.modal-open{overflow:hidden}
   .g3 .stat .l{ font-size:8.5px; }
   .g4{ gap:9px; }
 
-  /* Quiz actions */
   .quiz-actions{ margin-top:12px; gap:9px; }
   .quiz-actions-row{ gap:8px; }
   .quiz-actions-row .btn{ min-height:46px; font-size:14px; border-radius:12px; }
@@ -755,6 +889,35 @@ body.modal-open{overflow:hidden}
   .modal-head{ padding:12px 15px; padding-top:calc(12px + var(--safe-t)); }
   .modal-head h3{ font-size:14.5px; }
   .modal-body{ padding:14px; padding-bottom:calc(28px + var(--safe-b)); }
+
+  /* Landing page compact */
+  .landing-hero{ padding: 16px 0 22px; }
+  .landing-hero .logo{ width: 54px; height: 54px; font-size: 22px; border-radius: 17px; margin-bottom: 14px; }
+  .landing-hero h1{ font-size: 22px; }
+  .landing-hero .tagline{ font-size: 12.5px; }
+  .landing-hero .chips{ margin-top: 14px; gap: 5px; }
+  .landing-hero .chips span{ padding: 4px 9px; font-size: 10px; }
+
+  .pick-label{ font-size: 11px; }
+
+  .feature{ padding:12px; gap:7px; border-radius:12px; }
+  .feature .fi{ width:32px; height:32px; border-radius:10px; }
+  .feature .fi svg{ width:16px; height:16px; }
+  .feature .ft{ font-size:12.5px; }
+  .feature .fd{ font-size:11px; }
+
+  .step{ padding:12px; gap:12px; border-radius:12px; }
+  .step .num{ width:30px; height:30px; font-size:13px; border-radius:10px; }
+  .step .st{ font-size:13px; }
+  .step .sd{ font-size:11px; }
+
+  .promo{ padding:15px 15px; border-radius:16px; }
+  .promo h3{ font-size:14.5px; }
+  .promo p{ font-size:12px; }
+
+  .about-card{ padding:15px; border-radius:16px; }
+  .about-card .brandrow .logo{ width:30px; height:30px; font-size:13px; }
+  .about-card .brandrow .ttl{ font-size:13px; }
 }
 
 @media (max-width: 360px){
@@ -770,6 +933,8 @@ body.modal-open{overflow:hidden}
   .qreview-question{ font-size:12.5px; }
   .bottom-nav button span{ font-size:9px; }
   .score-pill{ width:44px; height:44px; font-size:13.5px; }
+  .feature .fd{ font-size:10.5px; }
+  .landing-hero h1{ font-size: 20px; }
 }
 </style>
 </head>
@@ -824,6 +989,14 @@ function Icon({ name, size = 22, strokeWidth = 2, fill = 'none' }) {
     refresh:  <><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></>,
     eye:      <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
     eyeOff:   <><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></>,
+    layers:   <><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></>,
+    lightbulb:<><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></>,
+    rocket:   <><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></>,
+    award:    <><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></>,
+    users:    <><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></>,
+    heart:    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>,
+    chart:    <><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></>,
+    shield:   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>,
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -1119,17 +1292,31 @@ function SubjectAvatar({ subject }) {
 }
 
 /* =========================================================================
-   SUBJECT PICKER
+   SUBJECT PICKER — the LANDING PAGE with marketing content
    ========================================================================= */
 function SubjectPicker({ subjects, onPick, banner }) {
   return (
-    <div className="page wrap" style={{ maxWidth: 640 }}>
-      <div style={{ textAlign: 'center', margin: '30px 0 28px' }}>
-        <div className="logo" style={{ margin: '0 auto 16px', width: 56, height: 56, fontSize: 24, borderRadius: 18 }}>N</div>
-        <h1>Choose a subject</h1>
-        <p className="muted" style={{ marginTop: 8 }}>Practice NPTEL assignment MCQs, track weak spots and build a personal cheatsheet.</p>
+    <div className="page wrap" style={{ maxWidth: 720 }}>
+
+      {/* ================= HERO ================= */}
+      <div className="landing-hero">
+        <div className="logo">M</div>
+        <h1>Master your NPTEL exams<br />with focused MCQ practice</h1>
+        <p className="tagline">
+          Mooc Mastery turns every assignment question into a personal trainer. Practise smart, spot weak areas, and walk into the final paper already knowing the answers.
+        </p>
+        <div className="chips">
+          <span><Icon name="target" size={11} /> Exam-focused bank</span>
+          <span><Icon name="brain" size={11} /> Smart revision</span>
+          <span><Icon name="shield" size={11} /> 100% offline</span>
+          <span><Icon name="zap" size={11} /> No sign-up</span>
+        </div>
       </div>
+
       {banner && <div className="banner">{banner}</div>}
+
+      {/* ================= SUBJECT PICKER ================= */}
+      <div className="pick-label">Choose a subject to begin</div>
       <div className="grid" style={{ gap: 10 }}>
         {subjects.map((s) => (
           <button key={s.id} className="subject-card" onClick={() => onPick(s.id)}>
@@ -1149,12 +1336,115 @@ function SubjectPicker({ subjects, onPick, banner }) {
           </div>
         )}
       </div>
+
+      {/* ================= WHY MOOC MASTERY ================= */}
+      <div className="section-title"><span className="dot" />Why Mooc Mastery</div>
+      <div className="grid g3">
+        <div className="feature violet">
+          <div className="fi"><Icon name="target" size={18} /></div>
+          <div className="ft">Exam-focused bank</div>
+          <div className="fd">Every question is taken directly from the assignment papers that become the final exam.</div>
+        </div>
+        <div className="feature blue">
+          <div className="fi"><Icon name="layers" size={18} /></div>
+          <div className="ft">4 practice modes</div>
+          <div className="fd">Random sets, custom weeks, weak-question drills, and bookmarked questions — your way.</div>
+        </div>
+        <div className="feature amber">
+          <div className="fi"><Icon name="chart" size={18} /></div>
+          <div className="ft">Pace insights</div>
+          <div className="fd">See exactly where you speed up, slow down, or get stuck with 4 response-time archetypes.</div>
+        </div>
+        <div className="feature green">
+          <div className="fi"><Icon name="brain" size={18} /></div>
+          <div className="ft">Smart revision</div>
+          <div className="fd">Auto-detects your weak questions and builds a personal drill from your mistakes.</div>
+        </div>
+        <div className="feature pink">
+          <div className="fi"><Icon name="book" size={18} /></div>
+          <div className="ft">Personal cheatsheet</div>
+          <div className="fd">Every question you get wrong twice becomes a study note, with the correct answer and explanation.</div>
+        </div>
+        <div className="feature red">
+          <div className="fi"><Icon name="lightbulb" size={18} /></div>
+          <div className="ft">Built-in explanations</div>
+          <div className="fd">Every question ships with a "why" — understand the concept, don't just memorise the answer.</div>
+        </div>
+      </div>
+
+      {/* ================= HOW IT WORKS ================= */}
+      <div className="section-title"><span className="dot" />How it works</div>
+      <div className="grid g2">
+        <div className="step">
+          <div className="num">1</div>
+          <div>
+            <div className="st">Pick your subject</div>
+            <div className="sd">Choose from one or more NPTEL courses. Progress is saved separately for each.</div>
+          </div>
+        </div>
+        <div className="step">
+          <div className="num">2</div>
+          <div>
+            <div className="st">Practice &amp; analyse</div>
+            <div className="sd">Take quizzes in any mode. We track score, pace, and every wrong answer for you.</div>
+          </div>
+        </div>
+        <div className="step">
+          <div className="num">3</div>
+          <div>
+            <div className="st">Revise from cheatsheet</div>
+            <div className="sd">Your personal cheatsheet auto-fills with the questions you keep getting wrong.</div>
+          </div>
+        </div>
+        <div className="step">
+          <div className="num">4</div>
+          <div>
+            <div className="st">Score 100%</div>
+            <div className="sd">Walk into the final exam having already seen every question — twice.</div>
+          </div>
+        </div>
+      </div>
+
+      {/* ================= PROMO ================= */}
+      <div className="promo" style={{ marginTop: 22 }}>
+        <h3>🎯 Ready to dominate your NPTEL exam?</h3>
+        <p>Pick a subject above to load its full question bank. Every attempt is tracked — no sign-up, no server, just practice.</p>
+        <div className="row" style={{ gap: 8 }}>
+          <span className="badge blue"><Icon name="check" size={11} /> Free forever</span>
+          <span className="badge green"><Icon name="shield" size={11} /> Works offline</span>
+          <span className="badge amber"><Icon name="zap" size={11} /> Instant feedback</span>
+        </div>
+      </div>
+
+      {/* ================= ABOUT ================= */}
+      <div className="section-title"><span className="dot" />About Mooc Mastery</div>
+      <div className="about-card">
+        <div className="brandrow">
+          <div className="logo">M</div>
+          <div>
+            <div className="ttl">Mooc Mastery</div>
+            <div className="sub">NPTEL MCQ Practice Companion</div>
+          </div>
+        </div>
+        <p className="muted" style={{ fontSize: 12.5, lineHeight: 1.65 }}>
+          Mooc Mastery is a lightweight practice tool built for NPTEL learners. It brings every assignment MCQ into one clean interface, tracks your answers locally in your browser, and intelligently surfaces what you need to revise. No sign-up, no servers, no ads — just focused practice.
+        </p>
+        <div className="tags">
+          <span><Icon name="shield" size={11} /> 100% offline</span>
+          <span><Icon name="heart" size={11} /> No ads, no tracking</span>
+          <span><Icon name="zap" size={11} /> Fast &amp; lightweight</span>
+          <span><Icon name="award" size={11} /> Built for 100%</span>
+        </div>
+        <div className="madeby">
+          Progress saved locally in your browser. Use <span className="kbd">Settings → Export</span> to back it up.
+        </div>
+      </div>
     </div>
   );
 }
 
 /* =========================================================================
-   HOME
+   HOME — lean practice dashboard (no marketing)
    ========================================================================= */
 function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory }) {
   const bank = useMemo(() => allQuestions(subject), [subject]);
@@ -1183,7 +1473,7 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
               {subject.assignments.length} weeks · {bank.length} questions{subject.institute && ' · ' + subject.institute}
             </p>
           </div>
-          <div className="badge blue" style={{ alignSelf: 'flex-start' }}><Icon name="target" size={12} />100%</div>
+          <div className="badge blue" style={{ alignSelf: 'flex-start' }}><Icon name="target" size={12} />100% target</div>
         </div>
 
         <div className="grid g4" style={{ marginTop: 14 }}>
@@ -1196,8 +1486,8 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
         {lastRun && (
           <div className="row between" style={{ marginTop: 12, padding: '10px 12px', background: 'var(--soft)', borderRadius: 10 }}>
             <div style={{ minWidth: 0 }}>
-              <div style={{ fontWeight: 700, fontSize: 12.5 }}>Last · {lastRun.modeLabel}</div>
-              <div className="tiny">{fmtDate(lastRun.ts)} · {lastRun.score}/{lastRun.total} correct</div>
+              <div style={{ fontWeight: 700, fontSize: 12.5 }}>Continue where you left off</div>
+              <div className="tiny">{lastRun.modeLabel} · {fmtDate(lastRun.ts)} · {lastRun.score}/{lastRun.total} correct</div>
             </div>
             <button className="btn sm" onClick={goHistory}>History</button>
           </div>
@@ -1319,7 +1609,7 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
 }
 
 /* =========================================================================
-   QUIZ — with Skip/Next buttons inside the page, below the card
+   QUIZ
    ========================================================================= */
 function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, onQuit }) {
   const questions = config.questions;
@@ -1433,7 +1723,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
     <div className="app">
       {flash && <div className={'flash ' + flash} />}
 
-      {/* Top bar with progress */}
       <div className="topbar">
         <div className="wrap">
           <div className="topbar-in">
@@ -1460,14 +1749,12 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
 
       <div className="wrap" style={{ flex: 1 }}>
         <div className="page" style={{ paddingBottom: 'calc(96px + var(--safe-b))' }}>
-          {/* Meta row */}
           <div className="row between" style={{ marginBottom: 10 }}>
             <span className="badge blue">{q._aname}</span>
             {multi && <span className="badge amber">Select {correctIdx.length}</span>}
             <span className="tiny" style={{ marginLeft: 'auto' }}>+1 correct · 0 wrong</span>
           </div>
 
-          {/* Question card */}
           <div className="card">
             <div className="qtext" style={{ fontSize: 16 }}>{q.question}</div>
             <div style={{ marginTop: 14 }}>
@@ -1500,7 +1787,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
             )}
           </div>
 
-          {/* Action row — Skip + Next/Check, directly below card */}
           <div className="quiz-actions">
             <div className="quiz-actions-meta">
               <span className="tiny">{correctCount} correct so far</span>
@@ -2111,7 +2397,7 @@ function App() {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'nptel-practice-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.download = 'mooc-mastery-backup-' + new Date().toISOString().slice(0, 10) + '.json';
     a.click();
     URL.revokeObjectURL(a.href);
   };
@@ -2184,10 +2470,10 @@ function App() {
         <div className="wrap">
           <div className="topbar-in">
             <div className="brand" onClick={() => setScreen('home')}>
-              <div className="logo">N</div>
+              <div className="logo">M</div>
               <div style={{ minWidth: 0 }}>
-                <div className="brand-title">NPTEL Practice</div>
-                <div className="brand-sub">{subject ? subject.title : ''}</div>
+                <div className="brand-title">Mooc Mastery</div>
+                <div className="brand-sub">{subject ? subject.title : 'NPTEL MCQ Practice'}</div>
               </div>
             </div>
             <nav className="top-tabs">
