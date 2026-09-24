@@ -1,0 +1,1355 @@
+{
+  "course": "Psychology of Learning",
+  "institute": "Indian Institute of Technology Kharagpur",
+  "assignment": "July 2026",
+  "questions": [
+    {
+      "week": 1,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Learning is often seen as the contiguous causal effect of ____ on behavior.",
+      "options": [
+        { "key": "A", "text": "blood" },
+        { "key": "B", "text": "bone density" },
+        { "key": "C", "text": "trauma" },
+        { "key": "D", "text": "experience" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "experience",
+      "explanation": "Learning is defined as a relatively permanent change in behavior or behavioral potential that results from experience. Blood, bone density, and trauma are biological or physical factors, not the primary causal agent of learning. Experience through interaction with the environment is what produces learning."
+    },
+    {
+      "week": 1,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "In order to say that learning has occurred, a hidden change in behavior must occur.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "False",
+      "explanation": "Learning does not require a 'hidden' change; it can be inferred from observable changes in behavior or behavioral potential. The key criterion is that the change is relatively permanent and due to experience, not that it must be hidden. Hence the statement is false."
+    },
+    {
+      "week": 1,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Which of the following is not a mental construct?",
+      "options": [
+        { "key": "A", "text": "skeleton" },
+        { "key": "B", "text": "knowledge" },
+        { "key": "C", "text": "representations" },
+        { "key": "D", "text": "associations" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "skeleton",
+      "explanation": "Mental constructs are abstract cognitive entities such as knowledge, representations, and associations that exist in the mind. The skeleton is a physical biological structure, not a mental construct. Therefore, skeleton is the correct answer."
+    },
+    {
+      "week": 1,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Learning changes the ___ structure of the brain through the process of continuous interactions between the learner and the external environment.",
+      "options": [
+        { "key": "A", "text": "physical" },
+        { "key": "B", "text": "social" },
+        { "key": "C", "text": "biological" },
+        { "key": "D", "text": "none of the given" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "physical",
+      "explanation": "Neuroplasticity research shows that learning physically alters the brain's structure by forming new synaptic connections and reorganizing neural pathways. Social and biological are not the specific terms used to describe this structural change in the context of learning. Hence physical is correct."
+    },
+    {
+      "week": 1,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "___ shapes the learning process.",
+      "options": [
+        { "key": "A", "text": "Only thoughts" },
+        { "key": "B", "text": "Only emotions" },
+        { "key": "C", "text": "Both thoughts and emotions" },
+        { "key": "D", "text": "Neither thoughts nor emotions" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Both thoughts and emotions",
+      "explanation": "Learning is influenced by both cognitive processes (thoughts) and affective processes (emotions). Neither alone is sufficient; both jointly shape how learning occurs. Therefore, both thoughts and emotions is the correct answer."
+    },
+    {
+      "week": 1,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Watson's work included the famous Little Albert experiment in which he conditioned a small child to ___ a white rat.",
+      "options": [
+        { "key": "A", "text": "fear" },
+        { "key": "B", "text": "love" },
+        { "key": "C", "text": "hate" },
+        { "key": "D", "text": "play with" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "fear",
+      "explanation": "In Watson and Rayner's Little Albert experiment, classical conditioning was used to make the child fear a white rat by pairing it with a loud noise. Love, hate, and play are not what was conditioned. Hence fear is correct."
+    },
+    {
+      "week": 1,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Behaviorism dominated psychology for much of the early ___ century.",
+      "options": [
+        { "key": "A", "text": "20th" },
+        { "key": "B", "text": "19th" },
+        { "key": "C", "text": "18th" },
+        { "key": "D", "text": "17th" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "20th",
+      "explanation": "Behaviorism was the dominant paradigm in psychology during the early 20th century, starting with Watson's 1913 manifesto and continuing through the mid-1900s. It was not dominant in the 17th, 18th, or 19th centuries. Therefore, 20th is correct."
+    },
+    {
+      "week": 1,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "The state of 'conscious incompetence' may be valuable ____ of a learning experience.",
+      "options": [
+        { "key": "A", "text": "at the end" },
+        { "key": "B", "text": "in the middle" },
+        { "key": "C", "text": "2 years after the end" },
+        { "key": "D", "text": "at the start" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "at the start",
+      "explanation": "Conscious incompetence is the second stage in the four stages of competence, where the learner realizes they don't know something. This awareness is most valuable at the start of learning because it motivates the learner to engage. It is not valuable at the end or middle. Hence at the start is correct."
+    },
+    {
+      "week": 1,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Which of the following is not an outcome of effective e-learning?",
+      "options": [
+        { "key": "A", "text": "wider range of strategies" },
+        { "key": "B", "text": "more reflective approach" },
+        { "key": "C", "text": "more positive emotions towards learning" },
+        { "key": "D", "text": "more disconnected knowledge" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "more disconnected knowledge",
+      "explanation": "Effective e-learning promotes connected, integrated knowledge, not disconnected fragments. A wider range of strategies, a more reflective approach, and positive emotions are all positive outcomes. Disconnected knowledge is a negative outcome. Hence D is correct."
+    },
+    {
+      "week": 1,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "Instrumental conditioning is an example of ___ learning.",
+      "options": [
+        { "key": "A", "text": "sensitization" },
+        { "key": "B", "text": "habituation" },
+        { "key": "C", "text": "associative" },
+        { "key": "D", "text": "meaningful" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "associative",
+      "explanation": "Instrumental (operant) conditioning is a form of associative learning where a behavior becomes associated with its consequences. Sensitization and habituation are non-associative forms of learning. Meaningful learning is a cognitive concept. Hence associative is correct."
+    },
+
+    {
+      "week": 2,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "The three major types of learning described by ___ psychology are classical conditioning, operant conditioning and observational learning.",
+      "options": [
+        { "key": "A", "text": "cognitive" },
+        { "key": "B", "text": "behavioral" },
+        { "key": "C", "text": "emotional" },
+        { "key": "D", "text": "evolutionary" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "behavioral",
+      "explanation": "Behavioral psychology describes three major types of learning: classical conditioning, operant conditioning, and observational learning. Cognitive psychology focuses on mental processes, not these three types. Emotional and evolutionary are not the correct categories. Hence behavioral is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "According to the view of Watson, psychology is ___.",
+      "options": [
+        { "key": "A", "text": "subjective" },
+        { "key": "B", "text": "only descriptive" },
+        { "key": "C", "text": "experimental" },
+        { "key": "D", "text": "about internal mental processes that cannot be measured and observed" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "experimental",
+      "explanation": "Watson argued that psychology should be an objective, experimental science focused on observable behavior. He rejected subjective introspection and internal mental processes. Hence psychology is experimental according to Watson."
+    },
+    {
+      "week": 2,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "___ is given by Ivan Pavlov.",
+      "options": [
+        { "key": "A", "text": "Operant conditioning" },
+        { "key": "B", "text": "Functional conditioning" },
+        { "key": "C", "text": "Classical conditioning" },
+        { "key": "D", "text": "Modern conditioning" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Classical conditioning",
+      "explanation": "Ivan Pavlov is credited with discovering classical conditioning through his experiments with dogs and salivation. Operant conditioning was given by B.F. Skinner. Functional and modern conditioning are not recognized theories. Hence classical conditioning is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "The process by which organisms learn to respond to certain stimuli but not to others is known as ___.",
+      "options": [
+        { "key": "A", "text": "stimulus generalization" },
+        { "key": "B", "text": "stimulus appreciation" },
+        { "key": "C", "text": "stimulus discrimination" },
+        { "key": "D", "text": "stimulus differentiation" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "stimulus discrimination",
+      "explanation": "Stimulus discrimination is the process by which an organism learns to respond differently to similar but distinct stimuli. Stimulus generalization is the opposite—responding similarly to similar stimuli. Appreciation and differentiation are not standard terms in this context. Hence stimulus discrimination is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Higher-order conditioning is intrinsically weaker than its first-order counterpart.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "Higher-order conditioning is indeed weaker than first-order conditioning because the conditioned stimulus in higher-order conditioning is not directly paired with the unconditioned stimulus. The association is more indirect and therefore weaker. Hence the statement is true."
+    },
+    {
+      "week": 2,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "____ is the process of gradually changing the quality of a response.",
+      "options": [
+        { "key": "A", "text": "Shaping" },
+        { "key": "B", "text": "Modeling" },
+        { "key": "C", "text": "Cueing" },
+        { "key": "D", "text": "Shifting" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Shaping",
+      "explanation": "Shaping is the operant conditioning technique of reinforcing successive approximations to a desired behavior, thereby gradually changing the quality of a response. Modeling involves observing and imitating, cueing provides signals, and shifting is not a standard term. Hence shaping is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "The works of ___ were instrumental in engendering the dramatic shift from behaviorism to cognitive theories.",
+      "options": [
+        { "key": "A", "text": "Edward C. Tolman" },
+        { "key": "B", "text": "Jean Piaget" },
+        { "key": "C", "text": "German Gestalt" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "Tolman's cognitive maps, Piaget's developmental cognitive theory, and the German Gestalt psychologists all contributed to the shift from behaviorism to cognitive theories. Each played a significant role. Hence all of the given is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "___ intelligence is the ability to perceive the visual–spatial world accurately and involves sensitivity to color, line, shape, form, space, and the potential for recognizing and manipulating the patterns of spaces.",
+      "options": [
+        { "key": "A", "text": "Interpersonal" },
+        { "key": "B", "text": "Spatial" },
+        { "key": "C", "text": "Bodily-kinesthetic" },
+        { "key": "D", "text": "Linguistic" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Spatial",
+      "explanation": "Spatial intelligence, as described in Gardner's multiple intelligences theory, involves the ability to perceive and manipulate visual-spatial information accurately. Interpersonal relates to understanding others, bodily-kinesthetic to physical movement, and linguistic to language. Hence spatial is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Sternberg proposed his theory in 1985 as an alternative to the idea of the ___.",
+      "options": [
+        { "key": "A", "text": "general intelligence factor" },
+        { "key": "B", "text": "multiple intelligences" },
+        { "key": "C", "text": "specific intelligence factor" },
+        { "key": "D", "text": "unconscious intelligence" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "general intelligence factor",
+      "explanation": "Sternberg's Triarchic Theory of Intelligence (1985) was proposed as an alternative to the concept of a single general intelligence factor (g factor) proposed by Spearman. Multiple intelligences is Gardner's theory, and specific/unconscious intelligence are not the targets. Hence general intelligence factor is correct."
+    },
+    {
+      "week": 2,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "Which of the following is not a kind of product in the structure of intellect model?",
+      "options": [
+        { "key": "A", "text": "symbolic" },
+        { "key": "B", "text": "classes" },
+        { "key": "C", "text": "systems" },
+        { "key": "D", "text": "implications" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "symbolic",
+      "explanation": "In Guilford's Structure of Intellect model, the products are units, classes, relations, systems, transformations, and implications. Symbolic is a content category, not a product. Hence symbolic is the correct answer."
+    },
+
+    {
+      "week": 3,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "The connections between nerves cells are called ___.",
+      "options": [
+        { "key": "A", "text": "systems" },
+        { "key": "B", "text": "syntaxes" },
+        { "key": "C", "text": "neurons" },
+        { "key": "D", "text": "synapses" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "synapses",
+      "explanation": "Synapses are the junctions between nerve cells where information is transmitted from one neuron to another. Neurons are the cells themselves, not the connections. Systems and syntaxes are not relevant terms. Hence synapses is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "In order to create a ___, information must be changed into a usable form, which occurs through a process known as encoding.",
+      "options": [
+        { "key": "A", "text": "past memory" },
+        { "key": "B", "text": "new imagination" },
+        { "key": "C", "text": "new memory" },
+        { "key": "D", "text": "past imagination" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "new memory",
+      "explanation": "Encoding is the process of transforming incoming information into a usable form so that it can be stored as a new memory. Past memory already exists and does not require encoding. Imagination is a creative process, not the direct result of encoding. Hence new memory is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Calling back the stored information in response to some cue for use in a process or activity is called ___.",
+      "options": [
+        { "key": "A", "text": "Retrieval" },
+        { "key": "B", "text": "Recall" },
+        { "key": "C", "text": "Recollection" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "Retrieval, recall, and recollection are all terms used to describe the process of accessing and bringing back stored information from memory. They are often used interchangeably in cognitive psychology. Hence all of the given is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "For many with ___ deficits, reading facial expressions and knowing how to respond are confusing daily challenges.",
+      "options": [
+        { "key": "A", "text": "memory" },
+        { "key": "B", "text": "intelligence" },
+        { "key": "C", "text": "social cognition" },
+        { "key": "D", "text": "biological cognition" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "social cognition",
+      "explanation": "Social cognition refers to the mental processes involved in perceiving, interpreting, and responding to social information, including facial expressions. Deficits in social cognition make it difficult to read emotions and respond appropriately. Memory, intelligence, and biological cognition are not the specific terms for this. Hence social cognition is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "The Information Processing View of Learning assumes that there are limits to how much information can be processed at each stage.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "The Information Processing model assumes that each stage of processing (sensory register, short-term memory, long-term memory) has limited capacity. For example, short-term memory can hold about 7±2 chunks. Hence the statement is true."
+    },
+    {
+      "week": 3,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "The Information Processing View of Learning assumes that information process is involved in ___.",
+      "options": [
+        { "key": "A", "text": "forgetting" },
+        { "key": "B", "text": "remembering" },
+        { "key": "C", "text": "perceiving" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "The Information Processing View encompasses all cognitive processes including perceiving (encoding), remembering (storage and retrieval), and forgetting (failure to encode, store, or retrieve). Hence all of the given is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "The capacity of the sensory register is ___.",
+      "options": [
+        { "key": "A", "text": "very small" },
+        { "key": "B", "text": "very large" },
+        { "key": "C", "text": "7+/-2 chunks" },
+        { "key": "D", "text": "unlimited" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "very large",
+      "explanation": "The sensory register has a very large capacity—it can briefly hold all incoming sensory information. However, the information decays very rapidly (within seconds). 7±2 chunks refers to short-term memory, not the sensory register. Hence very large is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "Most children do not begin to engage in the process of rehearsal on their own until about age ___.",
+      "options": [
+        { "key": "A", "text": "seven" },
+        { "key": "B", "text": "two" },
+        { "key": "C", "text": "thirteen" },
+        { "key": "D", "text": "one" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "seven",
+      "explanation": "Research shows that children typically begin to spontaneously use rehearsal as a memory strategy around age seven. Before this age, they are less likely to employ rehearsal without prompting. Hence seven is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "___ provides an interface between the sub-systems of working memory and the part of long term memory specialized for episodic memory.",
+      "options": [
+        { "key": "A", "text": "Phonological loop" },
+        { "key": "B", "text": "Visuo-spatial sketchpad" },
+        { "key": "C", "text": "Retrieval buffer" },
+        { "key": "D", "text": "Episodic buffer" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Episodic buffer",
+      "explanation": "The episodic buffer, proposed by Baddeley, serves as a temporary storage system that integrates information from the phonological loop, visuo-spatial sketchpad, and long-term memory. It provides the interface between working memory and episodic long-term memory. Hence episodic buffer is correct."
+    },
+    {
+      "week": 3,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "Memories of specific episodes of one’s life refers to ___.",
+      "options": [
+        { "key": "A", "text": "declarative memory" },
+        { "key": "B", "text": "experimental episodic memory" },
+        { "key": "C", "text": "autobiographical episodic memory" },
+        { "key": "D", "text": "procedural memory" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "autobiographical episodic memory",
+      "explanation": "Autobiographical episodic memory refers to memories of specific events and episodes from one's own life. Declarative memory is a broader category, procedural memory is about skills, and experimental episodic memory is not a standard term. Hence autobiographical episodic memory is correct."
+    },
+
+    {
+      "week": 4,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "___ thinking is the ability to create mental representations of objects, places, events, or people in your mind.",
+      "options": [
+        { "key": "A", "text": "General" },
+        { "key": "B", "text": "Creative" },
+        { "key": "C", "text": "Divergent" },
+        { "key": "D", "text": "Symbolic" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Symbolic",
+      "explanation": "Symbolic thinking involves creating mental representations (symbols) of objects, places, events, or people. General thinking is broad, creative thinking involves novelty, and divergent thinking generates multiple ideas. Hence symbolic is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "We compare new information to our ___ of the person, place, or thing, so we know how to categorize the new information mentally.",
+      "options": [
+        { "key": "A", "text": "protofit" },
+        { "key": "B", "text": "protobite" },
+        { "key": "C", "text": "prototype" },
+        { "key": "D", "text": "none of the given" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "prototype",
+      "explanation": "A prototype is a mental image or best example of a category that we use to compare and categorize new information. Protofit and protobite are not real terms. Hence prototype is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Which of the following is not true?",
+      "options": [
+        { "key": "A", "text": "Thinking is a higher mental process" },
+        { "key": "B", "text": "Thinking is a sub-vocal talking" },
+        { "key": "C", "text": "Thinking is fulfilling a need or problem solving" },
+        { "key": "D", "text": "Thinking is only done in verbal symbols" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Thinking is only done in verbal symbols",
+      "explanation": "Thinking is not limited to verbal symbols; it can also involve visual images, spatial representations, and other non-verbal forms. Thinking is indeed a higher mental process, can be sub-vocal, and involves problem-solving. Hence 'only done in verbal symbols' is not true."
+    },
+    {
+      "week": 4,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Mental images are ___.",
+      "options": [
+        { "key": "A", "text": "Auditory" },
+        { "key": "B", "text": "Visual" },
+        { "key": "C", "text": "Gustatory" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "Mental images can be experienced in any sensory modality, including auditory (hearing), visual (seeing), and gustatory (tasting). They are not limited to just one type. Hence all of the given is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "___ organize complex phenomena into simpler, easily understandable, and usable categories and help to solve our problems.",
+      "options": [
+        { "key": "A", "text": "Concepts" },
+        { "key": "B", "text": "Propositions" },
+        { "key": "C", "text": "Constructs" },
+        { "key": "D", "text": "Components" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Concepts",
+      "explanation": "Concepts are mental categories that group similar objects, events, or ideas, simplifying complex phenomena and aiding problem-solving. Propositions are statements, constructs are theoretical ideas, and components are parts of a whole. Hence concepts is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "The lowermost level of Bloom’s taxonomy is ___.",
+      "options": [
+        { "key": "A", "text": "remember" },
+        { "key": "B", "text": "apply" },
+        { "key": "C", "text": "understand" },
+        { "key": "D", "text": "analyze" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "remember",
+      "explanation": "In Bloom's revised taxonomy, the lowermost level is 'Remember' (previously 'Knowledge'), which involves recalling facts and basic concepts. Apply, understand, and analyze are higher levels. Hence remember is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "The psychomotor domain of the Bloom’s taxonomy is concerned with ___.",
+      "options": [
+        { "key": "A", "text": "Biological makeup" },
+        { "key": "B", "text": "Thoughts and beliefs" },
+        { "key": "C", "text": "Feelings and emotions" },
+        { "key": "D", "text": "Skilled behavior" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Skilled behavior",
+      "explanation": "The psychomotor domain involves physical movement, coordination, and motor skills—i.e., skilled behavior. The cognitive domain deals with thoughts, the affective domain with feelings and emotions, and biological makeup is not a Bloom's domain. Hence skilled behavior is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "Which of the following is an example of meta-cognition skills?",
+      "options": [
+        { "key": "A", "text": "Ignoring your limits" },
+        { "key": "B", "text": "Self-monitoring" },
+        { "key": "C", "text": "Skimming all important information" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Self-monitoring",
+      "explanation": "Metacognition refers to thinking about one's own thinking, which includes self-monitoring (awareness of one's own understanding and performance). Ignoring limits and skimming are not metacognitive skills. Hence self-monitoring is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "___ critical thinking skill helps you analyze and process information to come to an unbiased conclusion.",
+      "options": [
+        { "key": "A", "text": "Open-mindedness" },
+        { "key": "B", "text": "Self-regulation" },
+        { "key": "C", "text": "Self-control" },
+        { "key": "D", "text": "Observation" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Open-mindedness",
+      "explanation": "Open-mindedness is a critical thinking skill that involves being willing to consider different perspectives and evidence without bias, leading to unbiased conclusions. Self-regulation and self-control are related but not the specific skill for unbiased analysis. Hence open-mindedness is correct."
+    },
+    {
+      "week": 4,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "The inspiration phase of the creative thinking process refers to the ___ stage.",
+      "options": [
+        { "key": "A", "text": "Incubation" },
+        { "key": "B", "text": "Insight" },
+        { "key": "C", "text": "Evaluation" },
+        { "key": "D", "text": "Preparation" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Preparation",
+      "explanation": "In Wallas's model of creative thinking, the inspiration phase corresponds to the Preparation stage, where the individual gathers information and defines the problem. Incubation is the unconscious processing stage, Insight is the 'aha' moment, and Evaluation is the verification stage. Hence Preparation is correct."
+    },
+
+    {
+      "week": 5,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Which of the following is true about motivation?",
+      "options": [
+        { "key": "A", "text": "It is a physical impulse" },
+        { "key": "B", "text": "It is an external process" },
+        { "key": "C", "text": "It has a willingness to activate but not channel the attitudes of learners" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "None of the given",
+      "explanation": "Motivation is not merely a physical impulse, not purely external, and it does channel attitudes (not just activate). Since none of the statements A, B, or C are correct, the answer is None of the given."
+    },
+    {
+      "week": 5,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "The term 'motivation' comes from a ___ word.",
+      "options": [
+        { "key": "A", "text": "Greek" },
+        { "key": "B", "text": "Latin" },
+        { "key": "C", "text": "Hindi" },
+        { "key": "D", "text": "Bengali" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Latin",
+      "explanation": "The term 'motivation' derives from the Latin word 'movere', meaning 'to move'. It is not from Greek, Hindi, or Bengali. Hence Latin is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "It is called extrinsic motivation if causal factor is ___.",
+      "options": [
+        { "key": "A", "text": "curiosity" },
+        { "key": "B", "text": "social pressure" },
+        { "key": "C", "text": "self-satisfaction" },
+        { "key": "D", "text": "needs" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "social pressure",
+      "explanation": "Extrinsic motivation arises from external factors such as social pressure, rewards, or punishments. Curiosity, self-satisfaction, and needs are internal factors associated with intrinsic motivation. Hence social pressure is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "___ motivation is considered to be more crucial for students as it is associated with deep learning, better performance and self-efficacy.",
+      "options": [
+        { "key": "A", "text": "Intrinsic" },
+        { "key": "B", "text": "Extrinsic" },
+        { "key": "C", "text": "Introjected regulation" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Intrinsic",
+      "explanation": "Intrinsic motivation, driven by internal interest and enjoyment, is linked to deep learning, better performance, and higher self-efficacy. Extrinsic motivation and introjected regulation are more external and less associated with these outcomes. Hence Intrinsic is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "___ proposed that there are three primary drives that drive human behavior.",
+      "options": [
+        { "key": "A", "text": "Hull" },
+        { "key": "B", "text": "Watson" },
+        { "key": "C", "text": "Piaget" },
+        { "key": "D", "text": "Gestalt" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Hull",
+      "explanation": "Clark Hull proposed that three primary drives—hunger, thirst, and sex—drive human behavior. Watson was a behaviorist, Piaget focused on cognitive development, and Gestalt psychology focused on perception. Hence Hull is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Expectancy Theory of Motivation was developed by ___.",
+      "options": [
+        { "key": "A", "text": "Vroom" },
+        { "key": "B", "text": "Hull" },
+        { "key": "C", "text": "Murray" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Vroom",
+      "explanation": "Victor Vroom developed the Expectancy Theory of Motivation, which posits that motivation is a product of expectancy, instrumentality, and valence. Hull proposed drive theory, and Murray proposed a theory of needs. Hence Vroom is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "An example of ___ is thinking, 'If I work hard I can achieve the targets my boss has set for me'.",
+      "options": [
+        { "key": "A", "text": "purposeful" },
+        { "key": "B", "text": "valence" },
+        { "key": "C", "text": "instrumentality" },
+        { "key": "D", "text": "expectancy" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "expectancy",
+      "explanation": "Expectancy is the belief that one's effort will lead to performance. The statement 'If I work hard I can achieve the targets' reflects this belief. Instrumentality is the belief that performance leads to outcomes, and valence is the value placed on outcomes. Hence expectancy is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "In SMART goals, T stands for ___.",
+      "options": [
+        { "key": "A", "text": "Temporary" },
+        { "key": "B", "text": "Time-based" },
+        { "key": "C", "text": "Tough" },
+        { "key": "D", "text": "Testing" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Time-based",
+      "explanation": "In SMART goals, T stands for Time-based, meaning goals should have a clear deadline or timeframe. Temporary, Tough, and Testing are not part of the SMART acronym. Hence Time-based is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Friendship is a ___ need in Maslow’s hierarchy.",
+      "options": [
+        { "key": "A", "text": "Love and belonging" },
+        { "key": "B", "text": "Esteem" },
+        { "key": "C", "text": "Physiological" },
+        { "key": "D", "text": "Safety" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Love and belonging",
+      "explanation": "In Maslow's hierarchy of needs, friendship falls under the Love and Belonging level, which includes social relationships, affection, and acceptance. Esteem relates to recognition and respect, physiological to basic survival, and safety to security. Hence Love and belonging is correct."
+    },
+    {
+      "week": 5,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "___ theory differentiates between autonomous motivation and controlled motivation.",
+      "options": [
+        { "key": "A", "text": "Arousal" },
+        { "key": "B", "text": "Goal-setting" },
+        { "key": "C", "text": "Need hierarchy" },
+        { "key": "D", "text": "Self-determination" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Self-determination",
+      "explanation": "Self-determination theory (Deci & Ryan) distinguishes between autonomous motivation (self-endorsed) and controlled motivation (externally pressured). Arousal theory, goal-setting theory, and need hierarchy theory do not make this specific distinction. Hence Self-determination is correct."
+    },
+
+    {
+      "week": 6,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "According to Daniel Goleman, ___ component of emotional intelligence focuses on how we handle relationships with others.",
+      "options": [
+        { "key": "A", "text": "self-awareness" },
+        { "key": "B", "text": "motivation" },
+        { "key": "C", "text": "empathy" },
+        { "key": "D", "text": "emotional regulation" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "empathy",
+      "explanation": "In Goleman's model, empathy is the component that involves understanding and responding to others' emotions, which is key to handling relationships. Self-awareness is about knowing one's own emotions, motivation is about inner drive, and emotional regulation is about managing one's own emotions. Hence empathy is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Emotional intelligence can be considered a type of ___ intelligence.",
+      "options": [
+        { "key": "A", "text": "academic" },
+        { "key": "B", "text": "genetic" },
+        { "key": "C", "text": "social" },
+        { "key": "D", "text": "external" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "social",
+      "explanation": "Emotional intelligence is often considered a type of social intelligence because it involves understanding and managing emotions in social contexts. Academic intelligence relates to scholastic abilities, genetic is about heredity, and external is not a type of intelligence. Hence social is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Noticing a difficult emotion and slowing down or resisting any impulsive action that may follow highlights ___ component of emotional intelligence.",
+      "options": [
+        { "key": "A", "text": "Self-regulation" },
+        { "key": "B", "text": "Motivation" },
+        { "key": "C", "text": "Emotional literacy" },
+        { "key": "D", "text": "Empathy" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Self-regulation",
+      "explanation": "Self-regulation involves managing one's own emotions, including noticing difficult emotions and resisting impulsive reactions. Motivation is about drive, emotional literacy is about recognizing emotions, and empathy is about understanding others. Hence Self-regulation is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "The following are signs of emotional intelligence, except ___.",
+      "options": [
+        { "key": "A", "text": "strong sense of curiosity" },
+        { "key": "B", "text": "holding onto mistakes" },
+        { "key": "C", "text": "ability to manage emotions in difficult situations" },
+        { "key": "D", "text": "self-confidence" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "holding onto mistakes",
+      "explanation": "Holding onto mistakes is a sign of low emotional intelligence, as it indicates difficulty in self-regulation and moving forward. Curiosity, managing emotions, and self-confidence are all positive signs of emotional intelligence. Hence holding onto mistakes is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Perceiving emotions means ___.",
+      "options": [
+        { "key": "A", "text": "Ignoring signals" },
+        { "key": "B", "text": "Understanding only what somebody is saying to you" },
+        { "key": "C", "text": "Understanding only somebody’s facial expression" },
+        { "key": "D", "text": "Understanding both verbal and nonverbal signals" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Understanding both verbal and nonverbal signals",
+      "explanation": "Perceiving emotions involves accurately identifying emotions in oneself and others through both verbal (words, tone) and nonverbal (facial expressions, body language) signals. Ignoring signals or focusing on only one type is incomplete. Hence understanding both verbal and nonverbal signals is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "___ suggests that 10 distinct components provide the scaffolding of emotionally and socially intelligent behaviors:",
+      "options": [
+        { "key": "A", "text": "Bar-On" },
+        { "key": "B", "text": "Goleman" },
+        { "key": "C", "text": "Salovey" },
+        { "key": "D", "text": "Mayer" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Bar-On",
+      "explanation": "Reuven Bar-On proposed a model of emotional-social intelligence comprising 10 distinct components. Goleman proposed a five-component model, and Salovey and Mayer proposed a four-branch model. Hence Bar-On is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Which of the following is a facilitator of EQ?",
+      "options": [
+        { "key": "A", "text": "optimism" },
+        { "key": "B", "text": "happiness" },
+        { "key": "C", "text": "independence" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Optimism, happiness, and independence are all facilitators of emotional intelligence, as they contribute to positive emotional functioning and social effectiveness. Since all three are facilitators, the correct answer is all of the given."
+    },
+    {
+      "week": 6,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "___ is a strategy for improving one’s self-awareness.",
+      "options": [
+        { "key": "A", "text": "rejecting feedback" },
+        { "key": "B", "text": "using critical self-talk daily" },
+        { "key": "C", "text": "developing a fixed mindset" },
+        { "key": "D", "text": "pursuing one’s passion" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "pursuing one’s passion",
+      "explanation": "Pursuing one's passion helps in self-awareness by aligning actions with personal values and interests. Rejecting feedback, critical self-talk, and a fixed mindset are detrimental to self-awareness. Hence pursuing one's passion is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Having students create autobiographies is an example of creating opportunities for ___.",
+      "options": [
+        { "key": "A", "text": "emotional labor" },
+        { "key": "B", "text": "emotional contagion" },
+        { "key": "C", "text": "metacognition" },
+        { "key": "D", "text": "none of the given" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "metacognition",
+      "explanation": "Creating autobiographies encourages students to reflect on their own experiences and thinking processes, which is a metacognitive activity. Emotional labor and emotional contagion are different concepts. Hence metacognition is correct."
+    },
+    {
+      "week": 6,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "Which of the following is not true about management of emotions?",
+      "options": [
+        { "key": "A", "text": "It is essentially a private act" },
+        { "key": "B", "text": "It is directly regulated by others" },
+        { "key": "C", "text": "It is influenced by cultural norms" },
+        { "key": "D", "text": "It is influenced by what society defines as appropriate to feel and express" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "It is directly regulated by others",
+      "explanation": "Management of emotions is an internal process and is not directly regulated by others, though it can be influenced by social and cultural contexts. It is essentially private, influenced by cultural norms, and shaped by societal expectations. Hence 'directly regulated by others' is not true."
+    },
+
+    {
+      "week": 7,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Which of the following is false about learning according to Gagne’s definition?",
+      "options": [
+        { "key": "A", "text": "It is a change in human disposition" },
+        { "key": "B", "text": "It persists over a period of time" },
+        { "key": "C", "text": "It is simply ascribable to processes of growth" },
+        { "key": "D", "text": "None of the above" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It is simply ascribable to processes of growth",
+      "explanation": "Gagne defined learning as a change in human disposition or capability that persists over time and is not simply ascribable to growth. Learning is distinguished from maturation and growth. Hence 'simply ascribable to processes of growth' is false."
+    },
+    {
+      "week": 7,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Manual or physical skills come under ___ component of Bloom’s taxonomy.",
+      "options": [
+        { "key": "A", "text": "Cognitive" },
+        { "key": "B", "text": "Affective" },
+        { "key": "C", "text": "Psychomotor" },
+        { "key": "D", "text": "Physical" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Psychomotor",
+      "explanation": "The psychomotor domain of Bloom's taxonomy deals with manual or physical skills, including coordination and motor activities. Cognitive deals with knowledge, affective with emotions, and physical is not a Bloom's domain. Hence Psychomotor is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Reflection, learning and education was explored by ___.",
+      "options": [
+        { "key": "A", "text": "Carl Rogers" },
+        { "key": "B", "text": "John Watson" },
+        { "key": "C", "text": "Benjamin Bloom" },
+        { "key": "D", "text": "John Dewey" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "John Dewey",
+      "explanation": "John Dewey is known for his work on reflection, learning, and education, emphasizing experiential learning and reflective thinking. Rogers was humanistic psychology, Watson was behaviorism, and Bloom developed taxonomy. Hence John Dewey is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "The principles of ___ refer to how close in time two events must be for a bond to be formed.",
+      "options": [
+        { "key": "A", "text": "behavior" },
+        { "key": "B", "text": "reinforcement" },
+        { "key": "C", "text": "repetition" },
+        { "key": "D", "text": "contiguity" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "contiguity",
+      "explanation": "The principle of contiguity states that two events must occur close together in time for an association to be formed between them. Behavior, reinforcement, and repetition are related but not the specific principle described. Hence contiguity is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "___ gives information to learners about their success or failure concerning the task at hand.",
+      "options": [
+        { "key": "A", "text": "Cognitive feedback" },
+        { "key": "B", "text": "Emotional feedback" },
+        { "key": "C", "text": "Reinforcement" },
+        { "key": "D", "text": "Physical feedback" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Cognitive feedback",
+      "explanation": "Cognitive feedback provides learners with information about their success or failure on a task, helping them understand their performance. Emotional feedback relates to feelings, reinforcement is about consequences, and physical feedback is about bodily sensations. Hence cognitive feedback is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "The ___ orientation to learning has a quality of personal involvement—the whole person in both feeling and cognitive aspects being in the learning event.",
+      "options": [
+        { "key": "A", "text": "behavioral" },
+        { "key": "B", "text": "cognitive" },
+        { "key": "C", "text": "humanistic" },
+        { "key": "D", "text": "social" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "humanistic",
+      "explanation": "The humanistic orientation to learning, associated with Carl Rogers, emphasizes personal involvement, including both feeling and cognitive aspects. Behavioral focuses on observable behavior, cognitive on mental processes, and social on social contexts. Hence humanistic is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Learning through play is ___ learning.",
+      "options": [
+        { "key": "A", "text": "primary" },
+        { "key": "B", "text": "secondary" },
+        { "key": "C", "text": "passive" },
+        { "key": "D", "text": "active" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "active",
+      "explanation": "Learning through play is an active process where learners engage physically, mentally, and socially. It is not passive, primary, or secondary. Hence active is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "People with ___ learning style are prone to sorting their ideas after speaking, rather than thinking ideas through before.",
+      "options": [
+        { "key": "A", "text": "logical" },
+        { "key": "B", "text": "solitary" },
+        { "key": "C", "text": "visual" },
+        { "key": "D", "text": "auditory" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "auditory",
+      "explanation": "People with an auditory learning style often process information by talking and listening, and they may sort out their ideas while speaking rather than before. Logical, solitary, and visual styles do not specifically match this description. Hence auditory is correct."
+    },
+    {
+      "week": 7,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Which of the following statements is false?",
+      "options": [
+        { "key": "A", "text": "Effective instruction is static" },
+        { "key": "B", "text": "Effective instruction is eclectic" },
+        { "key": "C", "text": "Effective instruction is generative" },
+        { "key": "D", "text": "Effective instruction is interactive" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Effective instruction is static",
+      "explanation": "Effective instruction is dynamic and adaptive, not static. It is eclectic (drawing from multiple approaches), generative (producing new understanding), and interactive (engaging learners). Hence 'effective instruction is static' is false."
+    },
+    {
+      "week": 7,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "In ADDIE model, I stand for ___.",
+      "options": [
+        { "key": "A", "text": "instruction" },
+        { "key": "B", "text": "implementation" },
+        { "key": "C", "text": "integration" },
+        { "key": "D", "text": "induction" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "implementation",
+      "explanation": "In the ADDIE model, the letters stand for Analysis, Design, Development, Implementation, and Evaluation. The 'I' stands for Implementation, which is the phase where the instruction is delivered. Hence implementation is correct."
+    },
+
+    {
+      "week": 8,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "The word 'pedagogy' has been derived from the ___ word 'pedagogue'.",
+      "options": [
+        { "key": "A", "text": "Latin" },
+        { "key": "B", "text": "Sanskrit" },
+        { "key": "C", "text": "Greek" },
+        { "key": "D", "text": "English" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Greek",
+      "explanation": "The word 'pedagogy' comes from the Greek word 'paidagogos', which referred to a slave who led children to school. It is not derived from Latin, Sanskrit, or English. Hence Greek is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Which of the following statements is not true about pedagogy?",
+      "options": [
+        { "key": "A", "text": "It is a method or way of teaching" },
+        { "key": "B", "text": "It is derived from the Greek word 'pedagogue'" },
+        { "key": "C", "text": "It helps a teacher understand how learning should be facilitated." },
+        { "key": "D", "text": "It harms the quality of teaching and learning." }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "It harms the quality of teaching and learning.",
+      "explanation": "Pedagogy enhances the quality of teaching and learning; it does not harm it. It is a method of teaching, derived from Greek, and helps teachers facilitate learning. Hence 'it harms the quality of teaching and learning' is not true."
+    },
+    {
+      "week": 8,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Pedagogy can enhance the student-teacher relationship.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "Pedagogy provides teachers with strategies to understand and facilitate learning, which can strengthen the student-teacher relationship. It is not detrimental to it. Hence the statement is true."
+    },
+    {
+      "week": 8,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "___ learning is based on the model that knowledge can be created within a population where members actively interact by sharing experiences and take on asymmetry roles.",
+      "options": [
+        { "key": "A", "text": "integrative" },
+        { "key": "B", "text": "inquiry-based" },
+        { "key": "C", "text": "collaborative" },
+        { "key": "D", "text": "constructivist" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "collaborative",
+      "explanation": "Collaborative learning involves knowledge creation through active interaction and sharing of experiences among group members who take on asymmetric roles. Integrative, inquiry-based, and constructivist are related but do not precisely match this description. Hence collaborative is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "The Pedagogical Model provides an overview of the learning cycle and breaks it down into ___ domains or phases of instruction.",
+      "options": [
+        { "key": "A", "text": "five" },
+        { "key": "B", "text": "three" },
+        { "key": "C", "text": "two" },
+        { "key": "D", "text": "seven" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "five",
+      "explanation": "The Pedagogical Model breaks the learning cycle into five domains or phases of instruction. It is not three, two, or seven. Hence five is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Which of the following is not a type of inquiry-based approach?",
+      "options": [
+        { "key": "A", "text": "confrontation" },
+        { "key": "B", "text": "structure" },
+        { "key": "C", "text": "guided" },
+        { "key": "D", "text": "open" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "confrontation",
+      "explanation": "Inquiry-based approaches include structured, guided, and open inquiry. Confrontation is not a recognized type of inquiry-based approach. Hence confrontation is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "In experiential learning, students are engaged ___.",
+      "options": [
+        { "key": "A", "text": "intellectually" },
+        { "key": "B", "text": "soulfully" },
+        { "key": "C", "text": "socially" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Experiential learning engages students intellectually, soulfully (emotionally/spiritually), and socially. It is a holistic approach. Hence all of the given is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "___ stage of experiential theory by Kolb focuses on planning.",
+      "options": [
+        { "key": "A", "text": "concrete experience" },
+        { "key": "B", "text": "abstract conceptualization" },
+        { "key": "C", "text": "reflective observation" },
+        { "key": "D", "text": "active experimentation" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "active experimentation",
+      "explanation": "In Kolb's experiential learning cycle, the Active Experimentation stage involves planning how to test what has been learned in new situations. Concrete experience is doing, reflective observation is reviewing, and abstract conceptualization is concluding. Hence active experimentation is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "People with a ___ learning style can often act on 'gut feeling' and will rely on others' analysis rather than their own.",
+      "options": [
+        { "key": "A", "text": "accommodating" },
+        { "key": "B", "text": "converging" },
+        { "key": "C", "text": "diverging" },
+        { "key": "D", "text": "assimilating" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "accommodating",
+      "explanation": "In Kolb's learning styles, the accommodating style is characterized by acting on gut feeling and relying on others for analysis rather than doing their own. Converging, diverging, and assimilating have different characteristics. Hence accommodating is correct."
+    },
+    {
+      "week": 8,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "According to the ___ principle, students learn better from animation and narration than from animation and on-screen text.",
+      "options": [
+        { "key": "A", "text": "multimedia" },
+        { "key": "B", "text": "modality" },
+        { "key": "C", "text": "coherence" },
+        { "key": "D", "text": "temporal contiguity" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "modality",
+      "explanation": "The modality principle states that students learn better from animation and narration (auditory) than from animation and on-screen text (visual), because the visual channel is not overloaded. Multimedia, coherence, and temporal contiguity are different principles. Hence modality is correct."
+    },
+
+    {
+      "week": 9,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "E-learning is any form of ___.",
+      "options": [
+        { "key": "A", "text": "teaching" },
+        { "key": "B", "text": "training" },
+        { "key": "C", "text": "tutoring" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "E-learning encompasses any form of teaching, training, or tutoring that is delivered electronically. It is not limited to just one of these. Hence all of the given is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "___ is a feature of e-learning.",
+      "options": [
+        { "key": "A", "text": "difficulty in access" },
+        { "key": "B", "text": "user friendliness" },
+        { "key": "C", "text": "social injustice" },
+        { "key": "D", "text": "closed learning" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "user friendliness",
+      "explanation": "E-learning is characterized by user friendliness, making learning accessible and easy to navigate. Difficulty in access, social injustice, and closed learning are not features of e-learning. Hence user friendliness is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "E-learning is a synonym of audio-visual learning, multimedia learning, and distance learning.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "False",
+      "explanation": "E-learning is not a synonym for audio-visual learning, multimedia learning, or distance learning, though it may overlap with them. E-learning specifically refers to electronically supported learning. Hence the statement is false."
+    },
+    {
+      "week": 9,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Which of the following is not a type of e-learning?",
+      "options": [
+        { "key": "A", "text": "text-driven" },
+        { "key": "B", "text": "interactive" },
+        { "key": "C", "text": "simulation" },
+        { "key": "D", "text": "physical" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "physical",
+      "explanation": "E-learning types include text-driven, interactive, and simulation-based learning. Physical learning is traditional face-to-face learning, not a type of e-learning. Hence physical is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Which of the following is not a benefit of e-learning?",
+      "options": [
+        { "key": "A", "text": "It can accommodate the need of a housewife" },
+        { "key": "B", "text": "People can revise the learning content as many times as they want" },
+        { "key": "C", "text": "It facilitates in developing and communicating new training policies" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "None of the given",
+      "explanation": "All the listed options are benefits of e-learning: it accommodates diverse learners, allows revision, and facilitates training policies. Since all are benefits, the answer is None of the given."
+    },
+    {
+      "week": 9,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Good learners know ___.",
+      "options": [
+        { "key": "A", "text": "What they are learning" },
+        { "key": "B", "text": "Why they are learning" },
+        { "key": "C", "text": "How they are learning" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "Good learners are metacognitively aware: they know what they are learning, why they are learning it, and how they are learning it. Hence all of the given is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Learners may multitask when engaging in an online course, which could be resulting in ___.",
+      "options": [
+        { "key": "A", "text": "hyperfocus" },
+        { "key": "B", "text": "better retrieval" },
+        { "key": "C", "text": "shorter attention spans" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "shorter attention spans",
+      "explanation": "Multitasking during online learning divides attention and can lead to shorter attention spans. It does not lead to hyperfocus or better retrieval. Hence shorter attention spans is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "___ learning is the crucial determinant of successful e-learning.",
+      "options": [
+        { "key": "A", "text": "passive" },
+        { "key": "B", "text": "retrospective" },
+        { "key": "C", "text": "social" },
+        { "key": "D", "text": "active" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "active",
+      "explanation": "Active learning, where learners engage with the material, is crucial for successful e-learning. Passive, retrospective, and social learning are not the key determinants. Hence active is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "The brain can process 36,000 visual cues per___.",
+      "options": [
+        { "key": "A", "text": "hour" },
+        { "key": "B", "text": "second" },
+        { "key": "C", "text": "day" },
+        { "key": "D", "text": "year" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "hour",
+      "explanation": "Research cited in the course indicates that the brain can process approximately 36,000 visual cues per hour. It is not per second, day, or year. Hence hour is correct."
+    },
+    {
+      "week": 9,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "For effective learning, online courses should ___.",
+      "options": [
+        { "key": "A", "text": "use headings" },
+        { "key": "B", "text": "use complex language" },
+        { "key": "C", "text": "present long pieces of text" },
+        { "key": "D", "text": "use random images" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "use headings",
+      "explanation": "Using headings improves the structure and navigability of online content, making it easier for learners to process information. Complex language, long text blocks, and random images hinder learning. Hence use headings is correct."
+    }
+  ]
+}

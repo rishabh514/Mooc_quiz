@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#6366f1" />
+<title>NPTEL MCQ Practice</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --bg:#f5f7fb;
+  --surface:#ffffff;
+  --surface-2:#f8fafc;
+  --text:#0f172a;
+  --text-2:#334155;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --border-2:#cbd5e1;
+  --soft:#f1f5f9;
+
+  --primary:#6366f1;
+  --primary-2:#8b5cf6;
+  --primary-soft:rgba(99,102,241,.1);
+
+  --green:#10b981;
+  --green-bg:rgba(16,185,129,.12);
+  --red:#ef4444;
+  --red-bg:rgba(239,68,68,.12);
+  --amber:#f59e0b;
+  --amber-bg:rgba(245,158,11,.14);
+  --blue:#3b82f6;
+  --blue-bg:rgba(59,130,246,.12);
+
+  --shadow-xs:0 1px 2px rgba(15,23,42,.04);
+  --shadow-sm:0 2px 8px rgba(15,23,42,.06);
+  --shadow:0 6px 20px rgba(15,23,42,.08);
+  --shadow-lg:0 18px 50px rgba(15,23,42,.16);
+
+  --glass-border: color-mix(in srgb, var(--border) 80%, transparent);
+  --glass-highlight: inset 0 1px 0 rgba(255,255,255,.5);
+
+  --r-sm:10px;
+  --r:14px;
+  --r-lg:18px;
+
+  --top-h:58px;
+  --nav-h:68px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
+
+  --gutter: clamp(18px, 4.6vw, 24px);
+
+  --nav-practice: #a78bfa;
+  --nav-history: #38bdf8;
+  --nav-cheat: #fbbf24;
+}
+[data-theme="dark"]{
+  --bg:#0a0f1c;
+  --surface:#151c2e;
+  --surface-2:#111827;
+  --text:#f1f5f9;
+  --text-2:#cbd5e1;
+  --muted:#94a3b8;
+  --border:#232c42;
+  --border-2:#334155;
+  --soft:#1b2338;
+
+  --primary:#818cf8;
+  --primary-2:#a78bfa;
+  --primary-soft:rgba(129,140,248,.15);
+
+  --shadow-xs:0 1px 2px rgba(0,0,0,.4);
+  --shadow-sm:0 2px 8px rgba(0,0,0,.35);
+  --shadow:0 6px 20px rgba(0,0,0,.4);
+  --shadow-lg:0 18px 50px rgba(0,0,0,.55);
+
+  --glass-border: color-mix(in srgb, #ffffff 10%, transparent);
+  --glass-highlight: inset 0 1px 0 rgba(255,255,255,.06);
+
+  --nav-practice: #c4b5fd;
+  --nav-history: #7dd3fc;
+  --nav-cheat: #fcd34d;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;min-height:100%}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  transition:background .3s,color .3s;
+  line-height:1.5;
+  font-size:15px;
+  overflow-x:hidden;
+}
+#root{position:relative;z-index:1}
+
+.qtext, .qreview-question, .option .body, .opts li, .explain, .reveal-explain {
+  overflow-wrap: break-word; word-wrap: break-word; word-break: break-word;
+}
+
+h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+h1{font-size:24px} h2{font-size:19px} h3{font-size:16px}
+p{margin:0}
+button,input,select{font-family:inherit;font-size:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:10px}
+::-webkit-scrollbar-track{background:transparent}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.app{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+
+.wrap{
+  width:100%;max-width:960px;margin:0 auto;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+.page{
+  padding-top:16px;
+  padding-bottom:24px;
+  animation:pageFade .25s ease both;
+}
+.page.has-bottom-nav{padding-bottom:calc(96px + var(--safe-b))}
+@keyframes pageFade{from{opacity:0}to{opacity:1}}
+
+@media (min-width:768px){
+  h1{font-size:28px}
+  .page{padding-top:24px;padding-bottom:40px}
+  .page.has-bottom-nav{padding-bottom:40px}
+}
+
+/* ============================================================
+   TOPBAR (glass, floats above content)
+   ============================================================ */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  padding-top:var(--safe-t);
+  backdrop-filter:blur(20px) saturate(1.5);
+  -webkit-backdrop-filter:blur(20px) saturate(1.5);
+  background:color-mix(in srgb, var(--bg) 82%, transparent);
+  border-bottom:1px solid var(--glass-border);
+}
+.topbar-in{display:flex;align-items:center;gap:10px;height:var(--top-h)}
+.brand{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none;min-width:0;flex:1}
+.logo{
+  width:38px;height:38px;border-radius:12px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:#fff;display:grid;place-items:center;font-weight:900;font-size:17px;
+  box-shadow:0 8px 20px rgba(99,102,241,.35);
+}
+.brand-title{font-weight:800;font-size:14px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-sub{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.top-tabs{display:none;margin-left:8px;background:var(--soft);padding:4px;border-radius:12px;border:1px solid var(--border)}
+.top-tabs button{
+  border:0;background:transparent;color:var(--muted);font-weight:700;font-size:13px;
+  padding:8px 15px;border-radius:9px;cursor:pointer;transition:.15s;white-space:nowrap;
+}
+.top-tabs button:hover{color:var(--text)}
+.top-tabs button.active{background:var(--surface);color:var(--text);box-shadow:var(--shadow-xs)}
+.top-actions{display:flex;gap:8px}
+.icon-btn{
+  width:40px;height:40px;border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);cursor:pointer;font-size:16px;display:grid;place-items:center;transition:.15s;flex:0 0 auto;
+}
+.icon-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm);border-color:var(--border-2)}
+.icon-btn:active{transform:translateY(0)}
+@media(min-width:768px){.top-tabs{display:flex}}
+
+/* ============================================================
+   BOTTOM NAV (glass floating)
+   ============================================================ */
+.bottom-nav{
+  position:fixed;left:0;right:0;bottom:0;z-index:45;
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(24px) saturate(1.6);
+  -webkit-backdrop-filter:blur(24px) saturate(1.6);
+  border-top:1px solid var(--glass-border);
+  display:flex;
+  padding-bottom:var(--safe-b);
+  height:calc(var(--nav-h) + var(--safe-b));
+  box-shadow:0 -6px 24px rgba(0,0,0,.14), var(--glass-highlight);
+}
+.bottom-nav button{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.02em;
+  transition:.18s ease;position:relative;
+}
+.bottom-nav button svg{
+  width:20px;height:20px;
+  padding:6px;
+  border-radius:11px;
+  transition:.18s ease;
+  box-sizing:content-box;
+}
+.bottom-nav button[data-tab="home"] svg{
+  color: var(--nav-practice);
+  background: color-mix(in srgb, var(--nav-practice) 16%, transparent);
+}
+.bottom-nav button[data-tab="history"] svg{
+  color: var(--nav-history);
+  background: color-mix(in srgb, var(--nav-history) 16%, transparent);
+}
+.bottom-nav button[data-tab="cheatsheet"] svg{
+  color: var(--nav-cheat);
+  background: color-mix(in srgb, var(--nav-cheat) 16%, transparent);
+}
+.bottom-nav button.active{color:var(--text)}
+.bottom-nav button.active[data-tab="home"] svg{
+  color:#fff;background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  box-shadow: 0 6px 18px rgba(139,92,246,.45);
+}
+.bottom-nav button.active[data-tab="history"] svg{
+  color:#fff;background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  box-shadow: 0 6px 18px rgba(14,165,233,.45);
+}
+.bottom-nav button.active[data-tab="cheatsheet"] svg{
+  color:#111;background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 6px 18px rgba(251,191,36,.45);
+}
+@media(min-width:768px){.bottom-nav{display:none}}
+
+body.modal-open .bottom-nav,
+body.modal-open .sticky-foot{display:none !important}
+body.modal-open{overflow:hidden}
+
+/* ============================================================
+   CARDS — clean solid surfaces
+   ============================================================ */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:16px;
+  box-shadow:var(--shadow-xs);
+}
+.card+.card{margin-top:12px}
+@media(min-width:768px){.card{padding:20px;border-radius:20px}}
+.card.hero{
+  background:linear-gradient(140deg,
+    color-mix(in srgb,var(--primary) 10%, var(--surface)),
+    color-mix(in srgb,var(--primary) 2%, var(--surface)) 70%);
+  border-color:color-mix(in srgb,var(--primary) 22%, var(--border));
+}
+
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:640px){.g2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:768px){
+  .grid{gap:14px}
+  .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.between{justify-content:space-between}
+.col{display:flex;flex-direction:column;gap:10px}
+.muted{color:var(--muted);font-size:13px}
+.tiny{font-size:11.5px;color:var(--muted);line-height:1.45}
+.section-title{display:flex;align-items:center;gap:9px;margin:22px 0 10px;font-size:14px;font-weight:800;letter-spacing:.01em}
+.section-title .dot{width:6px;height:6px;border-radius:50%;background:var(--primary)}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:1.5px solid var(--border);background:var(--surface);color:var(--text);
+  padding:12px 18px;border-radius:12px;font-size:14.5px;font-weight:700;cursor:pointer;
+  transition:transform .12s, box-shadow .15s, background .15s, opacity .15s;min-height:46px;
+}
+.btn svg{width:16px;height:16px}
+.btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:var(--shadow-sm);border-color:var(--border-2)}
+.btn:active:not(:disabled){transform:translateY(0)}
+.btn:disabled{opacity:.42;cursor:not-allowed}
+.btn.primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border-color:transparent;box-shadow:0 8px 22px rgba(99,102,241,.35)}
+.btn.primary:hover:not(:disabled){box-shadow:0 12px 28px rgba(99,102,241,.45)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--muted)}
+.btn.ghost:hover{background:var(--soft);color:var(--text);box-shadow:none;transform:none}
+.btn.soft{background:var(--soft);border-color:transparent;color:var(--text)}
+.btn.soft:hover:not(:disabled){background:color-mix(in srgb,var(--primary) 10%, var(--soft));border-color:transparent;color:var(--primary)}
+.btn.danger{color:var(--red);border-color:color-mix(in srgb,var(--red) 40%, var(--border))}
+.btn.sm{padding:9px 14px;font-size:12.5px;min-height:38px;border-radius:10px}
+.btn.lg{padding:15px 22px;font-size:15.5px;min-height:52px;border-radius:14px}
+.btn.block{width:100%}
+.btn.icon{padding:0;width:46px}
+
+/* ============================================================
+   BADGES
+   ============================================================ */
+.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:11.5px;font-weight:800;white-space:nowrap}
+.badge.green{background:var(--green-bg);color:var(--green)}
+.badge.red{background:var(--red-bg);color:var(--red)}
+.badge.amber{background:var(--amber-bg);color:var(--amber)}
+.badge.blue{background:var(--blue-bg);color:var(--blue)}
+.badge.grey{background:var(--soft);color:var(--muted);border:1px solid var(--border)}
+
+/* ============================================================
+   STATS
+   ============================================================ */
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px 13px}
+.stat .v{font-size:22px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
+.stat .v small{font-size:14px;color:var(--muted);font-weight:700;margin-left:2px}
+.stat .l{font-size:10.5px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+
+/* ============================================================
+   STEPPER
+   ============================================================ */
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--border);border-radius:12px;overflow:hidden;background:var(--soft);height:46px}
+.stepper button{width:44px;height:46px;border:0;background:transparent;color:var(--text);font-size:20px;font-weight:800;cursor:pointer;transition:.12s}
+.stepper button:hover{background:var(--surface)}
+.stepper button:active{background:color-mix(in srgb,var(--primary) 12%, var(--surface))}
+.stepper input{
+  width:64px;height:46px;border:0;background:transparent;text-align:center;
+  font-size:16px;font-weight:800;color:var(--text);outline:none;-moz-appearance:textfield;
+}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+/* ============================================================
+   OPTIONS
+   ============================================================ */
+.option{
+  display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;
+  padding:15px 16px;border:1.6px solid var(--border);border-radius:var(--r);
+  background:var(--surface);
+  cursor:pointer;transition:.15s;font-size:14.5px;line-height:1.5;color:var(--text);margin-bottom:10px;min-height:54px;
+}
+.option:last-child{margin-bottom:0}
+.option:hover:not(:disabled):not(.locked){border-color:var(--primary);background:color-mix(in srgb,var(--primary) 5%, var(--surface))}
+.option:disabled{cursor:default}
+.option .key{
+  flex:0 0 auto;width:28px;height:28px;border-radius:9px;background:var(--soft);border:1px solid var(--border);
+  display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--muted);transition:.15s;
+}
+.option .body{flex:1;padding-top:2px}
+.option.selected{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 9%,var(--surface))}
+.option.selected .key{background:var(--primary);color:#fff;border-color:transparent}
+.option.correct{border-color:var(--green)!important;background:var(--green-bg)!important;animation:pop .32s ease}
+.option.correct .key{background:var(--green);color:#fff;border-color:transparent}
+.option.wrong{border-color:var(--red)!important;background:var(--red-bg)!important;animation:shake .35s ease}
+.option.wrong .key{background:var(--red);color:#fff;border-color:transparent}
+@keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.015)}100%{transform:scale(1)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+
+.flash{position:fixed;inset:0;pointer-events:none;z-index:90;animation:fadeOut .55s ease-out forwards}
+.flash.correct{background:radial-gradient(circle at 50% 45%, rgba(16,185,129,.35), transparent 65%)}
+.flash.wrong{background:radial-gradient(circle at 50% 45%, rgba(239,68,68,.35), transparent 65%)}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+
+.reveal-card{
+  margin-top:14px;border-radius:14px;padding:14px 16px;
+  border:1px solid color-mix(in srgb,var(--blue) 30%, transparent);background:var(--blue-bg);
+}
+.reveal-card.ok{background:var(--green-bg);border-color:color-mix(in srgb,var(--green) 35%, transparent)}
+.reveal-card.bad{background:var(--red-bg);border-color:color-mix(in srgb,var(--red) 35%, transparent)}
+.reveal-head{display:flex;align-items:center;gap:9px;font-weight:800;font-size:14.5px;margin-bottom:8px}
+.reveal-card.ok .reveal-head{color:var(--green)}
+.reveal-card.bad .reveal-head{color:var(--red)}
+.reveal-answer{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:3px 10px;border-radius:999px;font-size:12.5px;font-weight:800;
+  background:var(--surface);border:1px solid var(--border);margin-bottom:10px;
+}
+.reveal-answer b{color:var(--green);letter-spacing:.02em}
+.reveal-explain{
+  font-size:13.5px;line-height:1.6;color:var(--text);
+  padding:10px 13px;border-radius:10px;background:color-mix(in srgb,var(--surface) 70%, transparent);
+}
+.reveal-explain b{font-weight:800;color:var(--primary)}
+
+/* ============================================================
+   QUIZ ACTIONS (Skip + Next below card, horizontal)
+   ============================================================ */
+.quiz-actions{
+  margin-top:14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.quiz-actions-meta{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 4px;
+}
+.quiz-actions-row{
+  display:grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap:10px;
+}
+.quiz-actions-row .btn{
+  width:100%;
+  margin:0;
+  min-height:48px;
+  font-size:14.5px;
+  border-radius:13px;
+}
+.quiz-actions-row .btn.skip{
+  background:var(--soft);
+  border-color:transparent;
+  color:var(--text-2);
+  box-shadow:none;
+}
+.quiz-actions-row .btn.skip:hover:not(:disabled){
+  background:color-mix(in srgb,var(--red) 10%, var(--soft));
+  color:var(--red);
+  border-color:transparent;
+  transform:none;
+  box-shadow:none;
+}
+.quiz-actions-row .btn.next{
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:#fff;
+  border-color:transparent;
+  box-shadow:0 8px 22px rgba(99,102,241,.35);
+}
+.quiz-actions-row .btn.next:hover:not(:disabled){
+  box-shadow:0 12px 28px rgba(99,102,241,.45);
+}
+
+/* ============================================================
+   PROGRESS
+   ============================================================ */
+.pbar{height:6px;border-radius:99px;background:var(--soft);overflow:hidden}
+.pbar > i{display:block;height:100%;background:linear-gradient(90deg,var(--primary),var(--primary-2));transition:width .3s ease;border-radius:99px}
+
+/* ============================================================
+   PORTAL + MODAL
+   ============================================================ */
+.portal-root{position:relative;z-index:9999}
+
+.overlay{
+  position:fixed;inset:0;
+  background:rgba(8,12,24,.72);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:flex;align-items:flex-end;justify-content:center;
+  animation:fadeIn .2s ease;
+}
+@media(min-width:640px){.overlay{align-items:center;padding:24px}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.modal{
+  background:var(--surface);
+  border:1px solid var(--border);
+  width:100%;max-width:760px;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  height:100dvh;max-height:100dvh;border-radius:0;
+  animation:sheetIn .3s cubic-bezier(.2,.9,.3,1.1);
+}
+@media(min-width:640px){
+  .modal{border-radius:22px;height:auto;max-height:min(88dvh, 900px);animation:modalIn .25s cubic-bezier(.2,.9,.3,1.2)}
+}
+@keyframes sheetIn{from{transform:translateY(30px)}to{transform:none}}
+@keyframes modalIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+
+.modal-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 16px;padding-top:calc(14px + var(--safe-t));
+  border-bottom:1px solid var(--border);
+  flex:0 0 auto;z-index:2;
+}
+@media(min-width:640px){.modal-head{padding:16px 20px;padding-top:16px;border-radius:22px 22px 0 0}}
+.modal-body{
+  flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  overscroll-behavior:contain;
+  padding:14px;padding-bottom:calc(32px + var(--safe-b));
+}
+@media(min-width:640px){.modal-body{padding:20px 22px 28px}}
+.sheet-handle{width:40px;height:4px;border-radius:99px;background:var(--border-2);margin:8px auto 0;flex:0 0 auto}
+@media(min-width:640px){.sheet-handle{display:none}}
+
+/* ============================================================
+   JOURNEY
+   ============================================================ */
+.journey{display:flex;align-items:flex-end;gap:3px;height:110px;padding:10px;background:var(--soft);border-radius:12px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.journey .bar{flex:1;min-width:8px;border-radius:5px 5px 2px 2px;transition:.2s;cursor:help}
+.journey .bar.ok{background:linear-gradient(180deg,#34d399,#059669)}
+.journey .bar.bad{background:linear-gradient(180deg,#fb7185,#e11d48)}
+.journey .bar.skipped{background:var(--border-2)}
+
+/* ============================================================
+   HISTORY ROWS + QREVIEW
+   ============================================================ */
+.hrow{
+  display:flex;align-items:center;gap:12px;padding:14px;
+  border:1px solid var(--border);border-radius:var(--r);
+  background:var(--surface);
+  margin-bottom:10px;transition:.15s;
+  box-shadow:var(--shadow-xs);
+}
+.hrow:hover{box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.score-pill{
+  width:56px;height:56px;flex:0 0 auto;border-radius:14px;display:grid;place-items:center;
+  font-weight:900;font-size:17px;line-height:1;
+}
+.score-pill small{font-size:10px;opacity:.7;margin-left:1px;font-weight:800}
+.score-pill.good{background:var(--green-bg);color:var(--green)}
+.score-pill.mid{background:var(--amber-bg);color:var(--amber)}
+.score-pill.bad{background:var(--red-bg);color:var(--red)}
+
+.qreview-list{display:flex;flex-direction:column;gap:10px}
+.qreview{
+  background:var(--surface);
+  border:1px solid var(--border);border-radius:14px;padding:13px 14px;
+  box-shadow:var(--shadow-xs);
+}
+.qreview-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;justify-content:flex-start}
+.qreview-question{font-size:14px;font-weight:600;line-height:1.5;margin-bottom:10px;color:var(--text)}
+.qreview-answers{display:flex;flex-direction:column;gap:5px;font-size:12.5px;color:var(--text-2)}
+.qreview-answers .ok{color:var(--green);font-weight:700}
+.qreview-answers .bad{color:var(--red);font-weight:700}
+.qreview .explain{margin-top:10px}
+
+/* ============================================================
+   NOTES / OPTS
+   ============================================================ */
+.note{
+  border-left:3px solid var(--primary);
+  padding-left:14px;
+}
+.note-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.qnum{width:28px;height:28px;border-radius:8px;background:var(--soft);border:1px solid var(--border);display:grid;place-items:center;font-size:11.5px;font-weight:800;color:var(--muted)}
+.qtext{font-size:15px;font-weight:600;line-height:1.55;margin-bottom:12px}
+.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.opts li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;padding:9px 11px;border-radius:10px;background:var(--soft);line-height:1.45}
+.opts li.ans{background:var(--green-bg);font-weight:700}
+.opts li .tag{flex:0 0 auto;width:22px;height:22px;border-radius:7px;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;font-size:11px;font-weight:800;color:var(--muted)}
+.opts li.ans .tag{background:var(--green);color:#fff;border-color:transparent}
+.tick{margin-left:auto;color:var(--green);font-weight:900}
+.explain{margin-top:10px;padding:11px 14px;border-radius:11px;background:var(--blue-bg);font-size:13px;line-height:1.6;border:1px solid color-mix(in srgb,var(--blue) 22%,transparent)}
+.explain b{color:var(--primary);font-weight:800}
+
+/* ============================================================
+   SUBJECT PICKER
+   ============================================================ */
+.subject-card{
+  display:flex;align-items:center;gap:14px;padding:14px;border-radius:var(--r-lg);
+  border:1.5px solid var(--border);
+  background:var(--surface);
+  cursor:pointer;transition:.18s;text-align:left;width:100%;color:var(--text);
+  box-shadow:var(--shadow-xs);
+}
+.subject-card:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow)}
+.subject-card .ico{
+  width:58px;height:58px;border-radius:15px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));
+  color:#fff;display:grid;place-items:center;font-weight:900;font-size:22px;
+  box-shadow:0 8px 20px rgba(99,102,241,.28);overflow:hidden;position:relative;
+}
+.subject-card .ico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.subject-card .ico .letter{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px}
+.subject-card .meta{flex:1;min-width:0}
+.subject-card .meta .ttl{font-weight:800;font-size:15.5px;line-height:1.25}
+.subject-card .meta .sub{font-size:11.5px;color:var(--muted);margin-top:4px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.subject-card .meta .sub .pill{
+  display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;
+  background:var(--soft);border:1px solid var(--border);font-weight:700;
+}
+.subject-card .arrow{color:var(--muted);flex:0 0 auto;display:grid;place-items:center}
+
+/* ============================================================
+   CHECKBOX CARDS
+   ============================================================ */
+.chk{
+  display:flex;align-items:center;gap:11px;padding:12px 14px;border:1.5px solid var(--border);border-radius:13px;
+  background:var(--surface);
+  cursor:pointer;transition:.15s;user-select:none;min-height:56px;
+}
+.chk:hover{border-color:var(--primary)}
+.chk.on{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 7%,var(--surface))}
+.chk .box{width:20px;height:20px;border-radius:6px;border:2px solid var(--border-2);display:grid;place-items:center;font-size:12px;color:#fff;flex:0 0 auto;transition:.15s;font-weight:900}
+.chk.on .box{background:var(--primary);border-color:var(--primary)}
+
+/* ============================================================
+   MISC
+   ============================================================ */
+.banner{padding:12px 14px;border-radius:12px;background:var(--amber-bg);font-size:12.5px;line-height:1.5;border:1px solid color-mix(in srgb,var(--amber) 30%,transparent);margin-bottom:14px}
+.empty{text-align:center;padding:44px 20px;color:var(--muted)}
+.empty .big{font-size:40px;margin-bottom:10px;opacity:.85}
+.empty h3{color:var(--text);margin-bottom:6px}
+.spin{width:34px;height:34px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+.center{display:grid;place-items:center;min-height:100vh;min-height:100dvh;padding:20px}
+.switch{position:relative;width:46px;height:27px;border-radius:99px;background:var(--border-2);cursor:pointer;transition:.2s;flex:0 0 auto;border:0;padding:0}
+.switch.on{background:var(--primary)}
+.switch i{position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 4px rgba(0,0,0,.25);pointer-events:none}
+.switch.on i{left:22px}
+.setrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.setrow:last-child{border-bottom:0}
+.setrow .lbl{font-weight:700;font-size:13.5px}
+.setrow .hint{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+.kbd{display:inline-block;padding:2px 6px;border-radius:5px;border:1px solid var(--border);background:var(--soft);font-size:10.5px;font-weight:700;font-family:ui-monospace,monospace}
+.pill-row{display:flex;gap:6px;flex-wrap:wrap}
+
+.cheat-head{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}
+.toggle-answers{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 14px;border-radius:999px;font-size:12.5px;font-weight:800;
+  background:var(--surface);border:1.5px solid var(--border);color:var(--text);cursor:pointer;transition:.15s;
+}
+.toggle-answers:hover{border-color:var(--primary);color:var(--primary)}
+.toggle-answers.off{background:var(--soft);color:var(--muted)}
+
+/* ============================================================
+   MOBILE COMPACT (≤ 639px)
+   ============================================================ */
+@media (max-width: 639px) {
+  :root{
+    --top-h:50px;
+    --nav-h:64px;
+    --gutter: clamp(18px, 5vw, 22px);
+  }
+  body{ font-size:13.5px; }
+
+  h1{ font-size:20px; }
+  h2{ font-size:16.5px; }
+  h3{ font-size:14px; }
+
+  .page{ padding-top:14px; padding-bottom:18px; }
+  .page.has-bottom-nav{ padding-bottom:calc(96px + var(--safe-b)); }
+
+  .topbar-in{ gap:8px; }
+  .logo{ width:34px; height:34px; font-size:15px; border-radius:10px; }
+  .brand{ gap:9px; }
+  .brand-title{ font-size:13px; }
+  .brand-sub{ font-size:10.5px; }
+  .top-actions{ gap:6px; }
+  .icon-btn{ width:36px; height:36px; border-radius:10px; }
+  .icon-btn svg{ width:15px; height:15px; }
+
+  .bottom-nav button{ font-size:9.5px; gap:4px; }
+  .bottom-nav button svg{ width:19px; height:19px; padding:5px; border-radius:10px; }
+
+  .card{ padding:14px; border-radius:16px; }
+  .card.hero{ padding:16px 15px; }
+  .card+.card{ margin-top:10px; }
+
+  .stat{ padding:10px 12px; border-radius:11px; }
+  .stat .v{ font-size:18.5px; }
+  .stat .v small{ font-size:12px; }
+  .stat .l{ font-size:9.5px; letter-spacing:.05em; margin-top:2px; }
+
+  .btn{ padding:10px 16px; font-size:13.5px; min-height:42px; border-radius:11px; gap:7px; }
+  .btn svg{ width:14px; height:14px; }
+  .btn.lg{ padding:12px 18px; font-size:14.5px; min-height:48px; border-radius:13px; }
+  .btn.sm{ padding:8px 13px; font-size:12px; min-height:36px; border-radius:9px; }
+  .btn.sm svg{ width:12px; height:12px; }
+  .btn.icon{ width:42px; }
+
+  .stepper{ height:42px; border-radius:11px; }
+  .stepper button{ width:42px; height:42px; font-size:17px; }
+  .stepper input{ width:56px; height:42px; font-size:15px; }
+
+  .option{ padding:13px 14px; font-size:13.5px; min-height:48px; border-radius:13px; margin-bottom:8px; gap:11px; line-height:1.45; }
+  .option .key{ width:24px; height:24px; font-size:11.5px; border-radius:7px; }
+  .option .body{ padding-top:1px; }
+
+  .section-title{ font-size:13px; margin:20px 0 10px; gap:8px; }
+  .section-title .dot{ width:5px; height:5px; }
+
+  .qtext{ font-size:14.5px; line-height:1.5; margin-bottom:10px; }
+  .tiny{ font-size:10.5px; }
+  .muted{ font-size:12.5px; }
+
+  .journey{ height:78px; padding:8px; gap:2px; border-radius:11px; }
+  .journey .bar{ min-width:5px; border-radius:4px 4px 1px 1px; }
+
+  .qreview{ padding:12px 13px; border-radius:12px; }
+  .qreview-head{ gap:6px; margin-bottom:8px; }
+  .qreview-question{ font-size:13px; margin-bottom:8px; line-height:1.45; }
+  .qreview-answers{ font-size:11.5px; gap:4px; }
+  .qnum{ width:24px; height:24px; font-size:10.5px; border-radius:7px; }
+
+  .hrow{ padding:11px 12px; gap:11px; border-radius:12px; margin-bottom:9px; }
+  .score-pill{ width:48px; height:48px; font-size:14.5px; border-radius:12px; }
+  .score-pill small{ font-size:9px; }
+
+  .chk{ padding:10px 12px; min-height:48px; gap:10px; border-radius:12px; }
+  .chk .box{ width:18px; height:18px; font-size:11px; border-radius:5px; }
+
+  .note{ padding-left:12px; border-left-width:3px; }
+  .note-head{ gap:6px; margin-bottom:8px; }
+  .opts{ gap:5px; }
+  .opts li{ padding:8px 10px; font-size:12.5px; gap:8px; border-radius:9px; line-height:1.42; }
+  .opts li .tag{ width:20px; height:20px; font-size:10px; border-radius:6px; }
+
+  .explain{ padding:10px 12px; font-size:12.5px; border-radius:10px; line-height:1.55; margin-top:9px; }
+
+  .badge{ padding:3px 8px; font-size:10.5px; gap:4px; }
+
+  .subject-card{ padding:12px; gap:12px; border-radius:15px; }
+  .subject-card .ico{ width:48px; height:48px; border-radius:13px; font-size:18px; }
+  .subject-card .ico .letter{ font-size:18px; }
+  .subject-card .meta .ttl{ font-size:14px; }
+  .subject-card .meta .sub{ font-size:10.5px; margin-top:3px; }
+  .subject-card .meta .sub .pill{ padding:2px 7px; font-size:10px; }
+
+  .pill-row{ gap:5px; }
+
+  .setrow{ padding:12px 0; gap:12px; }
+  .setrow .lbl{ font-size:12.5px; }
+  .setrow .hint{ font-size:10.5px; }
+  .switch{ width:40px; height:24px; }
+  .switch i{ width:18px; height:18px; }
+  .switch.on i{ left:19px; }
+
+  .reveal-card{ padding:12px 13px; margin-top:11px; border-radius:12px; }
+  .reveal-head{ font-size:13px; gap:7px; margin-bottom:7px; }
+  .reveal-answer{ font-size:12px; padding:3px 9px; margin-bottom:9px; }
+  .reveal-explain{ font-size:12.5px; padding:9px 11px; line-height:1.55; border-radius:9px; }
+
+  .grid{ gap:10px; }
+  .g2{ gap:10px; }
+  .g3{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+  .g3 .stat{ padding:9px 10px; }
+  .g3 .stat .v{ font-size:16px; }
+  .g3 .stat .l{ font-size:8.5px; }
+  .g4{ gap:9px; }
+
+  /* Quiz actions */
+  .quiz-actions{ margin-top:12px; gap:9px; }
+  .quiz-actions-row{ gap:8px; }
+  .quiz-actions-row .btn{ min-height:46px; font-size:14px; border-radius:12px; }
+
+  .cheat-head{ flex-direction:column; align-items:stretch; gap:12px; margin-bottom:16px; }
+  .cheat-head h1{ font-size:19px; }
+  .toggle-answers{ justify-content:center; width:100%; padding:11px 14px; font-size:12.5px; border-radius:11px; }
+  .toggle-answers svg{ width:13px; height:13px; }
+
+  .card.hero .chk{ padding:10px 12px; min-height:44px; }
+  .card.hero .chk .box{ width:16px; height:16px; font-size:10px; }
+
+  .banner{ padding:11px 13px; font-size:12px; border-radius:11px; margin-bottom:12px; line-height:1.5; }
+
+  .empty{ padding:34px 18px; }
+  .empty .big{ font-size:34px; }
+
+  .modal-head{ padding:12px 15px; padding-top:calc(12px + var(--safe-t)); }
+  .modal-head h3{ font-size:14.5px; }
+  .modal-body{ padding:14px; padding-bottom:calc(28px + var(--safe-b)); }
+}
+
+@media (max-width: 360px){
+  :root{ --gutter: 16px; }
+  body{ font-size:13px; }
+  .stat .v{ font-size:16.5px; }
+  .g3 .stat .v{ font-size:15px; }
+  .btn{ padding:9px 13px; font-size:12.5px; min-height:40px; }
+  .btn.lg{ padding:11px 15px; font-size:13.5px; min-height:44px; }
+  .option{ font-size:13px; padding:11px 12px; }
+  .subject-card .ico{ width:44px; height:44px; font-size:16px; }
+  .subject-card .meta .ttl{ font-size:13.5px; }
+  .qreview-question{ font-size:12.5px; }
+  .bottom-nav button span{ font-size:9px; }
+  .score-pill{ width:44px; height:44px; font-size:13.5px; }
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+/* =========================================================================
+   PORTAL
+   ========================================================================= */
+function Portal({ children }) {
+  const el = useMemo(() => document.createElement('div'), []);
+  useEffect(() => {
+    el.className = 'portal-root';
+    document.body.appendChild(el);
+    return () => { document.body.removeChild(el); };
+  }, [el]);
+  return ReactDOM.createPortal(children, el);
+}
+
+/* =========================================================================
+   SVG ICONS
+   ========================================================================= */
+function Icon({ name, size = 22, strokeWidth = 2, fill = 'none' }) {
+  const paths = {
+    practice: <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
+    history:  <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
+    notes:    <><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></>,
+    settings: <><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></>,
+    sun:      <><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></>,
+    moon:     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>,
+    arrowL:   <><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></>,
+    arrowR:   <><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></>,
+    check:    <polyline points="20 6 9 17 4 12"/>,
+    x:        <><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></>,
+    bookmark: <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>,
+    bookmarkF:<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" fill="currentColor"/>,
+    clock:    <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
+    target:   <><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></>,
+    book:     <><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></>,
+    zap:      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>,
+    brain:    <><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.5a3 3 0 0 0-3 3v.5a3 3 0 0 0 0 6v.5a3 3 0 0 0 3 3h.5a2.5 2.5 0 0 0 5 0V5A2.5 2.5 0 0 0 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v.5a3 3 0 0 1 3 3v.5a3 3 0 0 1 0 6v.5a3 3 0 0 1-3 3h-.5a2.5 2.5 0 0 1-5 0"/></>,
+    sparkles: <><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"/><path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z"/></>,
+    flame:    <path d="M12 2c1 4 4 5 4 9a4 4 0 0 1-8 0c0-2 1-3 1-5-2 1-4 4-4 7a7 7 0 1 0 14 0c0-5-4-8-7-11z"/>,
+    play:     <polygon points="6 4 20 12 6 20 6 4" fill="currentColor" stroke="none"/>,
+    skip:     <><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></>,
+    puzzle:   <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 1 0-3.214 3.214c.446.166.855.497.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 1 1-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 0 0-.289-.877l-1.568-1.568A2.402 2.402 0 0 1 1.998 12c0-.617.236-1.234.706-1.704L4.315 8.69a.979.979 0 0 1 .837-.276c.47.07.802.48.968.925a2.501 2.501 0 1 0 3.214-3.214c-.446-.166-.855-.497-.925-.968a.979.979 0 0 1 .276-.837l1.61-1.61a2.404 2.404 0 0 1 1.705-.707c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 1 1 3.237 3.237c-.464.18-.894.527-.967 1.02z"/>,
+    download: <><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></>,
+    upload:   <><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></>,
+    refresh:  <><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></>,
+    eye:      <><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></>,
+    eyeOff:   <><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></>,
+  };
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {paths[name] || null}
+    </svg>
+  );
+}
+
+/* =========================================================================
+   SUBJECTS
+   ========================================================================= */
+const SUBJECTS = [
+  {
+    id:        "psychology_of_learning",
+    name:      "Psychology of Learning",
+    file:      "Psychology_of_learning.json",
+    image:     "psychology.png",
+    institute: "IIT Kharagpur"
+  },
+];
+
+const QUESTIONS_FOLDER = 'assets/';
+const IMAGES_FOLDER    = 'asset_image/';
+
+/* =========================================================================
+   STORAGE + UTILS
+   ========================================================================= */
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem(k); } catch (e) {} },
+};
+
+const uid = () => Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-4);
+
+function shuffle(a) {
+  const x = a.slice();
+  for (let i = x.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [x[i], x[j]] = [x[j], x[i]]; }
+  return x;
+}
+function fmtClock(ms) {
+  ms = Math.max(0, ms | 0);
+  const s = Math.floor(ms / 1000), m = Math.floor(s / 60);
+  return String(m).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
+}
+function fmtDate(ts) {
+  const d = new Date(ts);
+  return d.toLocaleDateString(undefined, { day: '2-digit', month: 'short' }) + ' · ' +
+         d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+}
+const pct = (n, d) => (d ? Math.round((n * 100) / d) : 0);
+function vibrate(pattern) { try { navigator.vibrate && navigator.vibrate(pattern); } catch (e) {} }
+
+function answerIndices(q) {
+  if (!q) return [];
+  let a = q.answer;
+  if (a === undefined || a === null) a = q.correct;
+  if (a === undefined || a === null) a = q.correctAnswer;
+  if (a === undefined || a === null) return [];
+  const toIdx = (x) => {
+    if (typeof x === 'number' && Number.isFinite(x)) return x | 0;
+    if (typeof x === 'string') {
+      const s = x.trim();
+      if (/^\d+$/.test(s)) return parseInt(s, 10);
+      if (/^[A-Za-z]$/.test(s)) return s.toUpperCase().charCodeAt(0) - 65;
+    }
+    return -1;
+  };
+  let arr;
+  if (Array.isArray(a)) arr = a;
+  else if (typeof a === 'string' && a.includes(',')) arr = a.split(',');
+  else arr = [a];
+  return arr.map(toIdx).filter((n) => n >= 0);
+}
+
+function sameSet(a, b) {
+  if (a.length !== b.length) return false;
+  const s = new Set(b);
+  return a.every((x) => s.has(x));
+}
+
+function prepareQuestion(q, shuffleOpts) {
+  if (!shuffleOpts || !q.options || q.options.length < 2) return q;
+  const order = shuffle(q.options.map((_, i) => i));
+  const map = {};
+  order.forEach((oldI, newI) => { map[oldI] = newI; });
+  return { ...q, options: order.map((i) => q.options[i]), answer: answerIndices(q).map((oi) => map[oi]) };
+}
+
+function useModalOpen() {
+  useEffect(() => {
+    document.body.classList.add('modal-open');
+    return () => document.body.classList.remove('modal-open');
+  }, []);
+}
+
+/* =========================================================================
+   NORMALISE
+   ========================================================================= */
+function normaliseSubject(raw, meta) {
+  const id = meta.id;
+  const title = meta.name || raw.course || 'Untitled subject';
+  const institute = raw.institute || meta.institute || '';
+  const term = raw.assignment || meta.term || '';
+
+  const rawQs = raw.questions || raw.qs || [];
+  const byWeek = {};
+  rawQs.forEach((q, i) => {
+    const week = q.week || 1;
+    if (!byWeek[week]) byWeek[week] = [];
+
+    const options = (q.options || []).map((o) =>
+      typeof o === 'string' ? o
+      : (o && (o.text ?? o.value ?? o.label)) ?? String(o)
+    );
+
+    const answer =
+      q.correctAnswer !== undefined ? q.correctAnswer :
+      q.answer !== undefined ? q.answer :
+      q.correct !== undefined ? q.correct : null;
+
+    byWeek[week].push({
+      id: q.id || (q.questionNo ? `W${week}-Q${q.questionNo}` : `W${week}-${i}`),
+      question: q.question || q.text || '',
+      options, answer,
+      explanation: q.explanation || q.solution || '',
+      _aid: 'W' + week, _aname: 'Week ' + week,
+      _week: week, _qno: q.questionNo, _type: q.type || 'MCQ',
+    });
+  });
+
+  const assignments = Object.keys(byWeek)
+    .map((w) => parseInt(w, 10))
+    .sort((a, b) => a - b)
+    .map((w) => ({ id: 'W' + w, name: 'Week ' + w, questions: byWeek[w] }));
+
+  return { id, title, institute, term, assignments };
+}
+
+async function fetchJSON(url) {
+  const res = await fetch(url, { cache: 'no-cache' });
+  if (!res.ok) throw new Error('HTTP ' + res.status + ' · ' + url);
+  return res.json();
+}
+
+const DEMO_SUBJECT = {
+  course: 'Demo Subject (built-in sample)',
+  institute: 'Local', assignment: 'Preview',
+  questions: [
+    { week: 1, questionNo: 1, type: 'MCQ', question: 'Which of the following is NOT a defining characteristic of cloud computing?',
+      options: [{key:'A',text:'On-demand self-service'},{key:'B',text:'Broad network access'},{key:'C',text:'Resource pooling'},{key:'D',text:'Vendor lock-in'}],
+      correctAnswer: 'D', explanation: 'Vendor lock-in is a risk, not a defining characteristic.' },
+    { week: 1, questionNo: 2, type: 'MCQ', question: 'In the NIST model, which service model lets you deploy applications but not manage the OS?',
+      options: [{key:'A',text:'IaaS'},{key:'B',text:'PaaS'},{key:'C',text:'SaaS'},{key:'D',text:'DaaS'}],
+      correctAnswer: 'B', explanation: 'PaaS gives you a runtime; you manage code, not servers.' },
+    { week: 1, questionNo: 3, type: 'MCQ', question: 'A hypervisor that runs directly on hardware is called a:',
+      options: [{key:'A',text:'Type-1 hypervisor'},{key:'B',text:'Type-2 hypervisor'},{key:'C',text:'Container runtime'},{key:'D',text:'Unikernel'}],
+      correctAnswer: 'A', explanation: 'Type-1 (bare-metal) runs on hardware; Type-2 runs on a host OS.' },
+  ],
+};
+
+/* =========================================================================
+   PROGRESS
+   ========================================================================= */
+const PROG_KEY = (sid) => 'nptel.progress.' + sid;
+const emptyProgress = () => ({ questions: {}, history: [], bookmarks: [] });
+const loadProgress = (sid) => {
+  const p = LS.get(PROG_KEY(sid), null);
+  if (!p) return emptyProgress();
+  return { questions: p.questions || {}, history: p.history || [], bookmarks: p.bookmarks || [] };
+};
+
+function allQuestions(subject) {
+  const out = [];
+  subject.assignments.forEach((a) => a.questions.forEach((q) => out.push(q)));
+  return out;
+}
+
+function weakQuestions(subject, progress) {
+  const out = [];
+  subject.assignments.forEach((a) => a.questions.forEach((q) => {
+    const st = progress.questions[q.id];
+    if (!st || !st.a) return;
+    const acc = st.c / st.a;
+    if (st.w >= 2 && acc < 0.6) out.push({ q, st, weight: st.w - st.c });
+  }));
+  return out.sort((x, y) => y.weight - x.weight || y.st.w - x.st.w);
+}
+
+function paceProfile(items) {
+  const answered = items.filter((i) => !i.skipped);
+  const avg = answered.length ? answered.reduce((s, i) => s + i.timeMs, 0) / answered.length : 0;
+  const thresh = avg || 1;
+  const counts = { perfect: 0, deliberate: 0, hasty: 0, stuck: 0 };
+  answered.forEach((i) => {
+    const fast = i.timeMs <= thresh;
+    const k = i.correct ? (fast ? 'perfect' : 'deliberate') : (fast ? 'hasty' : 'stuck');
+    counts[k]++;
+  });
+  return { counts, avg, thresh };
+}
+
+const PACE_META = {
+  perfect:    { label: 'Perfect',     icon: 'zap',      cls: 'green', desc: 'Correct & quick' },
+  deliberate: { label: 'Deliberate',  icon: 'brain',    cls: 'blue',  desc: 'Correct but slow' },
+  hasty:      { label: 'Hasty Wrong', icon: 'flame',    cls: 'amber', desc: 'Wrong & fast' },
+  stuck:      { label: 'Stuck',       icon: 'puzzle',   cls: 'red',   desc: 'Wrong & slow' },
+};
+
+/* =========================================================================
+   SHARED UI
+   ========================================================================= */
+function Switch({ on, onChange }) {
+  return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on}><i /></button>;
+}
+
+function Stepper({ value, onChange, min = 1, max = 999, step = 5 }) {
+  const clamp = (v) => Math.min(max, Math.max(min, v));
+  return (
+    <div className="stepper">
+      <button type="button" onClick={() => onChange(clamp(value - step))}>−</button>
+      <input type="number" value={value} onChange={(e) => { const v = parseInt(e.target.value, 10); onChange(clamp(isNaN(v) ? min : v)); }} />
+      <button type="button" onClick={() => onChange(clamp(value + step))}>+</button>
+    </div>
+  );
+}
+
+function PaceProfile({ items }) {
+  const { counts, avg, thresh } = paceProfile(items);
+  const total = Object.values(counts).reduce((a, b) => a + b, 0);
+  return (
+    <div>
+      <div className="row between" style={{ marginBottom: 10 }}>
+        <h3>Response-time profile</h3>
+        <span className="tiny">avg {fmtClock(avg)} · split {fmtClock(thresh)}</span>
+      </div>
+      <div className="grid g4">
+        {Object.keys(PACE_META).map((k) => {
+          const m = PACE_META[k];
+          return (
+            <div className="stat" key={k}>
+              <div className="row between" style={{ marginBottom: 6 }}>
+                <span style={{ color: 'var(--' + m.cls + ')' }}><Icon name={m.icon} size={16} /></span>
+                <span className={'badge ' + m.cls}>{pct(counts[k], total)}%</span>
+              </div>
+              <div className="v">{counts[k]}</div>
+              <div className="l">{m.label}</div>
+              <div className="tiny" style={{ marginTop: 3 }}>{m.desc}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function PaceJourney({ items }) {
+  const max = Math.max(1, ...items.map((i) => i.timeMs));
+  return (
+    <div>
+      <div className="row between" style={{ marginBottom: 8 }}>
+        <h3>Pace journey</h3>
+        <span className="tiny">bar height = time taken</span>
+      </div>
+      <div className="journey">
+        {items.map((it, i) => (
+          <div key={i}
+            className={'bar ' + (it.skipped ? 'skipped' : it.correct ? 'ok' : 'bad')}
+            style={{ height: Math.max(8, (it.timeMs / max) * 100) + '%' }}
+            title={'Q' + (i + 1) + ' · ' + (it.timeMs / 1000).toFixed(1) + 's · ' + (it.skipped ? 'skipped' : it.correct ? 'correct' : 'wrong')}
+          />
+        ))}
+      </div>
+      <div className="row" style={{ marginTop: 10, gap: 14 }}>
+        <span className="tiny">● correct</span>
+        <span className="tiny" style={{ color: 'var(--red)' }}>● wrong</span>
+        <span className="tiny">● skipped</span>
+      </div>
+    </div>
+  );
+}
+
+function SubjectAvatar({ subject }) {
+  const [failed, setFailed] = useState(false);
+  const letter = (subject.name || 'S').trim().charAt(0).toUpperCase();
+  const src = subject.image ? (IMAGES_FOLDER + subject.image) : null;
+  return (
+    <div className="ico">
+      <span className="letter">{letter}</span>
+      {src && !failed && <img src={src} alt="" loading="lazy" onError={() => setFailed(true)} />}
+    </div>
+  );
+}
+
+/* =========================================================================
+   SUBJECT PICKER
+   ========================================================================= */
+function SubjectPicker({ subjects, onPick, banner }) {
+  return (
+    <div className="page wrap" style={{ maxWidth: 640 }}>
+      <div style={{ textAlign: 'center', margin: '30px 0 28px' }}>
+        <div className="logo" style={{ margin: '0 auto 16px', width: 56, height: 56, fontSize: 24, borderRadius: 18 }}>N</div>
+        <h1>Choose a subject</h1>
+        <p className="muted" style={{ marginTop: 8 }}>Practice NPTEL assignment MCQs, track weak spots and build a personal cheatsheet.</p>
+      </div>
+      {banner && <div className="banner">{banner}</div>}
+      <div className="grid" style={{ gap: 10 }}>
+        {subjects.map((s) => (
+          <button key={s.id} className="subject-card" onClick={() => onPick(s.id)}>
+            <SubjectAvatar subject={s} />
+            <div className="meta">
+              <div className="ttl">{s.name}</div>
+              {s.institute && <div className="sub"><span className="pill">🏛 {s.institute}</span></div>}
+            </div>
+            <span className="arrow"><Icon name="arrowR" size={18} /></span>
+          </button>
+        ))}
+        {!subjects.length && (
+          <div className="empty">
+            <div className="big">📚</div>
+            <h3>No subjects added yet</h3>
+            <p className="muted" style={{ marginTop: 6 }}>Add an entry to the <span className="kbd">SUBJECTS</span> list in code.html.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================================
+   HOME
+   ========================================================================= */
+function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory }) {
+  const bank = useMemo(() => allQuestions(subject), [subject]);
+  const [count, setCount] = useState(() => Math.min(20, Math.max(1, bank.length)));
+  const [picked, setPicked] = useState([]);
+  const [customCount, setCustomCount] = useState(10);
+
+  const qStats = progress.questions;
+  const totalAttempts = Object.values(qStats).reduce((s, x) => s + (x.a || 0), 0);
+  const totalCorrect = Object.values(qStats).reduce((s, x) => s + (x.c || 0), 0);
+  const covered = Object.keys(qStats).length;
+  const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
+  const bookmarks = progress.bookmarks || [];
+  const poolCustom = picked.length ? bank.filter((q) => picked.includes(q._aid)) : [];
+  const lastRun = progress.history[0];
+
+  const togglePick = (aid) => setPicked((p) => (p.includes(aid) ? p.filter((x) => x !== aid) : [...p, aid]));
+
+  return (
+    <div className="page wrap">
+      <div className="card hero">
+        <div className="row between">
+          <div style={{ minWidth: 0 }}>
+            <h1 style={{ fontSize: 20 }}>{subject.title}</h1>
+            <p className="muted" style={{ marginTop: 5 }}>
+              {subject.assignments.length} weeks · {bank.length} questions{subject.institute && ' · ' + subject.institute}
+            </p>
+          </div>
+          <div className="badge blue" style={{ alignSelf: 'flex-start' }}><Icon name="target" size={12} />100%</div>
+        </div>
+
+        <div className="grid g4" style={{ marginTop: 14 }}>
+          <div className="stat"><div className="v">{covered}<small>/{bank.length}</small></div><div className="l">Seen</div></div>
+          <div className="stat"><div className="v">{pct(totalCorrect, totalAttempts)}%</div><div className="l">Accuracy</div></div>
+          <div className="stat"><div className="v">{totalAttempts}</div><div className="l">Attempts</div></div>
+          <div className="stat"><div className="v">{progress.history.length}</div><div className="l">Tests</div></div>
+        </div>
+
+        {lastRun && (
+          <div className="row between" style={{ marginTop: 12, padding: '10px 12px', background: 'var(--soft)', borderRadius: 10 }}>
+            <div style={{ minWidth: 0 }}>
+              <div style={{ fontWeight: 700, fontSize: 12.5 }}>Last · {lastRun.modeLabel}</div>
+              <div className="tiny">{fmtDate(lastRun.ts)} · {lastRun.score}/{lastRun.total} correct</div>
+            </div>
+            <button className="btn sm" onClick={goHistory}>History</button>
+          </div>
+        )}
+      </div>
+
+      <div className="section-title"><span className="dot" />Quick practice</div>
+      <div className="card">
+        <p className="muted" style={{ marginBottom: 12, fontSize: 12.5 }}>Pull a random set from the entire question bank.</p>
+        <div className="col" style={{ gap: 12 }}>
+          <div className="row" style={{ justifyContent: 'space-between', rowGap: 10 }}>
+            <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
+            <div className="pill-row">
+              {[10, 20, 30].map((n) => (
+                <button key={n} className={'btn sm' + (count === n ? ' primary' : '')} onClick={() => setCount(Math.min(n, bank.length))}>{n}</button>
+              ))}
+              <button className="btn sm" onClick={() => setCount(bank.length)}>All</button>
+            </div>
+          </div>
+          <button className="btn primary block lg" disabled={!bank.length} onClick={() => onStartRandom(count)}>
+            <Icon name="play" size={13} /> Start · {Math.min(count, bank.length)} questions
+          </button>
+        </div>
+      </div>
+
+      <div className="section-title"><span className="dot" />Custom set</div>
+      <div className="card">
+        <p className="muted" style={{ marginBottom: 12, fontSize: 12.5 }}>Pick specific weeks, then choose how many questions.</p>
+        <div className="grid g2" style={{ marginBottom: 12 }}>
+          {subject.assignments.map((a) => {
+            const on = picked.includes(a.id);
+            const cor = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.c : s; }, 0);
+            const att = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.a : s; }, 0);
+            return (
+              <div key={a.id} className={'chk' + (on ? ' on' : '')} onClick={() => togglePick(a.id)}>
+                <div className="box">{on ? '✓' : ''}</div>
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <div style={{ fontWeight: 700, fontSize: 12.5 }}>{a.name}</div>
+                  <div className="tiny">{a.questions.length} Q{att ? ' · ' + pct(cor, att) + '%' : ''}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        {picked.length > 0 ? (
+          <>
+            <div className="row between" style={{ marginBottom: 10, rowGap: 8 }}>
+              <span className="tiny">{poolCustom.length} questions in selection</span>
+              <Stepper value={customCount} onChange={setCustomCount} min={1} max={Math.max(1, poolCustom.length)} step={5} />
+            </div>
+            <div className="row" style={{ gap: 8 }}>
+              <button className="btn primary" style={{ flex: 1 }} onClick={() => onStartCustom(picked, Math.min(customCount, poolCustom.length))}>
+                <Icon name="play" size={13} /> Start custom quiz
+              </button>
+              <button className="btn ghost" onClick={() => setPicked([])}>Clear</button>
+            </div>
+          </>
+        ) : (
+          <p className="tiny">Select one or more weeks to unlock the custom builder.</p>
+        )}
+      </div>
+
+      <div className="section-title"><span className="dot" />Smart revision</div>
+      <div className="grid g2">
+        <div className="card">
+          <div className="row between">
+            <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ color: 'var(--red)' }}><Icon name="puzzle" size={16} /></span> Weak questions
+            </h3>
+            <span className={'badge ' + (weak.length ? 'red' : 'green')}>{weak.length}</span>
+          </div>
+          <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Answered wrong ≥ 2 times and still &lt; 60% correct.</p>
+          <button className="btn block" disabled={!weak.length} onClick={onStartWeak}>
+            {weak.length ? 'Drill weak questions' : 'Nothing weak yet 🎉'}
+          </button>
+        </div>
+        <div className="card">
+          <div className="row between">
+            <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ color: 'var(--amber)' }}><Icon name="bookmark" size={16} /></span> Bookmarked
+            </h3>
+            <span className={'badge ' + (bookmarks.length ? 'amber' : 'grey')}>{bookmarks.length}</span>
+          </div>
+          <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Tap the bookmark during a quiz to save questions for later.</p>
+          <button className="btn block" disabled={!bookmarks.length} onClick={onStartBookmarks}>
+            {bookmarks.length ? 'Practice bookmarks' : 'No bookmarks yet'}
+          </button>
+        </div>
+      </div>
+
+      <div className="section-title"><span className="dot" />Study by week</div>
+      <div className="grid g2">
+        {subject.assignments.map((a) => {
+          const att = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.a : s; }, 0);
+          const cor = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.c : s; }, 0);
+          const wrongHere = a.questions.filter((q) => qStats[q.id] && qStats[q.id].w >= 2).length;
+          return (
+            <div className="card" key={a.id}>
+              <div className="row between" style={{ alignItems: 'flex-start' }}>
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ fontWeight: 800, fontSize: 13.5 }}>{a.name}</div>
+                  <div className="tiny" style={{ marginTop: 3 }}>
+                    {a.questions.length} Q{att ? ' · ' + pct(cor, att) + '% accuracy' : ' · not attempted'}
+                  </div>
+                </div>
+                {wrongHere > 0 && <span className="badge red">{wrongHere} weak</span>}
+              </div>
+              <div className="pbar" style={{ margin: '12px 0' }}><i style={{ width: pct(cor, att) + '%' }} /></div>
+              <div className="row" style={{ gap: 8 }}>
+                <button className="btn sm" style={{ flex: 1 }} onClick={() => onStudy(a)}><Icon name="book" size={12} /> Notes</button>
+                <button className="btn sm primary" style={{ flex: 1 }} onClick={() => onStartCustom([a.id], a.questions.length)}><Icon name="play" size={10} /> Practice</button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================================
+   QUIZ — with Skip/Next buttons inside the page, below the card
+   ========================================================================= */
+function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, onQuit }) {
+  const questions = config.questions;
+  const [idx, setIdx] = useState(0);
+  const [selected, setSelected] = useState([]);
+  const [locked, setLocked] = useState(false);
+  const [records, setRecords] = useState([]);
+  const [elapsed, setElapsed] = useState(0);
+  const [flash, setFlash] = useState(null);
+
+  const qStart = useRef(Date.now());
+  const t0 = useRef(Date.now());
+  const flashTimer = useRef(null);
+
+  useEffect(() => {
+    const t = setInterval(() => setElapsed(Date.now() - t0.current), 250);
+    return () => clearInterval(t);
+  }, []);
+  useEffect(() => () => clearTimeout(flashTimer.current), []);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [idx]);
+
+  const q = questions[idx];
+  const correctIdx = useMemo(() => (q ? answerIndices(q) : []), [q]);
+  const multi = correctIdx.length > 1;
+  const isLast = idx === questions.length - 1;
+  const reveal = settings.instantFeedback && locked;
+  const isCorrect = reveal && sameSet(selected, correctIdx);
+  const correctCount = records.filter((r) => r.correct).length;
+
+  const finish = useCallback((recs) => {
+    const list = recs || records;
+    const answered = list.filter((r) => !r.skipped);
+    const score = answered.filter((r) => r.correct).length;
+    onFinish({
+      id: uid(), ts: Date.now(),
+      mode: config.mode, modeLabel: config.title,
+      assignmentIds: config.assignmentIds || [],
+      score, total: answered.length,
+      skipped: list.length - answered.length,
+      timeTotal: list.reduce((s, r) => s + r.timeMs, 0),
+      items: list,
+    });
+  }, [records, onFinish, config]);
+
+  const submit = useCallback((sel) => {
+    if (locked || !q) return;
+    const timeMs = Date.now() - qStart.current;
+    const correct = sameSet(sel, correctIdx);
+    setSelected(sel);
+    setLocked(true);
+    setRecords((r) => [...r, {
+      qid: q.id, correct, timeMs, skipped: false,
+      sel: sel.map((i) => q.options[i]),
+      ans: correctIdx.map((i) => q.options[i]),
+      aid: q._aid, aname: q._aname,
+    }]);
+    if (settings.instantFeedback) {
+      setFlash(correct ? 'correct' : 'wrong');
+      vibrate(correct ? 25 : [15, 40, 15]);
+      clearTimeout(flashTimer.current);
+      flashTimer.current = setTimeout(() => setFlash(null), 480);
+    } else vibrate(correct ? 20 : 35);
+  }, [locked, q, correctIdx, settings.instantFeedback]);
+
+  const advance = useCallback(() => {
+    if (isLast) { finish(); return; }
+    setIdx((i) => i + 1); setSelected([]); setLocked(false); qStart.current = Date.now();
+  }, [isLast, finish]);
+
+  const skip = useCallback(() => {
+    if (!q) return;
+    const rec = {
+      qid: q.id, correct: false, timeMs: Date.now() - qStart.current, skipped: true,
+      sel: [], ans: correctIdx.map((i) => q.options[i]), aid: q._aid, aname: q._aname,
+    };
+    const recs = [...records, rec];
+    setRecords(recs);
+    if (isLast) finish(recs);
+    else { setIdx((i) => i + 1); setSelected([]); setLocked(false); qStart.current = Date.now(); }
+  }, [q, records, isLast, finish, correctIdx]);
+
+  const choose = useCallback((i) => {
+    if (locked) return;
+    if (multi) { setSelected((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i])); return; }
+    if (settings.instantFeedback) submit([i]);
+    else setSelected([i]);
+  }, [locked, multi, settings.instantFeedback, submit]);
+
+  const needsSubmit = multi || !settings.instantFeedback;
+  let primaryLabel, primaryAction, primaryDisabled;
+  if (locked) { primaryLabel = isLast ? 'Finish' : 'Next'; primaryAction = advance; primaryDisabled = false; }
+  else if (needsSubmit) { primaryLabel = 'Check answer'; primaryAction = () => submit(selected); primaryDisabled = selected.length === 0; }
+  else { primaryLabel = 'Select an option'; primaryAction = () => {}; primaryDisabled = true; }
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target.tagName === 'INPUT') return;
+      const n = parseInt(e.key, 10);
+      if (n >= 1 && n <= 9 && q && n <= q.options.length) { choose(n - 1); return; }
+      if (e.key === 'Enter') { e.preventDefault(); if (!primaryDisabled) primaryAction(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [choose, primaryAction, primaryDisabled, q]);
+
+  if (!q) return null;
+  const isBookmarked = bookmarks.includes(q.id);
+  const progressPct = ((idx + (locked ? 1 : 0)) / questions.length) * 100;
+
+  return (
+    <div className="app">
+      {flash && <div className={'flash ' + flash} />}
+
+      {/* Top bar with progress */}
+      <div className="topbar">
+        <div className="wrap">
+          <div className="topbar-in">
+            <button className="icon-btn" onClick={onQuit} aria-label="Quit"><Icon name="x" size={17} /></button>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontWeight: 800, fontSize: 12.5, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{config.title}</div>
+              <div className="tiny">Question {idx + 1} of {questions.length}</div>
+            </div>
+            <span className="badge grey" style={{ fontVariantNumeric: 'tabular-nums' }}><Icon name="clock" size={11} />{fmtClock(elapsed)}</span>
+            <button className="icon-btn" onClick={() => onToggleBookmark(q.id)} aria-label="Bookmark"
+              style={{
+                color: isBookmarked ? '#fff' : undefined,
+                background: isBookmarked ? 'linear-gradient(135deg, var(--primary), var(--primary-2))' : undefined,
+                borderColor: isBookmarked ? 'transparent' : undefined,
+              }}>
+              <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={17} />
+            </button>
+          </div>
+          <div className="pbar" style={{ marginBottom: 10 }}>
+            <i style={{ width: progressPct + '%' }} />
+          </div>
+        </div>
+      </div>
+
+      <div className="wrap" style={{ flex: 1 }}>
+        <div className="page" style={{ paddingBottom: 'calc(96px + var(--safe-b))' }}>
+          {/* Meta row */}
+          <div className="row between" style={{ marginBottom: 10 }}>
+            <span className="badge blue">{q._aname}</span>
+            {multi && <span className="badge amber">Select {correctIdx.length}</span>}
+            <span className="tiny" style={{ marginLeft: 'auto' }}>+1 correct · 0 wrong</span>
+          </div>
+
+          {/* Question card */}
+          <div className="card">
+            <div className="qtext" style={{ fontSize: 16 }}>{q.question}</div>
+            <div style={{ marginTop: 14 }}>
+              {q.options.map((opt, i) => {
+                const isSel = selected.includes(i);
+                const isCorr = correctIdx.includes(i);
+                let cls = 'option';
+                if (isSel) cls += ' selected';
+                if (reveal && isCorr) cls += ' correct';
+                if (reveal && isSel && !isCorr) cls += ' wrong';
+                if (locked) cls += ' locked';
+                return (
+                  <button key={i} className={cls} onClick={() => choose(i)} disabled={locked}>
+                    <span className="key">{String.fromCharCode(65 + i)}</span>
+                    <span className="body">{opt}</span>
+                    {reveal && isCorr && <span style={{ color: 'var(--green)', flexShrink: 0, marginTop: 2 }}><Icon name="check" size={16} /></span>}
+                    {reveal && isSel && !isCorr && <span style={{ color: 'var(--red)', flexShrink: 0, marginTop: 2 }}><Icon name="x" size={16} /></span>}
+                  </button>
+                );
+              })}
+            </div>
+            {reveal && (
+              <div className={'reveal-card ' + (isCorrect ? 'ok' : 'bad')}>
+                <div className="reveal-head">
+                  {isCorrect ? <><Icon name="check" size={15} /> Correct!</> : <><Icon name="x" size={15} /> Incorrect</>}
+                </div>
+                <div className="reveal-answer">Correct answer: <b>{correctIdx.map(i => String.fromCharCode(65 + i)).join(', ')}</b></div>
+                {q.explanation && <div className="reveal-explain"><b>Why?</b> {q.explanation}</div>}
+              </div>
+            )}
+          </div>
+
+          {/* Action row — Skip + Next/Check, directly below card */}
+          <div className="quiz-actions">
+            <div className="quiz-actions-meta">
+              <span className="tiny">{correctCount} correct so far</span>
+              <span className="tiny">Q {idx + 1} · {questions.length - idx - 1} left</span>
+            </div>
+            <div className="quiz-actions-row">
+              <button className="btn skip" onClick={skip} disabled={locked}>
+                <Icon name="skip" size={14} /> Skip
+              </button>
+              <button className="btn next" onClick={primaryAction} disabled={primaryDisabled}>
+                {primaryLabel}{!locked && !primaryDisabled && primaryLabel !== 'Select an option' && ' ✓'}
+                {locked && !isLast && <Icon name="arrowR" size={15} />}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================================
+   RESULT
+   ========================================================================= */
+function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
+  const accuracy = pct(result.score, result.total);
+  const wrongItems = result.items.filter((i) => !i.correct && !i.skipped);
+  const [openItem, setOpenItem] = useState(null);
+
+  const verdict = accuracy === 100 ? { t: 'Perfect score! 🏆', c: 'green' }
+    : accuracy >= 80 ? { t: 'Great work! 🎉', c: 'green' }
+    : accuracy >= 50 ? { t: 'Getting there 💪', c: 'amber' }
+    : { t: 'Needs revision 📚', c: 'red' };
+
+  return (
+    <div className="page wrap">
+      <div className="card hero" style={{ textAlign: 'center', padding: 20 }}>
+        <div className={'badge ' + verdict.c} style={{ marginBottom: 10 }}>{verdict.t}</div>
+        <div style={{ fontSize: 44, fontWeight: 900, letterSpacing: '-.04em', lineHeight: 1 }}>
+          {result.score}<span style={{ fontSize: 20, color: 'var(--muted)' }}>/{result.total}</span>
+        </div>
+        <p className="muted" style={{ marginTop: 6, fontSize: 12.5 }}>{result.modeLabel}</p>
+
+        <div className="grid g4" style={{ marginTop: 14, textAlign: 'left' }}>
+          <div className="stat"><div className="v">{accuracy}%</div><div className="l">Accuracy</div></div>
+          <div className="stat"><div className="v">{fmtClock(result.timeTotal)}</div><div className="l">Total time</div></div>
+          <div className="stat"><div className="v">{fmtClock(result.total ? result.timeTotal / result.total : 0)}</div><div className="l">Avg pace</div></div>
+          <div className="stat"><div className="v">{result.skipped}</div><div className="l">Skipped</div></div>
+        </div>
+
+        <div className="row" style={{ marginTop: 14, justifyContent: 'center', gap: 8 }}>
+          <button className="btn" onClick={onHome}><Icon name="arrowL" size={13} />Home</button>
+          {wrongItems.length > 0 && (
+            <button className="btn primary" onClick={() => onRetryWrong(wrongItems.map((i) => i.qid))}>
+              <Icon name="refresh" size={13} />Retry {wrongItems.length} wrong
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className="card" style={{ marginTop: 10 }}><PaceProfile items={result.items} /></div>
+      <div className="card" style={{ marginTop: 10 }}><PaceJourney items={result.items} /></div>
+
+      <div className="section-title"><span className="dot" />Answer review</div>
+      <div className="qreview-list">
+        {result.items.map((it, i) => {
+          const q = qmap[it.qid];
+          const open = openItem === i;
+          return (
+            <div className="qreview" key={i}>
+              <div className="qreview-head">
+                <span className="qnum">#{i + 1}</span>
+                <span className="badge grey" onClick={() => onStudyAssignment(it.aid)} style={{cursor:'pointer'}}>{it.aname}</span>
+                <span style={{marginLeft:'auto'}} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
+                  {it.skipped ? 'skipped' : it.correct ? '✓ +1' : '✕ 0'}
+                </span>
+                <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
+              </div>
+              <div className="qreview-question">{q ? q.question : '(missing)'}</div>
+              <div className="qreview-answers">
+                <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : '— skipped —'}</span></div>
+                {!it.correct && <div>Correct: <span className="ok">{it.ans.join(' · ')}</span></div>}
+              </div>
+              {q && q.explanation && (
+                <>
+                  <button className="btn sm" style={{marginTop:8}} onClick={() => setOpenItem(open ? null : i)}>
+                    {open ? 'Hide explanation' : 'Show explanation'}
+                  </button>
+                  {open && <div className="explain">💡 {q.explanation}</div>}
+                </>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================================
+   HISTORY
+   ========================================================================= */
+function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
+  useModalOpen();
+  const accuracy = pct(run.score, run.total);
+  const [openIdx, setOpenIdx] = useState(null);
+  return (
+    <Portal>
+      <div className="overlay" onClick={onClose}>
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+          <div className="sheet-handle" />
+          <div className="modal-head">
+            <div style={{ minWidth: 0 }}>
+              <h3 style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{run.modeLabel}</h3>
+              <div className="tiny">{fmtDate(run.ts)}</div>
+            </div>
+            <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17} /></button>
+          </div>
+          <div className="modal-body">
+            <div className="grid g4">
+              <div className="stat"><div className="v">{run.score}<small>/{run.total}</small></div><div className="l">Score</div></div>
+              <div className="stat"><div className="v">{accuracy}%</div><div className="l">Accuracy</div></div>
+              <div className="stat"><div className="v">{fmtClock(run.total ? run.timeTotal / run.total : 0)}</div><div className="l">Avg pace</div></div>
+              <div className="stat"><div className="v">{fmtClock(run.timeTotal)}</div><div className="l">Total</div></div>
+            </div>
+
+            <div style={{ marginTop: 16 }}><PaceProfile items={run.items} /></div>
+            <div style={{ marginTop: 16 }}><PaceJourney items={run.items} /></div>
+
+            <div className="section-title"><span className="dot" />Question sources</div>
+            <div className="qreview-list">
+              {run.items.map((it, i) => {
+                const q = qmap[it.qid];
+                const open = openIdx === i;
+                return (
+                  <div className="qreview" key={i}>
+                    <div className="qreview-head">
+                      <span className="qnum">#{i + 1}</span>
+                      <span className="badge grey" style={{cursor:'pointer'}} onClick={() => onStudyAssignment(it.aid)}>{it.aname}</span>
+                      <span style={{marginLeft:'auto'}} className={'badge ' + (it.skipped ? 'grey' : it.correct ? 'green' : 'red')}>
+                        {it.skipped ? 'skip' : it.correct ? '✓' : '✕'}
+                      </span>
+                      <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
+                    </div>
+                    <div className="qreview-question">{q ? q.question : it.qid}</div>
+                    <div className="qreview-answers">
+                      <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : '— skipped —'}</span></div>
+                      {!it.correct && <div>Correct: <span className="ok">{it.ans.join(' · ')}</span></div>}
+                    </div>
+                    {q && q.explanation && (
+                      <>
+                        <button className="btn sm" style={{marginTop:8}} onClick={() => setOpenIdx(open ? null : i)}>
+                          {open ? 'Hide explanation' : 'Show explanation'}
+                        </button>
+                        {open && <div className="explain">💡 {q.explanation}</div>}
+                      </>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Portal>
+  );
+}
+
+function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
+  const [open, setOpen] = useState(null);
+  const runs = progress.history;
+
+  if (!runs.length) {
+    return (
+      <div className="page wrap">
+        <h1 style={{ marginBottom: 16 }}>History</h1>
+        <div className="card empty">
+          <div className="big">📊</div>
+          <h3>No tests yet</h3>
+          <p className="muted" style={{ marginTop: 6 }}>Take a practice quiz and it will appear here.</p>
+        </div>
+      </div>
+    );
+  }
+
+  const totalTests = runs.length;
+  const avgAcc = Math.round(runs.reduce((s, r) => s + pct(r.score, r.total), 0) / totalTests);
+  const bestAcc = Math.max(...runs.map((r) => pct(r.score, r.total)));
+
+  return (
+    <div className="page wrap">
+      <div className="row between" style={{ marginBottom: 14 }}>
+        <h1>History</h1>
+        <button className="btn sm danger" onClick={onClear}>Clear</button>
+      </div>
+
+      <div className="grid g3" style={{ marginBottom: 12 }}>
+        <div className="stat"><div className="v">{totalTests}</div><div className="l">Tests</div></div>
+        <div className="stat"><div className="v">{avgAcc}%</div><div className="l">Avg acc.</div></div>
+        <div className="stat"><div className="v">{bestAcc}%</div><div className="l">Best</div></div>
+      </div>
+
+      {runs.map((r) => {
+        const a = pct(r.score, r.total);
+        const cls = a >= 80 ? 'good' : a >= 50 ? 'mid' : 'bad';
+        return (
+          <div className="hrow" key={r.id}>
+            <div className={'score-pill ' + cls}>{r.score}<small>/{r.total}</small></div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontWeight: 800, fontSize: 13.5, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.modeLabel}</div>
+              <div className="tiny" style={{ marginTop: 3 }}>
+                {fmtDate(r.ts)} · {a}% · {fmtClock(r.total ? r.timeTotal / r.total : 0)} avg
+                {r.skipped ? ' · ' + r.skipped + ' skipped' : ''}
+              </div>
+            </div>
+            <button className="btn sm" onClick={() => setOpen(r)}>Details</button>
+          </div>
+        );
+      })}
+
+      {open && <HistoryDetail run={open} qmap={qmap} onClose={() => setOpen(null)} onStudyAssignment={onStudyAssignment} />}
+    </div>
+  );
+}
+
+/* =========================================================================
+   CHEATSHEET
+   ========================================================================= */
+function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
+  const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
+  const [showAnswers, setShowAnswers] = useState(true);
+
+  const byAssignment = useMemo(() => {
+    const m = {};
+    weak.forEach((w) => {
+      const k = w.q._aid;
+      if (!m[k]) m[k] = { id: k, name: w.q._aname, items: [] };
+      m[k].items.push(w);
+    });
+    return Object.values(m).sort((a, b) => b.items.length - a.items.length);
+  }, [weak]);
+
+  if (!weak.length) {
+    return (
+      <div className="page wrap">
+        <h1 style={{ marginBottom: 16 }}>Cheatsheet</h1>
+        <div className="card empty">
+          <div className="big">✨</div>
+          <h3>No weak spots detected</h3>
+          <p className="muted" style={{ marginTop: 6 }}>
+            {Object.keys(progress.questions).length
+              ? 'Keep practising — questions you repeatedly get wrong will appear here.'
+              : 'Attempt a few quizzes and your personalised cheatsheet will build itself.'}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="page wrap">
+      <div className="cheat-head">
+        <div>
+          <h1>Cheatsheet</h1>
+          <p className="muted" style={{ marginTop: 4 }}>{weak.length} weak question{weak.length > 1 ? 's' : ''} auto-detected</p>
+        </div>
+        <button className={'toggle-answers' + (showAnswers ? '' : ' off')} onClick={() => setShowAnswers(!showAnswers)}>
+          <Icon name={showAnswers ? 'eyeOff' : 'eye'} size={13} />
+          {showAnswers ? 'Hide all answers' : 'Show all answers'}
+        </button>
+      </div>
+
+      <div className="card hero">
+        <h3 style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ color: 'var(--amber)' }}><Icon name="sparkles" size={16} /></span> Focus weeks
+        </h3>
+        <p className="muted" style={{ margin: '8px 0 12px', fontSize: 12.5 }}>Open the notes to study a week properly.</p>
+        <div className="grid g2" style={{ marginBottom: 12 }}>
+          {byAssignment.map((g) => (
+            <div className="chk on" key={g.id} onClick={() => onStudy(subject.assignments.find((a) => a.id === g.id))}>
+              <div className="box">✓</div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontWeight: 700, fontSize: 12.5 }}>{g.name}</div>
+                <div className="tiny">{g.items.length} weak question{g.items.length > 1 ? 's' : ''}</div>
+              </div>
+              <span style={{ color: 'var(--muted)' }}><Icon name="book" size={15} /></span>
+            </div>
+          ))}
+        </div>
+        <button className="btn primary block" onClick={onPracticeWeak}>
+          <Icon name="play" size={13} /> Drill all {weak.length} weak questions
+        </button>
+      </div>
+
+      <div className="section-title"><span className="dot" />Quick revision notes</div>
+      {weak.map(({ q, st }) => {
+        const ans = answerIndices(q);
+        return (
+          <div className="card note" key={q.id}>
+            <div className="note-head">
+              <span className="qnum">✕{st.w}</span>
+              <span className="badge grey">{q._aname}</span>
+              <span className="badge red" style={{ marginLeft: 'auto' }}>{pct(st.c, st.a)}%</span>
+            </div>
+            <div className="qtext" style={{ fontSize: 13.5 }}>{q.question}</div>
+            {showAnswers ? (
+              <>
+                <ul className="opts" style={{ marginTop: 8 }}>
+                  {q.options.map((o, j) => (
+                    <li key={j} className={ans.includes(j) ? 'ans' : ''}>
+                      <span className="tag">{String.fromCharCode(65 + j)}</span>
+                      <span style={{ flex: 1 }}>{o}</span>
+                      {ans.includes(j) && <span className="tick">✓</span>}
+                    </li>
+                  ))}
+                </ul>
+                {q.explanation && <div className="explain"><b>Why?</b> {q.explanation}</div>}
+              </>
+            ) : (
+              <button className="btn sm" onClick={() => setShowAnswers(true)}>
+                <Icon name="eye" size={12} /> Reveal answers
+              </button>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* =========================================================================
+   NOTES
+   ========================================================================= */
+function NotesView({ assignment, progress, onBack, onPractice }) {
+  if (!assignment) return null;
+  return (
+    <div className="page wrap">
+      <div className="row between" style={{ marginBottom: 14 }}>
+        <button className="btn ghost sm" onClick={onBack}><Icon name="arrowL" size={13} />Back</button>
+        <button className="btn primary sm" onClick={() => onPractice(assignment.id, assignment.questions.length)}>
+          <Icon name="play" size={10} /> Practice
+        </button>
+      </div>
+      <h1>{assignment.name}</h1>
+      <p className="muted" style={{ margin: '6px 0 18px' }}>{assignment.questions.length} questions · correct answers highlighted</p>
+      {assignment.questions.map((q, i) => {
+        const st = progress.questions[q.id];
+        const ans = answerIndices(q);
+        return (
+          <div className="card note" key={q.id} style={{ marginBottom: 12 }}>
+            <div className="note-head">
+              <span className="qnum">Q{i + 1}</span>
+              {st && st.w > 0 && <span className="badge red">wrong {st.w}×</span>}
+              {st && st.c > 0 && <span className="badge green">right {st.c}×</span>}
+              {!st && <span className="badge grey">new</span>}
+            </div>
+            <div className="qtext">{q.question}</div>
+            <ul className="opts">
+              {q.options.map((o, j) => (
+                <li key={j} className={ans.includes(j) ? 'ans' : ''}>
+                  <span className="tag">{String.fromCharCode(65 + j)}</span>
+                  <span style={{ flex: 1 }}>{o}</span>
+                  {ans.includes(j) && <span className="tick">✓</span>}
+                </li>
+              ))}
+            </ul>
+            {q.explanation && <div className="explain"><b>Why?</b> {q.explanation}</div>}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* =========================================================================
+   SETTINGS
+   ========================================================================= */
+function SettingsModal({ settings, setSettings, theme, setTheme, subject, subjects, onChangeSubject, onExport, onImport, onResetProgress, onClose }) {
+  useModalOpen();
+  return (
+    <Portal>
+      <div className="overlay" onClick={onClose}>
+        <div className="modal" style={{ maxWidth: 560 }} onClick={(e) => e.stopPropagation()}>
+          <div className="sheet-handle" />
+          <div className="modal-head">
+            <h3>Settings</h3>
+            <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17} /></button>
+          </div>
+          <div className="modal-body">
+            <h3 style={{ marginBottom: 4 }}>Subject</h3>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Current subject</div>
+                <div className="hint">{subject ? subject.title : '—'}</div>
+              </div>
+              <select
+                value={subject ? subject.id : ''}
+                onChange={(e) => onChangeSubject(e.target.value)}
+                style={{
+                  padding: '9px 11px', borderRadius: 10, border: '1px solid var(--border)',
+                  background: 'var(--surface)', color: 'var(--text)', fontWeight: 600, maxWidth: '55%',
+                  fontSize: 13,
+                }}
+              >
+                {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
+              </select>
+            </div>
+            <p className="tiny" style={{ marginTop: 6 }}>Each subject keeps its own progress, history and bookmarks.</p>
+
+            <h3 style={{ margin: '20px 0 4px' }}>Quiz behaviour</h3>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Instant feedback</div>
+                <div className="hint">Reveal correct + explanation immediately.</div>
+              </div>
+              <Switch on={settings.instantFeedback} onChange={(v) => setSettings({ ...settings, instantFeedback: v })} />
+            </div>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Shuffle questions</div>
+                <div className="hint">Randomise order within a set.</div>
+              </div>
+              <Switch on={settings.shuffleQuestions} onChange={(v) => setSettings({ ...settings, shuffleQuestions: v })} />
+            </div>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Shuffle options</div>
+                <div className="hint">Randomise A / B / C / D positions.</div>
+              </div>
+              <Switch on={settings.shuffleOptions} onChange={(v) => setSettings({ ...settings, shuffleOptions: v })} />
+            </div>
+
+            <h3 style={{ margin: '20px 0 4px' }}>Appearance</h3>
+            <div className="setrow">
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="lbl">Dark mode</div>
+                <div className="hint">Easier on the eyes at night. Default on.</div>
+              </div>
+              <Switch on={theme === 'dark'} onChange={(v) => setTheme(v ? 'dark' : 'light')} />
+            </div>
+
+            <h3 style={{ margin: '20px 0 4px' }}>Data</h3>
+            <div className="row" style={{ gap: 8 }}>
+              <button className="btn sm" onClick={onExport}><Icon name="download" size={12} />Export</button>
+              <label className="btn sm" style={{ cursor: 'pointer' }}>
+                <Icon name="upload" size={12} />Import
+                <input type="file" accept="application/json" style={{ display: 'none' }} onChange={(e) => { if (e.target.files[0]) onImport(e.target.files[0]); }} />
+              </label>
+              <button className="btn sm danger" onClick={onResetProgress}><Icon name="refresh" size={12} />Reset</button>
+            </div>
+            <p className="tiny" style={{ marginTop: 18 }}>All data is stored locally in your browser.</p>
+          </div>
+        </div>
+      </div>
+    </Portal>
+  );
+}
+
+/* =========================================================================
+   ROOT
+   ========================================================================= */
+function App() {
+  const [theme, setTheme] = useState(() => LS.get('nptel.theme', 'dark'));
+  const [settings, setSettings] = useState(() => ({
+    instantFeedback: true, shuffleQuestions: true, shuffleOptions: true,
+    ...LS.get('nptel.settings', {}),
+  }));
+  const [showSettings, setShowSettings] = useState(false);
+
+  const [subjectId, setSubjectId] = useState(() => LS.get('nptel.currentSubject', null));
+  const [subject, setSubject] = useState(null);
+  const [progress, setProgress] = useState(null);
+  const [banner, setBanner] = useState(null);
+  const cacheRef = useRef({});
+
+  const [screen, setScreen] = useState('loading');
+  const [quizConfig, setQuizConfig] = useState(null);
+  const [result, setResult] = useState(null);
+  const [notesAssignment, setNotesAssignment] = useState(null);
+
+  useEffect(() => { document.documentElement.setAttribute('data-theme', theme); LS.set('nptel.theme', theme); }, [theme]);
+  useEffect(() => { LS.set('nptel.settings', settings); }, [settings]);
+
+  const subjectIndex = useMemo(
+    () => SUBJECTS.map((s) => ({ id: s.id, name: s.name, file: s.file, image: s.image, institute: s.institute })),
+    []
+  );
+
+  useEffect(() => {
+    if (!subjectId || !subjectIndex.some((s) => s.id === subjectId)) {
+      setScreen('select'); setSubject(null); return;
+    }
+    let cancelled = false;
+    (async () => {
+      setScreen('loading');
+      setBanner(null);
+      try {
+        const meta = subjectIndex.find((s) => s.id === subjectId);
+        let data;
+        if (cacheRef.current[subjectId]) data = cacheRef.current[subjectId];
+        else {
+          try { data = await fetchJSON(QUESTIONS_FOLDER + meta.file); }
+          catch (err) {
+            data = DEMO_SUBJECT;
+            setBanner('⚠️ Could not load "' + meta.file + '" (' + err.message + '). Showing built-in sample data.');
+          }
+        }
+        const norm = normaliseSubject(data, meta);
+        cacheRef.current[subjectId] = norm;
+        if (cancelled) return;
+        setSubject(norm);
+        setProgress(loadProgress(subjectId));
+        setScreen('home');
+      } catch (err) {
+        if (cancelled) return;
+        setBanner('⚠️ Failed to load subject: ' + err.message);
+        setScreen('select');
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [subjectId, subjectIndex]);
+
+  useEffect(() => { if (subjectId && progress) LS.set(PROG_KEY(subjectId), progress); }, [subjectId, progress]);
+
+  const qmap = useMemo(() => {
+    const m = {};
+    if (subject) subject.assignments.forEach((a) => a.questions.forEach((q) => { m[q.id] = q; }));
+    return m;
+  }, [subject]);
+
+  const prep = useCallback((list) => list.map((q) => prepareQuestion(q, settings.shuffleOptions)), [settings.shuffleOptions]);
+  const orderPool = useCallback((pool) => (settings.shuffleQuestions ? shuffle(pool) : pool.slice()), [settings.shuffleQuestions]);
+
+  const startQuiz = (cfg) => {
+    if (!cfg.questions.length) { alert('No questions available for this selection.'); return; }
+    setQuizConfig(cfg); setScreen('quiz');
+  };
+
+  const startRandom = useCallback((n) => {
+    const pool = orderPool(allQuestions(subject));
+    const picked = pool.slice(0, Math.min(n, pool.length));
+    startQuiz({ mode: 'random', title: 'Random Practice · ' + picked.length + ' Q', questions: prep(picked), assignmentIds: [] });
+  }, [subject, orderPool, prep]);
+
+  const startCustom = useCallback((assignmentIds, n) => {
+    const bank = allQuestions(subject).filter((q) => assignmentIds.includes(q._aid));
+    const picked = orderPool(bank).slice(0, Math.min(n, bank.length));
+    const label = assignmentIds.length === 1
+      ? (subject.assignments.find((a) => a.id === assignmentIds[0]) || {}).name || 'Assignment'
+      : assignmentIds.length + ' weeks';
+    startQuiz({ mode: 'custom', title: label + ' · ' + picked.length + ' Q', questions: prep(picked), assignmentIds });
+  }, [subject, orderPool, prep]);
+
+  const startWeak = useCallback(() => {
+    const list = weakQuestions(subject, progress).map((w) => w.q);
+    startQuiz({ mode: 'weak', title: 'Weak Drill · ' + list.length + ' Q', questions: prep(orderPool(list)), assignmentIds: [] });
+  }, [subject, progress, prep, orderPool]);
+
+  const startBookmarks = useCallback(() => {
+    const ids = progress.bookmarks || [];
+    const list = allQuestions(subject).filter((q) => ids.includes(q.id));
+    startQuiz({ mode: 'bookmarks', title: 'Bookmarked · ' + list.length + ' Q', questions: prep(orderPool(list)), assignmentIds: [] });
+  }, [subject, progress, prep, orderPool]);
+
+  const retryWrong = useCallback((qids) => {
+    const list = allQuestions(subject).filter((q) => qids.includes(q.id));
+    startQuiz({ mode: 'retry', title: 'Retry Wrong · ' + list.length + ' Q', questions: prep(orderPool(list)), assignmentIds: [] });
+  }, [subject, prep, orderPool]);
+
+  const handleFinish = useCallback((run) => {
+    setProgress((prev) => {
+      const p = prev ? JSON.parse(JSON.stringify(prev)) : emptyProgress();
+      run.items.forEach((it) => {
+        if (it.skipped) return;
+        const st = p.questions[it.qid] || { a: 0, c: 0, w: 0, t: 0, last: 0, streak: 0 };
+        st.a += 1; st.t += it.timeMs; st.last = run.ts;
+        if (it.correct) { st.c += 1; st.streak = (st.streak || 0) + 1; }
+        else { st.w += 1; st.streak = 0; }
+        p.questions[it.qid] = st;
+      });
+      p.history = [{ ...run, subjectId: subject.id }, ...p.history].slice(0, 100);
+      return p;
+    });
+    setResult(run);
+    setScreen('result');
+  }, [subject]);
+
+  const toggleBookmark = useCallback((qid) => {
+    setProgress((prev) => {
+      const p = prev ? { ...prev } : emptyProgress();
+      const bm = p.bookmarks || [];
+      p.bookmarks = bm.includes(qid) ? bm.filter((x) => x !== qid) : [...bm, qid];
+      return p;
+    });
+  }, []);
+
+  const changeSubject = (id) => {
+    setSubjectId(id);
+    LS.set('nptel.currentSubject', id);
+    cacheRef.current = {};
+    setSubject(null); setProgress(null);
+    setShowSettings(false);
+  };
+
+  const exportProgress = () => {
+    const data = {};
+    Object.keys(localStorage).filter((k) => k.startsWith('nptel.')).forEach((k) => { data[k] = localStorage.getItem(k); });
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'nptel-practice-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+
+  const importProgress = (file) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result);
+        Object.keys(data).forEach((k) => { if (k.startsWith('nptel.')) localStorage.setItem(k, data[k]); });
+        alert('Progress imported. Reloading…');
+        location.reload();
+      } catch (e) { alert('Invalid backup file.'); }
+    };
+    reader.readAsText(file);
+  };
+
+  const resetProgress = () => {
+    if (!confirm('Reset all progress, history and bookmarks for "' + (subject ? subject.title : '') + '"?')) return;
+    LS.del(PROG_KEY(subjectId));
+    setProgress(emptyProgress());
+    setShowSettings(false);
+    setScreen('home');
+  };
+
+  const openStudy = (assignment) => {
+    if (!assignment) return;
+    setNotesAssignment(assignment);
+    setScreen('notes');
+  };
+
+  if (screen === 'loading') {
+    return (
+      <div className="center">
+        <div style={{ textAlign: 'center' }}>
+          <div className="spin" />
+          <p className="muted" style={{ marginTop: 14 }}>Loading…</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (screen === 'select') {
+    return <SubjectPicker subjects={subjectIndex} banner={banner} onPick={changeSubject} />;
+  }
+
+  if (screen === 'quiz' && quizConfig) {
+    return (
+      <QuizRunner
+        config={quizConfig} settings={settings}
+        bookmarks={progress.bookmarks || []}
+        onToggleBookmark={toggleBookmark}
+        onFinish={handleFinish}
+        onQuit={() => setScreen('home')}
+      />
+    );
+  }
+
+  const navItems = [
+    { id: 'home', label: 'Practice', icon: 'practice' },
+    { id: 'history', label: 'History', icon: 'history' },
+    { id: 'cheatsheet', label: 'Cheatsheet', icon: 'notes' },
+  ];
+  const isNotes = screen === 'notes';
+  const activeTab = isNotes ? 'cheatsheet' : screen;
+
+  return (
+    <div className="app">
+      <div className="topbar">
+        <div className="wrap">
+          <div className="topbar-in">
+            <div className="brand" onClick={() => setScreen('home')}>
+              <div className="logo">N</div>
+              <div style={{ minWidth: 0 }}>
+                <div className="brand-title">NPTEL Practice</div>
+                <div className="brand-sub">{subject ? subject.title : ''}</div>
+              </div>
+            </div>
+            <nav className="top-tabs">
+              {navItems.map((t) => (
+                <button key={t.id} className={'tab' + (activeTab === t.id ? ' active' : '')} onClick={() => setScreen(t.id)}>{t.label}</button>
+              ))}
+            </nav>
+            <div className="top-actions">
+              <button className="icon-btn" title="Toggle theme" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={16} />
+              </button>
+              <button className="icon-btn" title="Settings" onClick={() => setShowSettings(true)}>
+                <Icon name="settings" size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {banner && screen !== 'select' && (
+        <div className="wrap" style={{ paddingTop: 12 }}><div className="banner">{banner}</div></div>
+      )}
+
+      <div style={{ flex: 1 }} className="page has-bottom-nav" key={screen}>
+        <div>
+          {screen === 'home' && (
+            <HomeView
+              subject={subject} progress={progress}
+              onStartRandom={startRandom} onStartCustom={startCustom}
+              onStartWeak={startWeak} onStartBookmarks={startBookmarks}
+              onStudy={openStudy} goHistory={() => setScreen('history')}
+            />
+          )}
+
+          {screen === 'result' && result && (
+            <ResultView
+              result={result} qmap={qmap}
+              onHome={() => setScreen('home')}
+              onRetryWrong={retryWrong}
+              onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
+            />
+          )}
+
+          {screen === 'history' && (
+            <HistoryView
+              progress={progress} qmap={qmap}
+              onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
+              onClear={() => { if (confirm('Clear all test history for this subject?')) setProgress({ ...progress, history: [] }); }}
+            />
+          )}
+
+          {screen === 'cheatsheet' && (
+            <CheatsheetView
+              subject={subject} progress={progress}
+              onStudy={openStudy} onPracticeWeak={startWeak}
+            />
+          )}
+
+          {screen === 'notes' && notesAssignment && (
+            <NotesView
+              assignment={notesAssignment} progress={progress}
+              onBack={() => setScreen('home')}
+              onPractice={(aid, n) => startCustom([aid], n)}
+            />
+          )}
+        </div>
+      </div>
+
+      <nav className="bottom-nav">
+        {navItems.map((t) => (
+          <button key={t.id} data-tab={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)}>
+            <Icon name={t.icon} size={22} />
+            <span>{t.label}</span>
+          </button>
+        ))}
+      </nav>
+
+      {showSettings && (
+        <SettingsModal
+          settings={settings} setSettings={setSettings}
+          theme={theme} setTheme={setTheme}
+          subject={subject} subjects={subjectIndex}
+          onChangeSubject={changeSubject}
+          onExport={exportProgress} onImport={importProgress}
+          onResetProgress={resetProgress}
+          onClose={() => setShowSettings(false)}
+        />
+      )}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
