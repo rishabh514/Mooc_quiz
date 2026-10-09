@@ -1350,6 +1350,303 @@
       "correctAnswer": "A",
       "correctOption": "use headings",
       "explanation": "Using headings improves the structure and navigability of online content, making it easier for learners to process information. Complex language, long text blocks, and random images hinder learning. Hence use headings is correct."
+    },
+
+        {
+      "week": 10,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "During Covid-19 the world was busy in preparing 1.5 billion learners for the new normal, i.e., ___ learning.",
+      "options": [
+        { "key": "A", "text": "ineffective" },
+        { "key": "B", "text": "physical" },
+        { "key": "C", "text": "remote" },
+        { "key": "D", "text": "experiential" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "remote",
+      "explanation": "The COVID-19 pandemic forced educational institutions worldwide to shift from face-to-face instruction to remote learning, making it the 'new normal' for approximately 1.5 billion learners. Remote learning relies on digital platforms and internet connectivity to deliver education when physical attendance is not possible. Ineffective, physical, and experiential do not describe this global shift. Hence remote is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "To develop learner readiness for online learning, training sessions on ___ are helpful.",
+      "options": [
+        { "key": "A", "text": "netiquettes" },
+        { "key": "B", "text": "time management" },
+        { "key": "C", "text": "developing study skills" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Learner readiness for online learning requires multiple competencies: understanding netiquettes (proper online conduct), managing time effectively without external structure, and developing independent study skills. Since each of these areas contributes to readiness, training on all of them is helpful. Hence all of the given is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "The typical picture of a teacher being a dispenser of knowledge to the students has been replaced by that of a ___.",
+      "options": [
+        { "key": "A", "text": "obstructor" },
+        { "key": "B", "text": "parent" },
+        { "key": "C", "text": "friend" },
+        { "key": "D", "text": "facilitator" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "facilitator",
+      "explanation": "Modern pedagogy views the teacher as a facilitator who guides, supports, and creates conditions for learning, rather than as a mere transmitter of facts. The old 'dispenser of knowledge' model has given way to this facilitative role. Obstructor, parent, and friend are not the standard pedagogical terms. Hence facilitator is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "In 2018, Global Education and Skills Forum noted that the 'future' teacher would need the 5 skills to thrive in the 21st century. Which of the following is not one of them?",
+      "options": [
+        { "key": "A", "text": "Strong social skills" },
+        { "key": "B", "text": "Data analysis" },
+        { "key": "C", "text": "External focus" },
+        { "key": "D", "text": "Strictness" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Strictness",
+      "explanation": "The 2018 Global Education and Skills Forum identified five skills for future teachers: strong social skills, data analysis, external focus, and others centered on adaptability and collaboration. Strictness is an authoritarian trait that does not feature among these forward-looking skills. Hence Strictness is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Participatory education demands ___ so as to build a needs-based approach to teaching.",
+      "options": [
+        { "key": "A", "text": "creativity" },
+        { "key": "B", "text": "stubbornness" },
+        { "key": "C", "text": "reward" },
+        { "key": "D", "text": "none of the given" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "creativity",
+      "explanation": "Participatory education involves learners actively in the learning process, which requires creative approaches to design instruction that meets diverse learner needs. Stubbornness and reward are not the driving requirements. Hence creativity is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Students who consider intelligence as a malleable entity tend to focus on their obstacles instead of goals.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "False",
+      "explanation": "Students who view intelligence as malleable (a growth mindset) tend to focus on goals and improvement rather than being deterred by obstacles. It is those with a fixed mindset who may focus on obstacles and give up. Hence the statement is false."
+    },
+    {
+      "week": 10,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Which of the following is not a principle to enhance student learning.",
+      "options": [
+        { "key": "A", "text": "What students already know affects their learning" },
+        { "key": "B", "text": "Learning is context-based" },
+        { "key": "C", "text": "Students' cognitive development and learning is limited by the general stages of development." },
+        { "key": "D", "text": "The acquisition of knowledge and skills in the long term depends largely on practice." }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Students' cognitive development and learning is limited by the general stages of development.",
+      "explanation": "Modern learning science emphasizes that instruction should build on prior knowledge, that learning is context-dependent, and that practice is essential for long-term retention. The idea that cognitive development is strictly limited by general stages is outdated and not supported as a principle for enhancing learning. Hence option C is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "___ feedback to students is important for learning.",
+      "options": [
+        { "key": "A", "text": "Unclear" },
+        { "key": "B", "text": "Late" },
+        { "key": "C", "text": "Harsh" },
+        { "key": "D", "text": "Explanatory" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Explanatory",
+      "explanation": "Explanatory feedback tells students not just what was wrong but why, helping them understand and correct their mental models. Unclear, late, and harsh feedback are all detrimental to learning. Hence Explanatory is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Mastery goals are those that are geared towards the acquisition or improvement of ___.",
+      "options": [
+        { "key": "A", "text": "Skills" },
+        { "key": "B", "text": "Number of students in a classroom" },
+        { "key": "C", "text": "Teacher feedback" },
+        { "key": "D", "text": "None of the given" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Skills",
+      "explanation": "Mastery goals focus on developing competence, improving skills, and truly understanding material, in contrast to performance goals that focus on outperforming others. Classroom size and teacher feedback are not what mastery goals target. Hence Skills is correct."
+    },
+    {
+      "week": 10,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "The vast majority of formative assessment is ___.",
+      "options": [
+        { "key": "A", "text": "Formal" },
+        { "key": "B", "text": "Incorrect" },
+        { "key": "C", "text": "Written" },
+        { "key": "D", "text": "informal" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "informal",
+      "explanation": "Formative assessment is predominantly informal—it happens through observation, questioning, discussion, and quick checks for understanding during instruction rather than through formal tests. While it can be formal, the vast majority is informal. Hence informal is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Social cognition has a protracted development through infancy to ___.",
+      "options": [
+        { "key": "A", "text": "teenage" },
+        { "key": "B", "text": "old-age" },
+        { "key": "C", "text": "adulthood" },
+        { "key": "D", "text": "death" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "adulthood",
+      "explanation": "Social cognition—the ability to perceive, interpret, and reason about social information—develops gradually from infancy and continues to mature through childhood and adolescence into adulthood. It is not completed by teenage years and is not a process extending to death in the same developmental sense. Hence adulthood is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Which of the following abilities comes under social cognition?",
+      "options": [
+        { "key": "A", "text": "Face processing" },
+        { "key": "B", "text": "Joint attention" },
+        { "key": "C", "text": "Theory of mind" },
+        { "key": "D", "text": "All of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the given",
+      "explanation": "Social cognition encompasses a range of abilities including face processing (recognizing and interpreting faces), joint attention (sharing focus with others), and theory of mind (understanding others' mental states). Since all three are core components, all of the given is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Under social cognition, abilities involved in affective processing are often called ___.",
+      "options": [
+        { "key": "A", "text": "hot" },
+        { "key": "B", "text": "cold" },
+        { "key": "C", "text": "white" },
+        { "key": "D", "text": "black" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "hot",
+      "explanation": "In social cognition research, 'hot' cognition refers to abilities that involve affective and emotional processing, while 'cold' cognition refers to more purely rational, emotion-neutral processing. White and black are not used in this context. Hence hot is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Social schemas refer to people's mental representations of social ___.",
+      "options": [
+        { "key": "A", "text": "values" },
+        { "key": "B", "text": "memories" },
+        { "key": "C", "text": "skills" },
+        { "key": "D", "text": "patterns" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "patterns",
+      "explanation": "Social schemas are mental frameworks or templates that represent recurring patterns of social information—such as expectations about people, roles, and social situations. They are not specifically about values, memories, or skills. Hence patterns is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "During the earliest stages of development, children are very ____- centric. They see the world from their own perspective and struggle to think about how other people may view the world.",
+      "options": [
+        { "key": "A", "text": "selfish" },
+        { "key": "B", "text": "ego" },
+        { "key": "C", "text": "conscious" },
+        { "key": "D", "text": "emotional" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ego",
+      "explanation": "Young children are described as egocentric—they are 'ego-centric'—meaning they have difficulty taking another person's perspective. This is a cognitive limitation, not selfishness in the moral sense. Conscious and emotional are not the standard terms for this. Hence ego is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "A theory of mind refers to a person's ability to understand and think about the ____ of other people.",
+      "options": [
+        { "key": "A", "text": "behaviors" },
+        { "key": "B", "text": "family backgrounds" },
+        { "key": "C", "text": "mental states" },
+        { "key": "D", "text": "language" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "mental states",
+      "explanation": "Theory of mind is the capacity to attribute mental states—beliefs, desires, intentions, emotions—to oneself and others, and to understand that others may have different mental states. It is not just about behaviors, family backgrounds, or language. Hence mental states is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "The same social behavior in one cultural setting might have a very different meaning and interpretation if it were to occur or be observed in another culture.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "Social behavior is culturally situated; gestures, eye contact, personal space, and expressions carry different meanings across cultures. What is polite in one culture may be rude in another. Hence the statement is true."
+    },
+    {
+      "week": 11,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "Social cognitive theory by Bandura focuses on concepts of",
+      "options": [
+        { "key": "A", "text": "self-efficacy" },
+        { "key": "B", "text": "modeling" },
+        { "key": "C", "text": "observational learning" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Bandura's social cognitive theory centers on observational learning (learning by watching others), modeling (imitating observed behavior), and self-efficacy (belief in one's capability to execute behaviors). All three are core concepts. Hence all of the given is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "The central tenet of Bandura's social-cognitive theory is that people seek to develop a sense of ___ over the important events in their lives.",
+      "options": [
+        { "key": "A", "text": "agency" },
+        { "key": "B", "text": "dependency" },
+        { "key": "C", "text": "attachment" },
+        { "key": "D", "text": "emotion" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "agency",
+      "explanation": "Bandura emphasized human agency—the capacity to act intentionally and exercise control over one's life and environment. Dependency, attachment, and emotion are not the central tenet of his theory. Hence agency is correct."
+    },
+    {
+      "week": 11,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "___ hypothesis suggests that social processes influence how information is selected, organized, integrated, and retrieved.",
+      "options": [
+        { "key": "A", "text": "activation" },
+        { "key": "B", "text": "cognitive influence" },
+        { "key": "C", "text": "interaction" },
+        { "key": "D", "text": "social cue strength" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "cognitive influence",
+      "explanation": "The cognitive influence hypothesis holds that social processes shape the cognitive operations of selection, organization, integration, and retrieval of information. Activation, interaction, and social cue strength are not the names of this hypothesis. Hence cognitive influence is correct."
     }
   ]
 }
