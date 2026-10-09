@@ -1,0 +1,4878 @@
+{
+  "course": "Wildlife Ecology",
+  "institute": "NPTEL",
+  "assignment": "All Weeks",
+  "source": "Uploaded MyQuizPrep PDF: Wildlife Ecology – All Weeks – Solutions",
+  "weekStructure": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "sourceQuestionRange": "1-10",
+      "questionCount": 10
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "sourceQuestionRange": "11-20",
+      "questionCount": 10
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "sourceQuestionRange": "21-30",
+      "questionCount": 10
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "sourceQuestionRange": "31-40",
+      "questionCount": 10
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "sourceQuestionRange": "41-50",
+      "questionCount": 10
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "sourceQuestionRange": "51-60",
+      "questionCount": 10
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "sourceQuestionRange": "61-70",
+      "questionCount": 10
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "sourceQuestionRange": "71-80",
+      "questionCount": 10
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "sourceQuestionRange": "81-90",
+      "questionCount": 10
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "sourceQuestionRange": "91-100",
+      "questionCount": 10
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "sourceQuestionRange": "101-110",
+      "questionCount": 10
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "sourceQuestionRange": "111-120",
+      "questionCount": 10
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "sourceQuestionRange": "121-130",
+      "questionCount": 10
+    },
+    {
+      "week": 13,
+      "label": "Extras",
+      "sourceQuestionRange": "131-160",
+      "questionCount": 30
+    }
+  ],
+  "questions": [
+    {
+      "week": 0,
+      "questionNo": 1,
+      "sourceQuestionNo": 1,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Transplantation experiments are used to find",
+      "options": [
+        {
+          "key": "A",
+          "text": "potential range"
+        },
+        {
+          "key": "B",
+          "text": "effective range"
+        },
+        {
+          "key": "C",
+          "text": "actual range"
+        },
+        {
+          "key": "D",
+          "text": "economic range"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "potential range",
+      "explanation": "Transplantation experiments move individuals to locations outside their current distribution and observe whether they can survive and reproduce there. They help estimate a species’ potential range by testing what environments it could occupy if dispersal barriers or other limiting factors were removed."
+    },
+    {
+      "week": 0,
+      "questionNo": 2,
+      "sourceQuestionNo": 2,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of fitness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fitness is environment-specific."
+        },
+        {
+          "key": "B",
+          "text": "Fitness is species-specific."
+        },
+        {
+          "key": "C",
+          "text": "Higher reproductive rate means higher fitness."
+        },
+        {
+          "key": "D",
+          "text": "Fitness should be measured across several generations."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Higher reproductive rate means higher fitness.",
+      "explanation": "In evolutionary biology, fitness means an individual's relative contribution of viable offspring to future generations in a particular environment. A high reproductive rate alone does not guarantee high fitness: offspring must survive and reproduce, and the relevant measure is reproductive success relative to others over generations."
+    },
+    {
+      "week": 0,
+      "questionNo": 3,
+      "sourceQuestionNo": 3,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The hierarchical system was given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simon"
+        },
+        {
+          "key": "B",
+          "text": "Watson"
+        },
+        {
+          "key": "C",
+          "text": "Hutchinson"
+        },
+        {
+          "key": "D",
+          "text": "Humboldt"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Simon",
+      "explanation": "Herbert A. Simon is associated with the concept of hierarchy in complex systems. Hierarchical organisation means a system is arranged into nested levels or subsystems, allowing complex structures to be understood as interacting components rather than as one undifferentiated whole."
+    },
+    {
+      "week": 0,
+      "questionNo": 4,
+      "sourceQuestionNo": 4,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Hamilton's rule can be stated as",
+      "options": [
+        {
+          "key": "A",
+          "text": "rB < C"
+        },
+        {
+          "key": "B",
+          "text": "rB > C"
+        },
+        {
+          "key": "C",
+          "text": "rB = C"
+        },
+        {
+          "key": "D",
+          "text": "rB + C = 0"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "rB > C",
+      "explanation": "Hamilton’s rule describes when an action that benefits a relative can evolve through kin selection. The condition rB > C means the benefit to the recipient (B), weighted by genetic relatedness (r), exceeds the cost to the actor (C); in that case, the behaviour can increase inclusive fitness."
+    },
+    {
+      "week": 0,
+      "questionNo": 5,
+      "sourceQuestionNo": 5,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "available energy decreases"
+        },
+        {
+          "key": "B",
+          "text": "available energy increases"
+        },
+        {
+          "key": "C",
+          "text": "available energy remains same"
+        },
+        {
+          "key": "D",
+          "text": "available energy is zero everywhere"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "available energy decreases",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 0,
+      "questionNo": 6,
+      "sourceQuestionNo": 6,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The logistic growth equation, when plotted, appears",
+      "options": [
+        {
+          "key": "A",
+          "text": "I shaped"
+        },
+        {
+          "key": "B",
+          "text": "J shaped"
+        },
+        {
+          "key": "C",
+          "text": "S shaped"
+        },
+        {
+          "key": "D",
+          "text": "O shaped"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "S shaped",
+      "explanation": "Logistic population growth produces an S-shaped, or sigmoid, curve. Growth is initially slow, accelerates when resources are abundant, and then slows as competition and other density-dependent limits increase near carrying capacity (K)."
+    },
+    {
+      "week": 0,
+      "questionNo": 7,
+      "sourceQuestionNo": 7,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "disclimax",
+      "explanation": "A disclimax is a relatively stable community maintained by repeated disturbance rather than by the undisturbed climatic climax. Here, recurring cattle grazing prevents succession from proceeding normally, so the vegetation reflects grazing pressure as well as the site's environmental conditions."
+    },
+    {
+      "week": 0,
+      "questionNo": 8,
+      "sourceQuestionNo": 8,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"Quick movement over large distances, often across unsuitable terrain\" is a description of",
+      "options": [
+        {
+          "key": "A",
+          "text": "diffusion"
+        },
+        {
+          "key": "B",
+          "text": "secular dispersal"
+        },
+        {
+          "key": "C",
+          "text": "jump dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "jump dispersal",
+      "explanation": "Jump dispersal occurs when individuals reach distant locations rapidly, often crossing large areas of unsuitable habitat. Unlike gradual diffusion from neighbouring populations, jump dispersal can establish a population far beyond the existing range and may initiate later spread from that new location."
+    },
+    {
+      "week": 0,
+      "questionNo": 9,
+      "sourceQuestionNo": 9,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Captive breeding is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "Captive breeding is ex-situ conservation because animals are bred under human care outside their natural habitat, for example in a zoo or specialised breeding centre. It can help maintain threatened populations, but long-term success also depends on genetic management and, where reintroduction is intended, suitable protected habitat in the wild."
+    },
+    {
+      "week": 0,
+      "questionNo": 10,
+      "sourceQuestionNo": 10,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The demographic transition sees a society move from",
+      "options": [
+        {
+          "key": "A",
+          "text": "high birth rate, low death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "B",
+          "text": "low birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "C",
+          "text": "high birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "D",
+          "text": "high birth rate, high death rate to low birth rate, high death rate"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "high birth rate, high death rate to low birth rate, low death rate",
+      "explanation": "The demographic transition model describes a long-term shift from high birth and death rates to low birth and death rates as societies change. Death rates generally decline first, often producing rapid population growth, while birth rates fall later as social and economic conditions change."
+    },
+    {
+      "week": 1,
+      "questionNo": 1,
+      "sourceQuestionNo": 11,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of fitness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fitness is environment-specific."
+        },
+        {
+          "key": "B",
+          "text": "Fitness is species-specific."
+        },
+        {
+          "key": "C",
+          "text": "Higher reproductive rate means higher fitness."
+        },
+        {
+          "key": "D",
+          "text": "Fitness should be measured across several generations"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Higher reproductive rate means higher fitness.",
+      "explanation": "In evolutionary biology, fitness means an individual's relative contribution of viable offspring to future generations in a particular environment. A high reproductive rate alone does not guarantee high fitness: offspring must survive and reproduce, and the relevant measure is reproductive success relative to others over generations."
+    },
+    {
+      "week": 1,
+      "questionNo": 2,
+      "sourceQuestionNo": 12,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Who amongst these is considered the father of Biogeography?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Theophrastus"
+        },
+        {
+          "key": "B",
+          "text": "Linnaeus"
+        },
+        {
+          "key": "C",
+          "text": "Malthus"
+        },
+        {
+          "key": "D",
+          "text": "Humboldt"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Humboldt",
+      "explanation": "Alexander von Humboldt is widely regarded as a founder of biogeography because he systematically related the distribution of plants and other organisms to climate, altitude and geography. His work helped establish the idea that biological patterns can be explained by environmental gradients and spatial relationships."
+    },
+    {
+      "week": 1,
+      "questionNo": 3,
+      "sourceQuestionNo": 13,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In the Greek word root of Ecology, Oikos refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "household"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environment"
+        },
+        {
+          "key": "D",
+          "text": "study"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "household",
+      "explanation": "The Greek word *oikos* means household or home. Ecology takes its name from the study of organisms in their 'home'—the environment in which they live and the relationships they have with other organisms and physical conditions."
+    },
+    {
+      "week": 1,
+      "questionNo": 4,
+      "sourceQuestionNo": 14,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In the Greek word root of Ecology, logos refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "household"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environment"
+        },
+        {
+          "key": "D",
+          "text": "study"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "study",
+      "explanation": "The Greek root *logos* means study, account or discourse. Together, *oikos* (household/home) and *logos* form ecology, the scientific study of organisms and their relationships with their environment."
+    },
+    {
+      "week": 1,
+      "questionNo": 5,
+      "sourceQuestionNo": 15,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a step in natural selection?",
+      "options": [
+        {
+          "key": "A",
+          "text": "variation"
+        },
+        {
+          "key": "B",
+          "text": "underpopulation"
+        },
+        {
+          "key": "C",
+          "text": "struggle for existence"
+        },
+        {
+          "key": "D",
+          "text": "survival of the fittest"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "underpopulation",
+      "explanation": "Natural selection depends on variation among individuals, differences in survival or reproduction, and the inheritance of traits that affect reproductive success. Underpopulation is not a required step; populations can experience selection at many sizes, including when they are large or crowded."
+    },
+    {
+      "week": 1,
+      "questionNo": 6,
+      "sourceQuestionNo": 16,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Ecology is the scientific study of ___ that determine the distribution and abundance of organisms. (Fill in the blanks)",
+      "options": [
+        {
+          "key": "A",
+          "text": "statics"
+        },
+        {
+          "key": "B",
+          "text": "interactions"
+        },
+        {
+          "key": "C",
+          "text": "dynamics"
+        },
+        {
+          "key": "D",
+          "text": "habitat"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "interactions",
+      "explanation": "Ecology examines interactions among organisms and between organisms and their surroundings. These interactions—including competition, predation, mutualism and responses to climate or resources—help explain why species occur in particular places and why their populations vary in abundance."
+    },
+    {
+      "week": 1,
+      "questionNo": 7,
+      "sourceQuestionNo": 17,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of fitness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fitness is environment-specific."
+        },
+        {
+          "key": "B",
+          "text": "Fitness is species-specific."
+        },
+        {
+          "key": "C",
+          "text": "Fitness works on traits such as size and speed."
+        },
+        {
+          "key": "D",
+          "text": "Fitness should be measured across several generations."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Fitness works on traits such as size and speed.",
+      "explanation": "In evolutionary biology, fitness means an individual's relative contribution of viable offspring to future generations in a particular environment. A high reproductive rate alone does not guarantee high fitness: offspring must survive and reproduce, and the relevant measure is reproductive success relative to others over generations."
+    },
+    {
+      "week": 1,
+      "questionNo": 8,
+      "sourceQuestionNo": 18,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Ecology is the scientific study of interactions among organisms and their___. (Fill in the blanks)",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat"
+        },
+        {
+          "key": "B",
+          "text": "niche"
+        },
+        {
+          "key": "C",
+          "text": "environment"
+        },
+        {
+          "key": "D",
+          "text": "population"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "environment",
+      "explanation": "Ecology studies relationships among organisms and between organisms and their environment. The environment includes both biotic components, such as competitors and prey, and abiotic components, such as temperature, water, light and nutrients."
+    },
+    {
+      "week": 1,
+      "questionNo": 9,
+      "sourceQuestionNo": 19,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"Enquiry into plants\" is a book written by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Theophrastus"
+        },
+        {
+          "key": "B",
+          "text": "Linnaeus"
+        },
+        {
+          "key": "C",
+          "text": "Malthus"
+        },
+        {
+          "key": "D",
+          "text": "Humboldt"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Theophrastus",
+      "explanation": "Theophrastus, a Greek philosopher and naturalist, wrote *Enquiry into Plants* (also known as *Historia Plantarum*). The work describes plant forms, growth and uses and is often regarded as one of the foundational texts in botanical study."
+    },
+    {
+      "week": 1,
+      "questionNo": 10,
+      "sourceQuestionNo": 20,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a kind of selection",
+      "options": [
+        {
+          "key": "A",
+          "text": "directional"
+        },
+        {
+          "key": "B",
+          "text": "stochastic"
+        },
+        {
+          "key": "C",
+          "text": "disruptive"
+        },
+        {
+          "key": "D",
+          "text": "stabilising"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "stochastic",
+      "explanation": "Directional, stabilising and disruptive selection are commonly described patterns of natural selection. 'Stochastic' refers to randomness or chance variation in processes, not a standard type of selection in this three-part classification."
+    },
+    {
+      "week": 2,
+      "questionNo": 1,
+      "sourceQuestionNo": 21,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Hierarchy emerges almost inevitably through a wide variety of evolutionary processes, for the simple reason that hierarchical structures are___",
+      "options": [
+        {
+          "key": "A",
+          "text": "perfect"
+        },
+        {
+          "key": "B",
+          "text": "imperfect"
+        },
+        {
+          "key": "C",
+          "text": "stable"
+        },
+        {
+          "key": "D",
+          "text": "unstable"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "stable",
+      "explanation": "Hierarchical structures can be stable because complex systems are organised into levels of smaller interacting subsystems. This arrangement can help a system persist and function without every component needing to interact directly with every other component."
+    },
+    {
+      "week": 2,
+      "questionNo": 2,
+      "sourceQuestionNo": 22,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The hierarchical system was given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simon"
+        },
+        {
+          "key": "B",
+          "text": "Watson"
+        },
+        {
+          "key": "C",
+          "text": "Hutchinson"
+        },
+        {
+          "key": "D",
+          "text": "Humboldt"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Simon",
+      "explanation": "Herbert A. Simon is associated with the concept of hierarchy in complex systems. Hierarchical organisation means a system is arranged into nested levels or subsystems, allowing complex structures to be understood as interacting components rather than as one undifferentiated whole."
+    },
+    {
+      "week": 2,
+      "questionNo": 3,
+      "sourceQuestionNo": 23,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The emergent principle can be stated as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whole = sum of parts"
+        },
+        {
+          "key": "B",
+          "text": "Whole < sum of parts"
+        },
+        {
+          "key": "C",
+          "text": "Whole > sum of parts"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Whole > sum of parts",
+      "explanation": "The emergent principle states that a whole can have properties that are greater than, or qualitatively different from, the sum of its individual parts. In ecology, interactions among organisms and their environment can create ecosystem-level patterns that cannot be understood by studying each component alone."
+    },
+    {
+      "week": 2,
+      "questionNo": 4,
+      "sourceQuestionNo": 24,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"the diversity that exists within an ecosystem\" is",
+      "options": [
+        {
+          "key": "A",
+          "text": "alpha (α) biodiversity"
+        },
+        {
+          "key": "B",
+          "text": "beta (β) biodiversity"
+        },
+        {
+          "key": "C",
+          "text": "gamma (γ) biodiversity"
+        },
+        {
+          "key": "D",
+          "text": "delta (δ) biodiversity"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "alpha (α) biodiversity",
+      "explanation": "Alpha diversity refers to the diversity of species within one local site or community. It is often measured as the number of species present (richness) and may also account for their relative abundances, depending on the index used."
+    },
+    {
+      "week": 2,
+      "questionNo": 5,
+      "sourceQuestionNo": 25,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The mitochondrion is a / an",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sub-cellular organelle"
+        },
+        {
+          "key": "B",
+          "text": "Cell"
+        },
+        {
+          "key": "C",
+          "text": "Tissue"
+        },
+        {
+          "key": "D",
+          "text": "Organ"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Sub-cellular organelle",
+      "explanation": "A mitochondrion is a sub-cellular organelle inside many eukaryotic cells. It carries out much of aerobic cellular respiration and produces ATP, the cell’s usable energy currency; it is not itself a cell, tissue or organ."
+    },
+    {
+      "week": 2,
+      "questionNo": 6,
+      "sourceQuestionNo": 26,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For more biodiversity, the level of disturbance should be",
+      "options": [
+        {
+          "key": "A",
+          "text": "less"
+        },
+        {
+          "key": "B",
+          "text": "intermediate"
+        },
+        {
+          "key": "C",
+          "text": "more"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "intermediate",
+      "explanation": "The intermediate-disturbance hypothesis proposes that diversity may be highest at moderate levels of disturbance. Very frequent or intense disturbance can eliminate many species, while very little disturbance can allow a few strong competitors to dominate; intermediate disturbance may allow more species to coexist."
+    },
+    {
+      "week": 2,
+      "questionNo": 7,
+      "sourceQuestionNo": 27,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "There is more biodiversity in areas with",
+      "options": [
+        {
+          "key": "A",
+          "text": "less competition, less predation"
+        },
+        {
+          "key": "B",
+          "text": "less competition, more predation"
+        },
+        {
+          "key": "C",
+          "text": "more competition, more predation"
+        },
+        {
+          "key": "D",
+          "text": "more competition, less predation"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "more competition, more predation",
+      "explanation": "The explanation associated with this answer is that competition and predation can prevent any one species from dominating a community. Predators may suppress abundant competitors, while competition can partition resources and promote differentiation; however, the exact effect depends on the ecosystem and is not a universal rule."
+    },
+    {
+      "week": 2,
+      "questionNo": 8,
+      "sourceQuestionNo": 28,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"the diversity that exists among different geographies\" is",
+      "options": [
+        {
+          "key": "A",
+          "text": "alpha (α) biodiversity"
+        },
+        {
+          "key": "B",
+          "text": "beta (β) biodiversity"
+        },
+        {
+          "key": "C",
+          "text": "gamma (γ) biodiversity"
+        },
+        {
+          "key": "D",
+          "text": "delta (δ) biodiversity"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "gamma (γ) biodiversity",
+      "explanation": "Gamma diversity describes total species diversity across a larger region or landscape that contains multiple communities or ecosystems. It differs from alpha diversity within one site and beta diversity, which describes differences in species composition between sites."
+    },
+    {
+      "week": 2,
+      "questionNo": 9,
+      "sourceQuestionNo": 29,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The laboratory approach to Ecology uses",
+      "options": [
+        {
+          "key": "A",
+          "text": "equations"
+        },
+        {
+          "key": "B",
+          "text": "models"
+        },
+        {
+          "key": "C",
+          "text": "observations"
+        },
+        {
+          "key": "D",
+          "text": "experiments"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "experiments",
+      "explanation": "The laboratory approach to ecology uses controlled experiments to test hypotheses about ecological relationships. By changing one factor while keeping other conditions as constant as possible, researchers can investigate cause and effect more directly than through observation alone."
+    },
+    {
+      "week": 2,
+      "questionNo": 10,
+      "sourceQuestionNo": 30,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such groups\" is a definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "cells"
+        },
+        {
+          "key": "B",
+          "text": "species"
+        },
+        {
+          "key": "C",
+          "text": "ecosystems"
+        },
+        {
+          "key": "D",
+          "text": "biomes"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "species",
+      "explanation": "The biological species concept defines a species as natural populations whose members actually or potentially interbreed and are reproductively isolated from other such groups. The concept is useful for many sexually reproducing organisms, although it is harder to apply to fossils and organisms that reproduce asexually."
+    },
+    {
+      "week": 3,
+      "questionNo": 1,
+      "sourceQuestionNo": 31,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "I observe a monkey take a tick out of another monkey's head and eat it. In the social context, this behaviour would be called",
+      "options": [
+        {
+          "key": "A",
+          "text": "tick hunting"
+        },
+        {
+          "key": "B",
+          "text": "auto grooming"
+        },
+        {
+          "key": "C",
+          "text": "allo grooming"
+        },
+        {
+          "key": "D",
+          "text": "foraging"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "allo grooming",
+      "explanation": "Allogrooming is grooming performed by one individual on another individual of the same species. Removing ticks or other parasites can serve a hygienic function and may also reinforce social bonds; autogrooming, in contrast, is when an animal grooms itself."
+    },
+    {
+      "week": 3,
+      "questionNo": 2,
+      "sourceQuestionNo": 32,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The scientific study of animal behaviour is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "behaviourism"
+        },
+        {
+          "key": "B",
+          "text": "ecology"
+        },
+        {
+          "key": "C",
+          "text": "ethology"
+        },
+        {
+          "key": "D",
+          "text": "prey-predator dynamics"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "ethology",
+      "explanation": "Ethology is the scientific study of animal behaviour, including behaviour in natural settings and its evolutionary and ecological significance. It examines how animals respond to stimuli, communicate, find food, reproduce and interact socially."
+    },
+    {
+      "week": 3,
+      "questionNo": 3,
+      "sourceQuestionNo": 33,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Hamilton's rule can be stated as",
+      "options": [
+        {
+          "key": "A",
+          "text": "rB < C"
+        },
+        {
+          "key": "B",
+          "text": "rB > C"
+        },
+        {
+          "key": "C",
+          "text": "rB = C"
+        },
+        {
+          "key": "D",
+          "text": "rB + C = 0"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "rB > C",
+      "explanation": "Hamilton’s rule describes when an action that benefits a relative can evolve through kin selection. The condition rB > C means the benefit to the recipient (B), weighted by genetic relatedness (r), exceeds the cost to the actor (C); in that case, the behaviour can increase inclusive fitness."
+    },
+    {
+      "week": 3,
+      "questionNo": 4,
+      "sourceQuestionNo": 34,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Harmonious interactions occur where",
+      "options": [
+        {
+          "key": "A",
+          "text": "at least one participant is benefited"
+        },
+        {
+          "key": "B",
+          "text": "at least one participant is unharmed"
+        },
+        {
+          "key": "C",
+          "text": "both participants are benefitted"
+        },
+        {
+          "key": "D",
+          "text": "both participants are unharmed"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "both participants are unharmed",
+      "explanation": "In the classification used by this question, harmonious interactions are those in which neither participant is harmed. Ecological interaction categories distinguish effects on each species: mutualism benefits both, commensalism benefits one without affecting the other, and antagonistic interactions harm at least one participant."
+    },
+    {
+      "week": 3,
+      "questionNo": 5,
+      "sourceQuestionNo": 35,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The interaction between exotic shrubs and trees through the action of seed predators is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "infraspecific competition"
+        },
+        {
+          "key": "B",
+          "text": "apparent competition"
+        },
+        {
+          "key": "C",
+          "text": "disguised competition"
+        },
+        {
+          "key": "D",
+          "text": "harmonious competition"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "apparent competition",
+      "explanation": "Apparent competition occurs when two species negatively affect one another indirectly because they share a natural enemy. For example, an exotic shrub may support seed predators that also consume the seeds of native trees, reducing tree recruitment even though the shrub and tree do not compete directly for the same resource."
+    },
+    {
+      "week": 3,
+      "questionNo": 6,
+      "sourceQuestionNo": 36,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "An inventory of behaviours exhibited by an animal during a behaviour exercise is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "ecogram"
+        },
+        {
+          "key": "B",
+          "text": "ethogram"
+        },
+        {
+          "key": "C",
+          "text": "behaviourogram"
+        },
+        {
+          "key": "D",
+          "text": "animalogram"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ethogram",
+      "explanation": "An ethogram is a structured inventory of the behaviours shown by an animal or species. Researchers define each behaviour clearly and record when it occurs, allowing observations to be compared consistently across individuals, contexts or study periods."
+    },
+    {
+      "week": 3,
+      "questionNo": 7,
+      "sourceQuestionNo": 37,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Trampling of grass due to the movement of animals is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "mutualism"
+        },
+        {
+          "key": "B",
+          "text": "amensalism"
+        },
+        {
+          "key": "C",
+          "text": "commensalism"
+        },
+        {
+          "key": "D",
+          "text": "protocooperation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "amensalism",
+      "explanation": "Amensalism is an interaction in which one species is harmed while the other is not significantly affected. In the example, animal movement damages or suppresses grass through trampling; the classification assumes the animals gain no meaningful benefit from that effect on the grass."
+    },
+    {
+      "week": 3,
+      "questionNo": 8,
+      "sourceQuestionNo": 38,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "I observe a bird take a tick out of another bird's head and eat it. In the social context, this behaviour would be called",
+      "options": [
+        {
+          "key": "A",
+          "text": "tick hunting"
+        },
+        {
+          "key": "B",
+          "text": "auto grooming"
+        },
+        {
+          "key": "C",
+          "text": "allo grooming"
+        },
+        {
+          "key": "D",
+          "text": "foraging"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "allo grooming",
+      "explanation": "Allogrooming is grooming performed by one individual on another individual of the same species. Removing a tick is a form of social grooming that can reduce parasites and may also strengthen social bonds; autogrooming would mean the bird was grooming itself."
+    },
+    {
+      "week": 3,
+      "questionNo": 9,
+      "sourceQuestionNo": 39,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Birds on giraffe are an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "colony"
+        },
+        {
+          "key": "B",
+          "text": "commensalism"
+        },
+        {
+          "key": "C",
+          "text": "protocooperation"
+        },
+        {
+          "key": "D",
+          "text": "allelopathy"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "protocooperation",
+      "explanation": "Protocooperation is an interaction in which both species benefit but the relationship is not obligatory for either species. In the example, birds may obtain food such as parasites or insects while the giraffe benefits from parasite removal; the exact classification depends on the observed behaviour and ecological context."
+    },
+    {
+      "week": 3,
+      "questionNo": 10,
+      "sourceQuestionNo": 40,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Egrets with buffaloes are an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "colony"
+        },
+        {
+          "key": "B",
+          "text": "commensalism"
+        },
+        {
+          "key": "C",
+          "text": "protocooperation"
+        },
+        {
+          "key": "D",
+          "text": "allelopathy"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "commensalism",
+      "explanation": "Commensalism is an interaction in which one species benefits while the other is neither significantly helped nor harmed. Egrets can catch insects stirred up by grazing or moving buffaloes, gaining food without necessarily affecting the buffaloes."
+    },
+    {
+      "week": 4,
+      "questionNo": 1,
+      "sourceQuestionNo": 41,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "If we all became vegetarians, we'll be able to support our large populations. This can be explained through",
+      "options": [
+        {
+          "key": "A",
+          "text": "10% rule"
+        },
+        {
+          "key": "B",
+          "text": "1% rule"
+        },
+        {
+          "key": "C",
+          "text": "trophic cascade"
+        },
+        {
+          "key": "D",
+          "text": "biodiversity"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "10% rule",
+      "explanation": "The 10% rule is a simplified ecological principle stating that, on average, only about one-tenth of the energy at one trophic level is transferred to the next. Eating plants directly can therefore make more of the original plant production available to people than routing that energy through livestock first, although real food systems vary in efficiency."
+    },
+    {
+      "week": 4,
+      "questionNo": 2,
+      "sourceQuestionNo": 42,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Net primary productivity is given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "APAR × LUE"
+        },
+        {
+          "key": "B",
+          "text": "APAR + LUE"
+        },
+        {
+          "key": "C",
+          "text": "APAR - LUE"
+        },
+        {
+          "key": "D",
+          "text": "APAR / LUE"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "APAR × LUE",
+      "explanation": "Net primary productivity (NPP) can be estimated as absorbed photosynthetically active radiation (APAR) multiplied by light-use efficiency (LUE). APAR measures the light absorbed by vegetation, while LUE estimates how efficiently that absorbed energy is converted into plant biomass after accounting for losses such as plant respiration."
+    },
+    {
+      "week": 4,
+      "questionNo": 3,
+      "sourceQuestionNo": 43,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Trees → Birds → Parasites → Hyperparasites represents",
+      "options": [
+        {
+          "key": "A",
+          "text": "upright pyramid of numbers"
+        },
+        {
+          "key": "B",
+          "text": "inverted pyramid of numbers"
+        },
+        {
+          "key": "C",
+          "text": "spindle pyramid of numbers"
+        },
+        {
+          "key": "D",
+          "text": "dumb-bell pyramid of numbers"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "inverted pyramid of numbers",
+      "explanation": "This food relationship can produce an inverted pyramid of numbers because one large tree may support many birds, and each bird may host numerous parasites; those parasites can in turn support many hyperparasites. A pyramid of numbers counts individual organisms at each trophic level, not their total biomass or energy."
+    },
+    {
+      "week": 4,
+      "questionNo": 4,
+      "sourceQuestionNo": 44,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "available energy decreases"
+        },
+        {
+          "key": "B",
+          "text": "available energy increases"
+        },
+        {
+          "key": "C",
+          "text": "available energy remains same"
+        },
+        {
+          "key": "D",
+          "text": "available energy is zero everywhere"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "available energy decreases",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 4,
+      "questionNo": 5,
+      "sourceQuestionNo": 45,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "frog is producer"
+        },
+        {
+          "key": "B",
+          "text": "frog is consumer and carnivore"
+        },
+        {
+          "key": "C",
+          "text": "frog is consumer and herbivore"
+        },
+        {
+          "key": "D",
+          "text": "frog is decomposer"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "frog is consumer and carnivore",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 4,
+      "questionNo": 6,
+      "sourceQuestionNo": 46,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "more number of hawks than grasshoppers can be supported"
+        },
+        {
+          "key": "B",
+          "text": "more number of grasshoppers than hawks can be supported"
+        },
+        {
+          "key": "C",
+          "text": "equal number of hawks and grasshoppers can be supported"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "more number of grasshoppers than hawks can be supported",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 4,
+      "questionNo": 7,
+      "sourceQuestionNo": 47,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "At the compensation point,",
+      "options": [
+        {
+          "key": "A",
+          "text": "photosynthesis = respiration"
+        },
+        {
+          "key": "B",
+          "text": "photosynthesis < respiration"
+        },
+        {
+          "key": "C",
+          "text": "photosynthesis > respiration"
+        },
+        {
+          "key": "D",
+          "text": "photosynthesis = 0"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "photosynthesis = respiration",
+      "explanation": "At the compensation point, photosynthesis and respiration occur at equal rates. Carbon fixed through photosynthesis balances carbon released by respiration, so the plant has approximately zero net carbon gain at that light level."
+    },
+    {
+      "week": 4,
+      "questionNo": 8,
+      "sourceQuestionNo": 48,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Glacial lakes are typical examples of",
+      "options": [
+        {
+          "key": "A",
+          "text": "eutrophic lakes"
+        },
+        {
+          "key": "B",
+          "text": "hypereutrophic lakes"
+        },
+        {
+          "key": "C",
+          "text": "oligotrophic lakes"
+        },
+        {
+          "key": "D",
+          "text": "mesotrophic lakes"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "oligotrophic lakes",
+      "explanation": "Glacial lakes are often oligotrophic: they have low nutrient concentrations and relatively low algal productivity. Their clear, cold water and limited nutrient supply commonly support less phytoplankton biomass than nutrient-rich eutrophic lakes, although individual lakes can differ."
+    },
+    {
+      "week": 4,
+      "questionNo": 9,
+      "sourceQuestionNo": 49,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "hawk is producer"
+        },
+        {
+          "key": "B",
+          "text": "hawk is consumer and carnivore"
+        },
+        {
+          "key": "C",
+          "text": "hawk is consumer and herbivore"
+        },
+        {
+          "key": "D",
+          "text": "hawk is decomposer"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "hawk is consumer and carnivore",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 4,
+      "questionNo": 10,
+      "sourceQuestionNo": 50,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Tree → Frugivorous birds → Hawk represents",
+      "options": [
+        {
+          "key": "A",
+          "text": "upright pyramid of numbers"
+        },
+        {
+          "key": "B",
+          "text": "inverted pyramid of numbers"
+        },
+        {
+          "key": "C",
+          "text": "spindle pyramid of numbers"
+        },
+        {
+          "key": "D",
+          "text": "dumb-bell pyramid of numbers"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "spindle pyramid of numbers",
+      "explanation": "The spindle-shaped pyramid of numbers reflects a food chain in which a small number of trees can support many frugivorous birds, followed by fewer hawks. The number of organisms first increases and then decreases across trophic levels, producing a spindle-like outline."
+    },
+    {
+      "week": 5,
+      "questionNo": 1,
+      "sourceQuestionNo": 51,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is true?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Physiological longevity > Ecological longevity"
+        },
+        {
+          "key": "B",
+          "text": "Physiological longevity = Ecological longevity"
+        },
+        {
+          "key": "C",
+          "text": "Physiological longevity < Ecological longevity"
+        },
+        {
+          "key": "D",
+          "text": "Physiological longevity > Ecological longevity or Physiological longevity = Ecological longevity"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Physiological longevity > Ecological longevity or Physiological longevity = Ecological longevity",
+      "explanation": "Physiological longevity is the maximum lifespan an organism could attain under favourable conditions, while ecological longevity is the lifespan it typically achieves in nature under predation, disease, competition and other environmental pressures. Ecological longevity is therefore generally equal to or shorter than physiological longevity."
+    },
+    {
+      "week": 5,
+      "questionNo": 2,
+      "sourceQuestionNo": 52,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple random sampling"
+        },
+        {
+          "key": "B",
+          "text": "Systematic sampling"
+        },
+        {
+          "key": "C",
+          "text": "Stratified sampling"
+        },
+        {
+          "key": "D",
+          "text": "Multistage sampling"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Simple random sampling",
+      "explanation": "Simple random sampling gives every possible sample of the specified size an equal probability of selection. It reduces deliberate selection bias and supports statistical inference, provided the sampling frame adequately represents the population and selection is genuinely random."
+    },
+    {
+      "week": 5,
+      "questionNo": 3,
+      "sourceQuestionNo": 53,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Cover board surveys are typically used for sampling",
+      "options": [
+        {
+          "key": "A",
+          "text": "herpetofauna"
+        },
+        {
+          "key": "B",
+          "text": "fishes"
+        },
+        {
+          "key": "C",
+          "text": "large mammals"
+        },
+        {
+          "key": "D",
+          "text": "carnivores"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "herpetofauna",
+      "explanation": "Cover boards are commonly used to sample herpetofauna—amphibians and reptiles, especially species that shelter beneath logs, boards or other cover. Researchers place boards in suitable habitat and check them repeatedly, recording animals that use the artificial shelter while following handling and disturbance protocols."
+    },
+    {
+      "week": 5,
+      "questionNo": 4,
+      "sourceQuestionNo": 54,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "_________ is how close the measured values are to the correct value.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Accuracy"
+        },
+        {
+          "key": "B",
+          "text": "Precision"
+        },
+        {
+          "key": "C",
+          "text": "Bias"
+        },
+        {
+          "key": "D",
+          "text": "Variance"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Accuracy",
+      "explanation": "Accuracy describes how close a measurement is to the true or accepted value. Precision is different: it describes how closely repeated measurements agree with one another, even if they are consistently far from the correct value."
+    },
+    {
+      "week": 5,
+      "questionNo": 5,
+      "sourceQuestionNo": 55,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The logistic growth equation, when plotted, appears",
+      "options": [
+        {
+          "key": "A",
+          "text": "I shaped"
+        },
+        {
+          "key": "B",
+          "text": "J shaped"
+        },
+        {
+          "key": "C",
+          "text": "S shaped"
+        },
+        {
+          "key": "D",
+          "text": "O shaped"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "S shaped",
+      "explanation": "Logistic population growth produces an S-shaped, or sigmoid, curve. Growth is initially slow, accelerates when resources are abundant, and then slows as competition and other density-dependent limits increase near carrying capacity (K)."
+    },
+    {
+      "week": 5,
+      "questionNo": 6,
+      "sourceQuestionNo": 56,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The minimum replacement level fertility for a population to grow should be greater than",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "2",
+      "explanation": "Replacement fertility is the average number of children per woman needed for a generation to replace itself, accounting for survival and sex ratio. It is a little above two in many populations; fertility above replacement does not by itself guarantee growth at every moment because age structure and migration also matter."
+    },
+    {
+      "week": 5,
+      "questionNo": 7,
+      "sourceQuestionNo": 57,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The juvenile mortality rate is the annual number of deaths of juveniles per",
+      "options": [
+        {
+          "key": "A",
+          "text": "100 births"
+        },
+        {
+          "key": "B",
+          "text": "1000 births"
+        },
+        {
+          "key": "C",
+          "text": "100 live births"
+        },
+        {
+          "key": "D",
+          "text": "1000 live births"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "1000 live births",
+      "explanation": "The juvenile mortality rate in this question is expressed per 1,000 live births, providing a standardised denominator for comparing populations of different sizes. Rates must always be interpreted using their stated age range, time period and denominator, since demographic indicators can use different conventions."
+    },
+    {
+      "week": 5,
+      "questionNo": 8,
+      "sourceQuestionNo": 58,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "_______ employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple random sampling"
+        },
+        {
+          "key": "B",
+          "text": "Systematic sampling"
+        },
+        {
+          "key": "C",
+          "text": "Stratified sampling"
+        },
+        {
+          "key": "D",
+          "text": "Multistage sampling"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Systematic sampling",
+      "explanation": "Systematic sampling selects every kth unit after choosing a random starting position between 1 and k. It is efficient and spreads observations across the sampling frame, but it can produce biased results if a repeating pattern in the population aligns with the sampling interval."
+    },
+    {
+      "week": 5,
+      "questionNo": 9,
+      "sourceQuestionNo": 59,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Pan traps are used for sampling",
+      "options": [
+        {
+          "key": "A",
+          "text": "bees"
+        },
+        {
+          "key": "B",
+          "text": "butterflies"
+        },
+        {
+          "key": "C",
+          "text": "non-pollinator insects"
+        },
+        {
+          "key": "D",
+          "text": "pollinator insects"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "pollinator insects",
+      "explanation": "Pan traps are coloured bowls filled with a collecting liquid or other suitable capture medium and are widely used to sample pollinating insects such as bees and flies. Their colour attracts insects, allowing researchers to compare pollinator activity across locations or times, though trap colour and placement affect which species are caught."
+    },
+    {
+      "week": 5,
+      "questionNo": 10,
+      "sourceQuestionNo": 60,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a measure of absolute population density?",
+      "options": [
+        {
+          "key": "A",
+          "text": "total count"
+        },
+        {
+          "key": "B",
+          "text": "pelt count"
+        },
+        {
+          "key": "C",
+          "text": "capture-recapture method"
+        },
+        {
+          "key": "D",
+          "text": "removal method"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "pelt count",
+      "explanation": "Absolute density estimates the number of individuals per unit area or volume, or uses a method designed to estimate that quantity. A pelt count records harvested or collected skins and is generally an indirect index that depends on effort and detection, so it does not by itself measure absolute density."
+    },
+    {
+      "week": 6,
+      "questionNo": 1,
+      "sourceQuestionNo": 61,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fundamental niche > Realised niche"
+        },
+        {
+          "key": "B",
+          "text": "Fundamental niche = Realised niche"
+        },
+        {
+          "key": "C",
+          "text": "Fundamental niche < Realised niche"
+        },
+        {
+          "key": "D",
+          "text": "Fundamental niche > Realised niche or Fundamental niche = Realised niche"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Fundamental niche > Realised niche or Fundamental niche = Realised niche",
+      "explanation": "The fundamental niche describes the conditions under which a species could survive and reproduce without restricting biotic interactions. The realised niche is the part it actually occupies after competition, predation and other interactions are considered, so it is generally equal to or smaller than the fundamental niche."
+    },
+    {
+      "week": 6,
+      "questionNo": 2,
+      "sourceQuestionNo": 62,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of pioneer species",
+      "options": [
+        {
+          "key": "A",
+          "text": "ability to grow on bare rocks"
+        },
+        {
+          "key": "B",
+          "text": "ability to tolerate extreme temperatures"
+        },
+        {
+          "key": "C",
+          "text": "large size"
+        },
+        {
+          "key": "D",
+          "text": "short life span"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "large size",
+      "explanation": "Pioneer species are early colonisers of bare or disturbed habitats. They often disperse effectively, establish quickly and tolerate harsh conditions; large body size is not a defining characteristic and many pioneer organisms are small, fast-growing plants, lichens or microbes."
+    },
+    {
+      "week": 6,
+      "questionNo": 3,
+      "sourceQuestionNo": 63,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A climax caused by wildfires is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "catastrophic climax",
+      "explanation": "A catastrophic climax is a community state associated with a major disturbance such as recurrent wildfire. Fire can repeatedly reset succession or favour fire-adapted species, preventing the vegetation from developing into the climax that might otherwise occur under the prevailing climate."
+    },
+    {
+      "week": 6,
+      "questionNo": 4,
+      "sourceQuestionNo": 64,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Importance value varies from",
+      "options": [
+        {
+          "key": "A",
+          "text": "0 to 10"
+        },
+        {
+          "key": "B",
+          "text": "0 to 50"
+        },
+        {
+          "key": "C",
+          "text": "0 to 100"
+        },
+        {
+          "key": "D",
+          "text": "0 to 300"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "0 to 300",
+      "explanation": "Importance value combines a species’ relative density, relative frequency and relative dominance. Each component is expressed on a 0–100 scale, so their sum ranges from 0 to 300; a higher value indicates that the species is more prominent in the sampled plant community."
+    },
+    {
+      "week": 6,
+      "questionNo": 5,
+      "sourceQuestionNo": 65,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "When compared to generalist species, specialist species have",
+      "options": [
+        {
+          "key": "A",
+          "text": "narrower niches"
+        },
+        {
+          "key": "B",
+          "text": "broader niches"
+        },
+        {
+          "key": "C",
+          "text": "same-size niches"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "narrower niches",
+      "explanation": "Specialist species use a narrower range of resources or tolerate a more restricted set of environmental conditions than generalists. This can make them highly effective in particular habitats but more vulnerable when those resources or conditions change."
+    },
+    {
+      "week": 6,
+      "questionNo": 6,
+      "sourceQuestionNo": 66,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "disclimax",
+      "explanation": "A disclimax is a relatively stable community maintained by repeated disturbance rather than by the undisturbed climatic climax. Here, recurring cattle grazing prevents succession from proceeding normally, so the vegetation reflects grazing pressure as well as the site's environmental conditions."
+    },
+    {
+      "week": 6,
+      "questionNo": 7,
+      "sourceQuestionNo": 67,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Lithosere is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "hydrosere"
+        },
+        {
+          "key": "B",
+          "text": "xerosere"
+        },
+        {
+          "key": "C",
+          "text": "psammosere"
+        },
+        {
+          "key": "D",
+          "text": "halosere"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "xerosere",
+      "explanation": "A lithosere is a succession sequence that begins on bare rock, where soil and water are initially scarce. Because it begins in a dry, soil-poor setting, it is classified as a type of xerosere; weathering and organic matter gradually make the site suitable for more complex vegetation."
+    },
+    {
+      "week": 6,
+      "questionNo": 8,
+      "sourceQuestionNo": 68,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A species found most frequently in a particular community, but also present occasionally in others is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "accidental species"
+        },
+        {
+          "key": "B",
+          "text": "indifferent species"
+        },
+        {
+          "key": "C",
+          "text": "selective species"
+        },
+        {
+          "key": "D",
+          "text": "exclusive species"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "selective species",
+      "explanation": "In the terminology used by this question, a selective species occurs most frequently in one particular community but may also appear occasionally in other communities. Such labels describe a species’ pattern of occurrence across community types and should be interpreted according to the classification used in the course."
+    },
+    {
+      "week": 6,
+      "questionNo": 9,
+      "sourceQuestionNo": 69,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these depicts correctly the lithosere primary succession?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rock → Crustose lichen → Foliose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "B",
+          "text": "Rock → Foliose lichen → Crustose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "C",
+          "text": "Moss → Crustose lichen → Foliose lichen → Rock → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "D",
+          "text": "Rock → Crustose lichen → Foliose lichen → shrub → Herbaceous stage → Moss → woodland → climax"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Rock → Crustose lichen → Foliose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax",
+      "explanation": "Lithosere succession begins with bare rock, followed by pioneer crustose lichens that can attach to the surface and contribute to weathering. Foliose lichens, mosses, herbs and shrubs establish as fine material and organic matter accumulate, eventually allowing woodland and a later-stage climax community where climate and conditions permit."
+    },
+    {
+      "week": 6,
+      "questionNo": 10,
+      "sourceQuestionNo": 70,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Importance value can be written as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Relative density + Relative frequency X Relative dominance"
+        },
+        {
+          "key": "B",
+          "text": "Relative density X Relative frequency + Relative dominance"
+        },
+        {
+          "key": "C",
+          "text": "Relative density + Relative frequency + Relative dominance"
+        },
+        {
+          "key": "D",
+          "text": "Relative density X Relative frequency X Relative dominance"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Relative density + Relative frequency + Relative dominance",
+      "explanation": "Importance value is calculated by adding relative density, relative frequency and relative dominance. Density reflects the number of individuals, frequency reflects how widely a species occurs among sample plots, and dominance commonly reflects its basal area or cover; the combined score helps compare species’ ecological prominence."
+    },
+    {
+      "week": 7,
+      "questionNo": 1,
+      "sourceQuestionNo": 71,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a physical factor of habitat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "soil"
+        },
+        {
+          "key": "B",
+          "text": "moisture"
+        },
+        {
+          "key": "C",
+          "text": "predators"
+        },
+        {
+          "key": "D",
+          "text": "temperature"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "predators",
+      "explanation": "Predators are biotic factors because they are living organisms that interact with the species being studied. Physical or abiotic habitat factors include temperature, water, light, soil and topography, while food organisms, competitors, parasites and predators are biotic components."
+    },
+    {
+      "week": 7,
+      "questionNo": 2,
+      "sourceQuestionNo": 72,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "translocation"
+        },
+        {
+          "key": "B",
+          "text": "migration"
+        },
+        {
+          "key": "C",
+          "text": "dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "dispersal",
+      "explanation": "Dispersal is the movement of individuals away from their birthplace, hatching site or seed-production location to a new area where they may survive and reproduce. It can reduce competition among relatives and allow colonisation of new habitat; unlike migration, it is not necessarily a regular seasonal round trip."
+    },
+    {
+      "week": 7,
+      "questionNo": 3,
+      "sourceQuestionNo": 73,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The movement of lions across the Gir landscape is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "diffusion"
+        },
+        {
+          "key": "B",
+          "text": "secular dispersal"
+        },
+        {
+          "key": "C",
+          "text": "jump dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "diffusion",
+      "explanation": "Diffusion describes gradual spread from an existing distribution into nearby areas through movement between adjacent locations. If lions move across the connected Gir landscape into neighbouring suitable areas, their range can expand step by step rather than through a single long-distance jump."
+    },
+    {
+      "week": 7,
+      "questionNo": 4,
+      "sourceQuestionNo": 74,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
+      "options": [
+        {
+          "key": "A",
+          "text": "autophagy"
+        },
+        {
+          "key": "B",
+          "text": "allelophagy"
+        },
+        {
+          "key": "C",
+          "text": "autopathy"
+        },
+        {
+          "key": "D",
+          "text": "allelopathy"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "allelopathy",
+      "explanation": "Allelopathy occurs when one organism releases chemicals that inhibit the germination, growth or survival of another. Some plants can release compounds through leaves, roots or decomposing litter; if vegetables fail beneath teak, allelopathy is one possible concern, though shade, water and nutrient competition should also be considered."
+    },
+    {
+      "week": 7,
+      "questionNo": 5,
+      "sourceQuestionNo": 75,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The regular, seasonal movement of animals, often along fixed routes is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "translocation"
+        },
+        {
+          "key": "B",
+          "text": "migration"
+        },
+        {
+          "key": "C",
+          "text": "dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "migration",
+      "explanation": "Migration is a regular, often seasonal movement between areas, commonly along established routes, in response to breeding opportunities, food availability or climatic conditions. It differs from dispersal, which is movement away from the birth or origin site and need not follow a repeated seasonal pattern."
+    },
+    {
+      "week": 7,
+      "questionNo": 6,
+      "sourceQuestionNo": 76,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"The rate of any biological process is limited by that factor in least amount relative to requirement, so there is a single limiting factor.\" This is the statement for",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liebig’s law of the minimum"
+        },
+        {
+          "key": "B",
+          "text": "Liebig’s law of the maximum"
+        },
+        {
+          "key": "C",
+          "text": "Shelford’s law of tolerance"
+        },
+        {
+          "key": "D",
+          "text": "Shelford’s law of intolerance"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Liebig’s law of the minimum",
+      "explanation": "Liebig’s law of the minimum states that growth or a biological process is limited by the essential resource or factor in shortest supply relative to the organism’s needs. Increasing an already abundant factor will not improve performance until the limiting factor is supplied in sufficient quantity."
+    },
+    {
+      "week": 7,
+      "questionNo": 7,
+      "sourceQuestionNo": 77,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"Quick movement over large distances, often across unsuitable terrain\" is a description of",
+      "options": [
+        {
+          "key": "A",
+          "text": "diffusion"
+        },
+        {
+          "key": "B",
+          "text": "secular dispersal"
+        },
+        {
+          "key": "C",
+          "text": "jump dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "jump dispersal",
+      "explanation": "Jump dispersal occurs when individuals reach distant locations rapidly, often crossing large areas of unsuitable habitat. Unlike gradual diffusion from neighbouring populations, jump dispersal can establish a population far beyond the existing range and may initiate later spread from that new location."
+    },
+    {
+      "week": 7,
+      "questionNo": 8,
+      "sourceQuestionNo": 78,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance.\" This is the statement for",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liebig’s law of the minimum"
+        },
+        {
+          "key": "B",
+          "text": "Liebig’s law of the maximum"
+        },
+        {
+          "key": "C",
+          "text": "Shelford’s law of tolerance"
+        },
+        {
+          "key": "D",
+          "text": "Shelford’s law of intolerance"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Shelford’s law of tolerance",
+      "explanation": "Shelford’s law of tolerance states that a species’ distribution is constrained by environmental factors for which it has the narrowest tolerance range, not only by shortages. Conditions can be too low or too high; outside the tolerance limits, survival and reproduction become impossible or greatly reduced."
+    },
+    {
+      "week": 7,
+      "questionNo": 9,
+      "sourceQuestionNo": 79,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Good climate is a",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical factor"
+        },
+        {
+          "key": "B",
+          "text": "demographic factor"
+        },
+        {
+          "key": "C",
+          "text": "push factor"
+        },
+        {
+          "key": "D",
+          "text": "pull factor"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "pull factor",
+      "explanation": "A pull factor is a favourable condition that attracts individuals toward a location, such as a suitable climate, abundant resources or safer habitat. Push factors are adverse conditions at the origin, such as food scarcity, that encourage individuals to leave."
+    },
+    {
+      "week": 7,
+      "questionNo": 10,
+      "sourceQuestionNo": 80,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Scarcity of food is a",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical factor"
+        },
+        {
+          "key": "B",
+          "text": "demographic factor"
+        },
+        {
+          "key": "C",
+          "text": "push factor"
+        },
+        {
+          "key": "D",
+          "text": "pull factor"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "push factor",
+      "explanation": "A push factor is an adverse condition that encourages individuals to leave an area. Food scarcity can reduce survival and reproductive success, prompting animals or people to move toward locations where food and other resources are more available."
+    },
+    {
+      "week": 8,
+      "questionNo": 1,
+      "sourceQuestionNo": 81,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Zoo is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "A zoo is an example of ex-situ conservation because organisms are maintained outside their natural habitats. Zoos can support education, research and managed breeding, but protecting natural habitats and wild populations remains essential for conserving ecological interactions and evolutionary processes."
+    },
+    {
+      "week": 8,
+      "questionNo": 2,
+      "sourceQuestionNo": 82,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The “subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce” is the definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat"
+        },
+        {
+          "key": "B",
+          "text": "ecosystem"
+        },
+        {
+          "key": "C",
+          "text": "biome"
+        },
+        {
+          "key": "D",
+          "text": "biosphere"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "habitat",
+      "explanation": "Habitat is the set of physical and biological conditions that allows an organism to survive and reproduce. It includes features such as shelter, water, temperature and vegetation, as well as interactions with food organisms, competitors and predators."
+    },
+    {
+      "week": 8,
+      "questionNo": 3,
+      "sourceQuestionNo": 83,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these correctly represents the process of habitat fragmentation and loss?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Original forest → Dissection → Perforation → Fragmentation → Attrition"
+        },
+        {
+          "key": "B",
+          "text": "Original forest → Dissection → Attrition → Fragmentation → Perforation"
+        },
+        {
+          "key": "C",
+          "text": "Original forest → Dissection → Perforation → Attrition → Fragmentation"
+        },
+        {
+          "key": "D",
+          "text": "Original forest → Dissection → Fragmentation → Perforation → Attrition"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Original forest → Dissection → Perforation → Fragmentation → Attrition",
+      "explanation": "The sequence shown describes a forest being progressively divided and reduced: dissection introduces cuts or corridors, perforation creates holes within the habitat, fragmentation separates the remaining patches, and attrition reduces or removes patches further. The process isolates populations, reduces interior habitat and can make movement and gene flow more difficult."
+    },
+    {
+      "week": 8,
+      "questionNo": 4,
+      "sourceQuestionNo": 84,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The acronym HIPPO does not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat loss"
+        },
+        {
+          "key": "B",
+          "text": "invasive species"
+        },
+        {
+          "key": "C",
+          "text": "pollination"
+        },
+        {
+          "key": "D",
+          "text": "pollution"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "pollination",
+      "explanation": "HIPPO summarises major threats to biodiversity: Habitat loss, Invasive species, Pollution, human Population pressure and Overharvesting. Pollination is an ecological process and ecosystem service, not a threat category in this acronym."
+    },
+    {
+      "week": 8,
+      "questionNo": 5,
+      "sourceQuestionNo": 85,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+      "options": [
+        {
+          "key": "A",
+          "text": "very high"
+        },
+        {
+          "key": "B",
+          "text": "medium"
+        },
+        {
+          "key": "C",
+          "text": "very low"
+        },
+        {
+          "key": "D",
+          "text": "non-existent"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "medium",
+      "explanation": "The answer key identifies a medium level of threat as the preferred level for creating a conservation reserve in this question’s framework. In practical conservation planning, threat level is considered alongside biodiversity value, feasibility, connectivity, costs and the urgency of intervention; threat alone is not a universal selection rule."
+    },
+    {
+      "week": 8,
+      "questionNo": 6,
+      "sourceQuestionNo": 86,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The acronym HIPPO does not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat loss"
+        },
+        {
+          "key": "B",
+          "text": "habitat enhancement"
+        },
+        {
+          "key": "C",
+          "text": "invasive species"
+        },
+        {
+          "key": "D",
+          "text": "human over-population"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "habitat enhancement",
+      "explanation": "HIPPO summarises major threats to biodiversity: Habitat loss, Invasive species, Pollution, human Population pressure and Overharvesting. Pollination is an ecological process and ecosystem service, not a threat category in this acronym."
+    },
+    {
+      "week": 8,
+      "questionNo": 7,
+      "sourceQuestionNo": 87,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "According to Leopold, which of these is not a tool of habitat management?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fire"
+        },
+        {
+          "key": "B",
+          "text": "gun"
+        },
+        {
+          "key": "C",
+          "text": "cattle"
+        },
+        {
+          "key": "D",
+          "text": "sickle"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "sickle",
+      "explanation": "Aldo Leopold’s habitat-management tools are commonly described as the axe, plow, cow, fire and gun, representing forestry, agriculture, grazing, prescribed burning and wildlife harvest or control. A sickle is not one of the tools in this formulation."
+    },
+    {
+      "week": 8,
+      "questionNo": 8,
+      "sourceQuestionNo": 88,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Captive breeding is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "Captive breeding is ex-situ conservation because animals are bred under human care outside their natural habitat, for example in a zoo or specialised breeding centre. It can help maintain threatened populations, but long-term success also depends on genetic management and, where reintroduction is intended, suitable protected habitat in the wild."
+    },
+    {
+      "week": 8,
+      "questionNo": 9,
+      "sourceQuestionNo": 89,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a stochastic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "birth rate"
+        },
+        {
+          "key": "B",
+          "text": "death rate"
+        },
+        {
+          "key": "C",
+          "text": "population structure"
+        },
+        {
+          "key": "D",
+          "text": "environmental fluctuation"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "environmental fluctuation",
+      "explanation": "A stochastic factor is one whose occurrence or effect includes chance or unpredictable variation. Environmental fluctuations and events such as forest fires can alter survival and reproduction unpredictably, so population outcomes may differ even under otherwise similar conditions."
+    },
+    {
+      "week": 8,
+      "questionNo": 10,
+      "sourceQuestionNo": 90,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a deterministic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "environmental variation"
+        },
+        {
+          "key": "B",
+          "text": "forest fire"
+        },
+        {
+          "key": "C",
+          "text": "death rate"
+        },
+        {
+          "key": "D",
+          "text": "diseases"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "death rate",
+      "explanation": "A deterministic factor is represented by a specified relationship or rate in a model rather than by random variation. A fixed death rate, for example, can be applied predictably to estimate population change, whereas stochastic mortality varies randomly through time or among individuals."
+    },
+    {
+      "week": 9,
+      "questionNo": 1,
+      "sourceQuestionNo": 91,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a positive check according to Malthus?",
+      "options": [
+        {
+          "key": "A",
+          "text": "late marriage"
+        },
+        {
+          "key": "B",
+          "text": "war"
+        },
+        {
+          "key": "C",
+          "text": "celibacy"
+        },
+        {
+          "key": "D",
+          "text": "moral restraint"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "war",
+      "explanation": "In Malthusian theory, positive checks raise mortality and reduce population size through events such as war, famine and disease. Preventive checks, by contrast, reduce births through deliberate choices or social practices such as postponing marriage or exercising foresight."
+    },
+    {
+      "week": 9,
+      "questionNo": 2,
+      "sourceQuestionNo": 92,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "________ determines which projects or developments require a full or partial impact assessment study.",
+      "options": [
+        {
+          "key": "A",
+          "text": "screening"
+        },
+        {
+          "key": "B",
+          "text": "scoping"
+        },
+        {
+          "key": "C",
+          "text": "reporting"
+        },
+        {
+          "key": "D",
+          "text": "review"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "screening",
+      "explanation": "Screening is the early stage of environmental impact assessment that determines whether a proposed project needs an assessment and, if so, how extensive it should be. It helps distinguish projects with potentially significant impacts from those that may require a lighter review or no full assessment under the applicable rules."
+    },
+    {
+      "week": 9,
+      "questionNo": 3,
+      "sourceQuestionNo": 93,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a pillar of sustainability",
+      "options": [
+        {
+          "key": "A",
+          "text": "social sustainability"
+        },
+        {
+          "key": "B",
+          "text": "industrial sustainability"
+        },
+        {
+          "key": "C",
+          "text": "agricultural sustainability"
+        },
+        {
+          "key": "D",
+          "text": "trans-boundary sustainability"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "social sustainability",
+      "explanation": "Social sustainability is one of the commonly recognised pillars of sustainability, alongside environmental and economic sustainability. It concerns human well-being, equity, health, inclusion and community resilience, and is considered together with environmental protection and economic viability."
+    },
+    {
+      "week": 9,
+      "questionNo": 4,
+      "sourceQuestionNo": 94,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a pillar of sustainability?",
+      "options": [
+        {
+          "key": "A",
+          "text": "environmental sustainability"
+        },
+        {
+          "key": "B",
+          "text": "economic sustainability"
+        },
+        {
+          "key": "C",
+          "text": "trans-boundary sustainability"
+        },
+        {
+          "key": "D",
+          "text": "social sustainability"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "trans-boundary sustainability",
+      "explanation": "The commonly used sustainability framework has three pillars: environmental, social and economic sustainability. 'Trans-boundary sustainability' is not usually listed as one of these three pillars, although cross-border cooperation can be important to achieving sustainability."
+    },
+    {
+      "week": 9,
+      "questionNo": 5,
+      "sourceQuestionNo": 95,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The book \"An Essay on the Principle of Population\" was written by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Darwin"
+        },
+        {
+          "key": "B",
+          "text": "Malthus"
+        },
+        {
+          "key": "C",
+          "text": "Spencer"
+        },
+        {
+          "key": "D",
+          "text": "Owens"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Malthus",
+      "explanation": "Thomas Robert Malthus published *An Essay on the Principle of Population* in 1798. He argued that population has the potential to grow geometrically while food production tends to increase arithmetically, creating pressure that can be checked by mortality or by preventive choices."
+    },
+    {
+      "week": 9,
+      "questionNo": 6,
+      "sourceQuestionNo": 96,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "According to Malthusian model,",
+      "options": [
+        {
+          "key": "A",
+          "text": "Population grows in geometric progression, food supply increases in arithmetic progression"
+        },
+        {
+          "key": "B",
+          "text": "Population grows in geometric progression, food supply increases in geometric progression"
+        },
+        {
+          "key": "C",
+          "text": "Population grows in arithmetic progression, food supply increases in arithmetic progression"
+        },
+        {
+          "key": "D",
+          "text": "Population grows in arithmetic progression, food supply increases in geometric progression"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Population grows in geometric progression, food supply increases in arithmetic progression",
+      "explanation": "The Malthusian model contrasts geometric or exponential population growth with arithmetic growth in food supply. If these trends continued unchecked, population would eventually outstrip available food, leading to pressure on resources and checks such as famine, disease or delayed reproduction."
+    },
+    {
+      "week": 9,
+      "questionNo": 7,
+      "sourceQuestionNo": 97,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The quantum of human impacts is given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "I=P×A×T"
+        },
+        {
+          "key": "B",
+          "text": "I=P+A+T"
+        },
+        {
+          "key": "C",
+          "text": "I=P+A-T"
+        },
+        {
+          "key": "D",
+          "text": "I = P - (A + T)"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "I = P - (A + T)",
+      "explanation": "The standard IPAT identity is I = P × A × T, where environmental impact (I) depends on population (P), affluence or consumption per person (A), and technology (T). The supplied option is written as I = P − (A + T), which does not match the standard identity; the original answer key should be checked before relying on that answer."
+    },
+    {
+      "week": 9,
+      "questionNo": 8,
+      "sourceQuestionNo": 98,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "____________is used to identify which potential impacts are relevant to assess.",
+      "options": [
+        {
+          "key": "A",
+          "text": "screening"
+        },
+        {
+          "key": "B",
+          "text": "scoping"
+        },
+        {
+          "key": "C",
+          "text": "reporting"
+        },
+        {
+          "key": "D",
+          "text": "review"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "scoping",
+      "explanation": "Scoping identifies which potential environmental impacts are important enough to assess in detail. It sets the boundaries of the study, identifies key issues and affected groups, and focuses resources on likely significant effects rather than analysing every conceivable impact equally."
+    },
+    {
+      "week": 9,
+      "questionNo": 9,
+      "sourceQuestionNo": 99,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The demographic transition sees a society move from",
+      "options": [
+        {
+          "key": "A",
+          "text": "high birth rate, low death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "B",
+          "text": "low birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "C",
+          "text": "high birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "D",
+          "text": "high birth rate, high death rate to low birth rate, high death rate"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "high birth rate, high death rate to low birth rate, low death rate",
+      "explanation": "The demographic transition model describes a long-term shift from high birth and death rates to low birth and death rates as societies change. Death rates generally decline first, often producing rapid population growth, while birth rates fall later as social and economic conditions change."
+    },
+    {
+      "week": 9,
+      "questionNo": 10,
+      "sourceQuestionNo": 100,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a preventive check according to Malthus?",
+      "options": [
+        {
+          "key": "A",
+          "text": "foresight"
+        },
+        {
+          "key": "B",
+          "text": "vice"
+        },
+        {
+          "key": "C",
+          "text": "misery"
+        },
+        {
+          "key": "D",
+          "text": "flood"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "foresight",
+      "explanation": "Malthus classified foresight as a preventive check because it can lead people to delay marriage or limit family size in anticipation of the consequences of having children. Preventive checks reduce birth rates, while positive checks such as war, famine and disease increase mortality."
+    },
+    {
+      "week": 10,
+      "questionNo": 1,
+      "sourceQuestionNo": 101,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a climatic forcing for Earth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "changes in plate tectonics"
+        },
+        {
+          "key": "B",
+          "text": "changes in Earth's orbit"
+        },
+        {
+          "key": "C",
+          "text": "changes in Sun's orbit"
+        },
+        {
+          "key": "D",
+          "text": "changes in Sun's strength"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "changes in Sun's orbit",
+      "explanation": "Climate forcing refers to factors that alter Earth’s energy balance, such as changes in solar output, greenhouse gases, aerosols and major orbital parameters. The answer selected in this question treats changes in the Sun’s orbit as not a relevant forcing; this wording is unusual because changes in Earth’s orbital geometry, rather than the Sun’s orbit, are the standard orbital forcing discussed in climate science."
+    },
+    {
+      "week": 10,
+      "questionNo": 2,
+      "sourceQuestionNo": 102,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“The ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences” is a definition for",
+      "options": [
+        {
+          "key": "A",
+          "text": "adaptive response"
+        },
+        {
+          "key": "B",
+          "text": "adaptive capacity"
+        },
+        {
+          "key": "C",
+          "text": "mitigative response"
+        },
+        {
+          "key": "D",
+          "text": "mitigative capacity"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "adaptive capacity",
+      "explanation": "Adaptive capacity is the ability of a system, community or ecosystem to adjust to climate variability and change, moderate potential damage, take advantage of opportunities or cope with consequences. It depends on factors such as resources, knowledge, institutions, technology and flexibility."
+    },
+    {
+      "week": 10,
+      "questionNo": 3,
+      "sourceQuestionNo": 103,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a principle of ecological restoration?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ecological integrity"
+        },
+        {
+          "key": "B",
+          "text": "short-term sustainability"
+        },
+        {
+          "key": "C",
+          "text": "benefits and engages society"
+        },
+        {
+          "key": "D",
+          "text": "informed by past and future"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "short-term sustainability",
+      "explanation": "Ecological restoration aims to assist the recovery of degraded, damaged or destroyed ecosystems and to improve their long-term ecological function. A short-term-only view is inconsistent with restoration because recovery, resilience and monitoring often require sustained effort over many years."
+    },
+    {
+      "week": 10,
+      "questionNo": 4,
+      "sourceQuestionNo": 104,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Mesodebris in the context of plastic debris has fragments of size",
+      "options": [
+        {
+          "key": "A",
+          "text": "> 20 mm"
+        },
+        {
+          "key": "B",
+          "text": "5 - 20 mm"
+        },
+        {
+          "key": "C",
+          "text": "< 5 mm"
+        },
+        {
+          "key": "D",
+          "text": "< 1 mm"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "5 - 20 mm",
+      "explanation": "In the size classification used by this question, mesodebris consists of plastic fragments between 5 and 20 mm. Size categories help standardise the monitoring of plastic pollution, because fragment size influences where debris travels, which organisms encounter it and how it can be sampled."
+    },
+    {
+      "week": 10,
+      "questionNo": 5,
+      "sourceQuestionNo": 105,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for",
+      "options": [
+        {
+          "key": "A",
+          "text": "adaptation"
+        },
+        {
+          "key": "B",
+          "text": "mitigation"
+        },
+        {
+          "key": "C",
+          "text": "maladaptation"
+        },
+        {
+          "key": "D",
+          "text": "malmitigation"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "maladaptation",
+      "explanation": "Maladaptation is an action intended to respond to climate change that instead increases vulnerability or shifts risk onto other people, places or future periods. For example, a protective measure may solve an immediate problem but create new exposure or dependence elsewhere."
+    },
+    {
+      "week": 10,
+      "questionNo": 6,
+      "sourceQuestionNo": 106,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a principle of ecological restoration?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ecological integrity"
+        },
+        {
+          "key": "B",
+          "text": "long-term sustainability"
+        },
+        {
+          "key": "C",
+          "text": "benefits and engages scientists"
+        },
+        {
+          "key": "D",
+          "text": "informed by past and future"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "benefits and engages scientists",
+      "explanation": "Ecological restoration aims to assist the recovery of degraded, damaged or destroyed ecosystems and to improve their long-term ecological function. A short-term-only view is inconsistent with restoration because recovery, resilience and monitoring often require sustained effort over many years."
+    },
+    {
+      "week": 10,
+      "questionNo": 7,
+      "sourceQuestionNo": 107,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a climatic forcing for Earth?",
+      "options": [
+        {
+          "key": "A",
+          "text": "changes in plate tectonics"
+        },
+        {
+          "key": "B",
+          "text": "changes in Earth's orbit"
+        },
+        {
+          "key": "C",
+          "text": "changes in Moon's orbit"
+        },
+        {
+          "key": "D",
+          "text": "changes in Sun's strength"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "changes in Moon's orbit",
+      "explanation": "Climate forcing refers to factors that alter Earth’s energy balance, such as changes in solar output, greenhouse gases, aerosols and major orbital parameters. The answer selected in this question treats changes in the Sun’s orbit as not a relevant forcing; this wording is unusual because changes in Earth’s orbital geometry, rather than the Sun’s orbit, are the standard orbital forcing discussed in climate science."
+    },
+    {
+      "week": 10,
+      "questionNo": 8,
+      "sourceQuestionNo": 108,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Because of climate change, Mudumalai Tiger Reserve is suffering from frequent droughts. The management has built several artificial water holes for animals, and fills them up regularly with tankers. In the context of climate change, such an action would be called",
+      "options": [
+        {
+          "key": "A",
+          "text": "adaptation"
+        },
+        {
+          "key": "B",
+          "text": "mitigation"
+        },
+        {
+          "key": "C",
+          "text": "deceleration"
+        },
+        {
+          "key": "D",
+          "text": "maladaptation"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "adaptation",
+      "explanation": "Building and regularly replenishing artificial water holes is an adaptation measure in this scenario because it responds to an observed climate-related impact—more frequent droughts—by helping wildlife access water. Adaptation reduces vulnerability to actual or expected climate effects; mitigation instead reduces the causes of climate change, such as greenhouse-gas emissions."
+    },
+    {
+      "week": 10,
+      "questionNo": 9,
+      "sourceQuestionNo": 109,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Macrodebris in the context of plastic debris has fragments of size",
+      "options": [
+        {
+          "key": "A",
+          "text": "> 20 mm"
+        },
+        {
+          "key": "B",
+          "text": "5 - 20 mm"
+        },
+        {
+          "key": "C",
+          "text": "< 5 mm"
+        },
+        {
+          "key": "D",
+          "text": "< 1 mm"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "> 20 mm",
+      "explanation": "In the size classification used by this question, macrodebris refers to plastic pieces larger than 20 mm. Size classifications make debris surveys more comparable and help describe how large pieces may entangle or be ingested by wildlife and how they break down into smaller fragments."
+    },
+    {
+      "week": 10,
+      "questionNo": 10,
+      "sourceQuestionNo": 110,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. In the context of climate change, such an action would be called",
+      "options": [
+        {
+          "key": "A",
+          "text": "adaptation"
+        },
+        {
+          "key": "B",
+          "text": "mitigation"
+        },
+        {
+          "key": "C",
+          "text": "deceleration"
+        },
+        {
+          "key": "D",
+          "text": "maladaptation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "mitigation",
+      "explanation": "Replacing incandescent bulbs with efficient LEDs is climate-change mitigation because it reduces electricity demand and, where electricity generation emits greenhouse gases, lowers associated carbon dioxide emissions. Mitigation targets the causes of climate change, while adaptation prepares for or reduces harm from its effects."
+    },
+    {
+      "week": 11,
+      "questionNo": 1,
+      "sourceQuestionNo": 111,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Ludwig's ratchet predicts",
+      "options": [
+        {
+          "key": "A",
+          "text": "decreasing harvesting rate"
+        },
+        {
+          "key": "B",
+          "text": "constant harvesting rate"
+        },
+        {
+          "key": "C",
+          "text": "increasing harvesting rate"
+        },
+        {
+          "key": "D",
+          "text": "fluctuating harvesting rate"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "increasing harvesting rate",
+      "explanation": "Ludwig’s ratchet describes a tendency for harvesting pressure or exploitation to increase over time as resources become depleted and management or economic responses fail to restore the original stock. The 'ratchet' idea is that pressure can move upward in steps and be difficult to reverse, threatening long-term sustainability."
+    },
+    {
+      "week": 11,
+      "questionNo": 2,
+      "sourceQuestionNo": 112,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A pest population is called controlled when",
+      "options": [
+        {
+          "key": "A",
+          "text": "it is not increasing"
+        },
+        {
+          "key": "B",
+          "text": "it is decreasing"
+        },
+        {
+          "key": "C",
+          "text": "it is not causing any economic damage"
+        },
+        {
+          "key": "D",
+          "text": "it is not causing excessive economic damage"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "it is not causing excessive economic damage",
+      "explanation": "A pest population is considered controlled when it remains below a level at which it causes unacceptable economic damage. Control does not necessarily mean eliminating every pest; it means keeping damage within an acceptable threshold using suitable monitoring and management."
+    },
+    {
+      "week": 11,
+      "questionNo": 3,
+      "sourceQuestionNo": 113,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not an impact of toxic chemicals?",
+      "options": [
+        {
+          "key": "A",
+          "text": "lethal effects"
+        },
+        {
+          "key": "B",
+          "text": "sub-lethal effects"
+        },
+        {
+          "key": "C",
+          "text": "reduction of existing stressors"
+        },
+        {
+          "key": "D",
+          "text": "reduced fecundity"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "reduction of existing stressors",
+      "explanation": "Toxic chemicals can harm organisms directly, accumulate in food webs, reduce reproduction and increase existing ecological stress. 'Reduction of existing stressors' is not a typical impact of toxic chemicals; it describes an improvement in environmental conditions rather than a toxic effect."
+    },
+    {
+      "week": 11,
+      "questionNo": 4,
+      "sourceQuestionNo": 114,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The maximum sustainable yield is near the beginning of the sigmoidal curve."
+        },
+        {
+          "key": "B",
+          "text": "The maximum sustainable yield is near the mid-point of the sigmoidal curve."
+        },
+        {
+          "key": "C",
+          "text": "The maximum sustainable yield is near the end of the sigmoidal curve."
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "The maximum sustainable yield is near the mid-point of the sigmoidal curve.",
+      "explanation": "In a simple logistic-growth model, population growth is fastest around the midpoint of the sigmoid curve, often approximated as half the carrying capacity. This is the theoretical point associated with maximum sustainable yield because the population can replace harvested individuals most rapidly there; real ecosystems require caution because estimates and conditions change."
+    },
+    {
+      "week": 11,
+      "questionNo": 5,
+      "sourceQuestionNo": 115,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A root zone treatment plant is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "phytoremediation"
+        },
+        {
+          "key": "B",
+          "text": "biological control"
+        },
+        {
+          "key": "C",
+          "text": "biomagnification"
+        },
+        {
+          "key": "D",
+          "text": "bioaccumulation"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "phytoremediation",
+      "explanation": "A root-zone treatment plant is an example of phytoremediation, using plants and the microbial communities around their roots to help treat contaminated water or soil. Roots can support filtration, uptake and microbial breakdown of pollutants; performance depends on the contaminant, plant species and system design."
+    },
+    {
+      "week": 11,
+      "questionNo": 6,
+      "sourceQuestionNo": 116,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A pest population is called uncontrolled when",
+      "options": [
+        {
+          "key": "A",
+          "text": "it is increasing"
+        },
+        {
+          "key": "B",
+          "text": "it is not decreasing"
+        },
+        {
+          "key": "C",
+          "text": "it is causing some economic damage"
+        },
+        {
+          "key": "D",
+          "text": "it is causing excessive economic damage"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "it is causing excessive economic damage",
+      "explanation": "A pest population is uncontrolled when it causes excessive or unacceptable economic damage. The goal of pest management is generally to keep populations and losses below an agreed threshold, rather than to eradicate all individuals regardless of cost or ecological consequences."
+    },
+    {
+      "week": 11,
+      "questionNo": 7,
+      "sourceQuestionNo": 117,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The impact of El Nino on fishery collapse in Peru is explained by",
+      "options": [
+        {
+          "key": "A",
+          "text": "match hypothesis"
+        },
+        {
+          "key": "B",
+          "text": "mismatch hypothesis"
+        },
+        {
+          "key": "C",
+          "text": "match-mismatch hypothesis"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "match-mismatch hypothesis",
+      "explanation": "The match–mismatch hypothesis explains how the timing of consumers’ needs can become misaligned with the availability of their food. El Niño changes ocean temperature and nutrient upwelling off Peru, reducing or shifting plankton and prey availability; fish reproduction or larval survival can decline when food peaks no longer match their needs."
+    },
+    {
+      "week": 11,
+      "questionNo": 8,
+      "sourceQuestionNo": 118,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "recovery"
+        },
+        {
+          "key": "B",
+          "text": "restoration"
+        },
+        {
+          "key": "C",
+          "text": "enhancement"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "restoration",
+      "explanation": "Restoration aims to return a degraded ecosystem toward its former ecological structure and function. Filling mine pits and replanting species of the original deciduous forest is intended to recover the previous forest ecosystem, although full restoration also depends on soil, hydrology, native diversity and long-term monitoring."
+    },
+    {
+      "week": 11,
+      "questionNo": 9,
+      "sourceQuestionNo": 119,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "recovery"
+        },
+        {
+          "key": "B",
+          "text": "restoration"
+        },
+        {
+          "key": "C",
+          "text": "enhancement"
+        },
+        {
+          "key": "D",
+          "text": "replacement"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "replacement",
+      "explanation": "Replacement creates a different ecosystem or land use in place of the original one, rather than attempting to recreate the former ecosystem. Here, the mined site is converted into a lake used by migratory birds, so the resulting ecosystem differs from the original deciduous forest."
+    },
+    {
+      "week": 11,
+      "questionNo": 10,
+      "sourceQuestionNo": 120,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "R+G=M+F"
+        },
+        {
+          "key": "B",
+          "text": "R+M=G+F"
+        },
+        {
+          "key": "C",
+          "text": "R+F=M+G"
+        },
+        {
+          "key": "D",
+          "text": "R+G+M+F=0"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "R+G=M+F",
+      "explanation": "The supplied key gives R + G = M + F. The file does not define the symbols, so this equation can only be interpreted reliably using the course’s specific notation; make sure each term is understood and expressed in consistent units before applying it."
+    },
+    {
+      "week": 12,
+      "questionNo": 1,
+      "sourceQuestionNo": 121,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. As we move up the food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "available energy decreases"
+        },
+        {
+          "key": "B",
+          "text": "available energy increases"
+        },
+        {
+          "key": "C",
+          "text": "available energy remains same"
+        },
+        {
+          "key": "D",
+          "text": "available energy is zero everywhere"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "available energy decreases",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 12,
+      "questionNo": 2,
+      "sourceQuestionNo": 122,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs, so that electricity consumption and release of carbon dioxide from power plants is reduced. In the context of climate change, such an action would be called",
+      "options": [
+        {
+          "key": "A",
+          "text": "adaptation"
+        },
+        {
+          "key": "B",
+          "text": "mitigation"
+        },
+        {
+          "key": "C",
+          "text": "deceleration"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "mitigation",
+      "explanation": "Replacing incandescent bulbs with efficient LEDs is climate-change mitigation because it reduces electricity demand and, where electricity generation emits greenhouse gases, lowers associated carbon dioxide emissions. Mitigation targets the causes of climate change, while adaptation prepares for or reduces harm from its effects."
+    },
+    {
+      "week": 12,
+      "questionNo": 3,
+      "sourceQuestionNo": 123,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The hierarchical system was given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simon"
+        },
+        {
+          "key": "B",
+          "text": "Watson"
+        },
+        {
+          "key": "C",
+          "text": "Hutchinson"
+        },
+        {
+          "key": "D",
+          "text": "Humboldt"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Simon",
+      "explanation": "Herbert A. Simon is associated with the concept of hierarchy in complex systems. Hierarchical organisation means a system is arranged into nested levels or subsystems, allowing complex structures to be understood as interacting components rather than as one undifferentiated whole."
+    },
+    {
+      "week": 12,
+      "questionNo": 4,
+      "sourceQuestionNo": 124,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Captive breeding is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "Captive breeding is ex-situ conservation because animals are bred under human care outside their natural habitat, for example in a zoo or specialised breeding centre. It can help maintain threatened populations, but long-term success also depends on genetic management and, where reintroduction is intended, suitable protected habitat in the wild."
+    },
+    {
+      "week": 12,
+      "questionNo": 5,
+      "sourceQuestionNo": 125,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "disclimax",
+      "explanation": "A disclimax is a relatively stable community maintained by repeated disturbance rather than by the undisturbed climatic climax. Here, recurring cattle grazing prevents succession from proceeding normally, so the vegetation reflects grazing pressure as well as the site's environmental conditions."
+    },
+    {
+      "week": 12,
+      "questionNo": 6,
+      "sourceQuestionNo": 126,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The demographic transition sees a society move from",
+      "options": [
+        {
+          "key": "A",
+          "text": "high birth rate, low death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "B",
+          "text": "low birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "C",
+          "text": "high birth rate, high death rate to low birth rate, low death rate"
+        },
+        {
+          "key": "D",
+          "text": "high birth rate, high death rate to low birth rate, high death rate"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "high birth rate, high death rate to low birth rate, low death rate",
+      "explanation": "The demographic transition model describes a long-term shift from high birth and death rates to low birth and death rates as societies change. Death rates generally decline first, often producing rapid population growth, while birth rates fall later as social and economic conditions change."
+    },
+    {
+      "week": 12,
+      "questionNo": 7,
+      "sourceQuestionNo": 127,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The logistic growth equation, when plotted, appears",
+      "options": [
+        {
+          "key": "A",
+          "text": "I shaped"
+        },
+        {
+          "key": "B",
+          "text": "J shaped"
+        },
+        {
+          "key": "C",
+          "text": "S shaped"
+        },
+        {
+          "key": "D",
+          "text": "O shaped"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "S shaped",
+      "explanation": "Logistic population growth produces an S-shaped, or sigmoid, curve. Growth is initially slow, accelerates when resources are abundant, and then slows as competition and other density-dependent limits increase near carrying capacity (K)."
+    },
+    {
+      "week": 12,
+      "questionNo": 8,
+      "sourceQuestionNo": 128,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Hamilton's rule can be stated as",
+      "options": [
+        {
+          "key": "A",
+          "text": "rB < C"
+        },
+        {
+          "key": "B",
+          "text": "rB > C"
+        },
+        {
+          "key": "C",
+          "text": "rB = C"
+        },
+        {
+          "key": "D",
+          "text": "rB + C = 0"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "rB > C",
+      "explanation": "Hamilton’s rule describes when an action that benefits a relative can evolve through kin selection. The condition rB > C means the benefit to the recipient (B), weighted by genetic relatedness (r), exceeds the cost to the actor (C); in that case, the behaviour can increase inclusive fitness."
+    },
+    {
+      "week": 12,
+      "questionNo": 9,
+      "sourceQuestionNo": 129,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of fitness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fitness is environment-specific."
+        },
+        {
+          "key": "B",
+          "text": "Fitness is species-specific."
+        },
+        {
+          "key": "C",
+          "text": "Higher reproductive rate means higher fitness."
+        },
+        {
+          "key": "D",
+          "text": "Fitness should be measured across several generations."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Higher reproductive rate means higher fitness.",
+      "explanation": "In evolutionary biology, fitness means an individual's relative contribution of viable offspring to future generations in a particular environment. A high reproductive rate alone does not guarantee high fitness: offspring must survive and reproduce, and the relevant measure is reproductive success relative to others over generations."
+    },
+    {
+      "week": 12,
+      "questionNo": 10,
+      "sourceQuestionNo": 130,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"Quick movement over large distances, often across unsuitable terrain\" is a description of",
+      "options": [
+        {
+          "key": "A",
+          "text": "diffusion"
+        },
+        {
+          "key": "B",
+          "text": "secular dispersal"
+        },
+        {
+          "key": "C",
+          "text": "jump dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "jump dispersal",
+      "explanation": "Jump dispersal occurs when individuals reach distant locations rapidly, often crossing large areas of unsuitable habitat. Unlike gradual diffusion from neighbouring populations, jump dispersal can establish a population far beyond the existing range and may initiate later spread from that new location."
+    },
+    {
+      "week": 13,
+      "questionNo": 1,
+      "sourceQuestionNo": 131,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of these is not a physical factor of habitat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "soil"
+        },
+        {
+          "key": "B",
+          "text": "moisture"
+        },
+        {
+          "key": "C",
+          "text": "predators"
+        },
+        {
+          "key": "D",
+          "text": "temperatures"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "predators",
+      "explanation": "Predators are biotic factors because they are living organisms that interact with the species being studied. Physical or abiotic habitat factors include temperature, water, light, soil and topography, while food organisms, competitors, parasites and predators are biotic components."
+    },
+    {
+      "week": 13,
+      "questionNo": 2,
+      "sourceQuestionNo": 132,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The fig tree bears fruits in times when animals do not have much access to food. In this context, it would be a good example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "least concern species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "keystone species",
+      "explanation": "A keystone species has an ecological effect that is disproportionately large relative to its abundance. Fig trees can provide fruit during periods when other food is scarce, supporting many animals and helping sustain the wider food web."
+    },
+    {
+      "week": 13,
+      "questionNo": 3,
+      "sourceQuestionNo": 133,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "People come to Sessa orchid sanctuary in Arunachal Pradesh to witness orchids, which in this context would be classified as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "extinct species"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "flagship species",
+      "explanation": "A flagship species is chosen for its public appeal and ability to attract attention and support for conservation. Visitors coming specifically to see orchids illustrates how a charismatic or distinctive group can encourage awareness and protection of a habitat."
+    },
+    {
+      "week": 13,
+      "questionNo": 4,
+      "sourceQuestionNo": 134,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The tiger has a home range of several square kilometres, regulates the ecosystem through controlling herbivore populations and trophic cascades, and people come to tiger reserves to watch tigers. Thus, the tiger can be called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "The answer key indicates that all the listed roles apply. A species may be an umbrella species if protecting its large habitat benefits other species, a keystone species if its ecological effects are disproportionately important, and a flagship species if its public appeal attracts conservation support."
+    },
+    {
+      "week": 13,
+      "questionNo": 5,
+      "sourceQuestionNo": 135,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The elephant has a home range of several square kilometres, regulates the ecosystem by its habit of destructive feeding, and people can relate to this animal which is important for conservation. Given this background, the elephant can be called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "The answer key indicates that all the listed roles apply. A species may be an umbrella species if protecting its large habitat benefits other species, a keystone species if its ecological effects are disproportionately important, and a flagship species if its public appeal attracts conservation support."
+    },
+    {
+      "week": 13,
+      "questionNo": 6,
+      "sourceQuestionNo": 136,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "grass is producer"
+        },
+        {
+          "key": "B",
+          "text": "grass is consumer"
+        },
+        {
+          "key": "C",
+          "text": "grass is decomposer"
+        },
+        {
+          "key": "D",
+          "text": "grass is herbivore"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "grass is producer",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 13,
+      "questionNo": 7,
+      "sourceQuestionNo": 137,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Consider the food chain: Grass → Grasshopper → Frog → Snake → Hawk. In this food chain,",
+      "options": [
+        {
+          "key": "A",
+          "text": "grasshopper is producer"
+        },
+        {
+          "key": "B",
+          "text": "grasshopper is consumer"
+        },
+        {
+          "key": "C",
+          "text": "grasshopper is decomposer"
+        },
+        {
+          "key": "D",
+          "text": "grasshopper is carnivore"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "grasshopper is consumer",
+      "explanation": "Energy decreases at each trophic transfer because organisms use much of the energy they obtain for metabolism, movement and maintenance, and much is lost as heat or remains uneaten and undigested. Consequently, only a fraction of energy at one trophic level becomes available to the next, so top predators are supported by less energy than producers and herbivores."
+    },
+    {
+      "week": 13,
+      "questionNo": 8,
+      "sourceQuestionNo": 138,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of the following best describes habitat selection?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Habitat selection is completely innate."
+        },
+        {
+          "key": "B",
+          "text": "Habitat selection is completely learnt."
+        },
+        {
+          "key": "C",
+          "text": "Habitat selection is neither innate nor learnt."
+        },
+        {
+          "key": "D",
+          "text": "Habitat selection has both innate and learnt components."
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Habitat selection has both innate and learnt components.",
+      "explanation": "Habitat selection involves both innate tendencies and learning from experience. An animal may have inherited preferences for certain habitat cues, while experience can refine its choices based on food, shelter, predation risk, competition and previous reproductive success."
+    },
+    {
+      "week": 13,
+      "questionNo": 9,
+      "sourceQuestionNo": 139,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce is the definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "Habitat"
+        },
+        {
+          "key": "B",
+          "text": "Ecosystem"
+        },
+        {
+          "key": "C",
+          "text": "Biome"
+        },
+        {
+          "key": "D",
+          "text": "Biosphere"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Habitat",
+      "explanation": "Habitat is the set of physical and biological conditions in which an organism lives and can survive and reproduce. It includes abiotic features such as water, temperature and shelter as well as biotic features such as food organisms and competitors."
+    },
+    {
+      "week": 13,
+      "questionNo": 10,
+      "sourceQuestionNo": 140,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "As per Wildlife Protection Act 1972 (WPA 1972), wild life includes any animal, aquatic or land vegetation which forms part of any ______ (fill in the blank)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ecosystem"
+        },
+        {
+          "key": "B",
+          "text": "State"
+        },
+        {
+          "key": "C",
+          "text": "Country"
+        },
+        {
+          "key": "D",
+          "text": "Habitat"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Habitat",
+      "explanation": "The Wildlife (Protection) Act, 1972 defines wildlife in relation to animals and aquatic or land vegetation that forms part of a habitat. In the supplied answer, the missing term is 'habitat'; the question is testing the statutory wording, so the exact phrasing should be checked against the applicable version of the Act for legal use."
+    },
+    {
+      "week": 13,
+      "questionNo": 11,
+      "sourceQuestionNo": 141,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of these is not a demographic parameter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Population size"
+        },
+        {
+          "key": "B",
+          "text": "Population density"
+        },
+        {
+          "key": "C",
+          "text": "Population habitat"
+        },
+        {
+          "key": "D",
+          "text": "Sex pyramid"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Population habitat",
+      "explanation": "Demographic parameters describe population processes such as birth, death, immigration, emigration, age structure and sex ratio. 'Population habitat' describes where a population lives rather than a demographic rate or structure, so it is not itself a demographic parameter."
+    },
+    {
+      "week": 13,
+      "questionNo": 12,
+      "sourceQuestionNo": 142,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "In the formula I = PXAXT, T refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "transference"
+        },
+        {
+          "key": "B",
+          "text": "time"
+        },
+        {
+          "key": "C",
+          "text": "technology"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "technology",
+      "explanation": "In the IPAT identity, T stands for technology. Environmental impact is expressed as I = P × A × T: population represents the number of people, affluence reflects consumption per person, and technology represents the environmental impact per unit of consumption or activity."
+    },
+    {
+      "week": 13,
+      "questionNo": 13,
+      "sourceQuestionNo": 143,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The correct deming cycle is",
+      "options": [
+        {
+          "key": "A",
+          "text": "Plan -> Check -> Do -> Act"
+        },
+        {
+          "key": "B",
+          "text": "Plan -> Act -> Do -> Check"
+        },
+        {
+          "key": "C",
+          "text": "Act -> Do -> Check -> Plan"
+        },
+        {
+          "key": "D",
+          "text": "Plan -> Do -> Check -> Act"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Plan -> Do -> Check -> Act",
+      "explanation": "The Deming cycle is the Plan–Do–Check–Act (PDCA) cycle, a repeated method for continuous improvement. Plan a change, implement it on a suitable scale, check the results against the intended outcome, and act on what was learned before beginning the next cycle."
+    },
+    {
+      "week": 13,
+      "questionNo": 14,
+      "sourceQuestionNo": 144,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "An inventory of behaviours exhibited by an animal during a behaviour exercise is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ecogram"
+        },
+        {
+          "key": "B",
+          "text": "Ethogram"
+        },
+        {
+          "key": "C",
+          "text": "Sociogram"
+        },
+        {
+          "key": "D",
+          "text": "Analogram"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Ethogram",
+      "explanation": "An ethogram is a structured inventory of the behaviours shown by an animal or species. Researchers define each behaviour clearly and record when it occurs, allowing observations to be compared consistently across individuals, contexts or study periods."
+    },
+    {
+      "week": 13,
+      "questionNo": 15,
+      "sourceQuestionNo": 145,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of these is a stochastic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "birth rate"
+        },
+        {
+          "key": "B",
+          "text": "death rate"
+        },
+        {
+          "key": "C",
+          "text": "population structure"
+        },
+        {
+          "key": "D",
+          "text": "forest fire"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "forest fire",
+      "explanation": "A stochastic factor is one whose occurrence or effect includes chance or unpredictable variation. Environmental fluctuations and events such as forest fires can alter survival and reproduction unpredictably, so population outcomes may differ even under otherwise similar conditions."
+    },
+    {
+      "week": 13,
+      "questionNo": 16,
+      "sourceQuestionNo": 146,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Eutrophication, especially at low intensities, is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "Habitat loss"
+        },
+        {
+          "key": "B",
+          "text": "Habitat degradation"
+        },
+        {
+          "key": "C",
+          "text": "Habitat fragmentation"
+        },
+        {
+          "key": "D",
+          "text": "Habitat extermination"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Habitat degradation",
+      "explanation": "Eutrophication is nutrient enrichment of a water body, often increasing algal and plant growth and changing oxygen conditions. Even at low intensity it can degrade habitat by altering water quality and community composition, so it is treated here as habitat degradation rather than necessarily total habitat loss."
+    },
+    {
+      "week": 13,
+      "questionNo": 17,
+      "sourceQuestionNo": 147,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The rate of any biological process is limited by that factor in least amount relative to requirements from a single limiting factor. This is the statement for",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liebig's law of the minimum"
+        },
+        {
+          "key": "B",
+          "text": "Liebig's law of the maximum"
+        },
+        {
+          "key": "C",
+          "text": "Shelford's law of tolerance"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Liebig's law of the minimum",
+      "explanation": "Liebig’s law of the minimum states that growth or a biological process is limited by the essential resource or factor in shortest supply relative to the organism’s needs. Increasing an already abundant factor will not improve performance until the limiting factor is supplied in sufficient quantity."
+    },
+    {
+      "week": 13,
+      "questionNo": 18,
+      "sourceQuestionNo": 148,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "In-situ conservation typically requires",
+      "options": [
+        {
+          "key": "A",
+          "text": "Less area than ex-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "Equal area as ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "More area than ex-situ conservation"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "More area than ex-situ conservation",
+      "explanation": "In-situ conservation protects species within their natural habitats and therefore often requires larger areas that can sustain populations, ecological interactions and natural processes. The area needed varies with species, range, population size and habitat quality, but it is commonly greater than the space needed to hold a small captive population."
+    },
+    {
+      "week": 13,
+      "questionNo": 19,
+      "sourceQuestionNo": 149,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "In-situ conservation typically permits",
+      "options": [
+        {
+          "key": "A",
+          "text": "Less intense intervention than ex-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "Equal intense intervention as ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "More intense intervention than ex-situ conservation"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Less intense intervention than ex-situ conservation",
+      "explanation": "In-situ conservation generally protects organisms in their natural ecosystems and can allow natural ecological processes to continue with less intensive direct management of each individual than ex-situ facilities require. It still may involve active interventions such as anti-poaching, habitat restoration, disease monitoring and conflict reduction."
+    },
+    {
+      "week": 13,
+      "questionNo": 20,
+      "sourceQuestionNo": 150,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Ex-situ cost is typically lesser than in-situ cost for",
+      "options": [
+        {
+          "key": "A",
+          "text": "Small-bodied animal"
+        },
+        {
+          "key": "B",
+          "text": "Large-bodied animal"
+        },
+        {
+          "key": "C",
+          "text": "Both of these"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Small-bodied animal",
+      "explanation": "For some small-bodied animals, ex-situ conservation can cost less per individual because housing, feeding and managed breeding may require relatively limited space and resources. Costs vary substantially by species and programme, and ex-situ conservation is not automatically cheaper overall or a substitute for protecting natural habitat."
+    },
+    {
+      "week": 13,
+      "questionNo": 21,
+      "sourceQuestionNo": 151,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Studbooks are used in contexts of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "animal feeding"
+        },
+        {
+          "key": "B",
+          "text": "animal drinking"
+        },
+        {
+          "key": "C",
+          "text": "animal breeding"
+        },
+        {
+          "key": "D",
+          "text": "animal rehabilitation"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "animal breeding",
+      "explanation": "Studbooks are carefully maintained records of individuals in a managed animal population, including ancestry, births, deaths and transfers. They help zoos and breeding programmes track relatedness, avoid excessive inbreeding and coordinate pairings to preserve genetic diversity."
+    },
+    {
+      "week": 13,
+      "questionNo": 22,
+      "sourceQuestionNo": 152,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Stereotypes in captive animals can be prevented by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Feed enrichment"
+        },
+        {
+          "key": "B",
+          "text": "Behaviour enrichment"
+        },
+        {
+          "key": "C",
+          "text": "Space enrichment"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Behaviour enrichment",
+      "explanation": "Behavioural enrichment provides captive animals with opportunities to express species-typical behaviours through suitable feeding challenges, objects, social arrangements and environmental complexity. It can reduce boredom and stress-related stereotypic behaviours, although enrichment must be tailored to the species and evaluated over time."
+    },
+    {
+      "week": 13,
+      "questionNo": 23,
+      "sourceQuestionNo": 153,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "For long-term viability, seeds should be stored under conditions of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "High temperature, high humidity"
+        },
+        {
+          "key": "B",
+          "text": "High temperature, low humidity"
+        },
+        {
+          "key": "C",
+          "text": "Low temperature, high humidity"
+        },
+        {
+          "key": "D",
+          "text": "Low temperature, low humidity"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Low temperature, low humidity",
+      "explanation": "For many orthodox seeds, low temperature and low humidity slow respiration, ageing and deterioration, helping maintain viability during long-term storage. The precise conditions depend on species because some seeds cannot tolerate drying or freezing and require different storage methods."
+    },
+    {
+      "week": 13,
+      "questionNo": 24,
+      "sourceQuestionNo": 154,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "The tiger and the elephant can be called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "The tiger and elephant can each serve as umbrella species when protecting their extensive habitat benefits many other species, flagship species when their public appeal mobilises conservation support, and keystone species when their ecological effects are disproportionately large. These roles are distinct, but a species can fulfil more than one depending on the ecosystem and evidence."
+    },
+    {
+      "week": 13,
+      "questionNo": 25,
+      "sourceQuestionNo": 155,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of these is not a pillar of sustainability?",
+      "options": [
+        {
+          "key": "A",
+          "text": "environmental sustainability"
+        },
+        {
+          "key": "B",
+          "text": "economic sustainability"
+        },
+        {
+          "key": "C",
+          "text": "trans-boundary sustainability"
+        },
+        {
+          "key": "D",
+          "text": "social sustainability"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "trans-boundary sustainability",
+      "explanation": "The commonly used sustainability framework has three pillars: environmental, social and economic sustainability. 'Trans-boundary sustainability' is not usually listed as one of these three pillars, although cross-border cooperation can be important to achieving sustainability."
+    },
+    {
+      "week": 13,
+      "questionNo": 26,
+      "sourceQuestionNo": 156,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Allowing some places and some creatures to exist without significant human interference is a definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "conservation"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "preservation",
+      "explanation": "Preservation means protecting places, species or natural processes with minimal significant human interference. It differs from conservation, which can permit regulated and sustainable use; preservation places greater emphasis on leaving nature undisturbed."
+    },
+    {
+      "week": 13,
+      "questionNo": 27,
+      "sourceQuestionNo": 157,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Sustainable harvest of resources falls under the category of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "conservation"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "conservation",
+      "explanation": "Conservation involves protecting and managing natural resources while allowing use that can be sustained over time. A sustainable harvest stays within levels that populations and ecosystems can replace, so present use does not undermine future availability or ecological function."
+    },
+    {
+      "week": 13,
+      "questionNo": 28,
+      "sourceQuestionNo": 158,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Science of relationships between organisms and their environments is the definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "Conservation"
+        },
+        {
+          "key": "B",
+          "text": "Preservation"
+        },
+        {
+          "key": "C",
+          "text": "Environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "Ecology"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Ecology",
+      "explanation": "Ecology is the science of relationships among organisms and between organisms and their environment. It examines how biotic interactions and abiotic conditions shape distribution, abundance, behaviour and ecosystem processes."
+    },
+    {
+      "week": 13,
+      "questionNo": 29,
+      "sourceQuestionNo": 159,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of these forms the fire triangle?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fire, air, heat"
+        },
+        {
+          "key": "B",
+          "text": "fire, oxygen, wood"
+        },
+        {
+          "key": "C",
+          "text": "fuel, air, wood"
+        },
+        {
+          "key": "D",
+          "text": "fuel, oxygen, heat"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "fuel, oxygen, heat",
+      "explanation": "The fire triangle consists of fuel, oxygen and heat. A fire can continue only when all three are present in sufficient amounts; removing fuel, reducing oxygen or cooling the material below its ignition temperature can interrupt combustion."
+    },
+    {
+      "week": 13,
+      "questionNo": 30,
+      "sourceQuestionNo": 160,
+      "weekLabel": "Extras",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Transplantation experiment is used to find",
+      "options": [
+        {
+          "key": "A",
+          "text": "Potential Range"
+        },
+        {
+          "key": "B",
+          "text": "Actual Range"
+        },
+        {
+          "key": "C",
+          "text": "Economic Range"
+        },
+        {
+          "key": "D",
+          "text": "Ecological Range"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Potential Range",
+      "explanation": "A species’ potential range is the area it could occupy if suitable environmental conditions were present and barriers to dispersal or other limiting factors were absent. Transplantation experiments test whether the species can survive and reproduce beyond its current distribution."
+    }
+  ]
+}

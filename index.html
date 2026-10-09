@@ -444,7 +444,7 @@ body.modal-open{overflow:hidden}
 @media (min-width:768px){.g3 .stat .v{font-size:var(--fs-xl)}}
 
 /* ============================================================
-   FEATURE GRID — 3×2 desktop · 2×3 tablet · 1×6 mobile
+   FEATURE GRID
    ============================================================ */
 .features{
   display:grid;grid-template-columns:minmax(0,1fr);
@@ -486,7 +486,7 @@ body.modal-open{overflow:hidden}
 }
 
 /* ============================================================
-   STEPS — how it works
+   STEPS
    ============================================================ */
 .steps{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s4)}
 .step{min-width:0;display:flex;gap:var(--s3);align-items:flex-start}
@@ -564,7 +564,6 @@ body.modal-open{overflow:hidden}
   background:var(--accent-soft);transform:translateY(-1px);
 }
 
-/* Hero stat row — bright accent numbers */
 .hero-stats{
   display:flex;gap:var(--s6);flex-wrap:wrap;
   margin-top:var(--s6);padding-top:var(--s5);
@@ -1163,6 +1162,18 @@ const SUBJECTS = [
     image:     "psychology.png",
     institute: "IIT Kharagpur"
   },
+  {
+    id:        "forests_and_their_management",
+    name:      "Forests and Their Management",
+    file:      "Forests_and_Their_Management.json",
+    institute: "NPTEL"
+  },
+  {
+    id:        "wildlife_ecology",
+    name:      "Wildlife Ecology",
+    file:      "Wildlife_Ecology.json", // Make sure this matches your exact filename
+    institute: "NPTEL"
+  },
 ];
 
 const QUESTIONS_FOLDER = 'assets/';
@@ -1258,7 +1269,8 @@ function normaliseSubject(raw, meta) {
   const rawQs = raw.questions || raw.qs || [];
   const byWeek = {};
   rawQs.forEach((q, i) => {
-    const week = q.week || 1;
+    // FIX: use nullish check so week:0 (e.g. Forests Week 0) isn't coerced to 1
+    const week = q.week != null ? q.week : 1;
     if (!byWeek[week]) byWeek[week] = [];
 
     const options = (q.options || []).map((o) =>
@@ -1323,6 +1335,7 @@ const loadProgress = (sid) => {
 };
 
 function allQuestions(subject) {
+  if (!subject || !subject.assignments) return [];
   const out = [];
   subject.assignments.forEach((a) => a.questions.forEach((q) => out.push(q)));
   return out;
@@ -1470,7 +1483,7 @@ function SubjectAvatar({ subject }) {
 }
 
 /* =========================================================================
-   SUBJECT PICKER — landing with marketing content
+   SUBJECT PICKER
    ========================================================================= */
 function SubjectPicker({ subjects, onPick, banner }) {
   const features = [
@@ -1624,6 +1637,7 @@ function SubjectPicker({ subjects, onPick, banner }) {
    HOME
    ========================================================================= */
 function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory }) {
+  if (!subject) return null; // <--- ADD THIS
   const bank = useMemo(() => allQuestions(subject), [subject]);
   const [count, setCount] = useState(() => Math.min(20, Math.max(1, bank.length)));
   const [picked, setPicked] = useState([]);
@@ -2688,8 +2702,8 @@ function App() {
       )}
 
       <div style={{ flex: 1 }} className="app-main" key={screen}>
-        {screen === 'home' && (
-          <HomeView
+        {screen === 'home' && subject && (
+           <HomeView
             subject={subject} progress={progress}
             onStartRandom={startRandom} onStartCustom={startCustom}
             onStartWeak={startWeak} onStartBookmarks={startBookmarks}
