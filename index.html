@@ -931,7 +931,6 @@ body.modal-open{overflow:hidden}
 .subject-list--sheet .arrow{display:none}
 @media (min-width:768px){
   .subject-start-more{display:inline}
-  /* 2 × 2 grid on desktop for the landing page */
   .subject-list--grid{
     display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4);
   }
@@ -961,9 +960,6 @@ body.modal-open{overflow:hidden}
   .hero h1{max-width:22ch}
   .hero .lede{max-width:64ch}
 }
-/* ============================================================
-   APP FOOTER (LinkedIn credit + report link)
-   ============================================================ */
 .app-footer{
   margin-top:var(--s8);
   padding-top:var(--s5);
@@ -1083,15 +1079,9 @@ body.modal-open{overflow:hidden}
 <script type="text/babel" data-presets="react">
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
 
-/* =========================================================================
-   CONFIG — replace this URL with your actual Google Form
-   ========================================================================= */
 const REPORT_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_FORM_ID";
 const LINKEDIN_URL = "https://www.linkedin.com/in/hey-rishabh";
 
-/* =========================================================================
-   PORTAL
-   ========================================================================= */
 function Portal({ children }) {
   const el = useMemo(() => document.createElement('div'), []);
   useEffect(() => {
@@ -1102,9 +1092,6 @@ function Portal({ children }) {
   return ReactDOM.createPortal(children, el);
 }
 
-/* =========================================================================
-   BRAND MARK
-   ========================================================================= */
 function BrandMark({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1115,9 +1102,6 @@ function BrandMark({ size = 18 }) {
   );
 }
 
-/* =========================================================================
-   SVG ICONS
-   ========================================================================= */
 function Icon({ name, size = 20, strokeWidth = 1.6, fill = 'none' }) {
   const paths = {
     home:     <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></>,
@@ -1162,9 +1146,6 @@ function Icon({ name, size = 20, strokeWidth = 1.6, fill = 'none' }) {
   );
 }
 
-/* =========================================================================
-   LINKEDIN ICON
-   ========================================================================= */
 function LinkedInIcon({ size = 14 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1173,9 +1154,6 @@ function LinkedInIcon({ size = 14 }) {
   );
 }
 
-/* =========================================================================
-   APP FOOTER
-   ========================================================================= */
 function AppFooter({ showReport = false }) {
   return (
     <footer className="app-footer">
@@ -1188,41 +1166,26 @@ function AppFooter({ showReport = false }) {
         {showReport && (
           <p className="footer-note">
             Spotted a wrong answer, typo, or mismatch?{' '}
-            <a
-              className="report-link"
-              href={REPORT_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="report-link" href={REPORT_FORM_URL} target="_blank" rel="noopener noreferrer">
               Report a discrepancy
             </a>
-            
           </p>
         )}
       </div>
-<div className="footer-actions">
-  <span className="developed-tag">
-    Developed with
-    <span className="heart" role="img" aria-label="love">❤️</span>
-  </span>
-  <a
-    className="linkedin-btn"
-    href={LINKEDIN_URL}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Connect on LinkedIn"
-  >
-    <LinkedInIcon size={14} />
-    <span>Connect</span>
-  </a>
-</div>
+      <div className="footer-actions">
+        <span className="developed-tag">
+          Developed with
+          <span className="heart" role="img" aria-label="love">❤️</span>
+        </span>
+        <a className="linkedin-btn" href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
+          <LinkedInIcon size={14} />
+          <span>Connect</span>
+        </a>
+      </div>
     </footer>
   );
 }
 
-/* =========================================================================
-   SUBJECTS
-   ========================================================================= */
 const SUBJECTS = [
   { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology.png", institute: "IIT Kharagpur" },
   { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", institute: "NPTEL" },
@@ -1239,9 +1202,6 @@ const ACCENTS = [
   { id: 'rose',  label: 'Rose',  color: '#be123c' },
 ];
 
-/* =========================================================================
-   STORAGE + UTILS
-   ========================================================================= */
 const LS = {
   get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
@@ -1306,9 +1266,6 @@ function useModalOpen() {
   }, []);
 }
 
-/* =========================================================================
-   NORMALISE
-   ========================================================================= */
 function normaliseSubject(raw, meta) {
   const id = meta.id;
   const title = meta.name || raw.course || 'Untitled subject';
@@ -1358,9 +1315,6 @@ const DEMO_SUBJECT = {
   ],
 };
 
-/* =========================================================================
-   PROGRESS
-   ========================================================================= */
 const PROG_KEY = (sid) => 'nptel.progress.' + sid;
 const emptyProgress = () => ({ questions: {}, history: [], bookmarks: [] });
 const loadProgress = (sid) => {
@@ -1403,9 +1357,6 @@ const PACE_META = {
   stuck:      { label: 'Stuck',       icon: 'puzzle',   cls: 'red',   desc: 'Wrong and slow' },
 };
 
-/* =========================================================================
-   SHARED UI
-   ========================================================================= */
 function Switch({ on, onChange }) {
   return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on} aria-label="Toggle"><i /></button>;
 }
@@ -1502,9 +1453,6 @@ function SubjectAvatar({ subject }) {
   );
 }
 
-/* =========================================================================
-   SUBJECT SWITCHER SHEET
-   ========================================================================= */
 function SubjectSheet({ subjects, currentId, onPick, onClose }) {
   useModalOpen();
   useEffect(() => {
@@ -1561,9 +1509,6 @@ function SubjectSheet({ subjects, currentId, onPick, onClose }) {
   );
 }
 
-/* =========================================================================
-   LANDING / HOME PAGE (subject picker)
-   ========================================================================= */
 function LandingPage({ subjects, onPick, banner }) {
   const features = [
     { icon: 'target',    title: 'Complete question bank', desc: 'Every multiple-choice question from the weekly assignments, in one place.' },
@@ -1596,7 +1541,6 @@ function LandingPage({ subjects, onPick, banner }) {
           <span><Icon name="puzzle" size={11} /> Weak drills</span>
           <span><Icon name="check" size={11} /> No account needed</span>
         </div>
-
         <div className="hero-stats">
           <div className="hero-stat"><strong>{subjects.length}</strong><span>Subjects</span></div>
           <div className="hero-stat"><strong>6</strong><span>Practice modes</span></div>
@@ -1704,9 +1648,6 @@ function LandingPage({ subjects, onPick, banner }) {
   );
 }
 
-/* =========================================================================
-   SUBJECT HOME (practice)
-   ========================================================================= */
 function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory, onSwitchSubject }) {
   if (!subject) return null;
   const bank = useMemo(() => allQuestions(subject), [subject]);
@@ -1874,9 +1815,6 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
   );
 }
 
-/* =========================================================================
-   QUIZ
-   ========================================================================= */
 function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, onQuit }) {
   const questions = config.questions;
   const [idx, setIdx] = useState(0);
@@ -2062,9 +2000,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   );
 }
 
-/* =========================================================================
-   RESULT
-   ========================================================================= */
 function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
   const accuracy = pct(result.score, result.total);
   const wrongItems = result.items.filter((i) => !i.correct && !i.skipped);
@@ -2140,9 +2075,6 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
   );
 }
 
-/* =========================================================================
-   HISTORY
-   ========================================================================= */
 function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
   useModalOpen();
   const accuracy = pct(run.score, run.total);
@@ -2263,9 +2195,6 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
   );
 }
 
-/* =========================================================================
-   CHEATSHEET
-   ========================================================================= */
 function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
   const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
   const [showAnswers, setShowAnswers] = useState(true);
@@ -2367,9 +2296,6 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
   );
 }
 
-/* =========================================================================
-   NOTES
-   ========================================================================= */
 function NotesView({ assignment, progress, onBack, onPractice }) {
   if (!assignment) return null;
   return (
@@ -2413,9 +2339,6 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
   );
 }
 
-/* =========================================================================
-   SETTINGS
-   ========================================================================= */
 function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAccent, subject, subjects, onChangeSubject, onExport, onImport, onResetProgress, onClose }) {
   useModalOpen();
   return (
@@ -2496,9 +2419,6 @@ function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAcce
   );
 }
 
-/* =========================================================================
-   ROOT
-   ========================================================================= */
 function App() {
   const [theme, setTheme] = useState(() => LS.get('nptel.theme', 'dark'));
   const [accent, setAccent] = useState(() => LS.get('nptel.accent', 'ocean'));
@@ -2509,13 +2429,15 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showSubjects, setShowSubjects] = useState(false);
 
-  const [subjectId, setSubjectId] = useState(() => LS.get('nptel.currentSubject', null));
+  // ── CHANGE 1: default subjectId to Psychology if none is stored ──
+  const [subjectId, setSubjectId] = useState(() => LS.get('nptel.currentSubject', null) || SUBJECTS[0].id);
   const [subject, setSubject] = useState(null);
   const [progress, setProgress] = useState(null);
   const [banner, setBanner] = useState(null);
   const cacheRef = useRef({});
 
-  // Default screen: landing if no subject stored, home if there is one
+  // Default screen: landing if this is a fresh visit (no stored subject),
+  // otherwise jump straight into that subject's Practice page.
   const [screen, setScreen] = useState(() => {
     const sid = LS.get('nptel.currentSubject', null);
     return sid ? 'loading' : 'landing';
@@ -2536,21 +2458,23 @@ function App() {
 
   useEffect(() => { LS.set('nptel.settings', settings); }, [settings]);
 
+  // ── CHANGE 2: persist subjectId whenever it changes ──
+  useEffect(() => { if (subjectId) LS.set('nptel.currentSubject', subjectId); }, [subjectId]);
+
   const subjectIndex = useMemo(
     () => SUBJECTS.map((s) => ({ id: s.id, name: s.name, file: s.file, image: s.image, institute: s.institute })),
     []
   );
 
+  // ── CHANGE 3: rewritten subject-loading effect ──
   useEffect(() => {
     if (!subjectId || !subjectIndex.some((s) => s.id === subjectId)) {
-      setSubject(null); setProgress(null);
-      if (screen !== 'landing') setScreen('landing');
+      // Stored id is invalid (e.g. subject removed) — fall back to first subject
+      if (subjectIndex.length) setSubjectId(subjectIndex[0].id);
       return;
     }
     let cancelled = false;
     (async () => {
-      // Only show loading briefly the first time we load this subject
-      if (!cacheRef.current[subjectId]) setScreen('loading');
       setBanner(null);
       try {
         const meta = subjectIndex.find((s) => s.id === subjectId);
@@ -2568,7 +2492,9 @@ function App() {
         if (cancelled) return;
         setSubject(norm);
         setProgress(loadProgress(subjectId));
-        setScreen('home');
+        // Only auto-route to home if we were in the loading state.
+        // Otherwise leave the current screen alone (e.g. stay on landing).
+        setScreen(prev => prev === 'loading' ? 'home' : prev);
       } catch (err) {
         if (cancelled) return;
         setBanner('Failed to load subject: ' + err.message);
@@ -2699,17 +2625,13 @@ function App() {
     setScreen('notes');
   };
 
-  // Navigation handler — guards against screens that need a subject
+  // ── CHANGE 4: remove navigation guard, allow any tab at any time ──
   const navigate = useCallback((target) => {
-    if (target !== 'landing' && target !== 'loading' && !subject) {
-      setScreen('landing');
-      return;
-    }
     setScreen(target);
-  }, [subject]);
+  }, []);
 
-  /* --- Loading screen (subject being fetched) --- */
-  if (screen === 'loading') {
+  // ── CHANGE 5: extend loading fallback for subject-dependent screens ──
+  if (screen === 'loading' || (screen !== 'landing' && !subject)) {
     return (
       <div className="center">
         <div style={{ textAlign: 'center' }}>
@@ -2720,7 +2642,6 @@ function App() {
     );
   }
 
-  /* --- Quiz takes over the whole screen --- */
   if (screen === 'quiz' && quizConfig) {
     return (
       <QuizRunner
@@ -2741,7 +2662,6 @@ function App() {
   ];
   const isNotes = screen === 'notes';
   const activeTab = isNotes ? 'cheatsheet' : screen;
-  const hideTabs = screen === 'landing';
 
   return (
     <div className="app">
