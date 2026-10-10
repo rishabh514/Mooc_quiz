@@ -6,15 +6,12 @@
 <meta name="theme-color" content="#2563eb" />
 <title>Mooc Mastery - NPTEL MCQ Practice</title>
 
-<!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath d='M5 5h5a3 3 0 0 1 3 3v9a2.2 2.2 0 0 0-2.2-2.2H5z' fill='none' stroke='white' stroke-width='1.6' stroke-linejoin='round'/%3E%3Cpath d='M19 5h-5a3 3 0 0 0-3 3v9a2.2 2.2 0 0 1 2.2-2.2H19z' fill='none' stroke='white' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E" />
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
 
-<!-- Microsoft Clarity Tracking -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -23,75 +20,54 @@
     })(window, document, "clarity", "script", "yv3m7uhh7i");
 </script>
 
-<!-- Vercel Web Analytics -->
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 
-<!-- React, ReactDOM, and Babel for in-browser JSX -->
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 
 <style>
-/* ============================================================
-   TOKENS
-   ============================================================ */
 :root{
   --font-sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   --font-serif:'IBM Plex Serif',Georgia,'Times New Roman',serif;
-
   --fs-xs:12px; --fs-sm:13.5px; --fs-base:15px; --fs-md:16px;
   --fs-lg:18px; --fs-xl:22px; --fs-2xl:28px; --fs-3xl:36px;
-
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:28px; --s7:40px; --s8:56px;
-
   --r-sm:6px; --r:10px; --r-lg:14px; --r-xl:18px;
-
   --wrap:840px; --gutter:18px;
   --top-h:56px; --nav-h:62px; --tap:44px;
-
   --safe-b:env(safe-area-inset-bottom,0px);
   --safe-t:env(safe-area-inset-top,0px);
-
   --ease:cubic-bezier(.2,.7,.3,1);
   --fast:120ms; --base:180ms; --slow:260ms;
 }
-
-/* ---------- Neutrals · LIGHT ---------- */
 :root{
   --bg:#f5f6f8; --surface:#ffffff; --surface-2:#eef0f3; --surface-3:#e2e6eb;
   --text:#0f1419; --text-2:#414953; --muted:#6b7481;
   --border:#e3e6eb; --border-2:#c9cfd7;
-
   --green:#1a7a4a; --green-bg:rgba(26,122,74,.10);
   --red:#b91c1c;   --red-bg:rgba(185,28,28,.09);
   --amber:#a16207; --amber-bg:rgba(161,98,7,.10);
-
   --shadow-xs:0 1px 2px rgba(15,20,25,.05);
   --shadow-sm:0 1px 3px rgba(15,20,25,.07),0 1px 2px rgba(15,20,25,.04);
   --shadow-md:0 4px 12px rgba(15,20,25,.09),0 2px 4px rgba(15,20,25,.04);
   --shadow-lg:0 20px 44px rgba(15,20,25,.20),0 6px 14px rgba(15,20,25,.08);
 }
-
-/* ---------- Neutrals · DARK ---------- */
 [data-theme="dark"]{
   --bg:#0b0e12; --surface:#14181f; --surface-2:#1c212a; --surface-3:#252b36;
   --text:#eef0f3; --text-2:#adb6c2; --muted:#838d9b;
   --border:#232932; --border-2:#353d49;
-
   --green:#5fd39e; --green-bg:rgba(95,211,158,.12);
   --red:#f08a80;   --red-bg:rgba(240,138,128,.12);
   --amber:#e3b24a; --amber-bg:rgba(227,178,74,.12);
-
   --shadow-xs:0 1px 2px rgba(0,0,0,.4);
   --shadow-sm:0 1px 3px rgba(0,0,0,.5),0 1px 2px rgba(0,0,0,.3);
   --shadow-md:0 4px 12px rgba(0,0,0,.55),0 2px 4px rgba(0,0,0,.35);
   --shadow-lg:0 20px 44px rgba(0,0,0,.65),0 6px 14px rgba(0,0,0,.4);
 }
-
-/* ---------- Accent · OCEAN (default, blue) ---------- */
 :root,[data-accent="ocean"]{
   --accent:#2563eb; --accent-solid:#2563eb;
   --accent-h:#1d4ed8; --accent-solid-h:#1d4ed8;
@@ -108,8 +84,6 @@
   --accent-line:rgba(138,180,248,.28);
   --accent-glow:rgba(59,130,246,.42);
 }
-
-/* ---------- Accent · AMBER ---------- */
 [data-accent="amber"]{
   --accent:#b45309; --accent-solid:#b45309;
   --accent-h:#92400e; --accent-solid-h:#92400e;
@@ -126,8 +100,6 @@
   --accent-line:rgba(251,191,36,.30);
   --accent-glow:rgba(217,119,6,.42);
 }
-
-/* ---------- Accent · ROSE (crimson) ---------- */
 [data-accent="rose"]{
   --accent:#be123c; --accent-solid:#be123c;
   --accent-h:#9f1239; --accent-solid-h:#9f1239;
@@ -144,10 +116,6 @@
   --accent-line:rgba(253,164,175,.28);
   --accent-glow:rgba(225,29,72,.42);
 }
-
-/* ============================================================
-   RESET
-   ============================================================ */
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;min-height:100%}
 html{-webkit-text-size-adjust:100%}
@@ -164,7 +132,6 @@ body{
   transition:background-color var(--base) var(--ease),color var(--base) var(--ease);
 }
 #root{position:relative;z-index:1}
-
 h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.015em;line-height:1.25}
 h1{font-size:var(--fs-xl);letter-spacing:-.02em}
 h2{font-size:var(--fs-lg);letter-spacing:-.015em}
@@ -180,14 +147,9 @@ a:hover{text-decoration:underline}
 ::-webkit-scrollbar-track{background:transparent}
 :focus{outline:none}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--r-sm)}
-
 .qtext,.qreview-question,.option .body,.opts li,.explain,.reveal-explain{
   overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;
 }
-
-/* ============================================================
-   MOTION
-   ============================================================ */
 @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
@@ -200,7 +162,11 @@ a:hover{text-decoration:underline}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes barGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes heroIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-
+@keyframes tileShimmer{
+  0%{left:-100%}
+  55%,100%{left:200%}
+}
+@keyframes btnShine{0%{transform:translateX(-130%)}60%,100%{transform:translateX(260%)}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{
     animation-duration:.001ms !important;
@@ -209,10 +175,6 @@ a:hover{text-decoration:underline}
     scroll-behavior:auto !important;
   }
 }
-
-/* ============================================================
-   LAYOUT
-   ============================================================ */
 .app{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
 .wrap{
   width:100%;max-width:var(--wrap);margin:0 auto;
@@ -220,17 +182,18 @@ a:hover{text-decoration:underline}
 }
 .page{padding-top:var(--s5);padding-bottom:var(--s6);animation:fadeUp var(--slow) var(--ease) both}
 .app-main{flex:1;padding-bottom:calc(var(--nav-h) + var(--safe-b) + var(--s4))}
-
 @media (min-width:768px){
   :root{--gutter:28px;--top-h:60px}
   .page{padding-top:var(--s6);padding-bottom:var(--s7)}
   .app-main{padding-bottom:var(--s7)}
   h1{font-size:var(--fs-2xl)}
 }
-
-/* ============================================================
-   TOP BAR
-   ============================================================ */
+@media (min-width:1024px){
+  :root{--wrap:1080px;--gutter:32px}
+}
+@media (min-width:1280px){
+  :root{--wrap:1160px}
+}
 .topbar{
   position:sticky;top:0;z-index:40;
   padding-top:var(--safe-t);
@@ -239,7 +202,6 @@ a:hover{text-decoration:underline}
   transition:background-color var(--base) var(--ease),border-color var(--base) var(--ease);
 }
 .topbar-in{display:flex;align-items:center;gap:var(--s2);height:var(--top-h)}
-
 .brand{
   display:flex;align-items:center;gap:10px;min-width:0;flex:1;
   color:inherit;text-align:left;border-radius:var(--r);
@@ -247,7 +209,6 @@ a:hover{text-decoration:underline}
   transition:opacity var(--fast) var(--ease);
 }
 .brand:hover{opacity:.9}
-
 .brand-mark{
   width:34px;height:34px;flex:0 0 auto;border-radius:9px;
   background:var(--accent-solid);
@@ -256,7 +217,6 @@ a:hover{text-decoration:underline}
   transition:transform var(--base) var(--ease),background var(--base) var(--ease);
 }
 .brand:hover .brand-mark{transform:rotate(-4deg) scale(1.03)}
-
 .brand-text{min-width:0;display:block}
 .brand-title{
   display:block;font-weight:600;font-size:var(--fs-sm);
@@ -268,7 +228,6 @@ a:hover{text-decoration:underline}
   line-height:1.3;margin-top:1px;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-
 .top-tabs{display:none;gap:2px;margin-left:var(--s4)}
 .top-tabs button{
   font-size:var(--fs-sm);font-weight:500;color:var(--muted);
@@ -278,7 +237,6 @@ a:hover{text-decoration:underline}
 }
 .top-tabs button:hover{color:var(--text);background:var(--surface-2)}
 .top-tabs button.active{color:var(--text);font-weight:600;background:var(--surface-2)}
-
 .top-actions{display:flex;gap:4px}
 .icon-btn{
   width:38px;height:38px;border-radius:var(--r);
@@ -289,12 +247,7 @@ a:hover{text-decoration:underline}
 }
 .icon-btn:hover{background:var(--surface-2);color:var(--text)}
 .icon-btn:active{transform:scale(.92)}
-
 @media (min-width:768px){.top-tabs{display:flex}}
-
-/* ============================================================
-   BOTTOM NAV
-   ============================================================ */
 .bottom-nav{
   position:fixed;left:0;right:0;bottom:0;z-index:45;
   background:var(--surface);
@@ -320,17 +273,11 @@ a:hover{text-decoration:underline}
 .bottom-nav svg{display:block;transition:transform var(--base) var(--ease)}
 .bottom-nav button.active svg{transform:translateY(-1px)}
 @media (min-width:768px){.bottom-nav{display:none}}
-
 body.modal-open .bottom-nav{display:none !important}
 body.modal-open{overflow:hidden}
-
-/* ============================================================
-   TYPOGRAPHY HELPERS
-   ============================================================ */
 .muted{color:var(--muted);font-size:var(--fs-sm)}
 .tiny{font-size:var(--fs-xs);color:var(--muted);line-height:1.5}
 .lede{color:var(--text-2);font-size:var(--fs-md);line-height:1.6;max-width:60ch}
-
 .section-title{
   display:flex;align-items:center;gap:10px;
   font-size:var(--fs-base);font-weight:600;color:var(--text);
@@ -342,14 +289,9 @@ body.modal-open{overflow:hidden}
   transition:background var(--base) var(--ease);
 }
 .section-title:first-child{margin-top:0}
-
 .row{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
 .between{justify-content:space-between}
 .col{display:flex;flex-direction:column;gap:var(--s3)}
-
-/* ============================================================
-   GRIDS
-   ============================================================ */
 .grid{display:grid;gap:var(--s3)}
 .g2{grid-template-columns:minmax(0,1fr)}
 .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -359,10 +301,6 @@ body.modal-open{overflow:hidden}
   .grid{gap:var(--s4)}
   .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
-
-/* ============================================================
-   CARDS
-   ============================================================ */
 .card{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
   padding:var(--s4);box-shadow:var(--shadow-xs);
@@ -370,10 +308,6 @@ body.modal-open{overflow:hidden}
 }
 .card+.card{margin-top:var(--s3)}
 @media (min-width:768px){.card{padding:var(--s5)}}
-
-/* ============================================================
-   BUTTONS
-   ============================================================ */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
   border:1px solid var(--border);background:var(--surface);color:var(--text);
@@ -387,7 +321,6 @@ body.modal-open{overflow:hidden}
 .btn:hover:not(:disabled){border-color:var(--border-2);background:var(--surface-2)}
 .btn:active:not(:disabled){transform:translateY(1px)}
 .btn:disabled{opacity:.42;cursor:not-allowed}
-
 .btn.primary{
   background:var(--accent-solid);border-color:var(--accent-solid);color:var(--accent-on);
   font-weight:600;
@@ -400,7 +333,6 @@ body.modal-open{overflow:hidden}
 .btn.primary:active:not(:disabled){
   box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 2px var(--accent-glow);
 }
-
 .btn.ghost{border-color:transparent;background:transparent;color:var(--muted)}
 .btn.ghost:hover:not(:disabled){background:var(--surface-2);color:var(--text);border-color:transparent}
 .btn.soft{background:var(--surface-2);border-color:transparent;color:var(--text-2)}
@@ -412,10 +344,6 @@ body.modal-open{overflow:hidden}
 .btn.lg{height:48px;font-size:var(--fs-base);padding:0 var(--s5)}
 .btn.block{width:100%}
 .btn svg{flex:0 0 auto}
-
-/* ============================================================
-   BADGES
-   ============================================================ */
 .badge{
   display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
   border-radius:99px;font-size:var(--fs-xs);font-weight:500;
@@ -426,10 +354,6 @@ body.modal-open{overflow:hidden}
 .badge.amber{background:var(--amber-bg);color:var(--amber)}
 .badge.blue{background:var(--accent-soft);color:var(--accent)}
 .badge.grey{background:var(--surface-2);color:var(--muted)}
-
-/* ============================================================
-   STATS
-   ============================================================ */
 .stat{
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r);
   padding:var(--s3);min-width:0;box-shadow:var(--shadow-xs);
@@ -442,10 +366,6 @@ body.modal-open{overflow:hidden}
 .stat .l{font-size:var(--fs-xs);color:var(--muted);font-weight:400;margin-top:3px;line-height:1.4}
 .g3 .stat .v{font-size:var(--fs-base)}
 @media (min-width:768px){.g3 .stat .v{font-size:var(--fs-xl)}}
-
-/* ============================================================
-   FEATURE GRID
-   ============================================================ */
 .features{
   display:grid;grid-template-columns:minmax(0,1fr);
   gap:var(--s4);
@@ -476,7 +396,6 @@ body.modal-open{overflow:hidden}
 }
 .feature-title{font-size:var(--fs-sm);font-weight:600;color:var(--text);line-height:1.35}
 .feature-desc{font-size:var(--fs-xs);color:var(--muted);line-height:1.55}
-
 @media (min-width:480px){
   .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4)}
 }
@@ -484,10 +403,6 @@ body.modal-open{overflow:hidden}
   .features{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s5)}
   .feature{padding:var(--s5)}
 }
-
-/* ============================================================
-   STEPS
-   ============================================================ */
 .steps{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s4)}
 .step{min-width:0;display:flex;gap:var(--s3);align-items:flex-start}
 .step-num{
@@ -502,24 +417,9 @@ body.modal-open{overflow:hidden}
 .step-body{min-width:0}
 .step-title{font-size:var(--fs-sm);font-weight:600;color:var(--text);line-height:1.3}
 .step-desc{font-size:var(--fs-xs);color:var(--muted);line-height:1.55;margin-top:2px}
-
 @media (min-width:640px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s5)}}
 @media (min-width:900px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
-
-/* ============================================================
-   PAGE FOOTER
-   ============================================================ */
-.page-footer{
-  margin-top:var(--s8);padding-top:var(--s5);
-  border-top:1px solid var(--border);
-  font-size:var(--fs-xs);color:var(--muted);line-height:1.65;max-width:62ch;
-}
-
-/* ============================================================
-   LANDING HERO
-   ============================================================ */
 .hero{padding:var(--s5) 0 var(--s6);position:relative}
-
 .hero-mark{
   width:48px;height:48px;border-radius:13px;
   background:var(--accent-solid);color:var(--accent-on);
@@ -529,7 +429,6 @@ body.modal-open{overflow:hidden}
   animation:heroIn .5s var(--ease) both;
 }
 .hero-mark:hover{transform:rotate(-6deg) scale(1.05);box-shadow:0 6px 16px var(--accent-glow)}
-
 .hero h1{
   font-family:var(--font-serif);font-weight:600;
   font-size:var(--fs-2xl);letter-spacing:-.025em;line-height:1.15;
@@ -545,7 +444,6 @@ body.modal-open{overflow:hidden}
   margin-top:var(--s5);
   animation:heroIn .5s var(--ease) .1s both;
 }
-
 .hero-chips{
   display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--s5);
   animation:heroIn .5s var(--ease) .15s both;
@@ -563,7 +461,6 @@ body.modal-open{overflow:hidden}
   border-color:var(--accent-line);color:var(--text);
   background:var(--accent-soft);transform:translateY(-1px);
 }
-
 .hero-stats{
   display:flex;gap:var(--s6);flex-wrap:wrap;
   margin-top:var(--s6);padding-top:var(--s5);
@@ -581,15 +478,10 @@ body.modal-open{overflow:hidden}
   font-size:var(--fs-xs);color:var(--muted);
   text-transform:uppercase;letter-spacing:.06em;font-weight:500;
 }
-
 @media (min-width:768px){
   .hero{padding:var(--s6) 0 var(--s7)}
   .hero h1{font-size:var(--fs-3xl)}
 }
-
-/* ============================================================
-   SUBJECT LIST
-   ============================================================ */
 .subject-list{display:flex;flex-direction:column;gap:var(--s2)}
 .subject-card{
   display:flex;align-items:center;gap:var(--s3);
@@ -632,10 +524,6 @@ body.modal-open{overflow:hidden}
   .subject-card{padding:var(--s4);gap:var(--s4)}
   .subject-card .ico{width:52px;height:52px;font-size:22px}
 }
-
-/* ============================================================
-   PROMO STRIP
-   ============================================================ */
 .promo{
   margin-top:var(--s7);
   padding:var(--s5);
@@ -651,10 +539,6 @@ body.modal-open{overflow:hidden}
 .promo h3{font-size:var(--fs-base);font-weight:600;color:var(--text)}
 .promo p{font-size:var(--fs-sm);color:var(--text-2);line-height:1.55;max-width:52ch}
 .promo .row{gap:6px}
-
-/* ============================================================
-   ABOUT BLOCK
-   ============================================================ */
 .about{margin-top:var(--s7)}
 .about-lede{
   color:var(--text-2);font-size:var(--fs-sm);line-height:1.65;
@@ -681,10 +565,6 @@ body.modal-open{overflow:hidden}
   .about-points{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s5)}
   .about-point{flex-direction:column;gap:var(--s2);padding-top:var(--s5)}
 }
-
-/* ============================================================
-   BANNER
-   ============================================================ */
 .banner{
   padding:var(--s3) var(--s4);border-radius:var(--r);
   background:var(--amber-bg);color:var(--amber);
@@ -692,10 +572,6 @@ body.modal-open{overflow:hidden}
   border:1px solid rgba(161,98,7,.18);margin-bottom:var(--s4);
   animation:fadeUp var(--slow) var(--ease) both;
 }
-
-/* ============================================================
-   CHECKBOX ROWS
-   ============================================================ */
 .chk{
   display:flex;align-items:center;gap:var(--s3);
   padding:var(--s3) var(--s4);border:1px solid var(--border);border-radius:var(--r);
@@ -714,10 +590,6 @@ body.modal-open{overflow:hidden}
   line-height:1;
 }
 .chk.on .box{background:var(--accent-solid);border-color:var(--accent-solid);color:var(--accent-on);transform:scale(1.08)}
-
-/* ============================================================
-   STEPPER
-   ============================================================ */
 .stepper{
   display:inline-flex;align-items:center;
   border:1px solid var(--border);border-radius:var(--r);overflow:hidden;
@@ -740,10 +612,6 @@ body.modal-open{overflow:hidden}
 .stepper input:focus{background:var(--surface-2)}
 .stepper input::-webkit-outer-spin-button,
 .stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-
-/* ============================================================
-   QUIZ OPTIONS
-   ============================================================ */
 .option{
   display:flex;gap:var(--s3);align-items:flex-start;width:100%;text-align:left;
   padding:var(--s3) var(--s4);border:1.5px solid var(--border);border-radius:var(--r-lg);
@@ -784,11 +652,9 @@ body.modal-open{overflow:hidden}
 }
 .option.wrong .key{background:var(--red);color:#fff;border-color:var(--red)}
 .option .mark{flex:0 0 auto;margin-top:3px;animation:pop var(--slow) var(--ease)}
-
 .flash{position:fixed;inset:0;pointer-events:none;z-index:90;animation:fadeOut .5s var(--ease) forwards}
 .flash.correct{background:radial-gradient(circle at 50% 45%,rgba(26,122,74,.22),transparent 62%)}
 .flash.wrong{background:radial-gradient(circle at 50% 45%,rgba(185,28,28,.22),transparent 62%)}
-
 .reveal-card{
   margin-top:var(--s4);border-radius:var(--r);padding:var(--s3) var(--s4);
   border:1px solid var(--border);background:var(--surface-2);
@@ -814,27 +680,15 @@ body.modal-open{overflow:hidden}
   padding-top:var(--s2);border-top:1px solid var(--border);margin-top:var(--s2);
 }
 .reveal-explain b{font-weight:600;color:var(--text)}
-
-/* ============================================================
-   QUIZ ACTIONS
-   ============================================================ */
 .quiz-actions{margin-top:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
 .quiz-actions-meta{display:flex;align-items:center;justify-content:space-between;padding:0 2px}
 .quiz-actions-row{display:grid;grid-template-columns:1fr 1.6fr;gap:var(--s2)}
 .quiz-actions-row .btn{width:100%;height:48px;font-size:var(--fs-base)}
-
-/* ============================================================
-   PROGRESS BAR
-   ============================================================ */
 .pbar{height:3px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .pbar>i{
   display:block;height:100%;background:var(--accent-solid);
   transition:width .3s var(--ease),background var(--base) var(--ease);border-radius:99px;
 }
-
-/* ============================================================
-   PORTAL + MODAL
-   ============================================================ */
 .portal-root{position:relative;z-index:9999}
 .overlay{
   position:fixed;inset:0;background:rgba(10,13,17,.55);
@@ -843,7 +697,6 @@ body.modal-open{overflow:hidden}
 }
 [data-theme="dark"] .overlay{background:rgba(0,0,0,.65)}
 @media (min-width:640px){.overlay{align-items:center;padding:var(--s5)}}
-
 .modal{
   background:var(--surface);border:1px solid var(--border);
   width:100%;max-width:720px;
@@ -871,10 +724,6 @@ body.modal-open{overflow:hidden}
   margin:var(--s2) auto 0;flex:0 0 auto;
 }
 @media (min-width:640px){.sheet-handle{display:none}}
-
-/* ============================================================
-   THEME PICKER
-   ============================================================ */
 .theme-picker{
   display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2);margin-top:var(--s2);
 }
@@ -900,10 +749,6 @@ body.modal-open{overflow:hidden}
 }
 .swatch-label{font-size:var(--fs-xs);font-weight:500;color:var(--text-2);letter-spacing:.005em}
 .theme-swatch.selected .swatch-label{color:var(--accent);font-weight:600}
-
-/* ============================================================
-   PACE JOURNEY
-   ============================================================ */
 .journey{
   display:flex;align-items:flex-end;gap:3px;height:96px;padding:var(--s2);
   background:var(--surface-2);border-radius:var(--r);overflow-x:auto;-webkit-overflow-scrolling:touch;
@@ -917,10 +762,6 @@ body.modal-open{overflow:hidden}
 .journey .bar.ok{background:var(--green)}
 .journey .bar.bad{background:var(--red)}
 .journey .bar.skipped{background:var(--border-2)}
-
-/* ============================================================
-   HISTORY
-   ============================================================ */
 .hrow{
   display:flex;align-items:center;gap:var(--s3);
   padding:var(--s3) var(--s4);border:1px solid var(--border);border-radius:var(--r-lg);
@@ -939,10 +780,6 @@ body.modal-open{overflow:hidden}
 .score-pill.good{background:var(--green-bg);color:var(--green);border-color:rgba(26,122,74,.22)}
 .score-pill.mid{background:var(--amber-bg);color:var(--amber);border-color:rgba(161,98,7,.22)}
 .score-pill.bad{background:var(--red-bg);color:var(--red);border-color:rgba(185,28,28,.22)}
-
-/* ============================================================
-   QUESTION REVIEW
-   ============================================================ */
 .qreview-list{display:flex;flex-direction:column;gap:var(--s2)}
 .qreview{
   background:var(--surface);border:1px solid var(--border);
@@ -955,10 +792,6 @@ body.modal-open{overflow:hidden}
 .qreview-answers{display:flex;flex-direction:column;gap:3px;font-size:var(--fs-xs);color:var(--text-2);line-height:1.5}
 .qreview-answers .ok{color:var(--green);font-weight:600}
 .qreview-answers .bad{color:var(--red);font-weight:600}
-
-/* ============================================================
-   NOTES
-   ============================================================ */
 .note{border-left:2px solid var(--accent);padding-left:var(--s4)}
 .note-head{display:flex;align-items:center;gap:var(--s2);margin-bottom:var(--s3);flex-wrap:wrap}
 .qnum{
@@ -988,10 +821,6 @@ body.modal-open{overflow:hidden}
   animation:fadeUp var(--base) var(--ease) both;
 }
 .explain b{color:var(--text);font-weight:600}
-
-/* ============================================================
-   CHEATSHEET HEAD
-   ============================================================ */
 .cheat-head{
   display:flex;align-items:flex-start;justify-content:space-between;gap:var(--s3);
   margin-bottom:var(--s5);flex-wrap:wrap;
@@ -1005,10 +834,6 @@ body.modal-open{overflow:hidden}
   white-space:nowrap;
 }
 .toggle-answers:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
-
-/* ============================================================
-   SETTINGS ROWS
-   ============================================================ */
 .setrow{
   display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
   padding:var(--s3) 0;border-bottom:1px solid var(--border);
@@ -1016,7 +841,6 @@ body.modal-open{overflow:hidden}
 .setrow:last-child{border-bottom:0}
 .setrow .lbl{font-weight:500;font-size:var(--fs-sm);letter-spacing:-.005em}
 .setrow .hint{font-size:var(--fs-xs);color:var(--muted);margin-top:2px;line-height:1.5}
-
 .switch{
   position:relative;width:42px;height:24px;border-radius:99px;
   background:var(--border-2);cursor:pointer;
@@ -1030,10 +854,6 @@ body.modal-open{overflow:hidden}
   pointer-events:none;box-shadow:0 1px 2px rgba(0,0,0,.15);
 }
 .switch.on i{left:21px}
-
-/* ============================================================
-   EMPTY STATES
-   ============================================================ */
 .empty{padding:var(--s7) var(--s4);color:var(--muted);text-align:left}
 .empty-mark{
   width:48px;height:48px;border-radius:var(--r-lg);
@@ -1043,10 +863,6 @@ body.modal-open{overflow:hidden}
 }
 .empty h3{color:var(--text);margin-bottom:6px;font-size:var(--fs-base)}
 .empty p{font-size:var(--fs-sm);max-width:52ch;line-height:1.6}
-
-/* ============================================================
-   MISC
-   ============================================================ */
 .spin{
   width:28px;height:28px;border:2px solid var(--border);
   border-top-color:var(--accent-solid);border-radius:50%;
@@ -1059,22 +875,6 @@ body.modal-open{overflow:hidden}
   font-size:11px;font-weight:500;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 .pill-row{display:flex;gap:var(--s1);flex-wrap:wrap}
-
-/* ============================================================
-   RESPONSIVE TWEAKS
-   ============================================================ */
-@media (max-width:479px){
-  .hero h1{font-size:26px}
-  .hero-stats{gap:var(--s5)}
-  .hero-stat strong{font-size:var(--fs-xl)}
-  .g4{gap:var(--s2)}
-  .stat{padding:10px var(--s3)}
-  .stat .v{font-size:var(--fs-lg)}
-  .section-title{margin-top:var(--s6)}
-}
-/* ============================================================
-   SUBJECT SWITCHER
-   ============================================================ */
 .switch-btn{
   display:inline-flex;align-items:center;gap:6px;
   height:34px;padding:0 12px 0 10px;border-radius:99px;
@@ -1095,18 +895,15 @@ body.modal-open{overflow:hidden}
 }
 .switch-btn:active{transform:scale(.96)}
 .switch-btn svg{flex:0 0 auto}
-
 @media (max-width:720px){
   .switch-btn{padding:0;width:34px;justify-content:center}
   .switch-btn .switch-btn-label{display:none}
 }
-
 .home-head{
   display:flex;align-items:flex-start;justify-content:space-between;
   gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s2);
 }
 .home-head-text{min-width:0;flex:1 1 auto}
-
 .subject-card--current{
   border-color:var(--accent) !important;
   background:var(--accent-soft) !important;
@@ -1117,22 +914,7 @@ body.modal-open{overflow:hidden}
   color:var(--accent-on) !important;
   border-color:var(--accent-solid) !important;
 }
-
-
-/* ============================================================
-   DESKTOP WIDTH (>=1024px)
-   ============================================================ */
-@media (min-width:1024px){
-  :root{--wrap:1120px}
-  .hero h1{max-width:22ch}
-  .hero .lede{max-width:64ch}
-}
-
-/* ============================================================
-   SUBJECT CARDS · shared start button
-   ============================================================ */
 .subject-hint{margin:calc(-1 * var(--s2)) 0 var(--s4);color:var(--muted);font-size:var(--fs-sm);line-height:1.5}
-
 .subject-start{
   position:relative;overflow:hidden;flex:0 0 auto;
   display:inline-flex;align-items:center;justify-content:center;gap:6px;
@@ -1145,17 +927,13 @@ body.modal-open{overflow:hidden}
 .subject-start svg{transition:transform var(--base) var(--ease);flex:0 0 auto}
 .subject-card:hover .subject-start{background:var(--accent-solid-h)}
 .subject-card:hover .subject-start svg{transform:translateX(2px)}
-
-/* Mobile and sheet: the arrow is replaced by the start pill */
 .subject-list--grid .arrow,
 .subject-list--sheet .arrow{display:none}
-
 @media (min-width:768px){
   .subject-start-more{display:inline}
-
-  /* Home page: three equal columns, each card a stacked tile */
+  /* 2 × 2 grid on desktop for the landing page */
   .subject-list--grid{
-    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s4);
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4);
   }
   .subject-list--grid .subject-card{
     flex-direction:column;align-items:stretch;gap:var(--s4);
@@ -1173,17 +951,130 @@ body.modal-open{overflow:hidden}
     font-size:var(--fs-sm);border-radius:var(--r);
   }
   .subject-list--grid .empty{grid-column:1 / -1}
-
-  /* Subtle sheen sweep, slow and low-opacity */
   .subject-start::after{
     content:'';position:absolute;top:0;bottom:0;left:0;width:40%;
     background:linear-gradient(105deg,transparent 0%,rgba(255,255,255,.35) 50%,transparent 100%);
     transform:translateX(-130%);animation:btnShine 4.5s var(--ease) infinite;pointer-events:none;
   }
 }
-
-@keyframes btnShine{0%{transform:translateX(-130%)}60%,100%{transform:translateX(260%)}}
-
+@media (min-width:1024px){
+  .hero h1{max-width:22ch}
+  .hero .lede{max-width:64ch}
+}
+/* ============================================================
+   APP FOOTER (LinkedIn credit + report link)
+   ============================================================ */
+.app-footer{
+  margin-top:var(--s8);
+  padding-top:var(--s5);
+  border-top:1px solid var(--border);
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:var(--s4);
+  flex-wrap:wrap;
+}
+.footer-left{
+  display:flex;
+  flex-direction:column;
+  gap:var(--s3);
+  min-width:0;
+  flex:1 1 320px;
+}
+.footer-note{
+  font-size:var(--fs-xs);
+  color:var(--muted);
+  line-height:1.7;
+  max-width:62ch;
+}
+.footer-actions{
+  display:flex;
+  align-items:center;
+  gap:var(--s3);
+  flex-wrap:wrap;
+  flex:0 0 auto;
+}
+.report-link{
+  color:var(--accent);
+  font-weight:600;
+  font-size:inherit;
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+  transition:color var(--fast) var(--ease);
+}
+.report-link:hover{color:var(--accent-h)}
+.linkedin-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:8px 14px 8px 12px;
+  border-radius:99px;
+  background:#0A66C2;
+  color:#ffffff;
+  font-size:var(--fs-xs);
+  font-weight:600;
+  letter-spacing:-.005em;
+  text-decoration:none;
+  white-space:nowrap;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 2px 8px rgba(10,102,194,.28);
+  transition:background var(--fast) var(--ease),
+             transform var(--fast) var(--ease),
+             box-shadow var(--fast) var(--ease);
+}
+.linkedin-btn:hover{
+  background:#0e5aa8;
+  text-decoration:none;
+  color:#ffffff;
+  transform:translateY(-1px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 6px 18px rgba(10,102,194,.4);
+}
+.linkedin-btn:active{transform:translateY(0)}
+.linkedin-btn svg{flex:0 0 auto}
+.developed-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:var(--fs-xs);
+  color:var(--muted);
+  font-weight:500;
+  letter-spacing:.005em;
+  white-space:nowrap;
+}
+.developed-tag .heart{
+  display:inline-block;
+  font-size:13px;
+  line-height:1;
+  animation:heartBeat 2.4s var(--ease) infinite;
+}
+@keyframes heartBeat{
+  0%,100%{transform:scale(1)}
+  15%{transform:scale(1.18)}
+  30%{transform:scale(1)}
+  45%{transform:scale(1.12)}
+  60%{transform:scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .developed-tag .heart{animation:none}
+}
+@media (max-width:560px){
+  .app-footer{
+    flex-direction:column;
+    align-items:stretch;
+    gap:var(--s4);
+  }
+  .footer-left{flex:0 0 auto}
+  .footer-actions{flex:0 0 auto;width:100%;justify-content:flex-start}
+}
+@media (max-width:479px){
+  .hero h1{font-size:26px}
+  .hero-stats{gap:var(--s5)}
+  .hero-stat strong{font-size:var(--fs-xl)}
+  .g4{gap:var(--s2)}
+  .stat{padding:10px var(--s3)}
+  .stat .v{font-size:var(--fs-lg)}
+  .section-title{margin-top:var(--s6)}
+}
 </style>
 </head>
 <body>
@@ -1191,6 +1082,12 @@ body.modal-open{overflow:hidden}
 
 <script type="text/babel" data-presets="react">
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
+
+/* =========================================================================
+   CONFIG — replace this URL with your actual Google Form
+   ========================================================================= */
+const REPORT_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_FORM_ID";
+const LINKEDIN_URL = "https://www.linkedin.com/in/hey-rishabh";
 
 /* =========================================================================
    PORTAL
@@ -1223,6 +1120,7 @@ function BrandMark({ size = 18 }) {
    ========================================================================= */
 function Icon({ name, size = 20, strokeWidth = 1.6, fill = 'none' }) {
   const paths = {
+    home:     <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></>,
     practice: <><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></>,
     history:  <><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></>,
     notes:    <><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></>,
@@ -1265,35 +1163,71 @@ function Icon({ name, size = 20, strokeWidth = 1.6, fill = 'none' }) {
 }
 
 /* =========================================================================
+   LINKEDIN ICON
+   ========================================================================= */
+function LinkedInIcon({ size = 14 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+    </svg>
+  );
+}
+
+/* =========================================================================
+   APP FOOTER
+   ========================================================================= */
+function AppFooter({ showReport = false }) {
+  return (
+    <footer className="app-footer">
+      <div className="footer-left">
+        <p className="footer-note">
+          Questions and answers come from the NPTEL assignment papers. Progress, history
+          and bookmarks are saved locally in your browser — use Settings &rarr; Export to
+          keep a backup.
+        </p>
+        {showReport && (
+          <p className="footer-note">
+            Spotted a wrong answer, typo, or mismatch?{' '}
+            <a
+              className="report-link"
+              href={REPORT_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Report a discrepancy
+            </a>
+            
+          </p>
+        )}
+      </div>
+<div className="footer-actions">
+  <span className="developed-tag">
+    Developed with
+    <span className="heart" role="img" aria-label="love">❤️</span>
+  </span>
+  <a
+    className="linkedin-btn"
+    href={LINKEDIN_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Connect on LinkedIn"
+  >
+    <LinkedInIcon size={14} />
+    <span>Connect</span>
+  </a>
+</div>
+    </footer>
+  );
+}
+
+/* =========================================================================
    SUBJECTS
    ========================================================================= */
 const SUBJECTS = [
-  {
-    id:        "psychology_of_learning",
-    name:      "Psychology of Learning",
-    file:      "Psychology_of_learning.json",
-    image:     "psychology.png",
-    institute: "IIT Kharagpur"
-  },
-  {
-    id:        "forests_and_their_management",
-    name:      "Forests and Their Management",
-    file:      "Forests_and_Their_Management.json",
-    institute: "NPTEL"
-  },
-  {
-    id:        "wildlife_ecology",
-    name:      "Wildlife Ecology",
-    file:      "Wildlife_Ecology.json", // Make sure this matches your exact filename
-    institute: "NPTEL"
-  },
-
-    {
-    id:        "introduction_to_internet_of_things",
-    name:      "Introduction to Internet of Things",
-    file:      "Introduction_to_Internet_of_Things.json",
-    institute: "NPTEL"
-  },
+  { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology.png", institute: "IIT Kharagpur" },
+  { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", institute: "NPTEL" },
+  { id: "wildlife_ecology", name: "Wildlife Ecology", file: "Wildlife_Ecology.json", institute: "NPTEL" },
+  { id: "introduction_to_internet_of_things", name: "Introduction to Internet of Things", file: "Introduction_to_Internet_of_Things.json", institute: "NPTEL" },
 ];
 
 const QUESTIONS_FOLDER = 'assets/';
@@ -1313,9 +1247,7 @@ const LS = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
   del(k) { try { localStorage.removeItem(k); } catch (e) {} },
 };
-
 const uid = () => Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-4);
-
 function shuffle(a) {
   const x = a.slice();
   for (let i = x.length - 1; i > 0; i--) { const j = (Math.random() * (i + 1)) | 0; [x[i], x[j]] = [x[j], x[i]]; }
@@ -1355,13 +1287,11 @@ function answerIndices(q) {
   else arr = [a];
   return arr.map(toIdx).filter((n) => n >= 0);
 }
-
 function sameSet(a, b) {
   if (a.length !== b.length) return false;
   const s = new Set(b);
   return a.every((x) => s.has(x));
 }
-
 function prepareQuestion(q, shuffleOpts) {
   if (!shuffleOpts || !q.options || q.options.length < 2) return q;
   const order = shuffle(q.options.map((_, i) => i));
@@ -1369,7 +1299,6 @@ function prepareQuestion(q, shuffleOpts) {
   order.forEach((oldI, newI) => { map[oldI] = newI; });
   return { ...q, options: order.map((i) => q.options[i]), answer: answerIndices(q).map((oi) => map[oi]) };
 }
-
 function useModalOpen() {
   useEffect(() => {
     document.body.classList.add('modal-open');
@@ -1385,24 +1314,18 @@ function normaliseSubject(raw, meta) {
   const title = meta.name || raw.course || 'Untitled subject';
   const institute = raw.institute || meta.institute || '';
   const term = raw.assignment || meta.term || '';
-
   const rawQs = raw.questions || raw.qs || [];
   const byWeek = {};
   rawQs.forEach((q, i) => {
-    // FIX: use nullish check so week:0 (e.g. Forests Week 0) isn't coerced to 1
     const week = q.week != null ? q.week : 1;
     if (!byWeek[week]) byWeek[week] = [];
-
     const options = (q.options || []).map((o) =>
-      typeof o === 'string' ? o
-      : (o && (o.text ?? o.value ?? o.label)) ?? String(o)
+      typeof o === 'string' ? o : (o && (o.text ?? o.value ?? o.label)) ?? String(o)
     );
-
     const answer =
       q.correctAnswer !== undefined ? q.correctAnswer :
       q.answer !== undefined ? q.answer :
       q.correct !== undefined ? q.correct : null;
-
     byWeek[week].push({
       id: q.id || (q.questionNo ? `W${week}-Q${q.questionNo}` : `W${week}-${i}`),
       question: q.question || q.text || '',
@@ -1412,12 +1335,10 @@ function normaliseSubject(raw, meta) {
       _week: week, _qno: q.questionNo, _type: q.type || 'MCQ',
     });
   });
-
   const assignments = Object.keys(byWeek)
     .map((w) => parseInt(w, 10))
     .sort((a, b) => a - b)
     .map((w) => ({ id: 'W' + w, name: 'Week ' + w, questions: byWeek[w] }));
-
   return { id, title, institute, term, assignments };
 }
 
@@ -1434,12 +1355,6 @@ const DEMO_SUBJECT = {
     { week: 1, questionNo: 1, type: 'MCQ', question: 'Which of the following is NOT a defining characteristic of cloud computing?',
       options: [{key:'A',text:'On-demand self-service'},{key:'B',text:'Broad network access'},{key:'C',text:'Resource pooling'},{key:'D',text:'Vendor lock-in'}],
       correctAnswer: 'D', explanation: 'Vendor lock-in is a risk, not a defining characteristic.' },
-    { week: 1, questionNo: 2, type: 'MCQ', question: 'In the NIST model, which service model lets you deploy applications but not manage the OS?',
-      options: [{key:'A',text:'IaaS'},{key:'B',text:'PaaS'},{key:'C',text:'SaaS'},{key:'D',text:'DaaS'}],
-      correctAnswer: 'B', explanation: 'PaaS gives you a runtime; you manage code, not servers.' },
-    { week: 1, questionNo: 3, type: 'MCQ', question: 'A hypervisor that runs directly on hardware is called a:',
-      options: [{key:'A',text:'Type-1 hypervisor'},{key:'B',text:'Type-2 hypervisor'},{key:'C',text:'Container runtime'},{key:'D',text:'Unikernel'}],
-      correctAnswer: 'A', explanation: 'Type-1 (bare-metal) runs on hardware; Type-2 runs on a host OS.' },
   ],
 };
 
@@ -1453,14 +1368,12 @@ const loadProgress = (sid) => {
   if (!p) return emptyProgress();
   return { questions: p.questions || {}, history: p.history || [], bookmarks: p.bookmarks || [] };
 };
-
 function allQuestions(subject) {
   if (!subject || !subject.assignments) return [];
   const out = [];
   subject.assignments.forEach((a) => a.questions.forEach((q) => out.push(q)));
   return out;
 }
-
 function weakQuestions(subject, progress) {
   const out = [];
   subject.assignments.forEach((a) => a.questions.forEach((q) => {
@@ -1471,7 +1384,6 @@ function weakQuestions(subject, progress) {
   }));
   return out.sort((x, y) => y.weight - x.weight || y.st.w - x.st.w);
 }
-
 function paceProfile(items) {
   const answered = items.filter((i) => !i.skipped);
   const avg = answered.length ? answered.reduce((s, i) => s + i.timeMs, 0) / answered.length : 0;
@@ -1484,7 +1396,6 @@ function paceProfile(items) {
   });
   return { counts, avg, thresh };
 }
-
 const PACE_META = {
   perfect:    { label: 'Perfect',     icon: 'zap',      cls: 'green', desc: 'Correct and quick' },
   deliberate: { label: 'Deliberate',  icon: 'brain',    cls: 'blue',  desc: 'Correct but slow' },
@@ -1498,7 +1409,6 @@ const PACE_META = {
 function Switch({ on, onChange }) {
   return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on} aria-label="Toggle"><i /></button>;
 }
-
 function Stepper({ value, onChange, min = 1, max = 999, step = 5 }) {
   const clamp = (v) => Math.min(max, Math.max(min, v));
   return (
@@ -1509,21 +1419,14 @@ function Stepper({ value, onChange, min = 1, max = 999, step = 5 }) {
     </div>
   );
 }
-
 function ThemePicker({ accent, onChange }) {
   return (
     <div className="theme-picker" role="radiogroup" aria-label="Accent colour">
       {ACCENTS.map((t) => {
         const selected = accent === t.id;
         return (
-          <button
-            key={t.id}
-            type="button"
-            role="radio"
-            aria-checked={selected}
-            className={'theme-swatch' + (selected ? ' selected' : '')}
-            onClick={() => onChange(t.id)}
-          >
+          <button key={t.id} type="button" role="radio" aria-checked={selected}
+            className={'theme-swatch' + (selected ? ' selected' : '')} onClick={() => onChange(t.id)}>
             <span className="swatch-circle" style={{ background: t.color }}>
               {selected && <Icon name="check" size={13} strokeWidth={2.4} />}
             </span>
@@ -1534,7 +1437,6 @@ function ThemePicker({ accent, onChange }) {
     </div>
   );
 }
-
 function PaceProfile({ items }) {
   const { counts, avg, thresh } = paceProfile(items);
   const total = Object.values(counts).reduce((a, b) => a + b, 0);
@@ -1563,7 +1465,6 @@ function PaceProfile({ items }) {
     </div>
   );
 }
-
 function PaceJourney({ items }) {
   const max = Math.max(1, ...items.map((i) => i.timeMs));
   return (
@@ -1589,7 +1490,6 @@ function PaceJourney({ items }) {
     </div>
   );
 }
-
 function SubjectAvatar({ subject }) {
   const [failed, setFailed] = useState(false);
   const letter = (subject.name || 'S').trim().charAt(0).toUpperCase();
@@ -1615,23 +1515,15 @@ function SubjectSheet({ subjects, currentId, onPick, onClose }) {
   return (
     <Portal>
       <div className="overlay" onClick={onClose}>
-        <div
-          className="modal"
-          style={{ maxWidth: 520 }}
-          onClick={(e) => e.stopPropagation()}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="subject-sheet-title"
-        >
+        <div className="modal" style={{ maxWidth: 520 }} onClick={(e) => e.stopPropagation()}
+          role="dialog" aria-modal="true" aria-labelledby="subject-sheet-title">
           <div className="sheet-handle" />
           <div className="modal-head">
             <div style={{ minWidth: 0 }}>
               <h3 id="subject-sheet-title">Switch subject</h3>
               <div className="tiny">Pick a course — progress is stored separately for each.</div>
             </div>
-            <button className="icon-btn" onClick={onClose} aria-label="Close">
-              <Icon name="x" size={17} />
-            </button>
+            <button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17} /></button>
           </div>
           <div className="modal-body">
             <div className="subject-list subject-list--sheet">
@@ -1643,12 +1535,10 @@ function SubjectSheet({ subjects, currentId, onPick, onClose }) {
                 const active = s.id === currentId;
                 const statsText = att ? `${seen} seen · ${pct(cor, att)}% accuracy` : 'Not started';
                 return (
-                  <button
-                    key={s.id}
+                  <button key={s.id}
                     className={'subject-card' + (active ? ' subject-card--current' : '')}
                     aria-current={active ? 'true' : undefined}
-                    onClick={() => onPick(s.id)}
-                  >
+                    onClick={() => onPick(s.id)}>
                     <SubjectAvatar subject={s} />
                     <span className="meta">
                       <span className="ttl">{s.name}</span>
@@ -1672,9 +1562,9 @@ function SubjectSheet({ subjects, currentId, onPick, onClose }) {
 }
 
 /* =========================================================================
-   SUBJECT PICKER
+   LANDING / HOME PAGE (subject picker)
    ========================================================================= */
-function SubjectPicker({ subjects, onPick, banner }) {
+function LandingPage({ subjects, onPick, banner }) {
   const features = [
     { icon: 'target',    title: 'Complete question bank', desc: 'Every multiple-choice question from the weekly assignments, in one place.' },
     { icon: 'layers',    title: 'Four practice modes',    desc: 'Random sets, chosen weeks, weak-question drills, or bookmarked questions.' },
@@ -1691,7 +1581,7 @@ function SubjectPicker({ subjects, onPick, banner }) {
   ];
 
   return (
-    <main className="page wrap">
+    <div className="page wrap">
       <header className="hero">
         <div className="hero-mark"><BrandMark size={22} /></div>
         <h1>Master your NPTEL exams with focused MCQ practice</h1>
@@ -1708,18 +1598,9 @@ function SubjectPicker({ subjects, onPick, banner }) {
         </div>
 
         <div className="hero-stats">
-          <div className="hero-stat">
-            <strong>6</strong>
-            <span>Practice modes</span>
-          </div>
-          <div className="hero-stat">
-            <strong>4</strong>
-            <span>Pace insights</span>
-          </div>
-          <div className="hero-stat">
-            <strong>0</strong>
-            <span>Sign-ups</span>
-          </div>
+          <div className="hero-stat"><strong>{subjects.length}</strong><span>Subjects</span></div>
+          <div className="hero-stat"><strong>6</strong><span>Practice modes</span></div>
+          <div className="hero-stat"><strong>0</strong><span>Sign-ups</span></div>
         </div>
       </header>
 
@@ -1736,7 +1617,10 @@ function SubjectPicker({ subjects, onPick, banner }) {
               {s.institute && <span className="sub">{s.institute}</span>}
             </span>
             <span className="arrow"><Icon name="arrowR" size={18} /></span>
-            <span className="subject-start" aria-hidden="true">Start<span className="subject-start-more"> practice</span><Icon name="arrowR" size={13} /></span>
+            <span className="subject-start" aria-hidden="true">
+              Start<span className="subject-start-more"> practice</span>
+              <Icon name="arrowR" size={13} />
+            </span>
           </button>
         ))}
         {!subjects.length && (
@@ -1815,17 +1699,13 @@ function SubjectPicker({ subjects, onPick, banner }) {
         </div>
       </div>
 
-      <footer className="page-footer">
-        Questions and answers come from the NPTEL assignment papers. Progress, history
-        and bookmarks are saved locally in your browser — use Settings &rarr; Export to
-        keep a backup.
-      </footer>
-    </main>
+      <AppFooter showReport={false} />
+    </div>
   );
 }
 
 /* =========================================================================
-   HOME
+   SUBJECT HOME (practice)
    ========================================================================= */
 function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory, onSwitchSubject }) {
   if (!subject) return null;
@@ -1833,7 +1713,6 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
   const [count, setCount] = useState(() => Math.min(20, Math.max(1, bank.length)));
   const [picked, setPicked] = useState([]);
   const [customCount, setCustomCount] = useState(10);
-
   const qStats = progress.questions;
   const totalAttempts = Object.values(qStats).reduce((s, x) => s + (x.a || 0), 0);
   const totalCorrect = Object.values(qStats).reduce((s, x) => s + (x.c || 0), 0);
@@ -1842,7 +1721,6 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
   const bookmarks = progress.bookmarks || [];
   const poolCustom = picked.length ? bank.filter((q) => picked.includes(q._aid)) : [];
   const lastRun = progress.history[0];
-
   const togglePick = (aid) => setPicked((p) => (p.includes(aid) ? p.filter((x) => x !== aid) : [...p, aid]));
 
   return (
@@ -1885,9 +1763,7 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
 
       <h2 className="section-title">Quick practice</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>
-          A random set drawn from the entire question bank.
-        </p>
+        <p className="muted" style={{ marginBottom: 16 }}>A random set drawn from the entire question bank.</p>
         <div className="col">
           <div className="row between" style={{ rowGap: 10 }}>
             <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
@@ -1906,9 +1782,7 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
 
       <h2 className="section-title">Custom set</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>
-          Choose specific weeks, then set how many questions to draw.
-        </p>
+        <p className="muted" style={{ marginBottom: 16 }}>Choose specific weeks, then set how many questions to draw.</p>
         <div className="grid g2" style={{ marginBottom: 16 }}>
           {subject.assignments.map((a) => {
             const on = picked.includes(a.id);
@@ -1994,6 +1868,8 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
           );
         })}
       </div>
+
+      <AppFooter showReport={true} />
     </div>
   );
 }
@@ -2009,7 +1885,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   const [records, setRecords] = useState([]);
   const [elapsed, setElapsed] = useState(0);
   const [flash, setFlash] = useState(null);
-
   const qStart = useRef(Date.now());
   const t0 = useRef(Date.now());
   const flashTimer = useRef(null);
@@ -2112,7 +1987,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   return (
     <div className="app">
       {flash && <div className={'flash ' + flash} />}
-
       <div className="topbar">
         <div className="wrap">
           <div className="topbar-in">
@@ -2127,9 +2001,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
               <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={16} />
             </button>
           </div>
-          <div className="pbar" style={{ marginBottom: 10 }}>
-            <i style={{ width: progressPct + '%' }} />
-          </div>
+          <div className="pbar" style={{ marginBottom: 10 }}><i style={{ width: progressPct + '%' }} /></div>
         </div>
       </div>
 
@@ -2140,7 +2012,6 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
             {multi && <span className="badge amber">Select {correctIdx.length}</span>}
             <span className="tiny" style={{ marginLeft: 'auto' }}>{correctCount} correct so far</span>
           </div>
-
           <div className="card">
             <div className="qtext" style={{ fontSize: 16 }}>{q.question}</div>
             <div style={{ marginTop: 14 }}>
@@ -2172,16 +2043,13 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
               </div>
             )}
           </div>
-
           <div className="quiz-actions">
             <div className="quiz-actions-meta">
               <span className="tiny">Question {idx + 1}</span>
               <span className="tiny">{questions.length - idx - 1} remaining</span>
             </div>
             <div className="quiz-actions-row">
-              <button className="btn" onClick={skip} disabled={locked}>
-                <Icon name="skip" size={13} /> Skip
-              </button>
+              <button className="btn" onClick={skip} disabled={locked}><Icon name="skip" size={13} /> Skip</button>
               <button className={'btn ' + (locked || needsSubmit ? 'primary' : 'soft')} onClick={primaryAction} disabled={primaryDisabled}>
                 {primaryLabel}
                 {locked && !isLast && <Icon name="arrowR" size={15} />}
@@ -2201,7 +2069,6 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
   const accuracy = pct(result.score, result.total);
   const wrongItems = result.items.filter((i) => !i.correct && !i.skipped);
   const [openItem, setOpenItem] = useState(null);
-
   const verdict = accuracy === 100 ? { t: 'Perfect score', c: 'green' }
     : accuracy >= 80 ? { t: 'Strong result', c: 'green' }
     : accuracy >= 50 ? { t: 'Getting there', c: 'amber' }
@@ -2299,10 +2166,8 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
               <div className="stat"><div className="v">{fmtClock(run.total ? run.timeTotal / run.total : 0)}</div><div className="l">Avg pace</div></div>
               <div className="stat"><div className="v">{fmtClock(run.timeTotal)}</div><div className="l">Total</div></div>
             </div>
-
             <div style={{ marginTop: 24 }}><PaceProfile items={run.items} /></div>
             <div style={{ marginTop: 24 }}><PaceJourney items={run.items} /></div>
-
             <h2 className="section-title">Questions</h2>
             <div className="qreview-list">
               {run.items.map((it, i) => {
@@ -2355,6 +2220,7 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
           <h3>No tests yet</h3>
           <p>Take a practice quiz and it will appear here.</p>
         </div>
+        <AppFooter showReport={true} />
       </div>
     );
   }
@@ -2369,13 +2235,11 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
         <h1>History</h1>
         <button className="btn sm danger" onClick={onClear}>Clear history</button>
       </div>
-
       <div className="grid g3" style={{ marginBottom: 20 }}>
         <div className="stat"><div className="v">{totalTests}</div><div className="l">Tests</div></div>
         <div className="stat"><div className="v">{avgAcc}%</div><div className="l">Avg accuracy</div></div>
         <div className="stat"><div className="v">{bestAcc}%</div><div className="l">Best</div></div>
       </div>
-
       {runs.map((r) => {
         const a = pct(r.score, r.total);
         const cls = a >= 80 ? 'good' : a >= 50 ? 'mid' : 'bad';
@@ -2393,8 +2257,8 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
           </div>
         );
       })}
-
       {open && <HistoryDetail run={open} qmap={qmap} onClose={() => setOpen(null)} onStudyAssignment={onStudyAssignment} />}
+      <AppFooter showReport={true} />
     </div>
   );
 }
@@ -2405,7 +2269,6 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
 function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
   const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
   const [showAnswers, setShowAnswers] = useState(true);
-
   const byAssignment = useMemo(() => {
     const m = {};
     weak.forEach((w) => {
@@ -2429,6 +2292,7 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
               : 'Attempt a few quizzes and your cheatsheet will build itself.'}
           </p>
         </div>
+        <AppFooter showReport={true} />
       </div>
     );
   }
@@ -2447,7 +2311,6 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
           {showAnswers ? 'Hide answers' : 'Show answers'}
         </button>
       </div>
-
       <div className="card">
         <h3>Focus weeks</h3>
         <p className="muted" style={{ margin: '8px 0 16px' }}>Open a week's notes to study it in full.</p>
@@ -2467,7 +2330,6 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
           <Icon name="play" size={13} /> Drill all {weak.length} weak questions
         </button>
       </div>
-
       <h2 className="section-title">Revision notes</h2>
       {weak.map(({ q, st }) => {
         const ans = answerIndices(q);
@@ -2500,6 +2362,7 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
           </div>
         );
       })}
+      <AppFooter showReport={true} />
     </div>
   );
 }
@@ -2571,16 +2434,9 @@ function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAcce
                 <div className="lbl">Current subject</div>
                 <div className="hint">{subject ? subject.title : '—'}</div>
               </div>
-              <select
-                value={subject ? subject.id : ''}
-                onChange={(e) => onChangeSubject(e.target.value)}
+              <select value={subject ? subject.id : ''} onChange={(e) => onChangeSubject(e.target.value)}
                 aria-label="Current subject"
-                style={{
-                  padding: '8px 11px', borderRadius: 8, border: '1px solid var(--border)',
-                  background: 'var(--surface)', color: 'var(--text)', fontWeight: 500,
-                  maxWidth: '55%', fontSize: 14,
-                }}
-              >
+                style={{ padding: '8px 11px', borderRadius: 8, border: '1px solid var(--border)', background: 'var(--surface)', color: 'var(--text)', fontWeight: 500, maxWidth: '55%', fontSize: 14 }}>
                 {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
               </select>
             </div>
@@ -2659,7 +2515,11 @@ function App() {
   const [banner, setBanner] = useState(null);
   const cacheRef = useRef({});
 
-  const [screen, setScreen] = useState('loading');
+  // Default screen: landing if no subject stored, home if there is one
+  const [screen, setScreen] = useState(() => {
+    const sid = LS.get('nptel.currentSubject', null);
+    return sid ? 'loading' : 'landing';
+  });
   const [quizConfig, setQuizConfig] = useState(null);
   const [result, setResult] = useState(null);
   const [notesAssignment, setNotesAssignment] = useState(null);
@@ -2683,11 +2543,14 @@ function App() {
 
   useEffect(() => {
     if (!subjectId || !subjectIndex.some((s) => s.id === subjectId)) {
-      setScreen('select'); setSubject(null); return;
+      setSubject(null); setProgress(null);
+      if (screen !== 'landing') setScreen('landing');
+      return;
     }
     let cancelled = false;
     (async () => {
-      setScreen('loading');
+      // Only show loading briefly the first time we load this subject
+      if (!cacheRef.current[subjectId]) setScreen('loading');
       setBanner(null);
       try {
         const meta = subjectIndex.find((s) => s.id === subjectId);
@@ -2709,7 +2572,7 @@ function App() {
       } catch (err) {
         if (cancelled) return;
         setBanner('Failed to load subject: ' + err.message);
-        setScreen('select');
+        setScreen('landing');
       }
     })();
     return () => { cancelled = true; };
@@ -2795,6 +2658,7 @@ function App() {
     cacheRef.current = {};
     setSubject(null); setProgress(null);
     setShowSettings(false);
+    setScreen('loading');
   };
 
   const exportProgress = () => {
@@ -2835,6 +2699,16 @@ function App() {
     setScreen('notes');
   };
 
+  // Navigation handler — guards against screens that need a subject
+  const navigate = useCallback((target) => {
+    if (target !== 'landing' && target !== 'loading' && !subject) {
+      setScreen('landing');
+      return;
+    }
+    setScreen(target);
+  }, [subject]);
+
+  /* --- Loading screen (subject being fetched) --- */
   if (screen === 'loading') {
     return (
       <div className="center">
@@ -2846,10 +2720,7 @@ function App() {
     );
   }
 
-  if (screen === 'select') {
-    return <SubjectPicker subjects={subjectIndex} banner={banner} onPick={changeSubject} />;
-  }
-
+  /* --- Quiz takes over the whole screen --- */
   if (screen === 'quiz' && quizConfig) {
     return (
       <QuizRunner
@@ -2863,39 +2734,44 @@ function App() {
   }
 
   const navItems = [
-    { id: 'home', label: 'Practice', icon: 'practice' },
-    { id: 'history', label: 'History', icon: 'history' },
+    { id: 'landing',    label: 'Home',       icon: 'home' },
+    { id: 'home',       label: 'Practice',   icon: 'practice' },
+    { id: 'history',    label: 'History',    icon: 'history' },
     { id: 'cheatsheet', label: 'Cheatsheet', icon: 'notes' },
   ];
   const isNotes = screen === 'notes';
   const activeTab = isNotes ? 'cheatsheet' : screen;
+  const hideTabs = screen === 'landing';
 
   return (
     <div className="app">
       <div className="topbar">
         <div className="wrap">
           <div className="topbar-in">
-            <button className="brand" onClick={() => setScreen('home')} aria-label="Go to home">
+            <button className="brand" onClick={() => navigate('landing')} aria-label="Go to home">
               <span className="brand-mark"><BrandMark size={18} /></span>
               <span className="brand-text">
                 <span className="brand-title">Mooc Mastery</span>
-                <span className="brand-sub">{subject ? subject.title : 'NPTEL MCQ practice'}</span>
+                <span className="brand-sub">
+                  {screen === 'landing' || !subject ? 'NPTEL MCQ practice' : subject.title}
+                </span>
               </span>
             </button>
-            {subject && (
-              <button
-                className="switch-btn"
-                onClick={() => setShowSubjects(true)}
-                title="Switch subject"
-                aria-haspopup="dialog"
-              >
+            {subject && screen !== 'landing' && (
+              <button className="switch-btn" onClick={() => setShowSubjects(true)}
+                title="Switch subject" aria-haspopup="dialog">
                 <Icon name="swap" size={14} />
                 <span className="switch-btn-label">Switch</span>
               </button>
             )}
             <nav className="top-tabs" aria-label="Main">
               {navItems.map((t) => (
-                <button key={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)} aria-current={activeTab === t.id ? 'page' : undefined}>{t.label}</button>
+                <button key={t.id}
+                  className={activeTab === t.id ? 'active' : ''}
+                  onClick={() => navigate(t.id)}
+                  aria-current={activeTab === t.id ? 'page' : undefined}>
+                  {t.label}
+                </button>
               ))}
             </nav>
             <div className="top-actions">
@@ -2910,13 +2786,21 @@ function App() {
         </div>
       </div>
 
-      {banner && screen !== 'select' && (
+      {banner && screen !== 'landing' && (
         <div className="wrap" style={{ paddingTop: 12 }}><div className="banner">{banner}</div></div>
       )}
 
       <div style={{ flex: 1 }} className="app-main" key={screen}>
+        {screen === 'landing' && (
+          <LandingPage
+            subjects={subjectIndex}
+            banner={banner}
+            onPick={changeSubject}
+          />
+        )}
+
         {screen === 'home' && subject && (
-           <HomeView
+          <HomeView
             subject={subject} progress={progress}
             onStartRandom={startRandom} onStartCustom={startCustom}
             onStartWeak={startWeak} onStartBookmarks={startBookmarks}
@@ -2934,7 +2818,7 @@ function App() {
           />
         )}
 
-        {screen === 'history' && (
+        {screen === 'history' && subject && (
           <HistoryView
             progress={progress} qmap={qmap}
             onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
@@ -2942,7 +2826,7 @@ function App() {
           />
         )}
 
-        {screen === 'cheatsheet' && (
+        {screen === 'cheatsheet' && subject && (
           <CheatsheetView
             subject={subject} progress={progress}
             onStudy={openStudy} onPracticeWeak={startWeak}
@@ -2960,7 +2844,10 @@ function App() {
 
       <nav className="bottom-nav" aria-label="Main">
         {navItems.map((t) => (
-          <button key={t.id} data-tab={t.id} className={activeTab === t.id ? 'active' : ''} onClick={() => setScreen(t.id)} aria-current={activeTab === t.id ? 'page' : undefined}>
+          <button key={t.id} data-tab={t.id}
+            className={activeTab === t.id ? 'active' : ''}
+            onClick={() => navigate(t.id)}
+            aria-current={activeTab === t.id ? 'page' : undefined}>
             <Icon name={t.icon} size={20} strokeWidth={1.5} />
             <span>{t.label}</span>
           </button>
