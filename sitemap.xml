@@ -3,12 +3,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://moocmastery.com/</loc>
+    <loc>https://mooc-mastery.vercel.app/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://moocmastery.com/asset_image/og-cover.png</image:loc>
+      <image:loc>https://mooc-mastery.vercel.app/asset_image/og-cover.png</image:loc>
       <image:title>Mooc Mastery — NPTEL MCQ Practice 2026</image:title>
     </image:image>
   </url>

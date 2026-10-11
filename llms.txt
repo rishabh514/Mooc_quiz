@@ -16,11 +16,11 @@ Mooc Mastery is a single-page web app (SPA) that hosts the complete multiple-cho
 
 ## Courses
 
-- [The Joy of Computing using Python](https://moocmastery.com/#joy_of_computing_using_python): IIT Ropar / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes covering Python fundamentals, loops, lists, dictionaries, recursion and algorithms.
-- [Psychology of Learning](https://moocmastery.com/#psychology_of_learning): IIT Kharagpur / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Forests and Their Management](https://moocmastery.com/#forests_and_their_management): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Wildlife Ecology](https://moocmastery.com/#wildlife_ecology): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Introduction to Internet of Things](https://moocmastery.com/#introduction_to_internet_of_things): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [The Joy of Computing using Python](https://mooc-mastery.vercel.app/#joy_of_computing_using_python): IIT Ropar / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes covering Python fundamentals, loops, lists, dictionaries, recursion and algorithms.
+- [Psychology of Learning](https://mooc-mastery.vercel.app/#psychology_of_learning): IIT Kharagpur / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Forests and Their Management](https://mooc-mastery.vercel.app/#forests_and_their_management): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Wildlife Ecology](https://mooc-mastery.vercel.app/#wildlife_ecology): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Introduction to Internet of Things](https://mooc-mastery.vercel.app/#introduction_to_internet_of_things): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
 
 ## Features
 

@@ -43,5 +43,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://moocmastery.com/sitemap.xml
-Host: https://moocmastery.com
+Sitemap: https://mooc-mastery.vercel.app/sitemap.xml
+Host: https://mooc-mastery.vercel.app
