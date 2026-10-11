@@ -150,6 +150,50 @@ a:hover{text-decoration:underline}
 .qtext,.qreview-question,.option .body,.opts li,.explain,.reveal-explain{
   overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;
 }
+/* Code block and formatting styles for programming questions */
+.code-block {
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r);
+  padding: var(--s3) var(--s4);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  color: var(--text);
+  overflow-x: auto;
+  margin: var(--s3) 0;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  max-width: 100%;
+}
+.code-block code {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  padding: 0;
+  border: 0;
+}
+.inline-code {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+}
+.case-study-box {
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  padding: var(--s3) var(--s4);
+  border-radius: 0 var(--r) var(--r) 0;
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  color: var(--text-2);
+  margin-bottom: var(--s3);
+}
 @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
@@ -1092,6 +1136,63 @@ function Portal({ children }) {
   return ReactDOM.createPortal(children, el);
 }
 
+/* ─── FormattedText ──────────────────────────────────────────────────────────
+   Renders markdown-ish content:
+     • ```lang ... ``` fenced code blocks  → <pre class="code-block">
+     • `inline code`                       → <code class="inline-code">
+     • Plain newlines                      → <br>
+   Plain strings without any markers render identically to before.
+   ─────────────────────────────────────────────────────────────────────────── */
+function FormattedText({ text }) {
+  if (text == null) return null;
+  const str = String(text);
+  if (!str) return null;
+
+  const parts = str.split(/(```[\s\S]*?```)/g);
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (part.startsWith('```') && part.endsWith('```') && part.length >= 6) {
+          const code = part.replace(/^```[a-zA-Z0-9_+-]*\n?/, '').replace(/```$/, '');
+          return (
+            <pre key={index} className="code-block">
+              <code>{code}</code>
+            </pre>
+          );
+        }
+        // Split inline code segments
+        const inlineParts = part.split(/(`[^`\n]+`)/g);
+        return (
+          <React.Fragment key={index}>
+            {inlineParts.map((sub, sIdx) => {
+              if (sub.length >= 2 && sub.startsWith('`') && sub.endsWith('`')) {
+                return (
+                  <code key={sIdx} className="inline-code">
+                    {sub.slice(1, -1)}
+                  </code>
+                );
+              }
+              // Preserve newlines in plain text
+              if (sub.indexOf('\n') === -1) return sub;
+              const lines = sub.split('\n');
+              return (
+                <React.Fragment key={sIdx}>
+                  {lines.map((line, lIdx) => (
+                    <React.Fragment key={lIdx}>
+                      {lIdx > 0 && <br />}
+                      {line}
+                    </React.Fragment>
+                  ))}
+                </React.Fragment>
+              );
+            })}
+          </React.Fragment>
+        );
+      })}
+    </>
+  );
+}
+
 function BrandMark({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1187,6 +1288,7 @@ function AppFooter({ showReport = false }) {
 }
 
 const SUBJECTS = [
+  { id: "joy_of_computing_using_python", name: "The Joy of Computing using Python", file: "joy_of_computing.json", institute: "IIT Ropar / NPTEL" },
   { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology.png", institute: "IIT Kharagpur" },
   { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", institute: "NPTEL" },
   { id: "wildlife_ecology", name: "Wildlife Ecology", file: "Wildlife_Ecology.json", institute: "NPTEL" },
@@ -1951,7 +2053,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
             <span className="tiny" style={{ marginLeft: 'auto' }}>{correctCount} correct so far</span>
           </div>
           <div className="card">
-            <div className="qtext" style={{ fontSize: 16 }}>{q.question}</div>
+            <div className="qtext" style={{ fontSize: 16 }}><FormattedText text={q.question} /></div>
             <div style={{ marginTop: 14 }}>
               {q.options.map((opt, i) => {
                 const isSel = selected.includes(i);
@@ -1977,7 +2079,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
                   {isCorrect ? <><Icon name="check" size={15} /> Correct</> : <><Icon name="x" size={15} /> Incorrect</>}
                 </div>
                 <div className="reveal-answer">Correct answer: <b>{correctIdx.map(i => String.fromCharCode(65 + i)).join(', ')}</b></div>
-                {q.explanation && <div className="reveal-explain"><b>Why:</b> {q.explanation}</div>}
+                {q.explanation && <div className="reveal-explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
               </div>
             )}
           </div>
@@ -2054,7 +2156,7 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
                 </span>
                 <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
               </div>
-              <div className="qreview-question">{q ? q.question : '(missing)'}</div>
+              <div className="qreview-question"><FormattedText text={q ? q.question : '(missing)'} /></div>
               <div className="qreview-answers">
                 <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : 'skipped'}</span></div>
                 {!it.correct && <div>Correct answer: <span className="ok">{it.ans.join(' · ')}</span></div>}
@@ -2064,7 +2166,7 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
                   <button className="btn sm" style={{ marginTop: 10 }} onClick={() => setOpenItem(open ? null : i)}>
                     {open ? 'Hide explanation' : 'Show explanation'}
                   </button>
-                  {open && <div className="explain">{q.explanation}</div>}
+                  {open && <div className="explain"><FormattedText text={q.explanation} /></div>}
                 </>
               )}
             </div>
@@ -2115,7 +2217,7 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
                       </span>
                       <span className="tiny" style={{ fontVariantNumeric: 'tabular-nums' }}>{(it.timeMs / 1000).toFixed(1)}s</span>
                     </div>
-                    <div className="qreview-question">{q ? q.question : it.qid}</div>
+                    <div className="qreview-question"><FormattedText text={q ? q.question : it.qid} /></div>
                     <div className="qreview-answers">
                       <div>Your answer: <span className={it.correct ? 'ok' : 'bad'}>{it.sel.length ? it.sel.join(' · ') : 'skipped'}</span></div>
                       {!it.correct && <div>Correct answer: <span className="ok">{it.ans.join(' · ')}</span></div>}
@@ -2125,7 +2227,7 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
                         <button className="btn sm" style={{ marginTop: 10 }} onClick={() => setOpenIdx(open ? null : i)}>
                           {open ? 'Hide explanation' : 'Show explanation'}
                         </button>
-                        {open && <div className="explain">{q.explanation}</div>}
+                        {open && <div className="explain"><FormattedText text={q.explanation} /></div>}
                       </>
                     )}
                   </div>
@@ -2269,7 +2371,7 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
               <span className="badge grey">{q._aname}</span>
               <span className="badge red" style={{ marginLeft: 'auto' }}>{pct(st.c, st.a)}%</span>
             </div>
-            <div className="qtext" style={{ fontSize: 'var(--fs-sm)' }}>{q.question}</div>
+            <div className="qtext" style={{ fontSize: 'var(--fs-sm)' }}><FormattedText text={q.question} /></div>
             {showAnswers ? (
               <>
                 <ul className="opts">
@@ -2281,7 +2383,7 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
                     </li>
                   ))}
                 </ul>
-                {q.explanation && <div className="explain"><b>Why:</b> {q.explanation}</div>}
+                {q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
               </>
             ) : (
               <button className="btn sm" onClick={() => setShowAnswers(true)}>
@@ -2321,7 +2423,7 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
               {st && st.c > 0 && <span className="badge green">right {st.c}×</span>}
               {!st && <span className="badge grey">new</span>}
             </div>
-            <div className="qtext">{q.question}</div>
+            <div className="qtext"><FormattedText text={q.question} /></div>
             <ul className="opts">
               {q.options.map((o, j) => (
                 <li key={j} className={ans.includes(j) ? 'ans' : ''}>
@@ -2331,7 +2433,7 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
                 </li>
               ))}
             </ul>
-            {q.explanation && <div className="explain"><b>Why:</b> {q.explanation}</div>}
+            {q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
           </div>
         );
       })}
@@ -2429,15 +2531,12 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showSubjects, setShowSubjects] = useState(false);
 
-  // ── CHANGE 1: default subjectId to Psychology if none is stored ──
   const [subjectId, setSubjectId] = useState(() => LS.get('nptel.currentSubject', null) || SUBJECTS[0].id);
   const [subject, setSubject] = useState(null);
   const [progress, setProgress] = useState(null);
   const [banner, setBanner] = useState(null);
   const cacheRef = useRef({});
 
-  // Default screen: landing if this is a fresh visit (no stored subject),
-  // otherwise jump straight into that subject's Practice page.
   const [screen, setScreen] = useState(() => {
     const sid = LS.get('nptel.currentSubject', null);
     return sid ? 'loading' : 'landing';
@@ -2458,7 +2557,6 @@ function App() {
 
   useEffect(() => { LS.set('nptel.settings', settings); }, [settings]);
 
-  // ── CHANGE 2: persist subjectId whenever it changes ──
   useEffect(() => { if (subjectId) LS.set('nptel.currentSubject', subjectId); }, [subjectId]);
 
   const subjectIndex = useMemo(
@@ -2466,10 +2564,8 @@ function App() {
     []
   );
 
-  // ── CHANGE 3: rewritten subject-loading effect ──
   useEffect(() => {
     if (!subjectId || !subjectIndex.some((s) => s.id === subjectId)) {
-      // Stored id is invalid (e.g. subject removed) — fall back to first subject
       if (subjectIndex.length) setSubjectId(subjectIndex[0].id);
       return;
     }
@@ -2492,8 +2588,6 @@ function App() {
         if (cancelled) return;
         setSubject(norm);
         setProgress(loadProgress(subjectId));
-        // Only auto-route to home if we were in the loading state.
-        // Otherwise leave the current screen alone (e.g. stay on landing).
         setScreen(prev => prev === 'loading' ? 'home' : prev);
       } catch (err) {
         if (cancelled) return;
@@ -2625,12 +2719,10 @@ function App() {
     setScreen('notes');
   };
 
-  // ── CHANGE 4: remove navigation guard, allow any tab at any time ──
   const navigate = useCallback((target) => {
     setScreen(target);
   }, []);
 
-  // ── CHANGE 5: extend loading fallback for subject-dependent screens ──
   if (screen === 'loading' || (screen !== 'landing' && !subject)) {
     return (
       <div className="center">
