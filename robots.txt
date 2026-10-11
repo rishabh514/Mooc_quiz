@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+# Mooc Mastery — robots.txt
+# NPTEL / Swayam MCQ practice, mock tests & exam-ready notes
+# ─────────────────────────────────────────────────────────────
+
+User-agent: *
+Allow: /
+Disallow: /assets/*.map
+Disallow: /node_modules/
+Disallow: /.git/
+
+# AI / LLM crawlers — explicitly allowed for AEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://moocmastery.com/sitemap.xml
+Host: https://moocmastery.com

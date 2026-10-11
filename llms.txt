@@ -1,0 +1,65 @@
+# Mooc Mastery
+
+> Free NPTEL / Swayam MCQ practice, mock tests, exam-ready notes and cheatsheets for five 2026 GEC (General Elective) courses. Week 1–12 assignment answers with explanations. No account, no server — progress stays in the browser.
+
+Mooc Mastery is a single-page web app (SPA) that hosts the complete multiple-choice question bank from the weekly NPTEL / Swayam assignments for the July–October 2026 semester. Each question includes four options, the correct answer and a written explanation. Practice modes include random sets, custom week-by-week sets, weak-question drills, bookmarked questions and timed mock tests.
+
+## Key Facts
+
+- **Purpose:** NPTEL and Swayam exam preparation for GEC (General Elective) courses.
+- **Semester:** July–October 2026.
+- **Weeks covered:** Week 1 through Week 12 for every course.
+- **Cost:** Free. No sign-up, no account, no ads, no server.
+- **Data storage:** Browser localStorage. Progress is never uploaded.
+- **Answer format:** Every question has a correct option plus a short explanatory note.
+- **Languages:** English.
+
+## Courses
+
+- [The Joy of Computing using Python](https://moocmastery.com/#joy_of_computing_using_python): IIT Ropar / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes covering Python fundamentals, loops, lists, dictionaries, recursion and algorithms.
+- [Psychology of Learning](https://moocmastery.com/#psychology_of_learning): IIT Kharagpur / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Forests and Their Management](https://moocmastery.com/#forests_and_their_management): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Wildlife Ecology](https://moocmastery.com/#wildlife_ecology): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+- [Introduction to Internet of Things](https://moocmastery.com/#introduction_to_internet_of_things): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+
+## Features
+
+- **Practice mode:** Random sets or custom week selections, from 1 up to the full bank.
+- **Mock test mode:** Timed test run with per-question pace analytics.
+- **Weak-question drill:** Auto-generated list of every question missed twice or more.
+- **Cheatsheet:** A revision page that collects exactly the questions you keep getting wrong.
+- **Bookmarks:** Save individual questions for later.
+- **Pace analytics:** See where you rush and where you get stuck, question by question.
+- **No account, no server:** All progress is stored locally in the browser.
+- **Export / Import:** Save a JSON backup of progress and restore it on any device.
+
+## Frequently Asked Questions
+
+### What is Mooc Mastery?
+Mooc Mastery is a free web app for practising NPTEL and Swayam multiple-choice questions (MCQs). It hosts the weekly assignment question bank for five courses — The Joy of Computing using Python, Psychology of Learning, Forests and Their Management, Wildlife Ecology, and Introduction to Internet of Things — with the correct answer and a written explanation for every question.
+
+### Is Mooc Mastery free?
+Yes. Mooc Mastery is completely free, with no account, no ads, no paywall and no server.
+
+### Do I need to sign up to use Mooc Mastery?
+No. Mooc Mastery requires no account and no email. Progress, history, bookmarks and settings are stored locally in your browser using localStorage.
+
+### Which NPTEL courses are covered on Mooc Mastery?
+Five NPTEL / Swayam GEC (General Elective) courses are covered: The Joy of Computing using Python (IIT Ropar), Psychology of Learning (IIT Kharagpur), Forests and Their Management, Wildlife Ecology, and Introduction to Internet of Things. Each course includes week 1 through week 12 MCQs.
+
+### Are the NPTEL answers correct?
+Every question shows the correct option along with a short written explanation of why it is correct. Questions come from the official NPTEL weekly assignment papers. If you spot a discrepancy, you can report it via the link in the footer.
+
+### What is the mock test mode on Mooc Mastery?
+The random-set and custom-set modes act as mock tests. You can draw 10, 20, 30 or all questions from the whole bank or from specific weeks, answer them under a timer, and review your pace, accuracy and per-question time afterwards.
+
+### Does Mooc Mastery work offline?
+Mooc Mastery loads the question bank once from a JSON file. After that first load, all practice, review and progress tracking work entirely in your browser. Your progress is never sent to any server.
+
+### Where is my progress stored?
+Progress, test history, bookmarks and settings are stored locally in your browser via localStorage. They are never uploaded. Use Settings → Export to save a JSON backup, or Settings → Import to restore it on another device.
+
+## Optional
+
+- [Contact on LinkedIn](https://www.linkedin.com/in/hey-rishabh)
+- [Report a discrepancy](https://forms.gle/REPLACE_WITH_YOUR_FORM_ID)
