@@ -1071,6 +1071,15 @@ body.modal-open{overflow:hidden}
 .setrow:last-child{border-bottom:0}
 .setrow .lbl{font-weight:500;font-size:var(--fs-sm);letter-spacing:-.005em}
 .setrow .hint{font-size:var(--fs-xs);color:var(--muted);margin-top:2px;line-height:1.5}
+.shuffle-controls{
+  border:1px solid var(--border);border-radius:var(--r);padding:0 var(--s3);
+  background:var(--surface-2);margin:14px 0;
+}
+.shuffle-controls.compact{margin:0 0 14px;padding:0 var(--s3);background:var(--surface-2)}
+.shuffle-controls .setrow{padding:10px 0}
+.shuffle-controls .setrow .lbl{font-size:var(--fs-sm)}
+.shuffle-controls .setrow .hint{max-width:58ch}
+.shuffle-controls.compact .setrow{padding:9px 0}
 .switch{
   position:relative;width:42px;height:24px;border-radius:99px;
   background:var(--border-2);cursor:pointer;
@@ -1540,11 +1549,14 @@ function sameSet(a, b) {
   return a.every((x) => s.has(x));
 }
 function prepareQuestion(q, shuffleOpts) {
-  if (!shuffleOpts || !q.options || q.options.length < 2) return q;
-  const order = shuffle(q.options.map((_, i) => i));
+  const baseOptions = q._baseOptions || q.options || [];
+  const baseAnswer = q._baseAnswer !== undefined ? q._baseAnswer : q.answer;
+  const baseQ = { ...q, options: baseOptions, answer: baseAnswer, _baseOptions: baseOptions, _baseAnswer: baseAnswer };
+  if (!shuffleOpts || baseOptions.length < 2) return baseQ;
+  const order = shuffle(baseOptions.map((_, i) => i));
   const map = {};
   order.forEach((oldI, newI) => { map[oldI] = newI; });
-  return { ...q, options: order.map((i) => q.options[i]), answer: answerIndices(q).map((oi) => map[oi]) };
+  return { ...baseQ, options: order.map((i) => baseOptions[i]), answer: answerIndices(baseQ).map((oi) => map[oi]) };
 }
 function useModalOpen() {
   useEffect(() => {
@@ -1646,6 +1658,27 @@ const PACE_META = {
 
 function Switch({ on, onChange }) {
   return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on} aria-label="Toggle"><i /></button>;
+}
+
+function ShuffleControls({ shuffleQuestions, shuffleOptions, onQuestionsChange, onOptionsChange, compact = false, questionHint, optionHint }) {
+  return (
+    <div className={'shuffle-controls' + (compact ? ' compact' : '')} aria-label="Quiz randomization settings">
+      <div className="setrow">
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div className="lbl">Shuffle question order</div>
+          <div className="hint">{questionHint || 'Show selected questions in a random order.'}</div>
+        </div>
+        <Switch on={shuffleQuestions} onChange={onQuestionsChange} />
+      </div>
+      <div className="setrow">
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div className="lbl">Shuffle option order</div>
+          <div className="hint">{optionHint || 'Randomise the A / B / C / D positions.'}</div>
+        </div>
+        <Switch on={shuffleOptions} onChange={onOptionsChange} />
+      </div>
+    </div>
+  );
 }
 function Stepper({ value, onChange, min = 1, max = 999, step = 5 }) {
   const clamp = (v) => Math.min(max, Math.max(min, v));
@@ -2013,7 +2046,7 @@ function LandingPage({ subjects, onPick, banner }) {
   );
 }
 
-function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory, onSwitchSubject }) {
+function HomeView({ subject, progress, settings, setSettings, onStartRandom, onStartCustom, onStartWeak, onStartBookmarks, onStudy, goHistory, onSwitchSubject }) {
   if (!subject) return null;
   const bank = useMemo(() => allQuestions(subject), [subject]);
   const [count, setCount] = useState(() => Math.min(20, Math.max(1, bank.length)));
@@ -2070,6 +2103,12 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
       <h2 className="section-title">Quick practice</h2>
       <div className="card">
         <p className="muted" style={{ marginBottom: 16 }}>A random set drawn from the entire question bank.</p>
+        <ShuffleControls
+          shuffleQuestions={settings.shuffleQuestions}
+          shuffleOptions={settings.shuffleOptions}
+          onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
+          onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+        />
         <div className="col">
           <div className="row between" style={{ rowGap: 10 }}>
             <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
@@ -2089,6 +2128,12 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
       <h2 className="section-title">Custom set</h2>
       <div className="card">
         <p className="muted" style={{ marginBottom: 16 }}>Choose specific weeks, then set how many questions to draw.</p>
+        <ShuffleControls
+          shuffleQuestions={settings.shuffleQuestions}
+          shuffleOptions={settings.shuffleOptions}
+          onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
+          onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+        />
         <div className="grid g2" style={{ marginBottom: 16 }}>
           {subject.assignments.map((a) => {
             const on = picked.includes(a.id);
@@ -2181,7 +2226,9 @@ function HomeView({ subject, progress, onStartRandom, onStartCustom, onStartWeak
 }
 
 function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, onQuit }) {
-  const questions = config.questions;
+  const [questions, setQuestions] = useState(() => config.questions);
+  const [shuffleQuestions, setShuffleQuestions] = useState(() => config.shuffleQuestions ?? settings.shuffleQuestions);
+  const [shuffleOptions, setShuffleOptions] = useState(() => config.shuffleOptions ?? settings.shuffleOptions);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState([]);
   const [locked, setLocked] = useState(false);
@@ -2198,6 +2245,28 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   }, []);
   useEffect(() => () => clearTimeout(flashTimer.current), []);
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [idx]);
+
+  const changeQuestionShuffle = useCallback((enabled) => {
+    setShuffleQuestions(enabled);
+    // Keep the current question and completed history stable; reorder only questions still ahead.
+    setQuestions((prev) => {
+      const fixed = prev.slice(0, idx + 1);
+      const upcoming = prev.slice(idx + 1);
+      const ordered = enabled
+        ? shuffle(upcoming)
+        : upcoming.slice().sort((a, b) => (Number(a._week) - Number(b._week)) || (Number(a._qno || 0) - Number(b._qno || 0)));
+      return fixed.concat(ordered);
+    });
+  }, [idx]);
+
+  const changeOptionShuffle = useCallback((enabled) => {
+    setShuffleOptions(enabled);
+    setQuestions((prev) => prev.map((question, questionIndex) => {
+      // Don't change answer positions after the current question has been answered or selected.
+      if (questionIndex < idx || (questionIndex === idx && (locked || selected.length > 0))) return question;
+      return prepareQuestion(question, enabled);
+    }));
+  }, [idx, locked, selected.length]);
 
   const q = questions[idx];
   const correctIdx = useMemo(() => (q ? answerIndices(q) : []), [q]);
@@ -2906,7 +2975,12 @@ function App() {
 
   const startQuiz = (cfg) => {
     if (!cfg.questions.length) { alert('No questions available for this selection.'); return; }
-    setQuizConfig(cfg); setScreen('quiz');
+    setQuizConfig({
+      ...cfg,
+      shuffleQuestions: settings.shuffleQuestions,
+      shuffleOptions: settings.shuffleOptions,
+    });
+    setScreen('quiz');
   };
 
   const startRandom = useCallback((n) => {
@@ -3108,7 +3182,7 @@ function App() {
 
         {screen === 'home' && subject && (
           <HomeView
-            subject={subject} progress={progress}
+            subject={subject} progress={progress} settings={settings} setSettings={setSettings}
             onStartRandom={startRandom} onStartCustom={startCustom}
             onStartWeak={startWeak} onStartBookmarks={startBookmarks}
             onStudy={openStudy} goHistory={() => setScreen('history')}
