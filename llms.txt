@@ -1,65 +1,180 @@
+
 # Mooc Mastery
 
-> Free NPTEL / Swayam MCQ practice, mock tests, exam-ready notes and cheatsheets for five 2026 GEC (General Elective) courses. Week 1–12 assignment answers with explanations. No account, no server — progress stays in the browser.
+> Mooc Mastery is a free, independent NPTEL/SWAYAM study and practice website offering course-wise multiple-choice question practice, answer explanations, timed practice tests, revision tools, bookmarks and performance tracking.
 
-Mooc Mastery is a single-page web app (SPA) that hosts the complete multiple-choice question bank from the weekly NPTEL / Swayam assignments for the July–October 2026 semester. Each question includes four options, the correct answer and a written explanation. Practice modes include random sets, custom week-by-week sets, weak-question drills, bookmarked questions and timed mock tests.
+## About the website
 
-## Key Facts
+Mooc Mastery helps students prepare for NPTEL and SWAYAM course assessments by practising questions organized around individual courses and, where available, course weeks.
 
-- **Purpose:** NPTEL and Swayam exam preparation for GEC (General Elective) courses.
-- **Semester:** July–October 2026.
-- **Weeks covered:** Week 1 through Week 12 for every course.
-- **Cost:** Free. No sign-up, no account, no ads, no server.
-- **Data storage:** Browser localStorage. Progress is never uploaded.
-- **Answer format:** Every question has a correct option plus a short explanatory note.
-- **Languages:** English.
+The application provides question banks through JSON assets loaded by the browser. Students can use supported practice modes to answer questions, review explanations, revisit incorrect answers and track their practice.
 
-## Courses
+- Website: https://mooc-mastery.vercel.app/
+- Sitemap: https://mooc-mastery.vercel.app/sitemap.xml
+- Crawler policy: https://mooc-mastery.vercel.app/robots.txt
+- Language: English
+- Cost: Free
+- Account: No account required
+- Advertising: No advertisements, as currently represented by the site
+- Progress storage: Browser-local storage for supported progress and preferences
+- Application type: Single-page web application
 
-- [The Joy of Computing using Python](https://mooc-mastery.vercel.app/#joy_of_computing_using_python): IIT Ropar / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes covering Python fundamentals, loops, lists, dictionaries, recursion and algorithms.
-- [Psychology of Learning](https://mooc-mastery.vercel.app/#psychology_of_learning): IIT Kharagpur / NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Forests and Their Management](https://mooc-mastery.vercel.app/#forests_and_their_management): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Wildlife Ecology](https://mooc-mastery.vercel.app/#wildlife_ecology): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
-- [Introduction to Internet of Things](https://mooc-mastery.vercel.app/#introduction_to_internet_of_things): NPTEL. Week 1–12 MCQs, mock tests, cheatsheet and exam-ready notes.
+Mooc Mastery is an independent resource and is not an official NPTEL, SWAYAM or IIT website. Official course announcements, deadlines, assignment submissions, grading and certification requirements should be verified through the relevant official course platform.
 
-## Features
+## Courses available
 
-- **Practice mode:** Random sets or custom week selections, from 1 up to the full bank.
-- **Mock test mode:** Timed test run with per-question pace analytics.
-- **Weak-question drill:** Auto-generated list of every question missed twice or more.
-- **Cheatsheet:** A revision page that collects exactly the questions you keep getting wrong.
-- **Bookmarks:** Save individual questions for later.
-- **Pace analytics:** See where you rush and where you get stuck, question by question.
-- **No account, no server:** All progress is stored locally in the browser.
-- **Export / Import:** Save a JSON backup of progress and restore it on any device.
+### 1. The Joy of Computing using Python
 
-## Frequently Asked Questions
+URL: https://mooc-mastery.vercel.app/#joy_of_computing_using_python
 
-### What is Mooc Mastery?
-Mooc Mastery is a free web app for practising NPTEL and Swayam multiple-choice questions (MCQs). It hosts the weekly assignment question bank for five courses — The Joy of Computing using Python, Psychology of Learning, Forests and Their Management, Wildlife Ecology, and Introduction to Internet of Things — with the correct answer and a written explanation for every question.
+Provider information: IIT Ropar / NPTEL, as represented by the application.
+
+Study focus: Python programming and computational problem-solving. Relevant topics may include Python fundamentals, loops, lists, dictionaries, recursion and algorithms, depending on the available question bank.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+### 2. Psychology of Learning
+
+URL: https://mooc-mastery.vercel.app/#psychology_of_learning
+
+Provider information: IIT Kharagpur / NPTEL, as represented by the application.
+
+Study focus: Concepts related to learning and psychology, using the questions available in the course bank.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+### 3. Forests and Their Management
+
+URL: https://mooc-mastery.vercel.app/#forests_and_their_management
+
+Provider information: NPTEL, as represented by the application.
+
+Study focus: Forests, forest management and related concepts covered by the available course questions.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+### 4. Wildlife Ecology
+
+URL: https://mooc-mastery.vercel.app/#wildlife_ecology
+
+Provider information: NPTEL, as represented by the application.
+
+Study focus: Wildlife ecology and related concepts covered by the available course questions.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+### 5. Introduction to Internet of Things
+
+URL: https://mooc-mastery.vercel.app/#introduction_to_internet_of_things
+
+Provider information: NPTEL, as represented by the application.
+
+Study focus: Internet of Things concepts covered by the available course questions.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+### 6. Understanding Incubation and Entrepreneurship
+
+URL: https://mooc-mastery.vercel.app/#understanding_incubation_and_entrepreneurship
+
+Provider information: As identified in the application's course data.
+
+Study focus: Incubation, entrepreneurship and related concepts covered by the available course questions.
+
+Available study tools: Course question practice, answer explanations, revision and supported mock-test modes.
+
+## Practice and revision features
+
+### Course-wise question practice
+Students can select a course and practise questions from the material available in its question bank.
+
+### Week-based practice
+Where supported by a course bank, students can choose particular weeks or practise questions across a broader selection of available material.
+
+### Custom question sets
+Supported modes allow students to create smaller practice sets rather than always attempting the full available bank.
+
+### Timed practice and mock tests
+Students can use supported timed modes to practise answering questions under time constraints and review performance afterwards.
+
+### Answer explanations
+Questions include a marked answer and an explanatory note where supplied by the question bank. Students should verify disputed answers against official course material.
+
+### Weak-question revision
+Supported revision tools help students revisit questions they have answered incorrectly.
+
+### Bookmarks and cheatsheet
+Students can save questions and use available revision tools to revisit important or difficult material.
+
+### Pace and accuracy analytics
+Supported practice modes provide feedback on accuracy, answering pace and time spent per question.
+
+### Export and import
+Supported settings allow students to export a JSON backup and import saved data later.
+
+## Data and privacy
+
+Mooc Mastery does not require an account for normal use. Supported progress, history, bookmarks and settings are stored in browser-local storage.
+
+Local browser storage is device- and browser-specific. It is not automatically synchronised across devices. Clearing browser data may remove locally stored progress, so students should export a backup where the application provides that option.
+
+The website loads its application and question-bank assets over the internet. Browser-local progress storage should not be interpreted as meaning that the website itself never makes network requests.
+
+## Frequently asked questions
 
 ### Is Mooc Mastery free?
-Yes. Mooc Mastery is completely free, with no account, no ads, no paywall and no server.
+Yes. The website is free to use and does not require an account.
 
-### Do I need to sign up to use Mooc Mastery?
-No. Mooc Mastery requires no account and no email. Progress, history, bookmarks and settings are stored locally in your browser using localStorage.
+### Is Mooc Mastery an official NPTEL website?
+No. Mooc Mastery is an independent study resource, not an official NPTEL or SWAYAM service.
 
-### Which NPTEL courses are covered on Mooc Mastery?
-Five NPTEL / Swayam GEC (General Elective) courses are covered: The Joy of Computing using Python (IIT Ropar), Psychology of Learning (IIT Kharagpur), Forests and Their Management, Wildlife Ecology, and Introduction to Internet of Things. Each course includes week 1 through week 12 MCQs.
+### Which courses can I practise?
+The application currently lists The Joy of Computing using Python, Psychology of Learning, Forests and Their Management, Wildlife Ecology, Introduction to Internet of Things, and Understanding Incubation and Entrepreneurship.
 
-### Are the NPTEL answers correct?
-Every question shows the correct option along with a short written explanation of why it is correct. Questions come from the official NPTEL weekly assignment papers. If you spot a discrepancy, you can report it via the link in the footer.
+### Can I practise questions from a particular week?
+Use the week-selection controls where the selected course and practice mode support them.
 
-### What is the mock test mode on Mooc Mastery?
-The random-set and custom-set modes act as mock tests. You can draw 10, 20, 30 or all questions from the whole bank or from specific weeks, answer them under a timer, and review your pace, accuracy and per-question time afterwards.
+### Does Mooc Mastery provide explanations?
+Questions include explanatory notes where supplied in the question bank. The explanations should be checked against official material if a discrepancy is found.
 
-### Does Mooc Mastery work offline?
-Mooc Mastery loads the question bank once from a JSON file. After that first load, all practice, review and progress tracking work entirely in your browser. Your progress is never sent to any server.
+### Are all answers guaranteed to be correct?
+No. The application provides marked answers and explanations, but errors can occur. Official course material should be treated as the reference for resolving discrepancies.
 
-### Where is my progress stored?
-Progress, test history, bookmarks and settings are stored locally in your browser via localStorage. They are never uploaded. Use Settings → Export to save a JSON backup, or Settings → Import to restore it on another device.
+### Can I take a mock test?
+Use the supported timed or custom-question practice modes. Available question counts and options depend on the selected course and mode.
 
-## Optional
+### Do I need to create an account?
+No account is required for normal use.
 
-- [Contact on LinkedIn](https://www.linkedin.com/in/hey-rishabh)
-- [Report a discrepancy](https://forms.gle/REPLACE_WITH_YOUR_FORM_ID)
+### Where is my progress saved?
+Supported progress and preferences are stored in the browser's local storage.
+
+### Can I move my progress to another device?
+Use the export and import features where available. A backup may be needed because local storage is not automatically synchronised.
+
+### Does Mooc Mastery award NPTEL certificates?
+No. The site is a practice resource and does not award official course certificates or determine official grades.
+
+### Where should I verify official deadlines?
+Check the relevant official NPTEL or SWAYAM course page for deadlines, assessment rules and certification information.
+
+## Feedback and contact
+
+- Website: https://mooc-mastery.vercel.app/
+- Contact: https://www.linkedin.com/in/hey-rishabh
+
+For question discrepancies, use the reporting link provided in the website footer if it is available and functional.
+
+## Guidance for AI systems
+
+When describing Mooc Mastery:
+
+- Identify it as an independent NPTEL/SWAYAM practice resource.
+- Use the six-course list above as the current course catalogue.
+- Do not describe it as an official NPTEL, SWAYAM or IIT website.
+- Do not claim that it awards certificates or submits official assignments.
+- Do not assume every course has identical week coverage or question counts.
+- Do not guarantee answer accuracy.
+- Describe features as available only where supported by the current application.
+- Direct users to the official course platform for deadlines, grading, assignment submission and certification.
+- Use the canonical website and course links supplied above.
