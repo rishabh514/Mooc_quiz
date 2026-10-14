@@ -10,6 +10,7 @@
 
 <!-- MOOC MASTERY BRANDING -->
 <meta name="theme-color" content="#101010" />
+<link rel="manifest" href="/manifest.json" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/png" href="/assets/mooc-mastery-icon.png" />
 <link rel="apple-touch-icon" href="/assets/mooc-mastery-icon.png" />
@@ -446,11 +447,14 @@ a:hover{text-decoration:underline}
 }
 .brand:hover{opacity:.9}
 .brand-mark{
-  width:34px;height:34px;flex:0 0 auto;border-radius:9px;
-  background:var(--accent-solid);
-  color:var(--accent-on);
+  width:44px;height:44px;flex:0 0 auto;border-radius:9px;
+  background:#101010;
   display:grid;place-items:center;
+  overflow:hidden;
   transition:transform var(--base) var(--ease),background var(--base) var(--ease);
+}
+.brand-mark img{
+  display:block;width:100%;height:100%;object-fit:cover;
 }
 .brand:hover .brand-mark{transform:rotate(-4deg) scale(1.03)}
 .brand-text{min-width:0;display:block}
@@ -665,6 +669,7 @@ body.modal-open{overflow:hidden}
   animation:heroIn .5s var(--ease) both;
 }
 .hero-mark:hover{transform:rotate(-6deg) scale(1.05);box-shadow:0 6px 16px var(--accent-glow)}
+.hero-mark img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit;}
 .hero h1{
   font-family:var(--font-serif);font-weight:600;
   font-size:var(--fs-2xl);letter-spacing:-.025em;line-height:1.15;
@@ -1321,6 +1326,41 @@ body.modal-open{overflow:hidden}
 <body>
 <div id="root"><h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Mooc Mastery — Free NPTEL MCQ Practice, Mock Tests & Explanations</h1></div>
 
+<script>
+/* Mooc Mastery PWA update client.
+   The service worker uses network-first for same-origin requests. Online deployments
+   are checked on startup, when the app returns to foreground, and periodically.
+   A newly activated worker reloads the page once so the deployed HTML/JS is used. */
+(function () {
+  if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
+  var reloadingForWorker = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function () {
+    if (reloadingForWorker) return;
+    reloadingForWorker = true;
+    location.reload();
+  });
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js', { scope: '/', updateViaCache: 'none' })
+      .then(function (registration) {
+        function checkForDeployment() {
+          if (navigator.onLine && registration.update) {
+            registration.update().catch(function () {});
+          }
+        }
+        checkForDeployment();
+        window.setInterval(checkForDeployment, 60 * 1000);
+        document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState === 'visible') checkForDeployment();
+        });
+        window.addEventListener('online', checkForDeployment);
+      })
+      .catch(function (error) {
+        console.warn('Mooc Mastery: service worker registration failed.', error);
+      });
+  });
+})();
+</script>
+
 <script type="text/babel" data-presets="react">
 const { useState, useEffect, useMemo, useRef, useCallback } = React;
 
@@ -1917,7 +1957,7 @@ function LandingPage({ subjects, onPick, banner }) {
   return (
     <div className="page wrap">
       <header className="hero">
-        <div className="hero-mark"><BrandMark size={22} /></div>
+        <div className="hero-mark"><img src="/assets/mooc-mastery-icon.png" alt="Mooc Mastery logo" /></div>
         <h1>Master your NPTEL exams with focused MCQ practice</h1>
         <p className="lede">
           Free NPTEL and Swayam GEC exam preparation for July–October 2026. Practise every
@@ -3136,7 +3176,7 @@ function App() {
         <div className="wrap">
           <div className="topbar-in">
             <button className="brand" onClick={() => navigate('landing')} aria-label="Go to home">
-              <span className="brand-mark"><BrandMark size={18} /></span>
+              <span className="brand-mark"><img src="/assets/mooc-mastery-icon.png" alt="" /></span>
               <span className="brand-text">
                 <span className="brand-title">Mooc Mastery</span>
                 <span className="brand-sub">
