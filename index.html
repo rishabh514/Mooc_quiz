@@ -1321,6 +1321,37 @@ body.modal-open{overflow:hidden}
   .stat .v{font-size:var(--fs-lg)}
   .section-title{margin-top:var(--s6)}
 }
+
+/* PWA install call-to-action */
+.install-card{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  margin-top:var(--s5);padding:16px;
+  border:1px solid var(--accent-line);border-radius:var(--r-lg);
+  background:linear-gradient(120deg,var(--accent-soft),var(--surface));
+  box-shadow:var(--shadow-xs);
+}
+.install-card-copy{display:flex;align-items:center;gap:12px;min-width:0}
+.install-card-icon{
+  width:44px;height:44px;flex:0 0 auto;display:grid;place-items:center;
+  border-radius:12px;background:var(--accent-solid);color:var(--accent-on);
+  box-shadow:0 3px 10px var(--accent-glow);
+}
+.install-card-title{font-weight:600;font-size:var(--fs-base);line-height:1.3}
+.install-card-desc{font-size:var(--fs-xs);color:var(--text-2);margin-top:3px;line-height:1.45}
+.install-card .btn{flex:0 0 auto}
+.install-help{
+  margin-top:10px;padding:12px 14px;border:1px solid var(--border);
+  border-radius:var(--r);background:var(--surface);color:var(--text-2);
+  font-size:var(--fs-sm);line-height:1.6;animation:fadeUp var(--base) var(--ease) both;
+}
+.install-help strong{color:var(--text)}
+.install-help-close{float:right;color:var(--muted);padding:2px 5px}
+@media(max-width:520px){
+ .install-card{align-items:stretch;flex-direction:column;gap:12px;padding:14px}
+ .install-card-copy{align-items:flex-start}
+ .install-card .btn{width:100%}
+}
+
 </style>
 </head>
 <body>
@@ -1938,6 +1969,87 @@ const FAQS = [
     a: "Prioritise the topics and weeks covered by your course, practise mixed and timed question sets, review explanations for every mistake, and revisit your weak-question list. Use official course announcements to confirm the exam format, syllabus and schedule." }
 ];
 
+
+function InstallAppPanel() {
+  const [available, setAvailable] = useState(() => !!window.__moocInstallPrompt);
+  const [installed, setInstalled] = useState(() => {
+    try { return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true; }
+    catch (_) { return false; }
+  });
+  const [helpOpen, setHelpOpen] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    const onAvailable = () => { setAvailable(true); setMessage(''); };
+    const onInstalled = () => { setInstalled(true); setAvailable(false); setHelpOpen(false); setMessage('Mooc Mastery is installed on this device.'); };
+    window.addEventListener('pwa-install-available', onAvailable);
+    window.addEventListener('pwa-installed', onInstalled);
+    return () => {
+      window.removeEventListener('pwa-install-available', onAvailable);
+      window.removeEventListener('pwa-installed', onInstalled);
+    };
+  }, []);
+
+  const handleInstall = async () => {
+    if (installed) return;
+    if (available && typeof window.installMoocMastery === 'function') {
+      setBusy(true); setMessage('');
+      try {
+        const accepted = await window.installMoocMastery();
+        if (accepted) {
+          setMessage('Installation started. Follow your browser’s prompts to finish.');
+          setAvailable(false);
+        } else {
+          setMessage('Installation was cancelled. You can try again whenever you’re ready.');
+        }
+      } catch (_) {
+        setMessage('Your browser could not start installation. Use the browser menu instructions below.');
+        setHelpOpen(true);
+      } finally { setBusy(false); }
+      return;
+    }
+    setHelpOpen(v => !v);
+  };
+
+  const ua = navigator.userAgent || '';
+  const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isAndroid = /Android/i.test(ua);
+  const isDesktop = !isIOS && !isAndroid;
+  const helpText = isIOS
+    ? <>In <strong>Safari</strong>, tap <strong>Share</strong>, then choose <strong>Add to Home Screen</strong> and tap <strong>Add</strong>.</>
+    : isAndroid
+      ? <>In <strong>Chrome</strong>, tap <strong>⋮</strong> and choose <strong>Install app</strong> or <strong>Add to Home screen</strong>.</>
+      : <>In <strong>Chrome or Edge</strong>, open the browser menu and choose <strong>Install Mooc Mastery</strong> or <strong>Apps → Install this site as an app</strong>. If that option is missing, check that the site is online and its manifest and service worker are available.</>;
+
+  return (
+    <div className="install-wrap">
+      <div className="install-card">
+        <div className="install-card-copy">
+          <span className="install-card-icon"><Icon name={installed ? 'check' : 'download'} size={21} /></span>
+          <div>
+            <div className="install-card-title">{installed ? 'Mooc Mastery is installed' : 'Take Mooc Mastery with you'}</div>
+            <div className="install-card-desc">{installed ? 'Open it from your apps or home screen.' : 'Install the free app for a quicker, app-like experience on this device.'}</div>
+          </div>
+        </div>
+        <button type="button" className="btn primary lg" onClick={handleInstall} disabled={installed || busy}>
+          <Icon name={installed ? 'check' : 'download'} size={16} />
+          {installed ? 'Installed' : busy ? 'Opening…' : 'Install app'}
+        </button>
+      </div>
+      {message && <div className="install-help" role="status">{message}</div>}
+      {helpOpen && !installed && (
+        <div className="install-help" role="note">
+          <button type="button" className="install-help-close" onClick={() => setHelpOpen(false)} aria-label="Close installation instructions">✕</button>
+          <strong>Install from your browser</strong><br />
+          {helpText}
+          <div className="tiny" style={{marginTop:6}}>If you don’t see an install option, your browser may not support PWA installation on this page yet. You can still use Mooc Mastery in your browser.</div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function LandingPage({ subjects, onPick, banner }) {
   const features = [
     { icon: 'target',    title: 'Complete question bank', desc: 'Every multiple-choice question from the weekly assignments, in one place.' },
@@ -1965,6 +2077,7 @@ function LandingPage({ subjects, onPick, banner }) {
           an auto-generated cheatsheet, and read the explanation behind every answer.
           Progress stays in your browser — no account, no server.
         </p>
+        <InstallAppPanel />
         <div className="hero-chips">
           <span><Icon name="target" size={11} /> Exam-focused bank</span>
           <span><Icon name="chart" size={11} /> Pace analytics</span>
@@ -3311,5 +3424,39 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script>
+
+<script>
+/* Capture the browser's install prompt without replacing the app or service-worker code. */
+let deferredInstallPrompt = null;
+window.__moocInstallPrompt = null;
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredInstallPrompt = event;
+  window.__moocInstallPrompt = event;
+  window.dispatchEvent(new Event("pwa-install-available"));
+});
+
+window.addEventListener("appinstalled", () => {
+  deferredInstallPrompt = null;
+  window.__moocInstallPrompt = null;
+  window.dispatchEvent(new Event("pwa-installed"));
+});
+
+window.installMoocMastery = async () => {
+  if (!deferredInstallPrompt) return false;
+  const promptEvent = deferredInstallPrompt;
+  deferredInstallPrompt = null;
+  window.__moocInstallPrompt = null;
+  promptEvent.prompt();
+  const choice = await promptEvent.userChoice;
+  if (choice.outcome !== "accepted") {
+    // Browsers generally require a fresh beforeinstallprompt event before another attempt.
+    return false;
+  }
+  return true;
+};
+</script>
+
 </body>
 </html>
