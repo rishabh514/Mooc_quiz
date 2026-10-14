@@ -1352,6 +1352,136 @@ body.modal-open{overflow:hidden}
  .install-card .btn{width:100%}
 }
 
+
+/* Assignment-faithful question layout: readable case study + code, no page screenshots */
+.assignment-scenario {
+  margin: 0 0 14px; padding: 16px 18px;
+  border: 1px solid var(--accent-line, var(--border-2));
+  border-left: 4px solid var(--accent); border-radius: 12px;
+  background: var(--accent-soft); color: var(--text);
+}
+.assignment-scenario-heading {
+  display:flex; align-items:center; gap:8px; color:var(--accent);
+  font-size:var(--fs-sm); font-weight:750; letter-spacing:.02em; margin-bottom:9px;
+}
+.scenario-icon { font-size:16px; }
+.assignment-scenario-title {
+  margin:0 0 8px; color:var(--text); font-size:var(--fs-base);
+  font-weight:750; line-height:1.4;
+}
+.assignment-scenario-text {
+  color:var(--text-2); font-size:var(--fs-sm); line-height:1.75; overflow-wrap:anywhere;
+}
+.assignment-scenario-text p { margin:0 0 9px; }
+.assignment-scenario-text p:last-child { margin-bottom:0; }
+.source-question-meta {
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px;
+  margin:0 0 9px; color:var(--muted); font-size:var(--fs-xs);
+}
+.source-question-label { color:var(--text); font-weight:750; }
+.source-page-link {
+  display:inline-flex; align-items:center; gap:4px; margin-top:4px;
+  color:var(--accent); font-size:var(--fs-xs); font-weight:650;
+  text-decoration:none; border-bottom:1px dotted var(--accent-line);
+}
+.source-page-link:hover { text-decoration:none; opacity:.8; }
+.source-page-link-button {
+  font:inherit; cursor:pointer; background:transparent; border:0; padding:0;
+}
+.source-image-viewer-backdrop {
+  position:fixed; inset:0; z-index:10050;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(10px, 3vw, 28px);
+  background:rgba(5,8,13,.78);
+  backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+  animation:overlayIn var(--base) var(--ease) both;
+}
+.source-image-viewer {
+  display:flex; flex-direction:column; width:min(1100px, 100%);
+  max-height:min(94dvh, 1100px); min-height:0;
+  border:1px solid var(--border-2); border-radius:16px;
+  overflow:hidden; background:var(--surface); color:var(--text);
+  box-shadow:var(--shadow-lg); animation:modalIn var(--slow) var(--ease) both;
+}
+.source-image-viewer-head {
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  padding:13px 16px; flex:0 0 auto;
+  border-bottom:1px solid var(--border); background:var(--surface);
+}
+.source-image-viewer-heading { min-width:0; }
+.source-image-viewer-title {
+  font-size:var(--fs-sm); font-weight:750; line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.source-image-viewer-subtitle { margin-top:3px; color:var(--muted); font-size:var(--fs-xs); }
+.source-image-viewer-close {
+  width:40px; height:40px; flex:0 0 auto; display:grid; place-items:center;
+  border:1px solid var(--border); border-radius:10px; color:var(--text);
+  background:var(--surface-2); cursor:pointer;
+}
+.source-image-viewer-close:hover { border-color:var(--border-2); background:var(--surface-3); }
+.source-image-viewer-body {
+  min-height:0; overflow:auto; overscroll-behavior:contain;
+  padding:clamp(8px, 2vw, 20px); text-align:center;
+  background:var(--bg); -webkit-overflow-scrolling:touch;
+}
+.source-image-viewer-image {
+  display:block; width:auto; height:auto; max-width:100%;
+  max-height:calc(90dvh - 100px); object-fit:contain; margin:0 auto;
+  border:1px solid var(--border); border-radius:6px; background:var(--surface);
+  box-shadow:var(--shadow-sm);
+}
+.source-image-viewer-error {
+  max-width:560px; margin:20px auto; padding:16px;
+  border:1px solid var(--border); border-radius:12px;
+  background:var(--surface); color:var(--text-2); font-size:var(--fs-sm);
+  text-align:left; line-height:1.6;
+}
+@media (max-width:639px) {
+  .source-image-viewer-backdrop { padding:0; align-items:stretch; }
+  .source-image-viewer { width:100%; max-height:100dvh; border-radius:0; }
+  .source-image-viewer-head { padding:calc(10px + var(--safe-t)) 12px 10px; }
+  .source-image-viewer-body { padding:8px; }
+  .source-image-viewer-image { max-height:calc(100dvh - 100px); }
+}
+.assignment-code-panel {
+  margin:0 0 18px; border:1px solid var(--border-2);
+  border-radius:12px; overflow:hidden; background:var(--surface-2);
+}
+.assignment-code-header {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:12px 14px; border-bottom:1px solid var(--border); background:var(--surface);
+}
+.assignment-code-title { display:flex; align-items:center; gap:9px; font-size:var(--fs-sm); font-weight:750; color:var(--text); }
+.code-glyph { color:var(--accent); font-family:ui-monospace,monospace; font-weight:850; font-size:17px; }
+.assignment-code-subtitle { margin-top:3px; color:var(--muted); font-size:var(--fs-xs); line-height:1.45; }
+.language-pill { flex-shrink:0; border:1px solid var(--border-2); border-radius:7px; padding:5px 9px; font-size:var(--fs-xs); color:var(--text-2); background:var(--surface-2); }
+.python-code-scroll { overflow-x:auto; max-width:100%; background:var(--code-bg, #101722); }
+.python-code {
+  margin:0; padding:12px 0; min-width:max-content; white-space:pre;
+  color:var(--code-fg, #e5edf7); font:12.5px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; tab-size:4;
+}
+.python-code code { display:block; font:inherit; color:inherit; background:none; padding:0; border:0; }
+.python-code-line { display:flex; min-height:1.65em; padding-right:16px; }
+.python-code-line:hover { background:rgba(127,145,170,.07); }
+.python-line-number { display:inline-block; width:42px; flex:0 0 42px; padding-right:12px; text-align:right; color:#64748b; user-select:none; border-right:1px solid rgba(127,145,170,.15); margin-right:0; }
+.python-line-content { display:inline-block; padding-right:18px; }
+.syn-keyword { color:#c792ea; font-weight:600; }
+.syn-string { color:#a5d6a7; }
+.syn-number { color:#f6c177; }
+.syn-builtin { color:#82aaff; }
+.syn-constant { color:#ffcb6b; }
+.syn-comment { color:#8292a8; font-style:italic; }
+.syn-operator { color:#89ddff; }
+.syn-variable { color:var(--code-fg, #e5edf7); }
+@media (max-width:600px) {
+  .assignment-scenario { padding:13px 14px; }
+  .assignment-scenario-text { font-size:14px; line-height:1.7; }
+  .assignment-code-header { padding:10px 12px; }
+  .python-code { font-size:12px; }
+  .python-line-number { width:32px; flex-basis:32px; margin-right:9px; padding-right:8px; }
+}
+
 </style>
 </head>
 <body>
@@ -1460,6 +1590,45 @@ function FormattedText({ text }) {
         );
       })}
     </>
+  );
+}
+
+
+function highlightPythonLine(line) {
+  const tokenRe = /(#[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:False|None|True|and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield)\b|\b(?:print|input|len|range|int|float|str|list|dict|set|tuple|sum|min|max|sorted|enumerate|zip|type|abs|round|open)\b|\b\d+(?:\.\d+)?\b|(?:\+=|-=|\*=|\/=|==|!=|<=|>=|->|\/\/|\*\*|[=+\-*\/%<>])|[A-Za-z_]\w*)/g;
+  const out = [];
+  let last = 0, match, key = 0;
+  while ((match = tokenRe.exec(line)) !== null) {
+    if (match.index > last) out.push(<React.Fragment key={key++}>{line.slice(last, match.index)}</React.Fragment>);
+    const token = match[0];
+    let cls = 'syn-variable';
+    if (token.startsWith('#')) cls = 'syn-comment';
+    else if (/^["']/.test(token)) cls = 'syn-string';
+    else if (/^(False|None|True)$/.test(token)) cls = 'syn-constant';
+    else if (/^(and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield)$/.test(token)) cls = 'syn-keyword';
+    else if (/^(print|input|len|range|int|float|str|list|dict|set|tuple|sum|min|max|sorted|enumerate|zip|type|abs|round|open)$/.test(token)) cls = 'syn-builtin';
+    else if (/^\d/.test(token)) cls = 'syn-number';
+    else if (/^(?:\+=|-=|\*=|\/=|==|!=|<=|>=|->|\/\/|\*\*|[=+\-*\/%<>])$/.test(token)) cls = 'syn-operator';
+    out.push(<span key={key++} className={cls}>{token}</span>);
+    last = tokenRe.lastIndex;
+  }
+  if (last < line.length) out.push(<React.Fragment key={key++}>{line.slice(last)}</React.Fragment>);
+  return out;
+}
+
+function PythonCodePanel({ code, language = 'python' }) {
+  const lines = String(code || '').replace(/\r\n/g, '\n').split('\n');
+  const isPython = String(language || 'python').toLowerCase() === 'python';
+  return (
+    <div className="python-code-scroll">
+      <pre className="python-code"><code>
+        {lines.map((line, i) => (
+          <div className="python-code-line" key={i}>
+            <span className="python-line-content">{isPython ? highlightPythonLine(line) : line}</span>
+          </div>
+        ))}
+      </code></pre>
+    </div>
   );
 }
 
@@ -1648,22 +1817,54 @@ function normaliseSubject(raw, meta) {
   const institute = raw.institute || meta.institute || '';
   const term = raw.assignment || meta.term || '';
   const rawQs = raw.questions || raw.qs || [];
+  const sourceDocs = raw.sourceDocuments || {};
   const byWeek = {};
+  const pageRecord = (week, pageNo) => {
+    const pages = sourceDocs[String(week)]?.pages || [];
+    return pages.find((p) => Number(p.page) === Number(pageNo)) || null;
+  };
+  const pageAssetUrl = (page) => {
+    const image = page && page.image ? String(page.image).replace(/^\/+/, '') : '';
+    return image ? '/assets/' + image : '';
+  };
   rawQs.forEach((q, i) => {
     const week = q.week != null ? q.week : 1;
     if (!byWeek[week]) byWeek[week] = [];
-    const options = (q.options || []).map((o) =>
+    // pdfSource is the preserved official wording snapshot for this quiz bank.
+    // Fall back to legacy fields so other subject JSON files remain compatible.
+    const pdfSource = q.pdfSource || {};
+    const sourceOptions = Array.isArray(pdfSource.options) ? pdfSource.options : (q.options || []);
+    const options = sourceOptions.map((o) =>
       typeof o === 'string' ? o : (o && (o.text ?? o.value ?? o.label)) ?? String(o)
     );
     const answer =
       q.correctAnswer !== undefined ? q.correctAnswer :
       q.answer !== undefined ? q.answer :
       q.correct !== undefined ? q.correct : null;
+    const sourcePage = pdfSource.questionPage ?? q.sourcePage ?? (q.sourcePages || [])[0] ?? null;
+    const programContext = pdfSource.programContext || q.programContext || null;
+    const codePages = (programContext && Array.isArray(programContext.codePages)) ? programContext.codePages : [];
+    const programSourcePage = codePages.length ? codePages[0].page : null;
     byWeek[week].push({
       id: q.id || (q.questionNo ? `W${week}-Q${q.questionNo}` : `W${week}-${i}`),
-      question: q.question || q.text || '',
+      question: pdfSource.questionText ?? q.question ?? q.text ?? '',
       options, answer,
-      explanation: q.explanation || q.solution || '',
+      explanation: pdfSource.justificationText ?? q.explanation ?? q.solution ?? '',
+      scenarioTitle: pdfSource.scenarioTitle ?? q.scenarioTitle ?? '',
+      scenarioText: pdfSource.scenarioText ?? q.scenarioText ?? '',
+      sourceQuestionLabel: pdfSource.questionLabel || q.sourceQuestionLabel || '',
+      sourceAnswerText: pdfSource.printedAnswerText || q.sourceAnswerText || '',
+      sourceAnswerLabel: pdfSource.printedAnswerLabel || q.sourceAnswerLabel || 'Answer:',
+      sourcePage,
+      sourcePageImage: pageAssetUrl(pageRecord(week, sourcePage)),
+      sourcePageImages: q.sourcePageImages || [],
+      sourcePages: pdfSource.sourcePages || q.sourcePages || [],
+      programContext,
+      programText: pdfSource.programText ?? q.programText ?? '',
+      programLanguage: pdfSource.programLanguage || q.programLanguage || 'python',
+      programSourcePage,
+      programSourcePageImage: pageAssetUrl(pageRecord(week, programSourcePage)),
+      pdfSource: pdfSource,
       _aid: 'W' + week, _aname: 'Week ' + week,
       _week: week, _qno: q.questionNo, _type: q.type || 'MCQ',
     });
@@ -2394,6 +2595,8 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   const [records, setRecords] = useState([]);
   const [elapsed, setElapsed] = useState(0);
   const [flash, setFlash] = useState(null);
+  const [sourceImage, setSourceImage] = useState(null);
+  const [sourceImageError, setSourceImageError] = useState(false);
   const qStart = useRef(Date.now());
   const t0 = useRef(Date.now());
   const flashTimer = useRef(null);
@@ -2403,6 +2606,20 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
     return () => clearInterval(t);
   }, []);
   useEffect(() => () => clearTimeout(flashTimer.current), []);
+  useEffect(() => {
+    if (!sourceImage) return undefined;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const handleViewerKey = (event) => {
+      if (event.key === 'Escape') setSourceImage(null);
+    };
+    window.addEventListener('keydown', handleViewerKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleViewerKey);
+    };
+  }, [sourceImage]);
+
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [idx]);
 
   const changeQuestionShuffle = useCallback((enabled) => {
@@ -2429,7 +2646,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
 
   const q = questions[idx];
   const correctIdx = useMemo(() => (q ? answerIndices(q) : []), [q]);
-  const multi = correctIdx.length > 1;
+  const multi = String(q?._type || '').toUpperCase() === 'MSQ' || correctIdx.length > 1;
   const isLast = idx === questions.length - 1;
   const reveal = settings.instantFeedback && locked;
   const isCorrect = reveal && sameSet(selected, correctIdx);
@@ -2540,10 +2757,66 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
         <div className="page" style={{ paddingBottom: 'calc(96px + var(--safe-b))' }}>
           <div className="row between" style={{ marginBottom: 10 }}>
             <span className="badge blue">{q._aname}</span>
+            <span className={'badge ' + (multi ? 'amber' : 'grey')}>{multi ? 'MSQ · Multiple Select' : 'MCQ · Multiple Choice'}</span>
             {multi && <span className="badge amber">Select {correctIdx.length}</span>}
             <span className="tiny" style={{ marginLeft: 'auto' }}>{correctCount} correct so far</span>
           </div>
           <div className="card">
+            {q.scenarioText ? (
+              <section className="assignment-scenario" aria-label="Assignment case study">
+                <div className="assignment-scenario-heading">
+                  <span className="scenario-icon" aria-hidden="true">✦</span>
+                  <span>Case study / scenario</span>
+                </div>
+                {q.scenarioTitle ? <h3 className="assignment-scenario-title">{q.scenarioTitle}</h3> : null}
+                <div className="assignment-scenario-text">
+                  <FormattedText text={(() => {
+                    const text = String(q.scenarioText || '').trim();
+                    const title = String(q.scenarioTitle || '').trim();
+                    return title && text.toLowerCase().startsWith(title.toLowerCase())
+                      ? text.slice(title.length).replace(/^\\s*[.:—-]?\\s*/, '')
+                      : text;
+                  })()} />
+                </div>
+              </section>
+            ) : null}
+            {q.programText ? (
+              <section className="assignment-code-panel" aria-label={String(q.programLanguage || 'python').toLowerCase() === 'scratch' ? 'Scratch block sequence' : 'Assignment program'}>
+                <div className="assignment-code-header">
+                  <div>
+                    <div className="assignment-code-title"><span className="code-glyph" aria-hidden="true">{'</>'}</span> {String(q.programLanguage || 'python').toLowerCase() === 'scratch' ? 'Scratch block sequence' : (String(q.programLanguage || 'python').toLowerCase() === 'python' ? 'Python program' : String(q.programLanguage).toUpperCase() + ' program')}</div>
+                    <div className="assignment-code-subtitle">Program transcription with the source line numbering and blank lines retained</div>
+                    {q.programSourcePageImage ? (
+                      <button
+                        type="button"
+                        className="source-page-link source-page-link-button"
+                        onClick={() => { setSourceImageError(false); setSourceImage({ url: q.programSourcePageImage, title: 'Original PDF code page', page: q.programSourcePage }); }}
+                        aria-haspopup="dialog"
+                      >
+                        View original PDF code page {q.programSourcePage ? `· page ${q.programSourcePage}` : ''} ↗
+                      </button>
+                    ) : null}
+                  </div>
+                  <span className="language-pill">{String(q.programLanguage || 'python').toUpperCase()}</span>
+                </div>
+                <PythonCodePanel code={q.programText} language={q.programLanguage} />
+              </section>
+            ) : null}
+            {q.sourceQuestionLabel ? (
+              <div className="source-question-meta">
+                <span className="source-question-label">{q.sourceQuestionLabel}</span>
+                {q.sourcePageImage ? (
+                  <button
+                    type="button"
+                    className="source-page-link source-page-link-button"
+                    onClick={() => { setSourceImageError(false); setSourceImage({ url: q.sourcePageImage, title: 'Original PDF question page', page: q.sourcePage }); }}
+                    aria-haspopup="dialog"
+                  >
+                    View original PDF page {q.sourcePage ? `· page ${q.sourcePage}` : ''} ↗
+                  </button>
+                ) : null}
+              </div>
+            ) : null}
             <div className="qtext" style={{ fontSize: 16 }}><FormattedText text={q.question} /></div>
             <div style={{ marginTop: 14 }}>
               {q.options.map((opt, i) => {
@@ -2569,8 +2842,12 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
                 <div className="reveal-head">
                   {isCorrect ? <><Icon name="check" size={15} /> Correct</> : <><Icon name="x" size={15} /> Incorrect</>}
                 </div>
-                <div className="reveal-answer">Correct answer: <b>{correctIdx.map(i => String.fromCharCode(65 + i)).join(', ')}</b></div>
-                {q.explanation && <div className="reveal-explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
+                <div className="reveal-answer">
+                  {!shuffleOptions && q.sourceAnswerText
+                    ? <><b>{q.sourceAnswerLabel || 'Answer:'}</b> {q.sourceAnswerText}</>
+                    : <>Correct answer: <b>{correctIdx.map(i => String.fromCharCode(65 + i)).join(', ')}</b></>}
+                </div>
+                {q.explanation && <div className="reveal-explain"><b>Justification:</b> <FormattedText text={q.explanation} /></div>}
               </div>
             )}
           </div>
@@ -2589,6 +2866,56 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
           </div>
         </div>
       </div>
+      {sourceImage ? (
+        <div
+          className="source-image-viewer-backdrop"
+          role="presentation"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setSourceImage(null);
+          }}
+        >
+          <section
+            className="source-image-viewer"
+            role="dialog"
+            aria-modal="true"
+            aria-label={sourceImage.title || 'Original assignment source'}
+          >
+            <div className="source-image-viewer-head">
+              <div className="source-image-viewer-heading">
+                <div className="source-image-viewer-title">{sourceImage.title || 'Original assignment source'}</div>
+                <div className="source-image-viewer-subtitle">
+                  {sourceImage.page ? `Page ${sourceImage.page} · ` : ''}View the original source without leaving Mooc Mastery
+                </div>
+              </div>
+              <button
+                type="button"
+                className="source-image-viewer-close"
+                onClick={() => setSourceImage(null)}
+                aria-label="Close original source viewer"
+                title="Close (Esc)"
+              >
+                <Icon name="x" size={19} />
+              </button>
+            </div>
+            <div className="source-image-viewer-body">
+              {sourceImageError ? (
+                <div className="source-image-viewer-error" role="alert">
+                  <strong>Could not load this source page.</strong>
+                  <p style={{ marginTop: 6 }}>Check that the image exists in the deployed assets folder, then refresh the page.</p>
+                  <p style={{ marginTop: 6, overflowWrap: 'anywhere' }}>{sourceImage.url}</p>
+                </div>
+              ) : (
+                <img
+                  className="source-image-viewer-image"
+                  src={sourceImage.url}
+                  alt={`${sourceImage.title || 'Original assignment source'}${sourceImage.page ? `, page ${sourceImage.page}` : ''}`}
+                  onError={() => setSourceImageError(true)}
+                />
+              )}
+            </div>
+          </section>
+        </div>
+      ) : null}
     </div>
   );
 }
