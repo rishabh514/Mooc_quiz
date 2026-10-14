@@ -1353,6 +1353,61 @@ body.modal-open{overflow:hidden}
 }
 
 
+/* Joy of Computing source-material disclaimer — shown only on that subject's Practice screen */
+.course-disclaimer {
+  margin-top: 16px;
+  padding: 15px 17px;
+  border: 1px solid rgba(161,98,7,.24);
+  border-left: 4px solid var(--amber);
+  border-radius: var(--r-lg);
+  background: var(--amber-bg);
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+}
+.course-disclaimer-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 7px;
+  color: var(--text);
+  font-size: var(--fs-sm);
+  font-weight: 750;
+  line-height: 1.4;
+}
+.course-disclaimer-symbol {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--amber-bg);
+  border: 1px solid rgba(161,98,7,.28);
+  color: var(--amber);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 1px;
+}
+.course-disclaimer p { margin: 8px 0 0; }
+.course-disclaimer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  color: var(--accent);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-line);
+}
+.course-disclaimer-link:hover { text-decoration: none; opacity: .82; }
+.course-disclaimer-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 520px) {
+  .course-disclaimer { padding: 13px 14px; }
+}
+
 /* Assignment-faithful question layout: readable case study + code, no page screenshots */
 .assignment-scenario {
   margin: 0 0 14px; padding: 16px 18px;
@@ -1938,16 +1993,23 @@ function Switch({ on, onChange }) {
   return <button className={'switch' + (on ? ' on' : '')} onClick={() => onChange(!on)} aria-pressed={on} aria-label="Toggle"><i /></button>;
 }
 
-function ShuffleControls({ shuffleQuestions, shuffleOptions, onQuestionsChange, onOptionsChange, compact = false, questionHint, optionHint }) {
+function ShuffleControls({ shuffleQuestions, shuffleOptions, onQuestionsChange, onOptionsChange, compact = false, questionHint, optionHint, lockQuestionOrder = false }) {
   return (
     <div className={'shuffle-controls' + (compact ? ' compact' : '')} aria-label="Quiz randomization settings">
-      <div className="setrow">
+      {!lockQuestionOrder && <div className="setrow">
         <div style={{ minWidth: 0, flex: 1 }}>
           <div className="lbl">Shuffle question order</div>
           <div className="hint">{questionHint || 'Show selected questions in a random order.'}</div>
         </div>
         <Switch on={shuffleQuestions} onChange={onQuestionsChange} />
-      </div>
+      </div>}
+      {lockQuestionOrder && <div className="setrow">
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div className="lbl">Question order fixed</div>
+          <div className="hint">Questions stay in the original assignment order to preserve connected case studies.</div>
+        </div>
+        <span className="badge grey">On</span>
+      </div>}
       <div className="setrow">
         <div style={{ minWidth: 0, flex: 1 }}>
           <div className="lbl">Shuffle option order</div>
@@ -2439,6 +2501,32 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
         )}
       </div>
 
+      {subject.id === 'joy_of_computing_using_python' && (
+        <section className="course-disclaimer" aria-labelledby="joy-course-disclaimer-title" role="note">
+          <h2 className="course-disclaimer-heading" id="joy-course-disclaimer-title">
+            <span className="course-disclaimer-symbol" aria-hidden="true">!</span>
+            Important note about this question bank
+          </h2>
+          <p>
+            We have made our best efforts to make this quiz closely mirror the actual <em>The Joy of Computing using Python</em> assignments, including the question statements, answer options and connected case-study context.
+          </p>
+          <p>
+            The official assignment material contains many code snippets, images and questions that depend on shared case studies. To preserve those connections, question randomisation is disabled for this subject: questions stay in their original assignment order so a case study appears before the questions that refer to it. Although we have worked to reproduce the assignments as faithfully as possible, the quiz may not capture every visual detail or layout exactly. Original assignment-page images are also provided alongside relevant questions so you can refer to the source code and figures while practising.
+          </p>
+          <p>
+            For the most complete and accurate preparation, please refer to the official assignment PDFs as well as this practice quiz.
+          </p>
+          <a
+            className="course-disclaimer-link"
+            href="https://drive.google.com/drive/folders/1r0NUrmbYav6dFkN8oLzClZyAm9fgFI4s?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open official assignment PDFs <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+      )}
+
       <div className="grid g4" style={{ marginTop: 20 }}>
         <div className="stat"><div className="v">{covered}<small>/{bank.length}</small></div><div className="l">Seen</div></div>
         <div className="stat"><div className="v">{pct(totalCorrect, totalAttempts)}%</div><div className="l">Accuracy</div></div>
@@ -2462,12 +2550,13 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
 
       <h2 className="section-title">Quick practice</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>A random set drawn from the entire question bank.</p>
+        <p className="muted" style={{ marginBottom: 16 }}>{subject.id === 'joy_of_computing_using_python' ? 'Questions are taken in their original assignment order to preserve connected case studies.' : 'A random set drawn from the entire question bank.'}</p>
         <ShuffleControls
           shuffleQuestions={settings.shuffleQuestions}
           shuffleOptions={settings.shuffleOptions}
           onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
           onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+          lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
         />
         <div className="col">
           <div className="row between" style={{ rowGap: 10 }}>
@@ -2487,12 +2576,13 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
 
       <h2 className="section-title">Custom set</h2>
       <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>Choose specific weeks, then set how many questions to draw.</p>
+        <p className="muted" style={{ marginBottom: 16 }}>{subject.id === 'joy_of_computing_using_python' ? 'Choose specific weeks. Questions will remain in the original assignment order.' : 'Choose specific weeks, then set how many questions to draw.'}</p>
         <ShuffleControls
           shuffleQuestions={settings.shuffleQuestions}
           shuffleOptions={settings.shuffleOptions}
           onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
           onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+          lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
         />
         <div className="grid g2" style={{ marginBottom: 16 }}>
           {subject.assignments.map((a) => {
@@ -2587,7 +2677,8 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
 
 function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, onQuit }) {
   const [questions, setQuestions] = useState(() => config.questions);
-  const [shuffleQuestions, setShuffleQuestions] = useState(() => config.shuffleQuestions ?? settings.shuffleQuestions);
+  const isJoyOfComputing = config.subjectId === 'joy_of_computing_using_python';
+  const [shuffleQuestions, setShuffleQuestions] = useState(() => isJoyOfComputing ? false : (config.shuffleQuestions ?? settings.shuffleQuestions));
   const [shuffleOptions, setShuffleOptions] = useState(() => config.shuffleOptions ?? settings.shuffleOptions);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState([]);
@@ -2623,6 +2714,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [idx]);
 
   const changeQuestionShuffle = useCallback((enabled) => {
+    if (isJoyOfComputing) return;
     setShuffleQuestions(enabled);
     // Keep the current question and completed history stable; reorder only questions still ahead.
     setQuestions((prev) => {
@@ -2633,7 +2725,7 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
         : upcoming.slice().sort((a, b) => (Number(a._week) - Number(b._week)) || (Number(a._qno || 0) - Number(b._qno || 0)));
       return fixed.concat(ordered);
     });
-  }, [idx]);
+  }, [idx, isJoyOfComputing]);
 
   const changeOptionShuffle = useCallback((enabled) => {
     setShuffleOptions(enabled);
@@ -3307,13 +3399,23 @@ function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAcce
               </div>
               <Switch on={settings.instantFeedback} onChange={(v) => setSettings({ ...settings, instantFeedback: v })} />
             </div>
-            <div className="setrow">
-              <div style={{ minWidth: 0, flex: 1 }}>
-                <div className="lbl">Shuffle questions</div>
-                <div className="hint">Randomise the order within a set.</div>
+            {subjectId === 'joy_of_computing_using_python' ? (
+              <div className="setrow">
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <div className="lbl">Question order fixed for Joy of Computing</div>
+                  <div className="hint">Randomisation is disabled for this subject because questions follow connected case studies and the official assignment order.</div>
+                </div>
+                <span className="badge grey">Fixed</span>
               </div>
-              <Switch on={settings.shuffleQuestions} onChange={(v) => setSettings({ ...settings, shuffleQuestions: v })} />
-            </div>
+            ) : (
+              <div className="setrow">
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <div className="lbl">Shuffle questions</div>
+                  <div className="hint">Randomise the order within a set.</div>
+                </div>
+                <Switch on={settings.shuffleQuestions} onChange={(v) => setSettings({ ...settings, shuffleQuestions: v })} />
+              </div>
+            )}
             <div className="setrow">
               <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="lbl">Shuffle options</div>
@@ -3457,13 +3559,17 @@ function App() {
   }, [subject]);
 
   const prep = useCallback((list) => list.map((q) => prepareQuestion(q, settings.shuffleOptions)), [settings.shuffleOptions]);
-  const orderPool = useCallback((pool) => (settings.shuffleQuestions ? shuffle(pool) : pool.slice()), [settings.shuffleQuestions]);
+  const orderPool = useCallback((pool) => {
+    if (subjectId === 'joy_of_computing_using_python') return pool.slice();
+    return settings.shuffleQuestions ? shuffle(pool) : pool.slice();
+  }, [settings.shuffleQuestions, subjectId]);
 
   const startQuiz = (cfg) => {
     if (!cfg.questions.length) { alert('No questions available for this selection.'); return; }
     setQuizConfig({
       ...cfg,
-      shuffleQuestions: settings.shuffleQuestions,
+      subjectId,
+      shuffleQuestions: subjectId === 'joy_of_computing_using_python' ? false : settings.shuffleQuestions,
       shuffleOptions: settings.shuffleOptions,
     });
     setScreen('quiz');
