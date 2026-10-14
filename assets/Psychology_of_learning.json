@@ -1647,6 +1647,154 @@
       "correctAnswer": "B",
       "correctOption": "cognitive influence",
       "explanation": "The cognitive influence hypothesis holds that social processes shape the cognitive operations of selection, organization, integration, and retrieval of information. Activation, interaction, and social cue strength are not the names of this hypothesis. Hence cognitive influence is correct."
+    },
+        {
+      "week": 12,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Sustainability in economic sustainability is ___.",
+      "options": [
+        { "key": "A", "text": "multidimensional" },
+        { "key": "B", "text": "bidimensional" },
+        { "key": "C", "text": "unidimensional" },
+        { "key": "D", "text": "none of the given" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "unidimensional",
+      "explanation": "In the context of sustainability, economic sustainability is treated as unidimensional because it focuses primarily on a single dimension—economic viability and long-term profitability. Unlike environmental sustainability, which spans multiple factors such as biodiversity, water, and climate, economic sustainability is measured mainly through financial and economic indicators. Multidimensional and bidimensional do not accurately describe the economic pillar in the standard sustainability framework."
+    },
+    {
+      "week": 12,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "The term \"sustainable development\" was first mentioned in a book related to the 1972 UN Stockholm conference on ___.",
+      "options": [
+        { "key": "A", "text": "water" },
+        { "key": "B", "text": "poverty" },
+        { "key": "C", "text": "economic crisis" },
+        { "key": "D", "text": "human environment" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "human environment",
+      "explanation": "The 1972 United Nations Conference on the Human Environment, held in Stockholm, was the first major international conference to address environmental issues. The concept of sustainable development emerged from concerns raised at this conference and was later elaborated in publications such as 'Only One Earth'. Water, poverty, and economic crisis are important topics but were not the focus of the 1972 Stockholm conference. Hence human environment is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Environmental sustainability focuses on impacts of processes, products and services on ___.",
+      "options": [
+        { "key": "A", "text": "water" },
+        { "key": "B", "text": "biodiversity" },
+        { "key": "C", "text": "human health" },
+        { "key": "D", "text": "all of the given" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Environmental sustainability examines how processes, products, and services affect the natural environment across multiple dimensions, including water resources, biodiversity, and human health. All of these are interconnected aspects of environmental impact. Since each of the listed items is a valid focus area, all of the given is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Which of the following does not come under social sustainability?",
+      "options": [
+        { "key": "A", "text": "Labour practices" },
+        { "key": "B", "text": "Revenue generation" },
+        { "key": "C", "text": "Human rights" },
+        { "key": "D", "text": "Business ethics" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Revenue generation",
+      "explanation": "Social sustainability concerns how organizations and societies treat people—covering labour practices, human rights, and business ethics. Revenue generation is an economic outcome, not a social sustainability concern. It falls under economic sustainability rather than social sustainability. Hence Revenue generation is the correct answer."
+    },
+    {
+      "week": 12,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "SDG___ focuses on clean water and sanitation.",
+      "options": [
+        { "key": "A", "text": "1" },
+        { "key": "B", "text": "17" },
+        { "key": "C", "text": "6" },
+        { "key": "D", "text": "3" }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "6",
+      "explanation": "Sustainable Development Goal 6 (SDG 6) is dedicated to ensuring availability and sustainable management of water and sanitation for all. SDG 1 is No Poverty, SDG 3 is Good Health and Well-Being, and SDG 17 is Partnerships for the Goals. Hence SDG 6 is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "SDG 16 focuses on ___.",
+      "options": [
+        { "key": "A", "text": "No poverty" },
+        { "key": "B", "text": "No hunger" },
+        { "key": "C", "text": "Good health" },
+        { "key": "D", "text": "Peace and justice" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Peace and justice",
+      "explanation": "Sustainable Development Goal 16 (SDG 16) promotes peaceful and inclusive societies, provides access to justice for all, and builds effective, accountable, and inclusive institutions. No Poverty is SDG 1, No Hunger is SDG 2, and Good Health is SDG 3. Hence Peace and justice is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "On 20 October 2020, the Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the ___ 2020.",
+      "options": [
+        { "key": "A", "text": "National Sustainability Meeting" },
+        { "key": "B", "text": "National Teachers Meeting" },
+        { "key": "C", "text": "Global Children's Meeting" },
+        { "key": "D", "text": "Global Education Meeting" }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Global Education Meeting",
+      "explanation": "The Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the Global Education Meeting 2020, held on 20 October 2020. This event brought together global stakeholders to discuss the role of education in achieving the SDGs. The other options are not the correct event names. Hence Global Education Meeting is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "Education is related to all SDGs.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "Education is widely recognized as a cross-cutting enabler of all 17 Sustainable Development Goals. Quality education (SDG 4) contributes to poverty reduction, health improvement, gender equality, environmental awareness, and economic growth, among others. Because education underpins progress across all SDGs, the statement is true."
+    },
+    {
+      "week": 12,
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Successful implementation of ESD requires a shift in focus from ___.",
+      "options": [
+        { "key": "A", "text": "teaching to learning" },
+        { "key": "B", "text": "learning to teaching" },
+        { "key": "C", "text": "reading to speaking" },
+        { "key": "D", "text": "knowing to ignoring" }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "teaching to learning",
+      "explanation": "Education for Sustainable Development (ESD) requires a paradigm shift from teacher-centered instruction to learner-centered approaches. The focus moves from merely transmitting content (teaching) to actively engaging students in learning processes that develop competencies for sustainability. Shifting from learning to teaching would reverse this progress, and the other options are unrelated. Hence teaching to learning is correct."
+    },
+    {
+      "week": 12,
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "___ competency is the ability to reflect on one's own role in the local community and (global) society.",
+      "options": [
+        { "key": "A", "text": "collaboration" },
+        { "key": "B", "text": "self-awareness" },
+        { "key": "C", "text": "strategic" },
+        { "key": "D", "text": "normative" }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "self-awareness",
+      "explanation": "Self-awareness competency, in the context of ESD, refers to the ability to reflect on one's own role in the local community and global society, and to continually evaluate and motivate oneself to act sustainably. Collaboration involves working with others, strategic competency relates to planning and implementing actions, and normative competency involves negotiating values and principles. Hence self-awareness is correct."
     }
   ]
 }

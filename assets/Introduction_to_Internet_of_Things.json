@@ -5167,430 +5167,274 @@
       "explanation": "In HDFS, DataNodes store the actual file blocks distributed across the cluster. The NameNode manages filesystem metadata, such as namespace information and which blocks belong to which files, but it does not normally store the file contents themselves. Job Tracker belongs to the older MapReduce job-management architecture, and YARN manages cluster resources. The key distinction is between metadata management and the physical storage of block data."
     },
     {
-      "week": 12,
-      "questionNo": 1,
-      "sourceQuestionNo": 176,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "The two broad types of data analysis are ______ and ______.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Qualitative and Quantitative"
-        },
-        {
-          "key": "B",
-          "text": "Repetitive and Quantitative"
-        },
-        {
-          "key": "C",
-          "text": "Repetitive and Qualitative"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "Qualitative and Quantitative",
-      "explanation": "Data analysis is broadly divided into qualitative and quantitative approaches. Qualitative analysis examines qualities, categories, meanings, and descriptions, often using non-numeric observations or text. Quantitative analysis works with numerical measurements and statistical methods to describe patterns or test relationships. Both are useful and can complement each other in one study; “repetitive” is not one of the two broad analysis types named in the question."
-    },
-    {
-      "week": 12,
-      "questionNo": 2,
-      "sourceQuestionNo": 177,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Which of the following is/are the basic principle(s) of qualitative analysis?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Notice things"
-        },
-        {
-          "key": "B",
-          "text": "Think about things"
-        },
-        {
-          "key": "C",
-          "text": "Collect things"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "All of these",
-      "explanation": "Qualitative analysis begins by noticing relevant features, thinking about what those observations may mean, and collecting information that supports interpretation. The process is iterative: careful observation helps generate questions, reflection helps identify patterns, and further collection can test or refine those interpretations. Since all three listed activities contribute to the basic approach, “All of these” is the correct option."
-    },
-    {
-      "week": 12,
-      "questionNo": 3,
-      "sourceQuestionNo": 178,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "To perform an ANOVA, we must have a _____ response variable and at least one _____ factor.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Discrete, categorical"
-        },
-        {
-          "key": "B",
-          "text": "Continuous, quantitative"
-        },
-        {
-          "key": "C",
-          "text": "Discrete, quantitative"
-        },
-        {
-          "key": "D",
-          "text": "Continuous, categorical"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "Continuous, categorical",
-      "explanation": "In the ANOVA setup described, the response variable is continuous, such as a measured time, score, or temperature, and the factor is categorical, such as treatment group or device type. ANOVA compares variation in the response across categories to assess whether group means differ more than expected from within-group variation. A quantitative factor is not the categorical grouping variable described here, so the continuous-response/categorical-factor combination is the relevant one."
-    },
-    {
-      "week": 12,
-      "questionNo": 4,
-      "sourceQuestionNo": 179,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Which of the following is/are application(s) of IoT in agriculture?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Automated irrigation system"
-        },
-        {
-          "key": "B",
-          "text": "Automated weeding system"
-        },
-        {
-          "key": "C",
-          "text": "Water level monitoring"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "All of these",
-      "explanation": "IoT supports multiple agricultural applications by connecting sensors, communication, and automated control. Soil or weather readings can inform automated irrigation, connected equipment can support targeted weeding, and level sensors can monitor water storage or supply. These are different examples of using real-world measurements to guide agricultural decisions or actions. Since all three applications are valid examples in the options, “All of these” is the intended answer."
-    },
-    {
-      "week": 12,
-      "questionNo": 5,
-      "sourceQuestionNo": 180,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "The two most directly relevant sensors used in agriculture (as discussed) are ______.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Soil moisture and proximity sensor"
-        },
-        {
-          "key": "B",
-          "text": "Soil moisture and water level sensor"
-        },
-        {
-          "key": "C",
-          "text": "ECG sensor and water level sensor"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctOption": "Soil moisture and water level sensor",
-      "explanation": "Soil-moisture sensors help determine whether the soil needs irrigation, while water-level sensors indicate the amount of water in a tank, reservoir, or irrigation source. Together, these measurements help farmers use water more efficiently by linking the condition of the field to the availability of water. ECG and related biomedical sensors are not the two agriculture sensors most directly relevant to the example being discussed."
-    },
-    {
-      "week": 12,
-      "questionNo": 6,
-      "sourceQuestionNo": 181,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "The deployed IoT gateway of AgriSens communicates with the remote server using:",
-      "options": [
-        {
-          "key": "A",
-          "text": "WiFi"
-        },
-        {
-          "key": "B",
-          "text": "Bluetooth"
-        },
-        {
-          "key": "C",
-          "text": "Internet Phone System"
-        },
-        {
-          "key": "D",
-          "text": "GPRS"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "GPRS",
-      "explanation": "The AgriSens gateway uses GPRS to communicate with the remote server in the lecture example. GPRS is a packet-data service over cellular networks, allowing a remotely deployed agricultural gateway to send readings where local Wi-Fi may not be available. Bluetooth is typically short range, and an Internet phone system is not the stated communication technology. This answer follows the specific implementation described in the source material."
-    },
-    {
-      "week": 12,
-      "questionNo": 7,
-      "sourceQuestionNo": 182,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Select the correct order of component layers in IoT healthcare.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Sensing layer, cloud platform layer, aggregated layer, processing layer"
-        },
-        {
-          "key": "B",
-          "text": "Sensing layer, aggregated layer, processing layer, cloud platform layer"
-        },
-        {
-          "key": "C",
-          "text": "Aggregated layer, sensing layer, processing layer, cloud platform layer"
-        },
-        {
-          "key": "D",
-          "text": "Sensing layer, processing layer, aggregated layer, cloud platform layer"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctOption": "Sensing layer, aggregated layer, processing layer, cloud platform layer",
-      "explanation": "The layer order given for the healthcare architecture is sensing, aggregation, processing, and cloud platform. Sensors first collect physiological or environmental measurements; the aggregation layer gathers readings from devices; the processing layer analyzes or transforms the collected data; and the cloud platform supports broader storage, access, or services. Keeping this sequence clear helps distinguish the production of raw readings from the later combining, analysis, and platform-level use of information."
-    },
-    {
-      "week": 12,
-      "questionNo": 8,
-      "sourceQuestionNo": 183,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "In AmbuSens, which communication protocol is used?",
-      "options": [
-        {
-          "key": "A",
-          "text": "IEEE 802.15.4"
-        },
-        {
-          "key": "B",
-          "text": "6LoWPAN"
-        },
-        {
-          "key": "C",
-          "text": "IEEE 802.15.1"
-        },
-        {
-          "key": "D",
-          "text": "IEEE 802.15.2"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "IEEE 802.15.1",
-      "explanation": "AmbuSens uses IEEE 802.15.1, the IEEE standard associated with Bluetooth wireless communication. In the described healthcare system, a short-range wireless link can connect sensing equipment or a wearable device to another device that collects or forwards its readings. IEEE 802.15.4 is associated with low-rate personal-area networks, and 6LoWPAN is an IPv6 adaptation for low-power wireless networks, so they are not the protocol specified for AmbuSens here."
-    },
-    {
-      "week": 12,
-      "questionNo": 9,
-      "sourceQuestionNo": 184,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Wireless IoT-driven remote healthcare provisioning brings healthcare to patients rather than bringing patients to healthcare.",
-      "options": [
-        {
-          "key": "A",
-          "text": "True"
-        },
-        {
-          "key": "B",
-          "text": "False"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "True",
-      "explanation": "The statement is true. Wireless IoT-based remote healthcare can transmit patient measurements from the patient’s location to healthcare providers, allowing monitoring and selected care activities to happen without requiring the patient to travel for every observation. Sensors, communication links, and software can support remote follow-up and earlier awareness of changes. This does not mean all care can be delivered remotely: examinations, urgent treatment, and some procedures still require in-person services."
-    },
-    {
-      "week": 12,
-      "questionNo": 10,
-      "sourceQuestionNo": 185,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Which handheld device sensor pair is used for activity monitoring (as discussed)?",
-      "options": [
-        {
-          "key": "A",
-          "text": "EEG and GPS"
-        },
-        {
-          "key": "B",
-          "text": "Accelerometer and EEG"
-        },
-        {
-          "key": "C",
-          "text": "Accelerometer and GPS"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "Accelerometer and GPS",
-      "explanation": "The accelerometer measures movement and changes in acceleration, while GPS estimates the device’s location and route. Together, they can help characterize activity—for example, distinguishing periods of movement and relating them to where the person travelled. EEG measures brain electrical activity and is not the sensor pair specified for the handheld activity-monitoring example. The answer is therefore the accelerometer-and-GPS combination."
-    },
-    {
-      "week": 12,
-      "questionNo": 11,
-      "sourceQuestionNo": 186,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Which of the following is a property of in-place data analysis for activity monitoring?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Power intensive"
-        },
-        {
-          "key": "B",
-          "text": "On the device"
-        },
-        {
-          "key": "C",
-          "text": "No need of network"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "All of these",
-      "explanation": "In-place data analysis means processing readings on the handheld or sensing device rather than sending all raw data to a remote server. It can reduce the need for a network connection and avoid transmission costs, but it may be power-intensive because processing consumes device energy. All three listed properties can therefore apply in the context of the question: computation takes place on the device, may use power, and can sometimes run without a network connection."
-    },
-    {
-      "week": 12,
-      "questionNo": 12,
-      "sourceQuestionNo": 187,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Deep learning-based analysis cannot be performed on videos.",
-      "options": [
-        {
-          "key": "A",
-          "text": "True"
-        },
-        {
-          "key": "B",
-          "text": "False"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctOption": "False",
-      "explanation": "The statement is false. Deep learning can be applied to video by processing individual frames, short clips, or spatiotemporal patterns across frames. Applications include object recognition, activity recognition, event detection, and movement analysis. Depending on the task, a model may use image-based neural networks or architectures designed to capture change over time. Video processing may be computationally demanding, but it is certainly not impossible with deep learning."
-    },
-    {
-      "week": 12,
-      "questionNo": 13,
-      "sourceQuestionNo": 188,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Which of the following are inbuilt sensors present in high-end smartphones (as discussed)?",
-      "options": [
-        {
-          "key": "A",
-          "text": "ECG and EEG"
-        },
-        {
-          "key": "B",
-          "text": "Accelerometer, proximity sensor, and EEG"
-        },
-        {
-          "key": "C",
-          "text": "Accelerometer, Compass, and Gyroscope"
-        },
-        {
-          "key": "D",
-          "text": "Pressure sensor and NPK sensor"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "Accelerometer, Compass, and Gyroscope",
-      "explanation": "High-end smartphones commonly include an accelerometer for movement and orientation cues, a compass or magnetometer for magnetic heading, and a gyroscope for angular rotation. Combining readings from these sensors supports screen orientation, navigation, activity recognition, and motion-aware applications. ECG/EEG and NPK sensors are not standard built-in phone sensors in the described context, and a proximity sensor is common but does not make option B the specific set listed in the lecture."
-    },
-    {
-      "week": 12,
-      "questionNo": 14,
-      "sourceQuestionNo": 189,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Processing the handheld activity device data using artificial intelligence can be used for ______.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Fall detection"
-        },
-        {
-          "key": "B",
-          "text": "Heart rate detection"
-        },
-        {
-          "key": "C",
-          "text": "Vehicle detection"
-        },
-        {
-          "key": "D",
-          "text": "All of these"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "Fall detection",
-      "explanation": "AI can analyze accelerometer and other activity-device readings to identify movement patterns associated with falls. For example, a model can learn features from sudden acceleration changes, body movement, and a period of inactivity to flag a possible fall for further review. Performance depends on sensor placement, data quality, and the model, so an alert should not be treated as infallible. In this question, fall detection is the stated application."
-    },
-    {
-      "week": 12,
-      "questionNo": 15,
-      "sourceQuestionNo": 190,
-      "weekLabel": "Week 12",
-      "section": "weekly",
-      "type": "MCQ",
-      "question": "Continuous monitoring of a person’s activity can help observe behavior and identify repetitive patterns.",
-      "options": [
-        {
-          "key": "A",
-          "text": "True"
-        },
-        {
-          "key": "B",
-          "text": "False"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "True",
-      "explanation": "Continuous activity monitoring produces a sequence of observations over time, which can reveal repeated actions, routines, changes in activity, or departures from a person’s usual pattern. Such information can support research or health monitoring when collected and used appropriately. The inference depends on interpreting patterns rather than relying on one isolated sample; privacy, consent, and context also matter when monitoring personal behaviour. The statement is true."
-    }
+    "week": 12,
+    "questionNo": 1,
+    "sourceQuestionNo": 176,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which type of data analysis is used for data that is categorical in nature?",
+    "options": [
+      { "key": "A", "text": "Qualitative analysis" },
+      { "key": "B", "text": "Quantitative analysis" },
+      { "key": "C", "text": "Regression analysis" },
+      { "key": "D", "text": "Analysis of variance" }
+    ],
+    "correctAnswer": "A",
+    "correctOption": "Qualitative analysis",
+    "explanation": "Categorical data represent qualities, labels, or groups rather than numerical measurements. Qualitative analysis is designed to examine such non-numeric information, often through description, classification, and interpretation. Quantitative analysis, regression, and ANOVA are primarily used with numerical data."
+  },
+  {
+    "week": 12,
+    "questionNo": 2,
+    "sourceQuestionNo": 177,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "According to the lecture, when is a statistical model classified as a complete model?",
+    "options": [
+      { "key": "A", "text": "When the number of variables equals the number of equations" },
+      { "key": "B", "text": "When the model contains no variables" },
+      { "key": "C", "text": "When the number of variables is always greater than the number of equations" },
+      { "key": "D", "text": "When only categorical data are used" }
+    ],
+    "correctAnswer": "A",
+    "correctOption": "When the number of variables equals the number of equations",
+    "explanation": "A statistical model is called complete when the number of unknown variables is exactly equal to the number of independent equations. This condition allows a unique solution to be found. If there are more variables than equations, the system is underdetermined; if fewer, it may be overdetermined."
+  },
+  {
+    "week": 12,
+    "questionNo": 3,
+    "sourceQuestionNo": 178,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Analysis of Variance (ANOVA) is best applied when which of the following are to be compared?",
+    "options": [
+      { "key": "A", "text": "Only a single observation" },
+      { "key": "B", "text": "More than two populations or samples" },
+      { "key": "C", "text": "Only non-numerical labels without any response variable" },
+      { "key": "D", "text": "Only identical copies of the same observation" }
+    ],
+    "correctAnswer": "B",
+    "correctOption": "More than two populations or samples",
+    "explanation": "ANOVA is a statistical method used to compare the means of three or more groups or populations. It tests whether the variation between group means is greater than the variation within groups. It is not suitable for a single observation or for purely categorical data without a continuous response variable."
+  },
+  {
+    "week": 12,
+    "questionNo": 4,
+    "sourceQuestionNo": 179,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "What does Pearson's correlation coefficient (r) measure?",
+    "options": [
+      { "key": "A", "text": "The number of equations in a statistical model" },
+      { "key": "B", "text": "The maximum value in a dataset" },
+      { "key": "C", "text": "The strength of association between two variables" },
+      { "key": "D", "text": "The sample size of an experiment" }
+    ],
+    "correctAnswer": "C",
+    "correctOption": "The strength of association between two variables",
+    "explanation": "Pearson's correlation coefficient (r) quantifies the strength and direction of the linear relationship between two continuous variables. Its value ranges from -1 to +1, where ±1 indicates a perfect linear relationship and 0 indicates no linear relationship."
+  },
+  {
+    "week": 12,
+    "questionNo": 5,
+    "sourceQuestionNo": 180,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "What is a primary objective of the AgriSens smart water management system?",
+    "options": [
+      { "key": "A", "text": "Restricting irrigation control to manual operation only" },
+      { "key": "B", "text": "Increasing irrigation water use regardless of soil condition" },
+      { "key": "C", "text": "Removing all sensors from agricultural fields" },
+      { "key": "D", "text": "Achieving more crop yield with less water" }
+    ],
+    "correctAnswer": "D",
+    "correctOption": "Achieving more crop yield with less water",
+    "explanation": "AgriSens is designed to optimize irrigation by using sensor data to apply water only when needed, thereby improving water-use efficiency. The goal is to sustain or increase crop yield while reducing water consumption, not to increase water use indiscriminately or remove sensors."
+  },
+  {
+    "week": 12,
+    "questionNo": 6,
+    "sourceQuestionNo": 181,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which set correctly represents the three layers of the proposed AgriSens architecture?",
+    "options": [
+      { "key": "A", "text": "Physical layer; transport layer; presentation layer" },
+      { "key": "B", "text": "Sensing and actuating layer; processing, storage and service layer; application layer" },
+      { "key": "C", "text": "User layer; billing layer; routing layer" },
+      { "key": "D", "text": "Sensor layer; firewall layer; operating-system layer" }
+    ],
+    "correctAnswer": "B",
+    "correctOption": "Sensing and actuating layer; processing, storage and service layer; application layer",
+    "explanation": "The AgriSens architecture is organized into three functional layers: a sensing and actuating layer that interacts with the physical environment, a processing, storage and service layer that handles data, and an application layer that provides user-facing services. This layered design separates data collection, processing, and application logic."
+  },
+  {
+    "week": 12,
+    "questionNo": 7,
+    "sourceQuestionNo": 182,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which component is included in the integrated design of an AgriSens sensor node?",
+    "options": [
+      { "key": "A", "text": "Meter data management system for smart grids" },
+      { "key": "B", "text": "Power management unit" },
+      { "key": "C", "text": "Phasor measurement unit" },
+      { "key": "D", "text": "Hadoop Namenode" }
+    ],
+    "correctAnswer": "B",
+    "correctOption": "Power management unit",
+    "explanation": "AgriSens sensor nodes are designed for remote agricultural deployment where energy is constrained. An integrated power management unit helps harvest, regulate, and conserve energy so the node can operate reliably. Meter data management, phasor measurement, and Hadoop Namenode are unrelated to the AgriSens node design."
+  },
+  {
+    "week": 12,
+    "questionNo": 8,
+    "sourceQuestionNo": 183,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "What is the function of the multi-user server in the AgriSens remote-server design?",
+    "options": [
+      { "key": "A", "text": "It supplies electrical power to the sensor nodes" },
+      { "key": "B", "text": "It measures soil moisture directly in the field" },
+      { "key": "C", "text": "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages" },
+      { "key": "D", "text": "It replaces all gateways with wired links" }
+    ],
+    "correctAnswer": "C",
+    "correctOption": "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages",
+    "explanation": "The multi-user server acts as a communication bridge between the field and the farmer. It processes incoming sensor data, sends alerts or summaries via SMS, and responds to farmer queries or control commands. It does not power the nodes, measure soil moisture directly, or replace gateways."
+  },
+  {
+    "week": 12,
+    "questionNo": 9,
+    "sourceQuestionNo": 184,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "In the IoT healthcare architecture discussed in the lecture, which layer contains smartphones and tablets used as data aggregators?",
+    "options": [
+      { "key": "A", "text": "Physical power layer" },
+      { "key": "B", "text": "Sensing layer" },
+      { "key": "C", "text": "Cloud platform" },
+      { "key": "D", "text": "Aggregated layer" }
+    ],
+    "correctAnswer": "D",
+    "correctOption": "Aggregated layer",
+    "explanation": "In the IoT healthcare architecture, smartphones and tablets serve as intermediate devices that collect data from body sensors and forward it onward. This role belongs to the aggregated layer, which sits between the sensing layer and the cloud platform layer."
+  },
+  {
+    "week": 12,
+    "questionNo": 10,
+    "sourceQuestionNo": 185,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which of the following is an example of preventive care enabled by IoT healthcare?",
+    "options": [
+      { "key": "A", "text": "Fall detection for senior citizens" },
+      { "key": "B", "text": "Disabling emergency alerts" },
+      { "key": "C", "text": "Removing physiological sensors from patients" },
+      { "key": "D", "text": "Storing only paper-based medical records" }
+    ],
+    "correctAnswer": "A",
+    "correctOption": "Fall detection for senior citizens",
+    "explanation": "Preventive care aims to detect or prevent health issues before they become severe. IoT-based fall detection for seniors can alert caregivers immediately after a fall, enabling timely assistance and potentially preventing complications. Disabling alerts, removing sensors, or relying only on paper records would not support preventive care."
+  },
+  {
+    "week": 12,
+    "questionNo": 11,
+    "sourceQuestionNo": 186,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "What is an advantage of continuous activity monitoring?",
+    "options": [
+      { "key": "A", "text": "It requires all sensor data to be discarded immediately" },
+      { "key": "B", "text": "It prevents any long-term observation" },
+      { "key": "C", "text": "It enables daily observation of human behavior and repetitive activity patterns" },
+      { "key": "D", "text": "It can operate only with cameras" }
+    ],
+    "correctAnswer": "C",
+    "correctOption": "It enables daily observation of human behavior and repetitive activity patterns",
+    "explanation": "Continuous activity monitoring collects data over time, allowing the system to identify routines, detect changes, and recognize repetitive patterns. This supports health assessments and personalized care. It does not require discarding data, preventing long-term observation, or relying exclusively on cameras."
+  },
+  {
+    "week": 12,
+    "questionNo": 12,
+    "sourceQuestionNo": 187,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which type of data can be analyzed using the deep-learning-based approach described in the lecture?",
+    "options": [
+      { "key": "A", "text": "Sensor data, images, and videos" },
+      { "key": "B", "text": "Images only" },
+      { "key": "C", "text": "Text labels only" },
+      { "key": "D", "text": "Sensor data only and never images or videos" }
+    ],
+    "correctAnswer": "A",
+    "correctOption": "Sensor data, images, and videos",
+    "explanation": "Deep learning is versatile and can be applied to various data types, including numerical sensor readings, images, and video sequences. Different architectures (e.g., CNNs for images, RNNs/LSTMs for sequences) are used depending on the data modality. It is not limited to images or sensor data alone."
+  },
+  {
+    "week": 12,
+    "questionNo": 13,
+    "sourceQuestionNo": 188,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Processing activity-monitoring sensor data directly on the device is referred to as which approach?",
+    "options": [
+      { "key": "A", "text": "Data-aggregator selection approach" },
+      { "key": "B", "text": "Network-only approach" },
+      { "key": "C", "text": "Cloud replication approach" },
+      { "key": "D", "text": "In-place approach" }
+    ],
+    "correctAnswer": "D",
+    "correctOption": "In-place approach",
+    "explanation": "The in-place approach refers to performing data analysis locally on the device that collected the data, rather than transmitting raw data to a remote server or cloud. This can reduce latency and network usage, though it may consume local processing power."
+  },
+  {
+    "week": 12,
+    "questionNo": 14,
+    "sourceQuestionNo": 189,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "What are the three basic elements used in the smartphone-based activity-monitoring demonstration?",
+    "options": [
+      { "key": "A", "text": "A soil-moisture sensor, a pump, and a paddy field" },
+      { "key": "B", "text": "A smart meter, a PMU, and a power plant" },
+      { "key": "C", "text": "A smartphone, a network, and a remote server" },
+      { "key": "D", "text": "A Hadoop Namenode, Datanode, and Job Tracker" }
+    ],
+    "correctAnswer": "C",
+    "correctOption": "A smartphone, a network, and a remote server",
+    "explanation": "The smartphone-based activity-monitoring demonstration uses a smartphone to collect sensor data, a network to transmit it, and a remote server to store and process the data. The other options describe components from unrelated domains such as agriculture, smart grids, or Hadoop."
+  },
+  {
+    "week": 12,
+    "questionNo": 15,
+    "sourceQuestionNo": 190,
+    "weekLabel": "Week 12",
+    "section": "weekly",
+    "type": "MCQ",
+    "question": "Which sensor values are specifically logged in the activity-monitoring demonstration described in the lecture?",
+    "options": [
+      { "key": "A", "text": "Accelerometer values" },
+      { "key": "B", "text": "Soil-moisture values" },
+      { "key": "C", "text": "Smart-grid voltage phasors" },
+      { "key": "D", "text": "Water-level values" }
+    ],
+    "correctAnswer": "A",
+    "correctOption": "Accelerometer values",
+    "explanation": "The activity-monitoring demonstration focuses on human movement, which is captured by the smartphone's accelerometer. The accelerometer values are logged and analyzed to infer activity patterns. Soil moisture, smart-grid phasors, and water level are not relevant to this demonstration."
+  }
   ]
 }
