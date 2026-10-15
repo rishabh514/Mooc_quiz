@@ -4170,5 +4170,11 @@
       "correctOption": "More than 20% of desired",
       "explanation": "An uneven-aged stand contains trees from several age classes rather than one cohort of approximately the same age. In the classification used here, the age difference among trees exceeds 20% of the desired age; uneven-aged management commonly uses selection harvesting to maintain continuous cover and a range of tree sizes."
     }
-  ]
+  ],
+  "contentNotice": {
+    "label": "April 2025 Question Bank — 2026 Update Coming Soon",
+    "sourcePeriod": "April 2025",
+    "updateStatus": "2026 question bank update planned",
+    "message": "This question bank is based on the April 2025 question set. We plan to update it with the 2026 question bank soon. For Forests and Their Management, assignment questions have generally remained the same across years; however, this should not be treated as a guarantee that every question will remain unchanged. Please refer to the latest official NPTEL/SWAYAM study material and assignments for the current course offering."
+  }
 }

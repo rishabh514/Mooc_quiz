@@ -1928,7 +1928,7 @@ function normaliseSubject(raw, meta) {
     .map((w) => parseInt(w, 10))
     .sort((a, b) => a - b)
     .map((w) => ({ id: 'W' + w, name: 'Week ' + w, questions: byWeek[w] }));
-  return { id, title, institute, term, assignments };
+  return { id, title, institute, term, contentNotice: raw.contentNotice || null, assignments };
 }
 
 async function fetchJSON(url) {
@@ -2524,6 +2524,26 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
           >
             Open official assignment PDFs <span aria-hidden="true">↗</span>
           </a>
+        </section>
+      )}
+
+      {subject.contentNotice && (
+        <section
+          className="course-disclaimer"
+          aria-labelledby={'content-notice-' + subject.id}
+          role="note"
+        >
+          <h2 className="course-disclaimer-heading" id={'content-notice-' + subject.id}>
+            <span className="course-disclaimer-symbol" aria-hidden="true">!</span>
+            {typeof subject.contentNotice === 'string'
+              ? 'Important note about this question bank'
+              : (subject.contentNotice.label || 'Important note about this question bank')}
+          </h2>
+          <p>
+            {typeof subject.contentNotice === 'string'
+              ? subject.contentNotice
+              : (subject.contentNotice.message || subject.contentNotice.description || '')}
+          </p>
         </section>
       )}
 
