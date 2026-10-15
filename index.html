@@ -3503,11 +3503,18 @@ function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showSubjects, setShowSubjects] = useState(false);
 
-  // ── Deep-link aware: hash takes priority over stored subject on first load
+  // ── First visit: show subject selection. Returning visits: reopen the last subject
+  // only if the user explicitly selected one before. This avoids treating the default
+  // first subject as a saved choice for brand-new visitors or legacy auto-saved data.
   const [subjectId, setSubjectId] = useState(() => {
     const hash = (typeof window !== 'undefined' && window.location.hash || '').replace('#', '');
     if (hash && SUBJECTS.some(s => s.id === hash)) return hash;
-    return LS.get('nptel.currentSubject', null) || SUBJECTS[0].id;
+    const savedId = LS.get('nptel.currentSubject', null);
+    // Backward compatibility: older versions only auto-saved the first subject by default.
+    // A saved non-default subject is therefore likely to be a real previous selection.
+    const hasExplicitSelection = LS.get('nptel.subjectSelected', false) || Boolean(savedId && savedId !== SUBJECTS[0].id);
+    if (hasExplicitSelection && SUBJECTS.some(s => s.id === savedId)) return savedId;
+    return SUBJECTS[0].id;
   });
   const [subject, setSubject] = useState(null);
   const [progress, setProgress] = useState(null);
@@ -3517,8 +3524,9 @@ function App() {
   const [screen, setScreen] = useState(() => {
     const hash = (typeof window !== 'undefined' && window.location.hash || '').replace('#', '');
     if (hash && SUBJECTS.some(s => s.id === hash)) return 'loading';
-    const sid = LS.get('nptel.currentSubject', null);
-    return sid ? 'loading' : 'landing';
+    const savedId = LS.get('nptel.currentSubject', null);
+    const hasExplicitSelection = LS.get('nptel.subjectSelected', false) || Boolean(savedId && savedId !== SUBJECTS[0].id);
+    return hasExplicitSelection && SUBJECTS.some(s => s.id === savedId) ? 'loading' : 'landing';
   });
   const [quizConfig, setQuizConfig] = useState(null);
   const [result, setResult] = useState(null);
@@ -3536,7 +3544,14 @@ function App() {
 
   useEffect(() => { LS.set('nptel.settings', settings); }, [settings]);
 
-  useEffect(() => { if (subjectId) LS.set('nptel.currentSubject', subjectId); }, [subjectId]);
+  // Save the current course only after an actual selection or an explicit course deep-link.
+  // Do not auto-save SUBJECTS[0] while a first-time visitor is still on the landing screen.
+  useEffect(() => {
+    if (subjectId && screen !== 'landing') {
+      LS.set('nptel.currentSubject', subjectId);
+      LS.set('nptel.subjectSelected', true);
+    }
+  }, [subjectId, screen]);
 
   // Keep the URL hash in sync so subjects are deep-linkable and shareable.
   useEffect(() => {
@@ -3688,6 +3703,7 @@ function App() {
   const changeSubject = (id) => {
     setSubjectId(id);
     LS.set('nptel.currentSubject', id);
+    LS.set('nptel.subjectSelected', true);
     cacheRef.current = {};
     setSubject(null); setProgress(null);
     setShowSettings(false);
