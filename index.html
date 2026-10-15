@@ -3514,7 +3514,8 @@ function App() {
     // A saved non-default subject is therefore likely to be a real previous selection.
     const hasExplicitSelection = LS.get('nptel.subjectSelected', false) || Boolean(savedId && savedId !== SUBJECTS[0].id);
     if (hasExplicitSelection && SUBJECTS.some(s => s.id === savedId)) return savedId;
-    return SUBJECTS[0].id;
+    // Fallback subject if the user enters practice without choosing a subject.
+    return 'psychology_of_learning';
   });
   const [subject, setSubject] = useState(null);
   const [progress, setProgress] = useState(null);
