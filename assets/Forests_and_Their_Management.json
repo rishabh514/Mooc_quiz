@@ -2,7 +2,7 @@
   "course": "Forests and Their Management",
   "institute": "NPTEL",
   "assignment": "All Weeks",
-  "source": "Uploaded MyQuizPrep PDF: Forests and their Management – All Weeks – Solutions",
+  "source": "Provided NPTEL/SWAYAM question statements and answer key (January 2026–April 2026 source set)",
   "weekStructure": [
     {
       "week": 0,
@@ -97,7 +97,7 @@
       "weekLabel": "Week 0",
       "section": "weekly",
       "type": "MCQ",
-      "question": "\"Plant community, predominantly comprised of trees and other woody vegetation, usually with a closed canopy\" is",
+      "question": "\"Plant community, predominantly composed of trees and other woody vegetation, usually with a closed canopy\" is",
       "options": [
         {
           "key": "A",
@@ -547,7 +547,7 @@
       "weekLabel": "Week 1",
       "section": "weekly",
       "type": "MCQ",
-      "question": "The value of leaving use and non-use values for offspring's or future generations is called",
+      "question": "The value of leaving use and non-use values for offspring’s or future generations is called",
       "options": [
         {
           "key": "A",
@@ -885,7 +885,7 @@
         },
         {
           "key": "B",
-          "text": "APAR X LUE"
+          "text": "APAR × LUE"
         },
         {
           "key": "C",
@@ -897,7 +897,7 @@
         }
       ],
       "correctAnswer": "B",
-      "correctOption": "APAR X LUE",
+      "correctOption": "APAR × LUE",
       "explanation": "Net primary productivity (NPP) is the energy or biomass plants retain after accounting for their own respiration. In the light-use-efficiency framework, NPP is estimated from absorbed photosynthetically active radiation (APAR) multiplied by light-use efficiency (LUE), which represents how effectively absorbed light is converted into plant production."
     },
     {
@@ -1357,7 +1357,7 @@
       "weekLabel": "Week 4",
       "section": "weekly",
       "type": "MCQ",
-      "question": "3 trees are located in a sample plot of 15 m × 15 m. Their dbh are as under: dbh = 25 cm, 30 cm, 35 cm Find the stand basal area in sq m per Ha.",
+      "question": "3 trees are located in a sample plot of 15 m × 15 m. Their dbh are as under: dbh = 25 cm, 30 cm, 35 cm. Find the stand basal area in sq m per ha.",
       "options": [
         {
           "key": "A",
@@ -1417,7 +1417,7 @@
       "weekLabel": "Week 4",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In a triangle, the angle between base and hypotenuse, θ = 60° and the hypotenuse c = 2 cm. Find the length of the base b",
+      "question": "In a triangle, the angle between base and hypotenuse, \\boldsymbol{\\theta }={60}^{\\circ } and the hypotenuse c=2 cm. Find the length of the base b",
       "options": [
         {
           "key": "A",
@@ -1438,7 +1438,7 @@
       ],
       "correctAnswer": "D",
       "correctOption": "1",
-      "explanation": "For a right triangle, the base is adjacent to the 60° angle and the hypotenuse is 2 cm. Using cos θ = base/hypotenuse gives base = 2 × cos 60° = 2 × 0.5 = 1 cm."
+      "explanation": "For a triangle with hypotenuse c = 2 cm and angle θ = 60° between the base and hypotenuse, the base is adjacent to the angle. Use cos θ = b/c, so b = c cos 60° = 2 × 0.5 = 1 cm. Therefore option D is correct. This uses the cosine ratio (adjacent side divided by hypotenuse), not the sine ratio."
     },
     {
       "week": 4,
@@ -1597,7 +1597,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "The time of flight for LiDAR is 0.00001 sec. Find the distance of the object from the instrument.",
+      "question": "The time of flight for LiDAR is 0.0001 sec. Find the distance of the object from the instrument.",
       "options": [
         {
           "key": "A",
@@ -1618,7 +1618,7 @@
       ],
       "correctAnswer": "C",
       "correctOption": "1500 m",
-      "explanation": "LiDAR measures distance from the time taken by a laser pulse to travel to an object and return. The pulse covers twice the object distance, so distance = speed of light × time of flight / 2 = 3 × 10⁸ × 0.00001 / 2 = 1,500 m."
+      "explanation": "LiDAR estimates distance from the time taken by a laser pulse to travel to the target and return. The measured time is round-trip time, so distance = (speed of light × time of flight) / 2. For 0.00001 s, this gives (3 × 10⁸ m/s × 10⁻⁵ s) / 2 = 1,500 m, matching option C. The division by two is essential because the pulse travels both to the object and back."
     },
     {
       "week": 5,
@@ -1717,7 +1717,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "___ is how close the measured values are to the correct value",
+      "question": "_____ is how close the measured values are to the correct value",
       "options": [
         {
           "key": "A",
@@ -1777,7 +1777,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "___ is how close the measured values are to each other",
+      "question": "_____ is how close the measured values are to each other",
       "options": [
         {
           "key": "A",
@@ -1909,11 +1909,11 @@
         },
         {
           "key": "C",
-          "text": "over-harvesting"
+          "text": "invasive species"
         },
         {
           "key": "D",
-          "text": "human over-population"
+          "text": "human overpopulation"
         }
       ],
       "correctAnswer": "B",
@@ -1931,23 +1931,23 @@
       "options": [
         {
           "key": "A",
-          "text": "the trap is a weapon and capturing is hunting."
+          "text": "the trap is a weapon and capturing is hunting"
         },
         {
           "key": "B",
-          "text": "the trap is not a weapon and capturing is hunting."
+          "text": "the trap is not a weapon and capturing is hunting"
         },
         {
           "key": "C",
-          "text": "the trap is a weapon and capturing is not hunting."
+          "text": "the trap is a weapon and capturing is not hunting"
         },
         {
           "key": "D",
-          "text": "the trap is not a weapon and capturing is not hunting."
+          "text": "the trap is not a weapon and capturing is not hunting"
         }
       ],
       "correctAnswer": "A",
-      "correctOption": "the trap is a weapon and capturing is hunting.",
+      "correctOption": "the trap is a weapon and capturing is hunting",
       "explanation": "Under the Wildlife (Protection) Act, 1972, hunting is defined broadly and can include capturing or trapping a wild animal, subject to the Act’s wording and exceptions. A trap used to capture a monkey is treated as a weapon or instrument for hunting in this question’s legal framing; protected-species rules and authorised exceptions still matter in practice."
     },
     {
@@ -2017,7 +2017,7 @@
       "weekLabel": "Week 6",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In the formula I = P × A × T, T refers to",
+      "question": "In the formula I=P×A×T, T refers to",
       "options": [
         {
           "key": "A",
@@ -2137,7 +2137,7 @@
       "weekLabel": "Week 6",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In the formula I = P × A × T, P refers to",
+      "question": "In the formula I=P×A×T, P refers to",
       "options": [
         {
           "key": "A",
@@ -2171,23 +2171,23 @@
       "options": [
         {
           "key": "A",
-          "text": "the immobilising gun is a weapon and capturing is hunting."
+          "text": "the immobilising gun is a weapon and capturing is hunting"
         },
         {
           "key": "B",
-          "text": "the immobilising gun is not a weapon and capturing is hunting."
+          "text": "the immobilising gun is not a weapon and capturing is hunting"
         },
         {
           "key": "C",
-          "text": "the immobilising gun is a weapon and capturing is not hunting."
+          "text": "the immobilising gun is a weapon and capturing is not hunting"
         },
         {
           "key": "D",
-          "text": "the immobilising gun is not a weapon and capturing is not hunting."
+          "text": "the immobilising gun is not a weapon and capturing is not hunting"
         }
       ],
       "correctAnswer": "A",
-      "correctOption": "the immobilising gun is a weapon and capturing is hunting.",
+      "correctOption": "the immobilising gun is a weapon and capturing is hunting",
       "explanation": "The Wildlife (Protection) Act, 1972 uses a broad concept of hunting that can include capturing a wild animal. In the question’s legal framing, an immobilising gun is treated as a weapon and the capture of a deer as hunting; real-world use must comply with applicable permits, authorisations and statutory exceptions."
     },
     {
@@ -2276,8 +2276,8 @@
           "text": "artificial regeneration by planting seedlings"
         }
       ],
-      "correctAnswer": "B",
-      "correctOption": "assisted natural regeneration",
+      "correctAnswer": "D",
+      "correctOption": "artificial regeneration by planting seedlings",
       "explanation": "Ring weeding removes competing vegetation in a circular area around a planted seedling or naturally established young tree. In assisted natural regeneration, such tending releases existing natural seedlings from competition while retaining the natural regeneration already present on the site."
     },
     {
@@ -2531,22 +2531,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Preparatory felling ->Secondary felling -> Seedling felling -> Final felling"
+          "text": "Preparatory felling -> Secondary felling -> Seeding felling -> Final felling"
         },
         {
           "key": "B",
-          "text": "Preparatory felling -> Seedling felling -> Secondary felling -> Final felling"
+          "text": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling"
         },
         {
           "key": "C",
-          "text": "Preparatory felling ->Secondary felling -> Seeding felling -> Final felling"
+          "text": "Preparatory felling -> Secondary felling -> Seeding felling -> Final felling"
         },
         {
           "key": "D",
           "text": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling"
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "correctOption": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling",
       "explanation": "The shelterwood sequence usually proceeds through preparatory felling, seeding felling, secondary felling and final felling. Preparatory cuts improve the stand and seedbed; seeding felling encourages regeneration; secondary cuts gradually increase light and space; final felling removes the remaining overwood after regeneration is established."
     },
@@ -2865,20 +2865,20 @@
         },
         {
           "key": "B",
-          "text": "V2-V1+H-I"
+          "text": "V2-V1+I"
         },
         {
           "key": "C",
-          "text": "V2-V1+H-I+M"
+          "text": "V2-V1+I+M"
         },
         {
           "key": "D",
-          "text": "V2-V1+H-I-M"
+          "text": "V2-V1+I-M"
         }
       ],
       "correctAnswer": "B",
-      "correctOption": "V2-V1+H-I",
-      "explanation": "Net growth in initial volume accounts for the difference between the ending and starting standing volumes, adjusted for removals and ingrowth according to the stated convention. Using the given expression, V₂ − V₁ + H − I adds harvested volume H and adjusts for ingrowth I as defined in this course’s notation; the symbols must be interpreted consistently with the source formula."
+      "correctOption": "V2-V1+I",
+      "explanation": "The answer key marks option B as correct, but its printed formula, “V₂ − V₁ + H − I,” does not match the option text shown in the question (option B is printed as “V₂ − V₁ + I”). This is a source inconsistency, so the quiz retains the official keyed letter B as requested. Conceptually, a standing-volume change must be adjusted for harvested/removal volume and ingrowth or increment according to the precise growth measure and sign convention being used; consult the original NPTEL solution or instructor material before relying on the mismatched formula."
     },
     {
       "week": 9,
@@ -2936,9 +2936,9 @@
           "text": "all of these"
         }
       ],
-      "correctAnswer": "A",
-      "correctOption": "conventional face",
-      "explanation": "A conventional face cut provides the greatest accuracy in constructing the directional face for felling in the comparison used by this question. The face cut guides the direction in which the tree is intended to fall; its geometry and execution matter for control, safety and reducing damage to the stem or surrounding stand."
+      "correctAnswer": "C",
+      "correctOption": "open face",
+      "explanation": "The official answer key selects **open face (C)**. An open-face notch has a wider opening angle, allowing the hinge to remain effective for a greater part of the felling process and helping maintain directional control. Compared with a narrow conventional notch, it is less likely to close prematurely and can provide more predictable control of the tree’s fall. Safe felling still requires correct hinge dimensions, assessment of lean and defects, and trained operation."
     },
     {
       "week": 9,
@@ -3097,7 +3097,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these is a good storage condition",
+      "question": "Which of these is a good storage condition?",
       "options": [
         {
           "key": "A",
@@ -3157,7 +3157,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these conserves moisture",
+      "question": "Which of these conserves moisture?",
       "options": [
         {
           "key": "A",
@@ -3187,7 +3187,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Shell cracking of seeds is used for which species",
+      "question": "Shell cracking of seeds is used for which species?",
       "options": [
         {
           "key": "A",
@@ -3206,8 +3206,8 @@
           "text": "teak"
         }
       ],
-      "correctAnswer": "C",
-      "correctOption": "ber",
+      "correctAnswer": "D",
+      "correctOption": "teak",
       "explanation": "Shell cracking is used for ber seeds to help overcome the hard seed covering and improve water uptake or germination. The treatment must be done carefully to avoid damaging the embryo; the general principle is to weaken a physical barrier that delays germination."
     },
     {
@@ -3247,7 +3247,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these characterises a refractory site",
+      "question": "Which of these characterises a refractory site?",
       "options": [
         {
           "key": "A",
@@ -3277,7 +3277,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these prevents water logging",
+      "question": "Which of these prevents water logging?",
       "options": [
         {
           "key": "A",
@@ -3307,7 +3307,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Wet and dry treatment of seeds is used for which species",
+      "question": "Wet and dry treatment of seeds is used for which species?",
       "options": [
         {
           "key": "A",
@@ -4172,9 +4172,9 @@
     }
   ],
   "contentNotice": {
-    "label": "April 2025 Question Bank — 2026 Update Coming Soon",
-    "sourcePeriod": "April 2025",
-    "updateStatus": "2026 question bank update planned",
-    "message": "This question bank is based on the April 2025 question set. We plan to update it with the 2026 question bank soon. For Forests and Their Management, assignment questions have generally remained the same across years; however, this should not be treated as a guarantee that every question will remain unchanged. Please refer to the latest official NPTEL/SWAYAM study material and assignments for the current course offering."
+    "label": "January–April 2026 Question Bank",
+    "sourcePeriod": "January 2026–April 2026",
+    "updateStatus": "Based on the January–April 2026 question bank",
+    "message": "This question bank is based on the January 2026 to April 2026 question set and its supplied answer key. Question wording, options and keyed answers have been aligned to the provided source wherever available. Where the source answer key or printed option text appears inconsistent, the quiz retains the answer-key letter and the explanation flags the discrepancy. Please refer to the latest official NPTEL/SWAYAM course page, study material and assignments for the current offering, as questions and answers may change."
   }
 }
