@@ -2,7 +2,7 @@
   "course": "Forests and Their Management",
   "institute": "NPTEL",
   "assignment": "All Weeks",
-  "source": "Provided NPTEL/SWAYAM question statements and answer key (January 2026–April 2026 source set)",
+  "source": "Validated against the provided solved assignment PDF for Weeks 1–11 (bold/yellow-highlighted answer key) and FM-Week12-2026.pdf (bold answer key); original Extra questions retained.",
   "weekStructure": [
     {
       "week": 0,
@@ -885,7 +885,7 @@
         },
         {
           "key": "B",
-          "text": "APAR × LUE"
+          "text": "APAR X LUE"
         },
         {
           "key": "C",
@@ -897,7 +897,7 @@
         }
       ],
       "correctAnswer": "B",
-      "correctOption": "APAR × LUE",
+      "correctOption": "APAR X LUE",
       "explanation": "Net primary productivity (NPP) is the energy or biomass plants retain after accounting for their own respiration. In the light-use-efficiency framework, NPP is estimated from absorbed photosynthetically active radiation (APAR) multiplied by light-use efficiency (LUE), which represents how effectively absorbed light is converted into plant production."
     },
     {
@@ -1357,7 +1357,7 @@
       "weekLabel": "Week 4",
       "section": "weekly",
       "type": "MCQ",
-      "question": "3 trees are located in a sample plot of 15 m × 15 m. Their dbh are as under: dbh = 25 cm, 30 cm, 35 cm. Find the stand basal area in sq m per ha.",
+      "question": "3 trees are located in a sample plot of 15 m × 15 m. Their dbh are as under: dbh = 25 cm, 30 cm, 35 cm Find the stand basal area in sq m per Ha.",
       "options": [
         {
           "key": "A",
@@ -1417,7 +1417,7 @@
       "weekLabel": "Week 4",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In a triangle, the angle between base and hypotenuse, \\boldsymbol{\\theta }={60}^{\\circ } and the hypotenuse c=2 cm. Find the length of the base b",
+      "question": "In a triangle, the angle between base and hypotenuse, θ = 60° and the hypotenuse c = 2 cm. Find the length of the base b.",
       "options": [
         {
           "key": "A",
@@ -1597,7 +1597,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "The time of flight for LiDAR is 0.0001 sec. Find the distance of the object from the instrument.",
+      "question": "The time of flight for LiDAR is 0.00001 sec. Find the distance of the object from the instrument.",
       "options": [
         {
           "key": "A",
@@ -1657,7 +1657,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "\"This sampling employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start.\" We're talking about",
+      "question": "“This sampling employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start.” We're talking about",
       "options": [
         {
           "key": "A",
@@ -1717,7 +1717,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "_____ is how close the measured values are to the correct value",
+      "question": "___ is how close the measured values are to the correct value.",
       "options": [
         {
           "key": "A",
@@ -1777,7 +1777,7 @@
       "weekLabel": "Week 5",
       "section": "weekly",
       "type": "MCQ",
-      "question": "_____ is how close the measured values are to each other",
+      "question": "___ is how close the measured values are to each other.",
       "options": [
         {
           "key": "A",
@@ -1909,11 +1909,11 @@
         },
         {
           "key": "C",
-          "text": "invasive species"
+          "text": "over-harvesting"
         },
         {
           "key": "D",
-          "text": "human overpopulation"
+          "text": "human over-population"
         }
       ],
       "correctAnswer": "B",
@@ -1931,23 +1931,23 @@
       "options": [
         {
           "key": "A",
-          "text": "the trap is a weapon and capturing is hunting"
+          "text": "the trap is a weapon and capturing is hunting."
         },
         {
           "key": "B",
-          "text": "the trap is not a weapon and capturing is hunting"
+          "text": "the trap is not a weapon and capturing is hunting."
         },
         {
           "key": "C",
-          "text": "the trap is a weapon and capturing is not hunting"
+          "text": "the trap is a weapon and capturing is not hunting."
         },
         {
           "key": "D",
-          "text": "the trap is not a weapon and capturing is not hunting"
+          "text": "the trap is not a weapon and capturing is not hunting."
         }
       ],
       "correctAnswer": "A",
-      "correctOption": "the trap is a weapon and capturing is hunting",
+      "correctOption": "the trap is a weapon and capturing is hunting.",
       "explanation": "Under the Wildlife (Protection) Act, 1972, hunting is defined broadly and can include capturing or trapping a wild animal, subject to the Act’s wording and exceptions. A trap used to capture a monkey is treated as a weapon or instrument for hunting in this question’s legal framing; protected-species rules and authorised exceptions still matter in practice."
     },
     {
@@ -2017,7 +2017,7 @@
       "weekLabel": "Week 6",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In the formula I=P×A×T, T refers to",
+      "question": "In the formula I = PXAXT, T refers to",
       "options": [
         {
           "key": "A",
@@ -2137,7 +2137,7 @@
       "weekLabel": "Week 6",
       "section": "weekly",
       "type": "MCQ",
-      "question": "In the formula I=P×A×T, P refers to",
+      "question": "In the formula I = PXAXT, P refers to",
       "options": [
         {
           "key": "A",
@@ -2171,23 +2171,23 @@
       "options": [
         {
           "key": "A",
-          "text": "the immobilising gun is a weapon and capturing is hunting"
+          "text": "the immobilising gun is a weapon and capturing is hunting."
         },
         {
           "key": "B",
-          "text": "the immobilising gun is not a weapon and capturing is hunting"
+          "text": "the immobilising gun is not a weapon and capturing is hunting."
         },
         {
           "key": "C",
-          "text": "the immobilising gun is a weapon and capturing is not hunting"
+          "text": "the immobilising gun is a weapon and capturing is not hunting."
         },
         {
           "key": "D",
-          "text": "the immobilising gun is not a weapon and capturing is not hunting"
+          "text": "the immobilising gun is not a weapon and capturing is not hunting."
         }
       ],
       "correctAnswer": "A",
-      "correctOption": "the immobilising gun is a weapon and capturing is hunting",
+      "correctOption": "the immobilising gun is a weapon and capturing is hunting.",
       "explanation": "The Wildlife (Protection) Act, 1972 uses a broad concept of hunting that can include capturing a wild animal. In the question’s legal framing, an immobilising gun is treated as a weapon and the capture of a deer as hunting; real-world use must comply with applicable permits, authorisations and statutory exceptions."
     },
     {
@@ -2276,8 +2276,8 @@
           "text": "artificial regeneration by planting seedlings"
         }
       ],
-      "correctAnswer": "D",
-      "correctOption": "artificial regeneration by planting seedlings",
+      "correctAnswer": "B",
+      "correctOption": "assisted natural regeneration",
       "explanation": "Ring weeding removes competing vegetation in a circular area around a planted seedling or naturally established young tree. In assisted natural regeneration, such tending releases existing natural seedlings from competition while retaining the natural regeneration already present on the site."
     },
     {
@@ -2531,22 +2531,22 @@
       "options": [
         {
           "key": "A",
-          "text": "Preparatory felling -> Secondary felling -> Seeding felling -> Final felling"
+          "text": "Preparatory felling ->Secondary felling -> Seedling felling -> Final felling"
         },
         {
           "key": "B",
-          "text": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling"
+          "text": "Preparatory felling -> Seedling felling -> Secondary felling -> Final felling"
         },
         {
           "key": "C",
-          "text": "Preparatory felling -> Secondary felling -> Seeding felling -> Final felling"
+          "text": "Preparatory felling ->Secondary felling -> Seeding felling -> Final felling"
         },
         {
           "key": "D",
           "text": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling"
         }
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "correctOption": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling",
       "explanation": "The shelterwood sequence usually proceeds through preparatory felling, seeding felling, secondary felling and final felling. Preparatory cuts improve the stand and seedbed; seeding felling encourages regeneration; secondary cuts gradually increase light and space; final felling removes the remaining overwood after regeneration is established."
     },
@@ -2865,20 +2865,20 @@
         },
         {
           "key": "B",
-          "text": "V2-V1+I"
+          "text": "V2-V1+H-I"
         },
         {
           "key": "C",
-          "text": "V2-V1+I+M"
+          "text": "V2-V1+H-I+M"
         },
         {
           "key": "D",
-          "text": "V2-V1+I-M"
+          "text": "V2-V1+H-I-M"
         }
       ],
       "correctAnswer": "B",
-      "correctOption": "V2-V1+I",
-      "explanation": "The answer key marks option B as correct, but its printed formula, “V₂ − V₁ + H − I,” does not match the option text shown in the question (option B is printed as “V₂ − V₁ + I”). This is a source inconsistency, so the quiz retains the official keyed letter B as requested. Conceptually, a standing-volume change must be adjusted for harvested/removal volume and ingrowth or increment according to the precise growth measure and sign convention being used; consult the original NPTEL solution or instructor material before relying on the mismatched formula."
+      "correctOption": "V2-V1+H-I",
+      "explanation": "The supplied Week 9 assignment PDF marks option B as correct. The option is printed as “V2-V1+H-I”; the question bank now preserves that exact formula and keyed answer from the source PDF."
     },
     {
       "week": 9,
@@ -2936,9 +2936,9 @@
           "text": "all of these"
         }
       ],
-      "correctAnswer": "C",
-      "correctOption": "open face",
-      "explanation": "The official answer key selects **open face (C)**. An open-face notch has a wider opening angle, allowing the hinge to remain effective for a greater part of the felling process and helping maintain directional control. Compared with a narrow conventional notch, it is less likely to close prematurely and can provide more predictable control of the tree’s fall. Safe felling still requires correct hinge dimensions, assessment of lean and defects, and trained operation."
+      "correctAnswer": "A",
+      "correctOption": "conventional face",
+      "explanation": "The supplied Week 9 assignment PDF marks “conventional face” (option A) as the correct answer. This explanation follows the answer marked in the provided source PDF."
     },
     {
       "week": 9,
@@ -3097,7 +3097,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these is a good storage condition?",
+      "question": "Which of these is a good storage condition",
       "options": [
         {
           "key": "A",
@@ -3157,7 +3157,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these conserves moisture?",
+      "question": "Which of these conserves moisture",
       "options": [
         {
           "key": "A",
@@ -3187,7 +3187,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Shell cracking of seeds is used for which species?",
+      "question": "Shell cracking of seeds is used for which species",
       "options": [
         {
           "key": "A",
@@ -3206,8 +3206,8 @@
           "text": "teak"
         }
       ],
-      "correctAnswer": "D",
-      "correctOption": "teak",
+      "correctAnswer": "C",
+      "correctOption": "ber",
       "explanation": "Shell cracking is used for ber seeds to help overcome the hard seed covering and improve water uptake or germination. The treatment must be done carefully to avoid damaging the embryo; the general principle is to weaken a physical barrier that delays germination."
     },
     {
@@ -3247,7 +3247,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these characterises a refractory site?",
+      "question": "Which of these characterises a refractory site",
       "options": [
         {
           "key": "A",
@@ -3277,7 +3277,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which of these prevents water logging?",
+      "question": "Which of these prevents water logging",
       "options": [
         {
           "key": "A",
@@ -3307,7 +3307,7 @@
       "weekLabel": "Week 10",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Wet and dry treatment of seeds is used for which species?",
+      "question": "Wet and dry treatment of seeds is used for which species",
       "options": [
         {
           "key": "A",
@@ -3727,7 +3727,7 @@
       "weekLabel": "Week 12",
       "section": "weekly",
       "type": "MCQ",
-      "question": "\"Science of relationships between organisms and their environments\" is the definition of:",
+      "question": "“Science of relationships between organisms and their environments” is the definition of:",
       "options": [
         {
           "key": "A",
@@ -3757,7 +3757,7 @@
       "weekLabel": "Week 12",
       "section": "weekly",
       "type": "MCQ",
-      "question": "\"allowing some places and some creatures to exist without significant human interference\" is a definition of",
+      "question": "“allowing some places and some creatures to exist without significant human interference” is a definition of",
       "options": [
         {
           "key": "A",
@@ -3877,7 +3877,7 @@
       "weekLabel": "Week 12",
       "section": "weekly",
       "type": "MCQ",
-      "question": "\"Plant community, predominantly comprised of trees and other woody vegetation, usually with a closed canopy\" is",
+      "question": "“Plant community, predominantly comprised of trees and other woody vegetation, usually with a closed canopy\" is",
       "options": [
         {
           "key": "A",
