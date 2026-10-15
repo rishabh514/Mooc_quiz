@@ -1184,19 +1184,50 @@ body.modal-open{overflow:hidden}
   .subject-list--grid{
     display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s4);
   }
+  /* Desktop course cards: 50% visual panel + 50% information/actions panel. */
   .subject-list--grid .subject-card{
-    flex-direction:column;align-items:stretch;gap:var(--s4);
-    padding:var(--s5);min-height:0;border-radius:var(--r-lg);
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    grid-template-rows:minmax(0,1fr) auto;
+    align-items:stretch;
+    gap:0;
+    padding:0;
+    min-height:220px;
+    border-radius:var(--r-lg);
   }
   .subject-list--grid .subject-card:hover{
-    transform:scale(1.02);box-shadow:var(--shadow-md);border-color:var(--accent-line);
+    transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--accent-line);
   }
-  .subject-list--grid .subject-card:active{transform:scale(1)}
-  .subject-list--grid .meta{display:flex;flex-direction:column;gap:4px}
-  .subject-list--grid .meta .ttl{font-size:var(--fs-md)}
-  .subject-list--grid .meta .sub{margin-top:0}
+  .subject-list--grid .subject-card:active{transform:translateY(0)}
+  .subject-list--grid .subject-card .ico{
+    grid-column:1;grid-row:1 / 3;
+    width:100%;height:100%;min-height:220px;
+    align-self:stretch;justify-self:stretch;
+    border:0;border-right:1px solid var(--border);
+    border-radius:calc(var(--r-lg) - 1px) 0 0 calc(var(--r-lg) - 1px);
+    background:var(--surface-2);
+    transform:none;
+  }
+  .subject-list--grid .subject-card .ico img{
+    width:100%;height:100%;object-fit:cover;
+    border-radius:inherit;
+  }
+  .subject-list--grid .subject-card:hover .ico{
+    transform:none;background:var(--surface-2);
+  }
+  .subject-list--grid .meta{
+    grid-column:2;grid-row:1;
+    display:flex;flex-direction:column;justify-content:center;align-self:stretch;
+    min-width:0;padding:var(--s4) var(--s4) var(--s2);gap:6px;
+  }
+  .subject-list--grid .meta .ttl{
+    font-size:var(--fs-md);line-height:1.3;overflow-wrap:anywhere;
+  }
+  .subject-list--grid .meta .sub{margin-top:0;line-height:1.45}
   .subject-list--grid .subject-start{
-    margin-top:auto;width:100%;height:40px;
+    grid-column:2;grid-row:2;
+    margin:0 var(--s4) var(--s4);width:auto;height:40px;
+    justify-self:stretch;align-self:end;
     font-size:var(--fs-sm);border-radius:var(--r);
   }
   .subject-list--grid .empty{grid-column:1 / -1}
@@ -1782,13 +1813,13 @@ function AppFooter({ showReport = false }) {
 }
 
 const SUBJECTS = [
-  { id: "joy_of_computing_using_python", name: "The Joy of Computing using Python", file: "joy_of_computing.json", institute: "IIT Ropar / NPTEL" },
-  { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology.png", institute: "IIT Kharagpur" },
-  { id: "environment_and_development", name: "Environment and Development", file: "environment_and_development.json", institute: "IIT Kharagpur / NPTEL" },
-  { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", institute: "NPTEL" },
-  { id: "wildlife_ecology", name: "Wildlife Ecology", file: "Wildlife_Ecology.json", institute: "NPTEL" },
-  { id: "introduction_to_internet_of_things", name: "Introduction to Internet of Things", file: "Introduction_to_Internet_of_Things.json", institute: "NPTEL" },
-  { id: "understanding_incubation_and_entrepreneurship", name: "Understanding Incubation and Entrepreneurship", file: "Understanding_Incubation_and_Entrepreneurship.json", institute: "NPTEL" },
+  { id: "joy_of_computing_using_python", name: "The Joy of Computing using Python", file: "joy_of_computing.json", image: "joy_of_computing_using_python.webp", institute: "IIT Ropar / NPTEL" },
+  { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology_of_learning.webp", institute: "IIT Kharagpur" },
+  { id: "environment_and_development", name: "Environment and Development", file: "environment_and_development.json", image: "environment_and_development.webp", institute: "IIT Kharagpur / NPTEL" },
+  { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", image: "forests_and_their_management.webp", institute: "NPTEL" },
+  { id: "wildlife_ecology", name: "Wildlife Ecology", file: "Wildlife_Ecology.json", image: "wildlife_ecology.webp", institute: "NPTEL" },
+  { id: "introduction_to_internet_of_things", name: "Introduction to Internet of Things", file: "Introduction_to_Internet_of_Things.json", image: "introduction_to_internet_of_things.webp", institute: "NPTEL" },
+  { id: "understanding_incubation_and_entrepreneurship", name: "Understanding Incubation and Entrepreneurship", file: "Understanding_Incubation_and_Entrepreneurship.json", image: "understanding_incubation_and_entrepreneurship.webp", institute: "NPTEL" },
 ];
 
 const QUESTIONS_FOLDER = 'assets/';
