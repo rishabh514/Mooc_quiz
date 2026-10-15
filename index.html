@@ -1916,7 +1916,9 @@ function normaliseSubject(raw, meta) {
   };
   rawQs.forEach((q, i) => {
     const week = q.week != null ? q.week : 1;
-    if (!byWeek[week]) byWeek[week] = [];
+    const assignmentName = q.assignmentName || ('Week ' + week);
+    const assignmentKey = assignmentName;
+    if (!byWeek[assignmentKey]) byWeek[assignmentKey] = [];
     // pdfSource is the preserved official wording snapshot for this quiz bank.
     // Fall back to legacy fields so other subject JSON files remain compatible.
     const pdfSource = q.pdfSource || {};
@@ -1932,7 +1934,7 @@ function normaliseSubject(raw, meta) {
     const programContext = pdfSource.programContext || q.programContext || null;
     const codePages = (programContext && Array.isArray(programContext.codePages)) ? programContext.codePages : [];
     const programSourcePage = codePages.length ? codePages[0].page : null;
-    byWeek[week].push({
+    byWeek[assignmentKey].push({
       id: q.id || (q.questionNo ? `W${week}-Q${q.questionNo}` : `W${week}-${i}`),
       question: pdfSource.questionText ?? q.question ?? q.text ?? '',
       options, answer,
@@ -1952,14 +1954,27 @@ function normaliseSubject(raw, meta) {
       programSourcePage,
       programSourcePageImage: pageAssetUrl(pageRecord(week, programSourcePage)),
       pdfSource: pdfSource,
-      _aid: 'W' + week, _aname: 'Week ' + week,
+      _aid: q.id || ('W' + week + '-Q' + (q.questionNo || i)),
+      _aname: assignmentName,
       _week: week, _qno: q.questionNo, _type: q.type || 'MCQ',
     });
   });
-  const assignments = Object.keys(byWeek)
-    .map((w) => parseInt(w, 10))
-    .sort((a, b) => a - b)
-    .map((w) => ({ id: 'W' + w, name: 'Week ' + w, questions: byWeek[w] }));
+  const assignmentKeys = Object.keys(byWeek).sort((a, b) => {
+    const yearA = (a.match(/\((\d{4})\)/) || [])[1];
+    const yearB = (b.match(/\((\d{4})\)/) || [])[1];
+    const weekA = parseInt((a.match(/Week\s+(\d+)/i) || [])[1] || '0', 10);
+    const weekB = parseInt((b.match(/Week\s+(\d+)/i) || [])[1] || '0', 10);
+    if (weekA !== weekB) return weekA - weekB;
+    if (yearA && yearB) return Number(yearA) - Number(yearB);
+    if (yearA) return -1;
+    if (yearB) return 1;
+    return a.localeCompare(b);
+  });
+  const assignments = assignmentKeys.map((key) => ({
+    id: 'A-' + key.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+    name: key,
+    questions: byWeek[key]
+  }));
   return { id, title, institute, term, contentNotice: raw.contentNotice || null, assignments };
 }
 

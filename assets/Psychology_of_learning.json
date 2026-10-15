@@ -9,10 +9,22 @@
       "type": "MCQ",
       "question": "Learning is often seen as the contiguous causal effect of ____ on behavior.",
       "options": [
-        { "key": "A", "text": "blood" },
-        { "key": "B", "text": "bone density" },
-        { "key": "C", "text": "trauma" },
-        { "key": "D", "text": "experience" }
+        {
+          "key": "A",
+          "text": "blood"
+        },
+        {
+          "key": "B",
+          "text": "bone density"
+        },
+        {
+          "key": "C",
+          "text": "trauma"
+        },
+        {
+          "key": "D",
+          "text": "experience"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "experience",
@@ -24,8 +36,14 @@
       "type": "MCQ",
       "question": "In order to say that learning has occurred, a hidden change in behavior must occur.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "False",
@@ -37,10 +55,22 @@
       "type": "MCQ",
       "question": "Which of the following is not a mental construct?",
       "options": [
-        { "key": "A", "text": "skeleton" },
-        { "key": "B", "text": "knowledge" },
-        { "key": "C", "text": "representations" },
-        { "key": "D", "text": "associations" }
+        {
+          "key": "A",
+          "text": "skeleton"
+        },
+        {
+          "key": "B",
+          "text": "knowledge"
+        },
+        {
+          "key": "C",
+          "text": "representations"
+        },
+        {
+          "key": "D",
+          "text": "associations"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "skeleton",
@@ -52,10 +82,22 @@
       "type": "MCQ",
       "question": "Learning changes the ___ structure of the brain through the process of continuous interactions between the learner and the external environment.",
       "options": [
-        { "key": "A", "text": "physical" },
-        { "key": "B", "text": "social" },
-        { "key": "C", "text": "biological" },
-        { "key": "D", "text": "none of the given" }
+        {
+          "key": "A",
+          "text": "physical"
+        },
+        {
+          "key": "B",
+          "text": "social"
+        },
+        {
+          "key": "C",
+          "text": "biological"
+        },
+        {
+          "key": "D",
+          "text": "none of the given"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "physical",
@@ -67,10 +109,22 @@
       "type": "MCQ",
       "question": "___ shapes the learning process.",
       "options": [
-        { "key": "A", "text": "Only thoughts" },
-        { "key": "B", "text": "Only emotions" },
-        { "key": "C", "text": "Both thoughts and emotions" },
-        { "key": "D", "text": "Neither thoughts nor emotions" }
+        {
+          "key": "A",
+          "text": "Only thoughts"
+        },
+        {
+          "key": "B",
+          "text": "Only emotions"
+        },
+        {
+          "key": "C",
+          "text": "Both thoughts and emotions"
+        },
+        {
+          "key": "D",
+          "text": "Neither thoughts nor emotions"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "Both thoughts and emotions",
@@ -82,10 +136,22 @@
       "type": "MCQ",
       "question": "Watson's work included the famous Little Albert experiment in which he conditioned a small child to ___ a white rat.",
       "options": [
-        { "key": "A", "text": "fear" },
-        { "key": "B", "text": "love" },
-        { "key": "C", "text": "hate" },
-        { "key": "D", "text": "play with" }
+        {
+          "key": "A",
+          "text": "fear"
+        },
+        {
+          "key": "B",
+          "text": "love"
+        },
+        {
+          "key": "C",
+          "text": "hate"
+        },
+        {
+          "key": "D",
+          "text": "play with"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "fear",
@@ -97,10 +163,22 @@
       "type": "MCQ",
       "question": "Behaviorism dominated psychology for much of the early ___ century.",
       "options": [
-        { "key": "A", "text": "20th" },
-        { "key": "B", "text": "19th" },
-        { "key": "C", "text": "18th" },
-        { "key": "D", "text": "17th" }
+        {
+          "key": "A",
+          "text": "20th"
+        },
+        {
+          "key": "B",
+          "text": "19th"
+        },
+        {
+          "key": "C",
+          "text": "18th"
+        },
+        {
+          "key": "D",
+          "text": "17th"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "20th",
@@ -112,10 +190,22 @@
       "type": "MCQ",
       "question": "The state of 'conscious incompetence' may be valuable ____ of a learning experience.",
       "options": [
-        { "key": "A", "text": "at the end" },
-        { "key": "B", "text": "in the middle" },
-        { "key": "C", "text": "2 years after the end" },
-        { "key": "D", "text": "at the start" }
+        {
+          "key": "A",
+          "text": "at the end"
+        },
+        {
+          "key": "B",
+          "text": "in the middle"
+        },
+        {
+          "key": "C",
+          "text": "2 years after the end"
+        },
+        {
+          "key": "D",
+          "text": "at the start"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "at the start",
@@ -127,10 +217,22 @@
       "type": "MCQ",
       "question": "Which of the following is not an outcome of effective e-learning?",
       "options": [
-        { "key": "A", "text": "wider range of strategies" },
-        { "key": "B", "text": "more reflective approach" },
-        { "key": "C", "text": "more positive emotions towards learning" },
-        { "key": "D", "text": "more disconnected knowledge" }
+        {
+          "key": "A",
+          "text": "wider range of strategies"
+        },
+        {
+          "key": "B",
+          "text": "more reflective approach"
+        },
+        {
+          "key": "C",
+          "text": "more positive emotions towards learning"
+        },
+        {
+          "key": "D",
+          "text": "more disconnected knowledge"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "more disconnected knowledge",
@@ -142,26 +244,49 @@
       "type": "MCQ",
       "question": "Instrumental conditioning is an example of ___ learning.",
       "options": [
-        { "key": "A", "text": "sensitization" },
-        { "key": "B", "text": "habituation" },
-        { "key": "C", "text": "associative" },
-        { "key": "D", "text": "meaningful" }
+        {
+          "key": "A",
+          "text": "sensitization"
+        },
+        {
+          "key": "B",
+          "text": "habituation"
+        },
+        {
+          "key": "C",
+          "text": "associative"
+        },
+        {
+          "key": "D",
+          "text": "meaningful"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "associative",
       "explanation": "Instrumental (operant) conditioning is a form of associative learning where a behavior becomes associated with its consequences. Sensitization and habituation are non-associative forms of learning. Meaningful learning is a cognitive concept. Hence associative is correct."
     },
-
     {
       "week": 2,
       "questionNo": 1,
       "type": "MCQ",
       "question": "The three major types of learning described by ___ psychology are classical conditioning, operant conditioning and observational learning.",
       "options": [
-        { "key": "A", "text": "cognitive" },
-        { "key": "B", "text": "behavioral" },
-        { "key": "C", "text": "emotional" },
-        { "key": "D", "text": "evolutionary" }
+        {
+          "key": "A",
+          "text": "cognitive"
+        },
+        {
+          "key": "B",
+          "text": "behavioral"
+        },
+        {
+          "key": "C",
+          "text": "emotional"
+        },
+        {
+          "key": "D",
+          "text": "evolutionary"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "behavioral",
@@ -173,10 +298,22 @@
       "type": "MCQ",
       "question": "According to the view of Watson, psychology is ___.",
       "options": [
-        { "key": "A", "text": "subjective" },
-        { "key": "B", "text": "only descriptive" },
-        { "key": "C", "text": "experimental" },
-        { "key": "D", "text": "about internal mental processes that cannot be measured and observed" }
+        {
+          "key": "A",
+          "text": "subjective"
+        },
+        {
+          "key": "B",
+          "text": "only descriptive"
+        },
+        {
+          "key": "C",
+          "text": "experimental"
+        },
+        {
+          "key": "D",
+          "text": "about internal mental processes that cannot be measured and observed"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "experimental",
@@ -188,10 +325,22 @@
       "type": "MCQ",
       "question": "___ is given by Ivan Pavlov.",
       "options": [
-        { "key": "A", "text": "Operant conditioning" },
-        { "key": "B", "text": "Functional conditioning" },
-        { "key": "C", "text": "Classical conditioning" },
-        { "key": "D", "text": "Modern conditioning" }
+        {
+          "key": "A",
+          "text": "Operant conditioning"
+        },
+        {
+          "key": "B",
+          "text": "Functional conditioning"
+        },
+        {
+          "key": "C",
+          "text": "Classical conditioning"
+        },
+        {
+          "key": "D",
+          "text": "Modern conditioning"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "Classical conditioning",
@@ -203,10 +352,22 @@
       "type": "MCQ",
       "question": "The process by which organisms learn to respond to certain stimuli but not to others is known as ___.",
       "options": [
-        { "key": "A", "text": "stimulus generalization" },
-        { "key": "B", "text": "stimulus appreciation" },
-        { "key": "C", "text": "stimulus discrimination" },
-        { "key": "D", "text": "stimulus differentiation" }
+        {
+          "key": "A",
+          "text": "stimulus generalization"
+        },
+        {
+          "key": "B",
+          "text": "stimulus appreciation"
+        },
+        {
+          "key": "C",
+          "text": "stimulus discrimination"
+        },
+        {
+          "key": "D",
+          "text": "stimulus differentiation"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "stimulus discrimination",
@@ -218,8 +379,14 @@
       "type": "MCQ",
       "question": "Higher-order conditioning is intrinsically weaker than its first-order counterpart.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "True",
@@ -231,10 +398,22 @@
       "type": "MCQ",
       "question": "____ is the process of gradually changing the quality of a response.",
       "options": [
-        { "key": "A", "text": "Shaping" },
-        { "key": "B", "text": "Modeling" },
-        { "key": "C", "text": "Cueing" },
-        { "key": "D", "text": "Shifting" }
+        {
+          "key": "A",
+          "text": "Shaping"
+        },
+        {
+          "key": "B",
+          "text": "Modeling"
+        },
+        {
+          "key": "C",
+          "text": "Cueing"
+        },
+        {
+          "key": "D",
+          "text": "Shifting"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Shaping",
@@ -246,10 +425,22 @@
       "type": "MCQ",
       "question": "The works of ___ were instrumental in engendering the dramatic shift from behaviorism to cognitive theories.",
       "options": [
-        { "key": "A", "text": "Edward C. Tolman" },
-        { "key": "B", "text": "Jean Piaget" },
-        { "key": "C", "text": "German Gestalt" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "Edward C. Tolman"
+        },
+        {
+          "key": "B",
+          "text": "Jean Piaget"
+        },
+        {
+          "key": "C",
+          "text": "German Gestalt"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -261,10 +452,22 @@
       "type": "MCQ",
       "question": "___ intelligence is the ability to perceive the visual–spatial world accurately and involves sensitivity to color, line, shape, form, space, and the potential for recognizing and manipulating the patterns of spaces.",
       "options": [
-        { "key": "A", "text": "Interpersonal" },
-        { "key": "B", "text": "Spatial" },
-        { "key": "C", "text": "Bodily-kinesthetic" },
-        { "key": "D", "text": "Linguistic" }
+        {
+          "key": "A",
+          "text": "Interpersonal"
+        },
+        {
+          "key": "B",
+          "text": "Spatial"
+        },
+        {
+          "key": "C",
+          "text": "Bodily-kinesthetic"
+        },
+        {
+          "key": "D",
+          "text": "Linguistic"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "Spatial",
@@ -276,10 +479,22 @@
       "type": "MCQ",
       "question": "Sternberg proposed his theory in 1985 as an alternative to the idea of the ___.",
       "options": [
-        { "key": "A", "text": "general intelligence factor" },
-        { "key": "B", "text": "multiple intelligences" },
-        { "key": "C", "text": "specific intelligence factor" },
-        { "key": "D", "text": "unconscious intelligence" }
+        {
+          "key": "A",
+          "text": "general intelligence factor"
+        },
+        {
+          "key": "B",
+          "text": "multiple intelligences"
+        },
+        {
+          "key": "C",
+          "text": "specific intelligence factor"
+        },
+        {
+          "key": "D",
+          "text": "unconscious intelligence"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "general intelligence factor",
@@ -291,26 +506,49 @@
       "type": "MCQ",
       "question": "Which of the following is not a kind of product in the structure of intellect model?",
       "options": [
-        { "key": "A", "text": "symbolic" },
-        { "key": "B", "text": "classes" },
-        { "key": "C", "text": "systems" },
-        { "key": "D", "text": "implications" }
+        {
+          "key": "A",
+          "text": "symbolic"
+        },
+        {
+          "key": "B",
+          "text": "classes"
+        },
+        {
+          "key": "C",
+          "text": "systems"
+        },
+        {
+          "key": "D",
+          "text": "implications"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "symbolic",
       "explanation": "In Guilford's Structure of Intellect model, the products are units, classes, relations, systems, transformations, and implications. Symbolic is a content category, not a product. Hence symbolic is the correct answer."
     },
-
     {
       "week": 3,
       "questionNo": 1,
       "type": "MCQ",
       "question": "The connections between nerves cells are called ___.",
       "options": [
-        { "key": "A", "text": "systems" },
-        { "key": "B", "text": "syntaxes" },
-        { "key": "C", "text": "neurons" },
-        { "key": "D", "text": "synapses" }
+        {
+          "key": "A",
+          "text": "systems"
+        },
+        {
+          "key": "B",
+          "text": "syntaxes"
+        },
+        {
+          "key": "C",
+          "text": "neurons"
+        },
+        {
+          "key": "D",
+          "text": "synapses"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "synapses",
@@ -322,10 +560,22 @@
       "type": "MCQ",
       "question": "In order to create a ___, information must be changed into a usable form, which occurs through a process known as encoding.",
       "options": [
-        { "key": "A", "text": "past memory" },
-        { "key": "B", "text": "new imagination" },
-        { "key": "C", "text": "new memory" },
-        { "key": "D", "text": "past imagination" }
+        {
+          "key": "A",
+          "text": "past memory"
+        },
+        {
+          "key": "B",
+          "text": "new imagination"
+        },
+        {
+          "key": "C",
+          "text": "new memory"
+        },
+        {
+          "key": "D",
+          "text": "past imagination"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "new memory",
@@ -337,10 +587,22 @@
       "type": "MCQ",
       "question": "Calling back the stored information in response to some cue for use in a process or activity is called ___.",
       "options": [
-        { "key": "A", "text": "Retrieval" },
-        { "key": "B", "text": "Recall" },
-        { "key": "C", "text": "Recollection" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "Retrieval"
+        },
+        {
+          "key": "B",
+          "text": "Recall"
+        },
+        {
+          "key": "C",
+          "text": "Recollection"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -352,10 +614,22 @@
       "type": "MCQ",
       "question": "For many with ___ deficits, reading facial expressions and knowing how to respond are confusing daily challenges.",
       "options": [
-        { "key": "A", "text": "memory" },
-        { "key": "B", "text": "intelligence" },
-        { "key": "C", "text": "social cognition" },
-        { "key": "D", "text": "biological cognition" }
+        {
+          "key": "A",
+          "text": "memory"
+        },
+        {
+          "key": "B",
+          "text": "intelligence"
+        },
+        {
+          "key": "C",
+          "text": "social cognition"
+        },
+        {
+          "key": "D",
+          "text": "biological cognition"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "social cognition",
@@ -367,8 +641,14 @@
       "type": "MCQ",
       "question": "The Information Processing View of Learning assumes that there are limits to how much information can be processed at each stage.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "True",
@@ -380,10 +660,22 @@
       "type": "MCQ",
       "question": "The Information Processing View of Learning assumes that information process is involved in ___.",
       "options": [
-        { "key": "A", "text": "forgetting" },
-        { "key": "B", "text": "remembering" },
-        { "key": "C", "text": "perceiving" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "forgetting"
+        },
+        {
+          "key": "B",
+          "text": "remembering"
+        },
+        {
+          "key": "C",
+          "text": "perceiving"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -395,10 +687,22 @@
       "type": "MCQ",
       "question": "The capacity of the sensory register is ___.",
       "options": [
-        { "key": "A", "text": "very small" },
-        { "key": "B", "text": "very large" },
-        { "key": "C", "text": "7+/-2 chunks" },
-        { "key": "D", "text": "unlimited" }
+        {
+          "key": "A",
+          "text": "very small"
+        },
+        {
+          "key": "B",
+          "text": "very large"
+        },
+        {
+          "key": "C",
+          "text": "7+/-2 chunks"
+        },
+        {
+          "key": "D",
+          "text": "unlimited"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "very large",
@@ -410,10 +714,22 @@
       "type": "MCQ",
       "question": "Most children do not begin to engage in the process of rehearsal on their own until about age ___.",
       "options": [
-        { "key": "A", "text": "seven" },
-        { "key": "B", "text": "two" },
-        { "key": "C", "text": "thirteen" },
-        { "key": "D", "text": "one" }
+        {
+          "key": "A",
+          "text": "seven"
+        },
+        {
+          "key": "B",
+          "text": "two"
+        },
+        {
+          "key": "C",
+          "text": "thirteen"
+        },
+        {
+          "key": "D",
+          "text": "one"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "seven",
@@ -425,10 +741,22 @@
       "type": "MCQ",
       "question": "___ provides an interface between the sub-systems of working memory and the part of long term memory specialized for episodic memory.",
       "options": [
-        { "key": "A", "text": "Phonological loop" },
-        { "key": "B", "text": "Visuo-spatial sketchpad" },
-        { "key": "C", "text": "Retrieval buffer" },
-        { "key": "D", "text": "Episodic buffer" }
+        {
+          "key": "A",
+          "text": "Phonological loop"
+        },
+        {
+          "key": "B",
+          "text": "Visuo-spatial sketchpad"
+        },
+        {
+          "key": "C",
+          "text": "Retrieval buffer"
+        },
+        {
+          "key": "D",
+          "text": "Episodic buffer"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Episodic buffer",
@@ -440,26 +768,49 @@
       "type": "MCQ",
       "question": "Memories of specific episodes of one’s life refers to ___.",
       "options": [
-        { "key": "A", "text": "declarative memory" },
-        { "key": "B", "text": "experimental episodic memory" },
-        { "key": "C", "text": "autobiographical episodic memory" },
-        { "key": "D", "text": "procedural memory" }
+        {
+          "key": "A",
+          "text": "declarative memory"
+        },
+        {
+          "key": "B",
+          "text": "experimental episodic memory"
+        },
+        {
+          "key": "C",
+          "text": "autobiographical episodic memory"
+        },
+        {
+          "key": "D",
+          "text": "procedural memory"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "autobiographical episodic memory",
       "explanation": "Autobiographical episodic memory refers to memories of specific events and episodes from one's own life. Declarative memory is a broader category, procedural memory is about skills, and experimental episodic memory is not a standard term. Hence autobiographical episodic memory is correct."
     },
-
     {
       "week": 4,
       "questionNo": 1,
       "type": "MCQ",
       "question": "___ thinking is the ability to create mental representations of objects, places, events, or people in your mind.",
       "options": [
-        { "key": "A", "text": "General" },
-        { "key": "B", "text": "Creative" },
-        { "key": "C", "text": "Divergent" },
-        { "key": "D", "text": "Symbolic" }
+        {
+          "key": "A",
+          "text": "General"
+        },
+        {
+          "key": "B",
+          "text": "Creative"
+        },
+        {
+          "key": "C",
+          "text": "Divergent"
+        },
+        {
+          "key": "D",
+          "text": "Symbolic"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Symbolic",
@@ -471,10 +822,22 @@
       "type": "MCQ",
       "question": "We compare new information to our ___ of the person, place, or thing, so we know how to categorize the new information mentally.",
       "options": [
-        { "key": "A", "text": "protofit" },
-        { "key": "B", "text": "protobite" },
-        { "key": "C", "text": "prototype" },
-        { "key": "D", "text": "none of the given" }
+        {
+          "key": "A",
+          "text": "protofit"
+        },
+        {
+          "key": "B",
+          "text": "protobite"
+        },
+        {
+          "key": "C",
+          "text": "prototype"
+        },
+        {
+          "key": "D",
+          "text": "none of the given"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "prototype",
@@ -486,10 +849,22 @@
       "type": "MCQ",
       "question": "Which of the following is not true?",
       "options": [
-        { "key": "A", "text": "Thinking is a higher mental process" },
-        { "key": "B", "text": "Thinking is a sub-vocal talking" },
-        { "key": "C", "text": "Thinking is fulfilling a need or problem solving" },
-        { "key": "D", "text": "Thinking is only done in verbal symbols" }
+        {
+          "key": "A",
+          "text": "Thinking is a higher mental process"
+        },
+        {
+          "key": "B",
+          "text": "Thinking is a sub-vocal talking"
+        },
+        {
+          "key": "C",
+          "text": "Thinking is fulfilling a need or problem solving"
+        },
+        {
+          "key": "D",
+          "text": "Thinking is only done in verbal symbols"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Thinking is only done in verbal symbols",
@@ -501,10 +876,22 @@
       "type": "MCQ",
       "question": "Mental images are ___.",
       "options": [
-        { "key": "A", "text": "Auditory" },
-        { "key": "B", "text": "Visual" },
-        { "key": "C", "text": "Gustatory" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "Auditory"
+        },
+        {
+          "key": "B",
+          "text": "Visual"
+        },
+        {
+          "key": "C",
+          "text": "Gustatory"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -516,10 +903,22 @@
       "type": "MCQ",
       "question": "___ organize complex phenomena into simpler, easily understandable, and usable categories and help to solve our problems.",
       "options": [
-        { "key": "A", "text": "Concepts" },
-        { "key": "B", "text": "Propositions" },
-        { "key": "C", "text": "Constructs" },
-        { "key": "D", "text": "Components" }
+        {
+          "key": "A",
+          "text": "Concepts"
+        },
+        {
+          "key": "B",
+          "text": "Propositions"
+        },
+        {
+          "key": "C",
+          "text": "Constructs"
+        },
+        {
+          "key": "D",
+          "text": "Components"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Concepts",
@@ -531,10 +930,22 @@
       "type": "MCQ",
       "question": "The lowermost level of Bloom’s taxonomy is ___.",
       "options": [
-        { "key": "A", "text": "remember" },
-        { "key": "B", "text": "apply" },
-        { "key": "C", "text": "understand" },
-        { "key": "D", "text": "analyze" }
+        {
+          "key": "A",
+          "text": "remember"
+        },
+        {
+          "key": "B",
+          "text": "apply"
+        },
+        {
+          "key": "C",
+          "text": "understand"
+        },
+        {
+          "key": "D",
+          "text": "analyze"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "remember",
@@ -546,10 +957,22 @@
       "type": "MCQ",
       "question": "The psychomotor domain of the Bloom’s taxonomy is concerned with ___.",
       "options": [
-        { "key": "A", "text": "Biological makeup" },
-        { "key": "B", "text": "Thoughts and beliefs" },
-        { "key": "C", "text": "Feelings and emotions" },
-        { "key": "D", "text": "Skilled behavior" }
+        {
+          "key": "A",
+          "text": "Biological makeup"
+        },
+        {
+          "key": "B",
+          "text": "Thoughts and beliefs"
+        },
+        {
+          "key": "C",
+          "text": "Feelings and emotions"
+        },
+        {
+          "key": "D",
+          "text": "Skilled behavior"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Skilled behavior",
@@ -561,10 +984,22 @@
       "type": "MCQ",
       "question": "Which of the following is an example of meta-cognition skills?",
       "options": [
-        { "key": "A", "text": "Ignoring your limits" },
-        { "key": "B", "text": "Self-monitoring" },
-        { "key": "C", "text": "Skimming all important information" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "Ignoring your limits"
+        },
+        {
+          "key": "B",
+          "text": "Self-monitoring"
+        },
+        {
+          "key": "C",
+          "text": "Skimming all important information"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "Self-monitoring",
@@ -576,10 +1011,22 @@
       "type": "MCQ",
       "question": "___ critical thinking skill helps you analyze and process information to come to an unbiased conclusion.",
       "options": [
-        { "key": "A", "text": "Open-mindedness" },
-        { "key": "B", "text": "Self-regulation" },
-        { "key": "C", "text": "Self-control" },
-        { "key": "D", "text": "Observation" }
+        {
+          "key": "A",
+          "text": "Open-mindedness"
+        },
+        {
+          "key": "B",
+          "text": "Self-regulation"
+        },
+        {
+          "key": "C",
+          "text": "Self-control"
+        },
+        {
+          "key": "D",
+          "text": "Observation"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Open-mindedness",
@@ -591,26 +1038,49 @@
       "type": "MCQ",
       "question": "The inspiration phase of the creative thinking process refers to the ___ stage.",
       "options": [
-        { "key": "A", "text": "Incubation" },
-        { "key": "B", "text": "Insight" },
-        { "key": "C", "text": "Evaluation" },
-        { "key": "D", "text": "Preparation" }
+        {
+          "key": "A",
+          "text": "Incubation"
+        },
+        {
+          "key": "B",
+          "text": "Insight"
+        },
+        {
+          "key": "C",
+          "text": "Evaluation"
+        },
+        {
+          "key": "D",
+          "text": "Preparation"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Preparation",
       "explanation": "In Wallas's model of creative thinking, the inspiration phase corresponds to the Preparation stage, where the individual gathers information and defines the problem. Incubation is the unconscious processing stage, Insight is the 'aha' moment, and Evaluation is the verification stage. Hence Preparation is correct."
     },
-
     {
       "week": 5,
       "questionNo": 1,
       "type": "MCQ",
       "question": "Which of the following is true about motivation?",
       "options": [
-        { "key": "A", "text": "It is a physical impulse" },
-        { "key": "B", "text": "It is an external process" },
-        { "key": "C", "text": "It has a willingness to activate but not channel the attitudes of learners" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "It is a physical impulse"
+        },
+        {
+          "key": "B",
+          "text": "It is an external process"
+        },
+        {
+          "key": "C",
+          "text": "It has a willingness to activate but not channel the attitudes of learners"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "None of the given",
@@ -622,10 +1092,22 @@
       "type": "MCQ",
       "question": "The term 'motivation' comes from a ___ word.",
       "options": [
-        { "key": "A", "text": "Greek" },
-        { "key": "B", "text": "Latin" },
-        { "key": "C", "text": "Hindi" },
-        { "key": "D", "text": "Bengali" }
+        {
+          "key": "A",
+          "text": "Greek"
+        },
+        {
+          "key": "B",
+          "text": "Latin"
+        },
+        {
+          "key": "C",
+          "text": "Hindi"
+        },
+        {
+          "key": "D",
+          "text": "Bengali"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "Latin",
@@ -637,10 +1119,22 @@
       "type": "MCQ",
       "question": "It is called extrinsic motivation if causal factor is ___.",
       "options": [
-        { "key": "A", "text": "curiosity" },
-        { "key": "B", "text": "social pressure" },
-        { "key": "C", "text": "self-satisfaction" },
-        { "key": "D", "text": "needs" }
+        {
+          "key": "A",
+          "text": "curiosity"
+        },
+        {
+          "key": "B",
+          "text": "social pressure"
+        },
+        {
+          "key": "C",
+          "text": "self-satisfaction"
+        },
+        {
+          "key": "D",
+          "text": "needs"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "social pressure",
@@ -652,10 +1146,22 @@
       "type": "MCQ",
       "question": "___ motivation is considered to be more crucial for students as it is associated with deep learning, better performance and self-efficacy.",
       "options": [
-        { "key": "A", "text": "Intrinsic" },
-        { "key": "B", "text": "Extrinsic" },
-        { "key": "C", "text": "Introjected regulation" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "Intrinsic"
+        },
+        {
+          "key": "B",
+          "text": "Extrinsic"
+        },
+        {
+          "key": "C",
+          "text": "Introjected regulation"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Intrinsic",
@@ -667,10 +1173,22 @@
       "type": "MCQ",
       "question": "___ proposed that there are three primary drives that drive human behavior.",
       "options": [
-        { "key": "A", "text": "Hull" },
-        { "key": "B", "text": "Watson" },
-        { "key": "C", "text": "Piaget" },
-        { "key": "D", "text": "Gestalt" }
+        {
+          "key": "A",
+          "text": "Hull"
+        },
+        {
+          "key": "B",
+          "text": "Watson"
+        },
+        {
+          "key": "C",
+          "text": "Piaget"
+        },
+        {
+          "key": "D",
+          "text": "Gestalt"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Hull",
@@ -682,10 +1200,22 @@
       "type": "MCQ",
       "question": "Expectancy Theory of Motivation was developed by ___.",
       "options": [
-        { "key": "A", "text": "Vroom" },
-        { "key": "B", "text": "Hull" },
-        { "key": "C", "text": "Murray" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "Vroom"
+        },
+        {
+          "key": "B",
+          "text": "Hull"
+        },
+        {
+          "key": "C",
+          "text": "Murray"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Vroom",
@@ -697,10 +1227,22 @@
       "type": "MCQ",
       "question": "An example of ___ is thinking, 'If I work hard I can achieve the targets my boss has set for me'.",
       "options": [
-        { "key": "A", "text": "purposeful" },
-        { "key": "B", "text": "valence" },
-        { "key": "C", "text": "instrumentality" },
-        { "key": "D", "text": "expectancy" }
+        {
+          "key": "A",
+          "text": "purposeful"
+        },
+        {
+          "key": "B",
+          "text": "valence"
+        },
+        {
+          "key": "C",
+          "text": "instrumentality"
+        },
+        {
+          "key": "D",
+          "text": "expectancy"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "expectancy",
@@ -712,10 +1254,22 @@
       "type": "MCQ",
       "question": "In SMART goals, T stands for ___.",
       "options": [
-        { "key": "A", "text": "Temporary" },
-        { "key": "B", "text": "Time-based" },
-        { "key": "C", "text": "Tough" },
-        { "key": "D", "text": "Testing" }
+        {
+          "key": "A",
+          "text": "Temporary"
+        },
+        {
+          "key": "B",
+          "text": "Time-based"
+        },
+        {
+          "key": "C",
+          "text": "Tough"
+        },
+        {
+          "key": "D",
+          "text": "Testing"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "Time-based",
@@ -727,10 +1281,22 @@
       "type": "MCQ",
       "question": "Friendship is a ___ need in Maslow’s hierarchy.",
       "options": [
-        { "key": "A", "text": "Love and belonging" },
-        { "key": "B", "text": "Esteem" },
-        { "key": "C", "text": "Physiological" },
-        { "key": "D", "text": "Safety" }
+        {
+          "key": "A",
+          "text": "Love and belonging"
+        },
+        {
+          "key": "B",
+          "text": "Esteem"
+        },
+        {
+          "key": "C",
+          "text": "Physiological"
+        },
+        {
+          "key": "D",
+          "text": "Safety"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Love and belonging",
@@ -742,26 +1308,49 @@
       "type": "MCQ",
       "question": "___ theory differentiates between autonomous motivation and controlled motivation.",
       "options": [
-        { "key": "A", "text": "Arousal" },
-        { "key": "B", "text": "Goal-setting" },
-        { "key": "C", "text": "Need hierarchy" },
-        { "key": "D", "text": "Self-determination" }
+        {
+          "key": "A",
+          "text": "Arousal"
+        },
+        {
+          "key": "B",
+          "text": "Goal-setting"
+        },
+        {
+          "key": "C",
+          "text": "Need hierarchy"
+        },
+        {
+          "key": "D",
+          "text": "Self-determination"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Self-determination",
       "explanation": "Self-determination theory (Deci & Ryan) distinguishes between autonomous motivation (self-endorsed) and controlled motivation (externally pressured). Arousal theory, goal-setting theory, and need hierarchy theory do not make this specific distinction. Hence Self-determination is correct."
     },
-
     {
       "week": 6,
       "questionNo": 1,
       "type": "MCQ",
       "question": "According to Daniel Goleman, ___ component of emotional intelligence focuses on how we handle relationships with others.",
       "options": [
-        { "key": "A", "text": "self-awareness" },
-        { "key": "B", "text": "motivation" },
-        { "key": "C", "text": "empathy" },
-        { "key": "D", "text": "emotional regulation" }
+        {
+          "key": "A",
+          "text": "self-awareness"
+        },
+        {
+          "key": "B",
+          "text": "motivation"
+        },
+        {
+          "key": "C",
+          "text": "empathy"
+        },
+        {
+          "key": "D",
+          "text": "emotional regulation"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "empathy",
@@ -773,10 +1362,22 @@
       "type": "MCQ",
       "question": "Emotional intelligence can be considered a type of ___ intelligence.",
       "options": [
-        { "key": "A", "text": "academic" },
-        { "key": "B", "text": "genetic" },
-        { "key": "C", "text": "social" },
-        { "key": "D", "text": "external" }
+        {
+          "key": "A",
+          "text": "academic"
+        },
+        {
+          "key": "B",
+          "text": "genetic"
+        },
+        {
+          "key": "C",
+          "text": "social"
+        },
+        {
+          "key": "D",
+          "text": "external"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "social",
@@ -788,10 +1389,22 @@
       "type": "MCQ",
       "question": "Noticing a difficult emotion and slowing down or resisting any impulsive action that may follow highlights ___ component of emotional intelligence.",
       "options": [
-        { "key": "A", "text": "Self-regulation" },
-        { "key": "B", "text": "Motivation" },
-        { "key": "C", "text": "Emotional literacy" },
-        { "key": "D", "text": "Empathy" }
+        {
+          "key": "A",
+          "text": "Self-regulation"
+        },
+        {
+          "key": "B",
+          "text": "Motivation"
+        },
+        {
+          "key": "C",
+          "text": "Emotional literacy"
+        },
+        {
+          "key": "D",
+          "text": "Empathy"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Self-regulation",
@@ -803,10 +1416,22 @@
       "type": "MCQ",
       "question": "The following are signs of emotional intelligence, except ___.",
       "options": [
-        { "key": "A", "text": "strong sense of curiosity" },
-        { "key": "B", "text": "holding onto mistakes" },
-        { "key": "C", "text": "ability to manage emotions in difficult situations" },
-        { "key": "D", "text": "self-confidence" }
+        {
+          "key": "A",
+          "text": "strong sense of curiosity"
+        },
+        {
+          "key": "B",
+          "text": "holding onto mistakes"
+        },
+        {
+          "key": "C",
+          "text": "ability to manage emotions in difficult situations"
+        },
+        {
+          "key": "D",
+          "text": "self-confidence"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "holding onto mistakes",
@@ -818,10 +1443,22 @@
       "type": "MCQ",
       "question": "Perceiving emotions means ___.",
       "options": [
-        { "key": "A", "text": "Ignoring signals" },
-        { "key": "B", "text": "Understanding only what somebody is saying to you" },
-        { "key": "C", "text": "Understanding only somebody’s facial expression" },
-        { "key": "D", "text": "Understanding both verbal and nonverbal signals" }
+        {
+          "key": "A",
+          "text": "Ignoring signals"
+        },
+        {
+          "key": "B",
+          "text": "Understanding only what somebody is saying to you"
+        },
+        {
+          "key": "C",
+          "text": "Understanding only somebody’s facial expression"
+        },
+        {
+          "key": "D",
+          "text": "Understanding both verbal and nonverbal signals"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Understanding both verbal and nonverbal signals",
@@ -833,10 +1470,22 @@
       "type": "MCQ",
       "question": "___ suggests that 10 distinct components provide the scaffolding of emotionally and socially intelligent behaviors:",
       "options": [
-        { "key": "A", "text": "Bar-On" },
-        { "key": "B", "text": "Goleman" },
-        { "key": "C", "text": "Salovey" },
-        { "key": "D", "text": "Mayer" }
+        {
+          "key": "A",
+          "text": "Bar-On"
+        },
+        {
+          "key": "B",
+          "text": "Goleman"
+        },
+        {
+          "key": "C",
+          "text": "Salovey"
+        },
+        {
+          "key": "D",
+          "text": "Mayer"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Bar-On",
@@ -848,10 +1497,22 @@
       "type": "MCQ",
       "question": "Which of the following is a facilitator of EQ?",
       "options": [
-        { "key": "A", "text": "optimism" },
-        { "key": "B", "text": "happiness" },
-        { "key": "C", "text": "independence" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "optimism"
+        },
+        {
+          "key": "B",
+          "text": "happiness"
+        },
+        {
+          "key": "C",
+          "text": "independence"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -863,10 +1524,22 @@
       "type": "MCQ",
       "question": "___ is a strategy for improving one’s self-awareness.",
       "options": [
-        { "key": "A", "text": "rejecting feedback" },
-        { "key": "B", "text": "using critical self-talk daily" },
-        { "key": "C", "text": "developing a fixed mindset" },
-        { "key": "D", "text": "pursuing one’s passion" }
+        {
+          "key": "A",
+          "text": "rejecting feedback"
+        },
+        {
+          "key": "B",
+          "text": "using critical self-talk daily"
+        },
+        {
+          "key": "C",
+          "text": "developing a fixed mindset"
+        },
+        {
+          "key": "D",
+          "text": "pursuing one’s passion"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "pursuing one’s passion",
@@ -878,10 +1551,22 @@
       "type": "MCQ",
       "question": "Having students create autobiographies is an example of creating opportunities for ___.",
       "options": [
-        { "key": "A", "text": "emotional labor" },
-        { "key": "B", "text": "emotional contagion" },
-        { "key": "C", "text": "metacognition" },
-        { "key": "D", "text": "none of the given" }
+        {
+          "key": "A",
+          "text": "emotional labor"
+        },
+        {
+          "key": "B",
+          "text": "emotional contagion"
+        },
+        {
+          "key": "C",
+          "text": "metacognition"
+        },
+        {
+          "key": "D",
+          "text": "none of the given"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "metacognition",
@@ -893,30 +1578,56 @@
       "type": "MCQ",
       "question": "Which of the following is not true about management of emotions?",
       "options": [
-        { "key": "A", "text": "It is essentially a private act" },
-        { "key": "B", "text": "It is directly regulated by others" },
-        { "key": "C", "text": "It is influenced by cultural norms" },
-        { "key": "D", "text": "It is influenced by what society defines as appropriate to feel and express" }
+        {
+          "key": "A",
+          "text": "It is essentially a private act"
+        },
+        {
+          "key": "B",
+          "text": "It is directly regulated by others"
+        },
+        {
+          "key": "C",
+          "text": "It is influenced by cultural norms"
+        },
+        {
+          "key": "D",
+          "text": "It is influenced by what society defines as appropriate to feel and express"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "It is directly regulated by others",
       "explanation": "Management of emotions is an internal process and is not directly regulated by others, though it can be influenced by social and cultural contexts. It is essentially private, influenced by cultural norms, and shaped by societal expectations. Hence 'directly regulated by others' is not true."
     },
-
     {
       "week": 7,
       "questionNo": 1,
       "type": "MCQ",
       "question": "Which of the following is false about learning according to Gagne’s definition?",
       "options": [
-        { "key": "A", "text": "It is a change in human disposition" },
-        { "key": "B", "text": "It persists over a period of time" },
-        { "key": "C", "text": "It is simply ascribable to processes of growth" },
-        { "key": "D", "text": "None of the above" }
+        {
+          "key": "A",
+          "text": "It is a change in human disposition"
+        },
+        {
+          "key": "B",
+          "text": "It persists over a period of time"
+        },
+        {
+          "key": "C",
+          "text": "It is simply ascribable to processes of growth"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "It is simply ascribable to processes of growth",
-      "explanation": "Gagne defined learning as a change in human disposition or capability that persists over time and is not simply ascribable to growth. Learning is distinguished from maturation and growth. Hence 'simply ascribable to processes of growth' is false."
+      "explanation": "Gagne defined learning as a change in human disposition or capability that persists over time and is not simply ascribable to growth. Learning is distinguished from maturation and growth. Hence 'simply ascribable to processes of growth' is false.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q1",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -924,14 +1635,29 @@
       "type": "MCQ",
       "question": "Manual or physical skills come under ___ component of Bloom’s taxonomy.",
       "options": [
-        { "key": "A", "text": "Cognitive" },
-        { "key": "B", "text": "Affective" },
-        { "key": "C", "text": "Psychomotor" },
-        { "key": "D", "text": "Physical" }
+        {
+          "key": "A",
+          "text": "Cognitive"
+        },
+        {
+          "key": "B",
+          "text": "Affective"
+        },
+        {
+          "key": "C",
+          "text": "Psychomotor"
+        },
+        {
+          "key": "D",
+          "text": "Physical"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "Psychomotor",
-      "explanation": "The psychomotor domain of Bloom's taxonomy deals with manual or physical skills, including coordination and motor activities. Cognitive deals with knowledge, affective with emotions, and physical is not a Bloom's domain. Hence Psychomotor is correct."
+      "explanation": "The psychomotor domain of Bloom's taxonomy deals with manual or physical skills, including coordination and motor activities. Cognitive deals with knowledge, affective with emotions, and physical is not a Bloom's domain. Hence Psychomotor is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q2",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -939,14 +1665,29 @@
       "type": "MCQ",
       "question": "Reflection, learning and education was explored by ___.",
       "options": [
-        { "key": "A", "text": "Carl Rogers" },
-        { "key": "B", "text": "John Watson" },
-        { "key": "C", "text": "Benjamin Bloom" },
-        { "key": "D", "text": "John Dewey" }
+        {
+          "key": "A",
+          "text": "Carl Rogers"
+        },
+        {
+          "key": "B",
+          "text": "John Watson"
+        },
+        {
+          "key": "C",
+          "text": "Benjamin Bloom"
+        },
+        {
+          "key": "D",
+          "text": "John Dewey"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "John Dewey",
-      "explanation": "John Dewey is known for his work on reflection, learning, and education, emphasizing experiential learning and reflective thinking. Rogers was humanistic psychology, Watson was behaviorism, and Bloom developed taxonomy. Hence John Dewey is correct."
+      "explanation": "John Dewey is known for his work on reflection, learning, and education, emphasizing experiential learning and reflective thinking. Rogers was humanistic psychology, Watson was behaviorism, and Bloom developed taxonomy. Hence John Dewey is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q3",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -954,14 +1695,29 @@
       "type": "MCQ",
       "question": "The principles of ___ refer to how close in time two events must be for a bond to be formed.",
       "options": [
-        { "key": "A", "text": "behavior" },
-        { "key": "B", "text": "reinforcement" },
-        { "key": "C", "text": "repetition" },
-        { "key": "D", "text": "contiguity" }
+        {
+          "key": "A",
+          "text": "behavior"
+        },
+        {
+          "key": "B",
+          "text": "reinforcement"
+        },
+        {
+          "key": "C",
+          "text": "repetition"
+        },
+        {
+          "key": "D",
+          "text": "contiguity"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "contiguity",
-      "explanation": "The principle of contiguity states that two events must occur close together in time for an association to be formed between them. Behavior, reinforcement, and repetition are related but not the specific principle described. Hence contiguity is correct."
+      "explanation": "The principle of contiguity states that two events must occur close together in time for an association to be formed between them. Behavior, reinforcement, and repetition are related but not the specific principle described. Hence contiguity is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q4",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -969,14 +1725,29 @@
       "type": "MCQ",
       "question": "___ gives information to learners about their success or failure concerning the task at hand.",
       "options": [
-        { "key": "A", "text": "Cognitive feedback" },
-        { "key": "B", "text": "Emotional feedback" },
-        { "key": "C", "text": "Reinforcement" },
-        { "key": "D", "text": "Physical feedback" }
+        {
+          "key": "A",
+          "text": "Cognitive feedback"
+        },
+        {
+          "key": "B",
+          "text": "Emotional feedback"
+        },
+        {
+          "key": "C",
+          "text": "Reinforcement"
+        },
+        {
+          "key": "D",
+          "text": "Physical feedback"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Cognitive feedback",
-      "explanation": "Cognitive feedback provides learners with information about their success or failure on a task, helping them understand their performance. Emotional feedback relates to feelings, reinforcement is about consequences, and physical feedback is about bodily sensations. Hence cognitive feedback is correct."
+      "explanation": "Cognitive feedback provides learners with information about their success or failure on a task, helping them understand their performance. Emotional feedback relates to feelings, reinforcement is about consequences, and physical feedback is about bodily sensations. Hence cognitive feedback is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q5",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -984,14 +1755,29 @@
       "type": "MCQ",
       "question": "The ___ orientation to learning has a quality of personal involvement—the whole person in both feeling and cognitive aspects being in the learning event.",
       "options": [
-        { "key": "A", "text": "behavioral" },
-        { "key": "B", "text": "cognitive" },
-        { "key": "C", "text": "humanistic" },
-        { "key": "D", "text": "social" }
+        {
+          "key": "A",
+          "text": "behavioral"
+        },
+        {
+          "key": "B",
+          "text": "cognitive"
+        },
+        {
+          "key": "C",
+          "text": "humanistic"
+        },
+        {
+          "key": "D",
+          "text": "social"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "humanistic",
-      "explanation": "The humanistic orientation to learning, associated with Carl Rogers, emphasizes personal involvement, including both feeling and cognitive aspects. Behavioral focuses on observable behavior, cognitive on mental processes, and social on social contexts. Hence humanistic is correct."
+      "explanation": "The humanistic orientation to learning, associated with Carl Rogers, emphasizes personal involvement, including both feeling and cognitive aspects. Behavioral focuses on observable behavior, cognitive on mental processes, and social on social contexts. Hence humanistic is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q6",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -999,14 +1785,29 @@
       "type": "MCQ",
       "question": "Learning through play is ___ learning.",
       "options": [
-        { "key": "A", "text": "primary" },
-        { "key": "B", "text": "secondary" },
-        { "key": "C", "text": "passive" },
-        { "key": "D", "text": "active" }
+        {
+          "key": "A",
+          "text": "primary"
+        },
+        {
+          "key": "B",
+          "text": "secondary"
+        },
+        {
+          "key": "C",
+          "text": "passive"
+        },
+        {
+          "key": "D",
+          "text": "active"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "active",
-      "explanation": "Learning through play is an active process where learners engage physically, mentally, and socially. It is not passive, primary, or secondary. Hence active is correct."
+      "explanation": "Learning through play is an active process where learners engage physically, mentally, and socially. It is not passive, primary, or secondary. Hence active is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q7",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -1014,14 +1815,29 @@
       "type": "MCQ",
       "question": "People with ___ learning style are prone to sorting their ideas after speaking, rather than thinking ideas through before.",
       "options": [
-        { "key": "A", "text": "logical" },
-        { "key": "B", "text": "solitary" },
-        { "key": "C", "text": "visual" },
-        { "key": "D", "text": "auditory" }
+        {
+          "key": "A",
+          "text": "logical"
+        },
+        {
+          "key": "B",
+          "text": "solitary"
+        },
+        {
+          "key": "C",
+          "text": "visual"
+        },
+        {
+          "key": "D",
+          "text": "auditory"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "auditory",
-      "explanation": "People with an auditory learning style often process information by talking and listening, and they may sort out their ideas while speaking rather than before. Logical, solitary, and visual styles do not specifically match this description. Hence auditory is correct."
+      "explanation": "People with an auditory learning style often process information by talking and listening, and they may sort out their ideas while speaking rather than before. Logical, solitary, and visual styles do not specifically match this description. Hence auditory is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q8",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -1029,14 +1845,29 @@
       "type": "MCQ",
       "question": "Which of the following statements is false?",
       "options": [
-        { "key": "A", "text": "Effective instruction is static" },
-        { "key": "B", "text": "Effective instruction is eclectic" },
-        { "key": "C", "text": "Effective instruction is generative" },
-        { "key": "D", "text": "Effective instruction is interactive" }
+        {
+          "key": "A",
+          "text": "Effective instruction is static"
+        },
+        {
+          "key": "B",
+          "text": "Effective instruction is eclectic"
+        },
+        {
+          "key": "C",
+          "text": "Effective instruction is generative"
+        },
+        {
+          "key": "D",
+          "text": "Effective instruction is interactive"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Effective instruction is static",
-      "explanation": "Effective instruction is dynamic and adaptive, not static. It is eclectic (drawing from multiple approaches), generative (producing new understanding), and interactive (engaging learners). Hence 'effective instruction is static' is false."
+      "explanation": "Effective instruction is dynamic and adaptive, not static. It is eclectic (drawing from multiple approaches), generative (producing new understanding), and interactive (engaging learners). Hence 'effective instruction is static' is false.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q9",
+      "assignmentYear": 2025
     },
     {
       "week": 7,
@@ -1044,26 +1875,52 @@
       "type": "MCQ",
       "question": "In ADDIE model, I stand for ___.",
       "options": [
-        { "key": "A", "text": "instruction" },
-        { "key": "B", "text": "implementation" },
-        { "key": "C", "text": "integration" },
-        { "key": "D", "text": "induction" }
+        {
+          "key": "A",
+          "text": "instruction"
+        },
+        {
+          "key": "B",
+          "text": "implementation"
+        },
+        {
+          "key": "C",
+          "text": "integration"
+        },
+        {
+          "key": "D",
+          "text": "induction"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "implementation",
-      "explanation": "In the ADDIE model, the letters stand for Analysis, Design, Development, Implementation, and Evaluation. The 'I' stands for Implementation, which is the phase where the instruction is delivered. Hence implementation is correct."
+      "explanation": "In the ADDIE model, the letters stand for Analysis, Design, Development, Implementation, and Evaluation. The 'I' stands for Implementation, which is the phase where the instruction is delivered. Hence implementation is correct.",
+      "assignmentName": "Week 7 (2025)",
+      "id": "psych-learning-week7-2025-q10",
+      "assignmentYear": 2025
     },
-
     {
       "week": 8,
       "questionNo": 1,
       "type": "MCQ",
       "question": "The word 'pedagogy' has been derived from the ___ word 'pedagogue'.",
       "options": [
-        { "key": "A", "text": "Latin" },
-        { "key": "B", "text": "Sanskrit" },
-        { "key": "C", "text": "Greek" },
-        { "key": "D", "text": "English" }
+        {
+          "key": "A",
+          "text": "Latin"
+        },
+        {
+          "key": "B",
+          "text": "Sanskrit"
+        },
+        {
+          "key": "C",
+          "text": "Greek"
+        },
+        {
+          "key": "D",
+          "text": "English"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "Greek",
@@ -1075,10 +1932,22 @@
       "type": "MCQ",
       "question": "Which of the following statements is not true about pedagogy?",
       "options": [
-        { "key": "A", "text": "It is a method or way of teaching" },
-        { "key": "B", "text": "It is derived from the Greek word 'pedagogue'" },
-        { "key": "C", "text": "It helps a teacher understand how learning should be facilitated." },
-        { "key": "D", "text": "It harms the quality of teaching and learning." }
+        {
+          "key": "A",
+          "text": "It is a method or way of teaching"
+        },
+        {
+          "key": "B",
+          "text": "It is derived from the Greek word 'pedagogue'"
+        },
+        {
+          "key": "C",
+          "text": "It helps a teacher understand how learning should be facilitated."
+        },
+        {
+          "key": "D",
+          "text": "It harms the quality of teaching and learning."
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "It harms the quality of teaching and learning.",
@@ -1090,8 +1959,14 @@
       "type": "MCQ",
       "question": "Pedagogy can enhance the student-teacher relationship.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "True",
@@ -1103,10 +1978,22 @@
       "type": "MCQ",
       "question": "___ learning is based on the model that knowledge can be created within a population where members actively interact by sharing experiences and take on asymmetry roles.",
       "options": [
-        { "key": "A", "text": "integrative" },
-        { "key": "B", "text": "inquiry-based" },
-        { "key": "C", "text": "collaborative" },
-        { "key": "D", "text": "constructivist" }
+        {
+          "key": "A",
+          "text": "integrative"
+        },
+        {
+          "key": "B",
+          "text": "inquiry-based"
+        },
+        {
+          "key": "C",
+          "text": "collaborative"
+        },
+        {
+          "key": "D",
+          "text": "constructivist"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "collaborative",
@@ -1118,10 +2005,22 @@
       "type": "MCQ",
       "question": "The Pedagogical Model provides an overview of the learning cycle and breaks it down into ___ domains or phases of instruction.",
       "options": [
-        { "key": "A", "text": "five" },
-        { "key": "B", "text": "three" },
-        { "key": "C", "text": "two" },
-        { "key": "D", "text": "seven" }
+        {
+          "key": "A",
+          "text": "five"
+        },
+        {
+          "key": "B",
+          "text": "three"
+        },
+        {
+          "key": "C",
+          "text": "two"
+        },
+        {
+          "key": "D",
+          "text": "seven"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "five",
@@ -1133,10 +2032,22 @@
       "type": "MCQ",
       "question": "Which of the following is not a type of inquiry-based approach?",
       "options": [
-        { "key": "A", "text": "confrontation" },
-        { "key": "B", "text": "structure" },
-        { "key": "C", "text": "guided" },
-        { "key": "D", "text": "open" }
+        {
+          "key": "A",
+          "text": "confrontation"
+        },
+        {
+          "key": "B",
+          "text": "structure"
+        },
+        {
+          "key": "C",
+          "text": "guided"
+        },
+        {
+          "key": "D",
+          "text": "open"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "confrontation",
@@ -1148,10 +2059,22 @@
       "type": "MCQ",
       "question": "In experiential learning, students are engaged ___.",
       "options": [
-        { "key": "A", "text": "intellectually" },
-        { "key": "B", "text": "soulfully" },
-        { "key": "C", "text": "socially" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "intellectually"
+        },
+        {
+          "key": "B",
+          "text": "soulfully"
+        },
+        {
+          "key": "C",
+          "text": "socially"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -1163,10 +2086,22 @@
       "type": "MCQ",
       "question": "___ stage of experiential theory by Kolb focuses on planning.",
       "options": [
-        { "key": "A", "text": "concrete experience" },
-        { "key": "B", "text": "abstract conceptualization" },
-        { "key": "C", "text": "reflective observation" },
-        { "key": "D", "text": "active experimentation" }
+        {
+          "key": "A",
+          "text": "concrete experience"
+        },
+        {
+          "key": "B",
+          "text": "abstract conceptualization"
+        },
+        {
+          "key": "C",
+          "text": "reflective observation"
+        },
+        {
+          "key": "D",
+          "text": "active experimentation"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "active experimentation",
@@ -1178,10 +2113,22 @@
       "type": "MCQ",
       "question": "People with a ___ learning style can often act on 'gut feeling' and will rely on others' analysis rather than their own.",
       "options": [
-        { "key": "A", "text": "accommodating" },
-        { "key": "B", "text": "converging" },
-        { "key": "C", "text": "diverging" },
-        { "key": "D", "text": "assimilating" }
+        {
+          "key": "A",
+          "text": "accommodating"
+        },
+        {
+          "key": "B",
+          "text": "converging"
+        },
+        {
+          "key": "C",
+          "text": "diverging"
+        },
+        {
+          "key": "D",
+          "text": "assimilating"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "accommodating",
@@ -1193,26 +2140,49 @@
       "type": "MCQ",
       "question": "According to the ___ principle, students learn better from animation and narration than from animation and on-screen text.",
       "options": [
-        { "key": "A", "text": "multimedia" },
-        { "key": "B", "text": "modality" },
-        { "key": "C", "text": "coherence" },
-        { "key": "D", "text": "temporal contiguity" }
+        {
+          "key": "A",
+          "text": "multimedia"
+        },
+        {
+          "key": "B",
+          "text": "modality"
+        },
+        {
+          "key": "C",
+          "text": "coherence"
+        },
+        {
+          "key": "D",
+          "text": "temporal contiguity"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "modality",
       "explanation": "The modality principle states that students learn better from animation and narration (auditory) than from animation and on-screen text (visual), because the visual channel is not overloaded. Multimedia, coherence, and temporal contiguity are different principles. Hence modality is correct."
     },
-
     {
       "week": 9,
       "questionNo": 1,
       "type": "MCQ",
       "question": "E-learning is any form of ___.",
       "options": [
-        { "key": "A", "text": "teaching" },
-        { "key": "B", "text": "training" },
-        { "key": "C", "text": "tutoring" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "teaching"
+        },
+        {
+          "key": "B",
+          "text": "training"
+        },
+        {
+          "key": "C",
+          "text": "tutoring"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -1224,10 +2194,22 @@
       "type": "MCQ",
       "question": "___ is a feature of e-learning.",
       "options": [
-        { "key": "A", "text": "difficulty in access" },
-        { "key": "B", "text": "user friendliness" },
-        { "key": "C", "text": "social injustice" },
-        { "key": "D", "text": "closed learning" }
+        {
+          "key": "A",
+          "text": "difficulty in access"
+        },
+        {
+          "key": "B",
+          "text": "user friendliness"
+        },
+        {
+          "key": "C",
+          "text": "social injustice"
+        },
+        {
+          "key": "D",
+          "text": "closed learning"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "user friendliness",
@@ -1239,8 +2221,14 @@
       "type": "MCQ",
       "question": "E-learning is a synonym of audio-visual learning, multimedia learning, and distance learning.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "False",
@@ -1252,10 +2240,22 @@
       "type": "MCQ",
       "question": "Which of the following is not a type of e-learning?",
       "options": [
-        { "key": "A", "text": "text-driven" },
-        { "key": "B", "text": "interactive" },
-        { "key": "C", "text": "simulation" },
-        { "key": "D", "text": "physical" }
+        {
+          "key": "A",
+          "text": "text-driven"
+        },
+        {
+          "key": "B",
+          "text": "interactive"
+        },
+        {
+          "key": "C",
+          "text": "simulation"
+        },
+        {
+          "key": "D",
+          "text": "physical"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "physical",
@@ -1267,10 +2267,22 @@
       "type": "MCQ",
       "question": "Which of the following is not a benefit of e-learning?",
       "options": [
-        { "key": "A", "text": "It can accommodate the need of a housewife" },
-        { "key": "B", "text": "People can revise the learning content as many times as they want" },
-        { "key": "C", "text": "It facilitates in developing and communicating new training policies" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "It can accommodate the need of a housewife"
+        },
+        {
+          "key": "B",
+          "text": "People can revise the learning content as many times as they want"
+        },
+        {
+          "key": "C",
+          "text": "It facilitates in developing and communicating new training policies"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "None of the given",
@@ -1282,10 +2294,22 @@
       "type": "MCQ",
       "question": "Good learners know ___.",
       "options": [
-        { "key": "A", "text": "What they are learning" },
-        { "key": "B", "text": "Why they are learning" },
-        { "key": "C", "text": "How they are learning" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "What they are learning"
+        },
+        {
+          "key": "B",
+          "text": "Why they are learning"
+        },
+        {
+          "key": "C",
+          "text": "How they are learning"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -1297,10 +2321,22 @@
       "type": "MCQ",
       "question": "Learners may multitask when engaging in an online course, which could be resulting in ___.",
       "options": [
-        { "key": "A", "text": "hyperfocus" },
-        { "key": "B", "text": "better retrieval" },
-        { "key": "C", "text": "shorter attention spans" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "hyperfocus"
+        },
+        {
+          "key": "B",
+          "text": "better retrieval"
+        },
+        {
+          "key": "C",
+          "text": "shorter attention spans"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "shorter attention spans",
@@ -1312,10 +2348,22 @@
       "type": "MCQ",
       "question": "___ learning is the crucial determinant of successful e-learning.",
       "options": [
-        { "key": "A", "text": "passive" },
-        { "key": "B", "text": "retrospective" },
-        { "key": "C", "text": "social" },
-        { "key": "D", "text": "active" }
+        {
+          "key": "A",
+          "text": "passive"
+        },
+        {
+          "key": "B",
+          "text": "retrospective"
+        },
+        {
+          "key": "C",
+          "text": "social"
+        },
+        {
+          "key": "D",
+          "text": "active"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "active",
@@ -1327,10 +2375,22 @@
       "type": "MCQ",
       "question": "The brain can process 36,000 visual cues per___.",
       "options": [
-        { "key": "A", "text": "hour" },
-        { "key": "B", "text": "second" },
-        { "key": "C", "text": "day" },
-        { "key": "D", "text": "year" }
+        {
+          "key": "A",
+          "text": "hour"
+        },
+        {
+          "key": "B",
+          "text": "second"
+        },
+        {
+          "key": "C",
+          "text": "day"
+        },
+        {
+          "key": "D",
+          "text": "year"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "hour",
@@ -1342,26 +2402,49 @@
       "type": "MCQ",
       "question": "For effective learning, online courses should ___.",
       "options": [
-        { "key": "A", "text": "use headings" },
-        { "key": "B", "text": "use complex language" },
-        { "key": "C", "text": "present long pieces of text" },
-        { "key": "D", "text": "use random images" }
+        {
+          "key": "A",
+          "text": "use headings"
+        },
+        {
+          "key": "B",
+          "text": "use complex language"
+        },
+        {
+          "key": "C",
+          "text": "present long pieces of text"
+        },
+        {
+          "key": "D",
+          "text": "use random images"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "use headings",
       "explanation": "Using headings improves the structure and navigability of online content, making it easier for learners to process information. Complex language, long text blocks, and random images hinder learning. Hence use headings is correct."
     },
-
-        {
+    {
       "week": 10,
       "questionNo": 1,
       "type": "MCQ",
       "question": "During Covid-19 the world was busy in preparing 1.5 billion learners for the new normal, i.e., ___ learning.",
       "options": [
-        { "key": "A", "text": "ineffective" },
-        { "key": "B", "text": "physical" },
-        { "key": "C", "text": "remote" },
-        { "key": "D", "text": "experiential" }
+        {
+          "key": "A",
+          "text": "ineffective"
+        },
+        {
+          "key": "B",
+          "text": "physical"
+        },
+        {
+          "key": "C",
+          "text": "remote"
+        },
+        {
+          "key": "D",
+          "text": "experiential"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "remote",
@@ -1373,10 +2456,22 @@
       "type": "MCQ",
       "question": "To develop learner readiness for online learning, training sessions on ___ are helpful.",
       "options": [
-        { "key": "A", "text": "netiquettes" },
-        { "key": "B", "text": "time management" },
-        { "key": "C", "text": "developing study skills" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "netiquettes"
+        },
+        {
+          "key": "B",
+          "text": "time management"
+        },
+        {
+          "key": "C",
+          "text": "developing study skills"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -1388,10 +2483,22 @@
       "type": "MCQ",
       "question": "The typical picture of a teacher being a dispenser of knowledge to the students has been replaced by that of a ___.",
       "options": [
-        { "key": "A", "text": "obstructor" },
-        { "key": "B", "text": "parent" },
-        { "key": "C", "text": "friend" },
-        { "key": "D", "text": "facilitator" }
+        {
+          "key": "A",
+          "text": "obstructor"
+        },
+        {
+          "key": "B",
+          "text": "parent"
+        },
+        {
+          "key": "C",
+          "text": "friend"
+        },
+        {
+          "key": "D",
+          "text": "facilitator"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "facilitator",
@@ -1403,10 +2510,22 @@
       "type": "MCQ",
       "question": "In 2018, Global Education and Skills Forum noted that the 'future' teacher would need the 5 skills to thrive in the 21st century. Which of the following is not one of them?",
       "options": [
-        { "key": "A", "text": "Strong social skills" },
-        { "key": "B", "text": "Data analysis" },
-        { "key": "C", "text": "External focus" },
-        { "key": "D", "text": "Strictness" }
+        {
+          "key": "A",
+          "text": "Strong social skills"
+        },
+        {
+          "key": "B",
+          "text": "Data analysis"
+        },
+        {
+          "key": "C",
+          "text": "External focus"
+        },
+        {
+          "key": "D",
+          "text": "Strictness"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Strictness",
@@ -1418,10 +2537,22 @@
       "type": "MCQ",
       "question": "Participatory education demands ___ so as to build a needs-based approach to teaching.",
       "options": [
-        { "key": "A", "text": "creativity" },
-        { "key": "B", "text": "stubbornness" },
-        { "key": "C", "text": "reward" },
-        { "key": "D", "text": "none of the given" }
+        {
+          "key": "A",
+          "text": "creativity"
+        },
+        {
+          "key": "B",
+          "text": "stubbornness"
+        },
+        {
+          "key": "C",
+          "text": "reward"
+        },
+        {
+          "key": "D",
+          "text": "none of the given"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "creativity",
@@ -1433,8 +2564,14 @@
       "type": "MCQ",
       "question": "Students who consider intelligence as a malleable entity tend to focus on their obstacles instead of goals.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "False",
@@ -1446,10 +2583,22 @@
       "type": "MCQ",
       "question": "Which of the following is not a principle to enhance student learning.",
       "options": [
-        { "key": "A", "text": "What students already know affects their learning" },
-        { "key": "B", "text": "Learning is context-based" },
-        { "key": "C", "text": "Students' cognitive development and learning is limited by the general stages of development." },
-        { "key": "D", "text": "The acquisition of knowledge and skills in the long term depends largely on practice." }
+        {
+          "key": "A",
+          "text": "What students already know affects their learning"
+        },
+        {
+          "key": "B",
+          "text": "Learning is context-based"
+        },
+        {
+          "key": "C",
+          "text": "Students' cognitive development and learning is limited by the general stages of development."
+        },
+        {
+          "key": "D",
+          "text": "The acquisition of knowledge and skills in the long term depends largely on practice."
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "Students' cognitive development and learning is limited by the general stages of development.",
@@ -1461,10 +2610,22 @@
       "type": "MCQ",
       "question": "___ feedback to students is important for learning.",
       "options": [
-        { "key": "A", "text": "Unclear" },
-        { "key": "B", "text": "Late" },
-        { "key": "C", "text": "Harsh" },
-        { "key": "D", "text": "Explanatory" }
+        {
+          "key": "A",
+          "text": "Unclear"
+        },
+        {
+          "key": "B",
+          "text": "Late"
+        },
+        {
+          "key": "C",
+          "text": "Harsh"
+        },
+        {
+          "key": "D",
+          "text": "Explanatory"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Explanatory",
@@ -1476,10 +2637,22 @@
       "type": "MCQ",
       "question": "Mastery goals are those that are geared towards the acquisition or improvement of ___.",
       "options": [
-        { "key": "A", "text": "Skills" },
-        { "key": "B", "text": "Number of students in a classroom" },
-        { "key": "C", "text": "Teacher feedback" },
-        { "key": "D", "text": "None of the given" }
+        {
+          "key": "A",
+          "text": "Skills"
+        },
+        {
+          "key": "B",
+          "text": "Number of students in a classroom"
+        },
+        {
+          "key": "C",
+          "text": "Teacher feedback"
+        },
+        {
+          "key": "D",
+          "text": "None of the given"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "Skills",
@@ -1491,10 +2664,22 @@
       "type": "MCQ",
       "question": "The vast majority of formative assessment is ___.",
       "options": [
-        { "key": "A", "text": "Formal" },
-        { "key": "B", "text": "Incorrect" },
-        { "key": "C", "text": "Written" },
-        { "key": "D", "text": "informal" }
+        {
+          "key": "A",
+          "text": "Formal"
+        },
+        {
+          "key": "B",
+          "text": "Incorrect"
+        },
+        {
+          "key": "C",
+          "text": "Written"
+        },
+        {
+          "key": "D",
+          "text": "informal"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "informal",
@@ -1506,10 +2691,22 @@
       "type": "MCQ",
       "question": "Social cognition has a protracted development through infancy to ___.",
       "options": [
-        { "key": "A", "text": "teenage" },
-        { "key": "B", "text": "old-age" },
-        { "key": "C", "text": "adulthood" },
-        { "key": "D", "text": "death" }
+        {
+          "key": "A",
+          "text": "teenage"
+        },
+        {
+          "key": "B",
+          "text": "old-age"
+        },
+        {
+          "key": "C",
+          "text": "adulthood"
+        },
+        {
+          "key": "D",
+          "text": "death"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "adulthood",
@@ -1521,10 +2718,22 @@
       "type": "MCQ",
       "question": "Which of the following abilities comes under social cognition?",
       "options": [
-        { "key": "A", "text": "Face processing" },
-        { "key": "B", "text": "Joint attention" },
-        { "key": "C", "text": "Theory of mind" },
-        { "key": "D", "text": "All of the given" }
+        {
+          "key": "A",
+          "text": "Face processing"
+        },
+        {
+          "key": "B",
+          "text": "Joint attention"
+        },
+        {
+          "key": "C",
+          "text": "Theory of mind"
+        },
+        {
+          "key": "D",
+          "text": "All of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "All of the given",
@@ -1536,10 +2745,22 @@
       "type": "MCQ",
       "question": "Under social cognition, abilities involved in affective processing are often called ___.",
       "options": [
-        { "key": "A", "text": "hot" },
-        { "key": "B", "text": "cold" },
-        { "key": "C", "text": "white" },
-        { "key": "D", "text": "black" }
+        {
+          "key": "A",
+          "text": "hot"
+        },
+        {
+          "key": "B",
+          "text": "cold"
+        },
+        {
+          "key": "C",
+          "text": "white"
+        },
+        {
+          "key": "D",
+          "text": "black"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "hot",
@@ -1551,10 +2772,22 @@
       "type": "MCQ",
       "question": "Social schemas refer to people's mental representations of social ___.",
       "options": [
-        { "key": "A", "text": "values" },
-        { "key": "B", "text": "memories" },
-        { "key": "C", "text": "skills" },
-        { "key": "D", "text": "patterns" }
+        {
+          "key": "A",
+          "text": "values"
+        },
+        {
+          "key": "B",
+          "text": "memories"
+        },
+        {
+          "key": "C",
+          "text": "skills"
+        },
+        {
+          "key": "D",
+          "text": "patterns"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "patterns",
@@ -1566,10 +2799,22 @@
       "type": "MCQ",
       "question": "During the earliest stages of development, children are very ____- centric. They see the world from their own perspective and struggle to think about how other people may view the world.",
       "options": [
-        { "key": "A", "text": "selfish" },
-        { "key": "B", "text": "ego" },
-        { "key": "C", "text": "conscious" },
-        { "key": "D", "text": "emotional" }
+        {
+          "key": "A",
+          "text": "selfish"
+        },
+        {
+          "key": "B",
+          "text": "ego"
+        },
+        {
+          "key": "C",
+          "text": "conscious"
+        },
+        {
+          "key": "D",
+          "text": "emotional"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "ego",
@@ -1581,10 +2826,22 @@
       "type": "MCQ",
       "question": "A theory of mind refers to a person's ability to understand and think about the ____ of other people.",
       "options": [
-        { "key": "A", "text": "behaviors" },
-        { "key": "B", "text": "family backgrounds" },
-        { "key": "C", "text": "mental states" },
-        { "key": "D", "text": "language" }
+        {
+          "key": "A",
+          "text": "behaviors"
+        },
+        {
+          "key": "B",
+          "text": "family backgrounds"
+        },
+        {
+          "key": "C",
+          "text": "mental states"
+        },
+        {
+          "key": "D",
+          "text": "language"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "mental states",
@@ -1596,8 +2853,14 @@
       "type": "MCQ",
       "question": "The same social behavior in one cultural setting might have a very different meaning and interpretation if it were to occur or be observed in another culture.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "True",
@@ -1609,10 +2872,22 @@
       "type": "MCQ",
       "question": "Social cognitive theory by Bandura focuses on concepts of",
       "options": [
-        { "key": "A", "text": "self-efficacy" },
-        { "key": "B", "text": "modeling" },
-        { "key": "C", "text": "observational learning" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "self-efficacy"
+        },
+        {
+          "key": "B",
+          "text": "modeling"
+        },
+        {
+          "key": "C",
+          "text": "observational learning"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -1624,10 +2899,22 @@
       "type": "MCQ",
       "question": "The central tenet of Bandura's social-cognitive theory is that people seek to develop a sense of ___ over the important events in their lives.",
       "options": [
-        { "key": "A", "text": "agency" },
-        { "key": "B", "text": "dependency" },
-        { "key": "C", "text": "attachment" },
-        { "key": "D", "text": "emotion" }
+        {
+          "key": "A",
+          "text": "agency"
+        },
+        {
+          "key": "B",
+          "text": "dependency"
+        },
+        {
+          "key": "C",
+          "text": "attachment"
+        },
+        {
+          "key": "D",
+          "text": "emotion"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "agency",
@@ -1639,25 +2926,49 @@
       "type": "MCQ",
       "question": "___ hypothesis suggests that social processes influence how information is selected, organized, integrated, and retrieved.",
       "options": [
-        { "key": "A", "text": "activation" },
-        { "key": "B", "text": "cognitive influence" },
-        { "key": "C", "text": "interaction" },
-        { "key": "D", "text": "social cue strength" }
+        {
+          "key": "A",
+          "text": "activation"
+        },
+        {
+          "key": "B",
+          "text": "cognitive influence"
+        },
+        {
+          "key": "C",
+          "text": "interaction"
+        },
+        {
+          "key": "D",
+          "text": "social cue strength"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "cognitive influence",
       "explanation": "The cognitive influence hypothesis holds that social processes shape the cognitive operations of selection, organization, integration, and retrieval of information. Activation, interaction, and social cue strength are not the names of this hypothesis. Hence cognitive influence is correct."
     },
-        {
+    {
       "week": 12,
       "questionNo": 1,
       "type": "MCQ",
       "question": "Sustainability in economic sustainability is ___.",
       "options": [
-        { "key": "A", "text": "multidimensional" },
-        { "key": "B", "text": "bidimensional" },
-        { "key": "C", "text": "unidimensional" },
-        { "key": "D", "text": "none of the given" }
+        {
+          "key": "A",
+          "text": "multidimensional"
+        },
+        {
+          "key": "B",
+          "text": "bidimensional"
+        },
+        {
+          "key": "C",
+          "text": "unidimensional"
+        },
+        {
+          "key": "D",
+          "text": "none of the given"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "unidimensional",
@@ -1669,10 +2980,22 @@
       "type": "MCQ",
       "question": "The term \"sustainable development\" was first mentioned in a book related to the 1972 UN Stockholm conference on ___.",
       "options": [
-        { "key": "A", "text": "water" },
-        { "key": "B", "text": "poverty" },
-        { "key": "C", "text": "economic crisis" },
-        { "key": "D", "text": "human environment" }
+        {
+          "key": "A",
+          "text": "water"
+        },
+        {
+          "key": "B",
+          "text": "poverty"
+        },
+        {
+          "key": "C",
+          "text": "economic crisis"
+        },
+        {
+          "key": "D",
+          "text": "human environment"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "human environment",
@@ -1684,10 +3007,22 @@
       "type": "MCQ",
       "question": "Environmental sustainability focuses on impacts of processes, products and services on ___.",
       "options": [
-        { "key": "A", "text": "water" },
-        { "key": "B", "text": "biodiversity" },
-        { "key": "C", "text": "human health" },
-        { "key": "D", "text": "all of the given" }
+        {
+          "key": "A",
+          "text": "water"
+        },
+        {
+          "key": "B",
+          "text": "biodiversity"
+        },
+        {
+          "key": "C",
+          "text": "human health"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
@@ -1699,10 +3034,22 @@
       "type": "MCQ",
       "question": "Which of the following does not come under social sustainability?",
       "options": [
-        { "key": "A", "text": "Labour practices" },
-        { "key": "B", "text": "Revenue generation" },
-        { "key": "C", "text": "Human rights" },
-        { "key": "D", "text": "Business ethics" }
+        {
+          "key": "A",
+          "text": "Labour practices"
+        },
+        {
+          "key": "B",
+          "text": "Revenue generation"
+        },
+        {
+          "key": "C",
+          "text": "Human rights"
+        },
+        {
+          "key": "D",
+          "text": "Business ethics"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "Revenue generation",
@@ -1714,10 +3061,22 @@
       "type": "MCQ",
       "question": "SDG___ focuses on clean water and sanitation.",
       "options": [
-        { "key": "A", "text": "1" },
-        { "key": "B", "text": "17" },
-        { "key": "C", "text": "6" },
-        { "key": "D", "text": "3" }
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "17"
+        },
+        {
+          "key": "C",
+          "text": "6"
+        },
+        {
+          "key": "D",
+          "text": "3"
+        }
       ],
       "correctAnswer": "C",
       "correctOption": "6",
@@ -1729,10 +3088,22 @@
       "type": "MCQ",
       "question": "SDG 16 focuses on ___.",
       "options": [
-        { "key": "A", "text": "No poverty" },
-        { "key": "B", "text": "No hunger" },
-        { "key": "C", "text": "Good health" },
-        { "key": "D", "text": "Peace and justice" }
+        {
+          "key": "A",
+          "text": "No poverty"
+        },
+        {
+          "key": "B",
+          "text": "No hunger"
+        },
+        {
+          "key": "C",
+          "text": "Good health"
+        },
+        {
+          "key": "D",
+          "text": "Peace and justice"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Peace and justice",
@@ -1744,10 +3115,22 @@
       "type": "MCQ",
       "question": "On 20 October 2020, the Higher Education Sustainability Initiative (HESI) raised the flag of higher education as a driver for sustainable development and inclusive societies on the first day of the ___ 2020.",
       "options": [
-        { "key": "A", "text": "National Sustainability Meeting" },
-        { "key": "B", "text": "National Teachers Meeting" },
-        { "key": "C", "text": "Global Children's Meeting" },
-        { "key": "D", "text": "Global Education Meeting" }
+        {
+          "key": "A",
+          "text": "National Sustainability Meeting"
+        },
+        {
+          "key": "B",
+          "text": "National Teachers Meeting"
+        },
+        {
+          "key": "C",
+          "text": "Global Children's Meeting"
+        },
+        {
+          "key": "D",
+          "text": "Global Education Meeting"
+        }
       ],
       "correctAnswer": "D",
       "correctOption": "Global Education Meeting",
@@ -1759,8 +3142,14 @@
       "type": "MCQ",
       "question": "Education is related to all SDGs.",
       "options": [
-        { "key": "A", "text": "True" },
-        { "key": "B", "text": "False" }
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "True",
@@ -1772,10 +3161,22 @@
       "type": "MCQ",
       "question": "Successful implementation of ESD requires a shift in focus from ___.",
       "options": [
-        { "key": "A", "text": "teaching to learning" },
-        { "key": "B", "text": "learning to teaching" },
-        { "key": "C", "text": "reading to speaking" },
-        { "key": "D", "text": "knowing to ignoring" }
+        {
+          "key": "A",
+          "text": "teaching to learning"
+        },
+        {
+          "key": "B",
+          "text": "learning to teaching"
+        },
+        {
+          "key": "C",
+          "text": "reading to speaking"
+        },
+        {
+          "key": "D",
+          "text": "knowing to ignoring"
+        }
       ],
       "correctAnswer": "A",
       "correctOption": "teaching to learning",
@@ -1787,14 +3188,314 @@
       "type": "MCQ",
       "question": "___ competency is the ability to reflect on one's own role in the local community and (global) society.",
       "options": [
-        { "key": "A", "text": "collaboration" },
-        { "key": "B", "text": "self-awareness" },
-        { "key": "C", "text": "strategic" },
-        { "key": "D", "text": "normative" }
+        {
+          "key": "A",
+          "text": "collaboration"
+        },
+        {
+          "key": "B",
+          "text": "self-awareness"
+        },
+        {
+          "key": "C",
+          "text": "strategic"
+        },
+        {
+          "key": "D",
+          "text": "normative"
+        }
       ],
       "correctAnswer": "B",
       "correctOption": "self-awareness",
       "explanation": "Self-awareness competency, in the context of ESD, refers to the ability to reflect on one's own role in the local community and global society, and to continually evaluate and motivate oneself to act sustainably. Collaboration involves working with others, strategic competency relates to planning and implementing actions, and normative competency involves negotiating values and principles. Hence self-awareness is correct."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q1",
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Simon defined learning as changes in a system that result in ___ over time on tasks similar to those done previously.",
+      "options": [
+        {
+          "key": "A",
+          "text": "boredom"
+        },
+        {
+          "key": "B",
+          "text": "decreased anxiety"
+        },
+        {
+          "key": "C",
+          "text": "improved performance"
+        },
+        {
+          "key": "D",
+          "text": "reduced performance"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "improved performance",
+      "explanation": "Herbert Simon described learning in terms of changes in a system that lead to improved performance on tasks similar to those encountered before. The key idea is that experience changes the system's ability to perform, rather than producing boredom, anxiety reduction, or poorer performance."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q2",
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Robert Gagne defined learning as ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "a change in human disposition or capacity"
+        },
+        {
+          "key": "B",
+          "text": "a change that persists over a period of time"
+        },
+        {
+          "key": "C",
+          "text": "a change not simply ascribable to processes of growth"
+        },
+        {
+          "key": "D",
+          "text": "all of the given"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the given",
+      "explanation": "Gagné's definition includes a change in human disposition or capacity that persists over time and cannot be explained simply by growth or maturation. Because options A, B, and C each express part of this definition, 'all of the given' is correct."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q3",
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Psychomotor skills are ___ skills.",
+      "options": [
+        {
+          "key": "A",
+          "text": "cognitive"
+        },
+        {
+          "key": "B",
+          "text": "spiritual"
+        },
+        {
+          "key": "C",
+          "text": "mental"
+        },
+        {
+          "key": "D",
+          "text": "physical"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "physical",
+      "explanation": "Psychomotor skills involve coordinated physical action and movement. They combine mental processing with motor activity, such as writing, operating equipment, or performing a practical task. Therefore, physical is the best answer."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q4",
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Returning to experience refers to ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "attending to feelings"
+        },
+        {
+          "key": "B",
+          "text": "re-examining experience in the light of one's intent and existing knowledge"
+        },
+        {
+          "key": "C",
+          "text": "using helpful feelings and removing obstructive ones"
+        },
+        {
+          "key": "D",
+          "text": "recalling or detailing salient events"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "recalling or detailing salient events",
+      "explanation": "Returning to experience involves revisiting what happened and identifying the important events or details. This recollection provides the material for later reflection and interpretation. Re-examining an experience in light of intentions and existing knowledge is a later, more interpretive step."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q5",
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Which of the following assumptions does not come under the behaviorist orientation to learning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Differences between individuals are important as they will affect learning"
+        },
+        {
+          "key": "B",
+          "text": "Observable behavior rather than internal thought processes are the focus"
+        },
+        {
+          "key": "C",
+          "text": "Environment shapes one's behavior"
+        },
+        {
+          "key": "D",
+          "text": "The principle of contiguity is central"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Differences between individuals are important as they will affect learning",
+      "explanation": "Behaviorism emphasizes observable behaviour and the role of environmental stimuli, responses, and their consequences. Contiguity—the closeness in time between events—can be important in forming associations. The explicit emphasis on individual differences is not the defining assumption being tested here, so option A is the expected answer."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q6",
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Reinforcement can come through sharing of results rather than a reward.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "True",
+      "explanation": "True. Feedback about the result of an action can itself influence future behaviour by showing the learner whether the response worked. Reinforcement is not limited to tangible prizes; information about performance may encourage repetition or adjustment of a response."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q7",
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "____ has contributed to the humanistic orientations to learning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Linguistic"
+        },
+        {
+          "key": "B",
+          "text": "Kinesthetic"
+        },
+        {
+          "key": "C",
+          "text": "Visual"
+        },
+        {
+          "key": "D",
+          "text": "Carl Rogers"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Carl Rogers",
+      "explanation": "Carl Rogers was a major contributor to the humanistic approach and to learner-centred education. His approach stresses the learner as a whole person, including feelings, personal meaning, autonomy, and cognitive development. The other options are not people associated with founding this orientation."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q8",
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "In the process of learning, which of the following is not a component of output?",
+      "options": [
+        {
+          "key": "A",
+          "text": "certification"
+        },
+        {
+          "key": "B",
+          "text": "attitude change"
+        },
+        {
+          "key": "C",
+          "text": "knowledge enhancement"
+        },
+        {
+          "key": "D",
+          "text": "training plan"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "training plan",
+      "explanation": "Outputs are results produced by a learning or training process, such as increased knowledge, changes in attitude, or certification. A training plan is prepared to guide the intervention; it is part of planning or input/process, not an outcome of learning."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q9",
+      "questionNo": 9,
+      "type": "MCQ",
+      "question": "Ambience, space and decorum do not affect learning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "True"
+        },
+        {
+          "key": "B",
+          "text": "False"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "False",
+      "explanation": "False. The learning environment can influence attention, comfort, participation, and the ease with which learners engage with material. Ambience and space affect the physical setting, while decorum concerns expected conduct and the social atmosphere."
+    },
+    {
+      "week": 7,
+      "assignmentName": "Week 7 (2026)",
+      "assignmentYear": 2026,
+      "id": "psych-learning-week7-2026-q10",
+      "questionNo": 10,
+      "type": "MCQ",
+      "question": "Role-playing can motivate ___ type of learners effectively.",
+      "options": [
+        {
+          "key": "A",
+          "text": "solitary"
+        },
+        {
+          "key": "B",
+          "text": "social"
+        },
+        {
+          "key": "C",
+          "text": "reading/writing"
+        },
+        {
+          "key": "D",
+          "text": "logical/analytical"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "social",
+      "explanation": "Role-playing asks learners to interact, take roles, respond to others, and learn collaboratively. These features make it especially suitable for social learners, who tend to benefit from discussion and group activities. It is less directly aligned with solitary or reading/writing-only preferences."
     }
-  ]
+  ],
+  "contentNotice": {
+    "label": "Important note about Week 7 assignments",
+    "message": "The NPTEL portal provides the 2025 Week 7 assignment as a solution PDF, while the quiz submitted for the current course is the 2026 Week 7 assignment. These are different assignment sets and are listed separately here as Week 7 (2025) and Week 7 (2026). It is advised to practise both versions and review the latest course study material."
+  }
 }
