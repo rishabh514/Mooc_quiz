@@ -1623,6 +1623,13 @@ const { useState, useEffect, useMemo, useRef, useCallback } = React;
 const REPORT_FORM_URL = "https://forms.gle/9ZDhaZYQ7B3UBY3w9";
 const LINKEDIN_URL = "https://www.linkedin.com/in/hey-rishabh";
 
+// GA4 event helper. The app continues working even if analytics is blocked/unavailable.
+function trackGAEvent(eventName, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+}
+
 function Portal({ children }) {
   const el = useMemo(() => document.createElement('div'), []);
   useEffect(() => {
@@ -2811,12 +2818,27 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
     const list = recs || records;
     const answered = list.filter((r) => !r.skipped);
     const score = answered.filter((r) => r.correct).length;
+    const skippedCount = list.length - answered.length;
+
+    // One event per quiz that reaches the app's completion flow.
+    trackGAEvent('quiz_complete', {
+      subject_id: config.subjectId || 'unknown',
+      practice_mode: config.mode || 'unknown',
+      questions_in_quiz: list.length,
+      questions_answered: answered.length,
+      questions_correct: score,
+      questions_incorrect: answered.length - score,
+      questions_skipped: skippedCount,
+      score_percent: answered.length ? Math.round((score / answered.length) * 100) : 0,
+      quiz_duration_seconds: Math.round((Date.now() - t0.current) / 1000),
+    });
+
     onFinish({
       id: uid(), ts: Date.now(),
       mode: config.mode, modeLabel: config.title,
       assignmentIds: config.assignmentIds || [],
       score, total: answered.length,
-      skipped: list.length - answered.length,
+      skipped: skippedCount,
       timeTotal: list.reduce((s, r) => s + r.timeMs, 0),
       items: list,
     });
@@ -2826,6 +2848,18 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
     if (locked || !q) return;
     const timeMs = Date.now() - qStart.current;
     const correct = sameSet(sel, correctIdx);
+
+    // One question_answered event per submitted answer; skipped questions are tracked separately.
+    const questionEventParams = {
+      subject_id: config.subjectId || 'unknown',
+      practice_mode: config.mode || 'unknown',
+      question_number: idx + 1,
+      week_id: String(q._aid || ''),
+      is_correct: correct,
+    };
+    trackGAEvent('question_answered', questionEventParams);
+    trackGAEvent(correct ? 'question_correct' : 'question_incorrect', questionEventParams);
+
     setSelected(sel);
     setLocked(true);
     setRecords((r) => [...r, {
@@ -2849,6 +2883,12 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
 
   const skip = useCallback(() => {
     if (!q) return;
+    trackGAEvent('question_skipped', {
+      subject_id: config.subjectId || 'unknown',
+      practice_mode: config.mode || 'unknown',
+      question_number: idx + 1,
+      week_id: String(q._aid || ''),
+    });
     const rec = {
       qid: q.id, correct: false, timeMs: Date.now() - qStart.current, skipped: true,
       sel: [], ans: correctIdx.map((i) => q.options[i]), aid: q._aid, aname: q._aname,
@@ -3644,7 +3684,18 @@ function App() {
   }, [settings.shuffleQuestions, subjectId]);
 
   const startQuiz = (cfg) => {
+    // Captures all practice-start controls that use the shared startQuiz flow.
+    trackGAEvent('practice_button_click', {
+      subject_id: subjectId || 'unknown',
+      practice_mode: cfg.mode || 'unknown',
+    });
     if (!cfg.questions.length) { alert('No questions available for this selection.'); return; }
+    trackGAEvent('quiz_start', {
+      subject_id: subjectId || 'unknown',
+      practice_mode: cfg.mode || 'unknown',
+      planned_questions: cfg.questions.length,
+      assignment_count: (cfg.assignmentIds || []).length,
+    });
     setQuizConfig({
       ...cfg,
       subjectId,
