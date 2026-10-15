@@ -1905,7 +1905,7 @@ function normaliseSubject(raw, meta) {
   const term = raw.assignment || meta.term || '';
   const rawQs = raw.questions || raw.qs || [];
   const sourceDocs = raw.sourceDocuments || {};
-  const byWeek = {};
+  const byAssignment = {};
   const pageRecord = (week, pageNo) => {
     const pages = sourceDocs[String(week)]?.pages || [];
     return pages.find((p) => Number(p.page) === Number(pageNo)) || null;
@@ -1916,11 +1916,11 @@ function normaliseSubject(raw, meta) {
   };
   rawQs.forEach((q, i) => {
     const week = q.week != null ? q.week : 1;
-    const assignmentName = q.assignmentName || ('Week ' + week);
-    const assignmentKey = assignmentName;
-    if (!byWeek[assignmentKey]) byWeek[assignmentKey] = [];
-    // pdfSource is the preserved official wording snapshot for this quiz bank.
-    // Fall back to legacy fields so other subject JSON files remain compatible.
+    // Only explicitly versioned assignments receive a separate grouping key.
+    // Legacy subject JSON files continue to group exactly as before by week.
+    const aid = q.assignmentId || ('W' + week);
+    const aname = q.assignmentName || ('Week ' + week);
+    if (!byAssignment[aid]) byAssignment[aid] = { id: aid, name: aname, week: week, questions: [] };
     const pdfSource = q.pdfSource || {};
     const sourceOptions = Array.isArray(pdfSource.options) ? pdfSource.options : (q.options || []);
     const options = sourceOptions.map((o) =>
@@ -1934,8 +1934,8 @@ function normaliseSubject(raw, meta) {
     const programContext = pdfSource.programContext || q.programContext || null;
     const codePages = (programContext && Array.isArray(programContext.codePages)) ? programContext.codePages : [];
     const programSourcePage = codePages.length ? codePages[0].page : null;
-    byWeek[assignmentKey].push({
-      id: q.id || (q.questionNo ? `W${week}-Q${q.questionNo}` : `W${week}-${i}`),
+    byAssignment[aid].questions.push({
+      id: q.id || (q.questionNo ? `${aid}-Q${q.questionNo}` : `${aid}-${i}`),
       question: pdfSource.questionText ?? q.question ?? q.text ?? '',
       options, answer,
       explanation: pdfSource.justificationText ?? q.explanation ?? q.solution ?? '',
@@ -1954,27 +1954,14 @@ function normaliseSubject(raw, meta) {
       programSourcePage,
       programSourcePageImage: pageAssetUrl(pageRecord(week, programSourcePage)),
       pdfSource: pdfSource,
-      _aid: q.id || ('W' + week + '-Q' + (q.questionNo || i)),
-      _aname: assignmentName,
+      _aid: aid, _aname: aname,
       _week: week, _qno: q.questionNo, _type: q.type || 'MCQ',
     });
   });
-  const assignmentKeys = Object.keys(byWeek).sort((a, b) => {
-    const yearA = (a.match(/\((\d{4})\)/) || [])[1];
-    const yearB = (b.match(/\((\d{4})\)/) || [])[1];
-    const weekA = parseInt((a.match(/Week\s+(\d+)/i) || [])[1] || '0', 10);
-    const weekB = parseInt((b.match(/Week\s+(\d+)/i) || [])[1] || '0', 10);
-    if (weekA !== weekB) return weekA - weekB;
-    if (yearA && yearB) return Number(yearA) - Number(yearB);
-    if (yearA) return -1;
-    if (yearB) return 1;
-    return a.localeCompare(b);
+  const assignments = Object.values(byAssignment).sort((a, b) => {
+    if (a.week !== b.week) return a.week - b.week;
+    return a.id.localeCompare(b.id);
   });
-  const assignments = assignmentKeys.map((key) => ({
-    id: 'A-' + key.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-    name: key,
-    questions: byWeek[key]
-  }));
   return { id, title, institute, term, contentNotice: raw.contentNotice || null, assignments };
 }
 

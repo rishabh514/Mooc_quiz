@@ -1600,306 +1600,6 @@
       "explanation": "Management of emotions is an internal process and is not directly regulated by others, though it can be influenced by social and cultural contexts. It is essentially private, influenced by cultural norms, and shaped by societal expectations. Hence 'directly regulated by others' is not true."
     },
     {
-      "week": 7,
-      "questionNo": 1,
-      "type": "MCQ",
-      "question": "Which of the following is false about learning according to Gagne’s definition?",
-      "options": [
-        {
-          "key": "A",
-          "text": "It is a change in human disposition"
-        },
-        {
-          "key": "B",
-          "text": "It persists over a period of time"
-        },
-        {
-          "key": "C",
-          "text": "It is simply ascribable to processes of growth"
-        },
-        {
-          "key": "D",
-          "text": "None of the above"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "It is simply ascribable to processes of growth",
-      "explanation": "Gagne defined learning as a change in human disposition or capability that persists over time and is not simply ascribable to growth. Learning is distinguished from maturation and growth. Hence 'simply ascribable to processes of growth' is false.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q1",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 2,
-      "type": "MCQ",
-      "question": "Manual or physical skills come under ___ component of Bloom’s taxonomy.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Cognitive"
-        },
-        {
-          "key": "B",
-          "text": "Affective"
-        },
-        {
-          "key": "C",
-          "text": "Psychomotor"
-        },
-        {
-          "key": "D",
-          "text": "Physical"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "Psychomotor",
-      "explanation": "The psychomotor domain of Bloom's taxonomy deals with manual or physical skills, including coordination and motor activities. Cognitive deals with knowledge, affective with emotions, and physical is not a Bloom's domain. Hence Psychomotor is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q2",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 3,
-      "type": "MCQ",
-      "question": "Reflection, learning and education was explored by ___.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Carl Rogers"
-        },
-        {
-          "key": "B",
-          "text": "John Watson"
-        },
-        {
-          "key": "C",
-          "text": "Benjamin Bloom"
-        },
-        {
-          "key": "D",
-          "text": "John Dewey"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "John Dewey",
-      "explanation": "John Dewey is known for his work on reflection, learning, and education, emphasizing experiential learning and reflective thinking. Rogers was humanistic psychology, Watson was behaviorism, and Bloom developed taxonomy. Hence John Dewey is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q3",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 4,
-      "type": "MCQ",
-      "question": "The principles of ___ refer to how close in time two events must be for a bond to be formed.",
-      "options": [
-        {
-          "key": "A",
-          "text": "behavior"
-        },
-        {
-          "key": "B",
-          "text": "reinforcement"
-        },
-        {
-          "key": "C",
-          "text": "repetition"
-        },
-        {
-          "key": "D",
-          "text": "contiguity"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "contiguity",
-      "explanation": "The principle of contiguity states that two events must occur close together in time for an association to be formed between them. Behavior, reinforcement, and repetition are related but not the specific principle described. Hence contiguity is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q4",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 5,
-      "type": "MCQ",
-      "question": "___ gives information to learners about their success or failure concerning the task at hand.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Cognitive feedback"
-        },
-        {
-          "key": "B",
-          "text": "Emotional feedback"
-        },
-        {
-          "key": "C",
-          "text": "Reinforcement"
-        },
-        {
-          "key": "D",
-          "text": "Physical feedback"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "Cognitive feedback",
-      "explanation": "Cognitive feedback provides learners with information about their success or failure on a task, helping them understand their performance. Emotional feedback relates to feelings, reinforcement is about consequences, and physical feedback is about bodily sensations. Hence cognitive feedback is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q5",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 6,
-      "type": "MCQ",
-      "question": "The ___ orientation to learning has a quality of personal involvement—the whole person in both feeling and cognitive aspects being in the learning event.",
-      "options": [
-        {
-          "key": "A",
-          "text": "behavioral"
-        },
-        {
-          "key": "B",
-          "text": "cognitive"
-        },
-        {
-          "key": "C",
-          "text": "humanistic"
-        },
-        {
-          "key": "D",
-          "text": "social"
-        }
-      ],
-      "correctAnswer": "C",
-      "correctOption": "humanistic",
-      "explanation": "The humanistic orientation to learning, associated with Carl Rogers, emphasizes personal involvement, including both feeling and cognitive aspects. Behavioral focuses on observable behavior, cognitive on mental processes, and social on social contexts. Hence humanistic is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q6",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 7,
-      "type": "MCQ",
-      "question": "Learning through play is ___ learning.",
-      "options": [
-        {
-          "key": "A",
-          "text": "primary"
-        },
-        {
-          "key": "B",
-          "text": "secondary"
-        },
-        {
-          "key": "C",
-          "text": "passive"
-        },
-        {
-          "key": "D",
-          "text": "active"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "active",
-      "explanation": "Learning through play is an active process where learners engage physically, mentally, and socially. It is not passive, primary, or secondary. Hence active is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q7",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 8,
-      "type": "MCQ",
-      "question": "People with ___ learning style are prone to sorting their ideas after speaking, rather than thinking ideas through before.",
-      "options": [
-        {
-          "key": "A",
-          "text": "logical"
-        },
-        {
-          "key": "B",
-          "text": "solitary"
-        },
-        {
-          "key": "C",
-          "text": "visual"
-        },
-        {
-          "key": "D",
-          "text": "auditory"
-        }
-      ],
-      "correctAnswer": "D",
-      "correctOption": "auditory",
-      "explanation": "People with an auditory learning style often process information by talking and listening, and they may sort out their ideas while speaking rather than before. Logical, solitary, and visual styles do not specifically match this description. Hence auditory is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q8",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 9,
-      "type": "MCQ",
-      "question": "Which of the following statements is false?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Effective instruction is static"
-        },
-        {
-          "key": "B",
-          "text": "Effective instruction is eclectic"
-        },
-        {
-          "key": "C",
-          "text": "Effective instruction is generative"
-        },
-        {
-          "key": "D",
-          "text": "Effective instruction is interactive"
-        }
-      ],
-      "correctAnswer": "A",
-      "correctOption": "Effective instruction is static",
-      "explanation": "Effective instruction is dynamic and adaptive, not static. It is eclectic (drawing from multiple approaches), generative (producing new understanding), and interactive (engaging learners). Hence 'effective instruction is static' is false.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q9",
-      "assignmentYear": 2025
-    },
-    {
-      "week": 7,
-      "questionNo": 10,
-      "type": "MCQ",
-      "question": "In ADDIE model, I stand for ___.",
-      "options": [
-        {
-          "key": "A",
-          "text": "instruction"
-        },
-        {
-          "key": "B",
-          "text": "implementation"
-        },
-        {
-          "key": "C",
-          "text": "integration"
-        },
-        {
-          "key": "D",
-          "text": "induction"
-        }
-      ],
-      "correctAnswer": "B",
-      "correctOption": "implementation",
-      "explanation": "In the ADDIE model, the letters stand for Analysis, Design, Development, Implementation, and Evaluation. The 'I' stands for Implementation, which is the phase where the instruction is delivered. Hence implementation is correct.",
-      "assignmentName": "Week 7 (2025)",
-      "id": "psych-learning-week7-2025-q10",
-      "assignmentYear": 2025
-    },
-    {
       "week": 8,
       "questionNo": 1,
       "type": "MCQ",
@@ -3211,10 +2911,310 @@
     },
     {
       "week": 7,
-      "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q1",
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
       "questionNo": 1,
+      "id": "psychology-week7-2025-q1",
+      "type": "MCQ",
+      "question": "Which of the following is false about learning according to Gagne’s definition?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is a change in human disposition"
+        },
+        {
+          "key": "B",
+          "text": "It persists over a period of time"
+        },
+        {
+          "key": "C",
+          "text": "It is simply ascribable to processes of growth"
+        },
+        {
+          "key": "D",
+          "text": "None of the above"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It is simply ascribable to processes of growth",
+      "explanation": "Gagné defines learning as a change in human disposition or capacity that persists over time and is not simply attributable to growth or maturation. Option C is false because it claims learning is simply ascribable to growth."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 2,
+      "id": "psychology-week7-2025-q2",
+      "type": "MCQ",
+      "question": "Manual or physical skills come under ___ component of Bloom’s taxonomy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cognitive"
+        },
+        {
+          "key": "B",
+          "text": "Affective"
+        },
+        {
+          "key": "C",
+          "text": "Psychomotor"
+        },
+        {
+          "key": "D",
+          "text": "Physical"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Psychomotor",
+      "explanation": "Bloom’s taxonomy distinguishes cognitive learning, affective learning, and psychomotor learning. Manual skills and coordinated physical actions belong to the psychomotor component."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 3,
+      "id": "psychology-week7-2025-q3",
+      "type": "MCQ",
+      "question": "Reflection, learning and education was explored by ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Carl Rogers"
+        },
+        {
+          "key": "B",
+          "text": "John Watson"
+        },
+        {
+          "key": "C",
+          "text": "Benjamin Bloom"
+        },
+        {
+          "key": "D",
+          "text": "John Dewey"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "John Dewey",
+      "explanation": "John Dewey explored the relationship between experience, reflection, learning, and education. Reflective thought helps learners examine experience and develop understanding."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 4,
+      "id": "psychology-week7-2025-q4",
+      "type": "MCQ",
+      "question": "The principles of ___ refer to how close in time two events must be for a bond to be formed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "behavior"
+        },
+        {
+          "key": "B",
+          "text": "reinforcement"
+        },
+        {
+          "key": "C",
+          "text": "repetition"
+        },
+        {
+          "key": "D",
+          "text": "contiguity"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "contiguity",
+      "explanation": "Contiguity refers to closeness in time or space between events. In learning theory, events occurring close together can become associated."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 5,
+      "id": "psychology-week7-2025-q5",
+      "type": "MCQ",
+      "question": "___ gives information to learners about their success or failure concerning the task at hand.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cognitive feedback"
+        },
+        {
+          "key": "B",
+          "text": "Emotional feedback"
+        },
+        {
+          "key": "C",
+          "text": "Reinforcement"
+        },
+        {
+          "key": "D",
+          "text": "Physical feedback"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Cognitive feedback",
+      "explanation": "Cognitive feedback provides information about performance in relation to a task or goal. It helps learners identify success or errors and decide what to adjust."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 6,
+      "id": "psychology-week7-2025-q6",
+      "type": "MCQ",
+      "question": "The ___ orientation to learning has a quality of personal involvement—the whole person in both feeling and cognitive aspects being in the learning event.",
+      "options": [
+        {
+          "key": "A",
+          "text": "behavioral"
+        },
+        {
+          "key": "B",
+          "text": "cognitive"
+        },
+        {
+          "key": "C",
+          "text": "humanistic"
+        },
+        {
+          "key": "D",
+          "text": "social"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "humanistic",
+      "explanation": "The humanistic orientation views learning as involving the whole person, including feelings, thoughts, personal meaning, and growth."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 7,
+      "id": "psychology-week7-2025-q7",
+      "type": "MCQ",
+      "question": "Learning through play is ___ learning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "primary"
+        },
+        {
+          "key": "B",
+          "text": "secondary"
+        },
+        {
+          "key": "C",
+          "text": "passive"
+        },
+        {
+          "key": "D",
+          "text": "active"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "active",
+      "explanation": "Learning through play involves participation, exploration, experimentation, and responding to outcomes. These are characteristics of active learning."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 8,
+      "id": "psychology-week7-2025-q8",
+      "type": "MCQ",
+      "question": "People with ___ learning style are prone to sorting their ideas after speaking, rather than thinking ideas through before.",
+      "options": [
+        {
+          "key": "A",
+          "text": "logical"
+        },
+        {
+          "key": "B",
+          "text": "solitary"
+        },
+        {
+          "key": "C",
+          "text": "visual"
+        },
+        {
+          "key": "D",
+          "text": "auditory"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "auditory",
+      "explanation": "The provided NPTEL solution PDF identifies auditory learning style. Auditory-oriented learners may clarify and organize ideas by speaking them aloud."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 9,
+      "id": "psychology-week7-2025-q9",
+      "type": "MCQ",
+      "question": "Which of the following statements is false?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Effective instruction is static"
+        },
+        {
+          "key": "B",
+          "text": "Effective instruction is eclectic"
+        },
+        {
+          "key": "C",
+          "text": "Effective instruction is generative"
+        },
+        {
+          "key": "D",
+          "text": "Effective instruction is interactive"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Effective instruction is static",
+      "explanation": "Effective instruction is not static; it adapts to learners, context, feedback, and goals. Thus “Effective instruction is static” is the false statement."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2025",
+      "assignmentName": "Week 7 (2025)",
+      "questionNo": 10,
+      "id": "psychology-week7-2025-q10",
+      "type": "MCQ",
+      "question": "In ADDIE model, I stand for ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "instruction"
+        },
+        {
+          "key": "B",
+          "text": "implementation"
+        },
+        {
+          "key": "C",
+          "text": "integration"
+        },
+        {
+          "key": "D",
+          "text": "induction"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "implementation",
+      "explanation": "ADDIE stands for Analysis, Design, Development, Implementation, and Evaluation. Implementation is the delivery of the designed learning intervention."
+    },
+    {
+      "week": 7,
+      "assignmentId": "week-7-2026",
+      "assignmentName": "Week 7 (2026)",
+      "questionNo": 1,
+      "id": "psychology-week7-2026-q1",
       "type": "MCQ",
       "question": "Simon defined learning as changes in a system that result in ___ over time on tasks similar to those done previously.",
       "options": [
@@ -3237,14 +3237,14 @@
       ],
       "correctAnswer": "C",
       "correctOption": "improved performance",
-      "explanation": "Herbert Simon described learning in terms of changes in a system that lead to improved performance on tasks similar to those encountered before. The key idea is that experience changes the system's ability to perform, rather than producing boredom, anxiety reduction, or poorer performance."
+      "explanation": "Herbert Simon described learning as changes that improve a system’s performance over time on tasks similar to those previously encountered."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q2",
       "questionNo": 2,
+      "id": "psychology-week7-2026-q2",
       "type": "MCQ",
       "question": "Robert Gagne defined learning as ___.",
       "options": [
@@ -3267,14 +3267,14 @@
       ],
       "correctAnswer": "D",
       "correctOption": "all of the given",
-      "explanation": "Gagné's definition includes a change in human disposition or capacity that persists over time and cannot be explained simply by growth or maturation. Because options A, B, and C each express part of this definition, 'all of the given' is correct."
+      "explanation": "Gagné’s definition includes a change in human disposition or capacity, persistence over time, and a change not simply attributable to growth or maturation."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q3",
       "questionNo": 3,
+      "id": "psychology-week7-2026-q3",
       "type": "MCQ",
       "question": "Psychomotor skills are ___ skills.",
       "options": [
@@ -3297,14 +3297,14 @@
       ],
       "correctAnswer": "D",
       "correctOption": "physical",
-      "explanation": "Psychomotor skills involve coordinated physical action and movement. They combine mental processing with motor activity, such as writing, operating equipment, or performing a practical task. Therefore, physical is the best answer."
+      "explanation": "Psychomotor skills involve physical movement, motor control, and coordination. They may require thought and practice, but are expressed through physical actions."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q4",
       "questionNo": 4,
+      "id": "psychology-week7-2026-q4",
       "type": "MCQ",
       "question": "Returning to experience refers to ___.",
       "options": [
@@ -3327,14 +3327,14 @@
       ],
       "correctAnswer": "D",
       "correctOption": "recalling or detailing salient events",
-      "explanation": "Returning to experience involves revisiting what happened and identifying the important events or details. This recollection provides the material for later reflection and interpretation. Re-examining an experience in light of intentions and existing knowledge is a later, more interpretive step."
+      "explanation": "Returning to experience means recalling and describing the salient events of an experience. This establishes what happened before deeper interpretation and evaluation."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q5",
       "questionNo": 5,
+      "id": "psychology-week7-2026-q5",
       "type": "MCQ",
       "question": "Which of the following assumptions does not come under the behaviorist orientation to learning?",
       "options": [
@@ -3357,14 +3357,14 @@
       ],
       "correctAnswer": "A",
       "correctOption": "Differences between individuals are important as they will affect learning",
-      "explanation": "Behaviorism emphasizes observable behaviour and the role of environmental stimuli, responses, and their consequences. Contiguity—the closeness in time between events—can be important in forming associations. The explicit emphasis on individual differences is not the defining assumption being tested here, so option A is the expected answer."
+      "explanation": "Behaviorism emphasizes observable behavior, environmental influences, conditioning, and contiguity. The emphasis on individual differences is not the defining assumption tested here."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q6",
       "questionNo": 6,
+      "id": "psychology-week7-2026-q6",
       "type": "MCQ",
       "question": "Reinforcement can come through sharing of results rather than a reward.",
       "options": [
@@ -3379,16 +3379,16 @@
       ],
       "correctAnswer": "A",
       "correctOption": "True",
-      "explanation": "True. Feedback about the result of an action can itself influence future behaviour by showing the learner whether the response worked. Reinforcement is not limited to tangible prizes; information about performance may encourage repetition or adjustment of a response."
+      "explanation": "Feedback about the results of an action can reinforce learning by showing progress or errors and helping learners repeat effective behavior. The accepted answer is True."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q7",
       "questionNo": 7,
+      "id": "psychology-week7-2026-q7",
       "type": "MCQ",
-      "question": "____ has contributed to the humanistic orientations to learning.",
+      "question": "___ has contributed to the humanistic orientations to learning.",
       "options": [
         {
           "key": "A",
@@ -3409,14 +3409,14 @@
       ],
       "correctAnswer": "D",
       "correctOption": "Carl Rogers",
-      "explanation": "Carl Rogers was a major contributor to the humanistic approach and to learner-centred education. His approach stresses the learner as a whole person, including feelings, personal meaning, autonomy, and cognitive development. The other options are not people associated with founding this orientation."
+      "explanation": "Carl Rogers was a major contributor to humanistic psychology and learner-centred education, emphasizing empathy, autonomy, personal meaning, and growth."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q8",
       "questionNo": 8,
+      "id": "psychology-week7-2026-q8",
       "type": "MCQ",
       "question": "In the process of learning, which of the following is not a component of output?",
       "options": [
@@ -3439,14 +3439,14 @@
       ],
       "correctAnswer": "D",
       "correctOption": "training plan",
-      "explanation": "Outputs are results produced by a learning or training process, such as increased knowledge, changes in attitude, or certification. A training plan is prepared to guide the intervention; it is part of planning or input/process, not an outcome of learning."
+      "explanation": "Certification, attitude change, and knowledge enhancement can be outcomes. A training plan is part of planning the intervention, not an output of learning."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q9",
       "questionNo": 9,
+      "id": "psychology-week7-2026-q9",
       "type": "MCQ",
       "question": "Ambience, space and decorum do not affect learning.",
       "options": [
@@ -3461,14 +3461,14 @@
       ],
       "correctAnswer": "B",
       "correctOption": "False",
-      "explanation": "False. The learning environment can influence attention, comfort, participation, and the ease with which learners engage with material. Ambience and space affect the physical setting, while decorum concerns expected conduct and the social atmosphere."
+      "explanation": "The statement is False. Noise, lighting, space, comfort, and social norms can influence attention, participation, and the overall learning experience."
     },
     {
       "week": 7,
+      "assignmentId": "week-7-2026",
       "assignmentName": "Week 7 (2026)",
-      "assignmentYear": 2026,
-      "id": "psych-learning-week7-2026-q10",
       "questionNo": 10,
+      "id": "psychology-week7-2026-q10",
       "type": "MCQ",
       "question": "Role-playing can motivate ___ type of learners effectively.",
       "options": [
@@ -3491,11 +3491,11 @@
       ],
       "correctAnswer": "B",
       "correctOption": "social",
-      "explanation": "Role-playing asks learners to interact, take roles, respond to others, and learn collaboratively. These features make it especially suitable for social learners, who tend to benefit from discussion and group activities. It is less directly aligned with solitary or reading/writing-only preferences."
+      "explanation": "Role-playing requires interaction, perspective-taking, and collaboration, making it particularly suited to social learners."
     }
   ],
   "contentNotice": {
-    "label": "Important note about Week 7 assignments",
-    "message": "The NPTEL portal provides the 2025 Week 7 assignment as a solution PDF, while the quiz submitted for the current course is the 2026 Week 7 assignment. These are different assignment sets and are listed separately here as Week 7 (2025) and Week 7 (2026). It is advised to practise both versions and review the latest course study material."
+    "label": "Important note about Week 7",
+    "message": "On the NPTEL portal, the 2025 Week 7 assignment is provided as a solution PDF, while the submitted quiz is for Week 7 of 2026. These are different assignments; it is advised to practise both Week 7 (2025) and Week 7 (2026), and refer to the latest NPTEL study material."
   }
 }
