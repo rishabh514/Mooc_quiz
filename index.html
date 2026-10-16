@@ -1100,6 +1100,19 @@ body.modal-open{overflow:hidden}
 .shuffle-controls .setrow .lbl{font-size:var(--fs-sm)}
 .shuffle-controls .setrow .hint{max-width:58ch}
 .shuffle-controls.compact .setrow{padding:9px 0}
+
+/* Week navigator for the all-weeks Notes library */
+.notes-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:18px 0 14px}
+.week-pager{display:flex;align-items:center;gap:6px;min-width:0}
+.week-pager-btn{width:36px;height:36px;display:grid;place-items:center;flex:0 0 auto;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text-2)}
+.week-pager-btn:disabled{opacity:.35;cursor:not-allowed}
+.week-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;flex:1;min-width:0}
+.week-tab{min-width:0;min-height:42px;padding:6px 4px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text-2);font-size:var(--fs-xs);font-weight:500;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.week-tab.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+.notes-toolbar-meta{font-size:var(--fs-xs);color:var(--muted);white-space:nowrap}
+.notes-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0}
+.notes-question-count{font-size:var(--fs-sm);color:var(--text-2)}
+@media(max-width:420px){.week-pager{gap:4px}.week-pager-btn{width:30px;height:36px}.week-tabs{gap:4px}.week-tab{font-size:11px;padding:5px 2px}}
 .switch{
   position:relative;width:42px;height:24px;border-radius:99px;
   background:var(--border-2);cursor:pointer;
@@ -1577,6 +1590,365 @@ body.modal-open{overflow:hidden}
   .python-line-number { width:32px; flex-basis:32px; margin-right:9px; padding-right:8px; }
 }
 
+
+
+/* ── Refined navigation, responsive week grid, and quiz header ───────────── */
+.topbar{
+  background:color-mix(in srgb,var(--bg) 90%,transparent);
+  backdrop-filter:saturate(140%) blur(16px);
+  -webkit-backdrop-filter:saturate(140%) blur(16px);
+  box-shadow:0 1px 0 rgba(0,0,0,.015);
+}
+.topbar-in{gap:clamp(8px,1.2vw,16px)}
+.brand-mark{
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 3px 10px rgba(0,0,0,.14);
+}
+.top-tabs{
+  align-items:center;gap:3px;padding:4px;margin-left:clamp(4px,1vw,14px);
+  border:1px solid var(--border);border-radius:14px;
+  background:var(--surface);box-shadow:var(--shadow-xs);
+}
+.top-tabs button{
+  min-height:34px;display:inline-flex;align-items:center;justify-content:center;
+  padding:7px clamp(8px,.9vw,13px);border:1px solid transparent;border-radius:10px;
+  color:var(--text-2);font-size:var(--fs-xs);font-weight:600;white-space:nowrap;
+  transition:color var(--fast) var(--ease),background var(--fast) var(--ease),border-color var(--fast) var(--ease),box-shadow var(--fast) var(--ease);
+}
+.top-tabs button:hover{color:var(--text);background:var(--surface-2)}
+.top-tabs button.active{
+  color:var(--accent);background:var(--accent-soft);border-color:var(--accent-line);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035);
+}
+.top-actions{gap:6px;margin-left:2px}
+.top-actions .icon-btn{
+  width:36px;height:36px;border:1px solid var(--border);border-radius:11px;
+  background:var(--surface);color:var(--text-2);
+}
+.top-actions .icon-btn:hover{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
+.bottom-nav{
+  padding:6px 8px var(--safe-b);gap:4px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);
+  backdrop-filter:saturate(150%) blur(18px);-webkit-backdrop-filter:saturate(150%) blur(18px);
+  box-shadow:0 -8px 28px rgba(0,0,0,.08);
+  border-top:1px solid var(--border);
+}
+.bottom-nav button{
+  border-radius:12px;gap:1px;padding-top:3px;
+  font-size:10.5px;font-weight:600;letter-spacing:0;
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.bottom-nav button::before{top:-6px;width:24px;height:3px;border-radius:0 0 4px 4px}
+.bottom-nav button.active{background:var(--accent-soft);color:var(--accent)}
+.bottom-nav svg{
+  box-sizing:content-box;padding:4px 10px;border-radius:9px;
+  transition:background var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.bottom-nav button.active svg{background:var(--accent-soft);transform:translateY(-1px)}
+.bottom-nav button:active{transform:scale(.97)}
+@media (min-width:768px) and (max-width:980px){
+  .top-tabs{gap:1px;padding:3px;margin-left:4px}
+  .top-tabs button{padding:6px 7px;font-size:11px;min-height:32px}
+  .brand-mark{width:38px;height:38px}
+  .top-actions{gap:3px}
+}
+@media (max-width:767px){
+  .topbar-in:not(.quiz-topbar-in){gap:8px}
+  .brand{gap:8px}
+  .brand-mark{width:40px;height:40px;border-radius:10px}
+  .brand-title{font-size:var(--fs-sm)}
+  .brand-sub{max-width:34vw}
+  .top-actions .icon-btn{width:34px;height:34px;border-radius:10px}
+  .bottom-nav{left:8px;right:8px;bottom:calc(6px + var(--safe-b));height:calc(var(--nav-h) - 2px);padding:5px 4px 3px;border:1px solid var(--border);border-radius:17px}
+  .bottom-nav button::before{top:-5px}
+  .app-main{padding-bottom:calc(var(--nav-h) + var(--safe-b) + 30px)}
+}
+
+/* Week selection: compact two-column mobile cards and four-column desktop grid. */
+.custom-set-card{overflow:hidden}
+.custom-set-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.custom-set-intro .muted{margin:0;max-width:64ch}
+.custom-selection-count{
+  flex:0 0 auto;padding:5px 9px;border:1px solid var(--border);border-radius:99px;
+  background:var(--surface-2);color:var(--text-2);font-size:11px;font-weight:700;white-space:nowrap;
+}
+.custom-week-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.custom-week-grid .chk{min-width:0;gap:9px;padding:12px;align-items:center}
+.custom-week-grid .chk .box{width:19px;height:19px}
+.custom-week-name{font-weight:650;font-size:var(--fs-sm);line-height:1.3;overflow-wrap:anywhere}
+@media (min-width:768px){.custom-week-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}}
+@media (max-width:420px){
+  .custom-set-intro{flex-direction:column;gap:8px}
+  .custom-week-grid{gap:8px}
+  .custom-week-grid .chk{padding:10px 9px;gap:7px}
+  .custom-week-name{font-size:12px}
+  .custom-selection-count{align-self:flex-start}
+}
+.custom-randomization{
+  padding:14px;border:1px solid var(--border);border-radius:14px;
+  background:var(--surface-2);transition:border-color var(--base) var(--ease),background var(--base) var(--ease),box-shadow var(--base) var(--ease);
+}
+.custom-randomization.ready{
+  border-color:var(--accent-line);background:linear-gradient(135deg,var(--accent-soft),var(--surface-2) 72%);
+  box-shadow:0 0 0 1px var(--accent-soft),0 5px 18px rgba(0,0,0,.04);
+}
+.custom-randomization-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.custom-subhead{font-size:var(--fs-sm);font-weight:750;letter-spacing:-.01em;color:var(--text)}
+.custom-randomization-heading .tiny{margin-top:3px}
+.custom-state-chip{
+  display:inline-flex;align-items:center;gap:5px;padding:5px 8px;white-space:nowrap;
+  border:1px solid var(--border);border-radius:99px;background:var(--surface);color:var(--muted);
+  font-size:10px;font-weight:750;transition:all var(--base) var(--ease);
+}
+.custom-state-chip.active{color:var(--accent);border-color:var(--accent-line);background:var(--accent-soft)}
+.custom-randomization .shuffle-controls{margin:0;border-radius:10px;background:var(--surface);}
+.custom-randomization .shuffle-controls .setrow{padding:11px 2px}
+.custom-randomization .shuffle-controls .setrow:last-child{padding-bottom:10px}
+.custom-start-area{
+  display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:16px;padding:15px;
+  border:1px solid var(--border);border-radius:14px;background:var(--surface-2);
+  transition:border-color var(--base) var(--ease),background var(--base) var(--ease),box-shadow var(--base) var(--ease);
+}
+.custom-start-area.ready{
+  border-color:var(--accent-line);background:linear-gradient(115deg,var(--accent-soft),var(--surface-2) 72%);
+  box-shadow:0 0 0 1px var(--accent-soft);
+}
+.custom-start-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.custom-start-copy strong{font-size:var(--fs-sm);font-weight:750;color:var(--text)}
+.custom-start-copy span{font-size:var(--fs-xs);line-height:1.5;color:var(--text-2)}
+.custom-start-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.custom-count-control{display:flex;align-items:center;gap:8px}
+.custom-start-btn{flex:1 1 220px;min-width:0;gap:8px;min-height:46px;font-weight:750;transition:box-shadow var(--base) var(--ease),opacity var(--base) var(--ease),transform var(--fast) var(--ease)}
+.custom-start-btn:disabled{opacity:.52;filter:saturate(.55);box-shadow:none;cursor:not-allowed}
+.custom-start-area.ready .custom-start-btn:not(:disabled){box-shadow:0 0 0 3px var(--accent-soft),0 7px 20px var(--accent-glow);animation:customReadyGlow 2.2s ease-in-out infinite}
+.custom-start-area.ready .custom-start-btn:not(:disabled):hover{animation:none;transform:translateY(-1px);box-shadow:0 0 0 4px var(--accent-soft),0 9px 25px var(--accent-glow)}
+.custom-clear-btn{min-width:76px}
+.custom-clear-btn:disabled{opacity:.4;cursor:not-allowed}
+.custom-start-hint{display:block}
+@keyframes customReadyGlow{0%,100%{box-shadow:0 0 0 2px var(--accent-soft),0 4px 14px var(--accent-glow)}50%{box-shadow:0 0 0 4px var(--accent-soft),0 8px 23px var(--accent-glow)}}
+@media (prefers-reduced-motion:reduce){.custom-start-area.ready .custom-start-btn:not(:disabled){animation:none}}
+@media (max-width:520px){
+  .custom-randomization{padding:11px}
+  .custom-randomization-heading{align-items:flex-start;flex-direction:column}
+  .custom-state-chip{align-self:flex-start}
+  .custom-start-area{padding:12px}
+  .custom-start-controls{display:grid;grid-template-columns:minmax(0,1fr) auto;width:100%}
+  .custom-start-btn{grid-column:1 / -1;width:100%;flex:auto}
+  .custom-clear-btn{grid-column:2;grid-row:2}
+  .custom-count-control{grid-column:1;grid-row:2}
+  .custom-count-control .stepper{height:38px}
+  .custom-count-control .stepper button{width:36px}
+  .custom-count-control .stepper input{width:42px}
+}
+
+/* A centered, task-first quiz header with a visible return path and stronger timer. */
+.quiz-topbar{z-index:50}
+.quiz-topbar .wrap{max-width:1240px}
+.topbar-in.quiz-topbar-in{
+  height:auto;min-height:76px;padding:11px 0 12px;
+  display:grid;grid-template-columns:minmax(160px,1fr) minmax(220px,1.2fr) minmax(160px,1fr);
+  gap:14px;align-items:center;
+}
+.quiz-back-btn{
+  justify-self:start;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:40px;padding:0 13px;border:1px solid var(--border);border-radius:12px;
+  background:var(--surface);color:var(--text-2);font-size:var(--fs-sm);font-weight:700;white-space:nowrap;
+  box-shadow:var(--shadow-xs);transition:background var(--fast) var(--ease),border-color var(--fast) var(--ease),color var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.quiz-back-btn:hover{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
+.quiz-back-btn:active{transform:scale(.98)}
+.quiz-header-center{grid-column:2;grid-row:1;min-width:0;text-align:center}
+.quiz-header-title{color:var(--text);font-size:var(--fs-base);font-weight:800;letter-spacing:-.02em;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.quiz-header-subtitle{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:4px;color:var(--muted);font-size:var(--fs-xs);font-weight:550;font-variant-numeric:tabular-nums}
+.quiz-header-dot{color:var(--accent);font-size:15px;line-height:1}
+.quiz-header-actions{grid-column:3;grid-row:1;justify-self:end;display:flex;align-items:center;gap:8px}
+.quiz-timer{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:83px;min-height:38px;
+  padding:0 12px;border:1px solid var(--accent-line);border-radius:12px;
+  background:linear-gradient(145deg,var(--accent-soft),var(--surface));color:var(--accent);
+  box-shadow:0 3px 12px var(--accent-soft);font-size:var(--fs-sm);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:.015em;
+}
+.quiz-timer svg{opacity:.9}
+.quiz-bookmark-btn{border:1px solid var(--border);border-radius:12px;background:var(--surface);width:38px;height:38px}
+.quiz-bookmark-btn.active{color:var(--accent);background:var(--accent-soft);border-color:var(--accent-line);box-shadow:0 2px 8px var(--accent-soft)}
+.quiz-progress-bar{height:4px;margin:0 0 10px;background:var(--surface-2)}
+.quiz-progress-bar>i{background:linear-gradient(90deg,var(--accent-solid),var(--accent));box-shadow:0 0 9px var(--accent-glow)}
+@media (max-width:720px){
+  .topbar-in.quiz-topbar-in{
+    min-height:0;padding:11px 0 12px;grid-template-columns:minmax(0,1fr) auto;
+    grid-template-rows:auto auto;grid-template-areas:"back actions" "center center";gap:10px 8px;
+  }
+  .quiz-back-btn{grid-area:back;min-height:38px;padding:0 10px;border-radius:11px;font-size:12px}
+  .quiz-header-center{grid-area:center;grid-column:1 / -1;grid-row:auto;text-align:center;padding:1px 8px 2px}
+  .quiz-header-title{font-size:15px;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .quiz-header-subtitle{font-size:11px;margin-top:4px}
+  .quiz-header-actions{grid-area:actions;grid-column:auto;grid-row:auto;gap:6px}
+  .quiz-timer{min-width:70px;min-height:36px;padding:0 9px;border-radius:11px;font-size:12px}
+  .quiz-bookmark-btn{width:36px;height:36px;border-radius:11px}
+  .quiz-progress-bar{margin-bottom:9px}
+}
+@media (max-width:360px){
+  .quiz-back-btn{gap:5px;padding:0 8px}
+  .quiz-back-btn span{font-size:11px}
+  .quiz-timer{min-width:64px;padding:0 7px}
+}
+
+
+
+/* Final responsive polish: use a full-width, non-floating mobile tab bar. */
+@media (max-width:767px){
+  .bottom-nav{
+    position:fixed !important;left:0 !important;right:0 !important;bottom:0 !important;
+    width:100% !important;max-width:none !important;margin:0 !important;transform:none !important;
+    display:flex !important;gap:0 !important;
+    height:calc(var(--nav-h) + var(--safe-b)) !important;
+    padding:0 0 var(--safe-b) !important;
+    border:0 !important;border-top:1px solid var(--border) !important;border-radius:0 !important;
+    background:var(--surface) !important;box-shadow:none !important;
+    backdrop-filter:none !important;-webkit-backdrop-filter:none !important;
+  }
+  .bottom-nav button{
+    flex:1 1 0;min-width:0;border:0 !important;border-radius:0 !important;
+    padding:0 !important;background:transparent !important;box-shadow:none !important;
+    font-size:11px;line-height:1.2;
+  }
+  .bottom-nav button::before{
+    top:0 !important;left:50%;width:26px !important;height:2px !important;
+    border-radius:0 0 2px 2px !important;transform:translateX(-50%) scaleX(.3);
+  }
+  .bottom-nav button.active::before{transform:translateX(-50%) scaleX(1)}
+  .bottom-nav button.active{background:transparent !important;color:var(--accent) !important}
+  .bottom-nav svg{box-sizing:content-box;padding:0 !important;border-radius:0 !important}
+  .bottom-nav button.active svg{background:transparent !important;transform:translateY(-1px)}
+  .app-main{padding-bottom:calc(var(--nav-h) + var(--safe-b) + var(--s4)) !important}
+}
+
+/* Quick Practice: compact, intentional control grouping on narrow screens. */
+.quick-practice-card{min-width:0}
+.quick-practice-intro{max-width:70ch;line-height:1.55}
+.quick-practice-card .shuffle-controls{margin-top:0}
+.quick-practice-controls{gap:12px}
+.quick-count-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;flex-wrap:wrap}
+.quick-count-presets{gap:6px;flex-wrap:nowrap}
+.quick-count-presets .btn{min-width:42px}
+.quick-start-btn{min-height:46px}
+@media(max-width:520px){
+  .quick-practice-card{padding:13px}
+  .quick-practice-intro{font-size:13px;line-height:1.45;margin-bottom:10px !important}
+  .quick-practice-card .shuffle-controls.compact{padding:0 10px;margin-bottom:11px}
+  .quick-practice-card .shuffle-controls .setrow{gap:10px;padding:9px 0}
+  .quick-practice-card .shuffle-controls .setrow .lbl{font-size:13px;line-height:1.3}
+  .quick-practice-card .shuffle-controls .setrow .hint{font-size:11px;line-height:1.35}
+  .quick-practice-controls{gap:10px}
+  .quick-count-row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;align-items:center}
+  .quick-count-row>.stepper{height:36px}
+  .quick-count-row>.stepper button{width:32px}
+  .quick-count-row>.stepper input{width:40px;font-size:13px}
+  .quick-count-presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;min-width:0}
+  .quick-count-presets .btn{width:100%;min-width:0;height:36px;padding:0 4px;font-size:12px}
+  .quick-start-btn{height:44px;min-height:44px;font-size:15px;padding:0 10px;gap:7px}
+}
+@media(max-width:359px){
+  .quick-count-row{grid-template-columns:1fr;justify-items:start}
+  .quick-count-presets{width:100%}
+}
+
+/* Custom week cards: four equal columns on desktop and compact two-column cards on mobile. */
+.custom-set-card{padding:clamp(12px,1.6vw,20px)}
+.custom-set-intro{gap:10px;margin-bottom:13px}
+.custom-set-intro .muted{font-size:var(--fs-sm);line-height:1.45}
+.custom-selection-count{padding:4px 8px;font-size:10.5px}
+.custom-week-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.custom-week-grid .chk{padding:10px;gap:8px;min-height:56px;border-radius:10px}
+.custom-week-grid .chk .box{width:18px;height:18px}
+.custom-week-name{font-size:var(--fs-sm);line-height:1.25}
+.custom-week-grid .tiny{font-size:11px;line-height:1.35}
+@media(min-width:768px){.custom-week-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}}
+@media(max-width:520px){
+  .custom-set-card{padding:12px}
+  .custom-set-intro .muted{font-size:12.5px}
+  .custom-randomization{padding:10px}
+  .custom-randomization-heading{gap:8px;margin-bottom:8px}
+  .custom-subhead{font-size:13px}
+  .custom-state-chip{padding:4px 7px;font-size:10px}
+  .custom-randomization .shuffle-controls .setrow{padding:9px 0}
+  .custom-start-area{padding:11px;gap:10px;margin-top:12px}
+  .custom-start-copy strong{font-size:13px}
+  .custom-start-copy span,.custom-start-hint{font-size:11px;line-height:1.4}
+  .custom-start-btn{min-height:42px;font-size:13px}
+  .custom-count-control .tiny{font-size:11px}
+}
+
+/* Contained, scrollable week navigation shared by Notes and Cheatsheet revision notes. */
+.notes-page-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+.notes-page-heading-copy{min-width:0;flex:1}
+.notes-practice-button{flex:0 0 auto}
+.notes-toolbar{display:block;width:100%;margin:18px 0 14px}
+.week-pager{display:block;width:100%;min-width:0}
+.week-tabs-shell{
+  position:relative;width:100%;max-width:100%;min-width:0;overflow:hidden;
+  padding:5px;border:1px solid var(--border);border-radius:14px;
+  background:var(--surface-2);box-shadow:var(--shadow-xs);
+}
+.week-tabs{
+  display:flex;align-items:center;gap:7px;width:100%;max-width:100%;min-width:0;
+  overflow-x:auto;overflow-y:hidden;padding:1px 1px 5px;
+  scrollbar-width:thin;scrollbar-color:var(--border-2) transparent;
+  -webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scroll-snap-type:x proximity;
+}
+.week-tabs::-webkit-scrollbar{height:4px}
+.week-tabs::-webkit-scrollbar-track{background:transparent}
+.week-tabs::-webkit-scrollbar-thumb{background:var(--border-2);border-radius:99px}
+.week-tab{
+  display:flex;flex:0 0 auto;align-items:center;justify-content:center;gap:5px;
+  min-width:80px;min-height:42px;max-width:140px;padding:7px 11px;
+  text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  border-radius:10px;font-size:var(--fs-xs);line-height:1.2;
+  scroll-snap-align:start;
+  transition:background var(--fast) var(--ease),border-color var(--fast) var(--ease),color var(--fast) var(--ease),transform var(--fast) var(--ease);
+}
+.week-tab:hover{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent)}
+.week-tab:active{transform:scale(.98)}
+.week-tab small{font-size:10px;line-height:1.3;opacity:.75;font-variant-numeric:tabular-nums}
+.week-tab.empty-week-tab small{opacity:.45}
+.revision-week-toolbar{margin-top:12px}
+.revision-notes-controls{align-items:center}
+.revision-empty{margin-bottom:12px}
+br.report-mobile-break{display:none}
+@media(max-width:1020px){
+  .week-tab{min-width:78px}
+}
+@media(max-width:767px){
+  .notes-page-heading{gap:10px;align-items:flex-start}
+  .notes-page-heading h1{font-size:23px;line-height:1.2}
+  .notes-page-heading-copy .muted{font-size:12.5px;line-height:1.45}
+  .notes-practice-button{height:36px;padding:0 10px;font-size:11px;gap:5px}
+  .notes-toolbar{width:100%;margin:16px 0 12px}
+  .week-tabs-shell{padding:4px;border-radius:12px}
+  .week-tabs{gap:6px;padding:1px 1px 4px;scrollbar-width:none}
+  .week-tabs::-webkit-scrollbar{display:none}
+  .week-tab{min-width:82px;min-height:43px;padding:8px 10px;font-size:12px}
+  .week-tab small{font-size:10px}
+  .notes-controls{align-items:flex-start;gap:10px;margin:12px 0}
+  .notes-controls h2{font-size:17px !important}
+  .notes-question-count{font-size:12px;line-height:1.4}
+  .notes-explanation-toggle{font-size:12px !important;white-space:nowrap}
+  .notes-week-next-actions .btn{min-width:0;padding:0 10px;font-size:12px;gap:5px}
+  .revision-notes-controls{flex-direction:row;align-items:flex-start;justify-content:space-between}
+  .revision-notes-controls .notes-explanation-toggle{margin-top:2px}
+  .app-footer{flex-direction:column;align-items:stretch;gap:var(--s4)}
+  .footer-left{flex:0 0 auto}
+  .footer-actions{flex:0 0 auto;width:100%;justify-content:center;text-align:center;align-items:center}
+  br.report-mobile-break{display:initial}
+  .report-link{display:inline-block;white-space:nowrap}
+}
+@media(max-width:360px){
+  .notes-page-heading{flex-direction:column}
+  .notes-practice-button{align-self:flex-start}
+  .notes-controls{flex-direction:column}
+  .revision-notes-controls{flex-direction:column;align-items:flex-start}
+}
+
 </style>
 </head>
 <body>
@@ -1807,7 +2179,7 @@ function AppFooter({ showReport = false }) {
         </p>
         {showReport && (
           <p className="footer-note">
-            Spotted a wrong answer, typo, or mismatch?{' '}
+            Spotted a wrong answer, typo, or mismatch?<br className="report-mobile-break" />{' '}
             <a className="report-link" href={REPORT_FORM_URL} target="_blank" rel="noopener noreferrer">
               Report a discrepancy
             </a>
@@ -2525,9 +2897,6 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
   const [picked, setPicked] = useState([]);
   const [customCount, setCustomCount] = useState(10);
   const qStats = progress.questions;
-  const totalAttempts = Object.values(qStats).reduce((s, x) => s + (x.a || 0), 0);
-  const totalCorrect = Object.values(qStats).reduce((s, x) => s + (x.c || 0), 0);
-  const covered = Object.keys(qStats).length;
   const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
   const bookmarks = progress.bookmarks || [];
   const poolCustom = picked.length ? bank.filter((q) => picked.includes(q._aid)) : [];
@@ -2597,13 +2966,6 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
         </section>
       )}
 
-      <div className="grid g4" style={{ marginTop: 20 }}>
-        <div className="stat"><div className="v">{covered}<small>/{bank.length}</small></div><div className="l">Seen</div></div>
-        <div className="stat"><div className="v">{pct(totalCorrect, totalAttempts)}%</div><div className="l">Accuracy</div></div>
-        <div className="stat"><div className="v">{totalAttempts}</div><div className="l">Attempts</div></div>
-        <div className="stat"><div className="v">{progress.history.length}</div><div className="l">Tests</div></div>
-      </div>
-
       {lastRun && (
         <div className="card" style={{ marginTop: 16 }}>
           <div className="row between">
@@ -2619,42 +2981,39 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
       )}
 
       <h2 className="section-title">Quick practice</h2>
-      <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>{subject.id === 'joy_of_computing_using_python' ? 'Questions are taken in their original assignment order to preserve connected case studies.' : 'A random set drawn from the entire question bank.'}</p>
+      <div className="card quick-practice-card">
+        <p className="muted quick-practice-intro" style={{ marginBottom: 12 }}>{subject.id === 'joy_of_computing_using_python' ? 'Questions are taken in their original assignment order to preserve connected case studies.' : 'A random set drawn from the entire question bank.'}</p>
         <ShuffleControls
           shuffleQuestions={settings.shuffleQuestions}
           shuffleOptions={settings.shuffleOptions}
           onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
           onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+          compact
           lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
         />
-        <div className="col">
-          <div className="row between" style={{ rowGap: 10 }}>
+        <div className="col quick-practice-controls">
+          <div className="quick-count-row">
             <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
-            <div className="pill-row">
+            <div className="pill-row quick-count-presets" aria-label="Choose question count">
               {[10, 20, 30].map((n) => (
-                <button key={n} className={'btn sm' + (count === n ? ' primary' : '')} onClick={() => setCount(Math.min(n, bank.length))}>{n}</button>
+                <button key={n} className={'btn sm' + (count === Math.min(n, bank.length) ? ' primary' : '')} onClick={() => setCount(Math.min(n, bank.length))}>{n}</button>
               ))}
-              <button className="btn sm" onClick={() => setCount(bank.length)}>All</button>
+              <button className={'btn sm' + (count === bank.length ? ' primary' : '')} onClick={() => setCount(bank.length)}>All</button>
             </div>
           </div>
-          <button className="btn primary block lg" disabled={!bank.length} onClick={() => onStartRandom(count)}>
+          <button className="btn primary block lg quick-start-btn" disabled={!bank.length} onClick={() => onStartRandom(count)}>
             <Icon name="play" size={13} /> Start · {Math.min(count, bank.length)} questions
           </button>
         </div>
       </div>
 
       <h2 className="section-title">Custom set</h2>
-      <div className="card">
-        <p className="muted" style={{ marginBottom: 16 }}>{subject.id === 'joy_of_computing_using_python' ? 'Choose specific weeks. Questions will remain in the original assignment order.' : 'Choose specific weeks, then set how many questions to draw.'}</p>
-        <ShuffleControls
-          shuffleQuestions={settings.shuffleQuestions}
-          shuffleOptions={settings.shuffleOptions}
-          onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
-          onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
-          lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
-        />
-        <div className="grid g2" style={{ marginBottom: 16 }}>
+      <div className="card custom-set-card">
+        <div className="custom-set-intro">
+          <p className="muted">{subject.id === 'joy_of_computing_using_python' ? 'Choose the weeks you want to practise. Question order stays fixed to preserve connected case studies.' : 'Choose one or more weeks, then tailor the question order and set size.'}</p>
+          <span className="custom-selection-count" aria-live="polite">{picked.length ? `${picked.length} ${picked.length === 1 ? 'week' : 'weeks'} selected` : 'No weeks selected'}</span>
+        </div>
+        <div className="grid custom-week-grid" style={{ marginBottom: 18 }}>
           {subject.assignments.map((a) => {
             const on = picked.includes(a.id);
             const cor = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.c : s; }, 0);
@@ -2664,29 +3023,60 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
                    onKeyDown={(e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); togglePick(a.id); } }}>
                 <div className="box">{on ? '✓' : ''}</div>
                 <div style={{ minWidth: 0, flex: 1 }}>
-                  <div style={{ fontWeight: 500, fontSize: 'var(--fs-sm)' }}>{a.name}</div>
+                  <div className="custom-week-name">{a.name}</div>
                   <div className="tiny">{a.questions.length} Q{att ? ' · ' + pct(cor, att) + '%' : ''}</div>
                 </div>
               </div>
             );
           })}
         </div>
-        {picked.length > 0 ? (
-          <>
-            <div className="row between" style={{ marginBottom: 12, rowGap: 10 }}>
-              <span className="tiny">{poolCustom.length} questions in selection</span>
-              <Stepper value={customCount} onChange={setCustomCount} min={1} max={Math.max(1, poolCustom.length)} step={5} />
+
+        <div className={'custom-randomization' + (picked.length ? ' ready' : '')}>
+          <div className="custom-randomization-heading">
+            <div>
+              <div className="custom-subhead">Randomization</div>
+              <p className="tiny">Choose how selected questions and answer options appear.</p>
             </div>
-            <div className="row" style={{ gap: 8 }}>
-              <button className="btn primary" style={{ flex: 1 }} onClick={() => onStartCustom(picked, Math.min(customCount, poolCustom.length))}>
-                <Icon name="play" size={13} /> Start custom quiz
-              </button>
-              <button className="btn ghost" onClick={() => setPicked([])}>Clear</button>
-            </div>
-          </>
-        ) : (
-          <p className="tiny">Select one or more weeks to build a custom set.</p>
-        )}
+            <span className={'custom-state-chip' + (picked.length ? ' active' : '')}>
+              <span aria-hidden="true">{picked.length ? '✓' : '○'}</span> {picked.length ? 'Ready to configure' : 'Select a week first'}
+            </span>
+          </div>
+          <ShuffleControls
+            shuffleQuestions={settings.shuffleQuestions}
+            shuffleOptions={settings.shuffleOptions}
+            onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
+            onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+            compact
+            lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
+            questionHint={subject.id === 'joy_of_computing_using_python' ? 'Disabled for this course to preserve case-study order.' : 'Mix the selected questions each time you start a set.'}
+            optionHint="Mix answer choices without changing which answer is correct."
+          />
+        </div>
+
+        <div className={'custom-start-area' + (picked.length ? ' ready' : '')}>
+          <div className="custom-start-copy">
+            <strong>{picked.length ? `${poolCustom.length} questions available` : 'Your custom practice set'}</strong>
+            <span>{picked.length ? 'Set the number of questions, then start practising.' : 'Select at least one week to activate your custom quiz.'}</span>
+          </div>
+          <div className="custom-start-controls">
+            {picked.length > 0 && (
+              <div className="custom-count-control">
+                <span className="tiny">Questions</span>
+                <Stepper value={customCount} onChange={setCustomCount} min={1} max={Math.max(1, poolCustom.length)} step={5} />
+              </div>
+            )}
+            <button
+              className="btn primary custom-start-btn"
+              disabled={!picked.length || !poolCustom.length}
+              onClick={() => onStartCustom(picked, Math.min(customCount, poolCustom.length))}
+              aria-describedby="custom-start-hint"
+            >
+              <Icon name="play" size={14} /> Start custom quiz <Icon name="arrowR" size={15} />
+            </button>
+            <button className="btn ghost custom-clear-btn" onClick={() => setPicked([])} disabled={!picked.length}>Clear</button>
+          </div>
+          <span id="custom-start-hint" className="tiny custom-start-hint">{picked.length ? 'Your selected weeks are ready to practise.' : 'The Start button will light up when you select a week.'}</span>
+        </div>
       </div>
 
       <h2 className="section-title">Revision</h2>
@@ -2713,32 +3103,6 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
         </div>
       </div>
 
-      <h2 className="section-title">Study by week</h2>
-      <div className="grid g2">
-        {subject.assignments.map((a) => {
-          const att = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.a : s; }, 0);
-          const cor = a.questions.reduce((s, q) => { const st = qStats[q.id]; return st ? s + st.c : s; }, 0);
-          const wrongHere = a.questions.filter((q) => qStats[q.id] && qStats[q.id].w >= 2).length;
-          return (
-            <div className="card" key={a.id}>
-              <div className="row between" style={{ alignItems: 'flex-start' }}>
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ fontWeight: 600, fontSize: 'var(--fs-sm)' }}>{a.name}</div>
-                  <div className="tiny" style={{ marginTop: 3 }}>
-                    {a.questions.length} Q{att ? ' · ' + pct(cor, att) + '% accuracy' : ' · not attempted'}
-                  </div>
-                </div>
-                {wrongHere > 0 && <span className="badge red">{wrongHere} weak</span>}
-              </div>
-              <div className="pbar" style={{ margin: '16px 0' }}><i style={{ width: pct(cor, att) + '%' }} /></div>
-              <div className="row" style={{ gap: 8 }}>
-                <button className="btn sm" style={{ flex: 1 }} onClick={() => onStudy(a)}><Icon name="book" size={13} /> Notes</button>
-                <button className="btn sm primary" style={{ flex: 1 }} onClick={() => onStartCustom([a.id], a.questions.length)}><Icon name="play" size={11} /> Practice</button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
 
       <AppFooter showReport={true} />
     </div>
@@ -2930,21 +3294,32 @@ function QuizRunner({ config, settings, bookmarks, onToggleBookmark, onFinish, o
   return (
     <div className="app">
       {flash && <div className={'flash ' + flash} />}
-      <div className="topbar">
+      <div className="topbar quiz-topbar">
         <div className="wrap">
-          <div className="topbar-in">
-            <button className="icon-btn" onClick={onQuit} aria-label="Quit"><Icon name="x" size={17} /></button>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 600, fontSize: 'var(--fs-sm)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{config.title}</div>
-              <div className="tiny">Question {idx + 1} of {questions.length}</div>
-            </div>
-            <span className="badge grey" style={{ fontVariantNumeric: 'tabular-nums' }}><Icon name="clock" size={11} />{fmtClock(elapsed)}</span>
-            <button className="icon-btn" onClick={() => onToggleBookmark(q.id)} aria-label="Bookmark"
-              style={isBookmarked ? { color: 'var(--accent)', background: 'var(--accent-soft)', borderColor: 'var(--accent-line)' } : undefined}>
-              <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={16} />
+          <div className="topbar-in quiz-topbar-in">
+            <button type="button" className="quiz-back-btn" onClick={onQuit} aria-label="Back">
+              <Icon name="arrowL" size={16} /> <span>Back</span>
             </button>
+            <div className="quiz-header-center" aria-live="polite">
+              <div className="quiz-header-title">{config.title}</div>
+              <div className="quiz-header-subtitle">
+                <span>Question {idx + 1} of {questions.length}</span>
+                <span className="quiz-header-dot" aria-hidden="true">·</span>
+                <span>{Math.round(progressPct)}% complete</span>
+              </div>
+            </div>
+            <div className="quiz-header-actions">
+              <span className="quiz-timer" aria-label={'Elapsed time ' + fmtClock(elapsed)}>
+                <Icon name="clock" size={14} /> <span>{fmtClock(elapsed)}</span>
+              </span>
+              <button type="button" className={'icon-btn quiz-bookmark-btn' + (isBookmarked ? ' active' : '')}
+                onClick={() => onToggleBookmark(q.id)} aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark question'}
+                aria-pressed={isBookmarked} title={isBookmarked ? 'Bookmarked' : 'Bookmark question'}>
+                <Icon name={isBookmarked ? 'bookmarkF' : 'bookmark'} size={16} />
+              </button>
+            </div>
           </div>
-          <div className="pbar" style={{ marginBottom: 10 }}><i style={{ width: progressPct + '%' }} /></div>
+          <div className="pbar quiz-progress-bar" role="progressbar" aria-label="Quiz progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progressPct)}><i style={{ width: progressPct + '%' }} /></div>
         </div>
       </div>
 
@@ -3142,7 +3517,7 @@ function ResultView({ result, qmap, onHome, onRetryWrong, onStudyAssignment }) {
       </div>
 
       <div className="row" style={{ marginTop: 20, gap: 8 }}>
-        <button className="btn" onClick={onHome}><Icon name="arrowL" size={13} />Back to practice</button>
+        <button className="btn" onClick={onHome}><Icon name="arrowL" size={13} />Back</button>
         {wrongItems.length > 0 && (
           <button className="btn primary" onClick={() => onRetryWrong(wrongItems.map((i) => i.qid))}>
             <Icon name="refresh" size={13} />Retry {wrongItems.length} wrong
@@ -3254,27 +3629,16 @@ function HistoryDetail({ run, qmap, onClose, onStudyAssignment }) {
   );
 }
 
-function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
+function HistoryView({ progress, qmap, totalQuestions, onStudyAssignment, onClear }) {
   const [open, setOpen] = useState(null);
   const runs = progress.history;
-
-  if (!runs.length) {
-    return (
-      <div className="page wrap">
-        <h1 style={{ marginBottom: 20 }}>History</h1>
-        <div className="card empty">
-          <div className="empty-mark"><Icon name="chart" size={22} /></div>
-          <h3>No tests yet</h3>
-          <p>Take a practice quiz and it will appear here.</p>
-        </div>
-        <AppFooter showReport={true} />
-      </div>
-    );
-  }
-
+  const qStats = progress.questions || {};
+  const seen = Object.keys(qStats).length;
+  const attempts = Object.values(qStats).reduce((sum, stat) => sum + (stat.a || 0), 0);
+  const correct = Object.values(qStats).reduce((sum, stat) => sum + (stat.c || 0), 0);
   const totalTests = runs.length;
-  const avgAcc = Math.round(runs.reduce((s, r) => s + pct(r.score, r.total), 0) / totalTests);
-  const bestAcc = Math.max(...runs.map((r) => pct(r.score, r.total)));
+  const avgAcc = totalTests ? Math.round(runs.reduce((sum, run) => sum + pct(run.score, run.total), 0) / totalTests) : 0;
+  const bestAcc = totalTests ? Math.max(...runs.map((run) => pct(run.score, run.total))) : 0;
 
   return (
     <div className="page wrap">
@@ -3282,11 +3646,14 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
         <h1>History</h1>
         <button className="btn sm danger" onClick={onClear}>Clear history</button>
       </div>
-      <div className="grid g3" style={{ marginBottom: 20 }}>
+      <div className="grid g4" style={{ marginBottom: 20 }}>
+        <div className="stat"><div className="v">{seen}<small>/{totalQuestions}</small></div><div className="l">Seen</div></div>
+        <div className="stat"><div className="v">{pct(correct, attempts)}%</div><div className="l">Accuracy</div></div>
+        <div className="stat"><div className="v">{attempts}</div><div className="l">Attempts</div></div>
         <div className="stat"><div className="v">{totalTests}</div><div className="l">Tests</div></div>
-        <div className="stat"><div className="v">{avgAcc}%</div><div className="l">Avg accuracy</div></div>
-        <div className="stat"><div className="v">{bestAcc}%</div><div className="l">Best</div></div>
       </div>
+      {totalTests > 0 && <div className="row" style={{ gap: 8, marginBottom: 18 }}><span className="badge grey">Average test score {avgAcc}%</span><span className="badge green">Best test {bestAcc}%</span></div>}
+      {!runs.length && <div className="card empty"><div className="empty-mark"><Icon name="chart" size={22} /></div><h3>No tests yet</h3><p>Take a practice quiz and it will appear here. Your question-level progress is tracked as you practise.</p></div>}
       {runs.map((r) => {
         const a = pct(r.score, r.total);
         const cls = a >= 80 ? 'good' : a >= 50 ? 'mid' : 'bad';
@@ -3312,7 +3679,9 @@ function HistoryView({ progress, qmap, onStudyAssignment, onClear }) {
 
 function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
   const weak = useMemo(() => weakQuestions(subject, progress), [subject, progress]);
+  const assignments = subject?.assignments || [];
   const [showAnswers, setShowAnswers] = useState(true);
+  const [hideExplanations, setHideExplanations] = useState(false);
   const byAssignment = useMemo(() => {
     const m = {};
     weak.forEach((w) => {
@@ -3322,6 +3691,29 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
     });
     return Object.values(m).sort((a, b) => b.items.length - a.items.length);
   }, [weak]);
+  const [selectedWeekId, setSelectedWeekId] = useState(() =>
+    assignments.find((a) => weak.some((w) => w.q._aid === a.id))?.id || assignments[0]?.id || ''
+  );
+  const revisionTabsRef = useRef(null);
+  const revisionTabRefs = useRef({});
+
+  useEffect(() => {
+    if (!assignments.some((a) => a.id === selectedWeekId)) {
+      setSelectedWeekId(assignments.find((a) => weak.some((w) => w.q._aid === a.id))?.id || assignments[0]?.id || '');
+    }
+  }, [subject?.id, selectedWeekId, weak.length]);
+
+  useEffect(() => {
+    const container = revisionTabsRef.current;
+    const tab = revisionTabRefs.current[selectedWeekId];
+    if (!container || !tab) return;
+    const containerRect = container.getBoundingClientRect();
+    const tabRect = tab.getBoundingClientRect();
+    let nextLeft = container.scrollLeft;
+    if (tabRect.left < containerRect.left + 2) nextLeft += tabRect.left - containerRect.left - 8;
+    else if (tabRect.right > containerRect.right - 2) nextLeft += tabRect.right - containerRect.right + 8;
+    if (Math.abs(nextLeft - container.scrollLeft) > 1) container.scrollTo({ left: Math.max(0, nextLeft), behavior: 'smooth' });
+  }, [selectedWeekId, subject?.id]);
 
   if (!weak.length) {
     return (
@@ -3341,6 +3733,13 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
     );
   }
 
+  const activeAssignment = assignments.find((a) => a.id === selectedWeekId) || assignments[0];
+  const activeIndex = Math.max(0, assignments.findIndex((a) => a.id === activeAssignment?.id));
+  const weekWeak = activeAssignment
+    ? weak.filter((w) => w.q._aid === activeAssignment.id).sort((a, b) =>
+        activeAssignment.questions.findIndex((q) => q.id === a.q.id) - activeAssignment.questions.findIndex((q) => q.id === b.q.id))
+    : [];
+
   return (
     <div className="page wrap">
       <div className="cheat-head">
@@ -3350,7 +3749,7 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
             {weak.length} weak question{weak.length > 1 ? 's' : ''} detected from your answers
           </p>
         </div>
-        <button className="toggle-answers" onClick={() => setShowAnswers(!showAnswers)}>
+        <button className="toggle-answers" onClick={() => setShowAnswers(!showAnswers)} aria-pressed={!showAnswers}>
           <Icon name={showAnswers ? 'eyeOff' : 'eye'} size={13} />
           {showAnswers ? 'Hide answers' : 'Show answers'}
         </button>
@@ -3374,8 +3773,54 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
           <Icon name="play" size={13} /> Drill all {weak.length} weak questions
         </button>
       </div>
+
       <h2 className="section-title">Revision notes</h2>
-      {weak.map(({ q, st }) => {
+      <div className="notes-toolbar revision-week-toolbar" aria-label="Revision week navigation">
+        <div className="week-pager">
+          <div className="week-tabs-shell" role="group" aria-label="Scrollable revision week selector">
+            <div ref={revisionTabsRef} className="week-tabs" role="tablist" aria-label="Choose revision week">
+              {assignments.map((item) => {
+                const count = weak.filter((w) => w.q._aid === item.id).length;
+                return (
+                  <button
+                    key={item.id}
+                    ref={(el) => { revisionTabRefs.current[item.id] = el; }}
+                    role="tab"
+                    aria-selected={item.id === activeAssignment?.id}
+                    className={'week-tab' + (item.id === activeAssignment?.id ? ' active' : '') + (count ? '' : ' empty-week-tab')}
+                    onClick={() => setSelectedWeekId(item.id)}
+                    title={item.name + ' · ' + count + ' weak questions'}
+                  >
+                    <span>{item.name}</span>
+                    <small>{count}</small>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="notes-controls revision-notes-controls">
+        <div>
+          <h3>{activeAssignment?.name || 'Revision notes'}</h3>
+          <div className="notes-question-count" style={{ marginTop: 4 }}>
+            {weekWeak.length} weak question{weekWeak.length === 1 ? '' : 's'} in this week
+          </div>
+        </div>
+        <label className="row notes-explanation-toggle" style={{ gap: 8, cursor: 'pointer', fontSize: 'var(--fs-sm)' }}>
+          <Switch on={hideExplanations} onChange={setHideExplanations} />
+          <span>{hideExplanations ? 'Explanations hidden' : 'Hide explanations'}</span>
+        </label>
+      </div>
+
+      {weekWeak.length === 0 ? (
+        <div className="card empty revision-empty">
+          <div className="empty-mark"><Icon name="book" size={21} /></div>
+          <h3>No weak questions in {activeAssignment?.name || 'this week'}</h3>
+          <p>Questions you repeatedly get wrong from this week will appear here as you practise.</p>
+        </div>
+      ) : weekWeak.map(({ q, st }) => {
         const ans = answerIndices(q);
         return (
           <div className="card note" key={q.id} style={{ marginBottom: 12 }}>
@@ -3391,12 +3836,12 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
                   {q.options.map((o, j) => (
                     <li key={j} className={ans.includes(j) ? 'ans' : ''}>
                       <span className="tag">{String.fromCharCode(65 + j)}</span>
-                      <span style={{ flex: 1 }}>{o}</span>
+                      <span style={{ flex: 1 }}><FormattedText text={typeof o === 'string' ? o : (o.text || o.label || '')} /></span>
                       {ans.includes(j) && <span className="tick">✓</span>}
                     </li>
                   ))}
                 </ul>
-                {q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
+                {!hideExplanations && q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
               </>
             ) : (
               <button className="btn sm" onClick={() => setShowAnswers(true)}>
@@ -3406,26 +3851,93 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
           </div>
         );
       })}
+
+      <div className="row between notes-week-next-actions" style={{ marginTop: 20, gap: 10 }}>
+        <button className="btn" disabled={activeIndex === 0} onClick={() => setSelectedWeekId(assignments[activeIndex - 1].id)}><Icon name="arrowL" size={13} /> Previous week</button>
+        <button className="btn primary" disabled={activeIndex >= assignments.length - 1} onClick={() => setSelectedWeekId(assignments[activeIndex + 1].id)}>Next week <Icon name="arrowR" size={13} /></button>
+      </div>
       <AppFooter showReport={true} />
     </div>
   );
 }
 
-function NotesView({ assignment, progress, onBack, onPractice }) {
-  if (!assignment) return null;
+function NotesView({ subject, assignment, progress, onPractice }) {
+  const assignments = subject?.assignments || [];
+  const [selectedId, setSelectedId] = useState(assignment?.id || assignments[0]?.id || '');
+  const [hideExplanations, setHideExplanations] = useState(false);
+  const weekTabRefs = useRef({});
+  const weekTabsContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (assignment?.id) setSelectedId(assignment.id);
+    else if (!selectedId && assignments[0]) setSelectedId(assignments[0].id);
+  }, [assignment?.id, subject?.id]);
+
+  useEffect(() => {
+    const container = weekTabsContainerRef.current;
+    const activeTab = weekTabRefs.current[selectedId];
+    if (!container || !activeTab) return;
+    const containerRect = container.getBoundingClientRect();
+    const tabRect = activeTab.getBoundingClientRect();
+    let nextScrollLeft = container.scrollLeft;
+    if (tabRect.left < containerRect.left + 2) {
+      nextScrollLeft += tabRect.left - containerRect.left - 8;
+    } else if (tabRect.right > containerRect.right - 2) {
+      nextScrollLeft += tabRect.right - containerRect.right + 8;
+    }
+    if (Math.abs(nextScrollLeft - container.scrollLeft) > 1) {
+      container.scrollTo({ left: Math.max(0, nextScrollLeft), behavior: 'smooth' });
+    }
+  }, [selectedId, subject?.id]);
+
+  if (!assignments.length) return <div className="page wrap"><h1>Notes</h1><div className="card empty"><h3>No notes available</h3><p>There are no weekly assignments available for this subject yet.</p></div></div>;
+
+  const activeIndex = Math.max(0, assignments.findIndex((item) => item.id === selectedId));
+  const active = assignments[activeIndex] || assignments[0];
+  const selectAssignment = (item) => setSelectedId(item.id);
+
   return (
     <div className="page wrap">
-      <div className="row between" style={{ marginBottom: 20 }}>
-        <button className="btn ghost sm" onClick={onBack}><Icon name="arrowL" size={13} />Back</button>
-        <button className="btn primary sm" onClick={() => onPractice(assignment.id, assignment.questions.length)}>
-          <Icon name="play" size={11} /> Practice this week
-        </button>
+      <div className="notes-page-heading">
+        <div className="notes-page-heading-copy">
+          <h1>Notes & answers</h1>
+          <p className="muted" style={{ marginTop: 6 }}>{subject.title} · Browse questions and correct answers across all weeks.</p>
+        </div>
+        <button className="btn primary sm notes-practice-button" onClick={() => onPractice(active.id, active.questions.length)}><Icon name="play" size={12} /> Practise week</button>
       </div>
-      <h1>{assignment.name}</h1>
-      <p className="muted" style={{ margin: '8px 0 24px' }}>
-        {assignment.questions.length} questions · correct answers highlighted
-      </p>
-      {assignment.questions.map((q, i) => {
+
+      <div className="notes-toolbar" aria-label="Week navigation">
+        <div className="week-pager">
+          <div className="week-tabs-shell" role="group" aria-label="Scrollable week selector">
+            <div ref={weekTabsContainerRef} className="week-tabs" role="tablist" aria-label="Choose week">
+              {assignments.map((item) => (
+                <button
+                  key={item.id}
+                  ref={(el) => { weekTabRefs.current[item.id] = el; }}
+                  data-week-id={item.id}
+                  role="tab"
+                  aria-selected={item.id === active.id}
+                  className={'week-tab' + (item.id === active.id ? ' active' : '')}
+                  onClick={() => selectAssignment(item)}
+                  title={item.name}
+                >{item.name}</button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="notes-controls">
+        <div>
+          <h2 style={{ fontSize: 'var(--fs-lg)' }}>{active.name}</h2>
+          <div className="notes-question-count" style={{ marginTop: 4 }}>{active.questions.length} questions · Correct answers highlighted</div>
+        </div>
+        <label className="row notes-explanation-toggle" style={{ gap: 8, cursor: 'pointer', fontSize: 'var(--fs-sm)' }}>
+          <Switch on={hideExplanations} onChange={setHideExplanations} />
+          <span>{hideExplanations ? 'Explanations hidden' : 'Hide explanations'}</span>
+        </label>
+      </div>
+
+      {active.questions.map((q, i) => {
         const st = progress.questions[q.id];
         const ans = answerIndices(q);
         return (
@@ -3441,15 +3953,20 @@ function NotesView({ assignment, progress, onBack, onPractice }) {
               {q.options.map((o, j) => (
                 <li key={j} className={ans.includes(j) ? 'ans' : ''}>
                   <span className="tag">{String.fromCharCode(65 + j)}</span>
-                  <span style={{ flex: 1 }}>{o}</span>
+                  <span style={{ flex: 1 }}><FormattedText text={typeof o === 'string' ? o : (o.text || o.label || '')} /></span>
                   {ans.includes(j) && <span className="tick">✓</span>}
                 </li>
               ))}
             </ul>
-            {q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
+            {!hideExplanations && q.explanation && <div className="explain"><b>Why:</b> <FormattedText text={q.explanation} /></div>}
           </div>
         );
       })}
+      <div className="row between notes-week-next-actions" style={{ marginTop: 20, gap: 10 }}>
+        <button className="btn" disabled={activeIndex === 0} onClick={() => selectAssignment(assignments[activeIndex - 1])}><Icon name="arrowL" size={13} /> Previous week</button>
+        <button className="btn primary" disabled={activeIndex >= assignments.length - 1} onClick={() => selectAssignment(assignments[activeIndex + 1])}>Next week <Icon name="arrowR" size={13} /></button>
+      </div>
+      <AppFooter showReport={true} />
     </div>
   );
 }
@@ -3580,6 +4097,9 @@ function App() {
     const hasExplicitSelection = LS.get('nptel.subjectSelected', false) || Boolean(savedId && savedId !== SUBJECTS[0].id);
     return hasExplicitSelection && SUBJECTS.some(s => s.id === savedId) ? 'loading' : 'landing';
   });
+  const screenRef = useRef(screen);
+  screenRef.current = screen;
+  const quizReturnScreenRef = useRef('home');
   const [quizConfig, setQuizConfig] = useState(null);
   const [result, setResult] = useState(null);
   const [notesAssignment, setNotesAssignment] = useState(null);
@@ -3684,6 +4204,9 @@ function App() {
   }, [settings.shuffleQuestions, subjectId]);
 
   const startQuiz = (cfg) => {
+    // Remember the actual source screen so Back returns to the workflow the learner came from.
+    const originScreen = screenRef.current;
+    if (originScreen !== 'quiz') quizReturnScreenRef.current = originScreen || 'home';
     // Captures all practice-start controls that use the shared startQuiz flow.
     trackGAEvent('practice_button_click', {
       subject_id: subjectId || 'unknown',
@@ -3812,8 +4335,9 @@ function App() {
   };
 
   const navigate = useCallback((target) => {
+    if (target === 'notes') setNotesAssignment((current) => current || (subject && subject.assignments[0]) || null);
     setScreen(target);
-  }, []);
+  }, [subject]);
 
   if (screen === 'loading' || (screen !== 'landing' && !subject)) {
     return (
@@ -3833,7 +4357,7 @@ function App() {
         bookmarks={progress.bookmarks || []}
         onToggleBookmark={toggleBookmark}
         onFinish={handleFinish}
-        onQuit={() => setScreen('home')}
+        onQuit={() => setScreen(quizReturnScreenRef.current || 'home')}
       />
     );
   }
@@ -3841,11 +4365,11 @@ function App() {
   const navItems = [
     { id: 'landing',    label: 'Home',       icon: 'home' },
     { id: 'home',       label: 'Practice',   icon: 'practice' },
+    { id: 'notes',      label: 'Notes',      icon: 'book' },
     { id: 'history',    label: 'History',    icon: 'history' },
     { id: 'cheatsheet', label: 'Cheatsheet', icon: 'notes' },
   ];
-  const isNotes = screen === 'notes';
-  const activeTab = isNotes ? 'cheatsheet' : screen;
+  const activeTab = screen;
 
   return (
     <div className="app">
@@ -3872,9 +4396,10 @@ function App() {
               {navItems.map((t) => (
                 <button key={t.id}
                   className={activeTab === t.id ? 'active' : ''}
+                  title={t.label}
                   onClick={() => navigate(t.id)}
                   aria-current={activeTab === t.id ? 'page' : undefined}>
-                  {t.label}
+                  <span>{t.label}</span>
                 </button>
               ))}
             </nav>
@@ -3916,7 +4441,7 @@ function App() {
         {screen === 'result' && result && (
           <ResultView
             result={result} qmap={qmap}
-            onHome={() => setScreen('home')}
+            onHome={() => setScreen(quizReturnScreenRef.current && quizReturnScreenRef.current !== 'result' ? quizReturnScreenRef.current : 'home')}
             onRetryWrong={retryWrong}
             onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
           />
@@ -3924,7 +4449,7 @@ function App() {
 
         {screen === 'history' && subject && (
           <HistoryView
-            progress={progress} qmap={qmap}
+            progress={progress} qmap={qmap} totalQuestions={subject.assignments.reduce((sum, item) => sum + item.questions.length, 0)}
             onStudyAssignment={(aid) => openStudy(subject.assignments.find((a) => a.id === aid))}
             onClear={() => { if (confirm('Clear all test history for this subject?')) setProgress({ ...progress, history: [] }); }}
           />
@@ -3937,11 +4462,14 @@ function App() {
           />
         )}
 
-        {screen === 'notes' && notesAssignment && (
+        {screen === 'notes' && subject && (
           <NotesView
-            assignment={notesAssignment} progress={progress}
-            onBack={() => setScreen('home')}
-            onPractice={(aid, n) => startCustom([aid], n)}
+            subject={subject} assignment={(notesAssignment && subject.assignments.some((item) => item.id === notesAssignment.id)) ? notesAssignment : subject.assignments[0]} progress={progress}
+            onPractice={(aid, n) => {
+              const chosenAssignment = subject.assignments.find((item) => item.id === aid);
+              if (chosenAssignment) setNotesAssignment(chosenAssignment);
+              startCustom([aid], n);
+            }}
           />
         )}
       </div>
