@@ -207,7 +207,15 @@
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
-<script defer src="/_vercel/insights/script.js"></script>
+<script>
+  // Vercel Web Analytics is available on deployed Vercel hosts, not local preview servers.
+  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1' && location.hostname !== '0.0.0.0') {
+    var vercelInsights = document.createElement('script');
+    vercelInsights.defer = true;
+    vercelInsights.src = '/_vercel/insights/script.js';
+    document.head.appendChild(vercelInsights);
+  }
+</script>
 
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
@@ -1949,6 +1957,80 @@ br.report-mobile-break{display:none}
   .revision-notes-controls{flex-direction:column;align-items:flex-start}
 }
 
+
+
+/* Final navigation and history refinements */
+.week-tabs-shell{
+  display:flex;align-items:center;gap:4px;
+  background:var(--surface);
+  border-color:var(--border);
+}
+.week-scroll-arrow{
+  display:grid;place-items:center;flex:0 0 27px;width:27px;height:34px;
+  border-radius:8px;border:1px solid transparent;color:var(--muted);background:transparent;
+  transition:color var(--fast) var(--ease),background var(--fast) var(--ease),border-color var(--fast) var(--ease),opacity var(--fast) var(--ease);
+}
+.week-scroll-arrow:hover:not(:disabled){color:var(--accent);background:var(--accent-soft);border-color:var(--accent-line)}
+.week-arrow-glyph{font-family:var(--font-sans);font-size:20px;line-height:1;font-weight:500;display:block;transform:translateY(-1px)}
+.week-scroll-arrow:disabled{opacity:.24;cursor:default}
+.week-tabs{flex:1 1 auto;width:0;}
+.week-tab{background:var(--surface-2);border:1px solid var(--border);color:var(--text-2);font-weight:500;transition:background var(--fast) var(--ease),border-color var(--fast) var(--ease),color var(--fast) var(--ease),transform var(--fast) var(--ease),box-shadow var(--fast) var(--ease)}
+.week-tab.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600;box-shadow:inset 0 0 0 1px var(--accent-line);animation:weekSelectIn 160ms var(--ease) both;}
+@keyframes weekSelectIn{from{box-shadow:inset 0 0 0 1px transparent;transform:translateY(1px)}to{box-shadow:inset 0 0 0 1px var(--accent-line);transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.week-tab.active{animation:none}}
+.week-tab:focus-visible{outline-offset:-2px}
+.revision-nav-layout{display:flex;align-items:center;gap:12px;width:100%;min-width:0}
+.revision-week-toolbar{flex:1 1 auto;min-width:0;margin:12px 0}
+.revision-week-tabs{display:grid;grid-template-columns:repeat(var(--revision-tab-count,1),minmax(0,1fr));gap:6px;overflow-x:auto;}
+.revision-week-tabs .week-tab{width:100%;min-width:0;max-width:none;flex:none;white-space:normal;overflow-wrap:anywhere;padding:7px 6px;}
+.revision-all-weeks{flex:0 0 auto;min-height:36px;}
+.revision-all-weeks.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent-line);}
+.history-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px}
+.history-subtitle{margin-top:4px;font-size:var(--fs-sm)}
+.history-stats .stat{min-height:72px;display:flex;flex-direction:column;justify-content:center}
+.history-list{display:flex;flex-direction:column;gap:8px}
+.history-list .hrow{margin-bottom:0;min-height:74px;gap:14px;padding:12px 16px}
+.score-pill{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:2px;width:auto;min-width:68px;height:44px;padding:0 10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.score-pill small{display:inline;font-size:12px;line-height:1;white-space:nowrap;margin:0;font-variant-numeric:tabular-nums}
+.history-run-info{flex:1;min-width:0}
+.history-run-title{font-size:var(--fs-sm);font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.history-run-meta{margin-top:4px;line-height:1.45;overflow-wrap:anywhere}
+.history-details-btn{flex:0 0 auto}
+@media(max-width:767px){
+  .revision-nav-layout{flex-direction:column;align-items:stretch;gap:8px}
+  .revision-week-toolbar{width:100%;margin:10px 0 0}
+  .revision-all-weeks{width:100%;min-height:38px;justify-content:center}
+  .revision-week-tabs{display:flex;gap:6px;}
+  .revision-week-tabs .week-tab,
+  .week-tabs .week-tab{flex:0 0 calc(33.333333% - 4px);width:calc(33.333333% - 4px);min-width:0;max-width:none;min-height:44px;padding:7px 4px;white-space:normal;line-height:1.2;overflow-wrap:anywhere}
+  .week-tabs-shell{gap:3px;padding:4px;border-radius:12px}
+  .week-scroll-arrow{flex-basis:24px;width:24px;height:36px}
+  .week-tabs{gap:6px;padding:1px 1px 4px;}
+  .history-heading{align-items:flex-start;margin-bottom:16px}
+  .history-heading h1{font-size:24px}
+  .history-subtitle{font-size:12px;max-width:23ch;line-height:1.4}
+  .history-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin-bottom:14px!important}
+  .history-stats .stat{min-height:68px;padding:10px}
+  .history-stats .stat .v{font-size:20px}
+  .history-list{gap:8px}
+  .history-list .hrow{display:grid;grid-template-columns:68px minmax(0,1fr) auto;align-items:center;gap:9px;padding:10px;min-height:70px;border-radius:12px}
+  .score-pill{min-width:62px;height:40px;padding:0 7px;font-size:15px;border-radius:9px;gap:2px}
+  .score-pill small{font-size:11px}
+  .history-run-title{font-size:12.5px;line-height:1.35;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .history-run-meta{font-size:10.5px;line-height:1.35;margin-top:3px}
+  .history-details-btn{height:32px;padding:0 8px;font-size:11px;gap:4px}
+}
+@media(max-width:360px){
+  .history-list .hrow{grid-template-columns:61px minmax(0,1fr) auto;gap:7px;padding:8px}
+  .score-pill{min-width:58px;padding:0 5px;font-size:14px}
+  .history-details-btn{padding:0 7px;font-size:10.5px}
+  .week-scroll-arrow{flex-basis:21px;width:21px}
+  .revision-week-tabs .week-tab,.week-tabs .week-tab{flex-basis:calc(33.333333% - 4px);width:calc(33.333333% - 4px);font-size:11px}
+}
+@media(max-width:767px){
+  .revision-week-tabs .week-tab{flex-basis:var(--revision-slot-width,calc(33.333333% - 4px));width:var(--revision-slot-width,calc(33.333333% - 4px))}
+}
+
 </style>
 </head>
 <body>
@@ -3642,11 +3724,14 @@ function HistoryView({ progress, qmap, totalQuestions, onStudyAssignment, onClea
 
   return (
     <div className="page wrap">
-      <div className="row between" style={{ marginBottom: 20 }}>
-        <h1>History</h1>
+      <div className="history-heading">
+        <div>
+          <h1>History</h1>
+          <p className="muted history-subtitle">Your practice activity and test results</p>
+        </div>
         <button className="btn sm danger" onClick={onClear}>Clear history</button>
       </div>
-      <div className="grid g4" style={{ marginBottom: 20 }}>
+      <div className="grid g4 history-stats" style={{ marginBottom: 20 }}>
         <div className="stat"><div className="v">{seen}<small>/{totalQuestions}</small></div><div className="l">Seen</div></div>
         <div className="stat"><div className="v">{pct(correct, attempts)}%</div><div className="l">Accuracy</div></div>
         <div className="stat"><div className="v">{attempts}</div><div className="l">Attempts</div></div>
@@ -3654,23 +3739,25 @@ function HistoryView({ progress, qmap, totalQuestions, onStudyAssignment, onClea
       </div>
       {totalTests > 0 && <div className="row" style={{ gap: 8, marginBottom: 18 }}><span className="badge grey">Average test score {avgAcc}%</span><span className="badge green">Best test {bestAcc}%</span></div>}
       {!runs.length && <div className="card empty"><div className="empty-mark"><Icon name="chart" size={22} /></div><h3>No tests yet</h3><p>Take a practice quiz and it will appear here. Your question-level progress is tracked as you practise.</p></div>}
-      {runs.map((r) => {
-        const a = pct(r.score, r.total);
-        const cls = a >= 80 ? 'good' : a >= 50 ? 'mid' : 'bad';
-        return (
-          <div className="hrow" key={r.id}>
-            <div className={'score-pill ' + cls}>{r.score}<small>/{r.total}</small></div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ fontWeight: 500, fontSize: 'var(--fs-sm)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{r.modeLabel}</div>
-              <div className="tiny" style={{ marginTop: 3 }}>
-                {fmtDate(r.ts)} · {a}% · {fmtClock(r.total ? r.timeTotal / r.total : 0)} avg
-                {r.skipped ? ' · ' + r.skipped + ' skipped' : ''}
+      <div className="history-list">
+        {runs.map((r) => {
+          const a = pct(r.score, r.total);
+          const cls = a >= 80 ? 'good' : a >= 50 ? 'mid' : 'bad';
+          return (
+            <div className="hrow" key={r.id}>
+              <div className={'score-pill ' + cls} aria-label={`${r.score} out of ${r.total}`}>{r.score}<small>/{r.total}</small></div>
+              <div className="history-run-info">
+                <div className="history-run-title">{r.modeLabel}</div>
+                <div className="tiny history-run-meta">
+                  {fmtDate(r.ts)} <span aria-hidden="true">·</span> {a}% <span aria-hidden="true">·</span> {fmtClock(r.total ? r.timeTotal / r.total : 0)} avg
+                  {r.skipped ? ' · ' + r.skipped + ' skipped' : ''}
+                </div>
               </div>
+              <button className="btn sm history-details-btn" onClick={() => setOpen(r)}>Details</button>
             </div>
-            <button className="btn sm" onClick={() => setOpen(r)}>Details</button>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
       {open && <HistoryDetail run={open} qmap={qmap} onClose={() => setOpen(null)} onStudyAssignment={onStudyAssignment} />}
       <AppFooter showReport={true} />
     </div>
@@ -3691,29 +3778,59 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
     });
     return Object.values(m).sort((a, b) => b.items.length - a.items.length);
   }, [weak]);
-  const [selectedWeekId, setSelectedWeekId] = useState(() =>
-    assignments.find((a) => weak.some((w) => w.q._aid === a.id))?.id || assignments[0]?.id || ''
+  const revisionAssignments = useMemo(
+    () => assignments.filter((a) => weak.some((w) => w.q._aid === a.id)),
+    [assignments, weak]
   );
+  const revisionAssignmentKey = revisionAssignments.map((a) => a.id).join('|');
+  const [selectedWeekId, setSelectedWeekId] = useState(() => revisionAssignments[0]?.id || '');
+  const [showAllRevisionWeeks, setShowAllRevisionWeeks] = useState(false);
   const revisionTabsRef = useRef(null);
   const revisionTabRefs = useRef({});
+  const [revisionScrollState, setRevisionScrollState] = useState({ left: false, right: false });
 
   useEffect(() => {
-    if (!assignments.some((a) => a.id === selectedWeekId)) {
-      setSelectedWeekId(assignments.find((a) => weak.some((w) => w.q._aid === a.id))?.id || assignments[0]?.id || '');
+    if (!revisionAssignments.some((a) => a.id === selectedWeekId)) {
+      setSelectedWeekId(revisionAssignments[0]?.id || '');
+      setShowAllRevisionWeeks(false);
     }
-  }, [subject?.id, selectedWeekId, weak.length]);
+  }, [subject?.id, selectedWeekId, revisionAssignmentKey]);
 
   useEffect(() => {
     const container = revisionTabsRef.current;
     const tab = revisionTabRefs.current[selectedWeekId];
-    if (!container || !tab) return;
-    const containerRect = container.getBoundingClientRect();
-    const tabRect = tab.getBoundingClientRect();
-    let nextLeft = container.scrollLeft;
-    if (tabRect.left < containerRect.left + 2) nextLeft += tabRect.left - containerRect.left - 8;
-    else if (tabRect.right > containerRect.right - 2) nextLeft += tabRect.right - containerRect.right + 8;
-    if (Math.abs(nextLeft - container.scrollLeft) > 1) container.scrollTo({ left: Math.max(0, nextLeft), behavior: 'smooth' });
-  }, [selectedWeekId, subject?.id]);
+    if (!container) return;
+    if (tab && !showAllRevisionWeeks) {
+      const containerRect = container.getBoundingClientRect();
+      const tabRect = tab.getBoundingClientRect();
+      let nextLeft = container.scrollLeft;
+      if (tabRect.left < containerRect.left + 2) nextLeft += tabRect.left - containerRect.left - 8;
+      else if (tabRect.right > containerRect.right - 2) nextLeft += tabRect.right - containerRect.right + 8;
+      if (Math.abs(nextLeft - container.scrollLeft) > 1) container.scrollTo({ left: Math.max(0, nextLeft), behavior: 'smooth' });
+    }
+    const updateScrollState = () => {
+      const next = {
+        left: container.scrollLeft > 2,
+        right: container.scrollLeft + container.clientWidth < container.scrollWidth - 2,
+      };
+      setRevisionScrollState((current) => current.left === next.left && current.right === next.right ? current : next);
+    };
+    updateScrollState();
+    container.addEventListener('scroll', updateScrollState, { passive: true });
+    window.addEventListener('resize', updateScrollState);
+    return () => {
+      container.removeEventListener('scroll', updateScrollState);
+      window.removeEventListener('resize', updateScrollState);
+    };
+  }, [selectedWeekId, subject?.id, revisionAssignmentKey, showAllRevisionWeeks]);
+
+  const scrollRevisionWeeks = (direction) => {
+    const container = revisionTabsRef.current;
+    if (!container) return;
+    const tab = container.querySelector('.week-tab');
+    const step = tab ? tab.getBoundingClientRect().width + 7 : Math.max(160, container.clientWidth * 0.7);
+    container.scrollBy({ left: direction * step, behavior: 'smooth' });
+  };
 
   if (!weak.length) {
     return (
@@ -3733,12 +3850,15 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
     );
   }
 
-  const activeAssignment = assignments.find((a) => a.id === selectedWeekId) || assignments[0];
-  const activeIndex = Math.max(0, assignments.findIndex((a) => a.id === activeAssignment?.id));
-  const weekWeak = activeAssignment
-    ? weak.filter((w) => w.q._aid === activeAssignment.id).sort((a, b) =>
-        activeAssignment.questions.findIndex((q) => q.id === a.q.id) - activeAssignment.questions.findIndex((q) => q.id === b.q.id))
+  const activeAssignment = revisionAssignments.find((a) => a.id === selectedWeekId) || revisionAssignments[0];
+  const activeIndex = Math.max(0, revisionAssignments.findIndex((a) => a.id === activeAssignment?.id));
+  const sortWeakForAssignment = (assignment) => assignment
+    ? weak.filter((w) => w.q._aid === assignment.id).sort((a, b) =>
+        assignment.questions.findIndex((q) => q.id === a.q.id) - assignment.questions.findIndex((q) => q.id === b.q.id))
     : [];
+  const weekWeak = sortWeakForAssignment(activeAssignment);
+  const allRevisionWeak = revisionAssignments.flatMap((assignment) => sortWeakForAssignment(assignment));
+  const visibleRevisionWeak = showAllRevisionWeeks ? allRevisionWeak : weekWeak;
 
   return (
     <div className="page wrap">
@@ -3775,37 +3895,55 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
       </div>
 
       <h2 className="section-title">Revision notes</h2>
-      <div className="notes-toolbar revision-week-toolbar" aria-label="Revision week navigation">
-        <div className="week-pager">
-          <div className="week-tabs-shell" role="group" aria-label="Scrollable revision week selector">
-            <div ref={revisionTabsRef} className="week-tabs" role="tablist" aria-label="Choose revision week">
-              {assignments.map((item) => {
-                const count = weak.filter((w) => w.q._aid === item.id).length;
-                return (
+      <div className="revision-nav-layout">
+        <div className="notes-toolbar revision-week-toolbar" aria-label="Revision week navigation">
+          <div className="week-pager">
+            <div className="week-tabs-shell" role="group" aria-label="Scrollable revision week selector">
+              <button type="button" className="week-scroll-arrow" aria-label="Scroll to previous revision weeks"
+                disabled={!revisionScrollState.left} onClick={() => scrollRevisionWeeks(-1)}>
+                <span aria-hidden="true" className="week-arrow-glyph">&lt;</span>
+              </button>
+              <div ref={revisionTabsRef} className="week-tabs revision-week-tabs" role="tablist" aria-label="Choose a week with revision notes"
+                style={{
+                  '--revision-tab-count': Math.max(1, revisionAssignments.length),
+                  '--revision-slot-width': Math.min(3, revisionAssignments.length) === 1 ? '100%' : (Math.min(3, revisionAssignments.length) === 2 ? 'calc(50% - 3px)' : 'calc(33.333333% - 4px)')
+                }}>
+                {revisionAssignments.map((item) => (
                   <button
                     key={item.id}
                     ref={(el) => { revisionTabRefs.current[item.id] = el; }}
                     role="tab"
-                    aria-selected={item.id === activeAssignment?.id}
-                    className={'week-tab' + (item.id === activeAssignment?.id ? ' active' : '') + (count ? '' : ' empty-week-tab')}
-                    onClick={() => setSelectedWeekId(item.id)}
-                    title={item.name + ' · ' + count + ' weak questions'}
+                    aria-selected={!showAllRevisionWeeks && item.id === activeAssignment?.id}
+                    className={'week-tab' + (!showAllRevisionWeeks && item.id === activeAssignment?.id ? ' active' : '')}
+                    onClick={() => { setSelectedWeekId(item.id); setShowAllRevisionWeeks(false); }}
+                    title={item.name}
                   >
                     <span>{item.name}</span>
-                    <small>{count}</small>
                   </button>
-                );
-              })}
+                ))}
+              </div>
+              <button type="button" className="week-scroll-arrow" aria-label="Scroll to later revision weeks"
+                disabled={!revisionScrollState.right} onClick={() => scrollRevisionWeeks(1)}>
+                <span aria-hidden="true" className="week-arrow-glyph">&gt;</span>
+              </button>
             </div>
           </div>
         </div>
+        <button type="button" className={'btn sm revision-all-weeks' + (showAllRevisionWeeks ? ' active' : '')}
+          aria-pressed={showAllRevisionWeeks}
+          onClick={() => setShowAllRevisionWeeks((value) => !value)}>
+          <Icon name={showAllRevisionWeeks ? 'check' : 'layers'} size={13} />
+          {showAllRevisionWeeks ? 'All weeks shown' : 'Show all weeks'}
+        </button>
       </div>
 
       <div className="notes-controls revision-notes-controls">
         <div>
-          <h3>{activeAssignment?.name || 'Revision notes'}</h3>
+          <h3>{showAllRevisionWeeks ? 'All weeks · Revision notes' : (activeAssignment?.name || 'Revision notes')}</h3>
           <div className="notes-question-count" style={{ marginTop: 4 }}>
-            {weekWeak.length} weak question{weekWeak.length === 1 ? '' : 's'} in this week
+            {showAllRevisionWeeks
+              ? `${visibleRevisionWeak.length} weak question${visibleRevisionWeak.length === 1 ? '' : 's'} across ${revisionAssignments.length} week${revisionAssignments.length === 1 ? '' : 's'}`
+              : `${visibleRevisionWeak.length} weak question${visibleRevisionWeak.length === 1 ? '' : 's'} in this week`}
           </div>
         </div>
         <label className="row notes-explanation-toggle" style={{ gap: 8, cursor: 'pointer', fontSize: 'var(--fs-sm)' }}>
@@ -3814,13 +3952,13 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
         </label>
       </div>
 
-      {weekWeak.length === 0 ? (
+      {visibleRevisionWeak.length === 0 ? (
         <div className="card empty revision-empty">
           <div className="empty-mark"><Icon name="book" size={21} /></div>
           <h3>No weak questions in {activeAssignment?.name || 'this week'}</h3>
           <p>Questions you repeatedly get wrong from this week will appear here as you practise.</p>
         </div>
-      ) : weekWeak.map(({ q, st }) => {
+      ) : visibleRevisionWeak.map(({ q, st }) => {
         const ans = answerIndices(q);
         return (
           <div className="card note" key={q.id} style={{ marginBottom: 12 }}>
@@ -3852,10 +3990,10 @@ function CheatsheetView({ subject, progress, onStudy, onPracticeWeak }) {
         );
       })}
 
-      <div className="row between notes-week-next-actions" style={{ marginTop: 20, gap: 10 }}>
-        <button className="btn" disabled={activeIndex === 0} onClick={() => setSelectedWeekId(assignments[activeIndex - 1].id)}><Icon name="arrowL" size={13} /> Previous week</button>
-        <button className="btn primary" disabled={activeIndex >= assignments.length - 1} onClick={() => setSelectedWeekId(assignments[activeIndex + 1].id)}>Next week <Icon name="arrowR" size={13} /></button>
-      </div>
+      {!showAllRevisionWeeks && <div className="row between notes-week-next-actions" style={{ marginTop: 20, gap: 10 }}>
+        <button className="btn" disabled={activeIndex === 0} onClick={() => setSelectedWeekId(revisionAssignments[activeIndex - 1].id)}><Icon name="arrowL" size={13} /> Previous week</button>
+        <button className="btn primary" disabled={activeIndex >= revisionAssignments.length - 1} onClick={() => setSelectedWeekId(revisionAssignments[activeIndex + 1].id)}>Next week <Icon name="arrowR" size={13} /></button>
+      </div>}
       <AppFooter showReport={true} />
     </div>
   );
@@ -3867,6 +4005,7 @@ function NotesView({ subject, assignment, progress, onPractice }) {
   const [hideExplanations, setHideExplanations] = useState(false);
   const weekTabRefs = useRef({});
   const weekTabsContainerRef = useRef(null);
+  const [weekScrollState, setWeekScrollState] = useState({ left: false, right: false });
 
   useEffect(() => {
     if (assignment?.id) setSelectedId(assignment.id);
@@ -3888,7 +4027,29 @@ function NotesView({ subject, assignment, progress, onPractice }) {
     if (Math.abs(nextScrollLeft - container.scrollLeft) > 1) {
       container.scrollTo({ left: Math.max(0, nextScrollLeft), behavior: 'smooth' });
     }
-  }, [selectedId, subject?.id]);
+    const updateScrollState = () => {
+      const next = {
+        left: container.scrollLeft > 2,
+        right: container.scrollLeft + container.clientWidth < container.scrollWidth - 2,
+      };
+      setWeekScrollState((current) => current.left === next.left && current.right === next.right ? current : next);
+    };
+    updateScrollState();
+    container.addEventListener('scroll', updateScrollState, { passive: true });
+    window.addEventListener('resize', updateScrollState);
+    return () => {
+      container.removeEventListener('scroll', updateScrollState);
+      window.removeEventListener('resize', updateScrollState);
+    };
+  }, [selectedId, subject?.id, assignments.length]);
+
+  const scrollNotesWeeks = (direction) => {
+    const container = weekTabsContainerRef.current;
+    if (!container) return;
+    const tab = container.querySelector('.week-tab');
+    const step = tab ? tab.getBoundingClientRect().width + 7 : Math.max(160, container.clientWidth * 0.7);
+    container.scrollBy({ left: direction * step, behavior: 'smooth' });
+  };
 
   if (!assignments.length) return <div className="page wrap"><h1>Notes</h1><div className="card empty"><h3>No notes available</h3><p>There are no weekly assignments available for this subject yet.</p></div></div>;
 
@@ -3909,6 +4070,10 @@ function NotesView({ subject, assignment, progress, onPractice }) {
       <div className="notes-toolbar" aria-label="Week navigation">
         <div className="week-pager">
           <div className="week-tabs-shell" role="group" aria-label="Scrollable week selector">
+            <button type="button" className="week-scroll-arrow" aria-label="Scroll to previous weeks"
+              disabled={!weekScrollState.left} onClick={() => scrollNotesWeeks(-1)}>
+              <span aria-hidden="true" className="week-arrow-glyph">&lt;</span>
+            </button>
             <div ref={weekTabsContainerRef} className="week-tabs" role="tablist" aria-label="Choose week">
               {assignments.map((item) => (
                 <button
@@ -3923,6 +4088,10 @@ function NotesView({ subject, assignment, progress, onPractice }) {
                 >{item.name}</button>
               ))}
             </div>
+            <button type="button" className="week-scroll-arrow" aria-label="Scroll to later weeks"
+              disabled={!weekScrollState.right} onClick={() => scrollNotesWeeks(1)}>
+              <span aria-hidden="true" className="week-arrow-glyph">&gt;</span>
+            </button>
           </div>
         </div>
       </div>
@@ -4019,7 +4188,7 @@ function SettingsModal({ settings, setSettings, theme, setTheme, accent, setAcce
               </div>
               <Switch on={settings.instantFeedback} onChange={(v) => setSettings({ ...settings, instantFeedback: v })} />
             </div>
-            {subjectId === 'joy_of_computing_using_python' ? (
+            {subject?.id === 'joy_of_computing_using_python' ? (
               <div className="setrow">
                 <div style={{ minWidth: 0, flex: 1 }}>
                   <div className="lbl">Question order fixed for Joy of Computing</div>
