@@ -13,7 +13,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-
 <!-- ═══════════════════════════ SEO / AEO ═══════════════════════════ -->
 <title>Mooc Mastery - Free NPTEL MCQ Practice, Mock Tests & Explanations</title>
 
@@ -288,7 +287,6 @@
 
 <!-- FAQ answers are rendered in the visible page. FAQ rich results are not a current Google SEO target. -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1484,7 +1482,6 @@ body.modal-open{overflow:hidden}
  .install-card .btn{width:100%}
 }
 
-
 /* Joy of Computing source-material disclaimer — shown only on that subject's Practice screen */
 .course-disclaimer {
   margin-top: 16px;
@@ -1668,8 +1665,6 @@ body.modal-open{overflow:hidden}
   .python-code { font-size:12px; }
   .python-line-number { width:32px; flex-basis:32px; margin-right:9px; padding-right:8px; }
 }
-
-
 
 /* ── Refined navigation, responsive week grid, and quiz header ───────────── */
 .topbar{
@@ -1872,8 +1867,6 @@ body.modal-open{overflow:hidden}
   .quiz-timer{min-width:64px;padding:0 7px}
 }
 
-
-
 /* Final responsive polish: use a full-width, non-floating mobile tab bar. */
 @media (max-width:767px){
   .bottom-nav{
@@ -1908,8 +1901,7 @@ body.modal-open{overflow:hidden}
 .quick-practice-card .shuffle-controls{margin-top:0}
 .quick-practice-controls{gap:12px}
 .quick-count-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;flex-wrap:wrap}
-.quick-count-presets{gap:6px;flex-wrap:nowrap}
-.quick-count-presets .btn{min-width:42px}
+
 .quick-start-btn{min-height:46px}
 @media(max-width:520px){
   .quick-practice-card{padding:13px}
@@ -1923,13 +1915,8 @@ body.modal-open{overflow:hidden}
   .quick-count-row>.stepper{height:36px}
   .quick-count-row>.stepper button{width:32px}
   .quick-count-row>.stepper input{width:40px;font-size:13px}
-  .quick-count-presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;min-width:0}
-  .quick-count-presets .btn{width:100%;min-width:0;height:36px;padding:0 4px;font-size:12px}
+
   .quick-start-btn{height:44px;min-height:44px;font-size:15px;padding:0 10px;gap:7px}
-}
-@media(max-width:359px){
-  .quick-count-row{grid-template-columns:1fr;justify-items:start}
-  .quick-count-presets{width:100%}
 }
 
 /* Custom week cards: four equal columns on desktop and compact two-column cards on mobile. */
@@ -2028,8 +2015,6 @@ br.report-mobile-break{display:none}
   .revision-notes-controls{flex-direction:column;align-items:flex-start}
 }
 
-
-
 /* Final navigation and history refinements */
 .week-tabs-shell{
   display:flex;align-items:center;gap:4px;
@@ -2101,8 +2086,6 @@ br.report-mobile-break{display:none}
 @media(max-width:767px){
   .revision-week-tabs .week-tab{flex-basis:var(--revision-slot-width,calc(33.333333% - 4px));width:var(--revision-slot-width,calc(33.333333% - 4px))}
 }
-
-
 
 /* Homepage-only styles. Kept scoped so other app screens retain their layouts. */
 .page.wrap .hero{padding:clamp(18px,2.4vw,30px) 0 clamp(28px,3.2vw,42px);}
@@ -2379,6 +2362,320 @@ br.report-mobile-break{display:none}
   .page.wrap .hero-stat span{font-size:11px;}
 }
 
+/* Focused UX refinements for Notes, practice controls, and the Revision cards. */
+@media (min-width: 768px) {
+  .note .opts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    align-items: stretch;
+  }
+  .note .opts li { min-width: 0; margin: 0; }
+  .note .opts li > span:nth-child(2) { min-width: 0; overflow-wrap: anywhere; }
+}
+
+.quiz-options-disclosure {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.quiz-options-disclosure > summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 12px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.quiz-options-disclosure > summary::-webkit-details-marker { display: none; }
+.quiz-options-disclosure > summary:hover { background: var(--accent-soft); }
+.quiz-options-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 1px solid var(--accent-line);
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.quiz-options-copy { display: flex; flex: 1 1 auto; flex-direction: column; gap: 3px; min-width: 0; }
+.quiz-options-copy strong { color: var(--text); font-size: var(--fs-sm); line-height: 1.3; font-weight: 700; }
+.quiz-options-copy small { color: var(--muted); font-size: var(--fs-xs); line-height: 1.45; }
+.quiz-options-chevron { flex: 0 0 auto; color: var(--muted); font-size: 21px; line-height: 1; transform: rotate(0deg); transition: transform var(--fast) var(--ease); }
+.quiz-options-disclosure[open] > summary { border-bottom: 1px solid var(--border); }
+.quiz-options-disclosure[open] .quiz-options-chevron { transform: rotate(180deg); }
+.quiz-options-body { padding: 11px 12px 12px; }
+.quiz-options-body .shuffle-controls { margin: 0; }
+.quiz-options-body .shuffle-controls.compact { margin: 0; }
+.quiz-options-body .setrow:last-child { padding-bottom: 9px; }
+
+@media (max-width: 520px) {
+  .quiz-options-disclosure > summary { padding: 10px; gap: 9px; }
+  .quiz-options-icon { width: 32px; height: 32px; flex-basis: 32px; }
+  .quiz-options-copy strong { font-size: 13px; }
+  .quiz-options-copy small { font-size: 11px; }
+  .quiz-options-body { padding: 8px 10px 10px; }
+
+}
+
+/* All-question shortcut and responsive Clear action. */
+
+@media (max-width: 520px) {
+  .quick-count-row { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 8px; }
+  .quick-count-row > .stepper { min-width: 0; }
+
+}
+@media (max-width: 359px) {
+  .quick-count-row { grid-template-columns: minmax(0,1fr); justify-items: stretch; }
+  .quick-count-row > .stepper { justify-self: start; }
+
+}
+@media (max-width: 520px) {
+  .custom-start-controls { display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%; }
+  .custom-count-control { order: 0; align-self: flex-start; }
+  .custom-start-btn { order: 1; width: 100%; min-width: 0; flex: 0 0 auto; }
+  .custom-clear-btn {
+    order: 2; width: 100%; min-width: 0; min-height: 42px; flex: 0 0 auto;
+    border: 1px solid var(--accent-line); border-radius: var(--r);
+    background: var(--accent-soft); color: var(--accent); font-weight: 600;
+  }
+  .custom-clear-btn:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-line); color: var(--text); }
+  .custom-clear-btn:disabled { opacity: .45; background: transparent; }
+}
+
+/* Question-count and custom-set layout refinements. */
+.quick-practice-card .quick-count-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: nowrap;
+  min-width: 0;
+  width: 100%;
+}
+.quick-question-count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  flex: 0 1 auto;
+}
+.quick-question-label {
+  color: var(--muted);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.quick-practice-card .quick-question-count .stepper { flex: 0 0 auto; }
+.quick-practice-card .quick-count-row > .quick-all-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: max-content;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r);
+  background: linear-gradient(135deg, var(--accent-soft), var(--surface-2));
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.045);
+}
+.quick-practice-card .quick-count-row > .quick-all-btn:hover:not(:disabled) {
+  background: var(--accent-line);
+  border-color: var(--accent);
+  color: var(--text);
+}
+.quick-practice-card .quick-count-row > .quick-all-btn.primary {
+  background: var(--accent-solid);
+  border-color: var(--accent-solid);
+  color: var(--accent-on);
+  box-shadow: 0 3px 10px var(--accent-glow);
+}
+.quick-practice-card .quick-count-row > .quick-all-btn:disabled { opacity: .45; }
+
+/* Custom-set controls use a clear hierarchy: context, count/actions, then helper text. */
+.custom-start-area {
+  gap: 12px;
+  padding: 16px;
+  border-radius: 15px;
+}
+.custom-start-copy {
+  gap: 5px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.custom-start-copy strong { font-size: var(--fs-base); line-height: 1.35; }
+.custom-start-copy span { font-size: var(--fs-sm); line-height: 1.5; }
+.custom-start-controls {
+  display: grid;
+  grid-template-columns: auto minmax(180px, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+.custom-start-controls.no-count { grid-template-columns: minmax(0, 1fr) auto; }
+.custom-count-control { gap: 9px; white-space: nowrap; }
+.custom-count-control .tiny { font-size: var(--fs-xs); font-weight: 600; }
+.custom-start-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  flex: initial;
+  padding-inline: 16px;
+}
+.custom-clear-btn {
+  min-width: 78px;
+  min-height: 44px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 650;
+}
+.custom-clear-btn:hover:not(:disabled) {
+  background: var(--accent-line);
+  border-color: var(--accent);
+  color: var(--text);
+}
+.custom-clear-btn:disabled { opacity: .45; }
+.custom-start-hint { line-height: 1.45; }
+
+@media (max-width: 520px) {
+  .quick-practice-card .quick-count-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+  }
+  .quick-question-count { gap: 6px; }
+  .quick-practice-card .quick-question-count .stepper { height: 36px; }
+  .quick-practice-card .quick-question-count .stepper button { width: 32px; }
+  .quick-practice-card .quick-question-count .stepper input { width: 40px; font-size: 13px; }
+  .quick-practice-card .quick-count-row > .quick-all-btn { min-height: 36px; padding: 0 11px; font-size: 12px; }
+  .custom-start-area { padding: 13px; gap: 11px; }
+  .custom-start-copy { padding-bottom: 10px; }
+  .custom-start-copy strong { font-size: 14px; }
+  .custom-start-copy span { font-size: 12px; }
+  .custom-start-controls,
+  .custom-start-controls.no-count {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .custom-count-control { align-self: flex-start; }
+  .custom-start-btn { width: 100%; min-height: 44px; flex: 0 0 auto; }
+  .custom-clear-btn { width: 100%; min-height: 42px; flex: 0 0 auto; }
+  .custom-start-hint { padding-top: 1px; }
+
+}
+@media (max-width: 380px) {
+  .quick-question-label { display: none; }
+  .quick-practice-card .quick-count-row { grid-template-columns: minmax(0,1fr) auto; }
+  .quick-practice-card .quick-count-row > .quick-all-btn { padding: 0 9px; font-size: 11.5px; }
+}
+
+@media (min-width: 521px) and (max-width: 640px) {
+  .custom-start-controls,
+  .custom-start-controls.no-count {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .custom-count-control { align-self: flex-start; }
+  .custom-start-btn, .custom-clear-btn { width: 100%; flex: 0 0 auto; }
+}
+
+/* Revision cards and state-aware actions. */
+.revision-cards { align-items: stretch; gap: var(--s4); }
+.revision-cards > .revision-card {
+  display: flex; flex-direction: column; gap: 0; height: 100%; min-width: 0;
+  margin-top: 0; padding: var(--s5); overflow: hidden;
+  border: 1px solid var(--accent-line); border-radius: var(--r-lg);
+  background: linear-gradient(120deg, var(--accent-soft), var(--surface) 70%);
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--base) var(--ease), background var(--base) var(--ease),
+    box-shadow var(--base) var(--ease);
+}
+.revision-card-weak { background: linear-gradient(120deg, var(--red-bg), var(--surface) 70%); }
+.revision-card-bookmarked { background: linear-gradient(120deg, var(--accent-soft), var(--surface) 70%); }
+.revision-card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 0; }
+.revision-card-title { display: flex; align-items: center; gap: 11px; min-width: 0; }
+.revision-card-title h3 { min-width: 0; font-size: var(--fs-base); line-height: 1.35; }
+.revision-card-icon {
+  display: grid; place-items: center; width: 42px; height: 42px; flex: 0 0 42px;
+  border: 1px solid var(--accent-line); border-radius: 11px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.revision-card-icon-weak { border-color: var(--red-bg); background: var(--red-bg); color: var(--red); }
+.revision-card-icon-bookmarked { border-color: var(--accent-line); background: var(--accent-soft); color: var(--accent); }
+.revision-card .badge { flex: 0 0 auto; }
+.revision-card-description { margin: 14px 0 18px; min-height: 3.1em; line-height: 1.6; }
+.revision-card-action {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  width: 100%; min-height: 46px; margin-top: auto; padding: 0 14px;
+  border: 1px solid var(--accent-solid); border-radius: var(--r);
+  background: var(--accent-solid); color: var(--accent-on);
+  font-size: var(--fs-sm); font-weight: 650;
+  box-shadow: none;
+  transition: background var(--fast) var(--ease), border-color var(--fast) var(--ease),
+    box-shadow var(--fast) var(--ease), transform var(--fast) var(--ease), opacity var(--fast) var(--ease);
+}
+.revision-card-action svg { flex: 0 0 auto; }
+.revision-card-action:not(:disabled):hover {
+  background: var(--accent-solid-h); border-color: var(--accent-solid-h);
+  box-shadow: 0 4px 12px var(--accent-glow); transform: translateY(-1px);
+}
+.revision-card-action:not(:disabled):active { transform: translateY(0); box-shadow: 0 1px 3px var(--accent-glow); }
+.revision-card-action:disabled {
+  background: var(--accent-solid); border-color: var(--accent-solid); color: var(--accent-on);
+  opacity: .48; box-shadow: none; cursor: not-allowed; transform: none;
+}
+.revision-card-action:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (hover: hover) {
+  .revision-cards > .revision-card:hover { border-color: var(--accent-line); box-shadow: var(--shadow-sm); }
+}
+@media (max-width: 520px) {
+  .revision-cards { gap: 12px; }
+  .revision-cards > .revision-card { padding: 14px; }
+  .revision-card-title { gap: 9px; }
+  .revision-card-icon { width: 38px; height: 38px; flex-basis: 38px; border-radius: 10px; }
+  .revision-card-title h3 { font-size: var(--fs-sm); }
+  .revision-card-description { min-height: 0; margin: 12px 0 14px; font-size: 12.5px; }
+}
+
+/* Mobile: full-width Switch subject pill */
+@media (max-width: 720px) {
+  .home-head .switch-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    flex: 0 0 100%;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+
+    /* Preserve the existing yellow theme and styling */
+    box-shadow: none;
+  }
+
+  .home-head .switch-btn .switch-btn-label {
+    display: inline;
+  }
+}
 </style>
 </head>
 <body>
@@ -2496,7 +2793,6 @@ function FormattedText({ text }) {
     </>
   );
 }
-
 
 function highlightPythonLine(line) {
   const tokenRe = /(#[^\n]*|"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(?:False|None|True|and|as|assert|async|await|break|class|continue|def|del|elif|else|except|finally|for|from|global|if|import|in|is|lambda|nonlocal|not|or|pass|raise|return|try|while|with|yield)\b|\b(?:print|input|len|range|int|float|str|list|dict|set|tuple|sum|min|max|sorted|enumerate|zip|type|abs|round|open)\b|\b\d+(?:\.\d+)?\b|(?:\+=|-=|\*=|\/=|==|!=|<=|>=|->|\/\/|\*\*|[=+\-*\/%<>])|[A-Za-z_]\w*)/g;
@@ -3084,7 +3380,6 @@ const FAQS = [
     a: "Prioritise the topics and weeks covered by your course, practise mixed and timed question sets, review explanations for every mistake, and revisit your weak-question list. Use official course announcements to confirm the exam format, syllabus and schedule." }
 ];
 
-
 function InstallAppPanel({ compact = false }) {
   const [available, setAvailable] = useState(() => !!window.__moocInstallPrompt);
   const [installed, setInstalled] = useState(() => {
@@ -3441,35 +3736,53 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
 
       <h2 className="section-title">Quick practice</h2>
       <div className="card quick-practice-card">
-        <p className="muted quick-practice-intro" style={{ marginBottom: 12 }}>{subject.id === 'joy_of_computing_using_python' ? 'Questions are taken in their original assignment order to preserve connected case studies.' : 'A random set drawn from the entire question bank.'}</p>
-        <ShuffleControls
-          shuffleQuestions={settings.shuffleQuestions}
-          shuffleOptions={settings.shuffleOptions}
-          onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
-          onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
-          compact
-          lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
-        />
+        <p className="muted quick-practice-intro" style={{ marginBottom: 12 }}>{subject.id === 'joy_of_computing_using_python' ? 'Practise questions in their original order so each case study stays with the questions that refer to it.' : 'Jump straight into practice with questions from across this course. Choose how many you want to answer, then get started.'}</p>
         <div className="col quick-practice-controls">
           <div className="quick-count-row">
-            <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
-            <div className="pill-row quick-count-presets" aria-label="Choose question count">
-              {[10, 20, 30].map((n) => (
-                <button key={n} className={'btn sm' + (count === Math.min(n, bank.length) ? ' primary' : '')} onClick={() => setCount(Math.min(n, bank.length))}>{n}</button>
-              ))}
-              <button className={'btn sm' + (count === bank.length ? ' primary' : '')} onClick={() => setCount(bank.length)}>All</button>
+            <div className="quick-question-count">
+              <span className="quick-question-label">Questions</span>
+              <Stepper value={count} onChange={setCount} min={1} max={Math.max(1, bank.length)} step={5} />
             </div>
+            <button
+              type="button"
+              className={'btn quick-all-btn' + (count === bank.length ? ' primary' : '')}
+              onClick={() => setCount(bank.length)}
+              disabled={!bank.length}
+              aria-label={`Select all ${bank.length} questions in this course`}
+            >
+              All questions
+            </button>
           </div>
           <button className="btn primary block lg quick-start-btn" disabled={!bank.length} onClick={() => onStartRandom(count)}>
-            <Icon name="play" size={13} /> Start · {Math.min(count, bank.length)} questions
+            <Icon name="play" size={13} /> Start practice · {Math.min(count, bank.length)} questions
           </button>
         </div>
+        <details className="quiz-options-disclosure">
+          <summary>
+            <span className="quiz-options-icon" aria-hidden="true"><Icon name="settings" size={15} /></span>
+            <span className="quiz-options-copy">
+              <strong>Quiz options</strong>
+              <small>{subject.id === 'joy_of_computing_using_python' ? 'Question order stays fixed for case-study context; adjust answer choices below.' : 'Choose whether questions and answer choices are shuffled before you start.'}</small>
+            </span>
+            <span className="quiz-options-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div className="quiz-options-body">
+            <ShuffleControls
+              shuffleQuestions={settings.shuffleQuestions}
+              shuffleOptions={settings.shuffleOptions}
+              onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
+              onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+              compact
+              lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
+            />
+          </div>
+        </details>
       </div>
 
       <h2 className="section-title">Custom set</h2>
       <div className="card custom-set-card">
         <div className="custom-set-intro">
-          <p className="muted">{subject.id === 'joy_of_computing_using_python' ? 'Choose the weeks you want to practise. Question order stays fixed to preserve connected case studies.' : 'Choose one or more weeks, then tailor the question order and set size.'}</p>
+          <p className="muted">{subject.id === 'joy_of_computing_using_python' ? 'Pick the weeks you want to work on. Questions stay in assignment order so shared case studies make sense.' : 'Pick one or more weeks to focus your practice. You can choose the question count and quiz options before you begin.'}</p>
           <span className="custom-selection-count" aria-live="polite">{picked.length ? `${picked.length} ${picked.length === 1 ? 'week' : 'weeks'} selected` : 'No weeks selected'}</span>
         </div>
         <div className="grid custom-week-grid" style={{ marginBottom: 18 }}>
@@ -3490,34 +3803,12 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
           })}
         </div>
 
-        <div className={'custom-randomization' + (picked.length ? ' ready' : '')}>
-          <div className="custom-randomization-heading">
-            <div>
-              <div className="custom-subhead">Randomization</div>
-              <p className="tiny">Choose how selected questions and answer options appear.</p>
-            </div>
-            <span className={'custom-state-chip' + (picked.length ? ' active' : '')}>
-              <span aria-hidden="true">{picked.length ? '✓' : '○'}</span> {picked.length ? 'Ready to configure' : 'Select a week first'}
-            </span>
-          </div>
-          <ShuffleControls
-            shuffleQuestions={settings.shuffleQuestions}
-            shuffleOptions={settings.shuffleOptions}
-            onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
-            onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
-            compact
-            lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
-            questionHint={subject.id === 'joy_of_computing_using_python' ? 'Disabled for this course to preserve case-study order.' : 'Mix the selected questions each time you start a set.'}
-            optionHint="Mix answer choices without changing which answer is correct."
-          />
-        </div>
-
         <div className={'custom-start-area' + (picked.length ? ' ready' : '')}>
           <div className="custom-start-copy">
             <strong>{picked.length ? `${poolCustom.length} questions available` : 'Your custom practice set'}</strong>
             <span>{picked.length ? 'Set the number of questions, then start practising.' : 'Select at least one week to activate your custom quiz.'}</span>
           </div>
-          <div className="custom-start-controls">
+          <div className={'custom-start-controls '+(picked.length ? 'has-count' : 'no-count')}> 
             {picked.length > 0 && (
               <div className="custom-count-control">
                 <span className="tiny">Questions</span>
@@ -3534,34 +3825,73 @@ function HomeView({ subject, progress, settings, setSettings, onStartRandom, onS
             </button>
             <button className="btn ghost custom-clear-btn" onClick={() => setPicked([])} disabled={!picked.length}>Clear</button>
           </div>
-          <span id="custom-start-hint" className="tiny custom-start-hint">{picked.length ? 'Your selected weeks are ready to practise.' : 'The Start button will light up when you select a week.'}</span>
+          <span id="custom-start-hint" className="tiny custom-start-hint">{picked.length ? 'Your selected weeks are ready. Start when you are set.' : 'Select at least one week to unlock your custom quiz.'}</span>
         </div>
+        <details className="quiz-options-disclosure custom-quiz-options">
+          <summary>
+            <span className="quiz-options-icon" aria-hidden="true"><Icon name="settings" size={15} /></span>
+            <span className="quiz-options-copy">
+              <strong>Quiz options</strong>
+              <small>{subject.id === 'joy_of_computing_using_python' ? 'Question order stays fixed for case-study context; adjust answer choices below.' : 'Set how your selected questions and answer choices appear.'}</small>
+            </span>
+            <span className="quiz-options-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div className="quiz-options-body">
+            <ShuffleControls
+              shuffleQuestions={settings.shuffleQuestions}
+              shuffleOptions={settings.shuffleOptions}
+              onQuestionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleQuestions: v }))}
+              onOptionsChange={(v) => setSettings((prev) => ({ ...prev, shuffleOptions: v }))}
+              compact
+              lockQuestionOrder={subject.id === 'joy_of_computing_using_python'}
+              questionHint="Mix the selected questions each time you start a set."
+              optionHint="Shuffle the answer choices without changing the correct answer."
+            />
+          </div>
+        </details>
       </div>
 
       <h2 className="section-title">Revision</h2>
-      <div className="grid g2">
-        <div className="card">
-          <div className="row between">
-            <h3>Weak questions</h3>
+      <div className="grid g2 revision-cards">
+        <div className="card revision-card revision-card-weak">
+          <div className="row between revision-card-heading">
+            <div className="revision-card-title">
+              <span className="revision-card-icon revision-card-icon-weak" aria-hidden="true"><Icon name="chart" size={18} /></span>
+              <h3>Weak questions</h3>
+            </div>
             <span className={'badge ' + (weak.length ? 'red' : 'green')}>{weak.length}</span>
           </div>
-          <p className="muted" style={{ margin: '8px 0 16px' }}>Answered wrong twice or more, still under 60% correct.</p>
-          <button className="btn block" disabled={!weak.length} onClick={onStartWeak}>
-            {weak.length ? 'Drill weak questions' : 'Nothing to drill yet'}
+          <p className="muted revision-card-description">Questions you have missed at least twice and still answer correctly less than 60% of the time show up here.</p>
+          <button
+            type="button"
+            className="btn primary block revision-card-action"
+            onClick={onStartWeak}
+            disabled={!weak.length}
+            aria-label={weak.length ? 'Drill weak questions' : 'Nothing to drill yet'}
+          >
+            {weak.length ? <><span>Drill weak questions</span><Icon name="arrowR" size={15} /></> : <span>Nothing to drill yet</span>}
           </button>
         </div>
-        <div className="card">
-          <div className="row between">
-            <h3>Bookmarked</h3>
+        <div className="card revision-card revision-card-bookmarked">
+          <div className="row between revision-card-heading">
+            <div className="revision-card-title">
+              <span className="revision-card-icon revision-card-icon-bookmarked" aria-hidden="true"><Icon name="bookmark" size={18} /></span>
+              <h3>Bookmarked</h3>
+            </div>
             <span className={'badge ' + (bookmarks.length ? 'amber' : 'grey')}>{bookmarks.length}</span>
           </div>
-          <p className="muted" style={{ margin: '8px 0 16px' }}>Use the bookmark button during a quiz to save a question.</p>
-          <button className="btn block" disabled={!bookmarks.length} onClick={onStartBookmarks}>
-            {bookmarks.length ? 'Practice bookmarks' : 'No bookmarks yet'}
+          <p className="muted revision-card-description">Save a question during practice and come back to it whenever you want a quick refresher.</p>
+          <button
+            type="button"
+            className="btn primary block revision-card-action"
+            onClick={onStartBookmarks}
+            disabled={!bookmarks.length}
+            aria-label={bookmarks.length ? 'Practise bookmarked questions' : 'No bookmarks yet'}
+          >
+            {bookmarks.length ? <><span>Practise bookmarks</span><Icon name="arrowR" size={15} /></> : <span>No bookmarks yet</span>}
           </button>
         </div>
       </div>
-
 
       <AppFooter showReport={true} />
     </div>
@@ -4441,7 +4771,7 @@ function NotesView({ subject, assignment, progress, onPractice }) {
           <h1>Notes & answers</h1>
           <p className="muted" style={{ marginTop: 6 }}>{subject.title} · Browse questions and correct answers across all weeks.</p>
         </div>
-        <button className="btn primary sm notes-practice-button" onClick={() => onPractice(active.id, active.questions.length)}><Icon name="play" size={12} /> Practise week</button>
+        <button className="btn primary sm notes-practice-button" onClick={() => onPractice(active.id, active.questions.length)}><Icon name="play" size={12} /> Practise {active.name}</button>
       </div>
 
       <div className="notes-toolbar" aria-label="Week navigation">
