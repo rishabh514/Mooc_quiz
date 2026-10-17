@@ -3673,7 +3673,7 @@
       "weekLabel": "Week 8",
       "section": "weekly",
       "type": "MCQ",
-      "question": "Which cloud service model is described as middleware offered as a service to developers’, removing the need to manage underlying hardware and operating systems?",
+      "question": "Which cloud service model is described as application middleware offered as a service to developers’, removing the need to manage underlying hardware and operating systems?",
       "options": [
         {
           "key": "A",
@@ -3793,7 +3793,7 @@
       "weekLabel": "Week 8",
       "section": "weekly",
       "type": "MCQ",
-      "question": "CloudSim, awidely used cloud simulation framework, was developed at which institution and is based on which programming language?",
+      "question": "CloudSim, a widely used cloud simulation framework, was developed at which institution and is based on which programming language?",
       "options": [
         {
           "key": "A",
