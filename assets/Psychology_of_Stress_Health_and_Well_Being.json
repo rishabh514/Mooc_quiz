@@ -1,0 +1,2603 @@
+{
+  "course": "Psychology of Stress, Health and Well-Being",
+  "institute": "Indian Institute of Technology Guwahati",
+  "assignment": "Assignments 1-12",
+  "questions": [
+    {
+      "week": 1,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "What is the central idea of the interactional definition of stress proposed by Lazarus and Folkman?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stress is a set of symptoms"
+        },
+        {
+          "key": "B",
+          "text": "Stress is the physiological response to any demand"
+        },
+        {
+          "key": "C",
+          "text": "Stress is a particular relationship between the person and the environment"
+        },
+        {
+          "key": "D",
+          "text": "Stress is a subjective phenomenon based on individual perception"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Stress is a particular relationship between the person and the environment",
+      "explanation": "Lazarus and Folkman's interactional view treats stress as a relationship between a person and the environment. Whether an event is stressful depends on how the person appraises the demands and their ability to cope, rather than on the event or a physiological response alone."
+    },
+    {
+      "week": 1,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "What is reappraisal according to the appraisal model of stress?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is a judgment of a situation as positive or negative during secondary appraisal"
+        },
+        {
+          "key": "B",
+          "text": "It is an evaluation of personal resources in response to a stressful situation"
+        },
+        {
+          "key": "C",
+          "text": "It is an appraisal that follows an earlier appraisal in the same encounter and modifies it"
+        },
+        {
+          "key": "D",
+          "text": "It is the process of judging a particular event as irrelevant, relevant, or stressful during primary appraisal"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It is an appraisal that follows an earlier appraisal in the same encounter and modifies it",
+      "explanation": "Reappraisal is a later evaluation during the same encounter that can revise an earlier appraisal. New information or a changed understanding may alter how threatening or manageable a situation seems; it is distinct from the initial primary appraisal or an assessment of coping resources alone."
+    },
+    {
+      "week": 1,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "How can culture influence an individual's experience of stress?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By determining daily hassles"
+        },
+        {
+          "key": "B",
+          "text": "By influencing the appraisal/perception of an event"
+        },
+        {
+          "key": "C",
+          "text": "By creating positive spillover effects"
+        },
+        {
+          "key": "D",
+          "text": "By causing stress contagion"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "By influencing the appraisal/perception of an event",
+      "explanation": "Culture shapes the meanings, expectations, and norms people bring to an event, which influences whether they interpret it as threatening, challenging, or relatively harmless. The key mechanism in this option is appraisal/perception, not the direct creation of daily hassles or stress contagion."
+    },
+    {
+      "week": 1,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "How are harm loss appraisals different from threat appraisals according to Lazarus?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Harm loss appraisals are future-oriented, while threat appraisals are past-oriented"
+        },
+        {
+          "key": "B",
+          "text": "Harm loss appraisals result from loss or damage, while threat appraisals are present- oriented"
+        },
+        {
+          "key": "C",
+          "text": "Harm loss appraisals are past or present-oriented and result from appraisals of loss or damage, while threat appraisals are future-oriented"
+        },
+        {
+          "key": "D",
+          "text": "Harm loss appraisals see the potential for gain or growth, while threat appraisals involve evaluation of personal resources"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Harm loss appraisals are past or present-oriented and result from appraisals of loss or damage, while threat appraisals are future-oriented",
+      "explanation": "A harm/loss appraisal concerns damage or loss that has already happened or is happening. A threat appraisal concerns possible harm in the future, so the central distinction is past/present loss versus anticipated future harm."
+    },
+    {
+      "week": 1,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "What does pressure to conform involve, according to the paragraph?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Expectations to perform tasks"
+        },
+        {
+          "key": "B",
+          "text": "Life changes requiring readjustment"
+        },
+        {
+          "key": "C",
+          "text": "Expectations to follow others' values and rules"
+        },
+        {
+          "key": "D",
+          "text": "Pursuit of a goal being thwarted"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Expectations to follow others' values and rules",
+      "explanation": "Pressure to conform refers to perceived expectations that a person should follow other people's or a group's values, rules, or standards. That is different from a task demand, a major life change, or a goal being blocked."
+    },
+    {
+      "week": 1,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Which system is responsible for the quick reaction (within a minute) in response to acute stress?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Parasympathetic nervous system"
+        },
+        {
+          "key": "B",
+          "text": "Hypothalamic pituitary adrenocortical (HPA) system"
+        },
+        {
+          "key": "C",
+          "text": "Sympathetic adrenal medullary (SAM) system"
+        },
+        {
+          "key": "D",
+          "text": "Limbic system"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Sympathetic adrenal medullary (SAM) system",
+      "explanation": "The sympathetic-adrenal-medullary (SAM) system produces the rapid fight-or-flight response, including sympathetic activation and catecholamine release. The HPA axis is a more sustained hormonal pathway, so the SAM system best fits the question's 'within a minute' timing."
+    },
+    {
+      "week": 1,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Which system leads to the secretion of corticosteroids such as cortisol in the stress response?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Parasympathetic Nervous System (PNS)"
+        },
+        {
+          "key": "B",
+          "text": "Hypothalamic Pituitary Adrenocortical (HPA) system"
+        },
+        {
+          "key": "C",
+          "text": "Central Nervous System (CNS)"
+        },
+        {
+          "key": "D",
+          "text": "Enteric Nervous System (ENS)"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Hypothalamic Pituitary Adrenocortical (HPA) system",
+      "explanation": "The hypothalamic-pituitary-adrenocortical (HPA) axis activates a hormonal sequence that stimulates the adrenal cortex to release corticosteroids such as cortisol. The parasympathetic and enteric systems are not the pathway identified for cortisol secretion in the stress response."
+    },
+    {
+      "week": 1,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "According to the \"Tend and Befriend\" pattern, how do females respond to stress?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Initiating the fight or flight response"
+        },
+        {
+          "key": "B",
+          "text": "Showing aggressive behavior"
+        },
+        {
+          "key": "C",
+          "text": "Engaging in nurturant activities and maintaining social networks"
+        },
+        {
+          "key": "D",
+          "text": "Withdrawing from social interactions"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Engaging in nurturant activities and maintaining social networks",
+      "explanation": "The tend-and-befriend pattern emphasizes caregiving or nurturant behavior and seeking or maintaining supportive social connections under stress. It highlights affiliative responses rather than only aggression, fight-or-flight behavior, or social withdrawal."
+    },
+    {
+      "week": 2,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "What does the term \"psychosomatic diseases\" refer to?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mental illnesses only"
+        },
+        {
+          "key": "B",
+          "text": "Physical diseases caused by bacteria"
+        },
+        {
+          "key": "C",
+          "text": "Physical diseases influenced by mental factors"
+        },
+        {
+          "key": "D",
+          "text": "Genetic disorders"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Physical diseases influenced by mental factors",
+      "explanation": "Psychosomatic diseases are physical health conditions whose onset, course, or symptoms are influenced by psychological factors. The term does not mean that symptoms are imaginary; it describes an interaction between psychological processes and physical health."
+    },
+    {
+      "week": 2,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "How does stress contribute to cardiovascular diseases?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By promoting blood clotting"
+        },
+        {
+          "key": "B",
+          "text": "By decreasing blood pressure"
+        },
+        {
+          "key": "C",
+          "text": "By causing high levels of physiological arousal and promoting atherosclerosis"
+        },
+        {
+          "key": "D",
+          "text": "By reducing the build-up of fatty patches on arterial walls"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "By causing high levels of physiological arousal and promoting atherosclerosis",
+      "explanation": "Stress can sustain physiological arousal and contribute to processes associated with cardiovascular risk, including elevated blood pressure and atherosclerosis. It does not protect arterial walls or simply lower blood pressure, which is why the option linking arousal with atherosclerosis is the intended answer."
+    },
+    {
+      "week": 2,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "How does Broken Heart Syndrome differ from a heart attack?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It has milder symptoms"
+        },
+        {
+          "key": "B",
+          "text": "It is caused by blocked heart arteries"
+        },
+        {
+          "key": "C",
+          "text": "There's no evidence of blocked heart arteries in Broken Heart Syndrome"
+        },
+        {
+          "key": "D",
+          "text": "It is less common in women"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "There's no evidence of blocked heart arteries in Broken Heart Syndrome",
+      "explanation": "Broken Heart Syndrome (often called stress-induced cardiomyopathy) can resemble a heart attack, but it typically occurs without the blocked coronary arteries characteristic of many heart attacks. The distinction is about the absence of an obstructing coronary blockage, not necessarily milder symptoms."
+    },
+    {
+      "week": 2,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "What did Friedman and Rosenman find in their longitudinal study regarding the likelihood of developing coronary heart disease (CHD) between Type A and Type B individuals?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Type B individuals were twice as likely to develop CHD"
+        },
+        {
+          "key": "B",
+          "text": "No significant difference between Type A and Type B individuals"
+        },
+        {
+          "key": "C",
+          "text": "Type A Individuals were twice as likely to develop CHD"
+        },
+        {
+          "key": "D",
+          "text": "Type A individuals were less likely to develop CHD"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Type A Individuals were twice as likely to develop CHD",
+      "explanation": "Friedman and Rosenman's longitudinal findings linked the Type A behavior pattern with a higher risk of coronary heart disease; the assignment's keyed result is approximately twice the risk compared with Type B individuals. The answer is a comparative risk finding, not that Type A is protective."
+    },
+    {
+      "week": 2,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "What interdisciplinary field of study explores the relationship between psychological factors, neurological factors, and the immune system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neurobiology"
+        },
+        {
+          "key": "B",
+          "text": "Psychoneuroimmunology"
+        },
+        {
+          "key": "C",
+          "text": "Psychopharmacology"
+        },
+        {
+          "key": "D",
+          "text": "Immunology"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Psychoneuroimmunology",
+      "explanation": "Psychoneuroimmunology studies how psychological processes, the nervous system, and immune function interact. Neurobiology and immunology each cover parts of this relationship, but psychoneuroimmunology is the interdisciplinary field named for all three."
+    },
+    {
+      "week": 2,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "According to Dhabhar and McEwen’s (1997, 2001) biphasic model, how does acute stress affect the immune response?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Suppresses the immune response"
+        },
+        {
+          "key": "B",
+          "text": "Has no impact on the immune response"
+        },
+        {
+          "key": "C",
+          "text": "Enhances the immune response by helping in the redistribution of immune cells in the body"
+        },
+        {
+          "key": "D",
+          "text": "Causes exhaustion and weakens immune responses"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Enhances the immune response by helping in the redistribution of immune cells in the body",
+      "explanation": "In Dhabhar and McEwen's biphasic model, acute stress can temporarily enhance aspects of immune function by mobilizing and redistributing immune cells to where they may be useful. This short-term response differs from the suppressive effects that can occur with prolonged or chronic stress."
+    },
+    {
+      "week": 2,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "How does Acute Stress Disorder (ASD) differ from posttraumatic stress disorder (PTSD), according to Barnhill (2020)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ASD has longer duration"
+        },
+        {
+          "key": "B",
+          "text": "ASD lasts less than a month, while PTSD persists longer"
+        },
+        {
+          "key": "C",
+          "text": "Both have the same duration"
+        },
+        {
+          "key": "D",
+          "text": "ASD is more severe than PTSD"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ASD lasts less than a month, while PTSD persists longer",
+      "explanation": "Acute Stress Disorder is diagnosed for symptoms occurring from three days up to one month after trauma, whereas PTSD persists beyond one month. The key distinction in the assignment is duration, not a claim that one condition is always more severe."
+    },
+    {
+      "week": 2,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "What is mentioned as a potential cause of Complex PTSD (CPTSD)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Single traumatic events"
+        },
+        {
+          "key": "B",
+          "text": "Repeated, prolonged, interpersonal trauma exposure"
+        },
+        {
+          "key": "C",
+          "text": "Childhood accidents"
+        },
+        {
+          "key": "D",
+          "text": "Natural disasters"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Repeated, prolonged, interpersonal trauma exposure",
+      "explanation": "Complex PTSD is associated with repeated or prolonged interpersonal trauma, particularly when escape is difficult. This differs from the more typical framing of PTSD around a traumatic event and helps explain the broader difficulties often discussed in relation to CPTSD."
+    },
+    {
+      "week": 3,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "How is PTG related to coping in the context of trauma, according to Tedeschi and Calhoun (2004)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coping is the direct result of PTG"
+        },
+        {
+          "key": "B",
+          "text": "Coping is necessary but not sufficient to achieve psychological thriving or PTG"
+        },
+        {
+          "key": "C",
+          "text": "Coping is unrelated to PTG"
+        },
+        {
+          "key": "D",
+          "text": "PTG and coping are interchangeable terms"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Coping is necessary but not sufficient to achieve psychological thriving or PTG",
+      "explanation": "Tedeschi and Calhoun's account treats coping as part of the process through which people may develop posttraumatic growth (PTG), but coping alone does not guarantee growth. PTG involves meaningful positive psychological change following a struggle with trauma, not simply the fact that coping occurred."
+    },
+    {
+      "week": 3,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "How does PTG differ from resilience?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Resilience emphasizes stability in the context of trauma, while PTG involves returning to baseline functioning after the trauma"
+        },
+        {
+          "key": "B",
+          "text": "Resilience involves profound and significant improvement after the trauma, while PTG focuses on returning to baseline functioning after the trauma"
+        },
+        {
+          "key": "C",
+          "text": "Resilience is the ability to bounce back and go on with life after a hardship, while PTG involves improvement that is deeply profound and significant after the trauma"
+        },
+        {
+          "key": "D",
+          "text": "Resilience and PTG are interchangeable terms, representing the same concept"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Resilience is the ability to bounce back and go on with life after a hardship, while PTG involves improvement that is deeply profound and significant after the trauma",
+      "explanation": "Resilience generally describes adapting or bouncing back after adversity, while PTG refers to deeper, significant positive change that can emerge through struggling with trauma. A person may be resilient without reporting the profound changes associated with PTG."
+    },
+    {
+      "week": 3,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "According to the theoretical model of PTG by Tedeschi and Calhoun, how is the relationship between posttraumatic stress (PTS) and posttraumatic growth (PTG) characterized?",
+      "options": [
+        {
+          "key": "A",
+          "text": "PTS and PTG are opposite ends of a spectrum"
+        },
+        {
+          "key": "B",
+          "text": "PTS is unrelated to PTG"
+        },
+        {
+          "key": "C",
+          "text": "PTS and PTG are negatively correlated"
+        },
+        {
+          "key": "D",
+          "text": "Some degree of PTS is a prerequisite for PTG"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Some degree of PTS is a prerequisite for PTG",
+      "explanation": "In the Tedeschi and Calhoun model presented by the course, some level of posttraumatic stress is treated as part of the struggle from which growth can emerge. PTS and PTG are therefore not simply opposite ends of one scale; distress and growth can coexist."
+    },
+    {
+      "week": 3,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "External locus of control has been associated with ………… coping strategies",
+      "options": [
+        {
+          "key": "A",
+          "text": "Help seeking"
+        },
+        {
+          "key": "B",
+          "text": "Avoidance"
+        },
+        {
+          "key": "C",
+          "text": "Positive thinking"
+        },
+        {
+          "key": "D",
+          "text": "All of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Avoidance",
+      "explanation": "An external locus of control is associated with seeing outcomes as shaped by forces outside personal control. The assignment links this outlook with avoidance coping, rather than with the more direct problem-solving implied by some other strategies."
+    },
+    {
+      "week": 3,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Which of the following is an example of internal, unstable and controllable factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hard work"
+        },
+        {
+          "key": "B",
+          "text": "Ability"
+        },
+        {
+          "key": "C",
+          "text": "Luck"
+        },
+        {
+          "key": "D",
+          "text": "Task characteristics"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Hard work",
+      "explanation": "Hard work is internal because it comes from the individual, unstable because effort can vary from one situation to another, and controllable because a person can usually choose how much effort to invest. Ability is generally more stable, while luck and task characteristics are external factors."
+    },
+    {
+      "week": 3,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "In the research on hardiness conducted by Maddi and Kobasa, what differentiated the one-third of the sample that thrived from the two- thirds that suffered after the deregulation event?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Age differences"
+        },
+        {
+          "key": "B",
+          "text": "Work experience"
+        },
+        {
+          "key": "C",
+          "text": "Psychological hardiness"
+        },
+        {
+          "key": "D",
+          "text": "Gender variations"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Psychological hardiness",
+      "explanation": "Maddi and Kobasa's hardiness research emphasized psychological hardiness as a resource associated with better adaptation under major work-related stress. Hardiness is commonly described through commitment, control, and viewing change as a challenge rather than only a threat."
+    },
+    {
+      "week": 3,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "How do individuals with high external locus of control (ELoC) tend to perceive outcomes in life?",
+      "options": [
+        {
+          "key": "A",
+          "text": "As a result of personal factors"
+        },
+        {
+          "key": "B",
+          "text": "Influenced by factors such as luck and chance"
+        },
+        {
+          "key": "C",
+          "text": "Predictable and within their control"
+        },
+        {
+          "key": "D",
+          "text": "Internally determined"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Influenced by factors such as luck and chance",
+      "explanation": "People high in external locus of control tend to attribute outcomes to outside influences such as luck, chance, or powerful others. They are less likely to view results as primarily determined by their own actions."
+    },
+    {
+      "week": 3,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "According to Joseph and Linley's Organismic Valuing Theory, what is the main principle underlying the process of growth through adversity?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Behavioral conditioning"
+        },
+        {
+          "key": "B",
+          "text": "Cognitive restructuring"
+        },
+        {
+          "key": "C",
+          "text": "Inherent tendencies towards growth and actualization"
+        },
+        {
+          "key": "D",
+          "text": "Psychoanalytic theory"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Inherent tendencies towards growth and actualization",
+      "explanation": "Organismic Valuing Theory proposes that people have an inherent tendency toward growth and actualization. Following adversity, this growth tendency can help individuals integrate experience and move toward fuller functioning, rather than growth being explained solely by conditioning or psychoanalytic theory."
+    },
+    {
+      "week": 4,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Which of the following is an example of emotion-focused coping?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Generating options to solve the problem"
+        },
+        {
+          "key": "B",
+          "text": "Expression of negative emotion"
+        },
+        {
+          "key": "C",
+          "text": "Implementing steps to solve the problem"
+        },
+        {
+          "key": "D",
+          "text": "Obtaining advice or instrumental help"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Expression of negative emotion",
+      "explanation": "Emotion-focused coping aims to manage the emotional response to a stressor. Expressing negative feelings is an example because it addresses emotional distress directly, whereas generating options, taking action, or seeking instrumental help more directly target the problem itself."
+    },
+    {
+      "week": 4,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "How do problem-focused coping and emotion-focused coping interact?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They hinder each other's effectiveness"
+        },
+        {
+          "key": "B",
+          "text": "Problem-focused coping enhances distress in a threatening situation"
+        },
+        {
+          "key": "C",
+          "text": "They tend to facilitate one another"
+        },
+        {
+          "key": "D",
+          "text": "Problem-focused coping diminishes the effectiveness of emotion-focused coping"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "They tend to facilitate one another",
+      "explanation": "Problem-focused and emotion-focused coping can support each other. Managing distress may make it easier to solve a problem, while making progress on a changeable problem can reduce emotional strain; they are complementary rather than inherently competing methods."
+    },
+    {
+      "week": 4,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "What personality traits are linked to the behavioral inhibition system, making individuals more likely to use avoidance coping strategies?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Extraversion"
+        },
+        {
+          "key": "B",
+          "text": "Openness"
+        },
+        {
+          "key": "C",
+          "text": "Neuroticism"
+        },
+        {
+          "key": "D",
+          "text": "Optimism"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Neuroticism",
+      "explanation": "Neuroticism is associated with heightened sensitivity to threat and negative affect, which is consistent with stronger behavioral inhibition and greater use of avoidance coping. Extraversion, openness, and optimism do not fit this relationship as well in the framework tested here."
+    },
+    {
+      "week": 4,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "What is the concept of \"learned helplessness\" proposed by Martin Seligman (1967) related to?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Effective problem-solving in uncontrollable situations"
+        },
+        {
+          "key": "B",
+          "text": "The giving up/avoidance syndrome"
+        },
+        {
+          "key": "C",
+          "text": "Approach coping in uncontrollable situations"
+        },
+        {
+          "key": "D",
+          "text": "Perceived control in adaptive situations"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "The giving up/avoidance syndrome",
+      "explanation": "Learned helplessness refers to a pattern in which repeated experience with uncontrollable outcomes can lead a person to stop trying to change the situation. The course describes this as a giving-up or avoidance syndrome, rather than effective problem-solving."
+    },
+    {
+      "week": 4,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Which of the following is NOT mentioned as one of the properties of defense mechanisms by Vaillant (1992)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They are unconscious mental processes"
+        },
+        {
+          "key": "B",
+          "text": "They are conscious and deliberate processes"
+        },
+        {
+          "key": "C",
+          "text": "They help manage instincts and affect"
+        },
+        {
+          "key": "D",
+          "text": "They are dynamic and reversible"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "They are conscious and deliberate processes",
+      "explanation": "The option 'conscious and deliberate processes' is the one NOT listed as a property of defense mechanisms by Vaillant. Defense mechanisms are generally described as unconscious processes that manage instinctual impulses and affect, and they can be dynamic and reversible."
+    },
+    {
+      "week": 4,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "How does a person with a dominant SUPER-EGO manifest in terms of behavior, according to Freud's theory?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Highly impulsive"
+        },
+        {
+          "key": "B",
+          "text": "Overly idealistic and moralistic"
+        },
+        {
+          "key": "C",
+          "text": "Engages in criminal behavior"
+        },
+        {
+          "key": "D",
+          "text": "Overly idealistic, moralistic, and judgmental"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Overly idealistic, moralistic, and judgmental",
+      "explanation": "In Freud's model, the superego represents internalized standards, ideals, and moral rules. When dominant, it can appear as rigidly idealistic, moralistic, and judgmental behavior; this full description is more complete than describing impulsivity or criminal conduct."
+    },
+    {
+      "week": 4,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "What is the key difference between repression and suppression?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Repression is conscious, while suppression is unconscious"
+        },
+        {
+          "key": "B",
+          "text": "Both involve conscious removal of unpleasant thoughts"
+        },
+        {
+          "key": "C",
+          "text": "Repression is unconscious, while suppression involves consciously removing unpleasant thoughts out of awareness"
+        },
+        {
+          "key": "D",
+          "text": "Suppression is a more mature defense mechanism than repression"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Repression is unconscious, while suppression involves consciously removing unpleasant thoughts out of awareness",
+      "explanation": "Repression is an unconscious process that keeps distressing thoughts outside awareness. Suppression is deliberate: a person consciously chooses to set an unpleasant thought aside, so awareness and intention distinguish the two."
+    },
+    {
+      "week": 4,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "How does the Coping Effectiveness Training (CET) framework advise dealing with changeable and unchangeable stressors?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Use only problem-focused coping for both types of stressors"
+        },
+        {
+          "key": "B",
+          "text": "Use problem-focused coping for changeable stressors and emotion-focused coping for unchangeable stressors"
+        },
+        {
+          "key": "C",
+          "text": "Use only emotion-focused coping for both types of stressors"
+        },
+        {
+          "key": "D",
+          "text": "Avoid emotion focused coping strategies for unchangeable stressors"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Use problem-focused coping for changeable stressors and emotion-focused coping for unchangeable stressors",
+      "explanation": "Coping Effectiveness Training matches the strategy to how controllable the stressor is. Problem-focused methods are most useful when the situation can be changed, while emotion-focused strategies help manage responses to stressors that cannot be changed."
+    },
+    {
+      "week": 5,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "How does changing the breathing pattern to slow and deep during anxiety or stress affect the autonomic nervous system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Activates the sympathetic system"
+        },
+        {
+          "key": "B",
+          "text": "Activates the parasympathetic system"
+        },
+        {
+          "key": "C",
+          "text": "No impact on the autonomic nervous system."
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Activates the parasympathetic system",
+      "explanation": "Slow, deep breathing can increase parasympathetic influence, including vagal activity, and help the body move toward a calmer state. It is used as a relaxation technique rather than as a way of activating the sympathetic fight-or-flight response."
+    },
+    {
+      "week": 5,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Progressive muscle relaxation involves............................... throughout the body.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Relaxing muscle groups in ordered sequence."
+        },
+        {
+          "key": "B",
+          "text": "Tensing muscle groups in ordered sequence."
+        },
+        {
+          "key": "C",
+          "text": "Tensing and relaxing muscle groups in ordered sequence."
+        },
+        {
+          "key": "D",
+          "text": "Tensing and relaxing muscle groups in random sequence."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Tensing and relaxing muscle groups in ordered sequence.",
+      "explanation": "Progressive muscle relaxation systematically tenses and then relaxes muscle groups in an ordered sequence. The contrast helps people notice tension and release it; randomly tensing muscles or only relaxing without the systematic tensing phase does not describe the standard technique."
+    },
+    {
+      "week": 5,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Catastrophic thinking is -------------------",
+      "options": [
+        {
+          "key": "A",
+          "text": "Conscious, deliberate, and flexible."
+        },
+        {
+          "key": "B",
+          "text": "Rational, logical, and conscious."
+        },
+        {
+          "key": "C",
+          "text": "Irrational, automatic, habitual, and unconscious."
+        },
+        {
+          "key": "D",
+          "text": "Positive, adaptive, and conscious."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Irrational, automatic, habitual, and unconscious.",
+      "explanation": "Catastrophic thinking involves automatic, habitual and often unconscious interpretations that exaggerate the likelihood or consequences of negative outcomes. It is not a deliberate, flexible, or reliably rational way of evaluating a situation."
+    },
+    {
+      "week": 5,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Which of the following is NOT mentioned as a characteristic of catastrophic thinking?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Based on irrational assumptions."
+        },
+        {
+          "key": "B",
+          "text": "Conscious and deliberate."
+        },
+        {
+          "key": "C",
+          "text": "Automatic and habitual."
+        },
+        {
+          "key": "D",
+          "text": "Unconscious."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Conscious and deliberate.",
+      "explanation": "Conscious and deliberate thinking is NOT a characteristic of catastrophic thinking in the source's framework. Catastrophic thoughts are described as automatic and habitual, often relying on irrational assumptions outside deliberate reflection."
+    },
+    {
+      "week": 5,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "According to Albert Ellis, how can emotions be changed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By suppressing emotions."
+        },
+        {
+          "key": "B",
+          "text": "By changing thinking patterns."
+        },
+        {
+          "key": "C",
+          "text": "By ignoring emotions."
+        },
+        {
+          "key": "D",
+          "text": "By embracing irrational beliefs."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "By changing thinking patterns.",
+      "explanation": "Albert Ellis's approach focuses on changing irrational beliefs and thinking patterns that contribute to distress. Re-evaluating interpretations can change emotional reactions more effectively than suppressing or ignoring emotions while leaving the underlying beliefs untouched."
+    },
+    {
+      "week": 5,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Which one of the following is an example of tangible support?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Offering empathetic words."
+        },
+        {
+          "key": "B",
+          "text": "Providing financial assistance."
+        },
+        {
+          "key": "C",
+          "text": "Expressing understanding and affirmation."
+        },
+        {
+          "key": "D",
+          "text": "Offering advice during difficult times."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Providing financial assistance.",
+      "explanation": "Tangible support is practical or material help that directly assists someone with a need. Providing financial assistance is tangible, whereas empathy, understanding, and advice are emotional or informational forms of support."
+    },
+    {
+      "week": 5,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "In the social convoy model, what does the inner circle represent?",
+      "options": [
+        {
+          "key": "A",
+          "text": "People with less importance in one's life."
+        },
+        {
+          "key": "B",
+          "text": "People who are not supportive."
+        },
+        {
+          "key": "C",
+          "text": "People who are very close and hard to imagine life without."
+        },
+        {
+          "key": "D",
+          "text": "People with whom one has infrequent contact."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "People who are very close and hard to imagine life without.",
+      "explanation": "In the social convoy model, the inner circle contains the closest relationships: people who are deeply important and difficult to imagine life without. More distant or infrequent contacts are typically represented in outer circles."
+    },
+    {
+      "week": 5,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "What are the three components of mindfulness proposed by Shapiro and colleagues?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Awareness, Focus, and Presence."
+        },
+        {
+          "key": "B",
+          "text": "Intention, Attention, and Attitude."
+        },
+        {
+          "key": "C",
+          "text": "Concentration, Observation, and Acceptance."
+        },
+        {
+          "key": "D",
+          "text": "Meditation, Relaxation, and Reflection."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Intention, Attention, and Attitude.",
+      "explanation": "Shapiro and colleagues describe mindfulness through intention, attention, and attitude. Intention concerns why one is practicing, attention involves noticing present experience, and attitude refers to how one relates to that experience."
+    },
+    {
+      "week": 6,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "What are the three components of subjective well-being (SWB)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Autonomy, positive relations with others, self-acceptance"
+        },
+        {
+          "key": "B",
+          "text": "Life satisfaction, autonomy, personal growth"
+        },
+        {
+          "key": "C",
+          "text": "Life satisfaction, the presence of positive mood, and the absence of negative mood."
+        },
+        {
+          "key": "D",
+          "text": "Autonomy, environmental mastery, purpose in life"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Life satisfaction, the presence of positive mood, and the absence of negative mood.",
+      "explanation": "Subjective well-being includes a cognitive evaluation of life satisfaction and affective components: the presence of positive mood and the relative absence of negative mood. Autonomy, personal growth, and purpose are more closely associated with psychological or eudaimonic well-being models."
+    },
+    {
+      "week": 6,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Which part of the brain is associated with pleasure-seeking or hedonia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hot systems (older subcortical part of the brain)"
+        },
+        {
+          "key": "B",
+          "text": "Cold systems (newer, complex, cerebral part of the brain)"
+        },
+        {
+          "key": "C",
+          "text": "Both hot and cold systems"
+        },
+        {
+          "key": "D",
+          "text": "None of the above."
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Hot systems (older subcortical part of the brain)",
+      "explanation": "The course associates hedonia and pleasure-seeking with 'hot' systems in older subcortical brain regions, which are involved in affective and motivational responses. The 'cold' systems refer to newer, more complex cortical processes often associated with deliberation and control."
+    },
+    {
+      "week": 6,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "In Keyes’ model, what is the state characterized by low levels of subjective well-being and low levels of psychological and social well-being?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Flourishing"
+        },
+        {
+          "key": "B",
+          "text": "Moderate mental health"
+        },
+        {
+          "key": "C",
+          "text": "Languishing"
+        },
+        {
+          "key": "D",
+          "text": "Subjective well-being"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Languishing",
+      "explanation": "Keyes uses 'languishing' to describe low levels of subjective well-being together with low psychological and social well-being. It is the opposite end of flourishing, not a description of high or moderate mental health."
+    },
+    {
+      "week": 6,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "What is another term for hedonic well-being?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Psychological well-being."
+        },
+        {
+          "key": "B",
+          "text": "Subjective well-being."
+        },
+        {
+          "key": "C",
+          "text": "Affective well-being."
+        },
+        {
+          "key": "D",
+          "text": "Eudaimonic well-being."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Subjective well-being.",
+      "explanation": "Hedonic well-being is commonly discussed as subjective well-being, focusing on life satisfaction and positive and negative affect. Eudaimonic well-being, by contrast, emphasizes meaning, personal growth, and functioning well."
+    },
+    {
+      "week": 6,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Personal growth, autonomy, meaning in life are components of ………………well-being",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hedonic."
+        },
+        {
+          "key": "B",
+          "text": "Eudaimonic."
+        },
+        {
+          "key": "C",
+          "text": "Subjective."
+        },
+        {
+          "key": "D",
+          "text": "Both hedonic and eudaimonic."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Eudaimonic.",
+      "explanation": "Personal growth, autonomy, and meaning in life are eudaimonic dimensions because they concern purpose, self-development, and living well. Hedonic well-being places greater emphasis on pleasure, positive affect, and life satisfaction."
+    },
+    {
+      "week": 6,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Which of the following statement is true for Martin Seligman’s model of flourish (PERMA)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is a hedonic model of well-being."
+        },
+        {
+          "key": "B",
+          "text": "It is a eudaimonic model of well-being"
+        },
+        {
+          "key": "C",
+          "text": "It is a combination of both hedonic and eudaimonic model of well-being."
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It is a combination of both hedonic and eudaimonic model of well-being.",
+      "explanation": "The PERMA model includes positive emotion as well as engagement, relationships, meaning, and accomplishment. It therefore includes hedonic elements alongside dimensions usually described as eudaimonic, rather than being exclusively one or the other."
+    },
+    {
+      "week": 6,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "In Martin Seligman’s PERMA model, what does “Engagement” refer to?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pleasant emotions"
+        },
+        {
+          "key": "B",
+          "text": "Social connections"
+        },
+        {
+          "key": "C",
+          "text": "Full involvement in activities that uses skills to the fullest extent."
+        },
+        {
+          "key": "D",
+          "text": "A sense of accomplishment"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Full involvement in activities that uses skills to the fullest extent.",
+      "explanation": "In PERMA, engagement means being fully absorbed in an activity and using one's skills intensely, often resembling a flow state. It is distinct from simply experiencing pleasure, having social connections, or achieving a result."
+    },
+    {
+      "week": 6,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "What are the two defining aspects of resilience?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Resistance and recovery."
+        },
+        {
+          "key": "B",
+          "text": "Exposure to threat and positive adaptation."
+        },
+        {
+          "key": "C",
+          "text": "Development process and adaptation."
+        },
+        {
+          "key": "D",
+          "text": "Adversity and privilege."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Exposure to threat and positive adaptation.",
+      "explanation": "Resilience is commonly defined through exposure to significant threat or adversity and positive adaptation despite that exposure. Both elements matter: adaptation without adversity is not sufficient to establish resilience."
+    },
+    {
+      "week": 7,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Which among the following is not part of Ruut Veenhoven’s qualities of life?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Livability of environment"
+        },
+        {
+          "key": "B",
+          "text": "Life-ability of the person"
+        },
+        {
+          "key": "C",
+          "text": "Utility of life"
+        },
+        {
+          "key": "D",
+          "text": "Meaning in life"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Meaning in life",
+      "explanation": "Veenhoven's qualities-of-life framework includes the livability of the environment, life-ability of the person, utility of life, and the appreciation of life. 'Meaning in life' is not one of the named categories in the answer set, so it is the keyed choice that is not part of the framework."
+    },
+    {
+      "week": 7,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "What is affective forecasting?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Predictions about future events"
+        },
+        {
+          "key": "B",
+          "text": "Predictions about emotional reactions to future events"
+        },
+        {
+          "key": "C",
+          "text": "Predictions about physical reactions to future events"
+        },
+        {
+          "key": "D",
+          "text": "Predictions about past events"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Predictions about emotional reactions to future events",
+      "explanation": "Affective forecasting is predicting how one will feel emotionally in response to a future event. It concerns anticipated emotional reactions, not simply predicting what event will occur or forecasting a physical response."
+    },
+    {
+      "week": 7,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "How does focalism contribute to the impact bias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By accurately predicting the influence of other events on thoughts and feelings"
+        },
+        {
+          "key": "B",
+          "text": "By underestimating the intensity and duration of emotional reactions"
+        },
+        {
+          "key": "C",
+          "text": "By overestimating how much we will think about the event in the future and underestimating the influence of other events on our thoughts and feelings"
+        },
+        {
+          "key": "D",
+          "text": "By avoiding making sense of novel and unexpected events"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "By overestimating how much we will think about the event in the future and underestimating the influence of other events on our thoughts and feelings",
+      "explanation": "Focalism contributes to impact bias because people focus too heavily on one future event and overestimate how much it will dominate their thoughts and feelings. They underweight other events and experiences that will also influence their emotions."
+    },
+    {
+      "week": 7,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "What do empirical studies show regarding the relationship between subjective well-being and traditional objective well-being indicators?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Strong correlation"
+        },
+        {
+          "key": "B",
+          "text": "Weak correlation"
+        },
+        {
+          "key": "C",
+          "text": "No correlation"
+        },
+        {
+          "key": "D",
+          "text": "Negative correlation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Weak correlation",
+      "explanation": "The assignment's key is 'weak correlation': traditional objective indicators such as income or material conditions do not map perfectly onto subjective well-being. Objective circumstances matter, but they explain only part of how people evaluate and experience their lives."
+    },
+    {
+      "week": 7,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "What does Easterlin’s Paradox state about the relationship between happiness and income over time?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Happiness increases linearly with increasing income"
+        },
+        {
+          "key": "B",
+          "text": "Happiness varies directly with income at a point in time but does not increase over time when a country’s income increase."
+        },
+        {
+          "key": "C",
+          "text": "Happiness is unrelated to income."
+        },
+        {
+          "key": "D",
+          "text": "Happiness decreases with increasing income."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Happiness varies directly with income at a point in time but does not increase over time when a country’s income increase.",
+      "explanation": "Easterlin's Paradox distinguishes the relationship seen at a single point in time from long-term national trends. Higher-income people within a country may report greater happiness, yet average happiness does not necessarily rise as a country's income grows over time."
+    },
+    {
+      "week": 7,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "How does social comparison theory explain the Easterlin’s Paradox?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A proportional increase in all incomes will increase average happiness."
+        },
+        {
+          "key": "B",
+          "text": "A proportional increase of all incomes in an economy or country would leave average happiness unaffected"
+        },
+        {
+          "key": "C",
+          "text": "A decrease in all incomes will increase average happiness."
+        },
+        {
+          "key": "D",
+          "text": "An increase in individual income will decrease average happiness"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "A proportional increase of all incomes in an economy or country would leave average happiness unaffected",
+      "explanation": "Social comparison theory explains the paradox through relative rather than absolute income. If everyone's income rises proportionally, people's relative positions remain similar, so average happiness may not increase just because the whole income distribution shifts upward."
+    },
+    {
+      "week": 7,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "According to Barbara Fredrickson's 'broaden-and-build' theory, what is the function of positive emotions?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Positive emotions narrow our attention and thinking"
+        },
+        {
+          "key": "B",
+          "text": "Positive emotions broaden our thought–action repertoires"
+        },
+        {
+          "key": "C",
+          "text": "Positive emotions induce negative emotions simultaneously"
+        },
+        {
+          "key": "D",
+          "text": "Negative emotions enhance resilience"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Positive emotions broaden our thought–action repertoires",
+      "explanation": "Fredrickson's broaden-and-build theory proposes that positive emotions broaden immediate thought-action repertoires and can help build lasting personal resources. This contrasts with the narrowing of attention often associated with acute negative emotions."
+    },
+    {
+      "week": 7,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "According to Fredrickson and Lasoda (2005), what is the significance of having a positivity ratio of 3:1 or above?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It has no impact on psychological well-being."
+        },
+        {
+          "key": "B",
+          "text": "It stimulates a downward spiral of negativity."
+        },
+        {
+          "key": "C",
+          "text": "It is more likely to stimulate an upward spiral of positivity and lead to flourishing and well-being"
+        },
+        {
+          "key": "D",
+          "text": "It is irrelevant to happiness intervention strategies."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It is more likely to stimulate an upward spiral of positivity and lead to flourishing and well-being",
+      "explanation": "The supplied solution PDF keys the 3:1 ratio as being associated with an upward spiral of positivity and flourishing. Important caveat: later scholarly work challenged the claim that 3:1 is a universal critical threshold, so the key is retained here as the course's intended answer, not presented as a settled scientific cutoff."
+    },
+    {
+      "week": 8,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "What is the term for the psychological process where people become accustomed to a stimulus and its emotional effects are reduced over time?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hedonic adaptation"
+        },
+        {
+          "key": "B",
+          "text": "Emotional stagnation"
+        },
+        {
+          "key": "C",
+          "text": "Baseline leveling"
+        },
+        {
+          "key": "D",
+          "text": "Stimulus habituation"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Hedonic adaptation",
+      "explanation": "Hedonic adaptation is the process by which people become accustomed to a change or stimulus and its emotional impact diminishes over time. It helps explain why the initial effect of some positive or negative life changes may not persist at its original intensity."
+    },
+    {
+      "week": 8,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "According to the AREA Model, what does the explaining step determine in the process of hedonic adaptation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rate of attention"
+        },
+        {
+          "key": "B",
+          "text": "Rate of adaptation"
+        },
+        {
+          "key": "C",
+          "text": "Emotional intensity"
+        },
+        {
+          "key": "D",
+          "text": "Reacting process"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Rate of adaptation",
+      "explanation": "In the AREA model as used in the course, the explaining step concerns the rate of adaptation. It addresses how quickly emotional responses change as a person becomes familiar with a stimulus or altered circumstance."
+    },
+    {
+      "week": 8,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "In the study by Lucas and colleagues, which negative life events showed the most pronounced lack of hedonic adaptation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Divorce"
+        },
+        {
+          "key": "B",
+          "text": "Marriage"
+        },
+        {
+          "key": "C",
+          "text": "Severe disability"
+        },
+        {
+          "key": "D",
+          "text": "Unemployment"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Severe disability",
+      "explanation": "Lucas and colleagues found that the onset of severe disability can produce lasting reductions in subjective well-being, with little adaptation over the observed period. This makes severe disability the option showing the most pronounced lack of hedonic adaptation."
+    },
+    {
+      "week": 8,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Which among the following personality traits is negatively related to happiness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neuroticism"
+        },
+        {
+          "key": "B",
+          "text": "Openness"
+        },
+        {
+          "key": "C",
+          "text": "Extroversion"
+        },
+        {
+          "key": "D",
+          "text": "Agreeableness"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Neuroticism",
+      "explanation": "Neuroticism is typically negatively associated with happiness and subjective well-being, in part because it is linked to more frequent negative affect and sensitivity to stress. The other listed traits are not the negatively related trait singled out by this item."
+    },
+    {
+      "week": 8,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "According to Lyubomirsky, how does hedonic adaptation differ between positive and negative experiences?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Negative experiences lead to faster and complete adaptation"
+        },
+        {
+          "key": "B",
+          "text": "Positive experiences lead to faster and complete adaptation."
+        },
+        {
+          "key": "C",
+          "text": "Positive and negative experiences show similar adaptation patterns."
+        },
+        {
+          "key": "D",
+          "text": "There is no consistency in adaptation between positive and negative experiences."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Positive experiences lead to faster and complete adaptation.",
+      "explanation": "The provided key selects the view that positive experiences can be adapted to more quickly and completely, meaning their initial emotional boost may fade. Adaptation is not identical for every person or event, but this is the contrast the course question is testing."
+    },
+    {
+      "week": 8,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "According to research, what percentage of variance in happiness levels do all circumstances combined account for?",
+      "options": [
+        {
+          "key": "A",
+          "text": "20% to 25%."
+        },
+        {
+          "key": "B",
+          "text": "Only 8% to 15%"
+        },
+        {
+          "key": "C",
+          "text": "30% to 40%."
+        },
+        {
+          "key": "D",
+          "text": "50% to 60%"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Only 8% to 15%",
+      "explanation": "The keyed estimate is that circumstances account for only about 8% to 15% of the variance in happiness. In the model discussed in positive psychology, circumstances are one influence alongside relatively stable individual factors and intentional activities."
+    },
+    {
+      "week": 8,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "What are the three types of intentional activities described by Lyubomirsky et al. (2005)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Behavioural, genetic, and volitional"
+        },
+        {
+          "key": "B",
+          "text": "Circumstantial, cognitive, and behavioural"
+        },
+        {
+          "key": "C",
+          "text": "Behavioural, cognitive, and volitional"
+        },
+        {
+          "key": "D",
+          "text": "Genetic, cognitive, and volitional"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Behavioural, cognitive, and volitional",
+      "explanation": "Lyubomirsky and colleagues group intentional activities into behavioral, cognitive, and volitional categories. The labels distinguish actions people perform, ways they think or interpret experience, and choices they make deliberately to influence well-being."
+    },
+    {
+      "week": 8,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "What is the basic idea of the Sustainable Happiness Model, according to Sheldon and Lyubomirsky (2019)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Genetics and life circumstances entirely determine happiness."
+        },
+        {
+          "key": "B",
+          "text": "Happiness is solely dependent on life circumstances."
+        },
+        {
+          "key": "C",
+          "text": "People can influence their own happiness by their intentional activities"
+        },
+        {
+          "key": "D",
+          "text": "Volitional activities have no impact on happiness."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "People can influence their own happiness by their intentional activities",
+      "explanation": "The Sustainable Happiness Model argues that intentional activities can influence happiness; genetics and life circumstances are not the only determinants. Activities practiced deliberately and repeatedly may contribute to well-being, even though effects depend on the activity and the person."
+    },
+    {
+      "week": 9,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "In the context of gratitude, which of the following is NOT correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gratitude facilitates coping with stress"
+        },
+        {
+          "key": "B",
+          "text": "Gratitude increases upward social comparison"
+        },
+        {
+          "key": "C",
+          "text": "Gratitude improves self-esteem"
+        },
+        {
+          "key": "D",
+          "text": "Gratitude enhances accessibility to positive memories"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Gratitude increases upward social comparison",
+      "explanation": "The source identifies 'gratitude increases upward social comparison' as the statement that is NOT correct. Gratitude is generally discussed as supporting coping, self-esteem, and attention to positive memories, rather than encouraging people to compare themselves upward in ways that undermine appreciation."
+    },
+    {
+      "week": 9,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "Keeping a gratitude journal means---------------------",
+      "options": [
+        {
+          "key": "A",
+          "text": "Writing things for which one is grateful."
+        },
+        {
+          "key": "B",
+          "text": "Expressing gratitude to a person face-to-face"
+        },
+        {
+          "key": "C",
+          "text": "Expressing gratitude to a person by writing letters"
+        },
+        {
+          "key": "D",
+          "text": "All of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Writing things for which one is grateful.",
+      "explanation": "A gratitude journal involves regularly writing down the things for which one feels grateful. Expressing thanks directly to another person can also be a gratitude practice, but it is not what the term 'gratitude journal' specifically means in this question."
+    },
+    {
+      "week": 9,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "Which of the following personality traits is incompatible with gratitude?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Extrovert"
+        },
+        {
+          "key": "B",
+          "text": "Introvert"
+        },
+        {
+          "key": "C",
+          "text": "Neuroticism"
+        },
+        {
+          "key": "D",
+          "text": "Narcissism"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Narcissism",
+      "explanation": "Narcissism is presented as incompatible with gratitude because a strong self-focused sense of entitlement can conflict with recognizing and appreciating benefits received from others. The keyed choice is narcissism, not introversion or extroversion."
+    },
+    {
+      "week": 9,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "Kindness satisfies the basic human need for…………………….",
+      "options": [
+        {
+          "key": "A",
+          "text": "Relatedness"
+        },
+        {
+          "key": "B",
+          "text": "Autonomy"
+        },
+        {
+          "key": "C",
+          "text": "Competence"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Relatedness",
+      "explanation": "Kindness can satisfy the basic psychological need for relatedness by strengthening social connection and a sense of care for others. Autonomy concerns volition, while competence concerns feeling effective."
+    },
+    {
+      "week": 9,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "In the context of reciprocal altruism, when is kindness most likely to be demonstrated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In isolated situations"
+        },
+        {
+          "key": "B",
+          "text": "In one-time encounters."
+        },
+        {
+          "key": "C",
+          "text": "When individuals expect not to meet again."
+        },
+        {
+          "key": "D",
+          "text": "When individuals expect to meet again."
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "When individuals expect to meet again.",
+      "explanation": "Reciprocal altruism is more likely when people expect future interactions, because helping now may be reciprocated later. If people expect never to meet again, the opportunity for direct reciprocity is weaker."
+    },
+    {
+      "week": 9,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "What is essential for acts of kindness to bring maximum improvement in well- being?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Regular and planned acts of kindness"
+        },
+        {
+          "key": "B",
+          "text": "Acts of kindness done out of obligation"
+        },
+        {
+          "key": "C",
+          "text": "Freely and autonomously done acts of kindness."
+        },
+        {
+          "key": "D",
+          "text": "Forced acts of kindness"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Freely and autonomously done acts of kindness.",
+      "explanation": "Acts of kindness are most likely to support well-being when they are freely chosen and autonomous, rather than performed under pressure or obligation. Voluntary action can make the act feel more personally meaningful and consistent with one's values."
+    },
+    {
+      "week": 9,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "In the context of downward comparison, what does assimilation result in?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Negative self-evaluation"
+        },
+        {
+          "key": "B",
+          "text": "Positive self-evaluation"
+        },
+        {
+          "key": "C",
+          "text": "No change in self-evaluation"
+        },
+        {
+          "key": "D",
+          "text": "Avoidance of self-evaluation"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Negative self-evaluation",
+      "explanation": "In downward comparison, assimilation occurs when someone perceives similarity to a less fortunate comparison target and incorporates that comparison into their view of themselves. This can produce negative self-evaluation, unlike a contrast effect that makes the self seem better off by comparison."
+    },
+    {
+      "week": 9,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "According to diverse research studies, what is the typical result of social comparison on social networking sites in terms of subjective well-being (SWB) or happiness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Consistent increase in SWB or happiness."
+        },
+        {
+          "key": "B",
+          "text": "Typically results in decreases in SWB or happiness."
+        },
+        {
+          "key": "C",
+          "text": "No impact on SWB or happiness."
+        },
+        {
+          "key": "D",
+          "text": "Social comparison on SNSs always increases happiness."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Typically results in decreases in SWB or happiness.",
+      "explanation": "The assignment's keyed result is that social-network comparison typically decreases subjective well-being or happiness. Comparing one's life with selectively positive presentations by others can encourage unfavorable self-evaluation, though outcomes can vary with context and use."
+    },
+    {
+      "week": 10,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "According to Peterson & Seligman (2004), what inspired the development of the VIA Classification?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Strength Finder"
+        },
+        {
+          "key": "B",
+          "text": "Gallup’s Strengths"
+        },
+        {
+          "key": "C",
+          "text": "DSM"
+        },
+        {
+          "key": "D",
+          "text": "Weaknesses Classification"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "DSM",
+      "explanation": "The VIA Classification was developed in part as a positive counterpart to diagnostic classification systems such as the DSM, focusing on strengths and virtues rather than disorders and deficits. Therefore DSM is the intended answer among the choices."
+    },
+    {
+      "week": 10,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "According to the VIA Classification, which virtue includes strengths that connect us to the larger universe?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Justice"
+        },
+        {
+          "key": "B",
+          "text": "Humanity"
+        },
+        {
+          "key": "C",
+          "text": "Courage"
+        },
+        {
+          "key": "D",
+          "text": "Transcendence"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Transcendence",
+      "explanation": "Transcendence includes strengths that help people connect with something larger than themselves, such as meaning, appreciation, hope, or spirituality. The other listed virtues focus on different kinds of interpersonal or moral strengths."
+    },
+    {
+      "week": 10,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "According to the VIA Classification, what is a component of the virtue of Humanity that involves being aware of the motives and feelings of self and others?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Love"
+        },
+        {
+          "key": "B",
+          "text": "Social Intelligence"
+        },
+        {
+          "key": "C",
+          "text": "Kindness"
+        },
+        {
+          "key": "D",
+          "text": "Leadership"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Social Intelligence",
+      "explanation": "Social intelligence involves understanding one's own motives and feelings and those of other people, then responding appropriately in social situations. It is classified under Humanity in the VIA framework, alongside love and kindness."
+    },
+    {
+      "week": 10,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "What does research indicate about the strengths of the heart compared to the strengths of the head?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Strengths of the head are more individualistic"
+        },
+        {
+          "key": "B",
+          "text": "Strengths of the heart are more strongly related to well-being"
+        },
+        {
+          "key": "C",
+          "text": "Strengths of the head are more strongly related to life satisfaction"
+        },
+        {
+          "key": "D",
+          "text": "Both strengths are equally related to well-being"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Strengths of the heart are more strongly related to well-being",
+      "explanation": "Research discussed in the course suggests that strengths of the heart, such as gratitude, love, and hope, are more strongly associated with well-being than strengths of the head alone. The answer reflects the pattern reported in the question, not a claim that intellectual strengths have no value."
+    },
+    {
+      "week": 10,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "According to Clifton and Anderson (2002), how do talents differ from skills and knowledge?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Talents are acquired, while skills and knowledge are naturally occurring"
+        },
+        {
+          "key": "B",
+          "text": "Talents exist naturally within each of us, while skills and knowledge need to be acquired."
+        },
+        {
+          "key": "C",
+          "text": "Talents are more important than skills and knowledge."
+        },
+        {
+          "key": "D",
+          "text": "Talents are the combination of skills and knowledge."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Talents exist naturally within each of us, while skills and knowledge need to be acquired.",
+      "explanation": "Talents are described as naturally occurring patterns or capacities, whereas skills and knowledge generally need to be developed through learning and practice. Building on a talent with acquired skills and knowledge is different from treating all three as innate."
+    },
+    {
+      "week": 10,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "Under what conditions does the state of flow happen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "When tasks are easy and skills exceed challenges"
+        },
+        {
+          "key": "B",
+          "text": "When tasks are challenging and skills are irrelevant"
+        },
+        {
+          "key": "C",
+          "text": "When a task is high on challenge and skill levels."
+        },
+        {
+          "key": "D",
+          "text": "When tasks are irrelevant and no skills are required"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "When a task is high on challenge and skill levels.",
+      "explanation": "Flow is most likely when a task is highly challenging and the person's skill level is also high enough to meet that challenge. A mismatch—such as very low challenge or insufficient skill—makes deep absorption less likely."
+    },
+    {
+      "week": 10,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "What term is used to describe activities that can facilitate a flow experience?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Autonomous"
+        },
+        {
+          "key": "B",
+          "text": "Autotelic"
+        },
+        {
+          "key": "C",
+          "text": "Automate"
+        },
+        {
+          "key": "D",
+          "text": "Autonomic"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Autotelic",
+      "explanation": "Autotelic activities are rewarding in themselves rather than pursued only for an external payoff. Because the activity itself is engaging, it can help create the conditions for a flow experience."
+    },
+    {
+      "week": 10,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "What type of activities are less likely to be associated with flow experience?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sports and dancing."
+        },
+        {
+          "key": "B",
+          "text": "Creative arts and hobbies."
+        },
+        {
+          "key": "C",
+          "text": "Housework and watching TV."
+        },
+        {
+          "key": "D",
+          "text": "Socializing and studying."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Housework and watching TV.",
+      "explanation": "The course identifies housework and watching TV as less likely to be associated with flow than activities such as sports, dancing, or creative hobbies. Flow generally involves active engagement, clear goals, and a balance between challenge and skill."
+    },
+    {
+      "week": 11,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "According to Maslow, what kind of need is self-actualization?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Social need"
+        },
+        {
+          "key": "B",
+          "text": "Safety need"
+        },
+        {
+          "key": "C",
+          "text": "Being need"
+        },
+        {
+          "key": "D",
+          "text": "Deficiency need"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Being need",
+      "explanation": "Maslow classifies self-actualization as a being need, associated with realizing one's potential after more basic needs have been sufficiently addressed. It is distinct from deficiency needs such as safety or belonging."
+    },
+    {
+      "week": 11,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "According to Maslow, which of the following is an obstacle in achieving self-actualization?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lack of desire"
+        },
+        {
+          "key": "B",
+          "text": "Stuck in fulfilling lower needs"
+        },
+        {
+          "key": "C",
+          "text": "Societal conditions of worth"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Stuck in fulfilling lower needs",
+      "explanation": "The keyed obstacle is becoming stuck in fulfilling lower-level needs, which can keep attention and effort focused on basic deficiencies instead of self-actualization. This item asks about Maslow's hierarchy, whereas conditions of worth are associated more directly with Rogers's theory."
+    },
+    {
+      "week": 11,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "According to Carl Rogers, which of the following is an obstacle to achieving our ‘real self’?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lack of desire"
+        },
+        {
+          "key": "B",
+          "text": "Stuck in fulfilling lower needs"
+        },
+        {
+          "key": "C",
+          "text": "Societal conditions of worth"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Societal conditions of worth",
+      "explanation": "In Rogers's person-centered theory, conditions of worth arise when acceptance depends on meeting others' expectations, leading a person to prioritize approval over their authentic experience. The source therefore keys societal conditions of worth as an obstacle to the 'real self.'"
+    },
+    {
+      "week": 11,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "According to Carl Rogers, inconsistency between our real self and ideal self creates......................",
+      "options": [
+        {
+          "key": "A",
+          "text": "Psychosis"
+        },
+        {
+          "key": "B",
+          "text": "Neurosis"
+        },
+        {
+          "key": "C",
+          "text": "Organismic valuing"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Neurosis",
+      "explanation": "Rogers used neurosis to describe difficulties that can arise when a person's self-concept is inconsistent with their lived experience or ideal self. The mismatch can create incongruence and distress; organismic valuing is a different concept."
+    },
+    {
+      "week": 11,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "Which of the following theories explains human motivation based on the basic psychological need fulfillment?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Organismic valuing theory"
+        },
+        {
+          "key": "B",
+          "text": "Functional descriptive model"
+        },
+        {
+          "key": "C",
+          "text": "PERMA model."
+        },
+        {
+          "key": "D",
+          "text": "Self-determination theory."
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Self-determination theory.",
+      "explanation": "Self-determination theory explains motivation by examining the fulfillment of basic psychological needs, commonly autonomy, competence, and relatedness. Their satisfaction supports more self-endorsed motivation, whereas the other listed frameworks emphasize different mechanisms."
+    },
+    {
+      "week": 11,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "A student generally completes school work independently, but only because of its value in gaining admission to college. This is an example of.............type of extrinsic motivation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "External regulation"
+        },
+        {
+          "key": "B",
+          "text": "Introjection"
+        },
+        {
+          "key": "C",
+          "text": "Identification."
+        },
+        {
+          "key": "D",
+          "text": "Integration"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Identification.",
+      "explanation": "Identification is a form of extrinsic motivation in which a person personally values the outcome of an activity. The student does schoolwork because they recognize its importance for college admission, even if the work is not done solely for its own enjoyment."
+    },
+    {
+      "week": 11,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Which of the following can promote internalized forms of extrinsic motivation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Increased external pressure"
+        },
+        {
+          "key": "B",
+          "text": "Inflexible guidelines and regulations"
+        },
+        {
+          "key": "C",
+          "text": "Satisfaction of basic psychological needs"
+        },
+        {
+          "key": "D",
+          "text": "Strict punishment for non-compliance"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Satisfaction of basic psychological needs",
+      "explanation": "Satisfaction of basic psychological needs can promote internalization, making externally prompted behavior feel more self-endorsed. External pressure, rigid rules, and punishment may secure compliance but are not the factors identified by this theory as supporting internalization."
+    },
+    {
+      "week": 11,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "Which of the following are internalized forms of extrinsic motivation?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Amotivation and Introjection."
+        },
+        {
+          "key": "B",
+          "text": "Identification and integration."
+        },
+        {
+          "key": "C",
+          "text": "External regulation and controlled motivation."
+        },
+        {
+          "key": "D",
+          "text": "None of these."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Identification and integration.",
+      "explanation": "Identification and integration are internalized forms of extrinsic motivation. With identification, a person values the goal; with integration, the behavior is also aligned with the person's broader values and sense of self."
+    },
+    {
+      "week": 12,
+      "questionNo": 1,
+      "type": "MCQ",
+      "question": "Which of the following is a motivational component of meaning in life?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Coherence"
+        },
+        {
+          "key": "B",
+          "text": "Purpose"
+        },
+        {
+          "key": "C",
+          "text": "Significance"
+        },
+        {
+          "key": "D",
+          "text": "Mattering"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Purpose",
+      "explanation": "Purpose is the motivational component of meaning in life because it gives direction and helps organize goals and actions. Comprehension concerns making sense of experience, while significance or mattering concerns whether life feels worthwhile and valuable."
+    },
+    {
+      "week": 12,
+      "questionNo": 2,
+      "type": "MCQ",
+      "question": "‘Life has meaning under all circumstances, even the most miserable ones'. This statement is associated with...........................",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cognitive therapy"
+        },
+        {
+          "key": "B",
+          "text": "Mindfulness-based therapy"
+        },
+        {
+          "key": "C",
+          "text": "Behavioral therapy"
+        },
+        {
+          "key": "D",
+          "text": "Logotherapy"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Logotherapy",
+      "explanation": "The statement that life can have meaning under all circumstances, including miserable ones, is associated with logotherapy, developed by Viktor Frankl. The approach emphasizes discovering meaning even when circumstances cannot be changed."
+    },
+    {
+      "week": 12,
+      "questionNo": 3,
+      "type": "MCQ",
+      "question": "How is significance or mattering defined in the context of meaning in life?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A value-laden evaluation of daily activities"
+        },
+        {
+          "key": "B",
+          "text": "Worthwhileness and value of one’s life"
+        },
+        {
+          "key": "C",
+          "text": "A measure of achievements and success"
+        },
+        {
+          "key": "D",
+          "text": "A focus on personal desires and wishes"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Worthwhileness and value of one’s life",
+      "explanation": "Significance or mattering refers to the sense that one's life is worthwhile and has value. It is not simply a count of achievements or a focus on personal wishes; it concerns the perceived worth of one's life and existence."
+    },
+    {
+      "week": 12,
+      "questionNo": 4,
+      "type": "MCQ",
+      "question": "How do the dimensions of comprehension, purpose, and mattering influence each other?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They have no mutual influence."
+        },
+        {
+          "key": "B",
+          "text": "A high level in one dimension leads to low levels in others."
+        },
+        {
+          "key": "C",
+          "text": "Low levels in one may lead to low levels in others, and vice versa"
+        },
+        {
+          "key": "D",
+          "text": "They have unpredictable relationships."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Low levels in one may lead to low levels in others, and vice versa",
+      "explanation": "Comprehension, purpose, and mattering are interrelated dimensions of meaning in life. A low level in one dimension can accompany or contribute to low levels in the others, just as strengths in one area may support the broader sense of meaning."
+    },
+    {
+      "week": 12,
+      "questionNo": 5,
+      "type": "MCQ",
+      "question": "What did Frankl believe is the last of human freedoms, even in the most challenging circumstances?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Freedom to pursue material success"
+        },
+        {
+          "key": "B",
+          "text": "Freedom to avoid suffering"
+        },
+        {
+          "key": "C",
+          "text": "Freedom to achieve external goals."
+        },
+        {
+          "key": "D",
+          "text": "Freedom to choose one's attitude in any given circumstance."
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Freedom to choose one's attitude in any given circumstance.",
+      "explanation": "Frankl described the freedom to choose one's attitude toward a circumstance as a fundamental human freedom, even when external conditions are severely constrained. This does not mean a person can always control events, but that their stance toward them can retain meaning."
+    },
+    {
+      "week": 12,
+      "questionNo": 6,
+      "type": "MCQ",
+      "question": "What is one way Frankl suggested individuals can discover meaning in life?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Creating a work or doing a deed"
+        },
+        {
+          "key": "B",
+          "text": "Avoiding all forms of suffering"
+        },
+        {
+          "key": "C",
+          "text": "Pursuing external achievements only."
+        },
+        {
+          "key": "D",
+          "text": "Experiencing natural beauty without any action"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Creating a work or doing a deed",
+      "explanation": "Frankl proposed that meaning can be discovered through creative values, such as creating work or doing a deed. Other routes include experiencing something or someone and choosing an attitude toward unavoidable suffering, but creating a work or deed is the listed answer."
+    },
+    {
+      "week": 12,
+      "questionNo": 7,
+      "type": "MCQ",
+      "question": "Why might satisfaction from extrinsic goals not last?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Extrinsic goals are inherently unsatisfying."
+        },
+        {
+          "key": "B",
+          "text": "People quickly adapt to extrinsic goals."
+        },
+        {
+          "key": "C",
+          "text": "Satisfaction from extrinsic goals is dependent on external factors."
+        },
+        {
+          "key": "D",
+          "text": "Extrinsic goals are not valued by one's culture."
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "People quickly adapt to extrinsic goals.",
+      "explanation": "Satisfaction from extrinsic goals may fade because people can quickly adapt to the external rewards or circumstances they attain. Once a goal becomes familiar, its initial emotional boost may diminish, which is one reason intrinsic goals can matter for sustained well-being."
+    },
+    {
+      "week": 12,
+      "questionNo": 8,
+      "type": "MCQ",
+      "question": "How do intrinsic goals differ from extrinsic goals in terms of their relationship to cultural beliefs and norms?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both intrinsic and extrinsic goals are strongly shaped by cultural beliefs and norms."
+        },
+        {
+          "key": "B",
+          "text": "Intrinsic goals are more influenced by cultural beliefs, while extrinsic goals are less influenced by cultural beliefs and norms."
+        },
+        {
+          "key": "C",
+          "text": "Extrinsic goals are strongly shaped by cultural beliefs and norms, while intrinsic goals emerge from natural growth tendencies."
+        },
+        {
+          "key": "D",
+          "text": "Cultural beliefs have no impact on the content of either intrinsic or extrinsic goals."
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Extrinsic goals are strongly shaped by cultural beliefs and norms, while intrinsic goals emerge from natural growth tendencies.",
+      "explanation": "The course contrasts extrinsic goals, which are strongly shaped by cultural beliefs and norms, with intrinsic goals that are described as emerging from natural growth tendencies. This is the distinction specified by the provided solution key."
+    }
+  ],
+  "contentNotice": {
+    "label": "Source and answer-key note",
+    "message": "Question wording and option order are transcribed from the provided NPTEL detailed-solution PDF. Correct answers follow the options shown in bold in that PDF; the NPTEL portal may shuffle option order, so these answer letters correspond to this file’s option order. Minor obvious typos were corrected in question stems, and the incomplete resilience question was cleaned without adding a missing attribution."
+  }
+}
