@@ -3104,15 +3104,44 @@ function highlightPythonLine(line) {
   return out;
 }
 
+function highlightJavaLine(line) {
+  // Keep the tokenizer deliberately simple so the in-browser Babel parser accepts it.
+  const tokenRe = /\/\/.*|"[^"\\]*(?:\\.[^"\\]*)*"|'[^'\\]*(?:\\.[^'\\]*)*'|\b(?:abstract|assert|boolean|break|byte|case|catch|char|class|const|continue|default|do|double|else|enum|extends|final|finally|float|for|if|implements|import|instanceof|int|interface|long|native|new|package|private|protected|public|return|short|static|strictfp|super|switch|synchronized|this|throw|throws|transient|try|void|volatile|while)\b|\b(?:true|false|null)\b|\b\d+(?:\.\d+)?\b|[A-Za-z_$][\w$]*|\+\+|--|==|!=|<=|>=|&&|\|\||[=+*\/%<>!&|?:~-]/g;
+  const out = [];
+  let last = 0, match, key = 0;
+  while ((match = tokenRe.exec(line)) !== null) {
+    if (match.index > last) out.push(<React.Fragment key={key++}>{line.slice(last, match.index)}</React.Fragment>);
+    const token = match[0];
+    let cls = 'syn-variable';
+    if (token.startsWith('//')) cls = 'syn-comment';
+    else if (/^["']/.test(token)) cls = 'syn-string';
+    else if (/^(true|false|null)$/.test(token)) cls = 'syn-constant';
+    else if (/^(abstract|assert|boolean|break|byte|case|catch|char|class|const|continue|default|do|double|else|enum|extends|final|finally|float|for|if|implements|import|instanceof|int|interface|long|native|new|package|private|protected|public|return|short|static|strictfp|super|switch|synchronized|this|throw|throws|transient|try|void|volatile|while)$/.test(token)) cls = 'syn-keyword';
+    else if (/^\d/.test(token)) cls = 'syn-number';
+    else if (/^(\+\+|--|==|!=|<=|>=|&&|\|\||[=+*\/%<>!&|?:~-])$/.test(token)) cls = 'syn-operator';
+    out.push(<span key={key++} className={cls}>{token}</span>);
+    last = tokenRe.lastIndex;
+  }
+  if (last < line.length) out.push(<React.Fragment key={key++}>{line.slice(last)}</React.Fragment>);
+  return out;
+}
+
 function PythonCodePanel({ code, language = 'python' }) {
   const lines = String(code || '').replace(/\r\n/g, '\n').split('\n');
-  const isPython = String(language || 'python').toLowerCase() === 'python';
+  const lang = String(language || 'python').toLowerCase();
+  const isPython = lang === 'python';
+  const isJava = lang === 'java';
+  // Some Python transcriptions already include their original printed line numbers.
+  // Keep those verbatim; show a gutter for unnumbered Java and other source snippets.
+  const hasSourceLineNumbers = lines.some((line) => /^\s*\d+\.\s/.test(line));
+  const showGutter = !hasSourceLineNumbers;
   return (
     <div className="python-code-scroll">
       <pre className="python-code"><code>
         {lines.map((line, i) => (
           <div className="python-code-line" key={i}>
-            <span className="python-line-content">{isPython ? highlightPythonLine(line) : line}</span>
+            {showGutter ? <span className="python-line-number" aria-hidden="true">{i + 1}</span> : null}
+            <span className="python-line-content">{isPython ? highlightPythonLine(line) : (isJava ? highlightJavaLine(line) : line)}</span>
           </div>
         ))}
       </code></pre>
@@ -3217,7 +3246,7 @@ function AppFooter({ showReport = false }) {
 
 const SUBJECTS = [
   { id: "joy_of_computing_using_python", name: "The Joy of Computing using Python", file: "joy_of_computing.json", image: "joy_of_computing_using_python.webp", institute: "IIT Ropar / NPTEL" },
-  { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "psychology_of_learning.webp", institute: "IIT Kharagpur / NPTEL" },
+  { id: "psychology_of_learning", name: "Psychology of Learning", file: "Psychology_of_learning.json", image: "Psychology_of_learning.webp", institute: "IIT Kharagpur / NPTEL" },
   { id: "environment_and_development", name: "Environment and Development", file: "environment_and_development.json", image: "environment_and_development.webp", institute: "IIT Guwahati / NPTEL" },
   { id: "forests_and_their_management", name: "Forests and Their Management", file: "Forests_and_Their_Management.json", image: "forests_and_their_management.webp", institute: "IIT Kanpur / NPTEL" },
   { id: "wildlife_ecology", name: "Wildlife Ecology", file: "Wildlife_Ecology.json", image: "wildlife_ecology.webp", institute: "IIT Kanpur / NPTEL" },
@@ -3225,8 +3254,8 @@ const SUBJECTS = [
   { id: "understanding_incubation_and_entrepreneurship", name: "Understanding Incubation and Entrepreneurship", file: "Understanding_Incubation_and_Entrepreneurship.json", image: "understanding_incubation_and_entrepreneurship.webp", institute: "IIT Bombay / NPTEL" },
   { id: "artificial_intelligence_concepts_and_techniques", name: "Artificial Intelligence Concepts and Techniques", file: "Artificial_intelligence_concepts_and_techniques.json", image: "artificial_intelligence_concepts_and_techniques.webp", institute: "IISc Bangalore / NPTEL" },
   { id: "psychology_of_stress_health_and_well_being", name: "Psychology of Stress, Health and Well-Being", file: "Psychology_of_Stress_Health_and_Well_Being.json", image: "Psychology_of_stress.webp", institute: "IIT Guwahati / NPTEL" },
+  { id: "programming_in_java", name: "Programming in Java", file: "programming_in_java.json", image: "programming_in_java.webp", institute: "IIT Kharagpur / NPTEL" },
 ];
-
 
 const QUESTIONS_FOLDER = 'assets/';
 const IMAGES_FOLDER    = 'asset_image/';
