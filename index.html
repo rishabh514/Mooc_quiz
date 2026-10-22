@@ -4719,11 +4719,14 @@ function qualifyingRepeatableBadges(run) {
   if (!run || !(run.total > 0)) return [];
   const accuracy = pct(run.score, run.total);
   const answered = (run.items || []).filter((item) => !item.skipped);
+  const avgAnswerMs = answered.length
+    ? answered.reduce((sum, item) => sum + (Number(item.timeMs) || 0), 0) / answered.length
+    : (run.total > 0 && Number(run.timeTotal) > 0 ? Number(run.timeTotal) / run.total : Infinity);
   const awards = [];
   if (accuracy >= 90) awards.push({id:'precision-sniper', name:'Precision Sniper', xp:BADGE_XP['precision-sniper']});
   if (accuracy === 100 && !(run.skipped || 0)) awards.push({id:'flawless-gladiator', name:'Flawless Gladiator', xp:BADGE_XP['flawless-gladiator']});
   if (run.mode === 'weak' && accuracy >= 80) awards.push({id:'phoenix-rising', name:'Phoenix Rising', xp:BADGE_XP['phoenix-rising']});
-  if (accuracy >= 90 && answered.length && answered.reduce((sum, item) => sum + (item.timeMs || 0), 0) / answered.length <= 20000) awards.push({id:'speed-demon', name:'Speed Demon', xp:BADGE_XP['speed-demon']});
+  if (accuracy >= 90 && avgAnswerMs <= 20000) awards.push({id:'speed-demon', name:'Speed Demon', xp:BADGE_XP['speed-demon']});
   return awards;
 }
 function badgeAwardsForRun(run, achievements) {
@@ -4883,12 +4886,25 @@ function AchievementPanel({ progress, qmap, subject, achievements }) {
   }, []);
   const dates = achievements?.activityDates || [];
   const streak = streakSummary(dates);
-  const allRuns = (achievements?.history || []).slice().sort((a, b) => (a.ts || 0) - (b.ts || 0));
+  // Legacy versions saved completed attempts under the subject progress key, while
+  // the newer achievement ledger uses a separate key. Merge both sources so existing
+  // players keep their badge history; prefer the richer achievement-ledger record.
+  const achievementRuns = achievements?.history || [];
+  const legacyRuns = (progress?.history || []).map((run) => ({ ...run, subjectId: run.subjectId || subject?.id }));
+  const runById = new Map();
+  [...legacyRuns, ...achievementRuns].forEach((run) => {
+    const key = run.id || `${run.subjectId || subject?.id}:${run.ts || 0}:${run.modeLabel || run.mode || ''}:${run.total || 0}`;
+    const existing = runById.get(key);
+    if (!existing || ((run.items || []).length > (existing.items || []).length)) runById.set(key, run);
+  });
+  const allRuns = [...runById.values()].sort((a, b) => (a.ts || 0) - (b.ts || 0));
   const scorePct = (run) => run && run.total > 0 ? pct(run.score, run.total) : 0;
   const runAnswered = (run) => (run?.items || []).filter((item) => !item.skipped);
   const anyRun = (test) => allRuns.some(test);
-  const currentSubjectRuns = allRuns.filter((run) => run.subjectId === subject?.id);
-  const totalAnswered = Math.max(0, Number(achievements?.totalAnswered) || allRuns.reduce((sum, run) => sum + runAnswered(run).length, 0));
+  const currentSubjectRuns = allRuns.filter((run) => (run.subjectId || subject?.id) === subject?.id);
+  const questionAttemptTotal = Object.values(progress?.questions || {}).reduce((sum, stat) => sum + Math.max(0, Number(stat?.a) || 0), 0);
+  const historyAnsweredTotal = allRuns.reduce((sum, run) => sum + (runAnswered(run).length || (run.items ? 0 : Math.max(0, Number(run.total) || 0) - Math.max(0, Number(run.skipped) || 0))), 0);
+  const totalAnswered = Math.max(0, Number(achievements?.totalAnswered) || 0, questionAttemptTotal, historyAnsweredTotal);
   const comeback = currentSubjectRuns.some((later, i) => currentSubjectRuns.slice(0, i).some((earlier) =>
     (later.mode || '') === (earlier.mode || '') && (later.assignmentIds || []).join('|') === (earlier.assignmentIds || []).join('|') && scorePct(later) >= scorePct(earlier) + 20
   ));
@@ -4940,7 +4956,7 @@ function AchievementPanel({ progress, qmap, subject, achievements }) {
     { id: 'week-conqueror', earned: weekConqueror, progress: [progressItem('Regular weeks attempted', coveredAssignmentIds.size, regularAssignments.length, (v) => `${Math.min(v, regularAssignments.length)}/${regularAssignments.length} weeks`)] },
     { id: 'comeback-king', earned: comeback, progress: [progressItem('Score improvement', maxComeback, 20, (v) => `${Math.max(0, Math.round(v))} / 20 percentage points`)] },
     { id: 'phoenix-rising', repeatCount: allRuns.filter((run) => run.mode === 'weak' && scorePct(run) >= 80).length, earned: anyRun((run) => run.mode === 'weak' && scorePct(run) >= 80), progress: [progressItem('Best Weak Questions score', bestScore(allRuns, (run) => run.mode === 'weak'), 80, (v) => `${Math.round(v)}% / 80%`)] },
-    { id: 'speed-demon', repeatCount: allRuns.filter((run) => { const answered = runAnswered(run); return scorePct(run) >= 90 && answered.length > 0 && answered.reduce((sum, item) => sum + (item.timeMs || 0), 0) / answered.length <= 20000; }).length, earned: anyRun((run) => { const answered = runAnswered(run); return scorePct(run) >= 90 && answered.length > 0 && answered.reduce((sum, item) => sum + (item.timeMs || 0), 0) / answered.length <= 20000; }), progress: [progressItem('Quiz accuracy', bestScore(allRuns), 90, (v) => `${Math.round(v)}% / 90%`), progressItem('Average answer speed', Number.isFinite(bestSpeed(allRuns)) ? Math.max(0, 20 - bestSpeed(allRuns)) : 0, 20, (v) => Number.isFinite(bestSpeed(allRuns)) ? `${Math.max(0, bestSpeed(allRuns)).toFixed(1)}s / ≤20s` : 'No timed data yet')] },
+    { id: 'speed-demon', repeatCount: allRuns.filter((run) => { const answered = runAnswered(run); const avgMs = answered.length ? answered.reduce((sum, item) => sum + (Number(item.timeMs) || 0), 0) / answered.length : (run.total > 0 && Number(run.timeTotal) > 0 ? Number(run.timeTotal) / run.total : Infinity); return scorePct(run) >= 90 && avgMs <= 20000; }).length, earned: anyRun((run) => { const answered = runAnswered(run); const avgMs = answered.length ? answered.reduce((sum, item) => sum + (Number(item.timeMs) || 0), 0) / answered.length : (run.total > 0 && Number(run.timeTotal) > 0 ? Number(run.timeTotal) / run.total : Infinity); return scorePct(run) >= 90 && avgMs <= 20000; }), progress: [progressItem('Quiz accuracy', bestScore(allRuns), 90, (v) => `${Math.round(v)}% / 90%`), progressItem('Average answer speed', Number.isFinite(bestSpeed(allRuns)) ? Math.max(0, 20 - bestSpeed(allRuns)) : 0, 20, (v) => Number.isFinite(bestSpeed(allRuns)) ? `${Math.max(0, bestSpeed(allRuns)).toFixed(1)}s / ≤20s` : 'No timed data yet')] },
     { id: 'first-blood', earned: totalAnswered >= 100, progress: [progressItem('Questions answered', totalAnswered, 100)] },
     { id: 'question-slayer', earned: totalAnswered >= 200, progress: [progressItem('Questions answered', totalAnswered, 200)] },
     { id: 'mind-gladiator', earned: totalAnswered >= 300, progress: [progressItem('Questions answered', totalAnswered, 300)] },
