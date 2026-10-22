@@ -1,0 +1,1 @@
+Mooc Mastery achievement badge assets. Copy the badges/ folder into the same root directory as index.html. The updated index.html references ./badges/<badge-id>.png. PNG files are 512x512. PNG assets are included for all 14 badges, plus two optional bonus icons.
