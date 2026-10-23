@@ -1,0 +1,85 @@
+
+# ─────────────────────────────────────────────────────────────
+# Mooc Mastery — robots.txt
+# NPTEL / SWAYAM MCQ practice, mock tests, course guides and revision tools
+# ─────────────────────────────────────────────────────────────
+
+# General search engines: allow crawling
+User-agent: *
+Allow: /
+Disallow: /assets/*.map
+Disallow: /node_modules/
+Disallow: /.git/
+
+# OpenAI search: allow public pages, not raw question-bank JSON
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# User-requested retrieval in ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# OpenAI model training: opt out
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic search: allow public pages, not raw question-bank JSON
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Anthropic user-requested retrieval
+User-agent: Claude-User
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Anthropic model development: opt out
+User-agent: ClaudeBot
+Disallow: /
+
+# Retain the legacy Claude crawler rule
+User-agent: Claude-Web
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Perplexity search: allow public pages, not raw question-bank JSON
+User-agent: PerplexityBot
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Perplexity user-requested retrieval
+User-agent: Perplexity-User
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Google AI use: permit public pages, exclude raw question-bank JSON
+User-agent: Google-Extended
+Allow: /
+Disallow: /assets/*.json
+Disallow: /assets/*.JSON
+
+# Apple AI training: opt out
+User-agent: Applebot-Extended
+Disallow: /
+
+# Other known training/data-collection crawlers: opt out
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://mooc-mastery.vercel.app/sitemap.xml

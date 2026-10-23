@@ -1,0 +1,4180 @@
+{
+  "course": "Forests and Their Management",
+  "institute": "NPTEL",
+  "assignment": "All Weeks",
+  "source": "Validated against the provided solved assignment PDF for Weeks 1–11 (bold/yellow-highlighted answer key) and FM-Week12-2026.pdf (bold answer key); original Extra questions retained.",
+  "weekStructure": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "sourceQuestionRange": "1-10",
+      "questionCount": 10
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "sourceQuestionRange": "11-20",
+      "questionCount": 10
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "sourceQuestionRange": "21-30",
+      "questionCount": 10
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "sourceQuestionRange": "31-40",
+      "questionCount": 10
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "sourceQuestionRange": "41-50",
+      "questionCount": 10
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "sourceQuestionRange": "51-60",
+      "questionCount": 10
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "sourceQuestionRange": "61-70",
+      "questionCount": 10
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "sourceQuestionRange": "71-80",
+      "questionCount": 10
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "sourceQuestionRange": "81-90",
+      "questionCount": 10
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "sourceQuestionRange": "91-100",
+      "questionCount": 10
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "sourceQuestionRange": "101-110",
+      "questionCount": 10
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "sourceQuestionRange": "111-120",
+      "questionCount": 10
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "sourceQuestionRange": "121-130",
+      "questionCount": 10
+    },
+    {
+      "week": 13,
+      "label": "Extra",
+      "sourceQuestionRange": "131-136",
+      "questionCount": 6
+    }
+  ],
+  "questions": [
+    {
+      "week": 0,
+      "questionNo": 1,
+      "sourceQuestionNo": 1,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "\"Plant community, predominantly composed of trees and other woody vegetation, usually with a closed canopy\" is",
+      "options": [
+        {
+          "key": "A",
+          "text": "silvicultural definition of forests"
+        },
+        {
+          "key": "B",
+          "text": "FAO definition of forests"
+        },
+        {
+          "key": "C",
+          "text": "legal definition of forests"
+        },
+        {
+          "key": "D",
+          "text": "ecological definition of forests"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "ecological definition of forests",
+      "explanation": "The ecological definition describes a forest by its actual vegetation structure: trees and other woody plants forming a plant community, often with a closed canopy. Unlike a legal definition, it focuses on ecological characteristics rather than whether an area is officially recorded as forest."
+    },
+    {
+      "week": 0,
+      "questionNo": 2,
+      "sourceQuestionNo": 2,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The value derived from the knowledge of use of resources by others in the current generation is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "altruistic value"
+        },
+        {
+          "key": "B",
+          "text": "bequest value"
+        },
+        {
+          "key": "C",
+          "text": "existence value"
+        },
+        {
+          "key": "D",
+          "text": "option value"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "altruistic value",
+      "explanation": "Altruistic value is the satisfaction people get from knowing that other people alive today can benefit from a resource. It is a non-market value because the person valuing the resource does not necessarily use it personally; the benefit comes from others in the same generation having access to it."
+    },
+    {
+      "week": 0,
+      "questionNo": 3,
+      "sourceQuestionNo": 3,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "disclimax",
+      "explanation": "A disclimax is a community whose development toward the natural climatic climax is repeatedly interrupted by a disturbance. Here, cattle grazing keeps the vegetation in a particular state, so the observed community is maintained by human-associated disturbance rather than by climate alone."
+    },
+    {
+      "week": 0,
+      "questionNo": 4,
+      "sourceQuestionNo": 4,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these depicts correctly the lithosere primary succession?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rock → Crustose lichen → Foliose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "B",
+          "text": "Rock → Foliose lichen → Crustose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "C",
+          "text": "Moss → Crustose lichen → Foliose lichen → Rock → Herbaceous stage → Shrub → Woodland → Climax"
+        },
+        {
+          "key": "D",
+          "text": "Rock → Crustose lichen → Foliose lichen → Shrub → Herbaceous stage → Moss → Woodland → Climax"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Rock → Crustose lichen → Foliose lichen → Moss → Herbaceous stage → Shrub → Woodland → Climax",
+      "explanation": "Lithosere is primary succession that begins on bare rock, where soil is initially absent or extremely limited. Crustose lichens colonise the rock first and help weather it; foliose lichens, mosses, herbs, shrubs and eventually woodland can follow as organic matter and soil accumulate and conditions become less harsh."
+    },
+    {
+      "week": 0,
+      "questionNo": 5,
+      "sourceQuestionNo": 5,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these has the highest organic matter content?",
+      "options": [
+        {
+          "key": "A",
+          "text": "peaty soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "peaty soil",
+      "explanation": "Peaty soil contains a large accumulation of partially decomposed plant remains because waterlogged, oxygen-poor conditions slow decomposition. This gives it a much higher organic-matter content than typical mineral soils such as alluvial, saline, or red and yellow soils."
+    },
+    {
+      "week": 0,
+      "questionNo": 6,
+      "sourceQuestionNo": 6,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The term laterite soil is derived from Latin later which means",
+      "options": [
+        {
+          "key": "A",
+          "text": "red"
+        },
+        {
+          "key": "B",
+          "text": "brick"
+        },
+        {
+          "key": "C",
+          "text": "fertile"
+        },
+        {
+          "key": "D",
+          "text": "infertile"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "brick",
+      "explanation": "The word *laterite* comes from the Latin *later*, meaning brick. The name refers to lateritic material that can harden into a brick-like mass when exposed, owing to its iron- and aluminium-rich composition and the way it dries."
+    },
+    {
+      "week": 0,
+      "questionNo": 7,
+      "sourceQuestionNo": 7,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Vertical arrangement of soil horizons is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "soil texture"
+        },
+        {
+          "key": "B",
+          "text": "soil structure"
+        },
+        {
+          "key": "C",
+          "text": "soil profile"
+        },
+        {
+          "key": "D",
+          "text": "soil science"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "soil profile",
+      "explanation": "A soil profile is a vertical section through the soil that displays its horizons in sequence, from the surface organic layer and topsoil downward to subsoil and parent material. Soil texture describes particle-size composition, whereas soil structure describes how particles aggregate."
+    },
+    {
+      "week": 0,
+      "questionNo": 8,
+      "sourceQuestionNo": 8,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Hydrolysis is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical weathering"
+        },
+        {
+          "key": "B",
+          "text": "physical weathering"
+        },
+        {
+          "key": "C",
+          "text": "biological weathering"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "chemical weathering",
+      "explanation": "Hydrolysis is chemical weathering because water reacts with minerals and changes their chemical composition. For example, feldspar can be altered into clay minerals. Physical weathering breaks rock into smaller pieces without changing mineral chemistry, while biological weathering is caused by organisms or their activity."
+    },
+    {
+      "week": 0,
+      "questionNo": 9,
+      "sourceQuestionNo": 9,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For a tree with dbh = 45.6 cm, height = 27 m and total stem volume of 1.78 cum, the artificial form factor for the tree is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.1"
+        },
+        {
+          "key": "B",
+          "text": "0.2"
+        },
+        {
+          "key": "C",
+          "text": "0.3"
+        },
+        {
+          "key": "D",
+          "text": "0.4"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "0.4",
+      "explanation": "The artificial form factor compares the tree's actual stem volume with the volume of a cylinder having the same basal area at breast height and the same total height. The factor is a dimensionless ratio, so it is interpreted as actual volume divided by the reference-cylinder volume; using the supplied dimensions gives the keyed value of 0.4."
+    },
+    {
+      "week": 0,
+      "questionNo": 10,
+      "sourceQuestionNo": 10,
+      "weekLabel": "Week 0",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Choose the correct statement:",
+      "options": [
+        {
+          "key": "A",
+          "text": "For a non-circular cross-section, girth tape over-estimates the sectional area."
+        },
+        {
+          "key": "B",
+          "text": "For a non-circular cross-section, girth tape under-estimates the sectional area."
+        },
+        {
+          "key": "C",
+          "text": "For a non-circular cross-section, girth tape correctly estimates the sectional area."
+        },
+        {
+          "key": "D",
+          "text": "None of these is a correct statement."
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "For a non-circular cross-section, girth tape over-estimates the sectional area.",
+      "explanation": "A girth tape measures the perimeter of an irregular cross-section. Converting that perimeter to area as though the section were circular can overestimate the true area when the section is non-circular, because the same perimeter can enclose less area in an irregular shape than in a circle."
+    },
+    {
+      "week": 1,
+      "questionNo": 1,
+      "sourceQuestionNo": 11,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a consumptive value?",
+      "options": [
+        {
+          "key": "A",
+          "text": "timber"
+        },
+        {
+          "key": "B",
+          "text": "firewood"
+        },
+        {
+          "key": "C",
+          "text": "non-timber forest products"
+        },
+        {
+          "key": "D",
+          "text": "education"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "education",
+      "explanation": "Education is a non-consumptive forest value: people can benefit from learning, research, or recreation without removing a forest product. Timber, firewood, and many non-timber forest products are consumptive values when they are harvested and used, because the resource is physically taken from the ecosystem."
+    },
+    {
+      "week": 1,
+      "questionNo": 2,
+      "sourceQuestionNo": 12,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Tropical moist forests do not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "broadleaved forests"
+        },
+        {
+          "key": "B",
+          "text": "wet evergreen forests"
+        },
+        {
+          "key": "C",
+          "text": "semi-evergreen forests"
+        },
+        {
+          "key": "D",
+          "text": "moist deciduous forests"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "broadleaved forests",
+      "explanation": "In the classification used by this question, wet evergreen, semi-evergreen and moist deciduous are recognised categories of tropical moist forest. “Broadleaved forests” is a much broader description based on leaf type, not the specific forest-type category being asked for, so it is the intended exception."
+    },
+    {
+      "week": 1,
+      "questionNo": 3,
+      "sourceQuestionNo": 13,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Montane sub-tropical forests do not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "broadleaved forests"
+        },
+        {
+          "key": "B",
+          "text": "pine forests"
+        },
+        {
+          "key": "C",
+          "text": "semi-evergreen forests"
+        },
+        {
+          "key": "D",
+          "text": "dry evergreen forests"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "semi-evergreen forests",
+      "explanation": "Semi-evergreen forests are classified under tropical moist forests, not montane subtropical forests in the standard Indian forest-type grouping. Montane subtropical types include categories such as broadleaved hill forests, pine forests and dry evergreen formations, depending on the regional classification."
+    },
+    {
+      "week": 1,
+      "questionNo": 4,
+      "sourceQuestionNo": 14,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "According to the Supreme Court, the word forest must be understood according to its",
+      "options": [
+        {
+          "key": "A",
+          "text": "biological meaning"
+        },
+        {
+          "key": "B",
+          "text": "ecological meaning"
+        },
+        {
+          "key": "C",
+          "text": "silvicultural meaning"
+        },
+        {
+          "key": "D",
+          "text": "dictionary meaning"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "dictionary meaning",
+      "explanation": "The Supreme Court’s approach in the T.N. Godavarman forest cases says that “forest” should be understood according to its dictionary meaning, rather than only by formal legal notification or ownership. This broad interpretation aims to prevent ecologically forested areas from losing protection merely because of administrative labels."
+    },
+    {
+      "week": 1,
+      "questionNo": 5,
+      "sourceQuestionNo": 15,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a use value?",
+      "options": [
+        {
+          "key": "A",
+          "text": "direct value"
+        },
+        {
+          "key": "B",
+          "text": "indirect value"
+        },
+        {
+          "key": "C",
+          "text": "option value"
+        },
+        {
+          "key": "D",
+          "text": "existence value"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "existence value",
+      "explanation": "Existence value is a non-use value: people may value knowing that a forest or species continues to exist even if they never visit or use it. Use values arise from actual or potential use, such as timber, recreation, or future options; existence value does not require use."
+    },
+    {
+      "week": 1,
+      "questionNo": 6,
+      "sourceQuestionNo": 16,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The value of leaving use and non-use values for offspring’s or future generations is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "altruistic value"
+        },
+        {
+          "key": "B",
+          "text": "bequest value"
+        },
+        {
+          "key": "C",
+          "text": "existence value"
+        },
+        {
+          "key": "D",
+          "text": "option value"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "bequest value",
+      "explanation": "Bequest value is the value people place on preserving resources and environmental benefits for future generations. It includes the wish that descendants should inherit forests, biodiversity, and ecosystem services, whether or not those future people eventually make direct use of them."
+    },
+    {
+      "week": 1,
+      "questionNo": 7,
+      "sourceQuestionNo": 17,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a non-use value?",
+      "options": [
+        {
+          "key": "A",
+          "text": "direct value"
+        },
+        {
+          "key": "B",
+          "text": "existence value"
+        },
+        {
+          "key": "C",
+          "text": "altruistic value"
+        },
+        {
+          "key": "D",
+          "text": "bequest value"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "direct value",
+      "explanation": "Direct value is a use value because it comes from directly obtaining benefits from a forest, such as timber, fuelwood, food, or recreation. Non-use values include existence and bequest values, where the benefit comes from knowing that a resource exists or will remain available to future generations."
+    },
+    {
+      "week": 1,
+      "questionNo": 8,
+      "sourceQuestionNo": 18,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "According to the Supreme Court, the term forest land includes",
+      "options": [
+        {
+          "key": "A",
+          "text": "some area recorded as forest in the Government record according to ownership"
+        },
+        {
+          "key": "B",
+          "text": "any area recorded as forest in the Government record according to ownership"
+        },
+        {
+          "key": "C",
+          "text": "some area recorded as forest in the Government record irrespective of ownership"
+        },
+        {
+          "key": "D",
+          "text": "any area recorded as forest in the Government record irrespective of ownership"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "any area recorded as forest in the Government record irrespective of ownership",
+      "explanation": "The Supreme Court’s broad interpretation includes any area recorded as forest in government records, regardless of who owns it. The key principle is that ownership alone does not determine forest status; the nature and official record of the land matter for applying forest-conservation protections."
+    },
+    {
+      "week": 1,
+      "questionNo": 9,
+      "sourceQuestionNo": 19,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a forest type found in India?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mediterranean dry"
+        },
+        {
+          "key": "B",
+          "text": "Tropical dry"
+        },
+        {
+          "key": "C",
+          "text": "Montane temperate"
+        },
+        {
+          "key": "D",
+          "text": "Alpine"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Mediterranean dry",
+      "explanation": "“Mediterranean dry” is not a standard forest type in India’s commonly used forest-type classifications. India’s recognised types reflect its tropical, subtropical, temperate, alpine, arid and coastal conditions; Mediterranean dry forest is associated with a different climatic region."
+    },
+    {
+      "week": 1,
+      "questionNo": 10,
+      "sourceQuestionNo": 20,
+      "weekLabel": "Week 1",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The term 'forest' originates from",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latin foris meaning outside"
+        },
+        {
+          "key": "B",
+          "text": "Greek foris meaning outside"
+        },
+        {
+          "key": "C",
+          "text": "Latin foris meaning trees"
+        },
+        {
+          "key": "D",
+          "text": "Greek foris meaning trees"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Latin foris meaning outside",
+      "explanation": "The term “forest” is commonly traced to the Latin *foris*, meaning “outside,” historically referring to land outside settled or enclosed areas. This is an etymological explanation of the word, rather than a scientific or legal definition of what qualifies as a forest today."
+    },
+    {
+      "week": 2,
+      "questionNo": 1,
+      "sourceQuestionNo": 21,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is abiotic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "vines"
+        },
+        {
+          "key": "B",
+          "text": "trees"
+        },
+        {
+          "key": "C",
+          "text": "reptiles"
+        },
+        {
+          "key": "D",
+          "text": "water"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "water",
+      "explanation": "Water is an abiotic factor because it is a non-living component of the environment. Abiotic factors include water, light, temperature, soil and minerals; biotic factors are living organisms and their interactions, such as competition, predation and parasitism."
+    },
+    {
+      "week": 2,
+      "questionNo": 2,
+      "sourceQuestionNo": 22,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A climax caused by wildfires is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "catastrophic climax",
+      "explanation": "A catastrophic climax is a community state produced or maintained by a major destructive event, such as wildfire, rather than by the usual gradual progression to a climatic climax. The disturbance can reset succession or favour species adapted to repeated fires."
+    },
+    {
+      "week": 2,
+      "questionNo": 3,
+      "sourceQuestionNo": 23,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The study of life history / general features of forest crops with respect to environmental factors is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "foresticulture"
+        },
+        {
+          "key": "B",
+          "text": "monoculture"
+        },
+        {
+          "key": "C",
+          "text": "silviculture"
+        },
+        {
+          "key": "D",
+          "text": "silvics"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "silvics",
+      "explanation": "Silvics studies the life history, characteristics, and environmental relationships of forest trees and crops. It asks how species grow, reproduce, regenerate and respond to site conditions; silviculture uses that knowledge to establish, tend and manage forest stands."
+    },
+    {
+      "week": 2,
+      "questionNo": 4,
+      "sourceQuestionNo": 24,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The art and science of cultivating forest crops is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "foresticulture"
+        },
+        {
+          "key": "B",
+          "text": "monoculture"
+        },
+        {
+          "key": "C",
+          "text": "silviculture"
+        },
+        {
+          "key": "D",
+          "text": "silvics"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "silviculture",
+      "explanation": "Silviculture is the art and science of establishing, tending, regenerating and managing forest crops. It applies knowledge of tree biology and site conditions to achieve objectives such as timber production, regeneration, habitat improvement and forest health."
+    },
+    {
+      "week": 2,
+      "questionNo": 5,
+      "sourceQuestionNo": 25,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a characteristic of pioneer species",
+      "options": [
+        {
+          "key": "A",
+          "text": "ability to grow on bare rocks"
+        },
+        {
+          "key": "B",
+          "text": "ability to tolerate extreme temperatures"
+        },
+        {
+          "key": "C",
+          "text": "large size"
+        },
+        {
+          "key": "D",
+          "text": "short life span"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "large size",
+      "explanation": "Large size is generally not a pioneer-species characteristic. Pioneer species are typically effective colonisers of disturbed or bare sites: they disperse readily, establish quickly, tolerate exposure and often grow rapidly. Their early arrival helps modify the site for later-successional species."
+    },
+    {
+      "week": 2,
+      "questionNo": 6,
+      "sourceQuestionNo": 26,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "At compensation point,",
+      "options": [
+        {
+          "key": "A",
+          "text": "photosynthesis = respiration"
+        },
+        {
+          "key": "B",
+          "text": "photosynthesis > respiration"
+        },
+        {
+          "key": "C",
+          "text": "photosynthesis < respiration"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "photosynthesis = respiration",
+      "explanation": "At the compensation point, the rate of photosynthesis equals the rate of respiration. Photosynthesis fixes the same amount of carbon that respiration releases, so net carbon gain is zero; above this point, the plant can accumulate net biomass, assuming other requirements are met."
+    },
+    {
+      "week": 2,
+      "questionNo": 7,
+      "sourceQuestionNo": 27,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Net primary productivity is given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "APAR + LUE"
+        },
+        {
+          "key": "B",
+          "text": "APAR X LUE"
+        },
+        {
+          "key": "C",
+          "text": "APAR - LUE"
+        },
+        {
+          "key": "D",
+          "text": "APAR ÷ LUE"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "APAR X LUE",
+      "explanation": "Net primary productivity (NPP) is the energy or biomass plants retain after accounting for their own respiration. In the light-use-efficiency framework, NPP is estimated from absorbed photosynthetically active radiation (APAR) multiplied by light-use efficiency (LUE), which represents how effectively absorbed light is converted into plant production."
+    },
+    {
+      "week": 2,
+      "questionNo": 8,
+      "sourceQuestionNo": 28,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Lithosere is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "hydrosere"
+        },
+        {
+          "key": "B",
+          "text": "xerosere"
+        },
+        {
+          "key": "C",
+          "text": "psammosere"
+        },
+        {
+          "key": "D",
+          "text": "halosere"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "xerosere",
+      "explanation": "A xerosere is a succession sequence that begins in a dry environment. A lithosere starts on bare rock, where water and soil are scarce, so it is a type of xerosere; as weathering and organic matter build soil, more demanding plant communities can establish."
+    },
+    {
+      "week": 2,
+      "questionNo": 9,
+      "sourceQuestionNo": 29,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Practical application of scientific, technical and economic principles of forestry comes under which branch of forestry?",
+      "options": [
+        {
+          "key": "A",
+          "text": "forest management"
+        },
+        {
+          "key": "B",
+          "text": "forest economics"
+        },
+        {
+          "key": "C",
+          "text": "forest mensuration"
+        },
+        {
+          "key": "D",
+          "text": "forest protection"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "forest management",
+      "explanation": "Forest management applies scientific, technical, economic and organisational principles to plan and regulate forestry activities. It balances objectives such as sustained yield, conservation, ecosystem services and local needs; silviculture is the more specific branch concerned with establishing and tending forest crops."
+    },
+    {
+      "week": 2,
+      "questionNo": 10,
+      "sourceQuestionNo": 30,
+      "weekLabel": "Week 2",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In the context of plant nutrition, boron is",
+      "options": [
+        {
+          "key": "A",
+          "text": "macronutrient"
+        },
+        {
+          "key": "B",
+          "text": "micronutrient"
+        },
+        {
+          "key": "C",
+          "text": "primary nutrient"
+        },
+        {
+          "key": "D",
+          "text": "secondary nutrient"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "micronutrient",
+      "explanation": "Boron is a micronutrient because plants need it in very small quantities, even though it is essential for normal growth. Micronutrients are required in trace amounts, unlike macronutrients such as nitrogen, phosphorus and potassium, which plants need in comparatively large quantities."
+    },
+    {
+      "week": 3,
+      "questionNo": 1,
+      "sourceQuestionNo": 31,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Thermal stresses lead to",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical weathering"
+        },
+        {
+          "key": "B",
+          "text": "physical weathering"
+        },
+        {
+          "key": "C",
+          "text": "biological weathering"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "physical weathering",
+      "explanation": "Thermal stress causes physical weathering when repeated heating and cooling make rock expand and contract. Differential expansion among minerals or between a rock’s surface and interior can create cracks and gradually break the rock apart without changing its chemical composition."
+    },
+    {
+      "week": 3,
+      "questionNo": 2,
+      "sourceQuestionNo": 32,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Cryofracturing is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical weathering"
+        },
+        {
+          "key": "B",
+          "text": "physical weathering"
+        },
+        {
+          "key": "C",
+          "text": "biological weathering"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "physical weathering",
+      "explanation": "Cryofracturing is physical weathering caused by freezing and thawing. Water enters cracks, expands when it freezes, and exerts pressure on the surrounding rock; repeated cycles widen the cracks and may eventually split the rock into fragments."
+    },
+    {
+      "week": 3,
+      "questionNo": 3,
+      "sourceQuestionNo": 33,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Carbonation is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical weathering"
+        },
+        {
+          "key": "B",
+          "text": "physical weathering"
+        },
+        {
+          "key": "C",
+          "text": "biological weathering"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "chemical weathering",
+      "explanation": "Carbonation is chemical weathering because carbon dioxide dissolves in water to form weak carbonic acid, which reacts with susceptible minerals such as calcite. The reaction changes the minerals chemically and can dissolve limestone, creating features such as cavities and karst landscapes."
+    },
+    {
+      "week": 3,
+      "questionNo": 4,
+      "sourceQuestionNo": 34,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Khadar is a type of",
+      "options": [
+        {
+          "key": "A",
+          "text": "black cotton soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "alluvial soil",
+      "explanation": "Khadar is the newer alluvial soil deposited by rivers during relatively recent floods. It is often replenished with fresh sediments and can be fertile, in contrast with Bangar, the older alluvium that commonly lies on higher terraces and may contain calcareous concretions."
+    },
+    {
+      "week": 3,
+      "questionNo": 5,
+      "sourceQuestionNo": 35,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Self ploughing character is seen in",
+      "options": [
+        {
+          "key": "A",
+          "text": "black cotton soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "black cotton soil",
+      "explanation": "Black cotton soil, also called regur, often shows self-ploughing because its clay-rich material swells when wet and shrinks and cracks as it dries. These shrink–swell cycles loosen and fracture the soil naturally, although the same properties can create challenges for construction and cultivation."
+    },
+    {
+      "week": 3,
+      "questionNo": 6,
+      "sourceQuestionNo": 36,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In soil profile, C refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "organic surface layer"
+        },
+        {
+          "key": "B",
+          "text": "topsoil layer"
+        },
+        {
+          "key": "C",
+          "text": "subsoil layer"
+        },
+        {
+          "key": "D",
+          "text": "substratum layer"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "substratum layer",
+      "explanation": "The C horizon is the substratum or relatively little-altered parent material beneath the developed soil horizons. It has undergone less biological and pedogenic change than the upper horizons; the R horizon, where shown separately, represents consolidated bedrock."
+    },
+    {
+      "week": 3,
+      "questionNo": 7,
+      "sourceQuestionNo": 37,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Soil formation is dependent upon",
+      "options": [
+        {
+          "key": "A",
+          "text": "vegetation"
+        },
+        {
+          "key": "B",
+          "text": "time"
+        },
+        {
+          "key": "C",
+          "text": "climate"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "Soil formation depends on interacting factors, commonly summarised as climate, organisms, relief/topography, parent material and time. No single factor acts in isolation: together they influence weathering, organic-matter accumulation, leaching and the development of distinct soil horizons."
+    },
+    {
+      "week": 3,
+      "questionNo": 8,
+      "sourceQuestionNo": 38,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Regur is a term for",
+      "options": [
+        {
+          "key": "A",
+          "text": "black cotton soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "black cotton soil",
+      "explanation": "Regur is another name for black cotton soil, a clay-rich soil widespread in parts of the Deccan region. Its high clay content gives it substantial water-holding capacity and pronounced swelling when wet and cracking when dry, which explains its characteristic behaviour."
+    },
+    {
+      "week": 3,
+      "questionNo": 9,
+      "sourceQuestionNo": 39,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Mechanical action of ocean waves is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "chemical weathering"
+        },
+        {
+          "key": "B",
+          "text": "physical weathering"
+        },
+        {
+          "key": "C",
+          "text": "biological weathering"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "physical weathering",
+      "explanation": "The mechanical action of ocean waves is physical weathering because waves repeatedly strike, abrade and dislodge rock material. The process changes the size or shape of the material without necessarily altering its chemical composition; dissolved substances and chemical reactions would instead indicate chemical weathering."
+    },
+    {
+      "week": 3,
+      "questionNo": 10,
+      "sourceQuestionNo": 40,
+      "weekLabel": "Week 3",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Bangar is a type of",
+      "options": [
+        {
+          "key": "A",
+          "text": "black cotton soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "alluvial soil",
+      "explanation": "Bangar is older alluvial soil deposited by rivers in earlier periods, commonly found on terraces above the active floodplain. Compared with Khadar, it is less regularly replenished by new sediments and may contain kankar, or calcium-carbonate nodules."
+    },
+    {
+      "week": 4,
+      "questionNo": 1,
+      "sourceQuestionNo": 41,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For false form factor, the reference for the base of the cylinder is",
+      "options": [
+        {
+          "key": "A",
+          "text": "base of the tree"
+        },
+        {
+          "key": "B",
+          "text": "breast height"
+        },
+        {
+          "key": "C",
+          "text": "10% of tree height"
+        },
+        {
+          "key": "D",
+          "text": "20% of tree height"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "breast height",
+      "explanation": "For the false form factor, the reference cylinder uses the tree’s basal area measured at breast height and the tree’s total height. This provides a common reference for comparing stem volume, while the normal form factor uses a cylinder based on a basal area taken at a specified fraction of tree height."
+    },
+    {
+      "week": 4,
+      "questionNo": 2,
+      "sourceQuestionNo": 42,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In India, the breast height is considered to be",
+      "options": [
+        {
+          "key": "A",
+          "text": "1.37 m"
+        },
+        {
+          "key": "B",
+          "text": "1.47 m"
+        },
+        {
+          "key": "C",
+          "text": "1.57 m"
+        },
+        {
+          "key": "D",
+          "text": "2.47 m"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "1.37 m",
+      "explanation": "In Indian forest mensuration, breast height is conventionally taken as 1.37 m above ground level (approximately 4.5 ft). Measuring diameter at a standard height allows trees to be compared consistently and reduces variation caused by measuring at arbitrary points along the trunk."
+    },
+    {
+      "week": 4,
+      "questionNo": 3,
+      "sourceQuestionNo": 43,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "3 trees are located in a sample plot of 15 m × 15 m. Their dbh are as under: dbh = 25 cm, 30 cm, 35 cm Find the stand basal area in sq m per Ha.",
+      "options": [
+        {
+          "key": "A",
+          "text": "9.6"
+        },
+        {
+          "key": "B",
+          "text": "14.6"
+        },
+        {
+          "key": "C",
+          "text": "21.6"
+        },
+        {
+          "key": "D",
+          "text": "27.6"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "9.6",
+      "explanation": "Basal area for each tree is calculated as πd²/4, with diameter expressed in metres. Add the three tree basal areas, then divide by the plot area (15 × 15 = 225 m²) and multiply by 10,000 to convert to a per-hectare estimate; this gives approximately 9.6 m²/ha."
+    },
+    {
+      "week": 4,
+      "questionNo": 4,
+      "sourceQuestionNo": 44,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Measurement of height based on similar triangles comes under:",
+      "options": [
+        {
+          "key": "A",
+          "text": "similar measurement"
+        },
+        {
+          "key": "B",
+          "text": "dissimilar measurement"
+        },
+        {
+          "key": "C",
+          "text": "direct measurement"
+        },
+        {
+          "key": "D",
+          "text": "indirect measurement"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "indirect measurement",
+      "explanation": "Indirect height measurement estimates tree height without measuring the full tree directly, often using angles, instruments, or geometric relationships. Methods based on similar triangles compare proportional sides of triangles, allowing height to be calculated from a measured baseline and corresponding angles or distances."
+    },
+    {
+      "week": 4,
+      "questionNo": 5,
+      "sourceQuestionNo": 45,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In a triangle, the angle between base and hypotenuse, θ = 60° and the hypotenuse c = 2 cm. Find the length of the base b.",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.33"
+        },
+        {
+          "key": "B",
+          "text": "0.5"
+        },
+        {
+          "key": "C",
+          "text": "0.75"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "1",
+      "explanation": "For a triangle with hypotenuse c = 2 cm and angle θ = 60° between the base and hypotenuse, the base is adjacent to the angle. Use cos θ = b/c, so b = c cos 60° = 2 × 0.5 = 1 cm. Therefore option D is correct. This uses the cosine ratio (adjacent side divided by hypotenuse), not the sine ratio."
+    },
+    {
+      "week": 4,
+      "questionNo": 6,
+      "sourceQuestionNo": 46,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A tree has dbh of 25 cm. Find its basal area in sq m.",
+      "options": [
+        {
+          "key": "A",
+          "text": ".049"
+        },
+        {
+          "key": "B",
+          "text": ".096"
+        },
+        {
+          "key": "C",
+          "text": ".149"
+        },
+        {
+          "key": "D",
+          "text": ".195"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": ".049",
+      "explanation": "Basal area is the cross-sectional area of a tree stem at breast height and is calculated as πd²/4. With diameter 25 cm, d = 0.25 m, so BA = π(0.25²)/4 ≈ 0.049 m². Diameter must be converted to metres before reporting area in square metres."
+    },
+    {
+      "week": 4,
+      "questionNo": 7,
+      "sourceQuestionNo": 47,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For normal form factor, the reference for the base of the cylinder is",
+      "options": [
+        {
+          "key": "A",
+          "text": "base of the tree"
+        },
+        {
+          "key": "B",
+          "text": "breast height"
+        },
+        {
+          "key": "C",
+          "text": "10% of tree height"
+        },
+        {
+          "key": "D",
+          "text": "20% of tree height"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "10% of tree height",
+      "explanation": "The normal form factor uses the basal area of the stem at 10% of total tree height as the base of its reference cylinder, rather than the breast-height area. This standardises the comparison between the actual stem volume and a cylinder that better reflects the lower stem’s taper."
+    },
+    {
+      "week": 4,
+      "questionNo": 8,
+      "sourceQuestionNo": 48,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A tree has dbh of 35 cm. Find its basal area in sq m.",
+      "options": [
+        {
+          "key": "A",
+          "text": ".049"
+        },
+        {
+          "key": "B",
+          "text": ".096"
+        },
+        {
+          "key": "C",
+          "text": ".149"
+        },
+        {
+          "key": "D",
+          "text": ".195"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": ".096",
+      "explanation": "Basal area is calculated using BA = πd²/4. For a diameter of 35 cm (0.35 m), BA = π(0.35²)/4 ≈ 0.096 m². The key is to square the diameter and use consistent units; basal area is an area, so its unit is m²."
+    },
+    {
+      "week": 4,
+      "questionNo": 9,
+      "sourceQuestionNo": 49,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Diameter over bark (dob), diameter under bark (dub) and bark thickness (tb) are related as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "dob = dub + tb"
+        },
+        {
+          "key": "B",
+          "text": "dob = dub - tb"
+        },
+        {
+          "key": "C",
+          "text": "dob = dub + 2 × tb"
+        },
+        {
+          "key": "D",
+          "text": "dob = dub - 2 × tb"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "dob = dub + 2 × tb",
+      "explanation": "Diameter over bark includes the wood plus the bark on both sides of the stem. Therefore, diameter over bark equals diameter under bark plus twice the bark thickness: dob = dub + 2tb. Adding bark thickness only once would account for only one side of the trunk."
+    },
+    {
+      "week": 4,
+      "questionNo": 10,
+      "sourceQuestionNo": 50,
+      "weekLabel": "Week 4",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Consider a stand of eucalyptus trees that are on average 30 cm in diameter and spaced on a regular 3 m grid. Find the spacing factor.",
+      "options": [
+        {
+          "key": "A",
+          "text": "5"
+        },
+        {
+          "key": "B",
+          "text": "10"
+        },
+        {
+          "key": "C",
+          "text": "15"
+        },
+        {
+          "key": "D",
+          "text": "data insufficient"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "10",
+      "explanation": "Spacing factor is the average distance between trees divided by their average diameter, using consistent units. With 3 m spacing and a 0.30 m diameter, the factor is 3/0.30 = 10; it expresses how widely trees are spaced relative to their size, not an area measurement."
+    },
+    {
+      "week": 5,
+      "questionNo": 1,
+      "sourceQuestionNo": 51,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The time of flight for LiDAR is 0.00001 sec. Find the distance of the object from the instrument.",
+      "options": [
+        {
+          "key": "A",
+          "text": "500 m"
+        },
+        {
+          "key": "B",
+          "text": "1000 m"
+        },
+        {
+          "key": "C",
+          "text": "1500 m"
+        },
+        {
+          "key": "D",
+          "text": "2000 m"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "1500 m",
+      "explanation": "LiDAR estimates distance from the time taken by a laser pulse to travel to the target and return. The measured time is round-trip time, so distance = (speed of light × time of flight) / 2. For 0.00001 s, this gives (3 × 10⁸ m/s × 10⁻⁵ s) / 2 = 1,500 m, matching option C. The division by two is essential because the pulse travels both to the object and back."
+    },
+    {
+      "week": 5,
+      "questionNo": 2,
+      "sourceQuestionNo": 52,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple random sampling"
+        },
+        {
+          "key": "B",
+          "text": "Systematic sampling"
+        },
+        {
+          "key": "C",
+          "text": "Stratified sampling"
+        },
+        {
+          "key": "D",
+          "text": "Multistage sampling"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Simple random sampling",
+      "explanation": "Simple random sampling gives every possible combination of the specified number of sampling units an equal chance of selection. Random selection reduces deliberate selection bias and supports statistical estimation, provided the sampling frame is suitable and each unit is correctly represented."
+    },
+    {
+      "week": 5,
+      "questionNo": 3,
+      "sourceQuestionNo": 53,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“This sampling employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start.” We're talking about",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple random sampling"
+        },
+        {
+          "key": "B",
+          "text": "Systematic sampling"
+        },
+        {
+          "key": "C",
+          "text": "Stratified sampling"
+        },
+        {
+          "key": "D",
+          "text": "Multistage sampling"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Systematic sampling",
+      "explanation": "Systematic sampling starts from a randomly chosen position among the first k units and then selects every kth unit. It is straightforward to implement and spreads samples across the sampling frame, but it can be biased if the population has a repeating pattern that aligns with the sampling interval."
+    },
+    {
+      "week": 5,
+      "questionNo": 4,
+      "sourceQuestionNo": 54,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A list of sampling units is called a",
+      "options": [
+        {
+          "key": "A",
+          "text": "frame"
+        },
+        {
+          "key": "B",
+          "text": "window"
+        },
+        {
+          "key": "C",
+          "text": "sample"
+        },
+        {
+          "key": "D",
+          "text": "population"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "frame",
+      "explanation": "A sampling frame is the list or operational representation of all sampling units from which the sample is selected. A complete, current frame helps ensure that eligible units are not omitted or duplicated; gaps in the frame can introduce coverage bias."
+    },
+    {
+      "week": 5,
+      "questionNo": 5,
+      "sourceQuestionNo": 55,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "___ is how close the measured values are to the correct value.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Accuracy"
+        },
+        {
+          "key": "B",
+          "text": "Precision"
+        },
+        {
+          "key": "C",
+          "text": "Bias"
+        },
+        {
+          "key": "D",
+          "text": "Variance"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Accuracy",
+      "explanation": "Accuracy describes how close a measured value is to the true or accepted value. A measurement can be precise but inaccurate if repeated readings cluster tightly around the wrong value, so accuracy and precision describe different aspects of measurement quality."
+    },
+    {
+      "week": 5,
+      "questionNo": 6,
+      "sourceQuestionNo": 56,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Bathymetric LiDAR uses",
+      "options": [
+        {
+          "key": "A",
+          "text": "far infrared light"
+        },
+        {
+          "key": "B",
+          "text": "near infrared light"
+        },
+        {
+          "key": "C",
+          "text": "orange light"
+        },
+        {
+          "key": "D",
+          "text": "green light"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "green light",
+      "explanation": "Bathymetric LiDAR uses green light because green wavelengths can penetrate clear water and reflect from the submerged bottom, while another return can identify the water surface. Comparing the returns helps estimate water depth and map underwater terrain in shallow coastal or inland waters."
+    },
+    {
+      "week": 5,
+      "questionNo": 7,
+      "sourceQuestionNo": 57,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "___ is how close the measured values are to each other.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Accuracy"
+        },
+        {
+          "key": "B",
+          "text": "Precision"
+        },
+        {
+          "key": "C",
+          "text": "Bias"
+        },
+        {
+          "key": "D",
+          "text": "Variance"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Precision",
+      "explanation": "Precision describes how close repeated measurements are to one another, regardless of whether they are close to the true value. High precision means low scatter between readings; accuracy instead concerns closeness to the accepted value."
+    },
+    {
+      "week": 5,
+      "questionNo": 8,
+      "sourceQuestionNo": 58,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "IMU stands for",
+      "options": [
+        {
+          "key": "A",
+          "text": "Imperial metering unit"
+        },
+        {
+          "key": "B",
+          "text": "Inertial metering unit"
+        },
+        {
+          "key": "C",
+          "text": "Imperial measurement unit"
+        },
+        {
+          "key": "D",
+          "text": "Inertial measurement unit"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Inertial measurement unit",
+      "explanation": "IMU stands for Inertial Measurement Unit. It typically combines accelerometers and gyroscopes, and sometimes a magnetometer, to measure motion and orientation; in airborne mapping systems it helps track the sensor’s attitude alongside positioning data."
+    },
+    {
+      "week": 5,
+      "questionNo": 9,
+      "sourceQuestionNo": 59,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The frequency of flyovers is an indicator of",
+      "options": [
+        {
+          "key": "A",
+          "text": "spatial resolution"
+        },
+        {
+          "key": "B",
+          "text": "temporal resolution"
+        },
+        {
+          "key": "C",
+          "text": "spectral resolution"
+        },
+        {
+          "key": "D",
+          "text": "radiometric resolution"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "temporal resolution",
+      "explanation": "Temporal resolution describes how frequently observations of the same area are collected. Frequent flyovers provide higher temporal resolution, making it easier to monitor changes over time; spatial resolution, by contrast, describes the ground detail represented by each image pixel or measurement."
+    },
+    {
+      "week": 5,
+      "questionNo": 10,
+      "sourceQuestionNo": 60,
+      "weekLabel": "Week 5",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Plane surveying takes into account the true shape of the Earth and is used for smaller areas (< 250 sq km)"
+        },
+        {
+          "key": "B",
+          "text": "Plane surveying takes into account the true shape of the Earth and is used for larger areas (> 250 sq km)"
+        },
+        {
+          "key": "C",
+          "text": "Geodetic surveying takes into account the true shape of the Earth and is used for smaller areas (< 250 sq km)"
+        },
+        {
+          "key": "D",
+          "text": "Geodetic surveying takes into account the true shape of the Earth and is used for larger areas (> 250 sq km)"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Geodetic surveying takes into account the true shape of the Earth and is used for larger areas (> 250 sq km)",
+      "explanation": "Geodetic surveying accounts for the Earth’s curvature and is used when surveying large areas where a flat-plane approximation is insufficient. Plane surveying assumes a locally flat surface and is generally suitable for smaller areas; the question’s stated threshold distinguishes the large-area geodetic case."
+    },
+    {
+      "week": 6,
+      "questionNo": 1,
+      "sourceQuestionNo": 61,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The acronym HIPPO does not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat loss"
+        },
+        {
+          "key": "B",
+          "text": "habitat enhancement"
+        },
+        {
+          "key": "C",
+          "text": "over-harvesting"
+        },
+        {
+          "key": "D",
+          "text": "human over-population"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "habitat enhancement",
+      "explanation": "HIPPO summarises major threats to biodiversity: Habitat loss, Invasive species, Pollution, human Population pressure, and Overharvesting. Habitat enhancement is not one of the acronym’s threat categories; it is generally a positive management action that may improve habitat quality."
+    },
+    {
+      "week": 6,
+      "questionNo": 2,
+      "sourceQuestionNo": 62,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A scientist uses a trap to capture a monkey. In the context of Wildlife Protection Act 1972,",
+      "options": [
+        {
+          "key": "A",
+          "text": "the trap is a weapon and capturing is hunting."
+        },
+        {
+          "key": "B",
+          "text": "the trap is not a weapon and capturing is hunting."
+        },
+        {
+          "key": "C",
+          "text": "the trap is a weapon and capturing is not hunting."
+        },
+        {
+          "key": "D",
+          "text": "the trap is not a weapon and capturing is not hunting."
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "the trap is a weapon and capturing is hunting.",
+      "explanation": "Under the Wildlife (Protection) Act, 1972, hunting is defined broadly and can include capturing or trapping a wild animal, subject to the Act’s wording and exceptions. A trap used to capture a monkey is treated as a weapon or instrument for hunting in this question’s legal framing; protected-species rules and authorised exceptions still matter in practice."
+    },
+    {
+      "week": 6,
+      "questionNo": 3,
+      "sourceQuestionNo": 63,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a deterministic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "environmental variation"
+        },
+        {
+          "key": "B",
+          "text": "forest fire"
+        },
+        {
+          "key": "C",
+          "text": "death rate"
+        },
+        {
+          "key": "D",
+          "text": "diseases"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "death rate",
+      "explanation": "A deterministic factor follows a predictable rule or rate in the model, such as a specified death rate applied to a population. Stochastic factors involve random events or variation—such as an unpredictable forest fire—so their occurrence or effect cannot be known exactly in advance."
+    },
+    {
+      "week": 6,
+      "questionNo": 4,
+      "sourceQuestionNo": 64,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The acronym HIPPO does not include",
+      "options": [
+        {
+          "key": "A",
+          "text": "habitat loss"
+        },
+        {
+          "key": "B",
+          "text": "invasive species"
+        },
+        {
+          "key": "C",
+          "text": "pollination"
+        },
+        {
+          "key": "D",
+          "text": "pollution"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "pollination",
+      "explanation": "HIPPO stands for Habitat loss, Invasive species, Pollution, human Population pressure and Overharvesting. Pollination is an ecological process and an essential ecosystem service, not a biodiversity-threat category in this acronym."
+    },
+    {
+      "week": 6,
+      "questionNo": 5,
+      "sourceQuestionNo": 65,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In the formula I = PXAXT, T refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "transference"
+        },
+        {
+          "key": "B",
+          "text": "time"
+        },
+        {
+          "key": "C",
+          "text": "technology"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "technology",
+      "explanation": "In the I = P × A × T framework, T stands for technology. The framework proposes that environmental impact depends on population, affluence or consumption per person, and the technologies used to provide goods and services; technology can increase or reduce impact depending on its effects."
+    },
+    {
+      "week": 6,
+      "questionNo": 6,
+      "sourceQuestionNo": 66,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Invasive climbers increase the probability of which of these fire types?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ground fire"
+        },
+        {
+          "key": "B",
+          "text": "surface fire"
+        },
+        {
+          "key": "C",
+          "text": "ladder fire"
+        },
+        {
+          "key": "D",
+          "text": "firestorm"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "ladder fire",
+      "explanation": "Invasive climbers can create a continuous fuel ladder from the forest floor into shrubs and tree crowns. During a fire, flames can travel upward through this connected vegetation and ignite the canopy, increasing the likelihood of a ladder fire and potentially allowing a surface fire to become a crown fire."
+    },
+    {
+      "week": 6,
+      "questionNo": 7,
+      "sourceQuestionNo": 67,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a stochastic factor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "birth rate"
+        },
+        {
+          "key": "B",
+          "text": "death rate"
+        },
+        {
+          "key": "C",
+          "text": "population structure"
+        },
+        {
+          "key": "D",
+          "text": "forest fire"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "forest fire",
+      "explanation": "A forest fire is stochastic because its occurrence, location, timing and intensity are influenced by uncertain conditions such as ignition, weather and fuel moisture. Deterministic factors follow a specified predictable relationship in a model, whereas stochastic factors include random variation or chance events."
+    },
+    {
+      "week": 6,
+      "questionNo": 8,
+      "sourceQuestionNo": 68,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these forms the fire triangle?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fire, air, heat"
+        },
+        {
+          "key": "B",
+          "text": "fire, oxygen, wood"
+        },
+        {
+          "key": "C",
+          "text": "fuel, air, wood"
+        },
+        {
+          "key": "D",
+          "text": "fuel, oxygen, heat"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "fuel, oxygen, heat",
+      "explanation": "The fire triangle consists of fuel, oxygen and heat. Combustion continues only when all three are present in sufficient amounts; removing or reducing any one element—for example by smothering oxygen, cooling the fuel, or removing combustible material—can extinguish a fire."
+    },
+    {
+      "week": 6,
+      "questionNo": 9,
+      "sourceQuestionNo": 69,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In the formula I = PXAXT, P refers to",
+      "options": [
+        {
+          "key": "A",
+          "text": "professional pressure"
+        },
+        {
+          "key": "B",
+          "text": "pollution pressure"
+        },
+        {
+          "key": "C",
+          "text": "population pressure"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "population pressure",
+      "explanation": "In I = P × A × T, P represents population pressure or population size, depending on the formulation used. The framework highlights that environmental impact is shaped not only by the number of people but also by how much they consume and the technology used to meet that demand."
+    },
+    {
+      "week": 6,
+      "questionNo": 10,
+      "sourceQuestionNo": 70,
+      "weekLabel": "Week 6",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A veterinarian uses an immobilising gun to capture a deer. In the context of Wildlife Protection Act 1972,",
+      "options": [
+        {
+          "key": "A",
+          "text": "the immobilising gun is a weapon and capturing is hunting."
+        },
+        {
+          "key": "B",
+          "text": "the immobilising gun is not a weapon and capturing is hunting."
+        },
+        {
+          "key": "C",
+          "text": "the immobilising gun is a weapon and capturing is not hunting."
+        },
+        {
+          "key": "D",
+          "text": "the immobilising gun is not a weapon and capturing is not hunting."
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "the immobilising gun is a weapon and capturing is hunting.",
+      "explanation": "The Wildlife (Protection) Act, 1972 uses a broad concept of hunting that can include capturing a wild animal. In the question’s legal framing, an immobilising gun is treated as a weapon and the capture of a deer as hunting; real-world use must comply with applicable permits, authorisations and statutory exceptions."
+    },
+    {
+      "week": 7,
+      "questionNo": 1,
+      "sourceQuestionNo": 71,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The movement of seeds away from their place of seed production into a new area is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "translocation"
+        },
+        {
+          "key": "B",
+          "text": "migration"
+        },
+        {
+          "key": "C",
+          "text": "dispersal"
+        },
+        {
+          "key": "D",
+          "text": "drifting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "dispersal",
+      "explanation": "Dispersal is the movement of seeds away from the parent plant or seed-production site to a new location. It can occur through wind, water, animals or gravity and reduces competition near the parent while helping plants colonise new sites; it is distinct from seasonal migration by animals."
+    },
+    {
+      "week": 7,
+      "questionNo": 2,
+      "sourceQuestionNo": 72,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not advantage of clear felling system",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple system, easy and efficient operations"
+        },
+        {
+          "key": "B",
+          "text": "Allows for establishment of a more uniform crop"
+        },
+        {
+          "key": "C",
+          "text": "Increases soil erosion and landslides in hilly areas"
+        },
+        {
+          "key": "D",
+          "text": "Mimics natural processes of fire and large-scale insect attacks"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Increases soil erosion and landslides in hilly areas",
+      "explanation": "Clear felling removes most or all trees from an area in one operation, which can simplify regeneration and harvesting but leaves the ground exposed. On steep or hilly terrain, this can increase runoff, soil erosion and landslide risk, so that consequence is a disadvantage rather than an advantage."
+    },
+    {
+      "week": 7,
+      "questionNo": 3,
+      "sourceQuestionNo": 73,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Ring weeding is primarily a feature of",
+      "options": [
+        {
+          "key": "A",
+          "text": "natural regeneration"
+        },
+        {
+          "key": "B",
+          "text": "assisted natural regeneration"
+        },
+        {
+          "key": "C",
+          "text": "artificial regeneration by direct sowing"
+        },
+        {
+          "key": "D",
+          "text": "artificial regeneration by planting seedlings"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "assisted natural regeneration",
+      "explanation": "Ring weeding removes competing vegetation in a circular area around a planted seedling or naturally established young tree. In assisted natural regeneration, such tending releases existing natural seedlings from competition while retaining the natural regeneration already present on the site."
+    },
+    {
+      "week": 7,
+      "questionNo": 4,
+      "sourceQuestionNo": 74,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Average age at which a tree is considered mature for felling is called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "crop age"
+        },
+        {
+          "key": "B",
+          "text": "felling age"
+        },
+        {
+          "key": "C",
+          "text": "rotation age"
+        },
+        {
+          "key": "D",
+          "text": "maturity age"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "rotation age",
+      "explanation": "Rotation age is the planned age at which a forest crop is harvested or felled, measured from establishment or regeneration. The appropriate rotation depends on the species, site productivity, management objectives and desired product; it is a planned management age rather than necessarily the biological age of maximum growth."
+    },
+    {
+      "week": 7,
+      "questionNo": 5,
+      "sourceQuestionNo": 75,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a feature of natural regeneration",
+      "options": [
+        {
+          "key": "A",
+          "text": "low cost"
+        },
+        {
+          "key": "B",
+          "text": "less requirement of heavy machinery and labour"
+        },
+        {
+          "key": "C",
+          "text": "preservation of genetic variability"
+        },
+        {
+          "key": "D",
+          "text": "good control over genetic improvement"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "good control over genetic improvement",
+      "explanation": "Natural regeneration relies on seed fall, seed banks, coppice or other natural processes, so managers usually have less direct control over the genetic composition than in a carefully planned planting programme. Selecting improved planting stock is easier in artificial regeneration, where seed sources and planting material can be deliberately chosen."
+    },
+    {
+      "week": 7,
+      "questionNo": 6,
+      "sourceQuestionNo": 76,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Tending is done during",
+      "options": [
+        {
+          "key": "A",
+          "text": "early stage of life"
+        },
+        {
+          "key": "B",
+          "text": "middle stage of life"
+        },
+        {
+          "key": "C",
+          "text": "late stage of life"
+        },
+        {
+          "key": "D",
+          "text": "any stage of life"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "any stage of life",
+      "explanation": "Tending operations can be carried out at different stages of a forest crop’s life, from young regeneration to later stand development. Depending on the objective, tending may include weeding, cleaning, thinning, pruning or climber cutting; the operation and timing depend on the crop’s age and condition."
+    },
+    {
+      "week": 7,
+      "questionNo": 7,
+      "sourceQuestionNo": 77,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is the correct sequence of a silvicultural system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stand tending -> Regeneration -> Harvesting"
+        },
+        {
+          "key": "B",
+          "text": "Harvesting -> Stand tending -> Regeneration"
+        },
+        {
+          "key": "C",
+          "text": "Harvesting -> Regeneration -> Stand tending"
+        },
+        {
+          "key": "D",
+          "text": "Regeneration -> Harvesting -> Stand tending"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Harvesting -> Regeneration -> Stand tending",
+      "explanation": "A typical silvicultural sequence is harvesting the mature crop, securing regeneration of the next crop, and then tending that regeneration as it develops. The exact sequence and overlap vary by system, but regeneration must follow or accompany harvesting so that the site continues to support a new stand."
+    },
+    {
+      "week": 7,
+      "questionNo": 8,
+      "sourceQuestionNo": 78,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Taungya regeneration is",
+      "options": [
+        {
+          "key": "A",
+          "text": "natural regeneration"
+        },
+        {
+          "key": "B",
+          "text": "artificial regeneration with villagers"
+        },
+        {
+          "key": "C",
+          "text": "artificial regeneration with nomadic tribes"
+        },
+        {
+          "key": "D",
+          "text": "artificial regeneration with hunters and gatherers"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "artificial regeneration with villagers",
+      "explanation": "Taungya combines tree establishment with temporary agricultural cultivation by local people between young tree rows. It is a form of artificial regeneration because trees are planted or deliberately established, while villagers may grow crops during the early years and help maintain the plantation."
+    },
+    {
+      "week": 7,
+      "questionNo": 9,
+      "sourceQuestionNo": 79,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "A site was clear-cut. Which of these methods of regeneration cannot be used in a short time-frame?",
+      "options": [
+        {
+          "key": "A",
+          "text": "natural regeneration"
+        },
+        {
+          "key": "B",
+          "text": "artificial regeneration by direct sowing"
+        },
+        {
+          "key": "C",
+          "text": "artificial regeneration by planting seedlings"
+        },
+        {
+          "key": "D",
+          "text": "artificial regeneration by transplanting trees"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "natural regeneration",
+      "explanation": "Natural regeneration depends on suitable seed sources, seed production, seedbed conditions and successful establishment, so it can take an uncertain amount of time after clear-cutting. Artificial regeneration through planting or sowing can usually be scheduled more directly when a rapid, predictable restocking timeframe is required."
+    },
+    {
+      "week": 7,
+      "questionNo": 10,
+      "sourceQuestionNo": 80,
+      "weekLabel": "Week 7",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a feature of natural regeneration",
+      "options": [
+        {
+          "key": "A",
+          "text": "seed consumption by insects and seed feeders"
+        },
+        {
+          "key": "B",
+          "text": "little control over spacing and stand density"
+        },
+        {
+          "key": "C",
+          "text": "long time needed to regenerate forest"
+        },
+        {
+          "key": "D",
+          "text": "high requirement of heavy machinery and labour"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "high requirement of heavy machinery and labour",
+      "explanation": "Natural regeneration uses ecological processes such as natural seed dispersal, seed banks or coppicing, so it does not inherently require heavy machinery and large labour inputs. Such equipment may be needed for site preparation or harvesting, but a high machinery-and-labour requirement is not a defining feature of natural regeneration itself."
+    },
+    {
+      "week": 8,
+      "questionNo": 1,
+      "sourceQuestionNo": 81,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In group shelterwood system, the regeneration area is increased",
+      "options": [
+        {
+          "key": "A",
+          "text": "centrifugally around gaps"
+        },
+        {
+          "key": "B",
+          "text": "centripetally around gaps"
+        },
+        {
+          "key": "C",
+          "text": "parallel to gaps"
+        },
+        {
+          "key": "D",
+          "text": "perpendicular to gaps"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "centrifugally around gaps",
+      "explanation": "In the group shelterwood system, regeneration begins in small gaps and the gaps are enlarged outward as the new crop develops. This centrifugal expansion gradually increases the regenerated area while nearby mature trees provide shelter and seed, rather than opening the entire stand at once."
+    },
+    {
+      "week": 8,
+      "questionNo": 2,
+      "sourceQuestionNo": 82,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is the correct sequence for shelterwood system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Preparatory felling ->Secondary felling -> Seedling felling -> Final felling"
+        },
+        {
+          "key": "B",
+          "text": "Preparatory felling -> Seedling felling -> Secondary felling -> Final felling"
+        },
+        {
+          "key": "C",
+          "text": "Preparatory felling ->Secondary felling -> Seeding felling -> Final felling"
+        },
+        {
+          "key": "D",
+          "text": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Preparatory felling -> Seeding felling -> Secondary felling -> Final felling",
+      "explanation": "The shelterwood sequence usually proceeds through preparatory felling, seeding felling, secondary felling and final felling. Preparatory cuts improve the stand and seedbed; seeding felling encourages regeneration; secondary cuts gradually increase light and space; final felling removes the remaining overwood after regeneration is established."
+    },
+    {
+      "week": 8,
+      "questionNo": 3,
+      "sourceQuestionNo": 83,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Shelterwood system results in",
+      "options": [
+        {
+          "key": "A",
+          "text": "even aged stand with natural aesthetics"
+        },
+        {
+          "key": "B",
+          "text": "even aged stand with artificial aesthetics"
+        },
+        {
+          "key": "C",
+          "text": "uneven aged stand with natural aesthetics"
+        },
+        {
+          "key": "D",
+          "text": "uneven aged stand with artificial aesthetics"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "even aged stand with natural aesthetics",
+      "explanation": "Shelterwood systems establish a new crop naturally under the partial shelter of the existing stand and remove the overwood in stages. This often produces an even-aged or relatively even-aged new stand while retaining a more gradual visual transition than clear felling, supporting natural aesthetics during regeneration."
+    },
+    {
+      "week": 8,
+      "questionNo": 4,
+      "sourceQuestionNo": 84,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Catchment areas are best suited for",
+      "options": [
+        {
+          "key": "A",
+          "text": "clear felling system"
+        },
+        {
+          "key": "B",
+          "text": "selection system"
+        },
+        {
+          "key": "C",
+          "text": "uniform shelterwood system"
+        },
+        {
+          "key": "D",
+          "text": "group shelterwood system"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "selection system",
+      "explanation": "Selection systems are often suited to catchment and watershed areas because they maintain continuous forest cover rather than removing the whole canopy at once. Retaining cover helps protect soil, regulate runoff and reduce erosion, while individual trees or small groups can be harvested periodically."
+    },
+    {
+      "week": 8,
+      "questionNo": 5,
+      "sourceQuestionNo": 85,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Trees not putting increment are removed during",
+      "options": [
+        {
+          "key": "A",
+          "text": "preparatory felling"
+        },
+        {
+          "key": "B",
+          "text": "seeding felling"
+        },
+        {
+          "key": "C",
+          "text": "secondary felling"
+        },
+        {
+          "key": "D",
+          "text": "final felling"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "preparatory felling",
+      "explanation": "Preparatory felling removes poor, diseased, malformed or otherwise undesirable trees before the main regeneration cuts. It can improve the condition of the remaining stand and prepare it for successful regeneration; later cuts are aimed more directly at seed supply, light and removal of shelter."
+    },
+    {
+      "week": 8,
+      "questionNo": 6,
+      "sourceQuestionNo": 86,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Felling made with the object of opening the canopy to remove shelter and allow more light for the regenerated crop is",
+      "options": [
+        {
+          "key": "A",
+          "text": "preparatory felling"
+        },
+        {
+          "key": "B",
+          "text": "seeding felling"
+        },
+        {
+          "key": "C",
+          "text": "secondary felling"
+        },
+        {
+          "key": "D",
+          "text": "final felling"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "secondary felling",
+      "explanation": "Secondary felling opens the canopy further after regeneration has begun, reducing shelter and allowing more light to reach the young crop. It is an intermediate step in shelterwood management: the final felling removes the remaining overwood once regeneration is sufficiently established."
+    },
+    {
+      "week": 8,
+      "questionNo": 7,
+      "sourceQuestionNo": 87,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For a crop with rotation age of 120 years, PB-III would have crop age",
+      "options": [
+        {
+          "key": "A",
+          "text": "0-30 years"
+        },
+        {
+          "key": "B",
+          "text": "30-60 years"
+        },
+        {
+          "key": "C",
+          "text": "60-90 years"
+        },
+        {
+          "key": "D",
+          "text": "90-120 years"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "30-60 years",
+      "explanation": "A 120-year rotation divided into periodic blocks gives PB-III the age range 30–60 years in the classification used here. The key is to divide the rotation into the prescribed age classes and identify the third periodic block; this is a stand-age category, not the total rotation age."
+    },
+    {
+      "week": 8,
+      "questionNo": 8,
+      "sourceQuestionNo": 88,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Clear felling system is not used for",
+      "options": [
+        {
+          "key": "A",
+          "text": "light demanding species"
+        },
+        {
+          "key": "B",
+          "text": "shade bearer species"
+        },
+        {
+          "key": "C",
+          "text": "plain areas"
+        },
+        {
+          "key": "D",
+          "text": "plateau areas"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "shade bearer species",
+      "explanation": "Clear felling is generally unsuitable for shade-bearing species that need overhead cover for successful establishment and early growth. Removing the canopy exposes seedlings to stronger light, heat and moisture stress; systems that retain shelter, such as shelterwood or selection, are often more appropriate for shade-tolerant regeneration."
+    },
+    {
+      "week": 8,
+      "questionNo": 9,
+      "sourceQuestionNo": 89,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Close to nature forestry is a feature of",
+      "options": [
+        {
+          "key": "A",
+          "text": "clear felling system"
+        },
+        {
+          "key": "B",
+          "text": "selection system"
+        },
+        {
+          "key": "C",
+          "text": "uniform shelterwood system"
+        },
+        {
+          "key": "D",
+          "text": "group shelterwood system"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "selection system",
+      "explanation": "Close-to-nature forestry aims to manage forests in ways that work with natural structures, processes and regeneration rather than relying on uniform clear-cut plantations. Selection systems retain a mixture of tree sizes and maintain continuous cover, so they are commonly associated with this approach."
+    },
+    {
+      "week": 8,
+      "questionNo": 10,
+      "sourceQuestionNo": 90,
+      "weekLabel": "Week 8",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Inverse-J shaped number-diameter curves are seen in",
+      "options": [
+        {
+          "key": "A",
+          "text": "clear felling system"
+        },
+        {
+          "key": "B",
+          "text": "selection system"
+        },
+        {
+          "key": "C",
+          "text": "uniform shelterwood system"
+        },
+        {
+          "key": "D",
+          "text": "group shelterwood system"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "selection system",
+      "explanation": "Selection systems maintain trees of multiple ages and sizes because harvesting removes selected individuals while younger trees continue to grow. As a result, many uneven-aged stands have an inverse-J diameter distribution: numerous small trees, progressively fewer medium trees, and relatively few very large trees."
+    },
+    {
+      "week": 9,
+      "questionNo": 1,
+      "sourceQuestionNo": 91,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Careful selection of trees for harvesting based on a forest management prescription is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "surveying"
+        },
+        {
+          "key": "B",
+          "text": "cruising"
+        },
+        {
+          "key": "C",
+          "text": "marking"
+        },
+        {
+          "key": "D",
+          "text": "logging"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "marking",
+      "explanation": "Marking is the deliberate selection and identification of trees to be harvested or retained according to a management prescription. It translates the forest plan into specific trees on the ground, helping control harvest intensity, protect seed trees and ensure that cutting follows the intended silvicultural objectives."
+    },
+    {
+      "week": 9,
+      "questionNo": 2,
+      "sourceQuestionNo": 92,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Moving of logs from forest to landing area is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "marking"
+        },
+        {
+          "key": "B",
+          "text": "bucking"
+        },
+        {
+          "key": "C",
+          "text": "skidding"
+        },
+        {
+          "key": "D",
+          "text": "delimbing"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "skidding",
+      "explanation": "Skidding is the movement of felled logs from the stump or forest interior to a roadside or landing area, usually by dragging or pulling them. It differs from forwarding, where logs are carried, and from hauling, which transports timber from the landing toward processing or market."
+    },
+    {
+      "week": 9,
+      "questionNo": 3,
+      "sourceQuestionNo": 93,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Net growth in initial volume is given by",
+      "options": [
+        {
+          "key": "A",
+          "text": "V2-V1"
+        },
+        {
+          "key": "B",
+          "text": "V2-V1+H-I"
+        },
+        {
+          "key": "C",
+          "text": "V2-V1+H-I+M"
+        },
+        {
+          "key": "D",
+          "text": "V2-V1+H-I-M"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "V2-V1+H-I",
+      "explanation": "The supplied Week 9 assignment PDF marks option B as correct. The option is printed as “V2-V1+H-I”; the question bank now preserves that exact formula and keyed answer from the source PDF."
+    },
+    {
+      "week": 9,
+      "questionNo": 4,
+      "sourceQuestionNo": 94,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Surveying timberlands to locate and estimate the volumes and grades of standing timber meeting requirements is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "surveying"
+        },
+        {
+          "key": "B",
+          "text": "cruising"
+        },
+        {
+          "key": "C",
+          "text": "marking"
+        },
+        {
+          "key": "D",
+          "text": "logging"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "cruising",
+      "explanation": "Timber cruising is the systematic survey of a forest to estimate the volume, quality or grade, species composition and distribution of standing timber. The estimates help managers plan harvests, appraise timber value and compare the available stand with buyer or management requirements."
+    },
+    {
+      "week": 9,
+      "questionNo": 5,
+      "sourceQuestionNo": 95,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these gives the greatest accuracy in constructing face cuts",
+      "options": [
+        {
+          "key": "A",
+          "text": "conventional face"
+        },
+        {
+          "key": "B",
+          "text": "humboldt face"
+        },
+        {
+          "key": "C",
+          "text": "open face"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "conventional face",
+      "explanation": "The supplied Week 9 assignment PDF marks “conventional face” (option A) as the correct answer. This explanation follows the answer marked in the provided source PDF."
+    },
+    {
+      "week": 9,
+      "questionNo": 6,
+      "sourceQuestionNo": 96,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Trees to be retained are shown in ___ marking colour",
+      "options": [
+        {
+          "key": "A",
+          "text": "yellow"
+        },
+        {
+          "key": "B",
+          "text": "blue"
+        },
+        {
+          "key": "C",
+          "text": "red"
+        },
+        {
+          "key": "D",
+          "text": "white"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "blue",
+      "explanation": "Blue marking paint is used here to identify trees that are to be retained. Marking colours are operational conventions that communicate instructions to crews; because practices can vary by agency or organisation, the key is to follow the marking system specified for the particular forestry operation."
+    },
+    {
+      "week": 9,
+      "questionNo": 7,
+      "sourceQuestionNo": 97,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Cutting of timber into logs is known as",
+      "options": [
+        {
+          "key": "A",
+          "text": "marking"
+        },
+        {
+          "key": "B",
+          "text": "bucking"
+        },
+        {
+          "key": "C",
+          "text": "skidding"
+        },
+        {
+          "key": "D",
+          "text": "delimbing"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "bucking",
+      "explanation": "Bucking is cutting a felled tree or stem into shorter log lengths. It follows felling and may be guided by defects, log specifications, market lengths and safe handling requirements; it differs from felling, which brings the standing tree down, and from skidding, which moves logs to a landing."
+    },
+    {
+      "week": 9,
+      "questionNo": 8,
+      "sourceQuestionNo": 98,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Research plots are shown in ___ marking colour",
+      "options": [
+        {
+          "key": "A",
+          "text": "yellow"
+        },
+        {
+          "key": "B",
+          "text": "blue"
+        },
+        {
+          "key": "C",
+          "text": "red"
+        },
+        {
+          "key": "D",
+          "text": "white"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "white",
+      "explanation": "White marking colour identifies research plots in the convention used by this question. Clear and consistent plot marking helps field teams locate experimental or monitoring areas and avoid confusing research boundaries with trees marked for harvest or retention."
+    },
+    {
+      "week": 9,
+      "questionNo": 9,
+      "sourceQuestionNo": 99,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Trees on boundary are shown in ___ marking colour",
+      "options": [
+        {
+          "key": "A",
+          "text": "yellow"
+        },
+        {
+          "key": "B",
+          "text": "blue"
+        },
+        {
+          "key": "C",
+          "text": "red"
+        },
+        {
+          "key": "D",
+          "text": "white"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "red",
+      "explanation": "Red marking colour identifies trees on the boundary in the convention used here. Boundary marking helps crews recognise the limits of an operating area and avoid accidentally cutting trees outside the authorised compartment or confusing perimeter trees with those selected for harvesting."
+    },
+    {
+      "week": 9,
+      "questionNo": 10,
+      "sourceQuestionNo": 100,
+      "weekLabel": "Week 9",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these gives the greatest saving of lumber",
+      "options": [
+        {
+          "key": "A",
+          "text": "conventional face"
+        },
+        {
+          "key": "B",
+          "text": "humboldt face"
+        },
+        {
+          "key": "C",
+          "text": "open face"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "humboldt face",
+      "explanation": "The Humboldt face is designed to reduce the amount of wood lost in the face cut compared with a conventional face. Its geometry can save usable lumber, though the safest and most appropriate felling method still depends on tree size, lean, defects, site conditions and local safety standards."
+    },
+    {
+      "week": 10,
+      "questionNo": 1,
+      "sourceQuestionNo": 101,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is a good storage condition",
+      "options": [
+        {
+          "key": "A",
+          "text": "high moisture, high temperature"
+        },
+        {
+          "key": "B",
+          "text": "high moisture, low temperature"
+        },
+        {
+          "key": "C",
+          "text": "low moisture, high temperature"
+        },
+        {
+          "key": "D",
+          "text": "low moisture, low temperature"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "low moisture, low temperature",
+      "explanation": "Low moisture and low temperature slow respiration, metabolic activity and deterioration in stored seeds. Keeping seeds cool and dry generally helps preserve viability, although the ideal moisture content and temperature differ by species and orthodox seeds must be dried more than recalcitrant seeds."
+    },
+    {
+      "week": 10,
+      "questionNo": 2,
+      "sourceQuestionNo": 102,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Agave is used for",
+      "options": [
+        {
+          "key": "A",
+          "text": "barbed wire fencing"
+        },
+        {
+          "key": "B",
+          "text": "live fencing"
+        },
+        {
+          "key": "C",
+          "text": "chain link fencing"
+        },
+        {
+          "key": "D",
+          "text": "stone wall fencing"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "live fencing",
+      "explanation": "Agave is used for live fencing because its tough, often spiny leaves form a durable barrier when planted along field boundaries. A live fence can help restrict livestock movement and mark property lines while using living plants rather than relying entirely on cut posts or wire."
+    },
+    {
+      "week": 10,
+      "questionNo": 3,
+      "sourceQuestionNo": 103,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these conserves moisture",
+      "options": [
+        {
+          "key": "A",
+          "text": "sunken bed"
+        },
+        {
+          "key": "B",
+          "text": "raised bed"
+        },
+        {
+          "key": "C",
+          "text": "flat bed"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "sunken bed",
+      "explanation": "A sunken bed is set below the surrounding ground surface, allowing it to collect and retain runoff and moisture near the root zone. This can benefit seedlings in dry areas; in waterlogged or heavy-rainfall conditions, however, a raised bed may be preferable to improve drainage."
+    },
+    {
+      "week": 10,
+      "questionNo": 4,
+      "sourceQuestionNo": 104,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Shell cracking of seeds is used for which species",
+      "options": [
+        {
+          "key": "A",
+          "text": "amla"
+        },
+        {
+          "key": "B",
+          "text": "mango"
+        },
+        {
+          "key": "C",
+          "text": "ber"
+        },
+        {
+          "key": "D",
+          "text": "teak"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "ber",
+      "explanation": "Shell cracking is used for ber seeds to help overcome the hard seed covering and improve water uptake or germination. The treatment must be done carefully to avoid damaging the embryo; the general principle is to weaken a physical barrier that delays germination."
+    },
+    {
+      "week": 10,
+      "questionNo": 5,
+      "sourceQuestionNo": 105,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a laboratory method to determine best days for seed collection?",
+      "options": [
+        {
+          "key": "A",
+          "text": "maximum dry weight"
+        },
+        {
+          "key": "B",
+          "text": "colour of fruits"
+        },
+        {
+          "key": "C",
+          "text": "moisture content of fruits"
+        },
+        {
+          "key": "D",
+          "text": "chemical analysis of fat and nitrogen content"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "colour of fruits",
+      "explanation": "Fruit colour is a field indicator, not a laboratory method in the strict sense, for judging the appropriate time to collect seeds. Laboratory assessment may use measures such as seed moisture, maturity, viability or germination tests to establish collection timing and seed quality more objectively."
+    },
+    {
+      "week": 10,
+      "questionNo": 6,
+      "sourceQuestionNo": 106,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these characterises a refractory site",
+      "options": [
+        {
+          "key": "A",
+          "text": "soil depth < 10 cm"
+        },
+        {
+          "key": "B",
+          "text": "soil depth 10-30 cm"
+        },
+        {
+          "key": "C",
+          "text": "soil depth > 30 cm"
+        },
+        {
+          "key": "D",
+          "text": "none of these"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "soil depth < 10 cm",
+      "explanation": "A refractory site is extremely difficult for vegetation to establish on or for forest regeneration to succeed. A soil depth below 10 cm leaves little rooting volume and limited water and nutrient storage, making it a severe site constraint and a characteristic of a refractory site in this question."
+    },
+    {
+      "week": 10,
+      "questionNo": 7,
+      "sourceQuestionNo": 107,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these prevents water logging",
+      "options": [
+        {
+          "key": "A",
+          "text": "sunken bed"
+        },
+        {
+          "key": "B",
+          "text": "raised bed"
+        },
+        {
+          "key": "C",
+          "text": "flat bed"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "raised bed",
+      "explanation": "Raised beds elevate the rooting zone above surrounding ground, allowing excess water to drain away and improving aeration. This helps prevent waterlogging, which can deprive roots of oxygen, impair nutrient uptake and increase seedling mortality."
+    },
+    {
+      "week": 10,
+      "questionNo": 8,
+      "sourceQuestionNo": 108,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Wet and dry treatment of seeds is used for which species",
+      "options": [
+        {
+          "key": "A",
+          "text": "amla"
+        },
+        {
+          "key": "B",
+          "text": "mango"
+        },
+        {
+          "key": "C",
+          "text": "ber"
+        },
+        {
+          "key": "D",
+          "text": "teak"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "teak",
+      "explanation": "Wet and dry treatment is used for teak seed to help overcome dormancy and improve germination. Alternating soaking and drying can soften or disrupt barriers around the seed and promote more uniform germination, though the exact treatment schedule should follow the species-specific nursery protocol."
+    },
+    {
+      "week": 10,
+      "questionNo": 9,
+      "sourceQuestionNo": 109,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Choice of spacing is dependent upon",
+      "options": [
+        {
+          "key": "A",
+          "text": "objective of plantation"
+        },
+        {
+          "key": "B",
+          "text": "site-species matching"
+        },
+        {
+          "key": "C",
+          "text": "growth rate"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of these",
+      "explanation": "Spacing depends on several interacting factors, including species growth form, site quality, rainfall and soil, intended products, rotation length, and management objectives. Wider spacing can encourage crown development and larger individual trees, while closer spacing can promote earlier canopy closure and natural pruning; there is no universal spacing for all sites."
+    },
+    {
+      "week": 10,
+      "questionNo": 10,
+      "sourceQuestionNo": 110,
+      "weekLabel": "Week 10",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Number of seeds in sample that germinate upto the peak germination period expressed as % is a definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "germination number"
+        },
+        {
+          "key": "B",
+          "text": "germination percentage"
+        },
+        {
+          "key": "C",
+          "text": "germination energy"
+        },
+        {
+          "key": "D",
+          "text": "germination power"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "germination energy",
+      "explanation": "Germination energy is the percentage of seeds in a test sample that germinate by the peak or specified early period of germination. It reflects the speed and uniformity of germination, not simply the final percentage that germinates by the end of the full test."
+    },
+    {
+      "week": 11,
+      "questionNo": 1,
+      "sourceQuestionNo": 111,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Zoo is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "A zoo is an example of ex-situ conservation because animals are maintained outside their natural habitats under human care. Zoos may contribute through education, research and coordinated breeding programmes, but they complement rather than replace protection of viable populations and habitats in the wild."
+    },
+    {
+      "week": 11,
+      "questionNo": 2,
+      "sourceQuestionNo": 112,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Captive breeding is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "in-situ conservation"
+        },
+        {
+          "key": "B",
+          "text": "ex-situ conservation"
+        },
+        {
+          "key": "C",
+          "text": "in-situ preservation"
+        },
+        {
+          "key": "D",
+          "text": "ex-situ preservation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "ex-situ conservation",
+      "explanation": "Captive breeding is ex-situ conservation because individuals are bred under managed conditions outside their natural habitat. Proper programmes maintain genetic diversity and may support reintroduction, but their success depends on habitat protection, suitable release sites and reducing the threats that caused the population decline."
+    },
+    {
+      "week": 11,
+      "questionNo": 3,
+      "sourceQuestionNo": 113,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The elephant has a home range of several square kilometres, regulates the ecosystem by its habit of destructive feeding, and people can relate to this animal which is important for conservation. Given this background, the elephant can be called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "The elephant can fit all three roles described: its large home range and ecosystem effects make it an umbrella species, its influence through feeding makes it a keystone species in the context of the question, and its public appeal makes it a flagship species. These labels describe different conservation functions and can overlap in one species."
+    },
+    {
+      "week": 11,
+      "questionNo": 4,
+      "sourceQuestionNo": 114,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Sustainable harvest of resources falls under the category of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "conservation"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "none of the above"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "conservation",
+      "explanation": "Conservation means protecting and managing natural resources while allowing their sustainable use where appropriate. Sustainable harvesting aims to keep extraction within levels that populations and ecosystems can replace, unlike strict preservation, which seeks to minimise significant human interference."
+    },
+    {
+      "week": 11,
+      "questionNo": 5,
+      "sourceQuestionNo": 115,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these is not a forest classification as per the 1894 Forest Policy:",
+      "options": [
+        {
+          "key": "A",
+          "text": "protection forest"
+        },
+        {
+          "key": "B",
+          "text": "production forest"
+        },
+        {
+          "key": "C",
+          "text": "minor forest"
+        },
+        {
+          "key": "D",
+          "text": "major forest"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "major forest",
+      "explanation": "The 1894 Forest Policy classified forests into categories such as forests for preservation, forests for commercial purposes, minor forests and pasture lands in the historical framework. “Major forest” is not one of the stated categories, which is why it is the exception in this question."
+    },
+    {
+      "week": 11,
+      "questionNo": 6,
+      "sourceQuestionNo": 116,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The tiger has a home range of several square kilometres, regulates the ecosystem through controlling herbivore populations and trophic cascades, and people come to tiger reserves to watch tigers. Thus, the tiger can be called as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "all of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "all of the above",
+      "explanation": "The tiger can be described as a keystone species because controlling herbivore numbers can trigger trophic cascades; as a flagship species because it attracts public attention and visitors; and as an umbrella species because protecting its large habitat can benefit many other species. Therefore, all the described roles can apply."
+    },
+    {
+      "week": 11,
+      "questionNo": 7,
+      "sourceQuestionNo": 117,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Planting along canal banks is a part of",
+      "options": [
+        {
+          "key": "A",
+          "text": "farm forestry"
+        },
+        {
+          "key": "B",
+          "text": "community forestry"
+        },
+        {
+          "key": "C",
+          "text": "extension forestry"
+        },
+        {
+          "key": "D",
+          "text": "agroforestry"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "extension forestry",
+      "explanation": "Extension forestry involves tree planting and forestry activities outside conventional production forests, including along roads, canals, railway lines, farms and community lands. Planting canal banks is a typical example because it extends tree cover and associated benefits into managed landscapes."
+    },
+    {
+      "week": 11,
+      "questionNo": 8,
+      "sourceQuestionNo": 118,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "In 1931, Van Panchayats were constituted in areas that are now in",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tamil Nadu"
+        },
+        {
+          "key": "B",
+          "text": "Madhya Pradesh"
+        },
+        {
+          "key": "C",
+          "text": "West Bengal"
+        },
+        {
+          "key": "D",
+          "text": "Uttarakhand"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Uttarakhand",
+      "explanation": "Van Panchayats were established in the hill areas of the then United Provinces, which are now in Uttarakhand. They provide a form of community-based forest governance in which local people participate in managing and protecting village forests and regulating resource use."
+    },
+    {
+      "week": 11,
+      "questionNo": 9,
+      "sourceQuestionNo": 119,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "People come to Sessa orchid sanctuary in Arunachal Pradesh to witness orchids, which in this context would be classified as",
+      "options": [
+        {
+          "key": "A",
+          "text": "umbrella species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "extinct species"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "flagship species",
+      "explanation": "A flagship species is a species chosen for its appeal and ability to attract public interest and support for conservation. Visitors coming specifically to see orchids at Sessa Orchid Sanctuary illustrates how orchids can act as a focal attraction that encourages awareness and conservation support."
+    },
+    {
+      "week": 11,
+      "questionNo": 10,
+      "sourceQuestionNo": 120,
+      "weekLabel": "Week 11",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The fig tree bears fruits in times when animals do not have much access to food. In this context, it would be a good example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "least concern species"
+        },
+        {
+          "key": "B",
+          "text": "keystone species"
+        },
+        {
+          "key": "C",
+          "text": "flagship species"
+        },
+        {
+          "key": "D",
+          "text": "extinct species"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "keystone species",
+      "explanation": "A keystone species has an ecological influence disproportionately large relative to its abundance. Fig trees can provide fruit when other food sources are scarce, supporting many animals and helping sustain food webs; this resource can make figs especially important to ecosystem functioning."
+    },
+    {
+      "week": 12,
+      "questionNo": 1,
+      "sourceQuestionNo": 121,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The climax near Tindni village is being controlled by disturbance by cattle. This is an example of",
+      "options": [
+        {
+          "key": "A",
+          "text": "climatic climax"
+        },
+        {
+          "key": "B",
+          "text": "edaphic climax"
+        },
+        {
+          "key": "C",
+          "text": "disclimax"
+        },
+        {
+          "key": "D",
+          "text": "catastrophic climax"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "disclimax",
+      "explanation": "Cattle repeatedly grazing the site prevent the vegetation from progressing toward the expected climatic climax. The resulting community is a disclimax: a relatively stable state maintained by recurring disturbance rather than by the region’s climate and soil conditions alone."
+    },
+    {
+      "week": 12,
+      "questionNo": 2,
+      "sourceQuestionNo": 122,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“Science of relationships between organisms and their environments” is the definition of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "conservation"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "ecology"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "ecology",
+      "explanation": "Ecology is the scientific study of relationships among organisms and between organisms and their environment. It includes interactions such as competition and predation as well as the influence of abiotic factors—light, water, temperature and nutrients—on distribution, abundance and ecosystem processes."
+    },
+    {
+      "week": 12,
+      "questionNo": 3,
+      "sourceQuestionNo": 123,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“allowing some places and some creatures to exist without significant human interference” is a definition of",
+      "options": [
+        {
+          "key": "A",
+          "text": "conservation"
+        },
+        {
+          "key": "B",
+          "text": "preservation"
+        },
+        {
+          "key": "C",
+          "text": "environmentalism"
+        },
+        {
+          "key": "D",
+          "text": "all of these"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "preservation",
+      "explanation": "Preservation aims to allow places and organisms to exist with minimal significant human interference. It differs from conservation, which can include carefully regulated use of resources; preservation places greater emphasis on protection from exploitation or disturbance."
+    },
+    {
+      "week": 12,
+      "questionNo": 4,
+      "sourceQuestionNo": 124,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For absolute form factor, the reference for the base of the cylinder is",
+      "options": [
+        {
+          "key": "A",
+          "text": "base of the tree"
+        },
+        {
+          "key": "B",
+          "text": "breast height"
+        },
+        {
+          "key": "C",
+          "text": "10% of tree height"
+        },
+        {
+          "key": "D",
+          "text": "20% of tree height"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "base of the tree",
+      "explanation": "The absolute form factor compares actual stem volume with a reference cylinder whose base area is measured at the base of the tree and whose height is the tree’s total height. This differs from false and normal form factors, which use reference basal areas measured at breast height or at a specified proportion of total height."
+    },
+    {
+      "week": 12,
+      "questionNo": 5,
+      "sourceQuestionNo": 125,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Which of these has the highest organic matter content?",
+      "options": [
+        {
+          "key": "A",
+          "text": "peaty soil"
+        },
+        {
+          "key": "B",
+          "text": "alluvial soil"
+        },
+        {
+          "key": "C",
+          "text": "saline soil"
+        },
+        {
+          "key": "D",
+          "text": "red and yellow soil"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "peaty soil",
+      "explanation": "Peaty soil has the highest organic-matter content among the listed soil types because it forms where plant material accumulates faster than it decomposes. Its organic-rich composition can hold substantial water, but its fertility and drainage characteristics depend on the degree of decomposition and local conditions."
+    },
+    {
+      "week": 12,
+      "questionNo": 6,
+      "sourceQuestionNo": 126,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "For a tree with dbh = 45.6 cm, height = 27 m and total stem volume of 1.78 cum, the artificial form factor for the tree is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.1"
+        },
+        {
+          "key": "B",
+          "text": "0.2"
+        },
+        {
+          "key": "C",
+          "text": "0.3"
+        },
+        {
+          "key": "D",
+          "text": "0.4"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "0.4",
+      "explanation": "The artificial form factor is the ratio of actual stem volume to a cylinder based on the tree’s basal area at breast height and total height. It expresses how much of that reference-cylinder volume is occupied by the tapering stem; the source’s keyed calculation gives 0.4."
+    },
+    {
+      "week": 12,
+      "questionNo": 7,
+      "sourceQuestionNo": 127,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "“Plant community, predominantly comprised of trees and other woody vegetation, usually with a closed canopy\" is",
+      "options": [
+        {
+          "key": "A",
+          "text": "silvicultural definition of forests"
+        },
+        {
+          "key": "B",
+          "text": "FAO definition of forests"
+        },
+        {
+          "key": "C",
+          "text": "legal definition of forests"
+        },
+        {
+          "key": "D",
+          "text": "ecological definition of forests"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "ecological definition of forests",
+      "explanation": "The ecological definition identifies forests through the composition and structure of the plant community, especially the dominance of trees and other woody vegetation and often a closed canopy. It is distinct from a legal definition, which depends on statutes or official records, and from management-based definitions."
+    },
+    {
+      "week": 12,
+      "questionNo": 8,
+      "sourceQuestionNo": 128,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "The term laterite soil is derived from Latin later which means",
+      "options": [
+        {
+          "key": "A",
+          "text": "red"
+        },
+        {
+          "key": "B",
+          "text": "brick"
+        },
+        {
+          "key": "C",
+          "text": "fertile"
+        },
+        {
+          "key": "D",
+          "text": "infertile"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "brick",
+      "explanation": "Laterite derives from Latin *later*, meaning “brick.” Lateritic soils develop strongly under weathering and leaching, often in warm, wet climates, and may harden into brick-like material on exposure; their fertility varies with parent material and management."
+    },
+    {
+      "week": 12,
+      "questionNo": 9,
+      "sourceQuestionNo": 129,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Choose the correct statement:",
+      "options": [
+        {
+          "key": "A",
+          "text": "For a non-circular cross-section, girth tape over-estimates the sectional area."
+        },
+        {
+          "key": "B",
+          "text": "For a non-circular cross-section, girth tape under-estimates the sectional area."
+        },
+        {
+          "key": "C",
+          "text": "For a non-circular cross-section, girth tape correctly estimates the sectional area."
+        },
+        {
+          "key": "D",
+          "text": "None of these is a correct statement."
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "For a non-circular cross-section, girth tape over-estimates the sectional area.",
+      "explanation": "A girth tape measures the perimeter of a stem, but converting that perimeter to a circular area can misrepresent a non-circular cross-section. The keyed statement is that the estimate overestimates the sectional area; this is why direct diameter measurements and consistent mensuration methods are important for irregular stems."
+    },
+    {
+      "week": 12,
+      "questionNo": 10,
+      "sourceQuestionNo": 130,
+      "weekLabel": "Week 12",
+      "section": "weekly",
+      "type": "MCQ",
+      "question": "Vertical arrangement of soil horizons is called",
+      "options": [
+        {
+          "key": "A",
+          "text": "soil texture"
+        },
+        {
+          "key": "B",
+          "text": "soil structure"
+        },
+        {
+          "key": "C",
+          "text": "soil profile"
+        },
+        {
+          "key": "D",
+          "text": "soil science"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "soil profile",
+      "explanation": "The soil profile is the vertical arrangement of soil horizons, commonly including topsoil, subsoil and parent material. The horizons differ in colour, organic matter, texture and degree of weathering, reflecting processes such as leaching, accumulation and biological activity over time."
+    },
+    {
+      "week": 13,
+      "questionNo": 1,
+      "sourceQuestionNo": 131,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "What is the stand base area in m² per hectare given DBH of 25 cm, 30 cm, and 35 cm for 3 trees in a 15m × 15m plot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "4.3"
+        },
+        {
+          "key": "B",
+          "text": "7.8"
+        },
+        {
+          "key": "C",
+          "text": "9.6"
+        },
+        {
+          "key": "D",
+          "text": "12.1"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "9.6",
+      "explanation": "First calculate each tree’s basal area with BA = πd²/4, using diameters of 0.25, 0.30 and 0.35 m. Add the three areas, divide by the plot area of 225 m², and multiply by 10,000 to scale the sample to one hectare; the result is about 9.6 m²/ha."
+    },
+    {
+      "week": 13,
+      "questionNo": 2,
+      "sourceQuestionNo": 132,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "When are seed trees felled?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pre-felling"
+        },
+        {
+          "key": "B",
+          "text": "Crown thinning"
+        },
+        {
+          "key": "C",
+          "text": "Seeding felling"
+        },
+        {
+          "key": "D",
+          "text": "Regeneration cutting"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Seeding felling",
+      "explanation": "Seed trees are felled during the seeding-felling stage in the shelterwood sequence, after regeneration has been initiated and the new crop is sufficiently established according to the system’s criteria. The timing matters: removing seed trees too early can reduce seed supply, while retaining them too long can suppress the regeneration."
+    },
+    {
+      "week": 13,
+      "questionNo": 3,
+      "sourceQuestionNo": 133,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "What is the planned age from formation to final felling of a crop called?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rotation age"
+        },
+        {
+          "key": "B",
+          "text": "Crown age"
+        },
+        {
+          "key": "C",
+          "text": "Maturity age"
+        },
+        {
+          "key": "D",
+          "text": "Regeneration age"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Rotation age",
+      "explanation": "Rotation age is the planned period from establishment or formation of a forest crop to its final felling. It is chosen according to species, site productivity, the size or quality of timber desired, and management goals; it should not be confused with the age of an individual tree outside a managed rotation."
+    },
+    {
+      "week": 13,
+      "questionNo": 4,
+      "sourceQuestionNo": 134,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Harvesting, processing, and use of forest produce is called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Forest regulation"
+        },
+        {
+          "key": "B",
+          "text": "Forest conservation"
+        },
+        {
+          "key": "C",
+          "text": "Forest utilization"
+        },
+        {
+          "key": "D",
+          "text": "Forest management"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Forest utilization",
+      "explanation": "Forest utilization concerns harvesting, processing and using forest produce, including timber and non-timber products. It covers the steps that turn forest resources into usable materials, while sustainable forest management sets the rules and limits intended to ensure that such use does not undermine future forest productivity or ecosystem health."
+    },
+    {
+      "week": 13,
+      "questionNo": 5,
+      "sourceQuestionNo": 135,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Which of the following are aims of forest management?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Water reservation"
+        },
+        {
+          "key": "B",
+          "text": "Soil preservation"
+        },
+        {
+          "key": "C",
+          "text": "Increase of species"
+        },
+        {
+          "key": "D",
+          "text": "All of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "All of the above",
+      "explanation": "Forest management has multiple objectives, which may include sustained production, conservation of biodiversity, soil and water protection, recreation, livelihood support and ecosystem services. The correct choice is “all of the above” when every listed objective is compatible with the management framework described in the question."
+    },
+    {
+      "week": 13,
+      "questionNo": 6,
+      "sourceQuestionNo": 136,
+      "weekLabel": "Extra",
+      "section": "extra",
+      "type": "MCQ",
+      "question": "Uneven-aged stands are when the age difference among trees is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Less than 10% of desired"
+        },
+        {
+          "key": "B",
+          "text": "10–15% of desired"
+        },
+        {
+          "key": "C",
+          "text": "More than 20% of desired"
+        },
+        {
+          "key": "D",
+          "text": "Exactly equal to desired"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "More than 20% of desired",
+      "explanation": "An uneven-aged stand contains trees from several age classes rather than one cohort of approximately the same age. In the classification used here, the age difference among trees exceeds 20% of the desired age; uneven-aged management commonly uses selection harvesting to maintain continuous cover and a range of tree sizes."
+    }
+  ],
+  "contentNotice": {
+    "label": "January–April 2026 Question Bank",
+    "sourcePeriod": "January 2026–April 2026",
+    "updateStatus": "Based on the January–April 2026 question bank",
+    "message": "This question bank is based on the January 2026 to April 2026 question set and its supplied answer key. Question wording, options and keyed answers have been aligned to the provided source wherever available. Where the source answer key or printed option text appears inconsistent, the quiz retains the answer-key letter and the explanation flags the discrepancy. Please refer to the latest official NPTEL/SWAYAM course page, study material and assignments for the current offering, as questions and answers may change."
+  }
+}

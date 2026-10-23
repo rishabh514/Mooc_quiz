@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "level": 1,
+      "name": "Newcomer",
+      "xpRequired": 0,
+      "description": "Starting rank"
+    },
+    {
+      "level": 2,
+      "name": "Curious Learner",
+      "xpRequired": 75,
+      "description": "Reach 75 total XP"
+    },
+    {
+      "level": 3,
+      "name": "Warm-Up Rookie",
+      "xpRequired": 175,
+      "description": "Reach 175 total XP"
+    },
+    {
+      "level": 4,
+      "name": "Quiz Scout",
+      "xpRequired": 300,
+      "description": "Reach 300 total XP"
+    },
+    {
+      "level": 5,
+      "name": "Bright Spark",
+      "xpRequired": 450,
+      "description": "Reach 450 total XP"
+    },
+    {
+      "level": 6,
+      "name": "Knowledge Seeker",
+      "xpRequired": 625,
+      "description": "Reach 625 total XP"
+    },
+    {
+      "level": 7,
+      "name": "Quick Study",
+      "xpRequired": 825,
+      "description": "Reach 825 total XP"
+    },
+    {
+      "level": 8,
+      "name": "Practice Ranger",
+      "xpRequired": 1050,
+      "description": "Reach 1,050 total XP"
+    },
+    {
+      "level": 9,
+      "name": "Answer Artisan",
+      "xpRequired": 1300,
+      "description": "Reach 1,300 total XP"
+    },
+    {
+      "level": 10,
+      "name": "Focus Finder",
+      "xpRequired": 1575,
+      "description": "Reach 1,575 total XP"
+    },
+    {
+      "level": 11,
+      "name": "Week Wanderer",
+      "xpRequired": 1875,
+      "description": "Reach 1,875 total XP"
+    },
+    {
+      "level": 12,
+      "name": "Steady Solver",
+      "xpRequired": 2200,
+      "description": "Reach 2,200 total XP"
+    },
+    {
+      "level": 13,
+      "name": "Accuracy Ace",
+      "xpRequired": 2550,
+      "description": "Reach 2,550 total XP"
+    },
+    {
+      "level": 14,
+      "name": "Learning Knight",
+      "xpRequired": 2925,
+      "description": "Reach 2,925 total XP"
+    },
+    {
+      "level": 15,
+      "name": "Recall Expert",
+      "xpRequired": 3325,
+      "description": "Reach 3,325 total XP"
+    },
+    {
+      "level": 16,
+      "name": "Quiz Tactician",
+      "xpRequired": 3750,
+      "description": "Reach 3,750 total XP"
+    },
+    {
+      "level": 17,
+      "name": "Streak Keeper",
+      "xpRequired": 4200,
+      "description": "Reach 4,200 total XP"
+    },
+    {
+      "level": 18,
+      "name": "Sharp Thinker",
+      "xpRequired": 4675,
+      "description": "Reach 4,675 total XP"
+    },
+    {
+      "level": 19,
+      "name": "Pattern Hunter",
+      "xpRequired": 5175,
+      "description": "Reach 5,175 total XP"
+    },
+    {
+      "level": 20,
+      "name": "Skill Builder",
+      "xpRequired": 5700,
+      "description": "Reach 5,700 total XP"
+    },
+    {
+      "level": 21,
+      "name": "Mind Athlete",
+      "xpRequired": 6250,
+      "description": "Reach 6,250 total XP"
+    },
+    {
+      "level": 22,
+      "name": "Assignment Ace",
+      "xpRequired": 6825,
+      "description": "Reach 6,825 total XP"
+    },
+    {
+      "level": 23,
+      "name": "Precision Adept",
+      "xpRequired": 7425,
+      "description": "Reach 7,425 total XP"
+    },
+    {
+      "level": 24,
+      "name": "Rapid Responder",
+      "xpRequired": 8050,
+      "description": "Reach 8,050 total XP"
+    },
+    {
+      "level": 25,
+      "name": "Mastery Seeker",
+      "xpRequired": 8700,
+      "description": "Reach 8,700 total XP"
+    },
+    {
+      "level": 26,
+      "name": "Knowledge Guardian",
+      "xpRequired": 9375,
+      "description": "Reach 9,375 total XP"
+    },
+    {
+      "level": 27,
+      "name": "Quiz Champion",
+      "xpRequired": 10075,
+      "description": "Reach 10,075 total XP"
+    },
+    {
+      "level": 28,
+      "name": "Focus Specialist",
+      "xpRequired": 10800,
+      "description": "Reach 10,800 total XP"
+    },
+    {
+      "level": 29,
+      "name": "Streak Warrior",
+      "xpRequired": 11550,
+      "description": "Reach 11,550 total XP"
+    },
+    {
+      "level": 30,
+      "name": "Insight Hunter",
+      "xpRequired": 12325,
+      "description": "Reach 12,325 total XP"
+    },
+    {
+      "level": 31,
+      "name": "Problem Solver",
+      "xpRequired": 13125,
+      "description": "Reach 13,125 total XP"
+    },
+    {
+      "level": 32,
+      "name": "Learning Virtuoso",
+      "xpRequired": 13950,
+      "description": "Reach 13,950 total XP"
+    },
+    {
+      "level": 33,
+      "name": "Accuracy Guardian",
+      "xpRequired": 14800,
+      "description": "Reach 14,800 total XP"
+    },
+    {
+      "level": 34,
+      "name": "Course Conqueror",
+      "xpRequired": 15675,
+      "description": "Reach 15,675 total XP"
+    },
+    {
+      "level": 35,
+      "name": "Elite Scholar",
+      "xpRequired": 16575,
+      "description": "Reach 16,575 total XP"
+    },
+    {
+      "level": 36,
+      "name": "Speed Strategist",
+      "xpRequired": 17500,
+      "description": "Reach 17,500 total XP"
+    },
+    {
+      "level": 37,
+      "name": "Masterful Mind",
+      "xpRequired": 18450,
+      "description": "Reach 18,450 total XP"
+    },
+    {
+      "level": 38,
+      "name": "Question Commander",
+      "xpRequired": 19425,
+      "description": "Reach 19,425 total XP"
+    },
+    {
+      "level": 39,
+      "name": "Legendary Learner",
+      "xpRequired": 20425,
+      "description": "Reach 20,425 total XP"
+    },
+    {
+      "level": 40,
+      "name": "Brilliance Engine",
+      "xpRequired": 21450,
+      "description": "Reach 21,450 total XP"
+    },
+    {
+      "level": 41,
+      "name": "Expert Pathfinder",
+      "xpRequired": 22500,
+      "description": "Reach 22,500 total XP"
+    },
+    {
+      "level": 42,
+      "name": "Cognition Captain",
+      "xpRequired": 23575,
+      "description": "Reach 23,575 total XP"
+    },
+    {
+      "level": 43,
+      "name": "Grand Scholar",
+      "xpRequired": 24675,
+      "description": "Reach 24,675 total XP"
+    },
+    {
+      "level": 44,
+      "name": "Mastery Virtuoso",
+      "xpRequired": 25800,
+      "description": "Reach 25,800 total XP"
+    },
+    {
+      "level": 45,
+      "name": "Elite Champion",
+      "xpRequired": 26950,
+      "description": "Reach 26,950 total XP"
+    },
+    {
+      "level": 46,
+      "name": "Wisdom Keeper",
+      "xpRequired": 28125,
+      "description": "Reach 28,125 total XP"
+    },
+    {
+      "level": 47,
+      "name": "Supreme Solver",
+      "xpRequired": 29325,
+      "description": "Reach 29,325 total XP"
+    },
+    {
+      "level": 48,
+      "name": "Grandmaster",
+      "xpRequired": 30550,
+      "description": "Reach 30,550 total XP"
+    },
+    {
+      "level": 49,
+      "name": "NPTEL Legend",
+      "xpRequired": 31800,
+      "description": "Reach 31,800 total XP"
+    },
+    {
+      "level": 50,
+      "name": "Apex Scholar",
+      "xpRequired": 33075,
+      "description": "Maximum rank"
+    }
+  ]
+}

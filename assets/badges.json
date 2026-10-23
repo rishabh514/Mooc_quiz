@@ -1,0 +1,23 @@
+{
+  "badges": [
+    { "id": "precision-sniper", "name": "Precision Sniper", "description": "Score 90% or higher in any completed quiz.", "image": "precision-sniper.png" },
+    { "id": "flawless-gladiator", "name": "Flawless Gladiator", "description": "Get every answered question right in a quiz, with no skips.", "image": "flawless-gladiator.png" },
+    { "id": "week-conqueror", "name": "Week Conqueror", "description": "Attempt questions from every regular week in this subject; Extras do not count.", "image": "week-conqueror.png" },
+    { "id": "comeback-king", "name": "Comeback King", "description": "Improve your score by at least 20 percentage points on a later attempt in the same mode and scope.", "image": "comeback-king.png" },
+    { "id": "phoenix-rising", "name": "Phoenix Rising", "description": "Score 80% or higher in a Weak Questions drill.", "image": "phoenix-rising.png" },
+    { "id": "speed-demon", "name": "Speed Demon", "description": "Score at least 90% while averaging 20 seconds or less per answered question.", "image": "speed-demon.png" },
+    { "id": "first-blood", "name": "First Blood", "description": "Answer 100 questions across your practice sessions. Repeat attempts count; skipped questions do not.", "image": "first-blood.png" },
+    { "id": "question-slayer", "name": "Question Slayer", "description": "Answer 200 questions across your practice sessions.", "image": "question-slayer.png" },
+    { "id": "mind-gladiator", "name": "Mind Gladiator", "description": "Answer 300 questions across your practice sessions.", "image": "mind-gladiator.png" },
+    { "id": "knowledge-dominator", "name": "Knowledge Dominator", "description": "Answer 500 questions across your practice sessions.", "image": "knowledge-dominator.png" },
+    { "id": "apex-overlord", "name": "The Apex Overlord", "description": "Answer 1,000 questions overall and correctly solve every question in every regular week of this subject. Extras are excluded.", "image": "the-apex-overlord.png" },
+    { "id": "hot-streak", "name": "Hot Streak", "description": "Practise on 2 consecutive calendar days.", "image": "hot-streak.png" },
+    { "id": "unstoppable", "name": "Unstoppable", "description": "Practise on 3 consecutive calendar days.", "image": "unstoppable.png" },
+    { "id": "iron-will", "name": "Iron Will", "description": "Practise on 5 consecutive calendar days.", "image": "iron-will.png" }
+  ],
+  "streakMilestones": [
+    { "days": 2, "badgeId": "hot-streak", "name": "Hot Streak", "note": "2 days", "image": "hot-streak.png" },
+    { "days": 3, "badgeId": "unstoppable", "name": "Unstoppable", "note": "3 days", "image": "unstoppable.png" },
+    { "days": 5, "badgeId": "iron-will", "name": "Iron Will", "note": "5 days", "image": "iron-will.png" }
+  ]
+}

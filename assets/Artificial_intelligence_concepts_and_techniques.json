@@ -1,0 +1,3366 @@
+{
+  "course": "Artificial intelligence concepts and techniques",
+  "assignment": "AICT Question Bank",
+  "questions": [
+    {
+      "week": 1,
+      "questionNo": 1,
+      "id": "aict-week1-q1",
+      "type": "MCQ",
+      "question": "What is Artificial Intelligence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Artificial Intelligence is a field that aims to develop intelligent machines"
+        },
+        {
+          "key": "B",
+          "text": "Artificial Intelligence is a field that aims to make humans more intelligent"
+        },
+        {
+          "key": "C",
+          "text": "Artificial Intelligence is a field that aims to improve the security"
+        },
+        {
+          "key": "D",
+          "text": "Artificial Intelligence is a field that aims to mine the data"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Artificial Intelligence is a field that aims to develop intelligent machines",
+      "explanation": "Artificial Intelligence (AI) is the field of computing concerned with building systems that can perform tasks associated with intelligent behavior, such as reasoning, learning, perception, and decision-making. Its goal is not to make people more intelligent or simply to improve security or mine data; those are narrower activities that AI may support."
+    },
+    {
+      "week": 1,
+      "questionNo": 2,
+      "id": "aict-week1-q2",
+      "type": "MCQ",
+      "question": "Which of the following is a branch of Artificial Intelligence",
+      "options": [
+        {
+          "key": "A",
+          "text": "Machine Learning"
+        },
+        {
+          "key": "B",
+          "text": "Cyber Forensics"
+        },
+        {
+          "key": "C",
+          "text": "Network Design"
+        },
+        {
+          "key": "D",
+          "text": "Full-stack Developer"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Machine Learning",
+      "explanation": "Machine Learning is a major branch of AI in which systems learn patterns from data and use those patterns to make predictions or decisions. Cyber forensics and network design are separate computing areas, while full-stack development is a software-development role rather than an AI branch."
+    },
+    {
+      "week": 1,
+      "questionNo": 3,
+      "id": "aict-week1-q3",
+      "type": "MCQ",
+      "question": "Which of the following is a component of Artificial Intelligence",
+      "options": [
+        {
+          "key": "A",
+          "text": "Training"
+        },
+        {
+          "key": "B",
+          "text": "Learning"
+        },
+        {
+          "key": "C",
+          "text": "Coding"
+        },
+        {
+          "key": "D",
+          "text": "Designing"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Learning",
+      "explanation": "Learning is a core capability in many AI systems: an agent can improve its behavior by using data, experience, or feedback. Training is one process used to produce a learned model, while designing and coding are broader engineering activities rather than the capability named in the question."
+    },
+    {
+      "week": 1,
+      "questionNo": 4,
+      "id": "aict-week1-q4",
+      "type": "MCQ",
+      "question": "What is an agent's percept sequence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The hardware architecture of the agent"
+        },
+        {
+          "key": "B",
+          "text": "A complete history of everything the agent has ever perceived"
+        },
+        {
+          "key": "C",
+          "text": "The sequence of all actions the agent takes"
+        },
+        {
+          "key": "D",
+          "text": "The sequence of the agent's goals"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "A complete history of everything the agent has ever perceived",
+      "explanation": "A percept sequence is the complete history of percepts an agent has received from its environment. It is distinct from the actions the agent has taken, its hardware, or its goals. An agent may use this history to infer what is happening when the current percept alone is insufficient."
+    },
+    {
+      "week": 1,
+      "questionNo": 5,
+      "id": "aict-week1-q5",
+      "type": "MCQ",
+      "question": "Which agent architecture requires a representation of \"how the world works\" to keep track of unobserved aspects of the environment?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Simple reflex agent"
+        },
+        {
+          "key": "B",
+          "text": "Table-driven agent"
+        },
+        {
+          "key": "C",
+          "text": "Model-based agent"
+        },
+        {
+          "key": "D",
+          "text": "Goal-based agent"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Model-based agent",
+      "explanation": "A model-based agent maintains an internal representation of how the environment changes and how its actions affect it. This model helps the agent reason about aspects it cannot currently observe. A simple reflex agent relies on current percepts and condition–action rules, while a goal-based agent selects actions in light of desired outcomes."
+    },
+    {
+      "week": 1,
+      "questionNo": 6,
+      "id": "aict-week1-q6",
+      "type": "MCQ",
+      "question": "Which type of agent chooses actions purely based on the current condition and ignores the perceptual past?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Goal-based agent"
+        },
+        {
+          "key": "B",
+          "text": "Utility-based agent"
+        },
+        {
+          "key": "C",
+          "text": "Simple reflex agent"
+        },
+        {
+          "key": "D",
+          "text": "Learning agent"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Simple reflex agent",
+      "explanation": "A simple reflex agent chooses an action from the current percept, typically using condition–action rules, without keeping track of the perceptual history. This can work in fully observable settings but can fail when important information is hidden or depends on earlier events. Model-based, goal-based, learning, and utility-based agents use additional mechanisms."
+    },
+    {
+      "week": 1,
+      "questionNo": 7,
+      "id": "aict-week1-q7",
+      "type": "MCQ",
+      "question": "Which agent type uses a \"problem generator\" to suggest new actions and explore new paths?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Utility-based agent"
+        },
+        {
+          "key": "B",
+          "text": "Learning agent"
+        },
+        {
+          "key": "C",
+          "text": "Model-based agent"
+        },
+        {
+          "key": "D",
+          "text": "Simple reflex agent"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Learning agent",
+      "explanation": "A learning agent includes a problem generator that proposes exploratory actions likely to provide useful new experience. Exploration can reveal better ways to act rather than merely repeating known behavior. The learning element updates performance, while a simple reflex agent does not have this exploratory learning structure."
+    },
+    {
+      "week": 1,
+      "questionNo": 8,
+      "id": "aict-week1-q8",
+      "type": "MCQ",
+      "question": "What is the defining characteristic of a \"Rational Agent\"?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It always learns through reinforcement"
+        },
+        {
+          "key": "B",
+          "text": "It completely avoids human intervention"
+        },
+        {
+          "key": "C",
+          "text": "It has a fully observable environment"
+        },
+        {
+          "key": "D",
+          "text": "It selects actions expected to maximize its performance measure based on its percept"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "It selects actions expected to maximize its performance measure based on its percept",
+      "explanation": "A rational agent selects the action expected to maximize its performance measure, given the percept sequence and the knowledge available to it. Rationality does not mean the agent must always use reinforcement learning, have complete observations, or avoid human involvement; it means choosing appropriately to achieve the specified performance objective."
+    },
+    {
+      "week": 1,
+      "questionNo": 9,
+      "id": "aict-week1-q9",
+      "type": "MCQ",
+      "question": "In Artificial Intelligence, an informed search strategy is also known as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Exhaustive search"
+        },
+        {
+          "key": "B",
+          "text": "Brute-force search"
+        },
+        {
+          "key": "C",
+          "text": "Heuristic search"
+        },
+        {
+          "key": "D",
+          "text": "Blind search"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Heuristic search",
+      "explanation": "Informed search uses additional problem-specific knowledge, commonly represented by a heuristic, to guide which states should be explored. This can focus search toward promising paths. Blind or uninformed search does not use such domain knowledge and instead follows the information supplied by the problem definition and search procedure."
+    },
+    {
+      "week": 1,
+      "questionNo": 10,
+      "id": "aict-week1-q10",
+      "type": "MCQ",
+      "question": "In Artificial Intelligence, a search which does not use any domain knowledge is known as :",
+      "options": [
+        {
+          "key": "A",
+          "text": "Blind search"
+        },
+        {
+          "key": "B",
+          "text": "Best first search"
+        },
+        {
+          "key": "C",
+          "text": "Greedy search"
+        },
+        {
+          "key": "D",
+          "text": "Heuristic search"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Blind search",
+      "explanation": "Blind (uninformed) search does not use extra domain knowledge to estimate which state is closer to the goal. It explores according to a general rule such as breadth-first or depth-first order. Heuristic methods such as greedy best-first search use an estimate to guide exploration."
+    },
+    {
+      "week": 2,
+      "questionNo": 1,
+      "id": "aict-week2-q1",
+      "type": "MCQ",
+      "question": "Problem-solving agents are designed to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Manage computer networks"
+        },
+        {
+          "key": "B",
+          "text": "Play games only"
+        },
+        {
+          "key": "C",
+          "text": "Create animations"
+        },
+        {
+          "key": "D",
+          "text": "Solve specific problems by searching for solutions"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Solve specific problems by searching for solutions",
+      "explanation": "A problem-solving agent formulates a goal and searches through possible states or action sequences to find a way to reach it. Such agents are not limited to games, networking, or animation; the same approach can be used for route finding, scheduling, puzzles, and many other tasks."
+    },
+    {
+      "week": 2,
+      "questionNo": 2,
+      "id": "aict-week2-q2",
+      "type": "MCQ",
+      "question": "Which data structure is used to implement a Breadth-First Search (BFS) algorithm?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Priority queue"
+        },
+        {
+          "key": "B",
+          "text": "Hash table"
+        },
+        {
+          "key": "C",
+          "text": "Queue"
+        },
+        {
+          "key": "D",
+          "text": "Stack"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Queue",
+      "explanation": "Breadth-First Search uses a queue: nodes are removed in the order they were added, so shallower nodes are expanded before deeper ones. A stack would support depth-first behavior, while a priority queue is more characteristic of cost-based or heuristic search algorithms."
+    },
+    {
+      "week": 2,
+      "questionNo": 3,
+      "id": "aict-week2-q3",
+      "type": "MCQ",
+      "question": "Which uninformed search algorithm evaluates and expands the node with the lowest path cost g(n) first?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Breadth-first search"
+        },
+        {
+          "key": "B",
+          "text": "Depth-first search"
+        },
+        {
+          "key": "C",
+          "text": "Uniform cost strategy"
+        },
+        {
+          "key": "D",
+          "text": "Depth-limited search"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Uniform cost strategy",
+      "explanation": "Uniform-cost search expands the frontier node with the smallest accumulated path cost, g(n). Unlike breadth-first search, which prioritizes depth, uniform-cost search accounts for differing edge costs. Under the usual non-negative step-cost assumptions, this makes it suitable for finding a least-cost solution."
+    },
+    {
+      "week": 2,
+      "questionNo": 4,
+      "id": "aict-week2-q4",
+      "type": "MCQ",
+      "question": "Depth-first search always expands the _____ node in the current fringe of the search tree.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Shallowest"
+        },
+        {
+          "key": "B",
+          "text": "Child node"
+        },
+        {
+          "key": "C",
+          "text": "Minimum cost"
+        },
+        {
+          "key": "D",
+          "text": "Deepest"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Deepest",
+      "explanation": "Depth-First Search expands the deepest node currently on the frontier, following one branch as far as its search rules allow before backtracking. A stack is commonly used to implement this behavior. It may reach a deep solution quickly, but it does not generally guarantee the shortest path."
+    },
+    {
+      "week": 2,
+      "questionNo": 5,
+      "id": "aict-week2-q5",
+      "type": "MCQ",
+      "question": "Which search strategy is guaranteed to find the shortest path in a graph?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Breadth-first search"
+        },
+        {
+          "key": "B",
+          "text": "Greedy best-first search"
+        },
+        {
+          "key": "C",
+          "text": "Depth-first search"
+        },
+        {
+          "key": "D",
+          "text": "Hill climbing search"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Breadth-first search",
+      "explanation": "Breadth-First Search finds a shortest path when each edge has equal cost, because it explores states in increasing order of depth. If edges have different costs, uniform-cost search is the usual choice for guaranteeing a least-cost path under non-negative step costs. The source answer is BFS under the standard unweighted-graph assumption."
+    },
+    {
+      "week": 2,
+      "questionNo": 6,
+      "id": "aict-week2-q6",
+      "type": "MCQ",
+      "question": "Which of the following is an uninformed search strategy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Greedy best-first search"
+        },
+        {
+          "key": "B",
+          "text": "Breadth-first search"
+        },
+        {
+          "key": "C",
+          "text": "Hill climbing search"
+        },
+        {
+          "key": "D",
+          "text": "A* algorithm"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Breadth-first search",
+      "explanation": "Breadth-First Search is uninformed because it uses the structure of the search tree, rather than an estimate of closeness to the goal, to decide expansion order. Greedy best-first search, A*, and hill climbing use heuristic guidance and therefore fall into informed search approaches."
+    },
+    {
+      "week": 2,
+      "questionNo": 7,
+      "id": "aict-week2-q7",
+      "type": "MCQ",
+      "question": "Greedy best-first search uses :",
+      "options": [
+        {
+          "key": "A",
+          "text": "A heuristic to estimate the cost to the goal"
+        },
+        {
+          "key": "B",
+          "text": "Random exploration"
+        },
+        {
+          "key": "C",
+          "text": "The path cost from the start node"
+        },
+        {
+          "key": "D",
+          "text": "Depth-limited search"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "A heuristic to estimate the cost to the goal",
+      "explanation": "Greedy best-first search chooses a frontier node using a heuristic estimate h(n) of the remaining cost or distance to the goal. It prioritizes what appears closest to the goal, rather than the path cost already paid. This may make search fast, though it does not always find an optimal solution."
+    },
+    {
+      "week": 2,
+      "questionNo": 8,
+      "id": "aict-week2-q8",
+      "type": "MCQ",
+      "question": "A heuristic function is :",
+      "options": [
+        {
+          "key": "A",
+          "text": "A function that estimates the cost to the goal"
+        },
+        {
+          "key": "B",
+          "text": "A function that generates random numbers"
+        },
+        {
+          "key": "C",
+          "text": "A function that calculates the exact cost to the goal"
+        },
+        {
+          "key": "D",
+          "text": "A function used only in uninformed search"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "A function that estimates the cost to the goal",
+      "explanation": "A heuristic function estimates how far a state is from a goal or how much cost remains to reach it. Search algorithms use this estimate to prioritize promising states. A heuristic is an estimate, not necessarily the exact remaining cost, and informed search is where it is commonly applied."
+    },
+    {
+      "week": 2,
+      "questionNo": 9,
+      "id": "aict-week2-q9",
+      "type": "MCQ",
+      "question": "What is the primary purpose of the Minimax algorithm?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To make the optimal move assuming the opponent also plays optimally"
+        },
+        {
+          "key": "B",
+          "text": "To generate random moves in single-player puzzles"
+        },
+        {
+          "key": "C",
+          "text": "To speed up the processing time of a game engine"
+        },
+        {
+          "key": "D",
+          "text": "To find the shortest path in a graph"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "To make the optimal move assuming the opponent also plays optimally",
+      "explanation": "Minimax is used in adversarial games where one player tries to maximize utility and the opponent tries to minimize it. It evaluates possible moves while assuming both players choose optimally. The resulting move is best against a rational opponent according to the evaluation function, not a method for ordinary shortest-path search."
+    },
+    {
+      "week": 2,
+      "questionNo": 10,
+      "id": "aict-week2-q10",
+      "type": "MCQ",
+      "question": "What is the main advantage of using Alpha-Beta pruning over the standard Minimax algorithm?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It allows the AI to play games with incomplete information"
+        },
+        {
+          "key": "B",
+          "text": "It avoids the need to evaluate leaf nodes entirely"
+        },
+        {
+          "key": "C",
+          "text": "It guarantees a win for both players in a zero-sum game"
+        },
+        {
+          "key": "D",
+          "text": "It eliminates unnecessary branches in the game tree without affecting the final decision"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "It eliminates unnecessary branches in the game tree without affecting the final decision",
+      "explanation": "Alpha–Beta pruning speeds up Minimax by ignoring branches that cannot change the final choice, while preserving the decision Minimax would return. It still may evaluate many leaf nodes, and it does not guarantee a win; its benefit is reducing unnecessary search through the game tree."
+    },
+    {
+      "week": 3,
+      "questionNo": 1,
+      "id": "aict-week3-q1",
+      "type": "MCQ",
+      "question": "State the best-case scenario for alpha-beta pruning in terms of node ordering",
+      "options": [
+        {
+          "key": "A",
+          "text": "Worst-to-best"
+        },
+        {
+          "key": "B",
+          "text": "Best-to-worst"
+        },
+        {
+          "key": "C",
+          "text": "Random"
+        },
+        {
+          "key": "D",
+          "text": "Best-first"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Best-to-worst",
+      "explanation": "Alpha–Beta pruning is most effective when promising moves are examined first—often described as best-to-worst move ordering. Early discovery of strong bounds lets the algorithm prune more of the remaining tree. Poor ordering can still produce the correct result, but usually yields fewer pruning opportunities."
+    },
+    {
+      "week": 3,
+      "questionNo": 2,
+      "id": "aict-week3-q2",
+      "type": "MCQ",
+      "question": "Local search algorithms are typically used when:",
+      "options": [
+        {
+          "key": "A",
+          "text": "The exact path to the goal state is crucial"
+        },
+        {
+          "key": "B",
+          "text": "The state space is very small and can be fully tracked"
+        },
+        {
+          "key": "C",
+          "text": "The path to the goal is completely irrelevant, and only the final state matters"
+        },
+        {
+          "key": "D",
+          "text": "No heuristic information is available"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "The path to the goal is completely irrelevant, and only the final state matters",
+      "explanation": "Local search is useful when the quality of the final state matters more than the exact sequence of steps used to reach it. It works by improving candidate states and often stores little of the search path. Examples include optimization tasks such as scheduling or arranging resources."
+    },
+    {
+      "week": 3,
+      "questionNo": 3,
+      "id": "aict-week3-q3",
+      "type": "MCQ",
+      "question": "What is the time complexity of the minimax algorithm in terms of the branching factor (b) and maximum depth (m) of the tree?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O(b*m)"
+        },
+        {
+          "key": "B",
+          "text": "O(b^m)"
+        },
+        {
+          "key": "C",
+          "text": "O(b+m)"
+        },
+        {
+          "key": "D",
+          "text": "O(b/m)"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "O(b^m)",
+      "explanation": "With branching factor b and maximum depth m, Minimax may examine on the order of b choices at each of m levels, producing time complexity O(b^m). The exponential growth explains why full Minimax becomes expensive for deep games and motivates pruning and evaluation heuristics."
+    },
+    {
+      "week": 3,
+      "questionNo": 4,
+      "id": "aict-week3-q4",
+      "type": "MCQ",
+      "question": "Hill-Climbing search is often referred to as a \"greedy local search\" because:",
+      "options": [
+        {
+          "key": "A",
+          "text": "It evaluates all global nodes before making any structural decision"
+        },
+        {
+          "key": "B",
+          "text": "It relies entirely on a pre-computed target oracle"
+        },
+        {
+          "key": "C",
+          "text": "It chooses the best immediate neighboring state without thinking ahead"
+        },
+        {
+          "key": "D",
+          "text": "It keeps expanding nodes until all memory allocations are fully filled"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It chooses the best immediate neighboring state without thinking ahead",
+      "explanation": "Hill climbing evaluates neighboring states and moves to an immediately better one according to its objective function. It is called greedy because it uses local improvement rather than looking far ahead. This simplicity can be effective, but plateaus, ridges, and local optima can stop it short of a global optimum."
+    },
+    {
+      "week": 3,
+      "questionNo": 5,
+      "id": "aict-week3-q5",
+      "type": "MCQ",
+      "question": "In a Genetic Algorithm, the process of combining parts of two parent solutions to generate new child successor states is formally called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mutation"
+        },
+        {
+          "key": "B",
+          "text": "Selection"
+        },
+        {
+          "key": "C",
+          "text": "Fitness scaling"
+        },
+        {
+          "key": "D",
+          "text": "Crossover"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Crossover",
+      "explanation": "Crossover combines genetic material from two parent candidates to create offspring. In a genetic algorithm, this can recombine useful portions of solutions. Mutation makes random changes, selection chooses parents based on fitness, and fitness scaling adjusts selection pressure; these are different operators or mechanisms."
+    },
+    {
+      "week": 3,
+      "questionNo": 6,
+      "id": "aict-week3-q6",
+      "type": "MCQ",
+      "question": "Which genetic operator introduces random changes in an individual's genetic material?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mutation"
+        },
+        {
+          "key": "B",
+          "text": "Selection"
+        },
+        {
+          "key": "C",
+          "text": "Encoding"
+        },
+        {
+          "key": "D",
+          "text": "Crossover"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Mutation",
+      "explanation": "Mutation introduces random changes into a candidate's representation, helping maintain diversity and potentially introducing new traits into the population. Crossover recombines parents, while selection favors candidates according to fitness. Mutation is usually controlled by a probability so that exploration is encouraged without disrupting every solution."
+    },
+    {
+      "week": 3,
+      "questionNo": 7,
+      "id": "aict-week3-q7",
+      "type": "MCQ",
+      "question": "Which local search technique actively utilizes a \"cooling schedule\" parameter to temporarily accept worse moves and escape local optima?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stochastic hill climbing"
+        },
+        {
+          "key": "B",
+          "text": "First choice hill climbing"
+        },
+        {
+          "key": "C",
+          "text": "Simulated annealing"
+        },
+        {
+          "key": "D",
+          "text": "Genetic algorithm"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Simulated annealing",
+      "explanation": "Simulated annealing uses a temperature schedule to control how willing it is to accept moves that temporarily worsen the objective. At higher temperatures, worse moves are more likely to be accepted, enabling escape from local optima; as the temperature cools, the algorithm becomes more selective."
+    },
+    {
+      "week": 3,
+      "questionNo": 8,
+      "id": "aict-week3-q8",
+      "type": "MCQ",
+      "question": "Which of the following is a primary difference between Genetic Algorithms (GA) and Genetic Programming (GP)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "GAs mimic biological evolution, whereas GPs mimic human psychology"
+        },
+        {
+          "key": "B",
+          "text": "GAs typically evolve data structures or strings, while GPs explicitly evolve executable computer programs"
+        },
+        {
+          "key": "C",
+          "text": "GAs rely entirely on mutation, while GPs rely entirely on crossover"
+        },
+        {
+          "key": "D",
+          "text": "GAs use fitness functions, whereas GPs do not"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "GAs typically evolve data structures or strings, while GPs explicitly evolve executable computer programs",
+      "explanation": "Genetic Algorithms commonly evolve encoded candidate solutions such as bit strings, vectors, or other data structures. Genetic Programming evolves program structures—often executable expression trees—so the candidates themselves are computer programs. Both commonly use fitness evaluation and evolutionary operators, but the representation being evolved is the key distinction."
+    },
+    {
+      "week": 3,
+      "questionNo": 9,
+      "id": "aict-week3-q9",
+      "type": "MCQ",
+      "question": "In Simulated Annealing, what does the \"temperature\" parameter control?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The probability of accepting a worse solution"
+        },
+        {
+          "key": "B",
+          "text": "The speed of the hardware running the algorithm"
+        },
+        {
+          "key": "C",
+          "text": "The memory size of the algorithm"
+        },
+        {
+          "key": "D",
+          "text": "The number of neighboring states generated at once"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "The probability of accepting a worse solution",
+      "explanation": "In Simulated Annealing, temperature regulates the chance of accepting a worse candidate. A higher temperature permits more uphill moves and broader exploration; a lower temperature makes such moves less likely. The algorithm's cooling schedule gradually shifts behavior from exploration toward refinement."
+    },
+    {
+      "week": 3,
+      "questionNo": 10,
+      "id": "aict-week3-q10",
+      "type": "MCQ",
+      "question": "What happens as the temperature (T) approaches zero in the Simulated Annealing algorithm?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The algorithm terminates and clears its memory"
+        },
+        {
+          "key": "B",
+          "text": "The algorithm begins accepting almost any move"
+        },
+        {
+          "key": "C",
+          "text": "The algorithm acts more like pure random search"
+        },
+        {
+          "key": "D",
+          "text": "The algorithm behaves increasingly like a greedy Hill Climbing search"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "The algorithm behaves increasingly like a greedy Hill Climbing search",
+      "explanation": "As temperature approaches zero, Simulated Annealing becomes increasingly unlikely to accept worse moves and behaves more like greedy hill climbing. That reduces its ability to escape a local optimum late in the search. It does not simply switch to random search or automatically terminate."
+    },
+    {
+      "week": 4,
+      "questionNo": 1,
+      "id": "aict-week4-q1",
+      "type": "MCQ",
+      "question": "Propositional logic deals with",
+      "options": [
+        {
+          "key": "A",
+          "text": "Objects and relations"
+        },
+        {
+          "key": "B",
+          "text": "True or false statements"
+        },
+        {
+          "key": "C",
+          "text": "Rules"
+        },
+        {
+          "key": "D",
+          "text": "Quantifiers"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "True or false statements",
+      "explanation": "Propositional logic treats whole statements as propositions that are either true or false, and combines them with connectives such as AND, OR, and NOT. It does not directly represent individuals, relationships, or quantifiers; those are expressible more naturally in predicate or first-order logic."
+    },
+    {
+      "week": 4,
+      "questionNo": 2,
+      "id": "aict-week4-q2",
+      "type": "MCQ",
+      "question": "Which logic uses predicates and quantifiers?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Boolean logic"
+        },
+        {
+          "key": "B",
+          "text": "Propositional logic"
+        },
+        {
+          "key": "C",
+          "text": "Predicate logic"
+        },
+        {
+          "key": "D",
+          "text": "Semantic logic"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Predicate logic",
+      "explanation": "Predicate logic extends propositional logic by representing objects, their properties, and relations among them. Quantifiers such as ∀ (for all) and ∃ (there exists) let statements express general rules or existence claims, which cannot be represented as directly using only whole true/false propositions."
+    },
+    {
+      "week": 4,
+      "questionNo": 3,
+      "id": "aict-week4-q3",
+      "type": "MCQ",
+      "question": "What is forward chaining?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reasoning from goals to facts"
+        },
+        {
+          "key": "B",
+          "text": "Loop detection"
+        },
+        {
+          "key": "C",
+          "text": "Backtracking"
+        },
+        {
+          "key": "D",
+          "text": "Reasoning from facts to solutions"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Reasoning from facts to solutions",
+      "explanation": "Forward chaining starts with known facts and applies rules whose conditions are satisfied to infer new facts, continuing until a goal is reached or no more rules apply. It is useful when the available data is the starting point. Backward chaining works in the opposite direction by reasoning from a goal."
+    },
+    {
+      "week": 4,
+      "questionNo": 4,
+      "id": "aict-week4-q4",
+      "type": "MCQ",
+      "question": "Forward chaining is also called :",
+      "options": [
+        {
+          "key": "A",
+          "text": "Random reasoning"
+        },
+        {
+          "key": "B",
+          "text": "Data-driven reasoning"
+        },
+        {
+          "key": "C",
+          "text": "Backward reasoning"
+        },
+        {
+          "key": "D",
+          "text": "Goal-driven reasoning"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Data-driven reasoning",
+      "explanation": "Forward chaining is called data-driven reasoning because it begins with available facts and lets those facts determine which inference rules can fire next. It contrasts with goal-driven backward chaining, which starts from a conclusion to be proved and seeks supporting facts or rules."
+    },
+    {
+      "week": 4,
+      "questionNo": 5,
+      "id": "aict-week4-q5",
+      "type": "MCQ",
+      "question": "Translate the following statement into FOL : \"For every a, if a is a philosopher, then a is a scholar\"",
+      "options": [
+        {
+          "key": "A",
+          "text": "∀a philosopher(a) → scholar(a)"
+        },
+        {
+          "key": "B",
+          "text": "None of the above"
+        },
+        {
+          "key": "C",
+          "text": "∃a philosopher(a) → scholar(a)"
+        },
+        {
+          "key": "D",
+          "text": "∃a philosopher(a) ∧ scholar(a)"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "∀a philosopher(a) → scholar(a)",
+      "explanation": "The universal quantifier ∀ means the implication must hold for every individual: whenever an individual is a philosopher, that individual is a scholar. The intended structure is ∀a (philosopher(a) → scholar(a)); parentheses make the implication's scope explicit. An existential statement would only assert something about at least one individual."
+    },
+    {
+      "week": 4,
+      "questionNo": 6,
+      "id": "aict-week4-q6",
+      "type": "MCQ",
+      "question": "How do you represent \"All dogs have tails\" in FOL",
+      "options": [
+        {
+          "key": "A",
+          "text": "∀y (dog(x) ∧ tail(y) ∧ hasTail(x, y))"
+        },
+        {
+          "key": "B",
+          "text": "∀y (dog(x) → tail(y) ∧ hasTail(x, y))"
+        },
+        {
+          "key": "C",
+          "text": "∀x (dog(x) → ∃y (tail(y) ∧ hasTail(x, y)))"
+        },
+        {
+          "key": "D",
+          "text": "∀x (dog(x) ∧ ∃y (tail(y) ∧ hasTail(x, y)))"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "∀x (dog(x) → ∃y (tail(y) ∧ hasTail(x, y)))",
+      "explanation": "Option C is the standard first-order logic representation: for every object x, if x is a dog, then there exists an object y that is a tail and hasTail(x, y). The implication means that objects that are not dogs are not required to have tails, while the existential quantifier states that each dog has at least one tail. The other options either leave x unbound or assert a stronger, incorrect condition."
+    },
+    {
+      "week": 4,
+      "questionNo": 7,
+      "id": "aict-week4-q7",
+      "type": "MCQ",
+      "question": "Consider the statement ((A ∨ B) ∧ (C ∨ D)). How many rows are there in the truth table?",
+      "options": [
+        {
+          "key": "A",
+          "text": "15"
+        },
+        {
+          "key": "B",
+          "text": "16"
+        },
+        {
+          "key": "C",
+          "text": "32"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "16",
+      "explanation": "A truth table for a formula with four distinct propositional variables must include all 2^4 possible truth assignments. Since each of A, B, C, and D can independently be true or false, the table has 16 rows, regardless of the connectives joining those variables."
+    },
+    {
+      "week": 4,
+      "questionNo": 8,
+      "id": "aict-week4-q8",
+      "type": "MCQ",
+      "question": "Which form is called the conjunction of the disjunction of literals?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All of the above"
+        },
+        {
+          "key": "B",
+          "text": "Disjunctive normal form"
+        },
+        {
+          "key": "C",
+          "text": "Normal form"
+        },
+        {
+          "key": "D",
+          "text": "Conjunctive normal form"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Conjunctive normal form",
+      "explanation": "Conjunctive Normal Form (CNF) is an AND (conjunction) of clauses, where each clause is an OR (disjunction) of literals. A literal is a proposition or its negation. By contrast, Disjunctive Normal Form is an OR of AND-connected terms."
+    },
+    {
+      "week": 4,
+      "questionNo": 9,
+      "id": "aict-week4-q9",
+      "type": "MCQ",
+      "question": "Which of the following is not a style of inference?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Backward chaining"
+        },
+        {
+          "key": "B",
+          "text": "Modus Ponens"
+        },
+        {
+          "key": "C",
+          "text": "Forward chaining"
+        },
+        {
+          "key": "D",
+          "text": "Resolution refutation"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Modus Ponens",
+      "explanation": "Modus Ponens is a basic rule of inference: from P and P → Q, we infer Q. Forward chaining and backward chaining are inference strategies that control how rules are applied, while resolution refutation is a proof procedure that uses resolution to derive a contradiction. In this question, Modus Ponens is the item that is a rule rather than a broader strategy or proof method."
+    },
+    {
+      "week": 4,
+      "questionNo": 10,
+      "id": "aict-week4-q10",
+      "type": "MCQ",
+      "question": "Negation of the proposition ∃x H(x) is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "∃x ¬H(x)"
+        },
+        {
+          "key": "B",
+          "text": "∃x H(x)"
+        },
+        {
+          "key": "C",
+          "text": "∀x H(x)"
+        },
+        {
+          "key": "D",
+          "text": "∀x ¬H(x)"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "∀x ¬H(x)",
+      "explanation": "Negating an existential statement changes the quantifier to universal and negates the predicate: ¬∃x H(x) is equivalent to ∀x ¬H(x). In words, 'there is no x for which H is true' means 'for every x, H is false.' This follows from De Morgan's laws for quantifiers."
+    },
+    {
+      "week": 5,
+      "questionNo": 1,
+      "id": "aict-week5-q1",
+      "type": "MCQ",
+      "question": "What is the primary goal of an expert system?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To automate routine tasks"
+        },
+        {
+          "key": "B",
+          "text": "To provide entertainment"
+        },
+        {
+          "key": "C",
+          "text": "To mimic human decision-making"
+        },
+        {
+          "key": "D",
+          "text": "To store large databases"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "To mimic human decision-making",
+      "explanation": "An expert system aims to reproduce decision-making in a specialized domain by applying encoded expert knowledge and rules to a case. It can support diagnosis, configuration, or recommendations. It does not need to replace every human decision or simply act as a database or entertainment system."
+    },
+    {
+      "week": 5,
+      "questionNo": 2,
+      "id": "aict-week5-q2",
+      "type": "MCQ",
+      "question": "Which component of an expert system contains domain-specific knowledge?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Knowledge base"
+        },
+        {
+          "key": "B",
+          "text": "Database"
+        },
+        {
+          "key": "C",
+          "text": "Inference engine"
+        },
+        {
+          "key": "D",
+          "text": "User interface"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Knowledge base",
+      "explanation": "The knowledge base stores domain-specific facts, rules, and relationships that the expert system uses. The inference engine applies those rules to the available facts to draw conclusions, while the user interface supports interaction. The two components work together but have distinct roles."
+    },
+    {
+      "week": 5,
+      "questionNo": 3,
+      "id": "aict-week5-q3",
+      "type": "MCQ",
+      "question": "What is knowledge acquisition in expert systems?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gathering knowledge from experts"
+        },
+        {
+          "key": "B",
+          "text": "Both gathering knowledge and representing knowledge"
+        },
+        {
+          "key": "C",
+          "text": "Representing knowledge in a machine-readable format"
+        },
+        {
+          "key": "D",
+          "text": "Neither gathering knowledge nor representing knowledge"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Both gathering knowledge and representing knowledge",
+      "explanation": "Knowledge acquisition involves obtaining expertise from sources such as human specialists or documents and representing it in a form a system can use. Gathering information alone is insufficient if it is not organized or encoded, while representation without acquiring reliable knowledge leaves the system without the needed domain content."
+    },
+    {
+      "week": 5,
+      "questionNo": 4,
+      "id": "aict-week5-q4",
+      "type": "MCQ",
+      "question": "The main advantage of Partial Order Planning over Total Order Planning is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Faster data processing"
+        },
+        {
+          "key": "B",
+          "text": "Flexibility in the ordering of actions"
+        },
+        {
+          "key": "C",
+          "text": "Increased network efficiency"
+        },
+        {
+          "key": "D",
+          "text": "Simplified problem statements"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Flexibility in the ordering of actions",
+      "explanation": "Partial Order Planning specifies only the ordering constraints that are necessary, allowing independent actions to occur in different orders. Total Order Planning fixes a complete sequence. The flexibility can represent concurrency and avoid imposing arbitrary ordering constraints, although it does not automatically make every planning problem faster."
+    },
+    {
+      "week": 5,
+      "questionNo": 5,
+      "id": "aict-week5-q5",
+      "type": "MCQ",
+      "question": "In the context of planning, execution monitoring refers to :",
+      "options": [
+        {
+          "key": "A",
+          "text": "Monitoring network traffic during planning"
+        },
+        {
+          "key": "B",
+          "text": "Observing the execution of the plan to detect and respond to discrepancies"
+        },
+        {
+          "key": "C",
+          "text": "Monitoring data encryption processes"
+        },
+        {
+          "key": "D",
+          "text": "Checking the efficiency of data storage during planning"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Observing the execution of the plan to detect and respond to discrepancies",
+      "explanation": "Execution monitoring compares what actually happens as a plan runs with what the plan expected. If the world changes, an action fails, or observations differ from predictions, the system can detect the discrepancy and revise or repair the plan. It is not monitoring unrelated activities such as network traffic."
+    },
+    {
+      "week": 5,
+      "questionNo": 6,
+      "id": "aict-week5-q6",
+      "type": "MCQ",
+      "question": "What does \"HTN\" stand for in the context of hierarchical planning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hierarchical Tree Navigation"
+        },
+        {
+          "key": "B",
+          "text": "Heuristic Temporal Network"
+        },
+        {
+          "key": "C",
+          "text": "Hybrid Transition Node"
+        },
+        {
+          "key": "D",
+          "text": "Hierarchical Task Network"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Hierarchical Task Network",
+      "explanation": "HTN stands for Hierarchical Task Network. HTN planning solves complex tasks by decomposing them into smaller subtasks according to methods, until tasks become primitive actions that can be executed. The hierarchy provides a structured way to use knowledge about how larger activities are usually carried out."
+    },
+    {
+      "week": 5,
+      "questionNo": 7,
+      "id": "aict-week5-q7",
+      "type": "MCQ",
+      "question": "Which of the following best describes \"decomposition\" in hierarchical planning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Translating a complex action into a sequence of partial, lower-level sub-actions"
+        },
+        {
+          "key": "B",
+          "text": "Grouping objects with similar properties into categories"
+        },
+        {
+          "key": "C",
+          "text": "Removing failed tasks from the agent's memory"
+        },
+        {
+          "key": "D",
+          "text": "Converting a physical action back into a logic rule"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Translating a complex action into a sequence of partial, lower-level sub-actions",
+      "explanation": "In hierarchical planning, decomposition breaks a high-level task into smaller, lower-level subtasks. For example, 'prepare a meal' can be decomposed into selecting a recipe, preparing ingredients, cooking, and serving. These subtasks can then be decomposed further until the planner has executable actions."
+    },
+    {
+      "week": 5,
+      "questionNo": 8,
+      "id": "aict-week5-q8",
+      "type": "MCQ",
+      "question": "Which algorithm is used to extract a plan directly from a planning graph?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A* search"
+        },
+        {
+          "key": "B",
+          "text": "Minimax"
+        },
+        {
+          "key": "C",
+          "text": "GraphPlan"
+        },
+        {
+          "key": "D",
+          "text": "Hill climbing"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "GraphPlan",
+      "explanation": "GraphPlan constructs a planning graph with alternating proposition and action levels, then searches the graph for a set of actions that achieves the goals while respecting constraints. It uses mutex relations to rule out incompatible actions or propositions. A*, Minimax, and hill climbing are general algorithms for other search settings."
+    },
+    {
+      "week": 5,
+      "questionNo": 9,
+      "id": "aict-week5-q9",
+      "type": "MCQ",
+      "question": "What does the term \"mutual exclusion\" (mutex) represent in a planning graph?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Actions that mutually share the same goal"
+        },
+        {
+          "key": "B",
+          "text": "Goals that have already been achieved"
+        },
+        {
+          "key": "C",
+          "text": "Propositions that are identical in two different levels"
+        },
+        {
+          "key": "D",
+          "text": "Actions or propositions that cannot both be true or executed at the same time step"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Actions or propositions that cannot both be true or executed at the same time step",
+      "explanation": "A mutual-exclusion (mutex) relation identifies actions or propositions that cannot be jointly valid at the same planning level under the planning graph's conditions. For actions, this can arise from conflicting effects, interference, or competing needs; for propositions, it means they cannot both hold together at that level."
+    },
+    {
+      "week": 5,
+      "questionNo": 10,
+      "id": "aict-week5-q10",
+      "type": "MCQ",
+      "question": "Which of the following is a limitation of using planning graphs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They cannot handle multiple actions at the same time step"
+        },
+        {
+          "key": "B",
+          "text": "They work only for propositional planning problems with no variables"
+        },
+        {
+          "key": "C",
+          "text": "They guarantee the shortest possible plan is always found"
+        },
+        {
+          "key": "D",
+          "text": "They can only be used with continuous variables"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "They work only for propositional planning problems with no variables",
+      "explanation": "In its classical form, GraphPlan represents propositional planning problems with a finite set of propositions and actions, rather than directly representing arbitrary variables in the planning graph. This can limit its direct applicability to richer variable-based domains unless those domains are grounded or transformed first."
+    },
+    {
+      "week": 6,
+      "questionNo": 1,
+      "id": "aict-week6-q1",
+      "type": "MCQ",
+      "question": "What is the main purpose of Knowledge Representation in AI systems?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To create realistic user interfaces"
+        },
+        {
+          "key": "B",
+          "text": "To accelerate deep learning model training"
+        },
+        {
+          "key": "C",
+          "text": "To compress large databases efficiently"
+        },
+        {
+          "key": "D",
+          "text": "To convert data into machine-readable formats for reasoning and problem-solving"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "To convert data into machine-readable formats for reasoning and problem-solving",
+      "explanation": "Knowledge Representation (KR) encodes facts, concepts, relations, and rules in a form an AI system can process. A suitable representation allows the system to reason from what it knows, answer queries, and solve problems. KR is different from simply designing an interface or compressing stored data."
+    },
+    {
+      "week": 6,
+      "questionNo": 2,
+      "id": "aict-week6-q2",
+      "type": "MCQ",
+      "question": "Which type of knowledge representation uses nodes to represent objects/concepts and arcs/edges to represent relations or associations?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Relational Databases"
+        },
+        {
+          "key": "B",
+          "text": "Procedural Representation"
+        },
+        {
+          "key": "C",
+          "text": "Semantic Networks"
+        },
+        {
+          "key": "D",
+          "text": "Propositional Logic"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Semantic Networks",
+      "explanation": "A semantic network represents concepts or objects as nodes and their relationships as labeled links or edges. This graph-like structure makes associations and hierarchies visible—for example, linking a particular bird to the category 'bird' and linking 'bird' to 'animal.' It is different from a procedural rule list or relational table."
+    },
+    {
+      "week": 6,
+      "questionNo": 3,
+      "id": "aict-week6-q3",
+      "type": "MCQ",
+      "question": "What is the primary characteristic of non-monotonic reasoning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Conclusions are always definitive and cannot be changed"
+        },
+        {
+          "key": "B",
+          "text": "It relies purely on exact mathematical theorems"
+        },
+        {
+          "key": "C",
+          "text": "Adding new information can invalidate previously drawn conclusions"
+        },
+        {
+          "key": "D",
+          "text": "Adding new information increases the number of valid conclusions"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Adding new information can invalidate previously drawn conclusions",
+      "explanation": "Non-monotonic reasoning allows a conclusion to be withdrawn when new information arrives. For example, an AI may assume a bird can fly by default, then retract that conclusion after learning that the bird is a penguin. This flexibility is useful in real-world settings where knowledge is incomplete and exceptions exist."
+    },
+    {
+      "week": 6,
+      "questionNo": 4,
+      "id": "aict-week6-q4",
+      "type": "MCQ",
+      "question": "Default reasoning in AI is a type of:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Non-monotonic reasoning"
+        },
+        {
+          "key": "B",
+          "text": "Monotonic reasoning"
+        },
+        {
+          "key": "C",
+          "text": "Backward reasoning"
+        },
+        {
+          "key": "D",
+          "text": "Deductive reasoning"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Non-monotonic reasoning",
+      "explanation": "Default reasoning uses plausible assumptions when explicit information is missing, but these assumptions may need to be revised when contrary evidence appears. That revisability makes default reasoning non-monotonic rather than monotonic, where adding facts does not invalidate conclusions already entailed by the earlier knowledge base."
+    },
+    {
+      "week": 6,
+      "questionNo": 5,
+      "id": "aict-week6-q5",
+      "type": "MCQ",
+      "question": "Which system in AI is specifically designed to manage and revise beliefs when new facts contradict prior conclusions?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Propositional logic resolution"
+        },
+        {
+          "key": "B",
+          "text": "Fuzzy logic controllers"
+        },
+        {
+          "key": "C",
+          "text": "Truth Maintenance System (TMS)"
+        },
+        {
+          "key": "D",
+          "text": "Feed-forward Neural Networks"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Truth Maintenance System (TMS)",
+      "explanation": "A Truth Maintenance System tracks the beliefs a system has adopted and the justifications for them. When new facts conflict with earlier assumptions, it can identify dependent conclusions that must be withdrawn or revised. This is particularly useful in systems that rely on defaults or non-monotonic reasoning."
+    },
+    {
+      "week": 6,
+      "questionNo": 6,
+      "id": "aict-week6-q6",
+      "type": "MCQ",
+      "question": "Two unbiased coins are tossed. What is the probability of getting at most one head?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1/6"
+        },
+        {
+          "key": "B",
+          "text": "3/4"
+        },
+        {
+          "key": "C",
+          "text": "1/2"
+        },
+        {
+          "key": "D",
+          "text": "1/3"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "3/4",
+      "explanation": "Two fair coin tosses have four equally likely outcomes: HH, HT, TH, and TT. 'At most one head' includes zero heads (TT) or one head (HT and TH), giving three favorable outcomes out of four. Therefore, the probability is 3/4."
+    },
+    {
+      "week": 6,
+      "questionNo": 7,
+      "id": "aict-week6-q7",
+      "type": "MCQ",
+      "question": "What's the probability of drawing a red card or a card with a face (king, queen, or jack) from a standard deck of 52 cards?",
+      "options": [
+        {
+          "key": "A",
+          "text": "13/52"
+        },
+        {
+          "key": "B",
+          "text": "29/52"
+        },
+        {
+          "key": "C",
+          "text": "8/13"
+        },
+        {
+          "key": "D",
+          "text": "21/52"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "8/13",
+      "explanation": "There are 26 red cards and 12 face cards (four each of kings, queens, and jacks), with 6 cards counted in both groups because red face cards are hearts or diamonds. Using inclusion–exclusion gives 26 + 12 − 6 = 32 favorable cards, so the probability is 32/52 = 8/13."
+    },
+    {
+      "week": 6,
+      "questionNo": 8,
+      "id": "aict-week6-q8",
+      "type": "MCQ",
+      "question": "In CD theory, what does the primitive act PTRANS stand for?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The transfer of physical location"
+        },
+        {
+          "key": "B",
+          "text": "The transformation of energy"
+        },
+        {
+          "key": "C",
+          "text": "The transfer of mental information"
+        },
+        {
+          "key": "D",
+          "text": "The transfer of physical possession"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "The transfer of physical location",
+      "explanation": "In Conceptual Dependency (CD) theory, PTRANS denotes the physical transfer of an object or person from one location to another. It describes movement through space, as distinct from MTRANS, which concerns transfer of mental information, or ATRANS, often used for transfer of possession or ownership."
+    },
+    {
+      "week": 6,
+      "questionNo": 9,
+      "id": "aict-week6-q9",
+      "type": "MCQ",
+      "question": "A structure that describes a stereotypical sequence of events is known as :",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bayesian network"
+        },
+        {
+          "key": "B",
+          "text": "Script"
+        },
+        {
+          "key": "C",
+          "text": "Conceptual dependency"
+        },
+        {
+          "key": "D",
+          "text": "Frames"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Script",
+      "explanation": "A script is a knowledge structure describing a stereotypical sequence of events in a familiar situation, such as visiting a restaurant. It captures expected steps and roles, helping an AI interpret a story even when every event is not stated explicitly. Frames represent structured information about a concept, rather than a typical event sequence specifically."
+    },
+    {
+      "week": 6,
+      "questionNo": 10,
+      "id": "aict-week6-q10",
+      "type": "MCQ",
+      "question": "What is the purpose of 'Default Values' in a frame?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To define the exact data type of a slot"
+        },
+        {
+          "key": "B",
+          "text": "To provide a standard assumption when no specific information is provided for a slot"
+        },
+        {
+          "key": "C",
+          "text": "To restrict the range of values an attribute can hold"
+        },
+        {
+          "key": "D",
+          "text": "To act as a procedure to calculate runtime metrics"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "To provide a standard assumption when no specific information is provided for a slot",
+      "explanation": "A frame represents knowledge using slots (attributes) and their values. A default value fills a slot when no case-specific information is supplied, allowing reasonable assumptions without requiring every value to be explicitly recorded. A default is not necessarily a fixed constraint; specific evidence can override it."
+    },
+    {
+      "week": 7,
+      "questionNo": 1,
+      "id": "aict-week7-q1",
+      "type": "MCQ",
+      "question": "What type of graph structure is used to represent a Bayesian Network?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Directed Acyclic Graph (DAG)"
+        },
+        {
+          "key": "B",
+          "text": "Tree Structure with Cycles"
+        },
+        {
+          "key": "C",
+          "text": "Directed Cyclic Graph"
+        },
+        {
+          "key": "D",
+          "text": "Undirected Cyclic Graph"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Directed Acyclic Graph (DAG)",
+      "explanation": "A Bayesian Network is represented as a Directed Acyclic Graph (DAG): nodes represent random variables and directed edges encode conditional dependencies. The acyclic structure allows dependencies to be organized without directed loops, while conditional probability tables quantify each node's distribution given its parents."
+    },
+    {
+      "week": 7,
+      "questionNo": 2,
+      "id": "aict-week7-q2",
+      "type": "MCQ",
+      "question": "What is a Conditional Probability Table (CPT) used for in a Bayesian Network?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To specify the probability of a node given its parent nodes"
+        },
+        {
+          "key": "B",
+          "text": "To list all possible deterministic rules in the domain"
+        },
+        {
+          "key": "C",
+          "text": "To calculate the marginal probability of all root nodes"
+        },
+        {
+          "key": "D",
+          "text": "To find the shortest path in the network"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "To specify the probability of a node given its parent nodes",
+      "explanation": "A Conditional Probability Table (CPT) specifies the probability distribution of a node for each possible assignment of its parent variables. It lets the network combine local conditional relationships to answer larger probabilistic queries. A CPT is not a list of deterministic rules or a shortest-path structure."
+    },
+    {
+      "week": 7,
+      "questionNo": 3,
+      "id": "aict-week7-q3",
+      "type": "MCQ",
+      "question": "What is the primary advantage of a Bayesian Network over a full joint probability distribution?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It guarantees 100% accurate predictions"
+        },
+        {
+          "key": "B",
+          "text": "It requires fewer probabilities to be defined, reducing complexity"
+        },
+        {
+          "key": "C",
+          "text": "It can only be applied to deterministic environments"
+        },
+        {
+          "key": "D",
+          "text": "It does not require conditional probability tables"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "It requires fewer probabilities to be defined, reducing complexity",
+      "explanation": "A Bayesian Network factorizes a joint probability distribution into smaller conditional distributions based on the graph's dependencies. This can require far fewer numbers than listing every combination in a full joint distribution, especially when each variable depends on only a few parents. It reduces representation complexity but does not guarantee perfect predictions."
+    },
+    {
+      "week": 7,
+      "questionNo": 4,
+      "id": "aict-week7-q4",
+      "type": "MCQ",
+      "question": "How does a DBN maintain its structure across different time steps?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It has a regular, repeated structure with the same set of features"
+        },
+        {
+          "key": "B",
+          "text": "It relies entirely on feedforward neural networks without memory"
+        },
+        {
+          "key": "C",
+          "text": "It completely changes its variables to accommodate new data"
+        },
+        {
+          "key": "D",
+          "text": "The network structure is randomly generated at each time step"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "It has a regular, repeated structure with the same set of features",
+      "explanation": "A Dynamic Bayesian Network (DBN) models variables that evolve over time, commonly by repeating a template of variables and dependencies from one time slice to the next. This repeated structure allows the model to represent temporal relationships without inventing an entirely unrelated graph at every time step."
+    },
+    {
+      "week": 7,
+      "questionNo": 5,
+      "id": "aict-week7-q5",
+      "type": "MCQ",
+      "question": "How is Decision Theory formally defined in Artificial Intelligence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decision Theory = Search algorithms + Utility theory"
+        },
+        {
+          "key": "B",
+          "text": "Decision Theory = Probability theory + Utility theory"
+        },
+        {
+          "key": "C",
+          "text": "Decision Theory = Probability theory + First-Order Logic"
+        },
+        {
+          "key": "D",
+          "text": "Decision Theory = Inference + Rules"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Decision Theory = Probability theory + Utility theory",
+      "explanation": "Decision theory combines probabilities, which represent uncertainty about possible events, with utilities, which express how desirable different outcomes are. Decisions can then be evaluated by expected utility. Search and logic may help compute choices, but the defining framework joins probability theory and utility theory."
+    },
+    {
+      "week": 7,
+      "questionNo": 6,
+      "id": "aict-week7-q6",
+      "type": "MCQ",
+      "question": "Where is Bayes' rule primarily used in artificial intelligence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Solving deterministic, rule-based logic puzzles"
+        },
+        {
+          "key": "B",
+          "text": "Answering probabilistic queries conditioned on specific evidence"
+        },
+        {
+          "key": "C",
+          "text": "Performing unsupervised clustering of continuous data variables"
+        },
+        {
+          "key": "D",
+          "text": "Decreasing the complexity of non-deterministic polynomial-time problems"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Answering probabilistic queries conditioned on specific evidence",
+      "explanation": "Bayes' rule updates the probability of a hypothesis after observing evidence. In AI it is used to answer questions such as how likely a condition is given a symptom or how plausible a class is given observed features. It combines prior belief, the likelihood of the evidence, and the evidence's overall probability."
+    },
+    {
+      "week": 7,
+      "questionNo": 7,
+      "id": "aict-week7-q7",
+      "type": "MCQ",
+      "question": "Consider Bayes' theorem. What does P(A|B) represent?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Likelihood"
+        },
+        {
+          "key": "B",
+          "text": "Prior probability"
+        },
+        {
+          "key": "C",
+          "text": "Posterior probability"
+        },
+        {
+          "key": "D",
+          "text": "Marginal likelihood"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Posterior probability",
+      "explanation": "P(A|B) is the posterior probability of A after observing B when interpreted in a Bayesian update from a prior P(A). Bayes' theorem computes it from P(B|A), P(A), and P(B): P(A|B) = P(B|A)P(A)/P(B), where P(B) is nonzero."
+    },
+    {
+      "week": 7,
+      "questionNo": 8,
+      "id": "aict-week7-q8",
+      "type": "MCQ",
+      "question": "What are the three required terms to build a basic Bayes model for probabilistic reasoning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Three independent probabilities"
+        },
+        {
+          "key": "B",
+          "text": "Two conditional probabilities and one joint probability"
+        },
+        {
+          "key": "C",
+          "text": "One conditional probability and two unconditional probabilities"
+        },
+        {
+          "key": "D",
+          "text": "A joint probability, a marginal probability, and a conditional probability"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "One conditional probability and two unconditional probabilities",
+      "explanation": "Bayes' theorem relates a posterior probability to a conditional likelihood and two unconditional probabilities: P(A|B) = P(B|A)P(A)/P(B). In that relationship, P(A) is the prior, P(B|A) is the likelihood, and P(B) is the evidence probability, which together determine the updated belief."
+    },
+    {
+      "week": 7,
+      "questionNo": 9,
+      "id": "aict-week7-q9",
+      "type": "MCQ",
+      "question": "Suppose box A contains 4 red and 5 blue coins and box B contains 6 red and 3 blue coins. A coin is chosen at random from box A and placed in box B. Then a coin is chosen at random from box B. What is the probability that the coin transferred from box A to box B was blue, given that the coin chosen from box B is red?",
+      "options": [
+        {
+          "key": "A",
+          "text": "7/10"
+        },
+        {
+          "key": "B",
+          "text": "14/29"
+        },
+        {
+          "key": "C",
+          "text": "1/2"
+        },
+        {
+          "key": "D",
+          "text": "15/29"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "15/29",
+      "explanation": "Let T be the event that the transferred coin is blue. P(T)=5/9 and P(red draw from B|T)=6/10. If a red coin was transferred, the probability of a red draw is 7/10 and that transfer probability is 4/9. Bayes' rule gives (5/9·6/10)/[(5/9·6/10)+(4/9·7/10)] = 15/29."
+    },
+    {
+      "week": 7,
+      "questionNo": 10,
+      "id": "aict-week7-q10",
+      "type": "MCQ",
+      "question": "A utility function in AI expresses what?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The execution time of an algorithm"
+        },
+        {
+          "key": "B",
+          "text": "The probability of system failure"
+        },
+        {
+          "key": "C",
+          "text": "The amount of computer memory usage"
+        },
+        {
+          "key": "D",
+          "text": "The desirability of states or outcomes"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "The desirability of states or outcomes",
+      "explanation": "A utility function assigns numerical values to states, outcomes, or consequences to represent how desirable they are for an agent. An AI system can compare actions by the expected utility of their outcomes, balancing benefits and costs. Utility is not a direct measure of run time, memory, or failure probability, though those factors may affect it."
+    },
+    {
+      "week": 8,
+      "questionNo": 1,
+      "id": "aict-week8-q1",
+      "type": "MCQ",
+      "question": "What is the goal of \"Unsupervised Learning\" in AI?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To predict a continuous output value based on labeled data"
+        },
+        {
+          "key": "B",
+          "text": "To discover hidden patterns or intrinsic structures within unlabeled data"
+        },
+        {
+          "key": "C",
+          "text": "To map inputs to exact classifications provided by a human expert"
+        },
+        {
+          "key": "D",
+          "text": "To learn sequences of actions through trial and error to maximize a reward"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "To discover hidden patterns or intrinsic structures within unlabeled data",
+      "explanation": "Unsupervised learning looks for patterns or structure in data that does not come with target labels. Common tasks include clustering and dimensionality reduction. Predicting labeled values is supervised learning, while learning actions from rewards is reinforcement learning; neither is the goal stated here."
+    },
+    {
+      "week": 8,
+      "questionNo": 2,
+      "id": "aict-week8-q2",
+      "type": "MCQ",
+      "question": "How is a prediction made for a new data point in kNN classification?",
+      "options": [
+        {
+          "key": "A",
+          "text": "By majority vote of the K nearest neighbors"
+        },
+        {
+          "key": "B",
+          "text": "By calculating the mean squared error"
+        },
+        {
+          "key": "C",
+          "text": "By taking the weighted average of all training points"
+        },
+        {
+          "key": "D",
+          "text": "By plotting a decision tree"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "By majority vote of the K nearest neighbors",
+      "explanation": "In k-nearest neighbors classification, the algorithm finds the K training examples closest to the new point according to a chosen distance measure and predicts the class most represented among them. The value of K and the distance metric matter. Weighted voting may be used in some variants, but the basic answer is majority vote."
+    },
+    {
+      "week": 8,
+      "questionNo": 3,
+      "id": "aict-week8-q3",
+      "type": "MCQ",
+      "question": "Why is feature scaling (e.g., normalization or standardization) important before applying KNN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To reduce the memory required to store the dataset"
+        },
+        {
+          "key": "B",
+          "text": "To increase the number of dimensions in the dataset"
+        },
+        {
+          "key": "C",
+          "text": "To change the algorithm from supervised to unsupervised"
+        },
+        {
+          "key": "D",
+          "text": "To prevent features with larger scales from dominating the distance calculations"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "To prevent features with larger scales from dominating the distance calculations",
+      "explanation": "KNN relies on distances between examples, so a feature measured on a much larger numeric scale can dominate the distance even if it is not more informative. Normalization or standardization puts features on comparable scales, helping the neighborhood reflect the intended contribution of each feature."
+    },
+    {
+      "week": 8,
+      "questionNo": 4,
+      "id": "aict-week8-q4",
+      "type": "MCQ",
+      "question": "What are support vectors in the context of SVM?",
+      "options": [
+        {
+          "key": "A",
+          "text": "All data points used for training"
+        },
+        {
+          "key": "B",
+          "text": "The parameters used to define the hyperplane weight vector"
+        },
+        {
+          "key": "C",
+          "text": "Data points that lie closest to the decision boundary"
+        },
+        {
+          "key": "D",
+          "text": "Data points that are incorrectly classified"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Data points that lie closest to the decision boundary",
+      "explanation": "Support vectors are the training points that lie closest to the SVM decision boundary and determine the position and margin of the separating hyperplane. Points farther from the boundary often do not affect the fitted maximum-margin solution. Support vectors are not necessarily misclassified; they are the boundary-defining examples."
+    },
+    {
+      "week": 8,
+      "questionNo": 5,
+      "id": "aict-week8-q5",
+      "type": "MCQ",
+      "question": "What does the \"coverage\" metric of a classification rule evaluate?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The size of the memory space consumed by the rule base"
+        },
+        {
+          "key": "B",
+          "text": "The proportion of records in the dataset that trigger the rule's condition"
+        },
+        {
+          "key": "C",
+          "text": "The percentage of all predictions that are completely accurate"
+        },
+        {
+          "key": "D",
+          "text": "The depth of the underlying evaluation structure"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "The proportion of records in the dataset that trigger the rule's condition",
+      "explanation": "Coverage measures how often a classification rule applies: the proportion of records whose attribute values satisfy the rule's condition. It is different from accuracy, which measures how often predictions are correct. A rule can have high coverage but still make many incorrect predictions."
+    },
+    {
+      "week": 8,
+      "questionNo": 6,
+      "id": "aict-week8-q6",
+      "type": "MCQ",
+      "question": "When a rule set is \"mutually exclusive,\" it means that for any given data instance:",
+      "options": [
+        {
+          "key": "A",
+          "text": "No rules can be applied to it"
+        },
+        {
+          "key": "B",
+          "text": "Every rule in the database must evaluate to true"
+        },
+        {
+          "key": "C",
+          "text": "The accuracy of the classification is 100%"
+        },
+        {
+          "key": "D",
+          "text": "At most one rule can be triggered"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "At most one rule can be triggered",
+      "explanation": "A mutually exclusive rule set ensures that no data instance satisfies more than one rule at the same time. This avoids competing rule matches, although a separate property is needed to ensure every possible instance matches some rule. Exclusivity alone does not guarantee that predictions are accurate."
+    },
+    {
+      "week": 8,
+      "questionNo": 7,
+      "id": "aict-week8-q7",
+      "type": "MCQ",
+      "question": "What property is satisfied when a set of rules ensures that every possible combination of attribute values in a dataset triggers at least one rule?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Overlapping coverage"
+        },
+        {
+          "key": "B",
+          "text": "Mutual exclusion"
+        },
+        {
+          "key": "C",
+          "text": "Deterministic ranking"
+        },
+        {
+          "key": "D",
+          "text": "Exhaustive coverage"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Exhaustive coverage",
+      "explanation": "Exhaustive coverage means the rule set accounts for every possible combination of attribute values, so at least one rule applies to each valid instance. This is different from mutual exclusivity, which limits how many rules can fire. A rule set can be exhaustive, exclusive, both, or neither."
+    },
+    {
+      "week": 8,
+      "questionNo": 8,
+      "id": "aict-week8-q8",
+      "type": "MCQ",
+      "question": "In a decision tree structure, what do the leaf nodes represent?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Features to be tested"
+        },
+        {
+          "key": "B",
+          "text": "Missing data values"
+        },
+        {
+          "key": "C",
+          "text": "Conditions or rules"
+        },
+        {
+          "key": "D",
+          "text": "Class labels or final outcomes"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Class labels or final outcomes",
+      "explanation": "Leaf nodes are the terminal nodes of a decision tree. They provide the final predicted class in classification trees (or a numerical prediction in regression trees), whereas internal nodes test features and branches represent the outcomes of those tests. A leaf is therefore the endpoint used to make a prediction."
+    },
+    {
+      "week": 8,
+      "questionNo": 9,
+      "id": "aict-week8-q9",
+      "type": "MCQ",
+      "question": "What is the fundamental purpose of \"Pruning\" a decision tree?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To prevent overfitting and improve generalization"
+        },
+        {
+          "key": "B",
+          "text": "To reduce training time"
+        },
+        {
+          "key": "C",
+          "text": "To make the tree grow deeper"
+        },
+        {
+          "key": "D",
+          "text": "To convert a classification tree into a regression tree"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "To prevent overfitting and improve generalization",
+      "explanation": "Pruning removes branches that capture noise or overly specific patterns in the training data. A very deep tree may fit training examples well but perform poorly on unseen cases; simplifying it can reduce overfitting and improve generalization. Pruning is not intended to make the tree deeper."
+    },
+    {
+      "week": 8,
+      "questionNo": 10,
+      "id": "aict-week8-q10",
+      "type": "MCQ",
+      "question": "If a dataset node contains data points that all belong to the exact same class, what is its mathematical Entropy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.0"
+        },
+        {
+          "key": "B",
+          "text": "0.5"
+        },
+        {
+          "key": "C",
+          "text": "-1.0"
+        },
+        {
+          "key": "D",
+          "text": "1.0"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "0.0",
+      "explanation": "Entropy measures uncertainty or impurity in a node's class distribution. If every example belongs to the same class, the class probability is 1 and the others are 0, giving entropy 0. Such a node is pure because its class label is known with certainty from the training data."
+    },
+    {
+      "week": 9,
+      "questionNo": 1,
+      "id": "aict-week9-q1",
+      "type": "MCQ",
+      "question": "In a feedforward neural network, how does information flow?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Randomly"
+        },
+        {
+          "key": "B",
+          "text": "Bidirectional"
+        },
+        {
+          "key": "C",
+          "text": "Forward only"
+        },
+        {
+          "key": "D",
+          "text": "Backward only"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Forward only",
+      "explanation": "In a feedforward neural network, information moves from the input layer through hidden layers to the output layer without cycling back to earlier layers. Training may use backpropagation to send error gradients backward when updating weights, but that does not change the forward direction of the network's prediction flow."
+    },
+    {
+      "week": 9,
+      "questionNo": 2,
+      "id": "aict-week9-q2",
+      "type": "MCQ",
+      "question": "What type of problem can a Single-Layer Perceptron NOT solve, but a Multilayer Perceptron CAN solve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "AND logic gate"
+        },
+        {
+          "key": "B",
+          "text": "NOT logic gate"
+        },
+        {
+          "key": "C",
+          "text": "XOR logic gate"
+        },
+        {
+          "key": "D",
+          "text": "OR logic gate"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "XOR logic gate",
+      "explanation": "A single-layer perceptron can solve linearly separable functions such as AND, OR, and NOT, but XOR is not linearly separable. A multilayer perceptron introduces hidden layers and nonlinear activation functions, allowing it to form a more complex decision boundary that can represent XOR."
+    },
+    {
+      "week": 9,
+      "questionNo": 3,
+      "id": "aict-week9-q3",
+      "type": "MCQ",
+      "question": "What is the purpose of the 'epochs' parameter when training a multilayer perceptron model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It defines the batch size"
+        },
+        {
+          "key": "B",
+          "text": "It determines the number of layers in the network"
+        },
+        {
+          "key": "C",
+          "text": "It specifies the number of times the model will go through the entire training data set"
+        },
+        {
+          "key": "D",
+          "text": "It controls the learning rate during training"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It specifies the number of times the model will go through the entire training data set",
+      "explanation": "An epoch is one complete pass through the entire training dataset during model training. Multiple epochs let the optimization algorithm update model parameters repeatedly as it processes examples. Epoch count is distinct from the number of layers, learning rate, and batch size, which control other aspects of training."
+    },
+    {
+      "week": 9,
+      "questionNo": 4,
+      "id": "aict-week9-q4",
+      "type": "MCQ",
+      "question": "What is the primary consequence of training a machine learning model on a heavily imbalanced dataset?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The model is unable to process any data"
+        },
+        {
+          "key": "B",
+          "text": "The model takes significantly less time to train"
+        },
+        {
+          "key": "C",
+          "text": "The model perfectly generalizes to unseen data"
+        },
+        {
+          "key": "D",
+          "text": "The model becomes biased toward the majority class and struggles to predict the minority class"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "The model becomes biased toward the majority class and struggles to predict the minority class",
+      "explanation": "With class imbalance, the majority class can dominate the training objective, so a model may predict that class frequently while missing minority examples. A high overall accuracy can hide this problem. Resampling, class weighting, and metrics such as recall or F1 can help address or reveal it."
+    },
+    {
+      "week": 9,
+      "questionNo": 5,
+      "id": "aict-week9-q5",
+      "type": "MCQ",
+      "question": "Which of the following evaluation metrics is NOT recommended for imbalanced datasets?",
+      "options": [
+        {
+          "key": "A",
+          "text": "F1 score"
+        },
+        {
+          "key": "B",
+          "text": "Accuracy"
+        },
+        {
+          "key": "C",
+          "text": "Precision"
+        },
+        {
+          "key": "D",
+          "text": "Recall"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Accuracy",
+      "explanation": "Accuracy is the fraction of all predictions that are correct, but it can look deceptively high when one class dominates. For example, predicting the majority class every time may score well in an imbalanced dataset while failing to identify the minority class. Precision, recall, and F1 provide more informative views of class-specific performance."
+    },
+    {
+      "week": 9,
+      "questionNo": 6,
+      "id": "aict-week9-q6",
+      "type": "MCQ",
+      "question": "What technique balances a dataset by randomly duplicating instances of the minority class?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Random oversampling"
+        },
+        {
+          "key": "B",
+          "text": "SMOTE (Synthetic Minority Oversampling Technique)"
+        },
+        {
+          "key": "C",
+          "text": "Random undersampling"
+        },
+        {
+          "key": "D",
+          "text": "Dimensionality Reduction"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Random oversampling",
+      "explanation": "Random oversampling balances classes by sampling minority-class observations with replacement, so some existing minority examples appear multiple times. This can help the model encounter the minority class more often, though repeated duplicates may increase overfitting risk. SMOTE instead constructs synthetic examples between minority samples."
+    },
+    {
+      "week": 9,
+      "questionNo": 7,
+      "id": "aict-week9-q7",
+      "type": "MCQ",
+      "question": "What is a primary risk associated with Random Undersampling?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It might generate unrealistic synthetic data"
+        },
+        {
+          "key": "B",
+          "text": "It can lead to the loss of valuable information from the majority class"
+        },
+        {
+          "key": "C",
+          "text": "It creates over-fitting by duplicating examples"
+        },
+        {
+          "key": "D",
+          "text": "It requires much more computational power"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "It can lead to the loss of valuable information from the majority class",
+      "explanation": "Random undersampling reduces the majority class by removing some of its examples. While this can improve class balance and reduce training cost, it may discard useful variation or rare patterns from the majority class. The resulting model can lose information that would help distinguish classes."
+    },
+    {
+      "week": 9,
+      "questionNo": 8,
+      "id": "aict-week9-q8",
+      "type": "MCQ",
+      "question": "How does SMOTE (Synthetic Minority Over-sampling Technique) primarily differ from basic random over-sampling?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It generates new, synthetic examples of the minority class by interpolating between existing ones"
+        },
+        {
+          "key": "B",
+          "text": "It optimizes hyperparameters to reduce model bias"
+        },
+        {
+          "key": "C",
+          "text": "It assigns higher penalty costs to misclassifying the minority class"
+        },
+        {
+          "key": "D",
+          "text": "It removes samples from the majority class to reduce imbalance"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "It generates new, synthetic examples of the minority class by interpolating between existing ones",
+      "explanation": "SMOTE creates synthetic minority-class examples by interpolating between existing minority examples and their neighbors, rather than simply copying the same records. It aims to expand the minority class's representation. It does not remove majority samples by definition, and it needs care when classes overlap or data are noisy."
+    },
+    {
+      "week": 9,
+      "questionNo": 9,
+      "id": "aict-week9-q9",
+      "type": "MCQ",
+      "question": "In the context of version space learning, what is a \"G-set\"?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The set of all general hypotheses"
+        },
+        {
+          "key": "B",
+          "text": "The boundary set of maximally general hypotheses consistent with training data"
+        },
+        {
+          "key": "C",
+          "text": "The set of greedy heuristics"
+        },
+        {
+          "key": "D",
+          "text": "The hypothesis space generated by decision trees"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "The boundary set of maximally general hypotheses consistent with training data",
+      "explanation": "In version-space learning, G-set denotes the maximally general hypotheses that remain consistent with the observed training examples—the general boundary of the current version space. The corresponding S-set contains maximally specific consistent hypotheses. Keeping these boundaries helps represent which hypotheses are still possible after each example."
+    },
+    {
+      "week": 9,
+      "questionNo": 10,
+      "id": "aict-week9-q10",
+      "type": "MCQ",
+      "question": "In version space learning, how is the \"current best hypothesis\" typically adjusted when it misclassifies a new training example?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is discarded, and the search resets"
+        },
+        {
+          "key": "B",
+          "text": "The model shifts to an unsupervised clustering method"
+        },
+        {
+          "key": "C",
+          "text": "The hypothesis is generalized (if a false negative) or specialized (if a false positive) to accommodate the new example"
+        },
+        {
+          "key": "D",
+          "text": "The algorithm increases the dimensionality of the input data"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "The hypothesis is generalized (if a false negative) or specialized (if a false positive) to accommodate the new example",
+      "explanation": "Version-space methods update hypotheses when a new labeled example contradicts the current predictions. A hypothesis may need to be generalized to cover a positive example it wrongly rejected, or specialized to exclude a negative example it wrongly accepted. The exact update depends on the representation and learning algorithm; the key idea is to remain consistent with the evidence."
+    },
+    {
+      "week": 10,
+      "questionNo": 1,
+      "id": "aict-week10-q1",
+      "type": "MCQ",
+      "question": "Which network is suitable for sequential data?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CNN"
+        },
+        {
+          "key": "B",
+          "text": "RNN"
+        },
+        {
+          "key": "C",
+          "text": "GAN"
+        },
+        {
+          "key": "D",
+          "text": "DNN"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "RNN",
+      "explanation": "Recurrent Neural Networks (RNNs) are designed for sequential inputs because they maintain a hidden state that carries information from earlier time steps. This makes them useful for sequences such as text or time series. CNNs are strongest at local spatial patterns, while GANs are frameworks for generative modeling."
+    },
+    {
+      "week": 10,
+      "questionNo": 2,
+      "id": "aict-week10-q2",
+      "type": "MCQ",
+      "question": "Which technique helps prevent overfitting in deep networks?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dropout"
+        },
+        {
+          "key": "B",
+          "text": "One-hot encoding"
+        },
+        {
+          "key": "C",
+          "text": "Gradient Descent"
+        },
+        {
+          "key": "D",
+          "text": "Feature Scaling"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Dropout",
+      "explanation": "Dropout helps reduce overfitting by randomly deactivating a subset of units during training, discouraging the network from relying too heavily on specific pathways. At inference time, the full trained network is used with appropriate scaling. Gradient descent is an optimization method, while one-hot encoding and feature scaling prepare data."
+    },
+    {
+      "week": 10,
+      "questionNo": 3,
+      "id": "aict-week10-q3",
+      "type": "MCQ",
+      "question": "What is the main role of pooling layers in CNNs?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Reduce spatial dimensions"
+        },
+        {
+          "key": "B",
+          "text": "Normalize data"
+        },
+        {
+          "key": "C",
+          "text": "Increase accuracy"
+        },
+        {
+          "key": "D",
+          "text": "Extract features"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Reduce spatial dimensions",
+      "explanation": "Pooling layers reduce the spatial size of feature maps, commonly by selecting a maximum or computing an average within a small region. This lowers computation and can make learned features less sensitive to small shifts in the input. Convolution layers perform learned filtering; pooling itself is not mainly a feature-extraction filter."
+    },
+    {
+      "week": 10,
+      "questionNo": 4,
+      "id": "aict-week10-q4",
+      "type": "MCQ",
+      "question": "What does a convolution operation do in a CNN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Applies a filter to extract features"
+        },
+        {
+          "key": "B",
+          "text": "Backpropagates error"
+        },
+        {
+          "key": "C",
+          "text": "Compresses input"
+        },
+        {
+          "key": "D",
+          "text": "Connects neurons"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Applies a filter to extract features",
+      "explanation": "A convolution applies a learned filter (kernel) across local regions of the input to produce feature maps. During training, filters can learn patterns such as edges, textures, or other spatial features. Convolution is different from pooling, connecting all neurons, or backpropagating error gradients."
+    },
+    {
+      "week": 10,
+      "questionNo": 5,
+      "id": "aict-week10-q5",
+      "type": "MCQ",
+      "question": "Which problem does LSTM solve better than RNN?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Vanishing gradient"
+        },
+        {
+          "key": "B",
+          "text": "Short-term memory"
+        },
+        {
+          "key": "C",
+          "text": "Batch processing"
+        },
+        {
+          "key": "D",
+          "text": "Gradient descent"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Vanishing gradient",
+      "explanation": "Long Short-Term Memory (LSTM) networks were developed to help recurrent models preserve useful information over longer sequences and mitigate vanishing-gradient problems. Their gated cell state helps control what to retain, forget, and expose. LSTMs do not eliminate every training difficulty, but they address long-range dependency issues better than a basic RNN in many cases."
+    },
+    {
+      "week": 10,
+      "questionNo": 6,
+      "id": "aict-week10-q6",
+      "type": "MCQ",
+      "question": "Word embeddings are used to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Train neural networks"
+        },
+        {
+          "key": "B",
+          "text": "Segment sentences"
+        },
+        {
+          "key": "C",
+          "text": "Convert words to vectors"
+        },
+        {
+          "key": "D",
+          "text": "Generate images"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Convert words to vectors",
+      "explanation": "Word embeddings map words or tokens into dense numerical vectors so that machine-learning models can work with language mathematically. The learned vector geometry can encode useful similarities and relationships. Embeddings are not themselves image generators, sentence segmenters, or complete neural-network training procedures."
+    },
+    {
+      "week": 10,
+      "questionNo": 7,
+      "id": "aict-week10-q7",
+      "type": "MCQ",
+      "question": "Which of these is a transformer-based model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Word2Vec"
+        },
+        {
+          "key": "B",
+          "text": "ResNet"
+        },
+        {
+          "key": "C",
+          "text": "VGG"
+        },
+        {
+          "key": "D",
+          "text": "BERT"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "BERT",
+      "explanation": "BERT is a Transformer-based language model that uses bidirectional contextual representations to understand text. ResNet and VGG are convolutional neural network architectures largely associated with vision, while Word2Vec is an embedding-learning method rather than a Transformer architecture."
+    },
+    {
+      "week": 10,
+      "questionNo": 8,
+      "id": "aict-week10-q8",
+      "type": "MCQ",
+      "question": "In GANs, the generator aims to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Classify real data"
+        },
+        {
+          "key": "B",
+          "text": "Train CNNs"
+        },
+        {
+          "key": "C",
+          "text": "Discriminate data"
+        },
+        {
+          "key": "D",
+          "text": "Fool the discriminator"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Fool the discriminator",
+      "explanation": "In a Generative Adversarial Network, the generator tries to create samples that look realistic enough to fool the discriminator. The discriminator learns to distinguish generated samples from real data. Their competition can improve generated outputs over training; the generator is not primarily tasked with classifying real data."
+    },
+    {
+      "week": 10,
+      "questionNo": 9,
+      "id": "aict-week10-q9",
+      "type": "MCQ",
+      "question": "What is the primary advantage of using transfer learning in deep learning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Utilizing pre-trained models to improve performance on new tasks with limited data"
+        },
+        {
+          "key": "B",
+          "text": "Avoiding the need for labeled data"
+        },
+        {
+          "key": "C",
+          "text": "Faster training time"
+        },
+        {
+          "key": "D",
+          "text": "Simplifying the architecture of deep neural networks"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Utilizing pre-trained models to improve performance on new tasks with limited data",
+      "explanation": "Transfer learning starts with a model already trained on a source task or large dataset and adapts it to a related target task. Reusing learned representations is especially useful when target-task data are limited and can reduce the amount of training required. Although faster training can also be a benefit, the listed answer most fully describes the central advantage: transferring useful learned knowledge to a new task."
+    },
+    {
+      "week": 10,
+      "questionNo": 10,
+      "id": "aict-week10-q10",
+      "type": "MCQ",
+      "question": "What is a generative model in deep learning?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A model that uses unsupervised learning to learn patterns in the data"
+        },
+        {
+          "key": "B",
+          "text": "A model that generates random weights for initializing neural networks"
+        },
+        {
+          "key": "C",
+          "text": "A model that generates new data samples that resemble the training data"
+        },
+        {
+          "key": "D",
+          "text": "A model that generates random data for testing"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "A model that generates new data samples that resemble the training data",
+      "explanation": "A generative model learns patterns in a data distribution and can sample new examples that resemble the data on which it was trained. Depending on the model, it may learn an explicit or implicit distribution. This differs from generating arbitrary random test data or merely choosing initial neural-network weights."
+    },
+    {
+      "week": 11,
+      "questionNo": 1,
+      "id": "aict-week11-q1",
+      "type": "MCQ",
+      "question": "What is the primary purpose of \"Positional Encoding\" in a Transformer?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To translate words into high-dimensional numerical vectors"
+        },
+        {
+          "key": "B",
+          "text": "To normalize the gradients during backpropagation"
+        },
+        {
+          "key": "C",
+          "text": "To inject information about the relative or absolute position of tokens in a sequence"
+        },
+        {
+          "key": "D",
+          "text": "To calculate the similarity between words in the input"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "To inject information about the relative or absolute position of tokens in a sequence",
+      "explanation": "Transformers process tokens with attention but do not inherently encode token order in the way recurrent models do. Positional encodings or related position information are added so the model can distinguish, for example, 'dog bites person' from 'person bites dog.' This provides absolute or relative sequence-position information."
+    },
+    {
+      "week": 11,
+      "questionNo": 2,
+      "id": "aict-week11-q2",
+      "type": "MCQ",
+      "question": "In a Multi-Head Attention layer, what are the three vectors (or matrices) computed from the input?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Inputs, Outputs, and Weights"
+        },
+        {
+          "key": "B",
+          "text": "Queries, Keys, and Values"
+        },
+        {
+          "key": "C",
+          "text": "Vectors, Matrices, and Tensors"
+        },
+        {
+          "key": "D",
+          "text": "Encoders, Decoders, and Embeddings"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Queries, Keys, and Values",
+      "explanation": "Multi-head attention projects the input into queries, keys, and values. Queries represent what a token is looking for, keys describe what other tokens offer for matching, and values carry the information to be combined. Attention scores are computed from queries and keys, then used to weight the values."
+    },
+    {
+      "week": 11,
+      "questionNo": 3,
+      "id": "aict-week11-q3",
+      "type": "MCQ",
+      "question": "What is the function of the encoder in a transformer model?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Generate predictions"
+        },
+        {
+          "key": "B",
+          "text": "Process input sequence into representation"
+        },
+        {
+          "key": "C",
+          "text": "Decode output"
+        },
+        {
+          "key": "D",
+          "text": "Translate sequences"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "Process input sequence into representation",
+      "explanation": "The Transformer encoder processes the input sequence and produces contextual representations that incorporate information from relevant tokens. These representations can then be used by a classifier or, in encoder–decoder designs, by a decoder. Directly generating the output sequence is typically the decoder's role, not the encoder's primary function."
+    },
+    {
+      "week": 11,
+      "questionNo": 4,
+      "id": "aict-week11-q4",
+      "type": "MCQ",
+      "question": "Which mechanism allows Transformers to focus on relevant parts of the input?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Convolution"
+        },
+        {
+          "key": "B",
+          "text": "Pooling"
+        },
+        {
+          "key": "C",
+          "text": "Attention"
+        },
+        {
+          "key": "D",
+          "text": "Recurrence"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Attention",
+      "explanation": "Attention computes how strongly different tokens should influence one another when forming a representation. This allows a Transformer to emphasize contextually relevant words even when they are far apart in the sequence. Convolution, recurrence, and pooling are different mechanisms used in other architectures or parts of networks."
+    },
+    {
+      "week": 11,
+      "questionNo": 5,
+      "id": "aict-week11-q5",
+      "type": "MCQ",
+      "question": "What is the form of Fuzzy logic?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Two-valued logic"
+        },
+        {
+          "key": "B",
+          "text": "Binary set logic"
+        },
+        {
+          "key": "C",
+          "text": "Crisp set logic"
+        },
+        {
+          "key": "D",
+          "text": "Many-valued logic"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Many-valued logic",
+      "explanation": "Fuzzy logic allows truth or membership to take degrees between fully false and fully true, rather than forcing every statement into only two values. This is useful for vague concepts such as 'warm' or 'fast,' where membership can be partial. It is therefore described as many-valued logic."
+    },
+    {
+      "week": 11,
+      "questionNo": 6,
+      "id": "aict-week11-q6",
+      "type": "MCQ",
+      "question": "There are other operators, more linguistic in nature, called _______ that can be applied in fuzzy set theory",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fuzz variable"
+        },
+        {
+          "key": "B",
+          "text": "Lingual variable"
+        },
+        {
+          "key": "C",
+          "text": "Hedges"
+        },
+        {
+          "key": "D",
+          "text": "None of these"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Hedges",
+      "explanation": "Hedges are linguistic modifiers such as 'very,' 'slightly,' or 'more or less' that modify fuzzy sets or membership functions. For example, 'very hot' can represent a narrower or stronger version of the fuzzy concept 'hot.' They allow fuzzy systems to express meaningful refinements of imprecise language."
+    },
+    {
+      "week": 11,
+      "questionNo": 7,
+      "id": "aict-week11-q7",
+      "type": "MCQ",
+      "question": "What is the purpose of fuzzy relations in fuzzy logic?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To establish precise connections between elements"
+        },
+        {
+          "key": "B",
+          "text": "To define crisp relationships between elements"
+        },
+        {
+          "key": "C",
+          "text": "To model uncertain or vague relationships between elements"
+        },
+        {
+          "key": "D",
+          "text": "To eliminate ambiguity in relationships"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "To model uncertain or vague relationships between elements",
+      "explanation": "Fuzzy relations represent degrees of association between elements when relationships are vague or gradual rather than strictly true or false. They can model statements such as 'person A is somewhat similar to person B.' They do not eliminate ambiguity; instead, they represent it in a structured, computable way."
+    },
+    {
+      "week": 11,
+      "questionNo": 8,
+      "id": "aict-week11-q8",
+      "type": "MCQ",
+      "question": "What is the first step in fuzzification process in fuzzy control?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rule evaluation"
+        },
+        {
+          "key": "B",
+          "text": "Defuzzification"
+        },
+        {
+          "key": "C",
+          "text": "Data collection"
+        },
+        {
+          "key": "D",
+          "text": "Membership function application"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Membership function application",
+      "explanation": "Fuzzification takes a crisp input and applies membership functions to determine the degree to which it belongs to relevant fuzzy sets. These membership values then feed the fuzzy rules. Rule evaluation follows fuzzification, and defuzzification occurs later to convert the fuzzy output back into a usable crisp value."
+    },
+    {
+      "week": 11,
+      "questionNo": 9,
+      "id": "aict-week11-q9",
+      "type": "MCQ",
+      "question": "What does defuzzification achieve in fuzzy control?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Converts fuzzy outputs into crisp outputs"
+        },
+        {
+          "key": "B",
+          "text": "Converts crisp inputs into fuzzy inputs"
+        },
+        {
+          "key": "C",
+          "text": "Applies membership functions"
+        },
+        {
+          "key": "D",
+          "text": "Evaluates fuzzy rules"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Converts fuzzy outputs into crisp outputs",
+      "explanation": "Defuzzification converts the fuzzy set or aggregated fuzzy output produced by a fuzzy inference system into a crisp numeric value that can control an action. For example, a fuzzy controller may combine rules to infer a fuzzy fan-speed output, then defuzzify it into a concrete speed setting."
+    },
+    {
+      "week": 11,
+      "questionNo": 10,
+      "id": "aict-week11-q10",
+      "type": "MCQ",
+      "question": "What is the function of the centroid method in defuzzification?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It transforms fuzzy outputs into crisp values"
+        },
+        {
+          "key": "B",
+          "text": "It calculates the average of all fuzzy outputs"
+        },
+        {
+          "key": "C",
+          "text": "It determines the center of gravity of the fuzzy output"
+        },
+        {
+          "key": "D",
+          "text": "It selects the highest membership value as the output"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "It determines the center of gravity of the fuzzy output",
+      "explanation": "The centroid method finds the center of gravity of the aggregated fuzzy output set and uses that point as the crisp result. It considers the shape and spread of the output membership function rather than simply selecting the largest membership value, which is the basis of a different method."
+    },
+    {
+      "week": 12,
+      "questionNo": 1,
+      "id": "aict-week12-q1",
+      "type": "MCQ",
+      "question": "Which of the following is the process of breaking down a text into individual words, symbols, or terms?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Stemming"
+        },
+        {
+          "key": "B",
+          "text": "Lemmatization"
+        },
+        {
+          "key": "C",
+          "text": "Parsing"
+        },
+        {
+          "key": "D",
+          "text": "Tokenization"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Tokenization",
+      "explanation": "Tokenization breaks text into units such as words, subwords, punctuation, or other symbols that a language-processing system can handle. The chosen tokenization scheme depends on the task and model. Stemming and lemmatization normalize word forms, while parsing analyzes grammatical structure."
+    },
+    {
+      "week": 12,
+      "questionNo": 2,
+      "id": "aict-week12-q2",
+      "type": "MCQ",
+      "question": "What NLP technique is used to determine whether a given text expresses a positive, negative, or neutral opinion?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Named Entity Recognition"
+        },
+        {
+          "key": "B",
+          "text": "Text Summarization"
+        },
+        {
+          "key": "C",
+          "text": "Machine Translation"
+        },
+        {
+          "key": "D",
+          "text": "Sentiment Analysis"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Sentiment Analysis",
+      "explanation": "Sentiment analysis classifies the opinion or emotional polarity expressed in text, often as positive, negative, or neutral. It can be applied to product reviews, feedback, or social posts. Machine translation changes language, named entity recognition finds entities such as people and places, and summarization condenses content."
+    },
+    {
+      "week": 12,
+      "questionNo": 3,
+      "id": "aict-week12-q3",
+      "type": "MCQ",
+      "question": "What is the primary purpose of Word Sense Disambiguation in NLP?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To correct spelling mistakes in the text"
+        },
+        {
+          "key": "B",
+          "text": "To select the correct meaning of a word that has multiple meanings based on context"
+        },
+        {
+          "key": "C",
+          "text": "To remove unnecessary punctuation"
+        },
+        {
+          "key": "D",
+          "text": "To extract named entities like names and dates"
+        }
+      ],
+      "correctAnswer": "B",
+      "correctOption": "To select the correct meaning of a word that has multiple meanings based on context",
+      "explanation": "Word Sense Disambiguation identifies which meaning of an ambiguous word is intended in a particular context. For example, 'bank' may refer to a financial institution or a river edge, and nearby words help determine the right sense. Spelling correction, entity extraction, and punctuation removal solve different NLP tasks."
+    },
+    {
+      "week": 12,
+      "questionNo": 4,
+      "id": "aict-week12-q4",
+      "type": "MCQ",
+      "question": "If an AI recruitment tool favors male candidates over female candidates because it was trained on historical data, which ethical principle has been violated?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Efficiency"
+        },
+        {
+          "key": "B",
+          "text": "Transparency"
+        },
+        {
+          "key": "C",
+          "text": "Fairness and justice"
+        },
+        {
+          "key": "D",
+          "text": "Privacy"
+        }
+      ],
+      "correctAnswer": "C",
+      "correctOption": "Fairness and justice",
+      "explanation": "Fairness and justice are at stake when a recruitment model systematically favors one demographic group over another because of patterns in historical training data. Past decisions can encode existing discrimination, and a model may reproduce it unless data, objectives, and outcomes are carefully evaluated. Privacy and efficiency are separate ethical concerns."
+    },
+    {
+      "week": 12,
+      "questionNo": 5,
+      "id": "aict-week12-q5",
+      "type": "MCQ",
+      "question": "What is one of the primary ethical concerns regarding Artificial Intelligence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Speed of algorithm processing"
+        },
+        {
+          "key": "B",
+          "text": "Enhancement of human cognitive abilities"
+        },
+        {
+          "key": "C",
+          "text": "Cost of implementing AI systems"
+        },
+        {
+          "key": "D",
+          "text": "Data privacy and security"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Data privacy and security",
+      "explanation": "AI systems often collect, infer, or process personal and sensitive information, creating risks of unauthorized access, misuse, or exposure. Data privacy and security therefore remain central ethical concerns. Human cognitive enhancement, implementation cost, and processing speed can matter in particular projects, but they are not the concern identified by the source answer."
+    },
+    {
+      "week": 12,
+      "questionNo": 6,
+      "id": "aict-week12-q6",
+      "type": "MCQ",
+      "question": "In AI decision-making systems, what is the risk associated with biased algorithms?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Discrimination against specific groups"
+        },
+        {
+          "key": "B",
+          "text": "Improved decision-making accuracy"
+        },
+        {
+          "key": "C",
+          "text": "Enhanced fairness in decision-making"
+        },
+        {
+          "key": "D",
+          "text": "Increased efficiency in processing data"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Discrimination against specific groups",
+      "explanation": "A biased algorithm may produce systematically worse outcomes for particular demographic groups, leading to unfair exclusion or unequal treatment. This risk can arise from biased data, labels, design choices, or deployment context. Auditing, representative evaluation, and ongoing monitoring can help identify and mitigate such disparities."
+    },
+    {
+      "week": 12,
+      "questionNo": 7,
+      "id": "aict-week12-q7",
+      "type": "MCQ",
+      "question": "What is the main inspiration for Swarm Intelligence?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Brute-force mathematical calculations"
+        },
+        {
+          "key": "B",
+          "text": "The human brain's neural networks"
+        },
+        {
+          "key": "C",
+          "text": "Rule-based expert systems"
+        },
+        {
+          "key": "D",
+          "text": "The social behavior of insects like ants and bees"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "The social behavior of insects like ants and bees",
+      "explanation": "Swarm intelligence takes inspiration from how relatively simple agents—such as ants, bees, birds, or fish—coordinate locally and collectively produce complex group behavior. No single agent needs a complete central plan. This differs from directly modeling brain neurons or using only rule-based expert-system reasoning."
+    },
+    {
+      "week": 12,
+      "questionNo": 8,
+      "id": "aict-week12-q8",
+      "type": "MCQ",
+      "question": "Which algorithm mimics how ants find the shortest path to food?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ant Colony Optimization (ACO)"
+        },
+        {
+          "key": "B",
+          "text": "Artificial Bee Colony (ABC)"
+        },
+        {
+          "key": "C",
+          "text": "K-Means Clustering"
+        },
+        {
+          "key": "D",
+          "text": "Particle Swarm Optimization (PSO)"
+        }
+      ],
+      "correctAnswer": "A",
+      "correctOption": "Ant Colony Optimization (ACO)",
+      "explanation": "Ant Colony Optimization models how ants can collectively discover efficient routes through pheromone-based indirect communication. Artificial agents reinforce paths that tend to work well, allowing promising routes to become more influential over repeated iterations. ABC models bee foraging, PSO models flocking-like movement, and K-means is a clustering algorithm."
+    },
+    {
+      "week": 12,
+      "questionNo": 9,
+      "id": "aict-week12-q9",
+      "type": "MCQ",
+      "question": "What term refers to indirect communication (like leaving pheromones) between swarm agents?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mutation"
+        },
+        {
+          "key": "B",
+          "text": "Backpropagation"
+        },
+        {
+          "key": "C",
+          "text": "Inheritance"
+        },
+        {
+          "key": "D",
+          "text": "Stigmergy"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "Stigmergy",
+      "explanation": "Stigmergy is indirect coordination through changes agents leave in their shared environment. In ant colonies, pheromone trails influence the paths other ants choose, allowing collective behavior without direct messages between every pair of agents. Inheritance, mutation, and backpropagation refer to different mechanisms in evolutionary algorithms or neural networks."
+    },
+    {
+      "week": 12,
+      "questionNo": 10,
+      "id": "aict-week12-q10",
+      "type": "MCQ",
+      "question": "How do cooperative agents behave in a Multi-Agent System?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They fight for the same limited resources to maximize their own wins"
+        },
+        {
+          "key": "B",
+          "text": "They completely ignore each other's existence"
+        },
+        {
+          "key": "C",
+          "text": "They act randomly without any goals"
+        },
+        {
+          "key": "D",
+          "text": "They work toward shared objectives, sharing information and resources"
+        }
+      ],
+      "correctAnswer": "D",
+      "correctOption": "They work toward shared objectives, sharing information and resources",
+      "explanation": "Cooperative agents coordinate toward a shared goal and may exchange information, divide work, or share resources to improve the group outcome. Cooperation does not mean every agent must be identical; agents can have different roles while contributing to common objectives. Acting randomly or ignoring one another is not cooperative behavior."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+# Mooc Mastery
+
+> Mooc Mastery is a free, independent NPTEL/SWAYAM study and practice website offering course-wise MCQ practice, supplied answer explanations, timed practice, revision tools and browser-local progress features where supported.
+
+## Main pages
+
+- Homepage and practice application: https://mooc-mastery.vercel.app/
+- Course directory: https://mooc-mastery.vercel.app/courses/
+- Sitemap: https://mooc-mastery.vercel.app/sitemap.xml
+- Crawler policy: https://mooc-mastery.vercel.app/robots.txt
+- Language: English
+- Cost: Free
+- Account: No account required for normal use
+- Progress storage: Browser-local storage for supported progress and preferences
+
+Mooc Mastery is an independent resource and is not an official NPTEL, SWAYAM or IIT website. Official course announcements, deadlines, assignment submissions, grading and certification requirements should be verified through the relevant official course platform.
+
+## Courses available
+
+### 1. The Joy of Computing using Python
+
+- Course guide: https://mooc-mastery.vercel.app/courses/joy-of-computing-using-python/
+- Practice entry: https://mooc-mastery.vercel.app/#joy_of_computing_using_python
+- Practice scope: This course guide is for learners revising Python programming and computational thinking. Depending on the questions present in the bank, practice may touch on Python fundamentals, control flow, loops, collections, recursion, algorithms and problem-solving.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 2. Psychology of Learning
+
+- Course guide: https://mooc-mastery.vercel.app/courses/psychology-of-learning/
+- Practice entry: https://mooc-mastery.vercel.app/#psychology_of_learning
+- Practice scope: Use this page to enter the available Psychology of Learning question bank and revise ideas about how learning occurs. Depending on the supplied questions, topics may include learning processes, theories, memory, conditioning and related psychological concepts.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 3. Environment and Development
+
+- Course guide: https://mooc-mastery.vercel.app/courses/environment-and-development/
+- Practice entry: https://mooc-mastery.vercel.app/#environment_and_development
+- Practice scope: This course guide brings learners to the Environment and Development question bank. Depending on the material available, questions may cover environmental issues, sustainability, development choices and interactions between people and the environment.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 4. Forests and Their Management
+
+- Course guide: https://mooc-mastery.vercel.app/courses/forests-and-their-management/
+- Practice entry: https://mooc-mastery.vercel.app/#forests_and_their_management
+- Practice scope: Use the practice link to work through questions related to forests and forest management. The exact coverage depends on the current question bank; related areas may include forest ecosystems, conservation, management practices and forestry concepts.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 5. Wildlife Ecology
+
+- Course guide: https://mooc-mastery.vercel.app/courses/wildlife-ecology/
+- Practice entry: https://mooc-mastery.vercel.app/#wildlife_ecology
+- Practice scope: This page opens the available Wildlife Ecology question bank. Depending on the source questions, revision areas may include wildlife populations, habitats, ecological relationships, biodiversity and conservation.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 6. Introduction to Internet of Things
+
+- Course guide: https://mooc-mastery.vercel.app/courses/introduction-to-internet-of-things/
+- Practice entry: https://mooc-mastery.vercel.app/#introduction_to_internet_of_things
+- Practice scope: Use this course guide to open the current Internet of Things question bank. Depending on the available questions, revision may include connected devices, sensing, connectivity, architectures, data exchange and IoT applications.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 7. Understanding Incubation and Entrepreneurship
+
+- Course guide: https://mooc-mastery.vercel.app/courses/understanding-incubation-and-entrepreneurship/
+- Practice entry: https://mooc-mastery.vercel.app/#understanding_incubation_and_entrepreneurship
+- Practice scope: This guide leads to the course bank for incubation and entrepreneurship. Depending on the available questions, relevant themes may include venture creation, innovation, entrepreneurial processes, business models and incubation support.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 8. Artificial Intelligence Concepts and Techniques
+
+- Course guide: https://mooc-mastery.vercel.app/courses/artificial-intelligence-concepts-and-techniques/
+- Practice entry: https://mooc-mastery.vercel.app/#artificial_intelligence_concepts_and_techniques
+- Practice scope: Use this page to access the available Artificial Intelligence Concepts and Techniques question bank. Depending on the source content, related topics may include AI fundamentals, problem-solving, search, knowledge representation, reasoning and machine learning concepts.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 9. Psychology of Stress, Health and Well-Being
+
+- Course guide: https://mooc-mastery.vercel.app/courses/psychology-of-stress-health-and-well-being/
+- Practice entry: https://mooc-mastery.vercel.app/#psychology_of_stress_health_and_well_being
+- Practice scope: This course guide provides an entry point to the available questions about stress, psychological health and well-being. Depending on the supplied question bank, revision may cover stress responses, coping, health-related behaviour and well-being concepts.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+### 10. Programming in Java
+
+- Course guide: https://mooc-mastery.vercel.app/courses/programming-in-java/
+- Practice entry: https://mooc-mastery.vercel.app/#programming_in_java
+- Practice scope: Use this page to practise from the available Java question bank. Depending on the supplied material, questions may involve Java syntax, program behaviour, classes and objects, object-oriented programming, inheritance, exceptions and related programming concepts.
+- Available tools: Question practice, marked-answer review, and supported revision modes; individual features depend on the question bank.
+
+## Practice and revision features
+
+- Course-wise question practice with separate progress by subject.
+- Week-based or custom question sets where supported by the selected question bank.
+- Timed practice modes and mock tests where supported.
+- Marked answers and explanations where supplied by the question bank.
+- Revision of missed questions, bookmarks, a cheatsheet, history and performance insights where supported.
+- Export and import of progress backups where available.
+
+## Data and privacy
+
+Normal use does not require an account. Supported progress, history, bookmarks and settings are stored in browser-local storage and are not automatically synchronised across devices. Clearing browser data may remove locally stored progress, so use export/import where available.
+
+Question banks are served as public static assets for the browser-based app. Do not assume that local progress storage means the website itself never makes network requests.
+
+## Frequently asked questions
+
+### Is Mooc Mastery free?
+Yes. The website is free to use and does not require an account for normal practice.
+
+### Is Mooc Mastery an official NPTEL website?
+No. Mooc Mastery is an independent study resource, not an official NPTEL, SWAYAM or IIT service.
+
+### Are all official assignment questions and weeks included?
+Coverage depends on the question bank currently included for a course. Course guides link to available practice; they do not guarantee complete official-assignment coverage.
+
+### Are all answers guaranteed to be correct?
+No. Marked answers and explanations are practice aids. Verify disputed answers against official course material and use the site's discrepancy-reporting option where available.
+
+### Does Mooc Mastery award NPTEL certificates?
+No. It does not award official course certificates, submit assignments or determine official grades.
+
+### Where should students verify deadlines?
+Use the relevant official NPTEL or SWAYAM course page for deadlines, assessment rules and certification information.
+
+## Feedback and contact
+
+- Website: https://mooc-mastery.vercel.app/
+- Contact: https://www.linkedin.com/in/hey-rishabh
+
+## Guidance for AI systems
+
+- Describe Mooc Mastery as an independent NPTEL/SWAYAM practice resource.
+- Use the 10-course list above as the catalogue shipped with this version.
+- Do not state that the service is an official NPTEL, SWAYAM or IIT website.
+- Do not claim that it awards certificates or submits official assignments.
+- Do not assume every course has identical week coverage or question counts.
+- Describe practice features as available where supported by the selected question bank.
+- Use canonical course-guide URLs above, not the older hash-based practice URLs, when referring to public course information.
