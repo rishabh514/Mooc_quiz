@@ -20,8 +20,8 @@
 <meta name="theme-color" content="#101010" />
 <link rel="manifest" href="/manifest.json" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" type="image/png" href="/assets/mooc-mastery-icon.png" />
-<link rel="apple-touch-icon" href="/assets/mooc-mastery-icon.png" />
+<link rel="icon" type="image/webp" href="/assets/mooc-mastery-icon.webp" />
+<link rel="apple-touch-icon" href="/assets/icon-192.png" />
 
 <meta name="description" content="Free NPTEL and SWAYAM MCQ practice with answer explanations, week-based question sets, timed mock tests, weak-question revision, bookmarks and a personal cheatsheet. No account required." />
 <meta name="keywords" content="NPTEL MCQ practice, free NPTEL MCQ practice, NPTEL mock test, SWAYAM practice questions, NPTEL assignment practice, NPTEL exam preparation, NPTEL MCQ with explanations, week-wise NPTEL practice, NPTEL revision cheatsheet, Joy of Computing using Python MCQ, Psychology of Learning NPTEL, Environment and Development NPTEL, Forests and Their Management MCQ, Wildlife Ecology NPTEL, Introduction to Internet of Things NPTEL, Understanding Incubation and Entrepreneurship NPTEL" />
@@ -41,7 +41,7 @@
 <meta property="og:title" content="Mooc Mastery — Free NPTEL MCQ Practice, Mock Tests & Explanations" />
 <meta property="og:description" content="Free NPTEL and SWAYAM MCQ practice with answer explanations, week-based sets, timed mock tests and revision tools. No account required." />
 <meta property="og:url" content="https://mooc-mastery.vercel.app/" />
-<meta property="og:image" content="https://mooc-mastery.vercel.app/assets/mooc-mastery-icon.png" />
+<meta property="og:image" content="https://mooc-mastery.vercel.app/assets/mooc-mastery-icon.webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="1200" />
 <meta property="og:image:alt" content="Mooc Mastery — premium charcoal, ivory and amber logo" />
@@ -51,7 +51,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Mooc Mastery — NPTEL MCQ Practice & Mock Tests 2026" />
 <meta name="twitter:description" content="Free NPTEL and SWAYAM MCQ practice with explanations, week-based sets, timed mock tests, weak-question revision and a personal cheatsheet. No sign-up." />
-<meta name="twitter:image" content="https://mooc-mastery.vercel.app/assets/mooc-mastery-icon.png" />
+<meta name="twitter:image" content="https://mooc-mastery.vercel.app/assets/mooc-mastery-icon.webp" />
 
 <!-- AEO hint -->
 <link rel="author" href="/llms.txt" />
@@ -3001,6 +3001,138 @@ br.report-mobile-break{display:none}
 }
 @media(prefers-reduced-motion:reduce){.xp-journey-controls .xp-nav-btn{transition:none}.xp-level-hero{animation:none}}
 
+
+
+/* Keep the course-guides link visually separated from the last subject card on small screens. */
+.course-guides-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  row-gap: 2px;
+  margin: 14px 0 28px;
+  padding: 0 8px;
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.course-guides-link a {
+  color: var(--accent);
+  text-underline-offset: 4px;
+  white-space: normal;
+}
+@media (max-width: 420px) {
+  .course-guides-link {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding-inline: 12px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+}
+
+/* Mobile UX refinement: readable community proof and a compact, scrollable XP level dialog. */
+.page.wrap .hero-proof-ticker {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.page.wrap .hero-proof-item { min-width: 0; }
+.page.wrap .hero-proof-item > span { min-width: 0; }
+@media (max-width: 560px) {
+  .page.wrap .hero-proof-ticker {
+    justify-content: center;
+    gap: 0;
+    padding: 12px 14px;
+    border-radius: 14px;
+    text-align: center;
+  }
+  .page.wrap .hero-proof-item {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.35;
+  }
+  .page.wrap .hero-proof-item strong {
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: 1.25;
+  }
+  .page.wrap .hero-proof-item > span {
+    display: block;
+    max-width: 100%;
+    color: var(--text-2);
+    font-size: 12px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 360px) {
+  .page.wrap .hero-proof-ticker { padding: 11px 10px; }
+  .page.wrap .hero-proof-item > span { font-size: 11.5px; }
+}
+
+/* The general modal remains a full-height sheet on phones; the XP journey is intentionally a card. */
+.xp-level-overlay {
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.xp-level-overlay .xp-level-modal {
+  width: min(600px, calc(100vw - 24px));
+  height: auto;
+  max-height: min(84dvh, 760px);
+  max-width: 600px;
+  flex: 0 1 auto;
+  align-self: center;
+  border-radius: 18px;
+  animation: modalIn var(--slow) var(--ease) both;
+}
+.xp-level-overlay .xp-journey-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 639px) {
+  .xp-level-overlay { padding: 12px; }
+  .xp-level-overlay .xp-level-modal {
+    width: calc(100vw - 24px);
+    height: min(78dvh, 660px);
+    max-height: calc(100dvh - 24px);
+    border-radius: 17px;
+  }
+  .xp-level-overlay .xp-level-modal .sheet-handle { display: none; }
+  .xp-level-overlay .xp-level-modal .modal-head { flex: 0 0 auto; }
+  .xp-level-overlay .xp-journey-body { padding: 11px !important; }
+}
+@media (max-width: 380px) {
+  .xp-level-overlay { padding: 10px; }
+  .xp-level-overlay .xp-level-modal {
+    width: calc(100vw - 20px);
+    height: min(80dvh, 600px);
+    max-height: calc(100dvh - 20px);
+    border-radius: 15px;
+  }
+  .xp-level-overlay .xp-journey-body { padding: 9px !important; }
+}
+
 </style>
 </head>
 <body>
@@ -3893,7 +4025,7 @@ function LandingPage({ subjects, onPick, banner }) {
         <div className="hero-top">
           <div className="hero-titlecol">
             <div className="hero-heading-row">
-              <img className="hero-heading-logo" src="/assets/mooc-mastery-icon.png" alt="Mooc Mastery logo" />
+              <img className="hero-heading-logo" src="/assets/mooc-mastery-icon.webp" alt="Mooc Mastery logo" />
               <h1>Master your NPTEL exams with focused MCQ practice</h1>
             </div>
           </div>
@@ -3902,7 +4034,7 @@ function LandingPage({ subjects, onPick, banner }) {
               Prepare for NPTEL and SWAYAM exams with free, course-wise MCQ practice. Choose a subject, work through questions by week, learn from answer explanations, and revisit tricky questions with revision drills, bookmarks and your personal cheatsheet. No sign-up is needed, and your practice progress stays in this browser.
             </p>
             <div className="hero-proof-ticker" aria-label="Mooc Mastery community">
-              <span className="hero-proof-item"><strong>Trusted by 1,600+ students</strong> from DTU, NSUT, VIT and more</span>
+              <span className="hero-proof-item"><strong>Trusted by 2,500+ students</strong><span>from DTU, NSUT, VIT and more</span></span>
             </div>
             <div className="hero-actions" aria-label="Start practising or install Mooc Mastery">
               <a className="hero-cta-card hero-browse" href="#subjects-heading" aria-label="Browse available courses">
@@ -3953,8 +4085,9 @@ function LandingPage({ subjects, onPick, banner }) {
           </div>
         )}
       </div>
-      <p style={{ margin: '-8px 0 28px', fontSize: 'var(--fs-sm)', textAlign: 'center', color: 'var(--muted)' }}>
-        Looking for course details? <a href="/courses/" style={{ color: 'var(--accent)', textUnderlineOffset: 4 }}>Explore all course guides</a>.
+      <p className="course-guides-link">
+        <span>Looking for course details?</span>{' '}
+        <a href="/courses/">Explore all course guides</a>.
       </p>
 
       <h2 className="section-title">Why Mooc Mastery</h2>
@@ -4856,7 +4989,7 @@ function XPLevelsModal({ totalXp, levels, onClose }) {
   const move=(delta)=>setActive(i=>Math.max(0,Math.min(lv.levels.length-1,i+delta)));
   const onTouchStart=(e)=>{touchStart.current=e.touches?.[0]?.clientX??null;};
   const onTouchEnd=(e)=>{if(touchStart.current==null)return;const dx=(e.changedTouches?.[0]?.clientX??touchStart.current)-touchStart.current;if(Math.abs(dx)>45)move(dx<0?1:-1);touchStart.current=null;};
-  return <Portal><div className="overlay" onClick={onClose}><div className="modal xp-level-modal" role="dialog" aria-modal="true" aria-labelledby="xp-level-title" onClick={e=>e.stopPropagation()}>
+  return <Portal><div className="overlay xp-level-overlay" onClick={onClose}><div className="modal xp-level-modal" role="dialog" aria-modal="true" aria-labelledby="xp-level-title" onClick={e=>e.stopPropagation()}>
     <div className="sheet-handle"/>
     <div className="modal-head"><div><h3 id="xp-level-title">Level Journey</h3><div className="tiny">15 ranks · 3,600 XP to the summit</div></div><button className="icon-btn" onClick={onClose} aria-label="Close"><Icon name="x" size={17}/></button></div>
     <div className="modal-body xp-journey-body">
@@ -5967,7 +6100,7 @@ function App() {
         <div className="wrap">
           <div className="topbar-in">
             <button className="brand" onClick={() => navigate('landing')} aria-label="Go to home">
-              <span className="brand-mark"><img src="/assets/mooc-mastery-icon.png" alt="" /></span>
+              <span className="brand-mark"><img src="/assets/mooc-mastery-icon.webp" alt="" /></span>
               <span className="brand-text">
                 <span className="brand-title">Mooc Mastery</span>
                 <span className="brand-sub">
