@@ -1,214 +1,276 @@
+
 # MOOC Mastery
 
-### A free, privacy-first practice platform for NPTEL & SWAYAM students.
+### Your NPTEL & SWAYAM exam preparation companion.
 
-[![Live Website](https://img.shields.io/badge/Live%20Website-MOOC%20Mastery-orange?style=for-the-badge)](https://mooc-mastery.vercel.app/)
-![Status](https://img.shields.io/badge/Status-Live-success?style=flat-square)
-![Platform](https://img.shields.io/badge/Platform-Web-blue?style=flat-square)
-![Privacy](https://img.shields.io/badge/Privacy-No%20Account%20Required-purple?style=flat-square)
+<p align="center">
+  <a href="https://mooc-mastery.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀_Launch-MOOC_Mastery-f97316?style=for-the-badge" alt="Launch MOOC Mastery" />
+  </a>
+  <img src="https://img.shields.io/badge/Platform-Web_App-blue?style=for-the-badge" alt="Web App" />
+  <img src="https://img.shields.io/badge/Privacy-Local--First-success?style=for-the-badge" alt="Local First" />
+  <img src="https://img.shields.io/badge/Cost-Free-brightgreen?style=for-the-badge" alt="Free" />
+</p>
 
-**MOOC Mastery** is a student-built learning platform designed to make NPTEL and SWAYAM assignment preparation more accessible, structured and effective.
-
-It brings weekly MCQ practice, personalised revision and timed mock tests into one simple interface — without requiring students to create an account, pay a subscription or surrender their personal learning data.
-
-**Live at:** https://mooc-mastery.vercel.app/
+<p align="center">
+  <strong>Practice smarter. Identify weak areas. Walk into your proctored exam prepared.</strong>
+</p>
 
 ---
 
-## Why MOOC Mastery?
+## 📚 About the Project
 
-Preparing for NPTEL and SWAYAM examinations often involves navigating weekly assignments, revisiting old questions and identifying topics that need more attention.
+**[MOOC Mastery](https://mooc-mastery.vercel.app/)** is a free, web-based revision and practice platform built for students enrolled in **NPTEL and SWAYAM courses**.
 
-MOOC Mastery brings these activities together in one place.
+Preparing for weekly assignments and proctored examinations can mean switching between PDFs, answer keys, notes and scattered question banks. MOOC Mastery brings these resources into one structured practice experience.
 
-Instead of simply providing a collection of questions, it gives students different ways to practise, evaluate their understanding and revisit concepts they struggle with.
+Students can revise questions week by week, build custom practice sets, attempt timed mock tests, bookmark difficult questions and automatically identify concepts they need to revisit.
 
-The platform was initially developed to support preparation for a single NPTEL course. After students started sharing it within university communities, it expanded into a multi-subject revision platform.
+The idea is simple:
 
-## Impact
+> Make high-quality exam practice accessible to every student, without registration fees, subscriptions, unnecessary accounts or complicated onboarding.
 
-Built independently to solve a real student problem, MOOC Mastery has seen organic adoption among students.
+### 🌍 Built for Students, Used Across Campuses
 
-| Metric | Achievement |
+MOOC Mastery has reached students from engineering and university communities, including:
+
+- Delhi Technological University (DTU)
+- Netaji Subhas University of Technology (NSUT)
+- Vellore Institute of Technology (VIT)
+- Other NPTEL and SWAYAM learner communities
+
+### 📈 Project Impact
+
+| Metric | Impact |
 |---|---:|
-| Unique visitors | 6,800+ |
-| Page views | 16,900+ |
-| Sessions | 7,600+ |
-| Questions answered | 403,000+ |
-| Courses supported | 7 |
-| Initial measurement period | 18 days |
+| Students reached | 3,000+ |
+| Visitors in the initial 18-day growth period | 6,800+ |
+| Page views in the initial 18-day growth period | 16,900+ |
+| Questions answered (tracked milestone) | 403,000+ |
+| NPTEL/SWAYAM course offerings | 10 |
 
-*Metrics reflect the reported initial 18-day measurement period and should not be interpreted as lifetime totals.*
-
-## Features
-
-### 1. Weekly MCQ practice
-- Practise questions organised by course and week.
-- Access question banks covering Weeks 1–12.
-- Revise specific weeks instead of repeatedly attempting the entire syllabus.
-
-### 2. Custom practice sessions
-- Build practice sets around selected weeks.
-- Choose questions according to your revision needs.
-- Create focused practice sessions for upcoming examinations.
-
-### 3. Randomised quizzes
-- Generate random question sets.
-- Reduce repetitive practice.
-- Test your understanding across different parts of a course.
-
-### 4. Weak-question drills
-- Revisit questions that you previously struggled with.
-- Spend more time on areas that need improvement.
-- Turn mistakes into targeted revision sessions.
-
-### 5. Bookmarks
-- Save important or difficult questions.
-- Build a personal revision collection.
-- Return to bookmarked questions whenever needed.
-
-### 6. Timed mock tests
-- Simulate an examination environment.
-- Practise under time constraints.
-- Evaluate your preparation before the actual assessment.
-
-### 7. Personalised experience
-- Customisable interface themes.
-- Progress and learning preferences stored locally in the browser.
-- No mandatory registration or account creation.
+*Metrics represent reported product milestones from different measurement periods, not necessarily the same reporting window.*
 
 ---
 
-## Privacy-first by design
+## ✨ Features
 
-We believe that educational tools should be accessible without forcing students to create accounts or share unnecessary personal information.
+### 1. Structured Weekly Practice
+- Practice questions organised by course and assignment week.
+- Focus on specific weeks instead of revising an entire course.
+- Create custom practice sets with your preferred question count.
+- Shuffle questions to make repeated practice more effective.
 
-MOOC Mastery is designed around a simple principle: **practise freely, without signing up.**
+### 2. Custom Practice Sets
+Build practice sessions around your preparation needs:
+- Select individual weeks.
+- Combine multiple weeks.
+- Choose the number of questions.
+- Create focused revision sessions before examinations.
 
-- No mandatory registration.
-- No subscription or payment.
-- No advertising on the platform.
-- Learning progress and bookmarks are stored in browser localStorage.
-- No personal student account is required to use the practice features.
+### 3. Timed Mock Tests
+Simulate examination conditions with timed practice sessions.
 
-Your browser stores your local learning state. Clearing browser data or switching devices may remove or leave behind that locally stored progress.
+- Attempt questions under a time limit.
+- Review your answers after completion.
+- Evaluate accuracy and performance.
+- Improve speed and confidence before the proctored examination.
+
+### 4. Personalised Weak-Question Drills
+MOOC Mastery helps you identify questions that repeatedly challenge you.
+
+- Track incorrect answers.
+- Revisit previously missed questions.
+- Focus revision on weaker areas.
+- Build a more targeted pre-exam revision routine.
+
+### 5. Automated Revision Cheatsheet
+A dedicated revision experience brings repeatedly missed and important questions together, making it easier to revisit difficult concepts before the examination.
+
+### 6. Bookmarks
+Save questions that you want to revisit later.
+
+Build your own collection of important questions without having to search through the entire question bank again.
+
+### 7. Explanations and Answer Review
+Understand more than just the correct option.
+
+Questions include answer keys and explanatory material where available, helping students revise the concepts behind their answers.
+
+### 8. Privacy-First Progress Tracking
+No account creation. No email verification. No registration.
+
+- Practice immediately after opening the platform.
+- Attempts, bookmarks and progress are stored locally in the browser.
+- No user account is needed to retain practice history on the same browser.
+- Export and import progress through JSON backups in Settings.
+
+### 9. Installable Web Experience
+MOOC Mastery supports Progressive Web App (PWA) functionality, allowing students to install the platform on compatible mobile and desktop devices.
 
 ---
 
-## Technology Stack
+## 🎓 Available Courses
 
-MOOC Mastery is built using modern web technologies.
+MOOC Mastery brings together technical, scientific, environmental and humanities electives.
 
-| Technology | Purpose |
+| Course | Institute |
 |---|---|
-| React.js | Frontend application |
-| Vite | Development and build tooling |
-| Tailwind CSS | Styling and responsive UI |
-| Supabase | Backend and data infrastructure |
-| Cloudflare R2 | Asset storage |
-| Vercel | Deployment and hosting |
-| Browser localStorage | Local learning progress and preferences |
+| The Joy of Computing using Python | IIT Ropar |
+| Programming in Java | IIT Kharagpur |
+| Introduction to Internet of Things | IIT Kharagpur |
+| Artificial Intelligence: Concepts and Techniques | IISc Bangalore |
+| Psychology of Learning | IIT Kharagpur |
+| Psychology of Stress, Health and Well-Being | IIT Guwahati |
+| Forests and Their Management | IIT Kanpur |
+| Wildlife Ecology | IIT Kanpur |
+| Environment and Development | IIT Guwahati |
+| Understanding Incubation and Entrepreneurship | IIT Bombay |
+
+Course availability and question-bank coverage may vary by semester.
 
 ---
 
-## Getting Started
+## 🔐 Privacy by Design
 
-If you want to explore the project locally, follow these steps.
+One of the core product decisions behind MOOC Mastery is that students should not have to create an account just to practise questions.
 
-### Prerequisites
+The platform follows a local-first approach.
 
-- Node.js (LTS recommended)
-- npm
-- Git
+| Design decision | Implementation |
+|---|---|
+| Authentication | No registration or login required |
+| Progress storage | Browser `localStorage` |
+| Bookmarks | Stored locally |
+| Practice history | Stored locally |
+| Data portability | JSON export/import |
+| Question banks | Structured JSON datasets |
+| Practice experience | Primarily client-side |
 
-### Installation
+### Why Local-First?
 
-Clone the repository:
+- No account setup or password management.
+- No dependency on a user database for practice progress.
+- Students retain control of their browser-stored data.
+- JSON backups make it possible to transfer progress between compatible browser environments.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/mooc-mastery.git
-```
-
-Navigate into the project:
-
-```bash
-cd mooc-mastery
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open the local URL printed by Vite in your terminal.
-
-### Environment variables
-
-If your checkout uses external services, configure the required environment variables using the project's environment example file.
-
-Do not commit API keys, service-role credentials, database secrets or other private configuration to GitHub.
-
-*The exact environment variable names and setup instructions should be documented after verifying the repository's current configuration.*
+**Important:** Clearing browser data or switching browsers/devices without exporting a backup may result in losing locally stored progress.
 
 ---
 
-## Project Goals
+## 🛠️ Technology Stack
 
-MOOC Mastery is built around a few long-term principles:
+MOOC Mastery is built using a modern web development stack.
 
-1. **Accessibility:** Essential learning and practice features should remain free.
-2. **Privacy:** Students should not need an account just to practise questions.
-3. **Practical learning:** Make it easier to identify weak areas and revise effectively.
-4. **Simplicity:** Keep the experience fast, focused and easy to use.
-5. **Continuous improvement:** Use student feedback and product analytics to improve the learning experience.
+| Layer | Technology |
+|---|---|
+| Frontend | React.js |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| UI Components | shadcn/ui |
+| Backend Services | Supabase |
+| Database | PostgreSQL (Supabase) |
+| Static Hosting | Vercel |
+| Question Bank Format | JSON |
+| Client-side Storage | Browser localStorage |
+| Asset Storage | Cloudflare R2 |
 
-## Roadmap
-
-Planned areas of improvement include:
-
-- Expanding the collection of supported NPTEL and SWAYAM courses.
-- Improving question discovery and revision workflows.
-- Enhancing learning analytics and practice history.
-- Improving accessibility and mobile usability.
-- Adding more tools for structured examination preparation.
-
-The long-term ambition is to make MOOC Mastery a comprehensive, free practice destination for students across a much wider range of courses.
-
-## Contributing
-
-Suggestions, bug reports and feedback are valuable.
-
-If contributions are enabled for this repository:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Test your changes locally.
-5. Submit a pull request describing the improvement.
-
-Please open an issue before undertaking large changes so that proposed work can be discussed first.
-
-## Acknowledgements
-
-MOOC Mastery was built to address a practical problem experienced by students preparing for NPTEL and SWAYAM courses.
-
-Thank you to every student who tried the platform, shared feedback, reported issues and helped it grow organically.
-
-## Project Information
-
-- **Project:** MOOC Mastery
-- **Category:** Education / EdTech
-- **Developer:** Rishabh Raj Gupta
-- **Institution:** Delhi Technological University
-- **Website:** https://mooc-mastery.vercel.app/
+The practice engine is designed to keep question delivery and most practice interactions client-side, reducing unnecessary backend dependencies.
 
 ---
 
-*Built with the belief that quality learning tools should be accessible to everyone.*
+## 🧠 How It Works
+
+At a high level, the student workflow looks like this:
+
+1. Open the platform.
+2. Select an available NPTEL/SWAYAM course.
+3. Choose a weekly assignment or configure a custom set.
+4. Practise questions and review explanations.
+5. Attempt timed mock tests to evaluate exam readiness.
+6. Revisit bookmarks and previously incorrect questions.
+7. Export a JSON backup of personal progress when needed.
+
+---
+
+## 🚀 Product Philosophy
+
+MOOC Mastery is built around a few principles:
+
+**Accessibility over paywalls**  
+Useful academic practice resources should be accessible without a subscription.
+
+**Learning over memorisation**  
+Students should be able to understand why an answer is correct, not simply memorise an option.
+
+**Privacy over unnecessary accounts**  
+A student should not need to surrender personal information to practise questions.
+
+**Focused revision over endless browsing**  
+Weekly drills, custom sets and weak-question revision help students spend time where it matters.
+
+**Student feedback over assumptions**  
+Product improvements are informed by actual usage patterns and learner feedback.
+
+---
+
+## 🗺️ Roadmap
+
+Some areas being explored for future improvements:
+
+- [ ] Expand course coverage across more NPTEL/SWAYAM electives.
+- [ ] Improve question explanations and concept-level revision.
+- [ ] Enhance performance insights and revision recommendations.
+- [ ] Improve mobile usability and accessibility.
+- [ ] Continue refining mock-test and weak-question experiences.
+- [ ] Make question-bank contributions and corrections easier to manage.
+
+---
+
+## 🤝 Feedback and Contributions
+
+Found an incorrect answer, a missing question or a technical issue?
+
+Student feedback helps improve the platform.
+
+You can:
+- Report incorrect questions or answer keys.
+- Suggest additional courses.
+- Share feedback on the practice experience.
+- Report bugs and usability issues through the repository's issue tracker, where enabled.
+
+Please include the course name, week number and question reference when reporting a question-bank issue.
+
+---
+
+## ⚖️ Disclaimer
+
+MOOC Mastery is an independent student-built educational practice platform.
+
+It is **not affiliated with, endorsed by, or officially associated with NPTEL, SWAYAM, the Ministry of Education, the Government of India, or the listed IITs and IISc**.
+
+Course names and institute names are used solely to identify the corresponding academic offerings.
+
+Question banks are curated from assignment-related learning materials and student-contributed resources. Original course materials, questions, answer keys and other third-party content remain subject to their respective owners' rights and applicable terms.
+
+MOOC Mastery is intended as a supplementary revision tool. Students should refer to official course materials and announcements for authoritative information.
+
+---
+
+## 👨‍💻 Built With a Student-First Mindset
+
+MOOC Mastery started with a simple goal: make it easier for students to prepare for NPTEL examinations without jumping between countless PDFs and answer keys.
+
+What began as a focused revision tool grew into a platform used by students across multiple courses and university communities.
+
+The project continues to evolve through real student feedback, usage insights and a commitment to keeping academic practice accessible.
+
+<p align="center">
+  <a href="https://mooc-mastery.vercel.app/">
+    <strong>Try MOOC Mastery →</strong>
+  </a>
+</p>
+
+<p align="center">
+  Made for students, by a student.
+</p>
