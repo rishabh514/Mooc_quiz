@@ -1,4 +1,3 @@
-
 # MOOC Mastery
 
 ### Your NPTEL & SWAYAM exam preparation companion.
@@ -173,7 +172,6 @@ MOOC Mastery is built using a modern web development stack.
 | Static Hosting | Vercel |
 | Question Bank Format | JSON |
 | Client-side Storage | Browser localStorage |
-| Asset Storage | Cloudflare R2 |
 
 The practice engine is designed to keep question delivery and most practice interactions client-side, reducing unnecessary backend dependencies.
 
